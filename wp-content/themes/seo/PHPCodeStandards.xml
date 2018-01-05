@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ruleset name="BSD Wordpress Theme">
+  <description>
+    Adaptation of the PSR-2 coding standard for Wordpress themes. Excludes the
+    rules, inherited from PSR-1, that a file should not declare new symbols and
+    cause side effects and that classes must be namespaced. This allows Timber
+    classes to be extended in the theme's functions.php.
+  </description>
+  <rule ref="PSR2">
+    <exclude name="PSR1.Files.SideEffects" />
+    <exclude name="PSR1.Classes.ClassDeclaration" />
+  </rule>
+</ruleset>
