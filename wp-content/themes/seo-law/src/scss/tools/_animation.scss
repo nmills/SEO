@@ -1,0 +1,32 @@
+// Animation
+
+// GALLERY
+.slider__animation {
+  transition: all .4s $cubic-transition-2;
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.close__animation {
+  transition: all .6s $cubic-transition;
+  opacity: 0;
+}
+
+.close__animation--1 {
+  transition-delay: .8s;
+}
+
+.popup-active {
+  &.slider__animation {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+    z-index: 8000;
+  }
+
+  .close__animation {
+    opacity: 1;
+  }
+}

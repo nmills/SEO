@@ -1,0 +1,32 @@
+// Primary Nav
+//
+// Primary navigation for the site
+// Uses the following Foundation components:
+// - Dropdown
+// - Drilldown
+// - Off-canvas
+// - Responsive menu
+// See Foundation documentation for details
+
+.primary-nav {
+  @include off-canvas-base;
+  @include off-canvas-position(right);
+
+  @include breakpoint(large) {
+    @include off-canvas-reveal(right);
+
+    max-height: none;
+    overflow: initial;
+    position: static;
+    width: 100%;
+
+    ~ .off-canvas-content {
+      box-shadow: none;
+      margin-right: 0;
+    }
+
+    .back {
+      display: none !important;
+    }
+  }
+}

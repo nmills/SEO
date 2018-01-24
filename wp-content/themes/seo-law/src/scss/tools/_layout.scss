@@ -1,0 +1,60 @@
+// LAYOUT
+
+html {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  @include type-4($color: $dark-gray-one);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  @include grid-container;
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  .home & {
+    padding: 0;    
+
+    @include grid-media($md) {
+      padding: 0 15px;
+    }
+  }
+
+  @include grid-media($xl) {
+    padding: 0 5px;
+  }
+}
+
+.content-grid {
+  position: relative;
+  @include grid-container;
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.row {
+  @include grid-media($md) {
+    @include grid-collapse;
+    @include grid-container;
+  }
+}
+
+section {
+  @include grid-container;
+  margin: 40px 0;
+}

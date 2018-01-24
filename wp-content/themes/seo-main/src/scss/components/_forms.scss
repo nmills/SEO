@@ -1,0 +1,22 @@
+//forms
+
+form {
+  @include grid-container;
+  display: block;
+}
+
+button,
+input {
+  outline: 0;
+}
+
+input {  
+  background: $dark-gray-two;
+  border: 1px solid $white;
+  padding: 5.5px 10px;
+  @include type-custom($color: $light-gray, $font-weight: $font-normal, $font-size: 11.93px, $line-height: 1.5);
+
+  // @include placeholder {
+  //   color: $light-gray;
+  // }
+}

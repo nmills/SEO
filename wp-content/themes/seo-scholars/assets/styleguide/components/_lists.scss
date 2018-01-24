@@ -1,0 +1,32 @@
+// Lists
+
+ul,
+ol {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+    }
+  }
+}
+
+// Styleguide override for menu
+.sg-top-nav-menu {
+  ul,
+  li {
+    margin: 0;
+  }
+}
