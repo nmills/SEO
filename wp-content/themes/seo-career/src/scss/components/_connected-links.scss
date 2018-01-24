@@ -1,0 +1,30 @@
+//connected links
+
+.c-conlinks__connect {
+  &,
+  p,
+  a {
+    @include type-5($color: $dark-gray-one);
+  }
+
+  ul,
+  p,
+  ul>li {
+   display: inline-block;
+   margin: 0;
+  }
+
+  li {
+    a {
+      padding: 0 5px;
+      border-right: 1px solid $dark-gray-one;
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      a {
+        border: none;        
+      }
+    }
+  }
+}

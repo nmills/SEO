@@ -1,0 +1,224 @@
+/*
+UI Elements
+
+Styleguide 2.0
+*/
+
+/*
+Radio Buttons
+
+markup:
+<label class="c-uie__radiobutton">One
+  <input type="radio" checked="checked" name="radio">
+  <span class="c-uie__checkmark"></span>
+</label>
+<label class="c-uie__radiobutton">Two
+  <input type="radio" name="radio">
+  <span class="c-uie__checkmark"></span>
+</label>
+<label class="c-uie__radiobutton">Three
+  <input type="radio" name="radio">
+  <span class="c-uie__checkmark"></span>
+</label>
+<label class="c-uie__radiobutton">Four
+  <input type="radio" name="radio">
+  <span class="c-uie__checkmark"></span>
+</label>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 2.1
+*/
+
+input[type="radio"] {
+    display: none;
+}
+
+.c-uie__radiobutton {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:hover {
+        input {
+            ~ .c-uie__checkmark {
+                background-color: #ccc;
+            }       
+        }
+    }
+    
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked {
+            ~ .c-uie__checkmark{
+                &:after{
+                    display: block;
+                    background: $light-blue;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .c-uie__checkmark{
+
+    border-radius: 50%;
+        &:after {
+            top: 50%;
+            left: 50%;
+            width: 70%;
+            height: 70%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.c-uie__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid $black;
+
+    &:after{
+        content: "";
+        position: absolute;
+        border: 1px solid $black;
+    }
+}
+
+
+/*
+Check Box
+
+markup:
+<label class="c-uie__checkbox">One
+  <input type="checkbox" checked="checked">
+  <span class="c-uie__checkmark"></span>
+</label>
+<label class="c-uie__checkbox">Two
+  <input type="checkbox">
+  <span class="c-uie__checkmark"></span>
+</label>
+<label class="c-uie__checkbox">Three
+  <input type="checkbox">
+  <span class="c-uie__checkmark"></span>
+</label>
+<label class="c-uie__checkbox">Four
+  <input type="checkbox">
+  <span class="c-uie__checkmark"></span>
+</label>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 2.2
+*/
+
+.c-uie__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:hover {
+        input {
+            ~ .c-uie__checkmark {
+                background-color: #ccc;
+            }       
+        }
+    }
+    
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked {
+            ~ .c-uie__checkmark{
+                &:after{
+                    display: block;
+                    background: $light-blue;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .c-uie__checkmark{
+        &:after {
+            top: 50%;
+            left: 50%;
+            width: 70%;
+            height: 70%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+/*
+Input Field
+
+markup:
+<input type="text" id="fname" name="firstname" placeholder="Input Hint Text">
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 2.3
+*/
+
+input {
+    border: none;
+    border-radius: 0;
+    background: none;
+    border-bottom: 2px solid $black;
+    padding: 0;
+    padding-bottom: 3px;
+}
+
+input:active, input:focus {
+  border-bottom: 5px solid;
+
+    &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder { 
+      color: $light-blue;
+    }
+}

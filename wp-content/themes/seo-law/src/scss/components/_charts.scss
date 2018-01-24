@@ -1,0 +1,81 @@
+/*
+Charts
+
+Styleguide 3.0
+*/
+
+/*
+Pie Percentage
+
+markup:
+<div class="c-ratiometer">
+  <div class="c-ratiometer-meter_out">
+    <div class="c-rationmeter-meter" style="background-image: url('https://thecommunicationsmastery.com/wp-content/uploads/2016/03/bigstock-Students-87084494-min-450x450.jpg')">
+      </div>
+  </div>
+  <div class="c-rationmeter-text">
+    <h1>57% oratio verear sed et eu pri alii feugiat</h1>
+  </div>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 3.1
+*/
+
+.c-ratiometer {
+  width: 100%;
+  min-width: 700px;
+  position: relative;
+  min-height: 300px;
+}
+
+.c-ratiometer-meter_out {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+
+  // border: 8px solid cornflowerblue;
+  padding: 10px;
+  background: $light-blue;
+  background: -moz-linear-gradient(-45deg, $light-blue 0%, $light-blue 57%, $white 57%, $white 100%);
+  background: -webkit-linear-gradient(-45deg, $light-blue 0%, $light-blue 57%, $white 57%, $white 100%);
+  background: linear-gradient(135deg, $light-blue 0%, $light-blue 57%, $white 57%, $white 100%);
+
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-blue', endColorstr='#ffffff',GradientType=1 );
+}
+
+.c-rationmeter-text {
+  width: 70%;
+  position: absolute;
+  transform: translateY(70%);
+  right: 0;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.c-rationmeter-meter {
+  width: 19rem;
+  height: 19rem;
+  background: $white;
+  border-radius: 100%;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.5rem solid $white;
+}

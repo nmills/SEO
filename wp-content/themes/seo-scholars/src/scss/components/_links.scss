@@ -1,0 +1,14 @@
+//LINKS
+
+a {
+  color: $black;
+  text-decoration: none;
+  transition: all .4s ease;
+  outline: none;
+  font-weight: $font-normal;
+
+  &:hover,
+  &:focus {
+    color: $black;
+  }
+}

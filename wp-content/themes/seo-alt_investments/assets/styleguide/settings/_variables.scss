@@ -1,0 +1,62 @@
+// FONT TYPES
+
+$font-thinnest: 100;
+$font-thin: 200;
+$font-normal: 300;
+$font-medium: 500;
+$font-bold: 700;
+
+// COLORS
+
+$white: #ffffff;
+$black: #141413;
+$light-blue: #7cb4f6;
+$red: #eb0029;
+$light-gray: #e5e7e7;
+// ----
+$eggshell: #f1efeb;
+$light-gray-two: #dbd7cc;
+$orange: #ff671b;
+$dark-gray-one: #4e4e4e;
+$dark-gray-two: #2b2b2b;
+$dark-gray-three: #878787;
+$light-teal: #afe8db;
+$teal: #4fcdb0;
+$green: #8db92e;
+$dark-green: #709424;
+$gradient-white: rgba(255, 255, 255, 0);
+$gradient-black: rgba(0, 0, 0, 0.3);
+
+// TRANSITIONS
+$cubic-transition: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+$cubic-transition-2: cubic-bezier(0, 0, .2, 1);
+
+// BREAKPOINTS
+
+// Mobiles
+$sm: (media: 480px);
+
+// Small tablets (portrait view)
+$md: (media: 768px);
+
+// Tablets and small desktops
+$lg: (media: 1024px);
+
+// Large tablets and desktops
+$xl: (media: 1440px);
+
+// CONTAINER SIZES
+$container-width: 1200px;
+$content-width: 590px;
+$large-image-width: 890px;
+
+// GRIDS
+$neat-grid: (columns: 12, gutter: 15px);
+
+$content-grid-smaller: (gutter: 0);
+
+$content-grid-medium: (columns: 12, gutter: 16.66667%, media: 1200px);
+
+$content-grid-large: (columns: 12, gutter: 8.33333%, media: 1200px);
+
+$no-gutter: (gutter: 0);

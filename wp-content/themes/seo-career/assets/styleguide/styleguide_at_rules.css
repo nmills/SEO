@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "MarkForMC";
+  src: url("assets/fonts/MarkForMCExtraLt.eot");
+  src: url("assets/fonts/MarkForMCExtraLt.eot?#iefix") format("embedded-opentype"), url("assets/fonts/MarkForMCExtraLt.woff") format("woff"), url("assets/fonts/MarkForMCExtraLt.ttf") format("truetype"), url("assets/fonts/MarkForMCExtraLt.svg#MarkForMCExtraLt") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MarkForMC";
+  src: url("assets/fonts/MarkForMCLt.eot");
+  src: url("assets/fonts/MarkForMCLt.eot?#iefix") format("embedded-opentype"), url("assets/fonts/MarkForMCLt.woff") format("woff"), url("assets/fonts/MarkForMCLt.ttf") format("truetype"), url("assets/fonts/MarkForMCLt.svg#MarkForMCLt") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MarkForMC";
+  src: url("assets/fonts/MarkForMCBook.eot");
+  src: url("assets/fonts/MarkForMCBook.eot?#iefix") format("embedded-opentype"), url("assets/fonts/MarkForMCBook.woff") format("woff"), url("assets/fonts/MarkForMCBook.ttf") format("truetype"), url("assets/fonts/MarkForMCBook.svg#MarkForMCBook") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MarkForMC";
+  src: url("assets/fonts/MarkForMCMed.eot");
+  src: url("assets/fonts/MarkForMCMed.eot?#iefix") format("embedded-opentype"), url("assets/fonts/MarkForMCMed.woff") format("woff"), url("assets/fonts/MarkForMCMed.ttf") format("truetype"), url("assets/fonts/MarkForMCMed.svg#MarkForMCMed") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MarkForMC";
+  src: url("assets/fonts/MarkForMCBold.eot");
+  src: url("assets/fonts/MarkForMCBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/MarkForMCBold.woff") format("woff"), url("assets/fonts/MarkForMCBold.ttf") format("truetype"), url("assets/fonts/MarkForMCBold.svg#MarkForMCBold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
