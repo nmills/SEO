@@ -1,0 +1,27 @@
+//image components
+
+.c-image--single {
+  @include grid-column(12, $no-gutter);
+
+  img {
+    @include grid-media($lg) {
+      min-width: $large-image-width;
+    }
+  }
+}
+
+.c-image--caption {
+  @include type-5($color: $dark-gray-one);
+  max-width: $content-width;
+  padding-bottom: 25px;
+  border-bottom: 2px solid $light-gray-two;
+}
+
+//double image
+
+.c-image--double {
+  &-left,
+  &-right {
+    @include grid-column(6);
+  }
+}

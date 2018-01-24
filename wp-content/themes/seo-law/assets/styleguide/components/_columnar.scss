@@ -1,0 +1,31 @@
+//columnar
+
+.c-columnar {
+  @include grid-column(12, $no-gutter);
+
+  background: $eggshell;
+  padding: 30px;
+  display: inline-block;
+
+  h3 {
+    @include default($color: $black);
+
+    font-weight: $font-bold;
+    margin: 0;
+  }
+
+  ul {
+    columns: 2;
+    margin: 0;
+    margin-top: 13px;
+    display: inline-block;
+    @include grid-media($md) {
+      columns: 4;
+    }
+
+    li {      
+      @include type-5($color: $dark-gray-one);
+      margin: 0 25px 0 0;
+    }
+  }
+}

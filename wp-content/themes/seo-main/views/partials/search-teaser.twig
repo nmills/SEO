@@ -1,0 +1,12 @@
+{% for post in posts %}
+  <div>
+    <a href="{{post.link}}">{{post.title}}</a>
+  </div>
+{% else %}
+  <p class="type--no-results">Sorry, we couldn’t find anything matching your search.</p>
+{% endfor %}
+
+
+
+
+

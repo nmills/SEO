@@ -1,0 +1,112 @@
+// Full Width Accordion
+
+.c-accordion__wrapper {
+  @include grid-container;
+  border-top: 1px solid $light-gray-two;
+  border-bottom: 1px solid $light-gray-two;
+  margin: 20px 0;
+}
+
+.c-accordion {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .inner {
+    padding-left: 30px;
+    overflow: hidden;
+    display: none;
+  }
+
+  li {
+    margin: 0;
+
+    a.toggle {
+      width: 100%;
+      display: block;
+      @include type-3;
+      background: $white;
+      padding: 30px;
+      transition: all .3s $cubic-transition;
+
+      &:after {
+        content: '';
+        float: right;
+        width: 24px;
+        height: 24px;
+        background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/icon-plus--black.svg') center center no-repeat;
+      }
+    
+      &:hover {
+        color: $white;
+        background-image: linear-gradient(to right, rgba(210, 42, 47, 1) 0%, rgba(255, 103, 27, 1) 100%);
+
+        &:after {
+          background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/icon-plus.svg') center center no-repeat;
+        }
+      }
+
+      &.active {
+        &:after {
+          background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/icon-minus--black.svg') center center no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.c-accordion--with-text {
+  border: none;
+
+  .c-accordion {
+    > li {
+      border-top: 1px solid $light-gray-two;
+
+      a.toggle {
+        @include default($color: $black);
+
+        &:hover,
+        &.active {
+          color: $white;
+          background-image: linear-gradient(to right, rgba(210, 42, 47, 1) 0%, rgba(255, 103, 27, 1) 100%);
+
+          &:after {
+            background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/icon-plus.svg') center center no-repeat;
+          }
+        }
+      }
+
+      &:last-child {
+        border-bottom: 1px solid $light-gray-two;
+      }
+    }
+  }
+}
+
+
+// Accordion with Title
+
+.c-accordion__wrapper--left {
+  @include grid-column(12);
+
+  @include grid-media($md) {
+    @include grid-column(4);
+  }
+
+  h2 {
+    @include type-2-bold($color: $black);
+  }
+
+  a {
+    @include default($color: $black);
+  }
+}
+
+.c-accordion__wrapper--right {
+  @include grid-column(12);
+
+  @include grid-media($md) {
+    @include grid-column(8);
+    float: right;
+  }
+}

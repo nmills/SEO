@@ -1,0 +1,20 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+  <div class="facets">
+    {{facet_search}}
+{#     {{facet_countries}}
+    {{facet_topics}} #}
+    {{facet_categories}}
+  </div>
+
+  <div class="posts">
+    {{posts}}
+  </div>
+
+  <div class="pagination">
+    {{pagination}}
+  </div>
+
+{% endblock %}
