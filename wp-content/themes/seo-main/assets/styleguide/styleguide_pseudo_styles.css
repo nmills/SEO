@@ -75,14 +75,6 @@ a.pseudo-class-focus {
   color: #1468a0;
 }
 
-.menu.expanded > li.pseudo-class-first-child.pseudo-class-last-child {
-  width: 100%;
-}
-
-.menu.menu-hover li.pseudo-class-hover {
-  background-color: #e6e6e6;
-}
-
 .show-on-focus.pseudo-class-active,
 .show-on-focus.pseudo-class-focus {
   position: static !important;
@@ -90,6 +82,8 @@ a.pseudo-class-focus {
   height: auto;
   overflow: visible;
   clip: auto;
+  white-space: normal;
+  clip-path: none;
 }
 
 [type='text'].pseudo-class-focus,
@@ -158,7 +152,7 @@ select.pseudo-class-disabled {
 .button.primary.pseudo-class-hover,
 .button.primary.pseudo-class-focus {
   background-color: #126195;
-  color: #000;
+  color: #fff;
 }
 
 .button.secondary.pseudo-class-hover,
@@ -185,47 +179,6 @@ select.pseudo-class-disabled {
   color: #000;
 }
 
-.button.hollow.pseudo-class-hover,
-.button.hollow.pseudo-class-focus {
-  background-color: transparent;
-}
-
-.button.hollow.pseudo-class-hover,
-.button.hollow.pseudo-class-focus {
-  border-color: #0c3d5d;
-  color: #0c3d5d;
-}
-
-.button.hollow.primary.pseudo-class-hover,
-.button.hollow.primary.pseudo-class-focus {
-  border-color: #0c3d5d;
-  color: #0c3d5d;
-}
-
-.button.hollow.secondary.pseudo-class-hover,
-.button.hollow.secondary.pseudo-class-focus {
-  border-color: #3b3b3b;
-  color: #3b3b3b;
-}
-
-.button.hollow.success.pseudo-class-hover,
-.button.hollow.success.pseudo-class-focus {
-  border-color: #157539;
-  color: #157539;
-}
-
-.button.hollow.warning.pseudo-class-hover,
-.button.hollow.warning.pseudo-class-focus {
-  border-color: #805700;
-  color: #805700;
-}
-
-.button.hollow.alert.pseudo-class-hover,
-.button.hollow.alert.pseudo-class-focus {
-  border-color: #67251a;
-  color: #67251a;
-}
-
 .button.disabled.pseudo-class-hover,
 .button.disabled.pseudo-class-focus,
 .button[disabled].pseudo-class-hover,
@@ -239,7 +192,7 @@ select.pseudo-class-disabled {
 .button[disabled].primary.pseudo-class-hover,
 .button[disabled].primary.pseudo-class-focus {
   background-color: #1779ba;
-  color: #000;
+  color: #fff;
 }
 
 .button.disabled.secondary.pseudo-class-hover,
@@ -272,6 +225,257 @@ select.pseudo-class-disabled {
 .button[disabled].alert.pseudo-class-focus {
   background-color: #cc4b37;
   color: #000;
+}
+
+.button.hollow.pseudo-class-hover,
+.button.hollow.pseudo-class-focus {
+  background-color: transparent;
+}
+
+.button.hollow.disabled.pseudo-class-hover,
+.button.hollow.disabled.pseudo-class-focus,
+.button.hollow[disabled].pseudo-class-hover,
+.button.hollow[disabled].pseudo-class-focus {
+  background-color: transparent;
+}
+
+.button.hollow.pseudo-class-hover,
+.button.hollow.pseudo-class-focus {
+  border-color: #0c3d5d;
+  color: #0c3d5d;
+}
+
+.button.hollow.pseudo-class-hover.disabled,
+.button.hollow.pseudo-class-hover[disabled],
+.button.hollow.pseudo-class-focus.disabled,
+.button.hollow.pseudo-class-focus[disabled] {
+  border: 1px solid #1779ba;
+  color: #1779ba;
+}
+
+.button.hollow.primary.pseudo-class-hover,
+.button.hollow.primary.pseudo-class-focus {
+  border-color: #0c3d5d;
+  color: #0c3d5d;
+}
+
+.button.hollow.primary.pseudo-class-hover.disabled,
+.button.hollow.primary.pseudo-class-hover[disabled],
+.button.hollow.primary.pseudo-class-focus.disabled,
+.button.hollow.primary.pseudo-class-focus[disabled] {
+  border: 1px solid #1779ba;
+  color: #1779ba;
+}
+
+.button.hollow.secondary.pseudo-class-hover,
+.button.hollow.secondary.pseudo-class-focus {
+  border-color: #3b3b3b;
+  color: #3b3b3b;
+}
+
+.button.hollow.secondary.pseudo-class-hover.disabled,
+.button.hollow.secondary.pseudo-class-hover[disabled],
+.button.hollow.secondary.pseudo-class-focus.disabled,
+.button.hollow.secondary.pseudo-class-focus[disabled] {
+  border: 1px solid #767676;
+  color: #767676;
+}
+
+.button.hollow.success.pseudo-class-hover,
+.button.hollow.success.pseudo-class-focus {
+  border-color: #157539;
+  color: #157539;
+}
+
+.button.hollow.success.pseudo-class-hover.disabled,
+.button.hollow.success.pseudo-class-hover[disabled],
+.button.hollow.success.pseudo-class-focus.disabled,
+.button.hollow.success.pseudo-class-focus[disabled] {
+  border: 1px solid #3adb76;
+  color: #3adb76;
+}
+
+.button.hollow.warning.pseudo-class-hover,
+.button.hollow.warning.pseudo-class-focus {
+  border-color: #805700;
+  color: #805700;
+}
+
+.button.hollow.warning.pseudo-class-hover.disabled,
+.button.hollow.warning.pseudo-class-hover[disabled],
+.button.hollow.warning.pseudo-class-focus.disabled,
+.button.hollow.warning.pseudo-class-focus[disabled] {
+  border: 1px solid #ffae00;
+  color: #ffae00;
+}
+
+.button.hollow.alert.pseudo-class-hover,
+.button.hollow.alert.pseudo-class-focus {
+  border-color: #67251a;
+  color: #67251a;
+}
+
+.button.hollow.alert.pseudo-class-hover.disabled,
+.button.hollow.alert.pseudo-class-hover[disabled],
+.button.hollow.alert.pseudo-class-focus.disabled,
+.button.hollow.alert.pseudo-class-focus[disabled] {
+  border: 1px solid #cc4b37;
+  color: #cc4b37;
+}
+
+.button.clear.pseudo-class-hover,
+.button.clear.pseudo-class-focus {
+  background-color: transparent;
+}
+
+.button.clear.disabled.pseudo-class-hover,
+.button.clear.disabled.pseudo-class-focus,
+.button.clear[disabled].pseudo-class-hover,
+.button.clear[disabled].pseudo-class-focus {
+  background-color: transparent;
+}
+
+.button.clear.pseudo-class-hover,
+.button.clear.pseudo-class-focus {
+  border-color: #0c3d5d;
+  color: #0c3d5d;
+}
+
+.button.clear.pseudo-class-hover.disabled,
+.button.clear.pseudo-class-hover[disabled],
+.button.clear.pseudo-class-focus.disabled,
+.button.clear.pseudo-class-focus[disabled] {
+  border: 1px solid #1779ba;
+  color: #1779ba;
+}
+
+.button.clear.pseudo-class-hover,
+.button.clear.pseudo-class-hover.disabled,
+.button.clear.pseudo-class-hover[disabled],
+.button.clear.pseudo-class-focus,
+.button.clear.pseudo-class-focus.disabled,
+.button.clear.pseudo-class-focus[disabled] {
+  border-color: transparent;
+}
+
+.button.clear.primary.pseudo-class-hover,
+.button.clear.primary.pseudo-class-focus {
+  border-color: #0c3d5d;
+  color: #0c3d5d;
+}
+
+.button.clear.primary.pseudo-class-hover.disabled,
+.button.clear.primary.pseudo-class-hover[disabled],
+.button.clear.primary.pseudo-class-focus.disabled,
+.button.clear.primary.pseudo-class-focus[disabled] {
+  border: 1px solid #1779ba;
+  color: #1779ba;
+}
+
+.button.clear.primary.pseudo-class-hover,
+.button.clear.primary.pseudo-class-hover.disabled,
+.button.clear.primary.pseudo-class-hover[disabled],
+.button.clear.primary.pseudo-class-focus,
+.button.clear.primary.pseudo-class-focus.disabled,
+.button.clear.primary.pseudo-class-focus[disabled] {
+  border-color: transparent;
+}
+
+.button.clear.secondary.pseudo-class-hover,
+.button.clear.secondary.pseudo-class-focus {
+  border-color: #3b3b3b;
+  color: #3b3b3b;
+}
+
+.button.clear.secondary.pseudo-class-hover.disabled,
+.button.clear.secondary.pseudo-class-hover[disabled],
+.button.clear.secondary.pseudo-class-focus.disabled,
+.button.clear.secondary.pseudo-class-focus[disabled] {
+  border: 1px solid #767676;
+  color: #767676;
+}
+
+.button.clear.secondary.pseudo-class-hover,
+.button.clear.secondary.pseudo-class-hover.disabled,
+.button.clear.secondary.pseudo-class-hover[disabled],
+.button.clear.secondary.pseudo-class-focus,
+.button.clear.secondary.pseudo-class-focus.disabled,
+.button.clear.secondary.pseudo-class-focus[disabled] {
+  border-color: transparent;
+}
+
+.button.clear.success.pseudo-class-hover,
+.button.clear.success.pseudo-class-focus {
+  border-color: #157539;
+  color: #157539;
+}
+
+.button.clear.success.pseudo-class-hover.disabled,
+.button.clear.success.pseudo-class-hover[disabled],
+.button.clear.success.pseudo-class-focus.disabled,
+.button.clear.success.pseudo-class-focus[disabled] {
+  border: 1px solid #3adb76;
+  color: #3adb76;
+}
+
+.button.clear.success.pseudo-class-hover,
+.button.clear.success.pseudo-class-hover.disabled,
+.button.clear.success.pseudo-class-hover[disabled],
+.button.clear.success.pseudo-class-focus,
+.button.clear.success.pseudo-class-focus.disabled,
+.button.clear.success.pseudo-class-focus[disabled] {
+  border-color: transparent;
+}
+
+.button.clear.warning.pseudo-class-hover,
+.button.clear.warning.pseudo-class-focus {
+  border-color: #805700;
+  color: #805700;
+}
+
+.button.clear.warning.pseudo-class-hover.disabled,
+.button.clear.warning.pseudo-class-hover[disabled],
+.button.clear.warning.pseudo-class-focus.disabled,
+.button.clear.warning.pseudo-class-focus[disabled] {
+  border: 1px solid #ffae00;
+  color: #ffae00;
+}
+
+.button.clear.warning.pseudo-class-hover,
+.button.clear.warning.pseudo-class-hover.disabled,
+.button.clear.warning.pseudo-class-hover[disabled],
+.button.clear.warning.pseudo-class-focus,
+.button.clear.warning.pseudo-class-focus.disabled,
+.button.clear.warning.pseudo-class-focus[disabled] {
+  border-color: transparent;
+}
+
+.button.clear.alert.pseudo-class-hover,
+.button.clear.alert.pseudo-class-focus {
+  border-color: #67251a;
+  color: #67251a;
+}
+
+.button.clear.alert.pseudo-class-hover.disabled,
+.button.clear.alert.pseudo-class-hover[disabled],
+.button.clear.alert.pseudo-class-focus.disabled,
+.button.clear.alert.pseudo-class-focus[disabled] {
+  border: 1px solid #cc4b37;
+  color: #cc4b37;
+}
+
+.button.clear.alert.pseudo-class-hover,
+.button.clear.alert.pseudo-class-hover.disabled,
+.button.clear.alert.pseudo-class-hover[disabled],
+.button.clear.alert.pseudo-class-focus,
+.button.clear.alert.pseudo-class-focus.disabled,
+.button.clear.alert.pseudo-class-focus[disabled] {
+  border-color: transparent;
+}
+
+a.button.pseudo-class-hover,
+a.button.pseudo-class-focus {
+  text-decoration: none;
 }
 
 .media-object-section.pseudo-class-first-child {

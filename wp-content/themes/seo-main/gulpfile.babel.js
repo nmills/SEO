@@ -24,8 +24,9 @@ const $ = gulpLoadPlugins();
 const sync = browserSync.create();
 
 const dist = 'assets';
-const appRoot = '/wp-content/themes/bsdstarter/assets';
+const appRoot = '/wp-content/themes/seo-main/assets';
 const source = 'src';
+const child_path = '/wp-content/themes/seo-main/src';
 
 // BUILD SUBTASKS
 // ---------------
@@ -47,7 +48,7 @@ gulp.task('stylelint', function() {
   }));
 });
 
-gulp.task('styles', ['stylelint'], function() {
+gulp.task('styles', function() {
   return gulp.src([
     `${source}/scss/style.scss`,
   ])
@@ -86,7 +87,7 @@ gulp.task('browserify', function() {
 });
 
 // Scripts
-gulp.task('scripts', ['lint', 'browserify'], function() {
+gulp.task('scripts', ['browserify'], function() {
   return gulp.src([
     `${source}/js/vendor/_*.js`,
     `${dist}/js/bundle.js`,
@@ -128,7 +129,11 @@ gulp.task('styleguide:generate', function() {
     rootPath: `${dist}/styleguide'`,
     appRoot: `${appRoot}/styleguide`,
     overviewPath: 'styleguide-overview.md',
-    extraHead: '',
+    extraHead: [
+      `<script type="text/javascript" src="${child_path}/js/vendor/jquery.js?ver=2.1.14"></script>`,
+      `<script src="${appRoot}/js/source.dev.js"></script>`,
+    ],
+    disableEncapsulation: true,
   }))
   .pipe(gulp.dest(`${dist}/styleguide`));
 });
