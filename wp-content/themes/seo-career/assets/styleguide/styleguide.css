@@ -1438,3 +1438,10 @@ img.mfp-img {
 .aligncenter {
   margin: 0 auto;
   max-width: 100%; }
+
+.row {
+  width: 100%;
+  margin: auto; }
+
+.primary-nav {
+  background: #ff7c7c; }
