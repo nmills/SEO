@@ -187,38 +187,3 @@ Styleguide 2.2
         }
     }
 }
-
-/*
-Input Field
-
-markup:
-<input type="text" id="fname" name="firstname" placeholder="Input Hint Text">
-
-sg-wrapper:
-<section>
-  <div class="container">
-    <div class="content-grid">
-      <sg-wrapper-content/>
-    </div>
-  </div>
-</section>
-
-Styleguide 2.3
-*/
-
-input {
-    border: none;
-    border-radius: 0;
-    background: none;
-    border-bottom: 2px solid $black;
-    padding: 0;
-    padding-bottom: 3px;
-}
-
-input:active, input:focus {
-  border-bottom: 5px solid;
-
-    &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder { 
-      color: $light-blue;
-    }
-}
