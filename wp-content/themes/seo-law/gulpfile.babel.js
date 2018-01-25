@@ -24,9 +24,9 @@ const $ = gulpLoadPlugins();
 const sync = browserSync.create();
 
 const dist = 'assets';
-const appRoot = '/wp-content/themes/bsdstarter-child/assets';
+const appRoot = '/wp-content/themes/seo-law/assets';
 const source = 'src';
-const child_path = '/wp-content/themes/bsdstarter-child/src';
+const child_path = '/wp-content/themes/seo-law/src';
 
 // BUILD SUBTASKS
 // ---------------
