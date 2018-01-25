@@ -18,7 +18,7 @@ http://seoalternativeinvestments.seomainsite.wpengine.com
 
 **Local URL:** If you have BrowserSync or any test scripts configured to look for a specific local URL, note it here
 
-[**Confluence Documentation**](Put your Confluence URL here)
+[**Confluence Documentation**] https://bluestatedigital.atlassian.net/secure/RapidBoard.jspa?rapidView=76&projectKey=SEOC&view=detail&selectedIssue=SEOC-2
 
 [**Style Guide**]
 Seo Main
