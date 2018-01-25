@@ -46,6 +46,7 @@ class BSDStarterSite extends TimberSite {
     if ( $cta ) {
       $context['cta'] = Timber::render( 'cta-' . $cta->call_to_action_type . '.twig', array('post' => $cta), false );
     }
+    $context['logo'] = logo();
     return $context;
   }
 
@@ -110,6 +111,29 @@ class BSDStarterSite extends TimberSite {
 }
 
 new BSDStarterSite();
+
+
+/**
+* Add and get custom logo
+*/
+function seo_custom_logo_setup() {
+    $defaults = array(
+        'height'      => 100,
+        'width'       => 400,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+    );
+    add_theme_support( 'custom-logo', $defaults );
+}
+add_action( 'after_setup_theme', 'seo_custom_logo_setup' );
+
+function logo() {
+    $custom_logo_id = get_theme_mod( 'custom_logo' );
+    $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+
+    return $logo;
+}
 
 /**
 * Returns the sidebar id for the page, based on page section

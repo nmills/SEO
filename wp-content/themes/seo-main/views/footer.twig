@@ -1,6 +1,11 @@
 <div class="row">
   <div class="small-12 medium-4 columns">
     {{footer_widgets}}
+    {% if logo[0] %}
+      <a href="{{site.url}}" class="show-for-large"><img src="{{logo[0]}}"></a>
+    {% else %}
+      <h1 class="show-for-large"><a href="{{site.url}}">{{site.title}}</a></h1>
+    {% endif %}
   </div> <!-- /.small-12.medium-4.columns -->
   <div class="small-12 medium-4 columns">
     <p class="copyright">&copy; {{"now"|date('Y')}}
