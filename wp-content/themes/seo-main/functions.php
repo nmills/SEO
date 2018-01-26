@@ -47,6 +47,8 @@ class BSDStarterSite extends TimberSite {
       $context['cta'] = Timber::render( 'cta-' . $cta->call_to_action_type . '.twig', array('post' => $cta), false );
     }
     $context['logo'] = logo();
+    //Adding the default search term
+    $context['searchterm'] = get_search_query();
     return $context;
   }
 
