@@ -1,12 +1,40 @@
 # Project Name
 
-**Demo URL:** [URL goes here](URL goes here)
+**Demo URL:** 
+Seo Main
+http://seomainsite.wpengine.com/
+
+Seo Career
+http://seocareer.seomainsite.wpengine.com
+
+Seo Law
+http://seolaw.seomainsite.wpengine.com
+
+Seo Scholars
+http://seoscholars.seomainsite.wpengine.com
+
+Seo Alternative Investments
+http://seoalternativeinvestments.seomainsite.wpengine.com
 
 **Local URL:** If you have BrowserSync or any test scripts configured to look for a specific local URL, note it here
 
-[**Confluence Documentation**](Put your Confluence URL here)
+[**Confluence Documentation**] https://bluestatedigital.atlassian.net/secure/RapidBoard.jspa?rapidView=76&projectKey=SEOC&view=detail&selectedIssue=SEOC-2
 
-[**Style Guide**](Put the URL for a living styleguide here)
+[**Style Guide**]
+Seo Main
+http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/styleguide/index.html#
+
+Seo Career
+http://seocareer.seomainsite.wpengine.com/wp-content/themes/seo-career/assets/styleguide/index.html#/
+
+Seo Law
+http://seolaw.seomainsite.wpengine.com/wp-content/themes/seo-law/assets/styleguide/index.html#/
+
+Seo Scholars
+http://seoscholars.seomainsite.wpengine.com/wp-content/themes/seo-scholars/assets/styleguide/index.html#/
+
+Seo Alternative Investments
+http://seoalternativeinvestments.seomainsite.wpengine.com/wp-content/themes/seo-alt_investments/assets/styleguide/index.html#
 
 ---
 
