@@ -138,6 +138,39 @@ function logo() {
 }
 
 /**
+* Our custom post type function
+*/
+function create_posttype() {
+ 
+    register_post_type( 'seo_documents',
+        array(
+            'labels' => array(
+                'name' => __( 'SEO Documents' ),
+                'singular_name' => __( 'Seo Document' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'seo_documents'),
+        )
+    );
+
+     register_taxonomy(
+       'file',
+       array('seo_documents',),
+       array(
+         'label' => __( 'File' ),
+         'rewrite' => array(
+           'slug' => 'file',
+           'with_front' => false
+         ),
+         'hierarchical' => true
+       )
+     );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+
+/**
 * Returns the sidebar id for the page, based on page section
 */
 function bsdstarter_get_sidebar_slug( $post ) {
