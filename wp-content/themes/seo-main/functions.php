@@ -50,6 +50,8 @@ class BSDStarterSite extends TimberSite {
     $context['logo'] = logo();
     //Adding the default search term
     $context['searchterm'] = get_search_query();
+    //Adding Header Widget
+    $context['header_widget'] = Timber::get_widgets('header_widget');
     return $context;
   }
 
@@ -82,6 +84,16 @@ class BSDStarterSite extends TimberSite {
       'before_widget' => '',
       'after_widget' => ''
     ));
+
+    register_sidebar( array(
+      'id' => 'header_widget',
+      'name' => 'Header Widget',
+      'before_widget' => '<div class="header-widget-area">',
+      'after_widget' => '</div>',
+      'before_title' => '<h2 class="header-widget-area-title">',
+      'after_title' => '</h2>',
+      ) 
+    );
 
     register_sidebar(array(
       'id' => 'sidebar',
@@ -170,22 +182,6 @@ function create_posttype() {
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
-
-/**
-* Custom widget area function
-*/
-function header_widget() {
-register_sidebar( array(
-'name' => 'Header Widget',
-'id' => 'header-widget',
-'before_widget' => '<div class="header-widget-area">',
-'after_widget' => '</div>',
-'before_title' => '<h2 class="header-widget-area-title">',
-'after_title' => '</h2>',
-) );
-
-}
-add_action( 'widgets_init', 'header_widget' );
 
 /**
 * Returns the sidebar id for the page, based on page section
