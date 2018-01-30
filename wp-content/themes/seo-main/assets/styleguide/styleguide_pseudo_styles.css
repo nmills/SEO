@@ -132,3 +132,11 @@
 .menu .sub-menu li.pseudo-class-hover {
   border-bottom-color: #7cb4f6;
 }
+
+.c-menu__list.pseudo-class-hover .c-menu__sublist {
+  display: block;
+}
+
+.c-menu__list .c-menu__sublist li.pseudo-class-hover {
+  border-bottom-color: #7cb4f6;
+}
