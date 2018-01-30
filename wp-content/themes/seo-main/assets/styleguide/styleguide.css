@@ -1360,7 +1360,7 @@ header {
   margin-left: 0;
   position: relative; }
   .c-nav .c-logo__container {
-    width: calc(33.33333%);
+    width: calc(25%);
     float: left;
     margin-left: 0; }
     .c-nav .c-logo__container .c-logo__image {
@@ -1368,16 +1368,18 @@ header {
       float: left;
       margin-left: 0; }
   .c-nav .c-menu__container {
-    width: calc(41.66667%);
+    width: calc(75%);
     float: left;
     margin-left: 0;
     float: right;
     position: absolute;
     right: 0;
     bottom: 0; }
-    .c-nav .c-menu__container .c-menu__list-item {
-      display: inline-block;
-      padding: 0 10px; }
+    .c-nav .c-menu__container .c-menu__list {
+      float: right; }
+      .c-nav .c-menu__container .c-menu__list .c-menu__list-item {
+        display: inline-block;
+        padding: 0 10px; }
 
 .c-mainnav {
   width: calc(100%);

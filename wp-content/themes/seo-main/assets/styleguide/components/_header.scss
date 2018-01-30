@@ -15,7 +15,7 @@ header {
   position: relative;
 
   .c-logo__container {
-    @include grid-column(4, $no-gutter);
+    @include grid-column(3, $no-gutter);
 
     .c-logo__image {
       @include grid-column(6, $no-gutter);
@@ -23,16 +23,20 @@ header {
   }
 
   .c-menu__container {
-    @include grid-column(5, $no-gutter);
+    @include grid-column(9, $no-gutter);
 
     float: right;
     position: absolute;
     right: 0;
     bottom: 0;
 
-    .c-menu__list-item {
-      display: inline-block;
-      padding: 0 10px;
+    .c-menu__list {
+      float: right;
+
+      .c-menu__list-item {
+        display: inline-block;
+        padding: 0 10px;
+      }
     }
   }
 }
@@ -85,12 +89,10 @@ header {
 
     li {
       border-bottom: 2px solid $white;
+
       &:hover {
         border-bottom-color: $light-blue;
       }
     }
-
-    
-    
   }
 }
