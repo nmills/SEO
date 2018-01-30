@@ -1349,10 +1349,10 @@ img.mfp-img {
 
 /* Header */
 header {
-  padding-bottom: 20px;
-  border-bottom: 2px solid #e5e7e7; }
+  padding-bottom: 20px !important;
+  border-bottom: 2px solid #e5e7e7 !important; }
   header a {
-    color: #7cb4f6; }
+    color: #7cb4f6 !important; }
 
 .c-nav {
   width: calc(100%);

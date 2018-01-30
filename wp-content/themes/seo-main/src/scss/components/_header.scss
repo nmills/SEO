@@ -1,11 +1,11 @@
 /* Header */
 
 header {
-  padding-bottom: 20px;
-  border-bottom: 2px solid $light-gray;
+  padding-bottom: 20px !important;
+  border-bottom: 2px solid $light-gray !important;
 
   a {
-    color: $light-blue;
+    color: $light-blue !important;
   }
 }
 
