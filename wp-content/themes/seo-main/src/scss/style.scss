@@ -7,29 +7,9 @@ Version: 1.0.0
 Description: Seo Main Site Theme
 */
 
-// General Settings
-// =====================
-@import "variables";
-
-// Foundation
-// ======================
-// @import "foundation-sites/scss/foundation";
-
-// Initialize Foundation components
-// @include foundation-callout;
-// @include foundation-global-styles;
-// @include foundation-grid;
-// @include foundation-typography;
-// @include foundation-menu;
-// @include off-canvas-basics;
-// @include foundation-title-bar;
-// @include foundation-visibility-classes;
-// @include foundation-forms;
-// @include foundation-button;
-// @include foundation-dropdown;
-// @include foundation-dropdown-menu;
-// @include foundation-drilldown-menu;
-// @include foundation-media-object;
+// Neat Bourbon
+@import "../../node_modules/bourbon/core/bourbon";
+@import "../../node_modules/bourbon-neat/core/neat";
 
 // Settings
 // Used with preprocessors and contain font, colors definitions, etc.
@@ -49,19 +29,23 @@ Description: Seo Main Site Theme
 @import "tools/layout";
 @import "tools/animation";
 
-// Other Vendor Styles
+// Components
+// Specific UI components
+
+@import "components/ui-elements";
+@import "components/rich-text-editor";
+
+// Vendor Styles
+// Styles included with plugins, etc
 // ======================
-@import "vendor/fontawesome/font-awesome";
 @import "vendor/slick";
 @import "vendor/magnific-popup";
 
-// Site Styles
-// ======================
-@import "components/site-header";
-@import "components/primary-nav";
-@import "components/quote";
-@import "components/ctas";
+// Overrides
+// Utilities and helper classes with ability to override anything which goes before
+@import "overrides/utility";
+@import "overrides/overrides";
 
-// Utility
-// ======================
-@import "utility";
+//Layouts
+@import "components/header";
+@import "components/search";
