@@ -1,0 +1,15 @@
+/* Footer */
+
+.c-footer__logo {
+  @include grid-column(2, $no-gutter);
+}
+
+.c-footer__widgets {
+  @include grid-column(10, $no-gutter);
+}
+
+.c-footer__copyrights {
+  @include grid-column(12, $no-gutter);
+
+  text-align: center;
+}
