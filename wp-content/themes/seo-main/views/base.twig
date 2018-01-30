@@ -8,7 +8,7 @@
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
       
-      <header>
+      <header class="site-header">
         <div class="container">
           {% block nav %}
             {% include 'nav.twig' %}
@@ -29,7 +29,10 @@
           </main> <!-- /.page-content.row -->
         {% endblock %}
 
-        {% block footer %}
+        {{cta}}
+      </div> <!-- /.off-canvas-content -->
+      
+      {% block footer %}
           <hr>
           <footer class="site-footer" role="contentinfo">
             {% include 'footer.twig' %}
@@ -37,8 +40,6 @@
           <a class="exit-off-canvas"></a>
         {% endblock %}
 
-        {{cta}}
-      </div> <!-- /.off-canvas-content -->
     </div> <!-- /.off-canvas-wrapper-inner -->
   </div> <!-- /.off-canvas-wrapper -->
   {{ function('wp_footer') }}
