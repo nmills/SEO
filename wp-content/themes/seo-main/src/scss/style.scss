@@ -13,23 +13,41 @@ Description: Seo Main Site Theme
 
 // Foundation
 // ======================
-@import "foundation-sites/scss/foundation";
+// @import "foundation-sites/scss/foundation";
 
 // Initialize Foundation components
-@include foundation-callout;
-@include foundation-global-styles;
-@include foundation-grid;
-@include foundation-typography;
-@include foundation-menu;
-@include off-canvas-basics;
-@include foundation-title-bar;
-@include foundation-visibility-classes;
-@include foundation-forms;
-@include foundation-button;
-@include foundation-dropdown;
-@include foundation-dropdown-menu;
-@include foundation-drilldown-menu;
-@include foundation-media-object;
+// @include foundation-callout;
+// @include foundation-global-styles;
+// @include foundation-grid;
+// @include foundation-typography;
+// @include foundation-menu;
+// @include off-canvas-basics;
+// @include foundation-title-bar;
+// @include foundation-visibility-classes;
+// @include foundation-forms;
+// @include foundation-button;
+// @include foundation-dropdown;
+// @include foundation-dropdown-menu;
+// @include foundation-drilldown-menu;
+// @include foundation-media-object;
+
+// Settings
+// Used with preprocessors and contain font, colors definitions, etc.
+// =====================
+@import "settings/variables";
+@import "settings/fonts";
+
+// Generic
+// Reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.
+@import "generic/reset";
+
+// Tools
+// Globally used mixins and functions
+@import "tools/typography";
+
+// @import "tools/mixins";
+@import "tools/layout";
+@import "tools/animation";
 
 // Other Vendor Styles
 // ======================
