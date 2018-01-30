@@ -1350,9 +1350,9 @@ img.mfp-img {
 /* Header */
 header {
   padding-bottom: 20px;
-  background: #7cb4f6; }
+  border-bottom: 2px solid #e5e7e7; }
   header a {
-    color: #ffffff; }
+    color: #7cb4f6; }
 
 .c-nav {
   width: calc(100%);
@@ -1395,10 +1395,10 @@ header {
     float: left;
     margin-left: 0; }
   .c-mainnav .c-mainnav__donate {
-    background: #ffffff;
+    background: #e5e7e7;
     text-align: center;
     padding: 10px 15px;
-    color: #7cb4f6; }
+    color: #ffffff; }
 
 .menu .menu-item.menu-item-has-children {
   position: relative;

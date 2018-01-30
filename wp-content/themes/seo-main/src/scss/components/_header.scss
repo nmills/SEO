@@ -2,10 +2,10 @@
 
 header {
   padding-bottom: 20px;
-  background: $light-blue;
+  border-bottom: 2px solid $light-gray;
 
   a {
-    color: $white;
+    color: $light-blue;
   }
 }
 
@@ -55,10 +55,10 @@ header {
   }
 
   .c-mainnav__donate {
-    background: $white;
+    background: $light-gray;
     text-align: center;
     padding: 10px 15px;
-    color: $light-blue;
+    color: $white;
   }
 }
 
