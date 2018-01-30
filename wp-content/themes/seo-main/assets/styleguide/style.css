@@ -1435,3 +1435,20 @@ header {
     width: calc(33.33333% - 20px);
     float: left;
     margin-left: 15px; }
+
+/* Footer */
+.c-footer__logo {
+  width: calc(16.66667%);
+  float: left;
+  margin-left: 0; }
+
+.c-footer__widgets {
+  width: calc(83.33333%);
+  float: left;
+  margin-left: 0; }
+
+.c-footer__copyrights {
+  width: calc(100%);
+  float: left;
+  margin-left: 0;
+  text-align: center; }
