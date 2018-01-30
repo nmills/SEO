@@ -14,11 +14,15 @@
   <div class="c-menu__container">
     <ul class="c-menu__list" data-responsive-menu="drilldown large-dropdown">
     {% for item in menu.get_items %}
-      <li class="c-menu__list-item">
+       {% set has_children = item.get_children %}
+        {% if has_children %}
+          <li class="c-menu__list-item has-child">
+        {% else %}
+          <li class="c-menu__list-item">
+        {% endif %}
         <a href="{{item.get_link}}">{{item.title}}</a>
-        {% if item.get_children %}
+        {% if has_children %}
         <ul class="c-menu__sublist">
-          <li class="back"><a href="#">Back</a></li>
           {% for child in item.get_children %}
             <li class="c-menu__sublist-item"><a href="{{child.get_link}}">{{child.title}}</a></li>
           {% endfor %}
