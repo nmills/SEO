@@ -23,7 +23,7 @@ header {
     @include grid-column(8, $no-gutter);
 
     @include grid-media($lg) {
-      @include grid-column(3, $no-gutter);
+      @include grid-column(4, $no-gutter);
     }
 
 

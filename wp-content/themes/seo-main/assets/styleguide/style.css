@@ -1369,7 +1369,7 @@ header {
     margin-left: 0; }
     @media only screen and (min-width: 1024px) {
       .c-nav .c-logo__container {
-        width: calc(25%);
+        width: calc(33.33333%);
         float: left;
         margin-left: 0; } }
     .c-nav .c-logo__container .c-logo__image {

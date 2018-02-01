@@ -1,0 +1,142 @@
+.c-uie__radiobutton.pseudo-class-hover input ~ .c-uie__checkmark {
+  background-color: #ccc;
+}
+
+.c-uie__radiobutton input.pseudo-class-checked ~ .c-uie__checkmark:after {
+  display: block;
+  background: #7cb4f6;
+  border: none;
+}
+
+.c-uie__checkbox.pseudo-class-hover input ~ .c-uie__checkmark {
+  background-color: #ccc;
+}
+
+.c-uie__checkbox input.pseudo-class-checked ~ .c-uie__checkmark:after {
+  display: block;
+  background: #7cb4f6;
+  border: none;
+}
+
+.c-uie__input input.pseudo-class-hover,
+.c-uie__input input.pseudo-class-active,
+.c-uie__input input.pseudo-class-focus {
+  box-shadow: none;
+  border: none;
+  border-bottom: 4px solid #141413;
+  color: #7cb4f6;
+  padding-bottom: 1px;
+}
+
+.c-uie__input input.pseudo-class-hover::placeholder,
+.c-uie__input input.pseudo-class-active::placeholder,
+.c-uie__input input.pseudo-class-focus::placeholder {
+  color: #7cb4f6;
+}
+
+.c-uie__input input.pseudo-class-hover::-webkit-input-placeholder,
+.c-uie__input input.pseudo-class-active::-webkit-input-placeholder,
+.c-uie__input input.pseudo-class-focus::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #7cb4f6;
+}
+
+.c-uie__input input.pseudo-class-hover::-moz-placeholder,
+.c-uie__input input.pseudo-class-active::-moz-placeholder,
+.c-uie__input input.pseudo-class-focus::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #7cb4f6;
+}
+
+.c-uie__input input.pseudo-class-hover:-ms-input-placeholder,
+.c-uie__input input.pseudo-class-active:-ms-input-placeholder,
+.c-uie__input input.pseudo-class-focus:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #7cb4f6;
+}
+
+.c-uie__input input.pseudo-class-hover:-moz-placeholder,
+.c-uie__input input.pseudo-class-active:-moz-placeholder,
+.c-uie__input input.pseudo-class-focus:-moz-placeholder {
+  /* Firefox 18- */
+  color: #7cb4f6;
+}
+
+.c-uie__calltoaction.pseudo-class-hover:before,
+.c-uie__calltoaction.pseudo-class-hover:after {
+  transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+  width: 100%;
+}
+
+.c-uie__calltoaction-secondary.pseudo-class-hover:before,
+.c-uie__calltoaction-secondary.pseudo-class-hover:after {
+  transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+  width: 100%;
+  height: 100%;
+}
+
+.c-uie__dropdown-option.pseudo-class-hover {
+  color: #7cb4f6;
+  transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.c-uie__dropdown-option.pseudo-class-hover:before {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #141413;
+  width: 50%;
+  bottom: 50%;
+  right: 0;
+}
+
+.c-rte a.pseudo-class-hover,
+.c-rte a.pseudo-class-focus,
+.c-rte__link.pseudo-class-hover,
+.c-rte__link.pseudo-class-focus {
+  color: #7cb4f6;
+  border-bottom: 2px solid #141413;
+}
+
+.slick-list.pseudo-class-focus {
+  outline: none;
+}
+
+.mfp-preloader a.pseudo-class-hover {
+  color: #FFF;
+}
+
+.mfp-close.pseudo-class-hover,
+.mfp-close.pseudo-class-focus {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.mfp-close.pseudo-class-active {
+  top: 1px;
+}
+
+.mfp-arrow.pseudo-class-active {
+  margin-top: -54px;
+}
+
+.mfp-arrow.pseudo-class-hover,
+.mfp-arrow.pseudo-class-focus {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.c-nav .c-menu__container .c-menu__list .c-menu__list-item.has-child.pseudo-class-hover .c-menu__sublist {
+  display: block;
+}
+
+.c-nav .c-menu__container .c-menu__list .c-menu__sublist li.pseudo-class-hover {
+  border-bottom-color: #7cb4f6;
+}
+
+.menu.pseudo-class-hover .sub-menu {
+  display: block;
+}
+
+.menu .sub-menu li.pseudo-class-hover {
+  border-bottom-color: #7cb4f6;
+}
