@@ -11,6 +11,10 @@
       <h1 class="c-logo__text"><a href="{{site.url}}" class="c-logo__link">{{site.title}}</a></h1>
     {% endif %}
   </div>
+  <div class="c-menu__hamburger">
+    <button class="hamburger">&#9776;</button>
+    <button class="cross">&#735;</button>
+  </div>
   <div class="c-menu__container">
     <ul class="c-menu__list" data-responsive-menu="drilldown large-dropdown">
     {% for item in menu.get_items %}
