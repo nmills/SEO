@@ -60,19 +60,30 @@ class BSDStarterSite extends TimberSite {
 
     if (!is_admin()) {
       wp_deregister_script('jquery');
-      wp_enqueue_script( 'parent-jquery', get_template_directory_uri() . '/src/js/vendor/jquery.js', array(), '2.1.14', false );
-      wp_enqueue_script( 'parent-site-js', get_template_directory_uri() . '/assets/js/source.dev.js', array( 'jquery' ), '0.0.3', true );
-      wp_enqueue_script( 'child-jquery', get_stylesheet_directory_uri() . '/src/js/vendor/jquery.js', array(), '2.1.14', false );
-      wp_enqueue_script( 'child-site-js', get_stylesheet_directory_uri() . '/assets/js/source.dev.js', array( 'jquery' ), '0.0.3', true );
+      wp_enqueue_script( 'jquery', get_stylesheet_directory_uri() . '/src/js/vendor/jquery.js', array(), '2.1.14', false );
+      if ( get_template_directory_uri() != get_stylesheet_directory_uri()) {
+        wp_enqueue_script( 'parent-site-js', get_template_directory_uri() . '/assets/js/source.dev.js', array( 'jquery' ), '0.0.3', true );
+
+        wp_enqueue_script( 'child-site-js', get_stylesheet_directory_uri() . '/assets/js/source.dev.js', array( 'jquery' ), '0.0.3', true );
+      } else {
+        wp_enqueue_script( 'parent-site-js', get_template_directory_uri() . '/assets/js/source.dev.js', array( 'jquery' ), '0.0.3', true );
+      }
+      
 
       //Adding child style css and making sure that it loads after the parent css so that it can be overidden for smaller tweaks.
       $parent_style = 'parent-style';
-      wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-      wp_enqueue_style( 'child-style',
+      if ( get_template_directory_uri() != get_stylesheet_directory_uri()) {
+        wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+        wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/style.css',
         array( $parent_style ),
         wp_get_theme()->get('Version')
       );
+      } else {
+         wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+      }
+      
+
     }
 
 
