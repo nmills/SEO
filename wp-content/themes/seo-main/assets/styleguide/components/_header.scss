@@ -5,7 +5,7 @@ header {
   border-bottom: 2px solid $light-gray !important;
 
   a {
-    color: $light-blue !important; 
+    color: $light-blue;
   }
 }
 
@@ -15,28 +15,119 @@ header {
   position: relative;
 
   .c-logo__container {
-    @include grid-column(3, $no-gutter);
+    @include grid-column(8, $no-gutter);
+
+    @include grid-media($lg) {
+      @include grid-column(3, $no-gutter);
+    }
+
 
     .c-logo__image {
       @include grid-column(6, $no-gutter);
+
+      @include grid-media($lg) {
+        @include grid-column(12, $no-gutter);
+      }
     }
   }
 
   .c-menu__container {
-    @include grid-column(9, $no-gutter);
+    @include grid-column(12, $no-gutter);
 
     float: right;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    left: 0;
+    top: 110px;
+    background: rgb(124, 180, 246);
+    display: none;
+
+    @include grid-media($lg) {
+      @include grid-column(9, $no-gutter);
+
+      display: block !important;
+      right: 0;
+      bottom: 0;
+      left: unset;
+      top: unset;
+      background: none;
+    }
+
 
     .c-menu__list {
-      float: right;
+      @include grid-media($lg) {
+        float: right;
+      }
+
 
       .c-menu__list-item {
+        @include grid-column(12, $no-gutter);
+
         display: inline-block;
         padding: 0 10px;
+        text-align: center;
+
+        a {
+          color: $white;
+        }
+
+        @include grid-media($lg) {
+          width: auto;
+
+          a {
+            color: $light-blue;
+          }
+        }
       }
+
+      .c-menu__list-item.has-child {
+        position: relative;
+        display: inline-block;
+
+        &:hover {
+          .c-menu__sublist {
+            display: block;
+          }
+        }
+      }
+
+      .c-menu__sublist {
+        display: none;
+        min-width: 160px;
+        padding: 12px 16px;
+        z-index: 1;
+
+        a {
+          color: $white;
+        }
+
+        @include grid-media($lg) {
+          position: absolute;
+          width: auto;
+          background-color: #f9f9f9;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+          a {
+            color: $light-blue;
+          }
+        }
+
+
+        li {
+          border-bottom: 2px solid $white;
+
+          &:hover {
+            border-bottom-color: $light-blue;
+          }
+        }
+      }
+    }
+  }
+
+  .c-menu__hamburger {
+    display: block;
+
+    @include grid-media($lg) {
+      display: none;
     }
   }
 }
@@ -45,9 +136,15 @@ header {
   @include grid-column(12, $no-gutter);
 
   .c-mainnav__content {
-    @include grid-column(3, $no-gutter);
+    @include grid-column(8, $no-gutter);
 
     float: right;
+
+    @include grid-media($md) {
+      @include grid-column(3, $no-gutter);
+
+      float: right;
+    }
   }
 
   .menu-site-menu-container, .textwidget.custom-html-widget {
@@ -62,6 +159,40 @@ header {
   }
 }
 
+// ----------------
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 5px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+
+.cross {
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 7px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+
+// ----------------
 .menu {
   .menu-item.menu-item-has-children {
     position: relative;
@@ -75,41 +206,6 @@ header {
   }
 
   .sub-menu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    z-index: 1;
-
-    a {
-      color: $light-blue;
-    }
-
-    li {
-      border-bottom: 2px solid $white;
-
-      &:hover {
-        border-bottom-color: $light-blue;
-      }
-    }
-  }
-}
-
-.c-menu__list {
-  .c-menu__list-item.has-child {
-    position: relative;
-    display: inline-block;
-  }
-
-  &:hover {
-    .c-menu__sublist {
-      display: block;
-    }
-  }
-
-  .c-menu__sublist {
     display: none;
     position: absolute;
     background-color: #f9f9f9;

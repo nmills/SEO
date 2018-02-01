@@ -1,7 +1,11 @@
 /* Footer */
 
 .c-footer__logo {
-  @include grid-column(2, $no-gutter);
+  @include grid-column(4, $no-gutter);
+
+  @include grid-media($lg) {
+    @include grid-column(2, $no-gutter);
+  }
 }
 
 .c-footer__widgets {

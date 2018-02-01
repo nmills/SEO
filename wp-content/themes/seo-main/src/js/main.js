@@ -8,7 +8,7 @@ import jquery from 'jquery';
 // import qtip from 'modules/qtip.js';
 // import accordion from 'modules/accordion.js';
 // import galleryWidget from 'modules/galleryWidget.js';
-// import custom from 'modules/custom.js';
+import custom from 'modules/custom.js';
 
 (function($) {
   $( document ).ready(function() {
