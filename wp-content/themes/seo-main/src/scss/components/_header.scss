@@ -6,6 +6,11 @@ header {
 
   a {
     color: $light-blue;
+    font-size: 15px;
+
+    @include grid-media($lg) {
+      font-size: 17px;
+    }
   }
 }
 
@@ -25,8 +30,17 @@ header {
     .c-logo__image {
       @include grid-column(6, $no-gutter);
 
+      @include grid-media($sm) {
+        @include grid-column(4, $no-gutter);
+      }
+
+
+      // @include grid-media($md) {
+      //   @include grid-column(12, $no-gutter);
+      // }
+
       @include grid-media($lg) {
-        @include grid-column(12, $no-gutter);
+        @include grid-column(5, $no-gutter);
       }
     }
   }
@@ -37,7 +51,7 @@ header {
     float: right;
     position: absolute;
     left: 0;
-    top: 110px;
+    top: calc(100% + 20px);
     background: rgb(124, 180, 246);
     display: none;
 
@@ -136,9 +150,16 @@ header {
   @include grid-column(12, $no-gutter);
 
   .c-mainnav__content {
-    @include grid-column(8, $no-gutter);
+    @include grid-column(8.5, $no-gutter);
 
     float: right;
+
+    @include grid-media($sm) {
+      @include grid-column(5, $no-gutter);
+
+      float: right;
+    }
+
 
     @include grid-media($md) {
       @include grid-column(3, $no-gutter);

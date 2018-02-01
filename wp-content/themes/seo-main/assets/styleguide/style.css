@@ -1352,7 +1352,11 @@ header {
   padding-bottom: 20px !important;
   border-bottom: 2px solid #e5e7e7 !important; }
   header a {
-    color: #7cb4f6; }
+    color: #7cb4f6;
+    font-size: 15px; }
+    @media only screen and (min-width: 1024px) {
+      header a {
+        font-size: 17px; } }
 
 .c-nav {
   width: calc(100%);
@@ -1372,9 +1376,14 @@ header {
       width: calc(50%);
       float: left;
       margin-left: 0; }
+      @media only screen and (min-width: 480px) {
+        .c-nav .c-logo__container .c-logo__image {
+          width: calc(33.33333%);
+          float: left;
+          margin-left: 0; } }
       @media only screen and (min-width: 1024px) {
         .c-nav .c-logo__container .c-logo__image {
-          width: calc(100%);
+          width: calc(41.66667%);
           float: left;
           margin-left: 0; } }
   .c-nav .c-menu__container {
@@ -1384,7 +1393,7 @@ header {
     float: right;
     position: absolute;
     left: 0;
-    top: 110px;
+    top: calc(100% + 20px);
     background: #7cb4f6;
     display: none; }
     @media only screen and (min-width: 1024px) {
@@ -1450,10 +1459,16 @@ header {
   float: left;
   margin-left: 0; }
   .c-mainnav .c-mainnav__content {
-    width: calc(66.66667%);
+    width: calc(70.83333%);
     float: left;
     margin-left: 0;
     float: right; }
+    @media only screen and (min-width: 480px) {
+      .c-mainnav .c-mainnav__content {
+        width: calc(41.66667%);
+        float: left;
+        margin-left: 0;
+        float: right; } }
     @media only screen and (min-width: 768px) {
       .c-mainnav .c-mainnav__content {
         width: calc(25%);
