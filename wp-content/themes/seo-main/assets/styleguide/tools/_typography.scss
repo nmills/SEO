@@ -1,6 +1,6 @@
 // TYPOGRAPHY
 
-$sans-stack: 'MarkForMC', Helvetica Neue, Helvetica, Arial, sans-serif;
+$sans-stack: 'Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
 
 @mixin default($color: $dark-gray-one) {
   font-family: $sans-stack;
@@ -172,4 +172,8 @@ strong {
 
 em {
   font-style: italic;
+}
+
+a {
+  text-decoration: none;
 }

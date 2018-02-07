@@ -7,43 +7,46 @@ Version: 1.0.0
 Description: Seo Main Site Theme
 */
 
-// General Settings
+// Neat Bourbon
+@import "../../node_modules/bourbon/core/bourbon";
+@import "../../node_modules/bourbon-neat/core/neat";
+
+// Settings
+// Used with preprocessors and contain font, colors definitions, etc.
 // =====================
-@import "variables";
+@import "settings/variables";
+@import "settings/fonts";
 
-// Foundation
+// Generic
+// Reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.
+@import "generic/reset";
+
+// Tools
+// Globally used mixins and functions
+@import "tools/typography";
+
+// @import "tools/mixins";
+@import "tools/layout";
+@import "tools/animation";
+
+// Components
+// Specific UI components
+
+@import "components/ui-elements";
+@import "components/rich-text-editor";
+
+// Vendor Styles
+// Styles included with plugins, etc
 // ======================
-@import "foundation-sites/scss/foundation";
-
-// Initialize Foundation components
-@include foundation-callout;
-@include foundation-global-styles;
-@include foundation-grid;
-@include foundation-typography;
-@include foundation-menu;
-@include off-canvas-basics;
-@include foundation-title-bar;
-@include foundation-visibility-classes;
-@include foundation-forms;
-@include foundation-button;
-@include foundation-dropdown;
-@include foundation-dropdown-menu;
-@include foundation-drilldown-menu;
-@include foundation-media-object;
-
-// Other Vendor Styles
-// ======================
-@import "vendor/fontawesome/font-awesome";
 @import "vendor/slick";
 @import "vendor/magnific-popup";
 
-// Site Styles
-// ======================
-@import "components/site-header";
-@import "components/primary-nav";
-@import "components/quote";
-@import "components/ctas";
+// Overrides
+// Utilities and helper classes with ability to override anything which goes before
+@import "overrides/utility";
+@import "overrides/overrides";
 
-// Utility
-// ======================
-@import "utility";
+//Layouts
+@import "components/header";
+@import "components/search";
+@import "components/footer";

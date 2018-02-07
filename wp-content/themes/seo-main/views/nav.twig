@@ -1,21 +1,34 @@
-<aside class="primary-nav row" id="primaryNav" data-off-canvas data-position="right">
-  <div class="small-12 large-6 columns">
+<div class="c-mainnav">
+  <div class="c-mainnav__content">
+    {{header_widget}}
+  </div>
+</div>
+<aside class="c-nav" id="c-nav" data-off-canvas data-position="right">
+  <div class="c-logo__container">
     {% if logo[0] %}
-      <a href="{{site.url}}" class="show-for-large"><img src="{{logo[0]}}"></a>
+      <a href="{{site.url}}" class="c-logo__link"><img src="{{logo[0]}}" class="c-logo__image"></a>
     {% else %}
-      <h1 class="show-for-large"><a href="{{site.url}}">{{site.title}}</a></h1>
+      <h1 class="c-logo__text"><a href="{{site.url}}" class="c-logo__link">{{site.title}}</a></h1>
     {% endif %}
   </div>
-  <div class="small-12 large-6 columns">
-    <ul class="menu vertical large-horizontal" data-responsive-menu="drilldown large-dropdown">
+  <div class="c-menu__hamburger">
+    <button class="hamburger">&#9776;</button>
+    <button class="cross">&#735;</button>
+  </div>
+  <div class="c-menu__container">
+    <ul class="c-menu__list" data-responsive-menu="drilldown large-dropdown">
     {% for item in menu.get_items %}
-      <li>
+       {% set has_children = item.get_children %}
+        {% if has_children %}
+          <li class="c-menu__list-item has-child">
+        {% else %}
+          <li class="c-menu__list-item">
+        {% endif %}
         <a href="{{item.get_link}}">{{item.title}}</a>
-        {% if item.get_children %}
-        <ul class="nested menu submenu vertical">
-          <li class="back"><a href="#">Back</a></li>
+        {% if has_children %}
+        <ul class="c-menu__sublist">
           {% for child in item.get_children %}
-            <li><a href="{{child.get_link}}">{{child.title}}</a></li>
+            <li class="c-menu__sublist-item"><a href="{{child.get_link}}">{{child.title}}</a></li>
           {% endfor %}
         </ul> <!-- /.menu.nested -->
         {% endif %}

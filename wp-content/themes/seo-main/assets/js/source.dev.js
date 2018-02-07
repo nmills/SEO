@@ -2322,14 +2322,14 @@ window.matchMedia||(window.matchMedia=function(){"use strict";var a=window.style
 /* eslint-env browser */
 'use strict';
 
-var _jquery=typeof window!=="undefined"?window['jQuery']:typeof global!=="undefined"?global['jQuery']:null;var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
-// import prepInputs from 'modules/prepinputs.js';
-// import socialShare from 'modules/socialShare.js';
-// import carousel from 'modules/carousel.js';
-// import qtip from 'modules/qtip.js';
-// import accordion from 'modules/accordion.js';
-// import galleryWidget from 'modules/galleryWidget.js';
-// import custom from 'modules/custom.js';
+var _jquery=typeof window!=="undefined"?window['jQuery']:typeof global!=="undefined"?global['jQuery']:null;var _jquery2=_interopRequireDefault(_jquery);
+
+
+
+
+
+
+var _custom=require('modules/custom.js');var _custom2=_interopRequireDefault(_custom);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
 
 (function($){
 $(document).ready(function(){
@@ -2366,10 +2366,48 @@ function ready(){
 // Initialize Gallery Slider
 // galleryWidget();
 
-custom();
+(0,_custom2.default)();
 }
-})(_jquery2.default);
+})(_jquery2.default);// import prepInputs from 'modules/prepinputs.js';
+// import socialShare from 'modules/socialShare.js';
+// import carousel from 'modules/carousel.js';
+// import qtip from 'modules/qtip.js';
+// import accordion from 'modules/accordion.js';
+// import galleryWidget from 'modules/galleryWidget.js';
 
 }).call(this,typeof global!=="undefined"?global:typeof self!=="undefined"?self:typeof window!=="undefined"?window:{});
+
+},{"modules/custom.js":2}],2:[function(require,module,exports){
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=
+
+
+
+function(){
+$(".c-uie__dropdown-heading").hover(
+function(){
+$(".c-uie__dropdown-heading .c-uie__dropdown-options").addClass("drop");
+},
+function(){
+$(".c-uie__dropdown-heading .c-uie__dropdown-options").removeClass("drop");
+});
+
+
+$(".cross").hide();
+// $( ".c-menu__container" ).hide();
+
+$(".hamburger").click(function(){
+$(".c-menu__container").slideToggle("slow",function(){
+$(".hamburger").hide();
+$(".cross").show();
+});
+});
+
+$(".cross").click(function(){
+$(".c-menu__container").slideToggle("slow",function(){
+$(".cross").hide();
+$(".hamburger").show();
+});
+});
+};
 
 },{}]},{},[1]);

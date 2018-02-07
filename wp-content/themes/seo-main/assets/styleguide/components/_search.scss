@@ -1,0 +1,17 @@
+/* Search Field */
+
+.c-searchform {
+  @include grid-column(12, $no-gutter);
+
+  .c-searchform__textfield {
+    input {
+      @include grid-column(8);
+    }
+  }
+
+  .c-searchform__button {
+    input {
+      @include grid-column(4);
+    }
+  }
+}

@@ -1,83 +1,27 @@
 // FONTS
-$temp-path: '../mastercard-foundation/';
-$perm-path: '/wp-content/themes/mastercard-foundation/';
-
-// @font-face {
-//   font-family: "MarkForMC";
-//   src: url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCExtraLt.eot");
-//   src: url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCExtraLt.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCExtraLt.woff") format("woff"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCExtraLt.ttf") format("truetype"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCExtraLt.svg#MarkForMCExtraLt") format("svg");
-//   font-weight: 100;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "MarkForMC";
-//   src: url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCLt.eot");
-//   src: url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCLt.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCLt.woff") format("woff"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCLt.ttf") format("truetype"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCLt.svg#MarkForMCLt") format("svg");
-//   font-weight: 200;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "MarkForMC";
-//   src: url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCBook.eot");
-//   src: url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCBook.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCBook.woff") format("woff"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCBook.ttf") format("truetype"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCBook.svg#MarkForMCBook") format("svg");
-//   font-weight: 300;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "MarkForMC";
-//   src: url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCMed.eot");
-//   src: url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCMed.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCMed.woff") format("woff"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCMed.ttf") format("truetype"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCMed.svg#MarkForMCMed") format("svg");
-//   font-weight: 500;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "MarkForMC";
-//   src: url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCBold.eot");
-//   src: url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCBold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCBold.woff") format("woff"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCBold.ttf") format("truetype"), url("/wp-content/themes/mastercard-foundation/assets/fonts/MarkForMCBold.svg#MarkForMCBold") format("svg");
-//   font-weight: 700;
-//   font-style: normal;
-// }
+$temp-path: "../seo-main/";
+$perm-path: "/wp-content/themes/seo-main/";
 
 @font-face {
-  font-family: "MarkForMC";
-  src: url("assets/fonts/MarkForMCExtraLt.eot");
-  src: url("assets/fonts/MarkForMCExtraLt.eot?#iefix") format("embedded-opentype"), url("assets/fonts/MarkForMCExtraLt.woff") format("woff"), url("assets/fonts/MarkForMCExtraLt.ttf") format("truetype"), url("assets/fonts/MarkForMCExtraLt.svg#MarkForMCExtraLt") format("svg");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "MarkForMC";
-  src: url("assets/fonts/MarkForMCLt.eot");
-  src: url("assets/fonts/MarkForMCLt.eot?#iefix") format("embedded-opentype"), url("assets/fonts/MarkForMCLt.woff") format("woff"), url("assets/fonts/MarkForMCLt.ttf") format("truetype"), url("assets/fonts/MarkForMCLt.svg#MarkForMCLt") format("svg");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "MarkForMC";
-  src: url("assets/fonts/MarkForMCBook.eot");
-  src: url("assets/fonts/MarkForMCBook.eot?#iefix") format("embedded-opentype"), url("assets/fonts/MarkForMCBook.woff") format("woff"), url("assets/fonts/MarkForMCBook.ttf") format("truetype"), url("assets/fonts/MarkForMCBook.svg#MarkForMCBook") format("svg");
+  font-family: "Grotesk";
+  src: url("assets/fonts/Grotesk/HKGrotesk-Regular.eot");
+  src: url("assets/fonts/Grotesk/HKGrotesk-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Grotesk/HKGrotesk-Regular.woff") format("woff"), url("assets/fonts/Grotesk/HKGrotesk-Regular.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "MarkForMC";
-  src: url("assets/fonts/MarkForMCMed.eot");
-  src: url("assets/fonts/MarkForMCMed.eot?#iefix") format("embedded-opentype"), url("assets/fonts/MarkForMCMed.woff") format("woff"), url("assets/fonts/MarkForMCMed.ttf") format("truetype"), url("assets/fonts/MarkForMCMed.svg#MarkForMCMed") format("svg");
-  font-weight: 500;
+  font-family: "Grotesk";
+  src: url("assets/fonts/Grotesk/HKGrotesk-Light.eot");
+  src: url("assets/fonts/Grotesk/HKGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Grotesk/HKGrotesk-Light.woff") format("woff"), url("assets/fonts/Grotesk/HKGrotesk-Light.ttf") format("truetype");
+  font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "MarkForMC";
-  src: url("assets/fonts/MarkForMCBold.eot");
-  src: url("assets/fonts/MarkForMCBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/MarkForMCBold.woff") format("woff"), url("assets/fonts/MarkForMCBold.ttf") format("truetype"), url("assets/fonts/MarkForMCBold.svg#MarkForMCBold") format("svg");
+  font-family: "Grotesk";
+  src: url("assets/fonts/Grotesk/HKGrotesk-Bold.eot");
+  src: url("assets/fonts/Grotesk/HKGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Grotesk/HKGrotesk-Bold.woff") format("woff"), url("assets/fonts/Grotesk/HKGrotesk-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
