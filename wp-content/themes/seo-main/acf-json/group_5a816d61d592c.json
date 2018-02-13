@@ -1,0 +1,52 @@
+{
+    "key": "group_5a816d61d592c",
+    "title": "region: full width",
+    "fields": [
+        {
+            "key": "field_5a816d78e7d67",
+            "label": "region: full width",
+            "name": "region:_full_width",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Add Full Width",
+            "min": "",
+            "max": "",
+            "layouts": [
+                {
+                    "key": "5a816d882a2be",
+                    "name": "",
+                    "label": "",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1518444230
+}

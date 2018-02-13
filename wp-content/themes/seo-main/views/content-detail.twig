@@ -10,13 +10,13 @@
           {% endblock %}
         </header> <!-- /.article-header -->
         <section class="entry-content" itemprop="articleBody">
-          {% if post.get_thumbnail %} 
-            <img src="{{post.thumbnail.src}}" alt="{{post.thumbnail.alt}}">
-          {% endif %}
-          {{post.content}}
-          {% for comp in post.get_field('multi_content_component') %}
-            {% include ['components/'~comp.acf_fc_layout~'.twig' , 'partials/template_not_found.twig'] ignore missing with {"comp": comp} %}
+
+          {# Amalan new codes #}
+          {% for region in post.get_field('template:_content_detail') %}
+            {% include ['region/'~region.acf_fc_layout~'.twig' , 'region/region.twig'] ignore missing with {"region": region} %}
           {% endfor %}
+          {# End of lines from amalan #}
+
         </section> <!-- /.entry-content -->
         {% block article_footer %}
         {% endblock %}
