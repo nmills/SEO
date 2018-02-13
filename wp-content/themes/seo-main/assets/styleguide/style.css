@@ -837,24 +837,114 @@ sg-wrapper:
 
 Styleguide 1.3
 */
+blockquote,
 .c-rte__offset-quote {
-  width: 50%;
+  width: 40%;
   float: right;
   padding: 20px;
   background: #e5e7e7;
   border-bottom-right-radius: 150px;
-  padding-right: 15%; }
+  padding-right: 10%; }
+  blockquote p,
   .c-rte__offset-quote p {
     font-size: 25px;
     color: #141413; }
-    .c-rte__offset-quote p span {
+    blockquote p em,
+    .c-rte__offset-quote p em {
       float: left;
       display: inline-block;
       width: 100%;
       font-weight: bold;
       text-transform: uppercase;
       font-size: 12px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      font-style: normal;
+      margin-left: 60px;
+      margin-bottom: 60px; }
+
+/*
+Bullet Points
+
+markup:
+<div class="c-rte">
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+    <li>List item 5</li>
+  </ul>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 1.4
+*/
+.c-rte ul li {
+  position: relative;
+  padding-left: 40px;
+  line-height: 1; }
+  .c-rte ul li:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 10px;
+    background: #820d1b;
+    position: absolute;
+    left: 0;
+    top: 5px; }
+  .c-rte ul li:after {
+    content: "";
+    display: block;
+    margin-bottom: 25px; }
+
+/*
+Numbered List
+
+markup:
+<div class="c-rte">
+  <ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+    <li>List item 5</li>
+  </ol>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 1.5
+*/
+.c-rte ol li {
+  position: relative;
+  padding-left: 40px;
+  line-height: 1;
+  counter-increment: table-ol; }
+  .c-rte ol li:before {
+    content: counter(table-ol);
+    position: absolute;
+    left: 0;
+    color: #820d1b;
+    font-weight: bold; }
+  .c-rte ol li:after {
+    content: "";
+    display: block;
+    margin-bottom: 25px; }
 
 /* Slider */
 .slick-slider {
