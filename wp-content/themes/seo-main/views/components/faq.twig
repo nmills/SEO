@@ -1,0 +1,11 @@
+<div class="container faq">
+    
+    {{component.subheading}}
+
+    
+    {% for faq in component.repeater %}
+        {{faq.question}}
+        {{faq.answer}}
+    {% endfor %}
+
+</div>
