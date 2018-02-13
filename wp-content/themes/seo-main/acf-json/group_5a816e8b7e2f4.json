@@ -163,6 +163,68 @@
                                     ],
                                     "min": "",
                                     "max": ""
+                                },
+                                {
+                                    "key": "5a829120d8fbf",
+                                    "name": "slideshow",
+                                    "label": "slideshow",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5a829127d8fc0",
+                                            "label": "slideshow",
+                                            "name": "slideshow",
+                                            "type": "clone",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "clone": [
+                                                "group_5a827955cf48b"
+                                            ],
+                                            "display": "seamless",
+                                            "layout": "block",
+                                            "prefix_label": 0,
+                                            "prefix_name": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                {
+                                    "key": "5a82914fd8fc1",
+                                    "name": "faq",
+                                    "label": "faq",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5a829154d8fc2",
+                                            "label": "faq",
+                                            "name": "faq",
+                                            "type": "clone",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "clone": [
+                                                "group_5a827a1dd7b5d"
+                                            ],
+                                            "display": "seamless",
+                                            "layout": "block",
+                                            "prefix_label": 0,
+                                            "prefix_name": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
                                 }
                             ]
                         }
@@ -190,5 +252,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1518503650
+    "modified": 1518506344
 }
