@@ -129,18 +129,22 @@
   filter: alpha(opacity=100);
 }
 
+.c-nav .c-menu__container .c-menu__list .c-menu__list-item.has-child.pseudo-class-hover {
+  background: #141413;
+}
+
 .c-nav .c-menu__container .c-menu__list .c-menu__list-item.has-child.pseudo-class-hover .c-menu__sublist {
   display: block;
 }
 
-.c-nav .c-menu__container .c-menu__list .c-menu__sublist li.pseudo-class-hover {
-  border-bottom-color: #7cb4f6;
+.c-nav .c-menu__container .c-menu__list .c-menu__sublist li.pseudo-class-hover a {
+  color: #ffffff;
 }
 
 .menu.pseudo-class-hover .sub-menu {
   display: block;
 }
 
-.menu .sub-menu li.pseudo-class-hover {
-  border-bottom-color: #7cb4f6;
+.menu .sub-menu li.pseudo-class-hover a {
+  color: #ffffff;
 }

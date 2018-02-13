@@ -1,9 +1,4 @@
 <div class="c-mainnav">
-  <div class="c-mainnav__content">
-    {{header_widget}}
-  </div>
-</div>
-<aside class="c-nav" id="c-nav" data-off-canvas data-position="right">
   <div class="c-logo__container">
     {% if logo[0] %}
       <a href="{{site.url}}" class="c-logo__link"><img src="{{logo[0]}}" class="c-logo__image"></a>
@@ -11,6 +6,11 @@
       <h1 class="c-logo__text"><a href="{{site.url}}" class="c-logo__link">{{site.title}}</a></h1>
     {% endif %}
   </div>
+  <div class="c-mainnav__content">
+    {{header_widget}}
+  </div>
+</div>
+<aside class="c-nav" id="c-nav" data-off-canvas data-position="right">
   <div class="c-menu__hamburger">
     <button class="hamburger">&#9776;</button>
     <button class="cross">&#735;</button>
