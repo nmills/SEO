@@ -104,12 +104,11 @@ blockquote,
   border-bottom-right-radius: 150px;
   padding-right: 10%;
   margin-left: 30px;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
   @include grid-media($lg) {
-    
-  margin-left: 60px;
-  margin-bottom: 60px;
+    margin-left: 60px;
+    margin-bottom: 60px;
   }
 
 

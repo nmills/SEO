@@ -2327,13 +2327,13 @@ var _jquery=typeof window!=="undefined"?window['jQuery']:typeof global!=="undefi
 
 
 
+var _accordion=require('modules/accordion.js');var _accordion2=_interopRequireDefault(_accordion);
 
-
-var _custom=require('modules/custom.js');var _custom2=_interopRequireDefault(_custom);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
-
-(function($){
-$(document).ready(function(){
-ready();
+var _custom=require('modules/custom.js');var _custom2=_interopRequireDefault(_custom);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// import prepInputs from 'modules/prepinputs.js';
+// import socialShare from 'modules/socialShare.js';
+// import carousel from 'modules/carousel.js';
+// import qtip from 'modules/qtip.js';
+(function($){$(document).ready(function(){ready();
 
 // Styleguide event when an element is rendered
 $(window).bind("styleguide:onRendered",function(e){
@@ -2356,7 +2356,7 @@ function ready(){
 // qtip();
 
 // Initialize accordion
-// accordion();
+(0,_accordion2.default)();
 
 // Initialize Plugins
 // $('.magnific-trigger').magnificPopup({
@@ -2368,16 +2368,42 @@ function ready(){
 
 (0,_custom2.default)();
 }
-})(_jquery2.default);// import prepInputs from 'modules/prepinputs.js';
-// import socialShare from 'modules/socialShare.js';
-// import carousel from 'modules/carousel.js';
-// import qtip from 'modules/qtip.js';
-// import accordion from 'modules/accordion.js';
-// import galleryWidget from 'modules/galleryWidget.js';
+})(_jquery2.default);// import galleryWidget from 'modules/galleryWidget.js';
 
 }).call(this,typeof global!=="undefined"?global:typeof self!=="undefined"?self:typeof window!=="undefined"?window:{});
 
-},{"modules/custom.js":2}],2:[function(require,module,exports){
+},{"modules/accordion.js":2,"modules/custom.js":3}],2:[function(require,module,exports){
+'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
+
+
+
+function(){
+$('.toggle').click(function(e){
+e.preventDefault();
+
+var $this=$(this);
+
+// Collapse
+if($this.find('.answer').hasClass('show')){
+$this.find('.answer').removeClass('show');
+$this.removeClass('active');
+$this.find('.answer').slideUp(350);
+}
+// Expand
+else{
+$this.find('.answer').removeClass('show');
+$('.toggle').removeClass('active');
+$this.find('.answer').slideUp(350);
+$this.addClass('active');
+$this.find('.answer').toggleClass('show');
+$this.find('.answer').slideToggle(350);
+}
+console.log($this.find('li .answer'));
+});
+console.log('test');
+};
+
+},{}],3:[function(require,module,exports){
 "use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 

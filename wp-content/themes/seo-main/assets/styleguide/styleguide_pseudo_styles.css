@@ -97,6 +97,10 @@
   border-bottom: 2px solid #141413;
 }
 
+.c-accordion li a.toggle.pseudo-class-hover {
+  color: #eb0029;
+}
+
 .slick-list.pseudo-class-focus {
   outline: none;
 }
