@@ -1,12 +1,12 @@
 {
-    "key": "group_5a816b2a08350",
-    "title": "component: hero image with text",
+    "key": "group_5a827955cf48b",
+    "title": "component: slideshow",
     "fields": [
         {
-            "key": "field_5a816b364e0ed",
-            "label": "hero image",
-            "name": "hero_image",
-            "type": "image",
+            "key": "field_5a82796375ed0",
+            "label": "slideshow",
+            "name": "slideshow",
+            "type": "gallery",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,8 +15,9 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
-            "preview_size": "thumbnail",
+            "min": "",
+            "max": "",
+            "insert": "append",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -25,25 +26,6 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
-        },
-        {
-            "key": "field_5a816b444e0ee",
-            "label": "description",
-            "name": "description",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
         }
     ],
     "location": [
@@ -63,5 +45,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1518444225
+    "modified": 1518500261
 }

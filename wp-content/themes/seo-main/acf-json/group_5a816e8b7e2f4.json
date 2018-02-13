@@ -72,17 +72,46 @@
                                     ],
                                     "min": "",
                                     "max": ""
-                                },
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5a8281957ff99",
+                    "name": "region_main_content",
+                    "label": "region main content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a828016102ce",
+                            "label": "region main content",
+                            "name": "region_main_content",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "button_label": "Add component",
+                            "min": "",
+                            "max": "",
+                            "layouts": [
                                 {
-                                    "key": "5a816fe3bb828",
-                                    "name": "hero_image_with_description",
-                                    "label": "hero image with description",
+                                    "key": "5a828022ead1e",
+                                    "name": "wysiwyg",
+                                    "label": "wysiwyg",
                                     "display": "block",
                                     "sub_fields": [
                                         {
-                                            "key": "field_5a816ff0bb829",
-                                            "label": "hero image with description",
-                                            "name": "hero_image_with_description",
+                                            "key": "field_5a82803f102cf",
+                                            "label": "wysiwyg",
+                                            "name": "wysiwyg",
                                             "type": "clone",
                                             "instructions": "",
                                             "required": 0,
@@ -93,7 +122,38 @@
                                                 "id": ""
                                             },
                                             "clone": [
-                                                "group_5a816b2a08350"
+                                                "group_5a8278f06871c"
+                                            ],
+                                            "display": "seamless",
+                                            "layout": "block",
+                                            "prefix_label": 0,
+                                            "prefix_name": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                {
+                                    "key": "5a82809e872e7",
+                                    "name": "video",
+                                    "label": "video",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5a8280d2872e8",
+                                            "label": "video",
+                                            "name": "video",
+                                            "type": "clone",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "clone": [
+                                                "group_5a8279b723690"
                                             ],
                                             "display": "seamless",
                                             "layout": "block",
@@ -130,5 +190,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1518444232
+    "modified": 1518503650
 }
