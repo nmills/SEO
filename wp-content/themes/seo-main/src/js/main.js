@@ -6,7 +6,7 @@ import jquery from 'jquery';
 // import socialShare from 'modules/socialShare.js';
 // import carousel from 'modules/carousel.js';
 // import qtip from 'modules/qtip.js';
-// import accordion from 'modules/accordion.js';
+import accordion from 'modules/accordion.js';
 // import galleryWidget from 'modules/galleryWidget.js';
 import custom from 'modules/custom.js';
 
@@ -35,7 +35,7 @@ import custom from 'modules/custom.js';
     // qtip();
 
     // Initialize accordion
-    // accordion();
+    accordion();
 
     // Initialize Plugins
     // $('.magnific-trigger').magnificPopup({

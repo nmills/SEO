@@ -1,10 +1,64 @@
-// Full Width Accordion
+/*
+Accodion
+
+Styleguide 4.0
+*/
+
+/*
+Hyperlink
+
+markup:
+<div class="c-accordion__wrapper">
+  <h3>Sub heading</h3>
+  <ul class="c-accordion">
+    <li>
+      <a class="toggle" href="javascript:void(0);">
+        <span class="content-grid">
+          First Question
+        </span>
+        <div class="answer">
+          <p>This is the answer</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="toggle" href="javascript:void(0);">
+        <span class="content-grid">
+          Second
+        </span>
+        <div class="answer">
+          <p>This can be the answer</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 4.1
+*/
 
 .c-accordion__wrapper {
   @include grid-container;
-  border-top: 1px solid $light-gray-two;
-  border-bottom: 1px solid $light-gray-two;
+
   margin: 20px 0;
+
+  h3 {
+    @include type-5;
+
+    font-weight: bold;
+    color: $brown;
+    text-transform: uppercase;
+  margin: 0;
+  }
 }
 
 .c-accordion {
@@ -12,8 +66,7 @@
   padding: 0;
   margin: 0;
 
-  .inner {
-    padding-left: 30px;
+  .answer {
     overflow: hidden;
     display: none;
   }
@@ -22,91 +75,23 @@
     margin: 0;
 
     a.toggle {
+      @include type-2;
+
       width: 100%;
       display: block;
-      @include type-3;
+      font-weight: bold;
       background: $white;
-      padding: 30px;
-      transition: all .3s $cubic-transition;
+      transition: all 0.3s $cubic-transition;
+      border-bottom: 1px solid #dbd7cc;
+      padding: 35px 0;
 
-      &:after {
-        content: '';
-        float: right;
-        width: 24px;
-        height: 24px;
-        background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/icon-plus--black.svg') center center no-repeat;
-      }
-    
       &:hover {
-        color: $white;
-        background-image: linear-gradient(to right, rgba(210, 42, 47, 1) 0%, rgba(255, 103, 27, 1) 100%);
-
-        &:after {
-          background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/icon-plus.svg') center center no-repeat;
-        }
+        color: $red;
       }
 
       &.active {
-        &:after {
-          background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/icon-minus--black.svg') center center no-repeat;
-        }
+        color: $red;
       }
     }
-  }
-}
-
-.c-accordion--with-text {
-  border: none;
-
-  .c-accordion {
-    > li {
-      border-top: 1px solid $light-gray-two;
-
-      a.toggle {
-        @include default($color: $black);
-
-        &:hover,
-        &.active {
-          color: $white;
-          background-image: linear-gradient(to right, rgba(210, 42, 47, 1) 0%, rgba(255, 103, 27, 1) 100%);
-
-          &:after {
-            background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/icon-plus.svg') center center no-repeat;
-          }
-        }
-      }
-
-      &:last-child {
-        border-bottom: 1px solid $light-gray-two;
-      }
-    }
-  }
-}
-
-
-// Accordion with Title
-
-.c-accordion__wrapper--left {
-  @include grid-column(12);
-
-  @include grid-media($md) {
-    @include grid-column(4);
-  }
-
-  h2 {
-    @include type-2-bold($color: $black);
-  }
-
-  a {
-    @include default($color: $black);
-  }
-}
-
-.c-accordion__wrapper--right {
-  @include grid-column(12);
-
-  @include grid-media($md) {
-    @include grid-column(8);
-    float: right;
   }
 }

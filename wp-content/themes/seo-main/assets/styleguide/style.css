@@ -837,24 +837,217 @@ sg-wrapper:
 
 Styleguide 1.3
 */
+blockquote,
 .c-rte__offset-quote {
-  width: 50%;
+  width: 40%;
   float: right;
   padding: 20px;
   background: #e5e7e7;
   border-bottom-right-radius: 150px;
-  padding-right: 15%; }
+  padding-right: 10%;
+  margin-left: 30px;
+  margin-bottom: 30px; }
+  @media only screen and (min-width: 1024px) {
+    blockquote,
+    .c-rte__offset-quote {
+      margin-left: 60px;
+      margin-bottom: 60px; } }
+  blockquote p,
   .c-rte__offset-quote p {
-    font-size: 25px;
+    font-size: 12px;
     color: #141413; }
-    .c-rte__offset-quote p span {
+    @media only screen and (min-width: 1024px) {
+      blockquote p,
+      .c-rte__offset-quote p {
+        font-size: 25px; } }
+    blockquote p em,
+    .c-rte__offset-quote p em {
       float: left;
       display: inline-block;
       width: 100%;
       font-weight: bold;
       text-transform: uppercase;
       font-size: 12px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      font-style: normal; }
+
+/*
+Bullet Points
+
+markup:
+<div class="c-rte">
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+    <li>List item 5</li>
+  </ul>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 1.4
+*/
+.c-rte ul li {
+  position: relative;
+  padding-left: 40px;
+  line-height: 1; }
+  .c-rte ul li:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 10px;
+    background: #820d1b;
+    position: absolute;
+    left: 0;
+    top: 5px; }
+  .c-rte ul li:after {
+    content: "";
+    display: block;
+    margin-bottom: 25px; }
+
+/*
+Numbered List
+
+markup:
+<div class="c-rte">
+  <ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+    <li>List item 5</li>
+  </ol>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 1.5
+*/
+.c-rte ol li {
+  position: relative;
+  padding-left: 40px;
+  line-height: 1;
+  counter-increment: table-ol; }
+  .c-rte ol li:before {
+    content: counter(table-ol);
+    position: absolute;
+    left: 0;
+    color: #820d1b;
+    font-weight: bold; }
+  .c-rte ol li:after {
+    content: "";
+    display: block;
+    margin-bottom: 25px; }
+
+/*
+Accodion
+
+Styleguide 4.0
+*/
+/*
+Hyperlink
+
+markup:
+<div class="c-accordion__wrapper">
+  <h3>Sub heading</h3>
+  <ul class="c-accordion">
+    <li>
+      <a class="toggle" href="javascript:void(0);">
+        <span class="content-grid">
+          First Question
+        </span>
+        <div class="answer">
+          <p>This is the answer</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="toggle" href="javascript:void(0);">
+        <span class="content-grid">
+          Second
+        </span>
+        <div class="answer">
+          <p>This can be the answer</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 4.1
+*/
+.c-accordion__wrapper {
+  margin: 20px 0; }
+  .c-accordion__wrapper::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .c-accordion__wrapper h3 {
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #141413;
+    font-weight: 300;
+    font-size: 15.1px;
+    line-height: 1.59;
+    font-weight: bold;
+    color: #891a27;
+    text-transform: uppercase;
+    margin: 0; }
+
+.c-accordion {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .c-accordion .answer {
+    overflow: hidden;
+    display: none; }
+  .c-accordion li {
+    margin: 0; }
+    .c-accordion li a.toggle {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #2b2b2b;
+      font-weight: 200;
+      font-size: 30.6px;
+      line-height: 1.04;
+      width: 100%;
+      display: block;
+      font-weight: bold;
+      background: #ffffff;
+      transition: all 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+      border-bottom: 1px solid #dbd7cc;
+      padding: 35px 0; }
+      @media only screen and (min-width: 768px) {
+        .c-accordion li a.toggle {
+          font-size: 34.5px;
+          line-height: 1.45; } }
+      .c-accordion li a.toggle:hover {
+        color: #eb0029; }
+      .c-accordion li a.toggle.active {
+        color: #eb0029; }
 
 /* Slider */
 .slick-slider {

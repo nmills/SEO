@@ -1,0 +1,97 @@
+/*
+Accodion
+
+Styleguide 4.0
+*/
+
+/*
+Hyperlink
+
+markup:
+<div class="c-accordion__wrapper">
+  <h3>Sub heading</h3>
+  <ul class="c-accordion">
+    <li>
+      <a class="toggle" href="javascript:void(0);">
+        <span class="content-grid">
+          First Question
+        </span>
+        <div class="answer">
+          <p>This is the answer</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="toggle" href="javascript:void(0);">
+        <span class="content-grid">
+          Second
+        </span>
+        <div class="answer">
+          <p>This can be the answer</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 4.1
+*/
+
+.c-accordion__wrapper {
+  @include grid-container;
+
+  margin: 20px 0;
+
+  h3 {
+    @include type-5;
+
+    font-weight: bold;
+    color: $brown;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.c-accordion {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .answer {
+    overflow: hidden;
+    display: none;
+  }
+
+  li {
+    margin: 0;
+
+    a.toggle {
+      @include type-2;
+
+      width: 100%;
+      display: block;
+      font-weight: bold;
+      background: $white;
+      transition: all 0.3s $cubic-transition;
+      border-bottom: 1px solid #dbd7cc;
+      padding: 35px 0;
+
+      &:hover {
+        color: $red;
+      }
+
+      &.active {
+        color: $red;
+      }
+    }
+  }
+}

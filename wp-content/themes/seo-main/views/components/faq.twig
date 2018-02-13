@@ -1,0 +1,19 @@
+<div class="container faq">
+  <div class="c-accordion__wrapper">
+    <h3>{{component.subheading}}</h3>
+    <ul class="c-accordion">
+      {% for faq in component.repeater %}
+      <li>
+        <a class="toggle" href="javascript:void(0);">
+	       <span class="content-grid">
+	        {{faq.question}}
+	       </span>
+         <div class="answer">
+            {{faq.answer}}
+        </div>
+	     </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

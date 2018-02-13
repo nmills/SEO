@@ -9,19 +9,21 @@ export default function() {
     let $this = $(this);
 
     // Collapse
-    if ($this.next().hasClass('show')) {
-      $this.next().removeClass('show');
+    if ($this.find('.answer').hasClass('show')) {
+      $this.find('.answer').removeClass('show');
       $this.removeClass('active');
-      $this.next().slideUp(350);
+      $this.find('.answer').slideUp(350);
     }
     // Expand
     else {
-      $this.parent().parent().find('li .inner').removeClass('show');
+      $this.find('.answer').removeClass('show');
       $('.toggle').removeClass('active');
-      $this.parent().parent().find('li .inner').slideUp(350);
+      $this.find('.answer').slideUp(350);
       $this.addClass('active');
-      $this.next().toggleClass('show');
-      $this.next().slideToggle(350);
+      $this.find('.answer').toggleClass('show');
+      $this.find('.answer').slideToggle(350);
     }
+    console.log($this.find('li .answer'));
   });
+  console.log('test');
 }
