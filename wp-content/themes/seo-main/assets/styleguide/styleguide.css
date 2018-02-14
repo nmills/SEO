@@ -1624,7 +1624,8 @@ header a {
         .c-nav .c-menu__container .c-menu__list .c-menu__sublist li:hover a {
           color: #ffffff; }
   .c-nav .c-menu__hamburger {
-    display: block; }
+    display: block;
+    text-align: right; }
     @media only screen and (min-width: 1024px) {
       .c-nav .c-menu__hamburger {
         display: none; } }

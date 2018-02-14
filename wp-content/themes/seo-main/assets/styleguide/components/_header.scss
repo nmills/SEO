@@ -130,6 +130,9 @@ header {
   .c-menu__hamburger {
     display: block;
 
+    text-align: right;
+
+
     @include grid-media($lg) {
       display: none;
     }
