@@ -15,22 +15,112 @@ footer.site-footer {
       color: $white;
     }
 
-    .c-footer__logo {
-      @include grid-column(4, $no-gutter);
+    .c-footer__widgets {
+      @include grid-column(12, $no-gutter);
 
-      @include grid-media($lg) {
-        @include grid-column(2, $no-gutter);
+      .c-footer__logo {
+        // @include grid-column(12, $no-gutter);
+
+        // @include grid-media($lg) {
+        //   @include grid-column(6, $no-gutter);
+        // }
+
+        // img {
+        @include grid-column(8, $no-gutter);
+
+        @include grid-media($lg) {
+          @include grid-column(6, $no-gutter);
+        }
+
+
+        // }
+     
+      }
+
+      .menu-footer-left-container,
+      .menu-footer-right-container {
+        @include grid-column(12, $no-gutter);
+
+        border-left: none;
+        padding-left: 0;
+
+        @include grid-media($lg) {
+          @include grid-column(2, $no-gutter);
+
+          border-left: 1px solid grey;
+          padding-left: 20px;
+          float: right;
+        }
+
+
+        li {
+          text-align: center;
+
+          @include grid-media($lg) {
+            text-align: left;
+          }
+
+
+          a {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .menu-social-container {
+        @include grid-column(12, $no-gutter);
+
+        text-align: center;
+
+        @include grid-media($lg) {
+          @include grid-column(2.2, $no-gutter);
+
+          text-align: left;
+          margin-top: 20px;
+        }
+
+
+        li {
+          display: inline-block;
+          text-align: center;
+
+          @include grid-media($lg) {
+            text-align: left;
+          }
+
+
+          a {
+            span.menu-image-title {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .textwidget {
+        @include grid-column(12, $no-gutter);
+
+        text-align: center;
+
+        @include grid-media($lg) {
+          @include grid-column(5, $no-gutter);
+
+          text-align: left;
+          margin-top: 25px;
+        }
+
+
+        p {
+          font-size: 15px;
+          margin: 0;
+        }
       }
     }
 
-    .c-footer__widgets {
-      @include grid-column(10, $no-gutter);
-    }
-
-    .c-footer__copyrights {
-      @include grid-column(12, $no-gutter);
-
-      text-align: center;
-    }
+    // .c-footer__copyrights {
+    //   @include grid-column(12, $no-gutter);
+    //   text-align: center;
+    // }
+ 
   }
 }
