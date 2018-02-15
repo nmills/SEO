@@ -55,6 +55,8 @@ footer.site-footer {
 
         li {
           text-align: center;
+          width: auto;
+          padding: 0;
 
           @include grid-media($lg) {
             text-align: left;
@@ -83,6 +85,8 @@ footer.site-footer {
         li {
           display: inline-block;
           text-align: center;
+          width: auto;
+          padding: 0;
 
           @include grid-media($lg) {
             text-align: left;
