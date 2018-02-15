@@ -38,7 +38,7 @@ header {
     position: 1;
 
     @include grid-media($lg) {
-      @include grid-column(9, $no-gutter);
+      @include grid-column(12, $no-gutter);
 
       display: block !important;
       right: 0;
@@ -51,6 +51,8 @@ header {
 
     .c-menu__list {
       @include grid-media($lg) {
+        @include grid-column(8, $no-gutter);
+
         float: left;
       }
 
@@ -113,7 +115,7 @@ header {
 
 
         li {
-          border-bottom: 2px solid $white;
+          // border-bottom: 2px solid $white;
           padding: 5px 16px;
 
           &:hover {
@@ -129,9 +131,7 @@ header {
 
   .c-menu__hamburger {
     display: block;
-
     text-align: right;
-
 
     @include grid-media($lg) {
       display: none;
@@ -177,7 +177,7 @@ header {
       // }
 
       @include grid-media($lg) {
-        @include grid-column(5, $no-gutter);
+        @include grid-column(12, $no-gutter);
       }
     }
   }
@@ -198,16 +198,29 @@ header {
       @include grid-column(3, $no-gutter);
 
       float: right;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      z-index: 10;
+
+      // position: absolute;
+      // top: 50%;
+      // right: 0;
+      // transform: translateY(-50%);
+      // z-index: 10;
     }
   }
 
-  .menu-site-menu-container, .textwidget.custom-html-widget {
-    @include grid-column(6, $no-gutter);
+  .menu-site-menu-container {
+    @include grid-column(8, $no-gutter);
+
+    @include grid-media($lg) {
+      @include grid-column(6, $no-gutter);
+    }
+  }
+
+  .textwidget.custom-html-widget {
+    @include grid-column(4, $no-gutter);
+
+    @include grid-media($lg) {
+      @include grid-column(6, $no-gutter);
+    }
   }
 
   .c-mainnav__donate {
@@ -254,10 +267,48 @@ header {
 }
 
 // ----------------
+// Following classes need to be merged with codes from line 52
 .menu {
-  .menu-item.menu-item-has-children {
-    position: relative;
-    display: inline-block;
+  li {
+    @include grid-column(12, $no-gutter);
+
+    cursor: pointer;
+    padding: 5px 16px;
+
+    &.menu-item.menu-item-has-children {
+      position: relative;
+      display: inline-block;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 40%;
+        right: 10%;
+        transition: all .4s ease-in-out;
+
+        // transform: translateY(-50%);
+        background-image: url("./src/img/Arrow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 13px;
+        height: 13px;
+      }
+
+      &:hover {
+        &:after {
+          top: 30%;
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &:hover {
+      background: $black;
+
+      a {
+        color: $white;
+      }
+    }
   }
 
   &:hover {
@@ -269,6 +320,7 @@ header {
   .sub-menu {
     display: none;
     position: absolute;
+    left: 0;
     background-color: $black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -277,18 +329,52 @@ header {
     z-index: 10;
 
     a {
-      color: $red;
+      color: $white;
     }
 
     li {
-      border-bottom: 2px solid $white;
+      // border-bottom: 2px solid $white;
       padding: 5px 16px;
+      font-size: 16px;
 
       &:hover {
         // border-bottom-color: $light-blue;
         a {
-          color: $white;
+          color: $red;
         }
+      }
+    }
+  }
+}
+
+// Registration Menu
+.side-menu-widget-area {
+  @include grid-media($lg) {
+    @include grid-column(3, $no-gutter);
+
+    float: right;
+  }
+
+
+  .menu {
+    li {
+      @include grid-column(12, $no-gutter);
+
+      text-align: center;
+      display: inline-block;
+      background: $black;
+      cursor: pointer;
+      border-bottom: 2px solid $white;
+      padding: 0 16px;
+
+      @include grid-media($lg) {
+        @include grid-column(6, $no-gutter);
+        border-left: 2px solid $white;
+      }
+
+
+      a {
+        color: $white;
       }
     }
   }

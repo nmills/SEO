@@ -1572,7 +1572,7 @@ header a {
     position: 1; }
     @media only screen and (min-width: 1024px) {
       .c-nav .c-menu__container {
-        width: calc(75%);
+        width: calc(100%);
         float: left;
         margin-left: 0;
         display: block !important;
@@ -1583,6 +1583,9 @@ header a {
         background: none; } }
     @media only screen and (min-width: 1024px) {
       .c-nav .c-menu__container .c-menu__list {
+        width: calc(66.66667%);
+        float: left;
+        margin-left: 0;
         float: left; } }
     .c-nav .c-menu__container .c-menu__list .c-menu__list-item {
       width: calc(100%);
@@ -1619,7 +1622,6 @@ header a {
           .c-nav .c-menu__container .c-menu__list .c-menu__sublist a {
             color: #eb0029; } }
       .c-nav .c-menu__container .c-menu__list .c-menu__sublist li {
-        border-bottom: 2px solid #ffffff;
         padding: 5px 16px; }
         .c-nav .c-menu__container .c-menu__list .c-menu__sublist li:hover a {
           color: #ffffff; }
@@ -1664,7 +1666,7 @@ header a {
           margin-left: 0; } }
       @media only screen and (min-width: 1024px) {
         .c-mainnav .c-logo__container .c-logo__image {
-          width: calc(41.66667%);
+          width: calc(100%);
           float: left;
           margin-left: 0; } }
   .c-mainnav .c-mainnav__content {
@@ -1683,16 +1685,25 @@ header a {
         width: calc(25%);
         float: left;
         margin-left: 0;
-        float: right;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        z-index: 10; } }
-  .c-mainnav .menu-site-menu-container, .c-mainnav .textwidget.custom-html-widget {
-    width: calc(50%);
+        float: right; } }
+  .c-mainnav .menu-site-menu-container {
+    width: calc(66.66667%);
     float: left;
     margin-left: 0; }
+    @media only screen and (min-width: 1024px) {
+      .c-mainnav .menu-site-menu-container {
+        width: calc(50%);
+        float: left;
+        margin-left: 0; } }
+  .c-mainnav .textwidget.custom-html-widget {
+    width: calc(33.33333%);
+    float: left;
+    margin-left: 0; }
+    @media only screen and (min-width: 1024px) {
+      .c-mainnav .textwidget.custom-html-widget {
+        width: calc(50%);
+        float: left;
+        margin-left: 0; } }
   .c-mainnav .c-mainnav__donate {
     background: #eb0029;
     text-align: center;
@@ -1727,9 +1738,33 @@ header a {
   outline: none;
   z-index: 10000000000000; }
 
-.menu .menu-item.menu-item-has-children {
-  position: relative;
-  display: inline-block; }
+.menu li {
+  width: calc(100%);
+  float: left;
+  margin-left: 0;
+  cursor: pointer;
+  padding: 5px 16px; }
+  .menu li.menu-item.menu-item-has-children {
+    position: relative;
+    display: inline-block; }
+    .menu li.menu-item.menu-item-has-children:after {
+      content: "";
+      position: absolute;
+      top: 40%;
+      right: 10%;
+      transition: all .4s ease-in-out;
+      background-image: url("./src/img/Arrow.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 13px;
+      height: 13px; }
+    .menu li.menu-item.menu-item-has-children:hover:after {
+      top: 30%;
+      transform: rotate(180deg); }
+  .menu li:hover {
+    background: #141413; }
+    .menu li:hover a {
+      color: #ffffff; }
 
 .menu:hover .sub-menu {
   display: block; }
@@ -1737,17 +1772,44 @@ header a {
 .menu .sub-menu {
   display: none;
   position: absolute;
+  left: 0;
   background-color: #141413;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 10; }
   .menu .sub-menu a {
-    color: #eb0029; }
+    color: #ffffff; }
   .menu .sub-menu li {
-    border-bottom: 2px solid #ffffff;
-    padding: 5px 16px; }
+    padding: 5px 16px;
+    font-size: 16px; }
     .menu .sub-menu li:hover a {
-      color: #ffffff; }
+      color: #eb0029; }
+
+@media only screen and (min-width: 1024px) {
+  .side-menu-widget-area {
+    width: calc(25%);
+    float: left;
+    margin-left: 0;
+    float: right; } }
+
+.side-menu-widget-area .menu li {
+  width: calc(100%);
+  float: left;
+  margin-left: 0;
+  text-align: center;
+  display: inline-block;
+  background: #141413;
+  cursor: pointer;
+  border-bottom: 2px solid #ffffff;
+  padding: 0 16px; }
+  @media only screen and (min-width: 1024px) {
+    .side-menu-widget-area .menu li {
+      width: calc(50%);
+      float: left;
+      margin-left: 0;
+      border-left: 2px solid #ffffff; } }
+  .side-menu-widget-area .menu li a {
+    color: #ffffff; }
 
 /* Search Field */
 .c-searchform {
