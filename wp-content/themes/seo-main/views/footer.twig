@@ -1,15 +1,8 @@
 <div class="container">
-  <div class="c-footer__logo">
-    {% if logo[0] %}
-      <a href="{{site.url}}" class="show-for-large"><img src="{{logo[0]}}"></a>
-    {% else %}
-      <h1 class="show-for-large"><a href="{{site.url}}">{{site.title}}</a></h1>
-    {% endif %}
-  </div> <!-- /.small-12.medium-4.columns -->
   <div class="c-footer__widgets">
      {{footer_widgets}}
   </div>
-  <div class="c-footer__copyrights">
+  {# <div class="c-footer__copyrights">
     <p class="copyright">&copy; {{"now"|date('Y')}}
-  </div> <!-- /.small-12.medium-4.columns -->
-</div> <!-- /.row -->
+  </div> #} 
+</div> 
