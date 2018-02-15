@@ -369,6 +369,7 @@ header {
 
       @include grid-media($lg) {
         @include grid-column(6, $no-gutter);
+
         border-left: 2px solid $white;
       }
 
