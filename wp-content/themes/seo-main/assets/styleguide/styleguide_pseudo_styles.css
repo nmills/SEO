@@ -141,10 +141,23 @@
   color: #ffffff;
 }
 
+.menu li.menu-item.menu-item-has-children.pseudo-class-hover:after {
+  top: 30%;
+  transform: rotate(180deg);
+}
+
+.menu li.pseudo-class-hover {
+  background: #141413;
+}
+
+.menu li.pseudo-class-hover a {
+  color: #ffffff;
+}
+
 .menu.pseudo-class-hover .sub-menu {
   display: block;
 }
 
 .menu .sub-menu li.pseudo-class-hover a {
-  color: #ffffff;
+  color: #eb0029;
 }
