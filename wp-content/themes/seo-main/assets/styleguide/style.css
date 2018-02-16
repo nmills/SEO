@@ -767,7 +767,8 @@ sg-wrapper:
 Styleguide 1.1
 */
 .c-rte a,
-.c-rte__link {
+.c-rte__link,
+.c-rte__accordion a {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #141413;
   font-weight: 300;
@@ -779,12 +780,15 @@ Styleguide 1.1
   text-decoration: none; }
   @media only screen and (min-width: 768px) {
     .c-rte a,
-    .c-rte__link {
+    .c-rte__link,
+    .c-rte__accordion a {
       font-size: 19px;
       line-height: 1.53; } }
   .c-rte a:hover, .c-rte a:focus,
   .c-rte__link:hover,
-  .c-rte__link:focus {
+  .c-rte__link:focus,
+  .c-rte__accordion a:hover,
+  .c-rte__accordion a:focus {
     color: #7cb4f6;
     border-bottom: 2px solid #141413; }
 
@@ -838,7 +842,8 @@ sg-wrapper:
 Styleguide 1.3
 */
 blockquote,
-.c-rte__offset-quote {
+.c-rte__offset-quote,
+.c-rte__accordion blockquote {
   width: 40%;
   float: right;
   padding: 20px;
@@ -849,19 +854,23 @@ blockquote,
   margin-bottom: 30px; }
   @media only screen and (min-width: 1024px) {
     blockquote,
-    .c-rte__offset-quote {
+    .c-rte__offset-quote,
+    .c-rte__accordion blockquote {
       margin-left: 60px;
       margin-bottom: 60px; } }
   blockquote p,
-  .c-rte__offset-quote p {
+  .c-rte__offset-quote p,
+  .c-rte__accordion blockquote p {
     font-size: 12px;
     color: #141413; }
     @media only screen and (min-width: 1024px) {
       blockquote p,
-      .c-rte__offset-quote p {
+      .c-rte__offset-quote p,
+      .c-rte__accordion blockquote p {
         font-size: 25px; } }
     blockquote p em,
-    .c-rte__offset-quote p em {
+    .c-rte__offset-quote p em,
+    .c-rte__accordion blockquote p em {
       float: left;
       display: inline-block;
       width: 100%;
@@ -896,11 +905,11 @@ sg-wrapper:
 
 Styleguide 1.4
 */
-.c-rte ul li {
+.c-rte ul li, .c-rte__accordion ul li {
   position: relative;
   padding-left: 40px;
   line-height: 1; }
-  .c-rte ul li:before {
+  .c-rte ul li:before, .c-rte__accordion ul li:before {
     content: "";
     display: block;
     width: 15px;
@@ -909,7 +918,7 @@ Styleguide 1.4
     position: absolute;
     left: 0;
     top: 5px; }
-  .c-rte ul li:after {
+  .c-rte ul li:after, .c-rte__accordion ul li:after {
     content: "";
     display: block;
     margin-bottom: 25px; }
@@ -939,18 +948,18 @@ sg-wrapper:
 
 Styleguide 1.5
 */
-.c-rte ol li {
+.c-rte ol li, .c-rte__accordion ol li {
   position: relative;
   padding-left: 40px;
   line-height: 1;
   counter-increment: table-ol; }
-  .c-rte ol li:before {
+  .c-rte ol li:before, .c-rte__accordion ol li:before {
     content: counter(table-ol);
     position: absolute;
     left: 0;
     color: #820d1b;
     font-weight: bold; }
-  .c-rte ol li:after {
+  .c-rte ol li:after, .c-rte__accordion ol li:after {
     content: "";
     display: block;
     margin-bottom: 25px; }
@@ -1025,9 +1034,12 @@ Styleguide 4.1
   .c-accordion .answer {
     overflow: hidden;
     display: none; }
+  .c-accordion .c-rte__accordion {
+    font-size: initial;
+    color: initial; }
   .c-accordion li {
     margin: 0; }
-    .c-accordion li a.toggle {
+    .c-accordion li .toggle {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #2b2b2b;
       font-weight: 200;
@@ -1041,12 +1053,12 @@ Styleguide 4.1
       border-bottom: 1px solid #dbd7cc;
       padding: 35px 0; }
       @media only screen and (min-width: 768px) {
-        .c-accordion li a.toggle {
+        .c-accordion li .toggle {
           font-size: 34.5px;
           line-height: 1.45; } }
-      .c-accordion li a.toggle:hover {
+      .c-accordion li .toggle:hover {
         color: #eb0029; }
-      .c-accordion li a.toggle.active {
+      .c-accordion li .toggle.active {
         color: #eb0029; }
 
 /*

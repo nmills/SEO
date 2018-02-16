@@ -92,12 +92,14 @@
 .c-rte a.pseudo-class-hover,
 .c-rte a.pseudo-class-focus,
 .c-rte__link.pseudo-class-hover,
-.c-rte__link.pseudo-class-focus {
+.c-rte__link.pseudo-class-focus,
+.c-rte__accordion a.pseudo-class-hover,
+.c-rte__accordion a.pseudo-class-focus {
   color: #7cb4f6;
   border-bottom: 2px solid #141413;
 }
 
-.c-accordion li a.toggle.pseudo-class-hover {
+.c-accordion li .toggle.pseudo-class-hover {
   color: #eb0029;
 }
 
