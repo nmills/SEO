@@ -23,7 +23,5 @@ export default function() {
       $this.find('.answer').toggleClass('show');
       $this.find('.answer').slideToggle(350);
     }
-    console.log($this.find('li .answer'));
   });
-  console.log('test');
 }

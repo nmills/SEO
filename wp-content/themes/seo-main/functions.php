@@ -52,6 +52,8 @@ class BSDStarterSite extends TimberSite {
     $context['searchterm'] = get_search_query();
     //Adding Header Widget
     $context['header_widget'] = Timber::get_widgets('header_widget');
+    //Adding Side Menu Widget
+    $context['side_menu_widget'] = Timber::get_widgets('side_menu_widget');
     return $context;
   }
 
@@ -104,6 +106,16 @@ class BSDStarterSite extends TimberSite {
       'before_widget' => '<div class="header-widget-area">',
       'after_widget' => '</div>',
       'before_title' => '<h2 class="header-widget-area-title">',
+      'after_title' => '</h2>',
+      ) 
+    );
+
+    register_sidebar( array(
+      'id' => 'side_menu_widget',
+      'name' => 'Side Menu Widget',
+      'before_widget' => '<div class="side-menu-widget-area">',
+      'after_widget' => '</div>',
+      'before_title' => '<h2 class="side-menu-widget-area-title">',
       'after_title' => '</h2>',
       ) 
     );

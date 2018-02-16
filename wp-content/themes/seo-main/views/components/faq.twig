@@ -4,14 +4,14 @@
     <ul class="c-accordion">
       {% for faq in component.repeater %}
       <li>
-        <a class="toggle" href="javascript:void(0);">
+        <div class="toggle" href="javascript:void(0);">
 	       <span class="content-grid">
 	        {{faq.question}}
 	       </span>
-         <div class="answer">
+         <div class="answer c-rte__accordion">
             {{faq.answer}}
         </div>
-	     </a>
+	     </div>
       </li>
       {% endfor %}
     </ul>

@@ -92,12 +92,14 @@
 .c-rte a.pseudo-class-hover,
 .c-rte a.pseudo-class-focus,
 .c-rte__link.pseudo-class-hover,
-.c-rte__link.pseudo-class-focus {
+.c-rte__link.pseudo-class-focus,
+.c-rte__accordion a.pseudo-class-hover,
+.c-rte__accordion a.pseudo-class-focus {
   color: #7cb4f6;
   border-bottom: 2px solid #141413;
 }
 
-.c-accordion li a.toggle.pseudo-class-hover {
+.c-accordion li .toggle.pseudo-class-hover {
   color: #eb0029;
 }
 
@@ -129,18 +131,35 @@
   filter: alpha(opacity=100);
 }
 
+.c-nav .c-menu__container .c-menu__list .c-menu__list-item.has-child.pseudo-class-hover {
+  background: #141413;
+}
+
 .c-nav .c-menu__container .c-menu__list .c-menu__list-item.has-child.pseudo-class-hover .c-menu__sublist {
   display: block;
 }
 
-.c-nav .c-menu__container .c-menu__list .c-menu__sublist li.pseudo-class-hover {
-  border-bottom-color: #7cb4f6;
+.c-nav .c-menu__container .c-menu__list .c-menu__sublist li.pseudo-class-hover a {
+  color: #ffffff;
+}
+
+.menu li.menu-item.menu-item-has-children.pseudo-class-hover:after {
+  top: 30%;
+  transform: rotate(180deg);
+}
+
+.menu li.pseudo-class-hover {
+  background: #141413;
+}
+
+.menu li.pseudo-class-hover a {
+  color: #ffffff;
 }
 
 .menu.pseudo-class-hover .sub-menu {
   display: block;
 }
 
-.menu .sub-menu li.pseudo-class-hover {
-  border-bottom-color: #7cb4f6;
+.menu .sub-menu li.pseudo-class-hover a {
+  color: #eb0029;
 }

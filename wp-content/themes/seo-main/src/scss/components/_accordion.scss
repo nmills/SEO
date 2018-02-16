@@ -71,10 +71,15 @@ Styleguide 4.1
     display: none;
   }
 
+  .c-rte__accordion {
+    font-size: initial;
+    color: initial;
+  }
+
   li {
     margin: 0;
 
-    a.toggle {
+    .toggle {
       @include type-2;
 
       width: 100%;

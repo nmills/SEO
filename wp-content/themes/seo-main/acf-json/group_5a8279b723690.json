@@ -3,6 +3,25 @@
     "title": "component: video",
     "fields": [
         {
+            "key": "field_5a86549164fb6",
+            "label": "heading",
+            "name": "heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5a8279c682236",
             "label": "video",
             "name": "video",
@@ -15,8 +34,27 @@
                 "class": "",
                 "id": ""
             },
-            "width": "",
+            "width": 450,
             "height": ""
+        },
+        {
+            "key": "field_5a86561664fb7",
+            "label": "quote",
+            "name": "quote",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -36,5 +74,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1518500361
+    "modified": 1518756662
 }

@@ -1,15 +1,23 @@
 /* Header */
 
 header {
-  padding-bottom: 20px !important;
-  border-bottom: 2px solid $light-gray !important;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+
+  .container {
+    // padding-bottom: 20px !important;
+    border-bottom: 2px solid $white !important;
+    padding: 0 !important;
+  }
 
   a {
-    color: $light-blue;
-    font-size: 15px;
+    color: $black;
+    font-size: 12px;
 
     @include grid-media($lg) {
-      font-size: 17px;
+      font-size: 15px;
     }
   }
 }
@@ -18,45 +26,24 @@ header {
   @include grid-column(12, $no-gutter);
 
   position: relative;
-
-  .c-logo__container {
-    @include grid-column(8, $no-gutter);
-
-    @include grid-media($lg) {
-      @include grid-column(4, $no-gutter);
-    }
-
-
-    .c-logo__image {
-      @include grid-column(6, $no-gutter);
-
-      @include grid-media($sm) {
-        @include grid-column(4, $no-gutter);
-      }
-
-
-      // @include grid-media($md) {
-      //   @include grid-column(12, $no-gutter);
-      // }
-
-      @include grid-media($lg) {
-        @include grid-column(5, $no-gutter);
-      }
-    }
-  }
+  z-index: 2;
+  background: $red;
 
   .c-menu__container {
     @include grid-column(12, $no-gutter);
 
     float: right;
-    position: absolute;
+
+    // position: absolute;
     left: 0;
     top: calc(100% + 20px);
-    background: rgb(124, 180, 246);
+    background: $red;
     display: none;
+    position: relative;
+    position: 1;
 
     @include grid-media($lg) {
-      @include grid-column(9, $no-gutter);
+      @include grid-column(12, $no-gutter);
 
       display: block !important;
       right: 0;
@@ -64,12 +51,15 @@ header {
       left: unset;
       top: unset;
       background: none;
+      border-top: 2px solid $white;
     }
 
 
     .c-menu__list {
       @include grid-media($lg) {
-        float: right;
+        @include grid-column(8, $no-gutter);
+
+        float: left;
       }
 
 
@@ -87,9 +77,9 @@ header {
         @include grid-media($lg) {
           width: auto;
 
-          a {
-            color: $light-blue;
-          }
+          // a {
+          //   color: $light-blue;
+          // }
         }
       }
 
@@ -98,6 +88,8 @@ header {
         display: inline-block;
 
         &:hover {
+          background: $black;
+
           .c-menu__sublist {
             display: block;
           }
@@ -107,7 +99,8 @@ header {
       .c-menu__sublist {
         display: none;
         min-width: 160px;
-        padding: 12px 16px;
+
+        // padding: 12px 16px;
         z-index: 1;
 
         a {
@@ -117,20 +110,25 @@ header {
         @include grid-media($lg) {
           position: absolute;
           width: auto;
-          background-color: #f9f9f9;
+          background-color: $black;
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          left: 0;
 
           a {
-            color: $light-blue;
+            color: $red;
           }
         }
 
 
         li {
-          border-bottom: 2px solid $white;
+          // border-bottom: 2px solid $white;
+          padding: 5px 16px;
 
           &:hover {
-            border-bottom-color: $light-blue;
+            // border-bottom-color: $light-blue;
+            a {
+              color: $white;
+            }
           }
         }
       }
@@ -139,6 +137,7 @@ header {
 
   .c-menu__hamburger {
     display: block;
+    text-align: right;
 
     @include grid-media($lg) {
       display: none;
@@ -149,8 +148,50 @@ header {
 .c-mainnav {
   @include grid-column(12, $no-gutter);
 
+  position: relative;
+  background: $white;
+
+  // padding: 10px 0;
+
+  .c-logo__container {
+    @include grid-column(4, $no-gutter);
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    @include grid-media($md) {
+      position: relative;
+      transform: none;
+    }
+
+
+    @include grid-media($lg) {
+      @include grid-column(4, $no-gutter);
+    }
+
+
+    .c-logo__image {
+      @include grid-column(9, $no-gutter);
+
+      @include grid-media($sm) {
+        @include grid-column(4, $no-gutter);
+      }
+
+
+      // @include grid-media($md) {
+      //   @include grid-column(12, $no-gutter);
+      // }
+
+      @include grid-media($lg) {
+        @include grid-column(12, $no-gutter);
+      }
+    }
+  }
+
   .c-mainnav__content {
-    @include grid-column(8.5, $no-gutter);
+    @include grid-column(8, $no-gutter);
 
     float: right;
 
@@ -162,33 +203,53 @@ header {
 
 
     @include grid-media($md) {
-      @include grid-column(3, $no-gutter);
+      @include grid-column(4, $no-gutter);
 
       float: right;
+
+      // position: absolute;
+      // top: 50%;
+      // right: 0;
+      // transform: translateY(-50%);
+      // z-index: 10;
     }
   }
 
-  .menu-site-menu-container, .textwidget.custom-html-widget {
-    @include grid-column(6, $no-gutter);
+  .menu-site-menu-container {
+    @include grid-column(8, $no-gutter);
+
+    @include grid-media($lg) {
+      @include grid-column(6, $no-gutter);
+    }
+  }
+
+  .textwidget.custom-html-widget {
+    @include grid-column(4, $no-gutter);
+
+    @include grid-media($lg) {
+      @include grid-column(6, $no-gutter);
+    }
   }
 
   .c-mainnav__donate {
-    background: $light-gray;
+    background: $red;
     text-align: center;
-    padding: 10px 15px;
+    padding: 27px 15px;
     color: $white;
+    border-left: 2px solid $white;
   }
 }
 
 // ----------------
 .hamburger {
   background: none;
-  position: absolute;
+
+  // position: absolute;
   top: 0;
   right: 0;
   line-height: 45px;
   padding: 5px 15px 0px 15px;
-  color: #999;
+  color: $white;
   border: 0;
   font-size: 1.4em;
   font-weight: bold;
@@ -199,11 +260,12 @@ header {
 
 .cross {
   background: none;
-  position: absolute;
+
+  // position: absolute;
   top: 0px;
   right: 0;
   padding: 7px 15px 0px 15px;
-  color: #999;
+  color: $white;
   border: 0;
   font-size: 3em;
   line-height: 65px;
@@ -214,10 +276,48 @@ header {
 }
 
 // ----------------
+// Following classes need to be merged with codes from line 52
 .menu {
-  .menu-item.menu-item-has-children {
-    position: relative;
-    display: inline-block;
+  li {
+    @include grid-column(12, $no-gutter);
+
+    cursor: pointer;
+    padding: 5px 16px;
+
+    &.menu-item.menu-item-has-children {
+      position: relative;
+      display: inline-block;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 40%;
+        right: 10%;
+        transition: all .4s ease-in-out;
+
+        // transform: translateY(-50%);
+        background-image: url("./src/img/Arrow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 13px;
+        height: 13px;
+      }
+
+      &:hover {
+        &:after {
+          top: 30%;
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &:hover {
+      background: $black;
+
+      a {
+        color: $white;
+      }
+    }
   }
 
   &:hover {
@@ -229,21 +329,64 @@ header {
   .sub-menu {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    left: 0;
+    background-color: $black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    z-index: 1;
+    width: 200%;
+
+    // padding: 12px 16px;
+    z-index: 10;
 
     a {
-      color: $light-blue;
+      color: $white;
     }
 
     li {
-      border-bottom: 2px solid $white;
+      // border-bottom: 2px solid $white;
+      padding: 5px 16px;
+      font-size: 16px;
 
       &:hover {
-        border-bottom-color: $light-blue;
+        // border-bottom-color: $light-blue;
+        a {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+// Registration Menu
+.side-menu-widget-area {
+  @include grid-media($lg) {
+    @include grid-column(4, $no-gutter);
+
+    float: right;
+  }
+
+
+  .menu {
+    li {
+      @include grid-column(12, $no-gutter);
+
+      text-align: center;
+      display: inline-block;
+      background: $black;
+      cursor: pointer;
+      border-bottom: 2px solid $white;
+      padding: 0 16px;
+
+      @include grid-media($lg) {
+        @include grid-column(6, $no-gutter);
+
+        border-left: 2px solid $white;
+        border-bottom: 0;
+      }
+
+
+      a {
+        color: $white;
       }
     }
   }
