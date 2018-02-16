@@ -1049,6 +1049,119 @@ Styleguide 4.1
       .c-accordion li a.toggle.active {
         color: #eb0029; }
 
+/*
+Video Component
+
+Styleguide 5.0
+*/
+/*
+Hyperlink
+
+markup:
+<div class="container video-component">
+	<div class="heading">
+		<h1>This is the heading for the video</h1>
+	</div>
+	<div class="video">
+		<iframe width="640" height="360" src="https://www.youtube.com/embed/V8S591S-eU0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+	</div>
+	<div class="quote">
+		This is the quote for the video, which was taken from youtube.
+	</div>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 5.1
+*/
+.video-component {
+  background: #141413;
+  padding: 40px; }
+  @media only screen and (min-width: 1024px) {
+    .video-component {
+      height: 530px; } }
+  .video-component .heading {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    position: relative; }
+    @media only screen and (min-width: 1024px) {
+      .video-component .heading {
+        width: calc(25%);
+        float: left;
+        margin-left: 0;
+        height: 450px; } }
+    .video-component .heading h1 {
+      color: #ffffff;
+      width: 100%;
+      top: 0;
+      margin: 0;
+      font-size: 25px;
+      margin-bottom: 25px; }
+      @media only screen and (min-width: 1024px) {
+        .video-component .heading h1 {
+          position: absolute;
+          margin-bottom: 0; } }
+  .video-component .video {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    position: relative; }
+    @media only screen and (min-width: 1024px) {
+      .video-component .video {
+        width: calc(50%);
+        float: left;
+        margin-left: 0;
+        height: 450px; } }
+    .video-component .video iframe {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 25px; }
+      @media only screen and (min-width: 1024px) {
+        .video-component .video iframe {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 20px;
+          margin-bottom: 0; } }
+  .video-component .quote {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    position: relative; }
+    @media only screen and (min-width: 1024px) {
+      .video-component .quote {
+        width: calc(25%);
+        float: left;
+        margin-left: 0;
+        height: 450px; } }
+    .video-component .quote p {
+      color: #ffffff;
+      font-style: italic;
+      width: 100%;
+      bottom: 0;
+      margin: 0; }
+      @media only screen and (min-width: 1024px) {
+        .video-component .quote p {
+          position: absolute; } }
+      .video-component .quote p:after {
+        content: "";
+        display: block;
+        width: calc(83.33333%);
+        float: left;
+        margin-left: 0;
+        height: 2px;
+        background: white;
+        margin-top: 20px; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -1580,7 +1693,8 @@ header a {
         bottom: 0;
         left: unset;
         top: unset;
-        background: none; } }
+        background: none;
+        border-top: 2px solid #ffffff; } }
     @media only screen and (min-width: 1024px) {
       .c-nav .c-menu__container .c-menu__list {
         width: calc(66.66667%);
@@ -1636,8 +1750,7 @@ header a {
   width: calc(100%);
   float: left;
   margin-left: 0;
-  position: relative;
-  padding: 10px 0; }
+  position: relative; }
   .c-mainnav .c-logo__container {
     width: calc(33.33333%);
     float: left;
@@ -1682,7 +1795,7 @@ header a {
         float: right; } }
     @media only screen and (min-width: 768px) {
       .c-mainnav .c-mainnav__content {
-        width: calc(25%);
+        width: calc(33.33333%);
         float: left;
         margin-left: 0;
         float: right; } }
@@ -1708,7 +1821,8 @@ header a {
     background: #eb0029;
     text-align: center;
     padding: 27px 15px;
-    color: #ffffff; }
+    color: #ffffff;
+    border-left: 2px solid #ffffff; }
 
 .hamburger {
   background: none;
@@ -1776,6 +1890,7 @@ header a {
   background-color: #141413;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 200%;
   z-index: 10; }
   .menu .sub-menu a {
     color: #ffffff; }
@@ -1787,7 +1902,7 @@ header a {
 
 @media only screen and (min-width: 1024px) {
   .side-menu-widget-area {
-    width: calc(25%);
+    width: calc(33.33333%);
     float: left;
     margin-left: 0;
     float: right; } }
@@ -1807,7 +1922,8 @@ header a {
       width: calc(50%);
       float: left;
       margin-left: 0;
-      border-left: 2px solid #ffffff; } }
+      border-left: 2px solid #ffffff;
+      border-bottom: 0; } }
   .side-menu-widget-area .menu li a {
     color: #ffffff; }
 
@@ -1868,7 +1984,10 @@ footer.site-footer .container {
       footer.site-footer .container .c-footer__widgets .menu-footer-right-container li {
         text-align: center;
         width: auto;
-        padding: 0; }
+        padding: 0;
+        width: calc(100%);
+        float: left;
+        margin-left: 0; }
         @media only screen and (min-width: 1024px) {
           footer.site-footer .container .c-footer__widgets .menu-footer-left-container li,
           footer.site-footer .container .c-footer__widgets .menu-footer-right-container li {
@@ -1888,16 +2007,22 @@ footer.site-footer .container {
           margin-left: 0;
           text-align: left;
           margin-top: 20px; } }
-      footer.site-footer .container .c-footer__widgets .menu-social-container li {
-        display: inline-block;
-        text-align: center;
-        width: auto;
-        padding: 0; }
+      footer.site-footer .container .c-footer__widgets .menu-social-container #menu-social {
+        width: 140px;
+        margin: auto; }
         @media only screen and (min-width: 1024px) {
-          footer.site-footer .container .c-footer__widgets .menu-social-container li {
-            text-align: left; } }
-        footer.site-footer .container .c-footer__widgets .menu-social-container li a span.menu-image-title {
-          display: none; }
+          footer.site-footer .container .c-footer__widgets .menu-social-container #menu-social {
+            width: auto; } }
+        footer.site-footer .container .c-footer__widgets .menu-social-container #menu-social li {
+          display: inline-block;
+          text-align: center;
+          width: auto;
+          padding: 0; }
+          @media only screen and (min-width: 1024px) {
+            footer.site-footer .container .c-footer__widgets .menu-social-container #menu-social li {
+              text-align: left; } }
+          footer.site-footer .container .c-footer__widgets .menu-social-container #menu-social li a span.menu-image-title {
+            display: none; }
     footer.site-footer .container .c-footer__widgets .textwidget {
       width: calc(100%);
       float: left;
