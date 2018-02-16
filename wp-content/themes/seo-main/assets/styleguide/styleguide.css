@@ -1653,17 +1653,27 @@ img.mfp-img {
 .primary-nav {
   background: #ff7c7c; }
 
-/* Header */
-header .container {
-  border-bottom: 2px solid #ffffff !important;
-  padding: 0 !important; }
-
-header a {
-  color: #141413;
-  font-size: 12px; }
+body {
+  margin-top: 91px; }
   @media only screen and (min-width: 1024px) {
-    header a {
-      font-size: 15px; } }
+    body {
+      margin-top: 72px; } }
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%; }
+  header .container {
+    border-bottom: 2px solid #ffffff !important;
+    padding: 0 !important; }
+  header a {
+    color: #141413;
+    font-size: 12px; }
+    @media only screen and (min-width: 1024px) {
+      header a {
+        font-size: 15px; } }
 
 .c-nav {
   width: calc(100%);
@@ -1750,7 +1760,8 @@ header a {
   width: calc(100%);
   float: left;
   margin-left: 0;
-  position: relative; }
+  position: relative;
+  background: #ffffff; }
   .c-mainnav .c-logo__container {
     width: calc(33.33333%);
     float: left;

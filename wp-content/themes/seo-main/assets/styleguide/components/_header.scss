@@ -1,6 +1,11 @@
 /* Header */
 
 header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+
   .container {
     // padding-bottom: 20px !important;
     border-bottom: 2px solid $white !important;
@@ -144,6 +149,7 @@ header {
   @include grid-column(12, $no-gutter);
 
   position: relative;
+  background: $white;
 
   // padding: 10px 0;
 

@@ -6,3 +6,10 @@
 .primary-nav {
   background: #ff7c7c;
 }
+
+body {
+	margin-top:91px;
+	@include grid-media($lg) {
+		margin-top: 72px;
+	}
+}
