@@ -46,6 +46,7 @@ header {
       left: unset;
       top: unset;
       background: none;
+      border-top: 2px solid $white;
     }
 
 
@@ -143,7 +144,8 @@ header {
   @include grid-column(12, $no-gutter);
 
   position: relative;
-  padding: 10px 0;
+
+  // padding: 10px 0;
 
   .c-logo__container {
     @include grid-column(4, $no-gutter);
@@ -195,7 +197,7 @@ header {
 
 
     @include grid-media($md) {
-      @include grid-column(3, $no-gutter);
+      @include grid-column(4, $no-gutter);
 
       float: right;
 
@@ -228,6 +230,7 @@ header {
     text-align: center;
     padding: 27px 15px;
     color: $white;
+    border-left: 2px solid $white;
   }
 }
 
@@ -324,6 +327,7 @@ header {
     background-color: $black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 200%;
 
     // padding: 12px 16px;
     z-index: 10;
@@ -350,7 +354,7 @@ header {
 // Registration Menu
 .side-menu-widget-area {
   @include grid-media($lg) {
-    @include grid-column(3, $no-gutter);
+    @include grid-column(4, $no-gutter);
 
     float: right;
   }
@@ -371,6 +375,7 @@ header {
         @include grid-column(6, $no-gutter);
 
         border-left: 2px solid $white;
+        border-bottom: 0;
       }
 
 
