@@ -23,7 +23,7 @@
 .c-uie__input input.pseudo-class-focus {
   box-shadow: none;
   border: none;
-  border-bottom: 4px solid #141413;
+  border-bottom: 4px solid #050505;
   color: #7cb4f6;
   padding-bottom: 1px;
 }
@@ -83,7 +83,7 @@
 .c-uie__dropdown-option.pseudo-class-hover:before {
   content: "";
   position: absolute;
-  border-bottom: 2px solid #141413;
+  border-bottom: 2px solid #050505;
   width: 50%;
   bottom: 50%;
   right: 0;
@@ -96,7 +96,7 @@
 .c-rte__accordion a.pseudo-class-hover,
 .c-rte__accordion a.pseudo-class-focus {
   color: #7cb4f6;
-  border-bottom: 2px solid #141413;
+  border-bottom: 2px solid #050505;
 }
 
 .c-accordion li .toggle.pseudo-class-hover {
@@ -132,7 +132,7 @@
 }
 
 .c-nav .c-menu__container .c-menu__list .c-menu__list-item.has-child.pseudo-class-hover {
-  background: #141413;
+  background: #050505;
 }
 
 .c-nav .c-menu__container .c-menu__list .c-menu__list-item.has-child.pseudo-class-hover .c-menu__sublist {
@@ -149,7 +149,7 @@
 }
 
 .menu li.pseudo-class-hover {
-  background: #141413;
+  background: #050505;
 }
 
 .menu li.pseudo-class-hover a {
