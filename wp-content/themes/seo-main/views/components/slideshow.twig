@@ -1,5 +1,8 @@
 <div class="container slideshow">
-	{% for image in component.slideshow %}
-		<img src="{{image.url}}" />
+	{% for imagecomponent in component.slideshow %}
+		<img src="{{imagecomponent.image['url']}}" />
+		{{imagecomponent.caption}}
+
+		{{loop.index}} of {{loop.length}}
 	{% endfor %}
 </div>
