@@ -2186,15 +2186,6 @@ footer.site-footer .container {
     width: calc(100%);
     float: left;
     margin-left: 0; }
-    footer.site-footer .container .c-footer__widgets .c-footer__logo {
-      width: calc(66.66667%);
-      float: left;
-      margin-left: 0; }
-      @media only screen and (min-width: 1024px) {
-        footer.site-footer .container .c-footer__widgets .c-footer__logo {
-          width: calc(50%);
-          float: left;
-          margin-left: 0; } }
     footer.site-footer .container .c-footer__widgets .menu-footer-left-container,
     footer.site-footer .container .c-footer__widgets .menu-footer-right-container {
       width: calc(100%);
@@ -2205,6 +2196,7 @@ footer.site-footer .container {
       @media only screen and (min-width: 1024px) {
         footer.site-footer .container .c-footer__widgets .menu-footer-left-container,
         footer.site-footer .container .c-footer__widgets .menu-footer-right-container {
+          margin-top: -85px;
           width: calc(16.66667%);
           float: left;
           margin-left: 0;
