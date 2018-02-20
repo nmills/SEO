@@ -397,6 +397,9 @@ sg-wrapper:
 
 Styleguide 2.1
 */
+input {
+  outline: none; }
+
 input[type="radio"] {
   display: none; }
 
@@ -1198,20 +1201,118 @@ Styleguide 5.1
   vertical-align: middle; }
 
 /*
-Image Component
+Image
 
 markup:
 <div class="c-image">
-  <img src="/seo/wp-content/themes/seo-main/assets/img/image-comp-img.jpg">
+  <div class="c-image__image">
+    <img src="/wp-content/themes/seo-main/assets/img/image-comp-img.jpg">
+  </div>
+  <div class="c-image__caption">
+    Oratio verear sed et eu pri alii feugiat perpetua adipiscing id graeci eruditi.
+  </div>
 </div>
 
+
 sg-wrapper:
-<sg-wrapper-content/>
+<section>
+  <sg-wrapper-content/>
+</section>
 
 Styleguide 3.0
 */
 .c-image {
-  width: 100%; }
+  width: 100%;
+  max-width: 350px; }
+
+.c-image__image {
+  float: left;
+  margin-bottom: 10px; }
+
+.c-image__caption {
+  position: relative;
+  float: left;
+  clear: both;
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #050505;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.3;
+  text-align: left;
+  margin-bottom: 10px;
+  padding-bottom: 15px; }
+  .c-image__caption:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    height: 2px;
+    background: #e5e7e7; }
+
+/*
+Signup
+
+markup:
+<div class="c-image">
+  <div class="c-image__image">
+    <img src="/wp-content/themes/seo-main/assets/img/image-comp-img.jpg">
+  </div>
+  <div class="c-image__caption">
+    Oratio verear sed et eu pri alii feugiat perpetua adipiscing id graeci eruditi.
+  </div>
+</div>
+
+
+sg-wrapper:
+<section>
+  <sg-wrapper-content/>
+</section>
+
+Styleguide 3.0
+*/
+.c-signup {
+  max-width: 350px;
+  padding-bottom: 20px; }
+
+.c-signup__title {
+  text-align: left; }
+
+.c-signup,
+.c-signup__form {
+  width: calc(100%);
+  float: left;
+  margin-left: 0; }
+
+.c-signup__input {
+  float: left;
+  background: none;
+  border: none;
+  border-bottom: 3px solid #050505;
+  padding: 10px 0;
+  width: calc(100% - 30px);
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #050505;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.3; }
+  .c-signup__input::placeholder {
+    color: #4d4d4d; }
+
+.c-signup__button {
+  float: left;
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-submit.svg") transparent left -1px center no-repeat;
+  background-size: 22px 20px;
+  border: 3px solid #eb0029;
+  border-radius: 100%;
+  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  width: 30px;
+  height: 30px;
+  margin-top: 38px; }
+  .c-signup__button:hover, .c-signup__button:focus {
+    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-submit--hover.svg") #eb0029 left -1px center no-repeat;
+    background-size: 22px 20px;
+    border: 3px solid red; }
 
 /* Slider */
 .slick-slider {
