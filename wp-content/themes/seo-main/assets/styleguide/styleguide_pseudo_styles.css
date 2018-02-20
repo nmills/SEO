@@ -163,3 +163,8 @@
 .menu .sub-menu li.pseudo-class-hover a {
   color: #eb0029;
 }
+
+.c-searchform .c-searchform__close-btn.pseudo-class-hover span:before,
+.c-searchform .c-searchform__close-btn.pseudo-class-focus span:before {
+  transform: rotate(90deg);
+}

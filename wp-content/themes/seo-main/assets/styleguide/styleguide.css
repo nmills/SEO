@@ -1197,6 +1197,22 @@ Styleguide 5.1
   height: 35px;
   vertical-align: middle; }
 
+/*
+Image Component
+
+markup:
+<div class="c-image">
+  <img src="/seo/wp-content/themes/seo-main/assets/img/image-comp-img.jpg">
+</div>
+
+sg-wrapper:
+<sg-wrapper-content/>
+
+Styleguide 3.0
+*/
+.c-image {
+  width: 100%; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -1988,22 +2004,27 @@ header {
 
 /* Search Field */
 .c-searchform {
+  opacity: 0;
   position: fixed;
-  top: 0;
+  top: -105px;
   left: 0;
   z-index: 11;
   width: calc(100%);
   float: left;
   margin-left: 0;
   background: #eb0029;
-  padding: 20px 30px; }
-  .c-searchform .c-serchform__search-icon,
+  padding: 20px 30px;
+  transition: all 0.5s cubic-bezier(0, 0, 0.2, 1); }
+  .c-searchform.active {
+    top: 0;
+    opacity: 1; }
+  .c-searchform .c-searchform__search-icon,
   .c-searchform .c-searchform__textfield,
   .c-searchform .c-searchform__button,
   .c-searchform .seporator,
   .c-searchform .c-searchform__close-btn {
     float: left; }
-  .c-searchform .c-serchform__search-icon {
+  .c-searchform .c-searchform__search-icon {
     padding-right: 30px;
     margin-top: 5px; }
   .c-searchform .c-searchform__textfield {
@@ -2044,6 +2065,11 @@ header {
   .c-searchform .c-searchform__close-btn {
     margin-top: 12px;
     padding-left: 30px; }
+    .c-searchform .c-searchform__close-btn span:before {
+      transform: rotate(0);
+      transition: all 0.3s cubic-bezier(0, 0, 0.2, 1); }
+    .c-searchform .c-searchform__close-btn:hover span:before, .c-searchform .c-searchform__close-btn:focus span:before {
+      transform: rotate(90deg); }
 
 /* Footer */
 footer.site-footer .container {

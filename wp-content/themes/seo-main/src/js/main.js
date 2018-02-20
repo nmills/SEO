@@ -9,6 +9,7 @@ import jquery from 'jquery';
 import accordion from 'modules/accordion.js';
 // import galleryWidget from 'modules/galleryWidget.js';
 import custom from 'modules/custom.js';
+import searchBar from 'modules/searchBar.js';
 
 (function($) {
   $( document ).ready(function() {
@@ -46,5 +47,6 @@ import custom from 'modules/custom.js';
     // galleryWidget();
 
     custom();
+    searchBar();
   }
 })(jquery);

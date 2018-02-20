@@ -2329,11 +2329,12 @@ var _jquery=typeof window!=="undefined"?window['jQuery']:typeof global!=="undefi
 
 var _accordion=require('modules/accordion.js');var _accordion2=_interopRequireDefault(_accordion);
 
-var _custom=require('modules/custom.js');var _custom2=_interopRequireDefault(_custom);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// import prepInputs from 'modules/prepinputs.js';
-// import socialShare from 'modules/socialShare.js';
-// import carousel from 'modules/carousel.js';
-// import qtip from 'modules/qtip.js';
-(function($){$(document).ready(function(){ready();
+var _custom=require('modules/custom.js');var _custom2=_interopRequireDefault(_custom);
+var _searchBar=require('modules/searchBar.js');var _searchBar2=_interopRequireDefault(_searchBar);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// import galleryWidget from 'modules/galleryWidget.js';
+
+(function($){
+$(document).ready(function(){
+ready();
 
 // Styleguide event when an element is rendered
 $(window).bind("styleguide:onRendered",function(e){
@@ -2367,12 +2368,16 @@ function ready(){
 // galleryWidget();
 
 (0,_custom2.default)();
+(0,_searchBar2.default)();
 }
-})(_jquery2.default);// import galleryWidget from 'modules/galleryWidget.js';
+})(_jquery2.default);// import prepInputs from 'modules/prepinputs.js';
+// import socialShare from 'modules/socialShare.js';
+// import carousel from 'modules/carousel.js';
+// import qtip from 'modules/qtip.js';
 
 }).call(this,typeof global!=="undefined"?global:typeof self!=="undefined"?self:typeof window!=="undefined"?window:{});
 
-},{"modules/accordion.js":2,"modules/custom.js":3}],2:[function(require,module,exports){
+},{"modules/accordion.js":2,"modules/custom.js":3,"modules/searchBar.js":4}],2:[function(require,module,exports){
 'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 
@@ -2432,6 +2437,30 @@ $(".cross").hide();
 $(".hamburger").show();
 });
 });
+};
+
+},{}],4:[function(require,module,exports){
+'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
+
+
+
+function(){
+var searchForm=$('.c-searchform');
+var searchBtn=$('.c-search-btn');
+var searchBtnClose=$('.c-searchform__close-btn');
+
+
+if(searchForm.length){
+searchBtn.click(function(e){
+e.preventDefault();
+searchForm.addClass('active');
+});
+
+searchBtnClose.click(function(e){
+e.preventDefault();
+searchForm.removeClass('active');
+});
+}
 };
 
 },{}]},{},[1]);
