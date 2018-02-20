@@ -231,6 +231,97 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "5a8bd684b02ef",
+                    "name": "region_left_rail",
+                    "label": "region left rail",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a8bd690b02f0",
+                            "label": "region left rail",
+                            "name": "region_left_rail",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "button_label": "Add component",
+                            "min": "",
+                            "max": "",
+                            "layouts": [
+                                {
+                                    "key": "5a8bd6d222919",
+                                    "name": "image",
+                                    "label": "image",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5a8bd6fdb02f1",
+                                            "label": "image",
+                                            "name": "image",
+                                            "type": "clone",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "clone": [
+                                                "group_5a8bd61f412fd"
+                                            ],
+                                            "display": "seamless",
+                                            "layout": "block",
+                                            "prefix_label": 0,
+                                            "prefix_name": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                {
+                                    "key": "5a8bd750b02f2",
+                                    "name": "signup",
+                                    "label": "signup",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5a8bd7f06182c",
+                                            "label": "signup",
+                                            "name": "signup",
+                                            "type": "clone",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "clone": [
+                                                "group_5a8bd7b071ac1"
+                                            ],
+                                            "display": "seamless",
+                                            "layout": "block",
+                                            "prefix_label": 0,
+                                            "prefix_name": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -252,5 +343,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1518506344
+    "modified": 1519114271
 }

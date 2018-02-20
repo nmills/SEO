@@ -1,0 +1,5 @@
+<div class="container">
+  {% for component in region.region_left_rail %}
+    {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
+  {% endfor %}
+</div>

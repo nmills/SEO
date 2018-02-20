@@ -37,6 +37,10 @@ sg-wrapper:
 Styleguide 2.1
 */
 
+input {
+  outline: none;
+}
+
 input[type="radio"] {
     display: none;
 }
