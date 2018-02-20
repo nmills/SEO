@@ -1182,19 +1182,19 @@ Styleguide 5.1
   display: inline-block; }
 
 .icon-search--small:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-search--small.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-search--small.svg") center center no-repeat;
   background-size: contain;
   width: 20px;
   height: 20px; }
 
 .icon-search--large:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-search--large.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-search--large.svg") center center no-repeat;
   background-size: contain;
   width: 50px;
   height: 50px; }
 
 .icon-close--large:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-close--large.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-close--large.svg") center center no-repeat;
   background-size: contain;
   width: 35px;
   height: 35px;
@@ -2158,7 +2158,7 @@ header {
     .c-searchform .c-searchform__button input {
       width: 48px;
       height: 36px;
-      background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg");
+      background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg");
       border: none;
       outline: none; }
       .c-searchform .c-searchform__button input::placeholder {
