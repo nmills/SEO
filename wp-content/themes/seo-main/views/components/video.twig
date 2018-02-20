@@ -3,7 +3,8 @@
 		<h1>{{component.heading}}</h1>
 	</div>
 	<div class="video">
-		{{component.video}}
+		
+		<div data-type="youtube" data-video-id="{{component.video}}"></div>
 	</div>
 	<div class="quote">
 		<p>
@@ -11,3 +12,6 @@
 		</p>
 	</div>
 </div>
+<script>
+        if (window.shr) { window.shr.setup({ count: { classname: 'btn__count' } }); }
+    </script>
