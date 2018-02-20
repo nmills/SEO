@@ -17,3 +17,11 @@
   margin: 0 auto;
   max-width: 100%;
 }
+
+.seporator {
+  display: inline-block;
+  vertical-align: middle;
+  height: 60px;
+  width: 2px;
+  background: $black;    
+}
