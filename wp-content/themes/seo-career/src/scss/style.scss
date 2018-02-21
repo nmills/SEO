@@ -1,49 +1,49 @@
-/*!
-Theme Name: Seo Careers
-Theme URI: http://www.bluestatedigital.com
-Author: Small Axe
-Author URI: https://smallaxe.tech
-Template: seo-main
-Version: 1.0.0
-Description: Seo Careers Site Child Theme
-*/
+// /*!
+// Theme Name: Seo Careers
+// Theme URI: http://www.bluestatedigital.com
+// Author: Small Axe
+// Author URI: https://smallaxe.tech
+// Template: seo-main
+// Version: 1.0.0
+// Description: Seo Careers Site Child Theme
+// */
 
-// Neat Bourbon
-@import "../../node_modules/bourbon/core/bourbon";
-@import "../../node_modules/bourbon-neat/core/neat";
+// // Neat Bourbon
+// @import "../../node_modules/bourbon/core/bourbon";
+// @import "../../node_modules/bourbon-neat/core/neat";
 
-// Settings
-// Used with preprocessors and contain font, colors definitions, etc.
-// =====================
-@import "settings/variables";
-@import "settings/fonts";
+// // Settings
+// // Used with preprocessors and contain font, colors definitions, etc.
+// // =====================
+// @import "settings/variables";
+// @import "settings/fonts";
 
-// Generic
-// Reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.
-@import "generic/reset";
+// // Generic
+// // Reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.
+// @import "generic/reset";
 
-// Tools
-// Globally used mixins and functions
-@import "tools/typography";
+// // Tools
+// // Globally used mixins and functions
+// @import "tools/typography";
 
-// @import "tools/mixins";
-@import "tools/layout";
-@import "tools/animation";
+// // @import "tools/mixins";
+// @import "tools/layout";
+// @import "tools/animation";
 
-// Components
-// Specific UI components
+// // Components
+// // Specific UI components
 
-@import "components/ui-elements";
-@import "components/rich-text-editor";
-@import "components/charts";
+// @import "components/ui-elements";
+// @import "components/rich-text-editor";
+// @import "components/charts";
 
-// Vendor Styles
-// Styles included with plugins, etc
-// ======================
-@import "vendor/slick";
-@import "vendor/magnific-popup";
+// // Vendor Styles
+// // Styles included with plugins, etc
+// // ======================
+// @import "vendor/slick";
+// @import "vendor/magnific-popup";
 
-// Overrides
-// Utilities and helper classes with ability to override anything which goes before
-@import "overrides/utility";
-@import "overrides/overrides";
+// // Overrides
+// // Utilities and helper classes with ability to override anything which goes before
+// @import "overrides/utility";
+// @import "overrides/overrides";
