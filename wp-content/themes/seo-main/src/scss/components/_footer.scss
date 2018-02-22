@@ -34,7 +34,7 @@ footer.site-footer {
         padding-left: 0;
 
         @include grid-media($lg) {
-          margin-top: -85px;
+          margin-top: -83px;
           @include grid-column(2, $no-gutter);
 
           border-left: 1px solid grey;
@@ -70,7 +70,7 @@ footer.site-footer {
           @include grid-column(2.2, $no-gutter);
 
           text-align: left;
-          margin-top: 20px;
+          margin-top: 63px;
         }
 
 
@@ -112,7 +112,7 @@ footer.site-footer {
           @include grid-column(5, $no-gutter);
 
           text-align: left;
-          margin-top: 25px;
+          margin-top: 73px;
         }
 
 

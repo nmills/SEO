@@ -137,3 +137,11 @@ table {
 * {
   box-sizing: border-box;
 }
+
+input {
+  outline: none;
+
+  &[type="submit"] {
+    cursor: pointer;
+  }
+}

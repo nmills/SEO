@@ -105,7 +105,7 @@
 
 .c-signup__button.pseudo-class-hover,
 .c-signup__button.pseudo-class-focus {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-submit--hover.svg") #eb0029 left -1px center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-submit--hover.svg") #eb0029 left -1px center no-repeat;
   background-size: 22px 20px;
   border: 3px solid red;
 }
@@ -150,8 +150,13 @@
   color: #ffffff;
 }
 
+.c-mainnav .c-mainnav__donate.pseudo-class-hover,
+.c-mainnav .c-mainnav__donate.pseudo-class-focus {
+  background: #050505;
+}
+
 .menu li.menu-item.menu-item-has-children.pseudo-class-hover:after {
-  top: 30%;
+  top: 40%;
   transform: rotate(180deg);
 }
 
@@ -171,7 +176,7 @@
   color: #eb0029;
 }
 
-.c-searchform .c-searchform__close-btn.pseudo-class-hover span:before,
-.c-searchform .c-searchform__close-btn.pseudo-class-focus span:before {
+.c-searchform__close-btn.pseudo-class-hover span:before,
+.c-searchform__close-btn.pseudo-class-focus span:before {
   transform: rotate(90deg);
 }
