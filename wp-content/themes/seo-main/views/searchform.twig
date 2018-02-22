@@ -1,21 +1,23 @@
 <div class="c-searchform">
-  <form role="search" method="get" id="c-searchform" action="{{site.url}}">
-  	<div class="c-searchform__search-icon">
-  		<span class="icon icon-search--large"></span>
-  	</div>
-    <div class="c-searchform__textfield">
-      <input type="text" value="{{searchterm}}" name="s" id="s" placeholder="{{ __('Search', 'timber-foundation')|e }}">
-    </div>
-    <div class="c-searchform__right">
-	    <div class="c-searchform__button">
-	      <input type="submit" id="searchsubmit" value="" class="button postfix">
-	      {#<input type="submit" id="searchsubmit" value="{{ __('Search', 'timber-foundation')|e }}" class="button postfix">#}
-	    </div>
-	    <div class="seporator"></div>
-	    <a href="#" class="c-searchform__close-btn">
-	    	<span class="icon icon-close--large"></span>
-	    </a>
-	  </div>
-    </div>
-  </form>
+  <div class="c-searchform__container">
+    <form role="search" method="get" id="c-searchform" action="{{site.url}}">
+    	<div class="c-searchform__search-icon">
+    		<span class="icon icon-search--large"></span>
+    	</div>
+      <div class="c-searchform__textfield">
+        <input type="text" value="{{searchterm}}" name="s" id="s" placeholder="{{ __('Search', 'timber-foundation')|e }}">
+      </div>
+      <div class="c-searchform__right">
+  	    <div class="c-searchform__button">
+  	      <input type="submit" id="searchsubmit" value="" class="button postfix">
+  	      {#<input type="submit" id="searchsubmit" value="{{ __('Search', 'timber-foundation')|e }}" class="button postfix">#}
+  	    </div>
+  	    <div class="seporator"></div>
+  	    <a href="#" class="c-searchform__close-btn">
+  	    	<span class="icon icon-close--large"></span>
+  	    </a>
+  	  </div>
+      </div>
+    </form>
+  </div>
 </div>

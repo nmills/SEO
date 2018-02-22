@@ -192,26 +192,11 @@ header {
 
   .c-mainnav__content {
     @include grid-column(8, $no-gutter);
-
     float: right;
 
     @include grid-media($sm) {
-      @include grid-column(5, $no-gutter);
-
+      @include grid-column(3.5, $no-gutter);
       float: right;
-    }
-
-
-    @include grid-media($md) {
-      @include grid-column(4, $no-gutter);
-
-      float: right;
-
-      // position: absolute;
-      // top: 50%;
-      // right: 0;
-      // transform: translateY(-50%);
-      // z-index: 10;
     }
 
     .custom-html-widget {
@@ -220,33 +205,41 @@ header {
   }
 
   .menu-site-menu-container {
-    @include grid-column(8, $no-gutter);
-
-    @include grid-media($lg) {
-      @include grid-column(6, $no-gutter);
-    }
+    float: left;
   }
 
   .textwidget.custom-html-widget {
-    @include grid-column(4, $no-gutter);
-
-    @include grid-media($lg) {
-      @include grid-column(6, $no-gutter);
-    }
+    float: left;
   }
 
   .c-mainnav__donate {
     float: left;
     background: $red;
-    text-align: center;
-    padding: 15px;
     color: $white;
+    text-align: center;
+    height: 65px;
+    line-height: 4;
+    padding-left: 25px;
+    padding-right: 25px;    
     border-left: 2px solid $white;
+
+    &:hover,
+    &:focus {
+      background: $black;
+    }
   }
 }
 
 .c-search-btn {
   float: left;
+  height: 65px;
+  line-height: 4.75;
+  padding-left: 23px;
+  padding-right: 23px;
+
+  span {
+    margin-right: 0;
+  }
 }
 
 // ----------------
@@ -291,7 +284,7 @@ header {
     @include grid-column(12, $no-gutter);
 
     cursor: pointer;
-    padding: 5px 16px;
+    padding: 18px 50px 18px 25px;
 
     &.menu-item.menu-item-has-children {
       position: relative;
@@ -300,12 +293,12 @@ header {
       &:after {
         content: "";
         position: absolute;
-        top: 40%;
-        right: 10%;
+        top: 46%;
+        right: 16%;
         transition: all .4s ease-in-out;
 
         // transform: translateY(-50%);
-        background-image: url("./src/img/Arrow.png");
+        background-image: url("./assets/img/icons/carat-closed-universal-nav.svg");
         background-repeat: no-repeat;
         background-size: contain;
         width: 13px;
@@ -314,7 +307,7 @@ header {
 
       &:hover {
         &:after {
-          top: 30%;
+          top: 40%;
           transform: rotate(180deg);
         }
       }
@@ -338,26 +331,24 @@ header {
   .sub-menu {
     display: none;
     position: absolute;
+    top: 65px;
     left: 0;
     background-color: $black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     width: 200%;
-
-    // padding: 12px 16px;
     z-index: 10;
+    padding-bottom: 15px;
 
     a {
       color: $white;
     }
 
     li {
-      // border-bottom: 2px solid $white;
-      padding: 5px 16px;
+      padding: 5px 25px;
       font-size: 16px;
 
       &:hover {
-        // border-bottom-color: $light-blue;
         a {
           color: $red;
         }

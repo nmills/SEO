@@ -8,9 +8,9 @@
 }
 
 body {
-  margin-top: 91px;
+  padding-top: 115px;
 
   @include grid-media($lg) {
-    margin-top: 72px;
+    padding-top: 100px;
   }
 }
