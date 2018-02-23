@@ -38,34 +38,18 @@
   <div class="c-nav--bottom">
     <div class="c-nav__nav--left">
       <ul>
-        {% for item in main_menu_left.get_items %}
-          {% set has_children = item.get_children %}
+        {% for main_menu_item in main_menu_left.get_items %}
           <li>
-            <a href="{{item.get_link}}">{{item.title}}</a>
-            {% if has_children %}
-              <ul class="nav-dropdown">
-              {% for child in item.get_children %}
-                <li><a href="{{child.get_link}}">{{child.title}}</a></li>
-              {% endfor %}
-              </ul>
-            {% endif %}
+            <a href="{{main_menu_item.get_link}}">{{main_menu_item.title}}</a>            
           </li>
         {% endfor %}
       </ul>
     </div>
     <div class="c-nav__nav--right">
       <ul>
-        {% for item in main_menu_right.get_items %}
-          {% set has_children = item.get_children %}
+        {% for main_menu_right_item in main_menu_right.get_items %}
           <li>
-            <a href="{{item.get_link}}">{{item.title}}</a>
-            {% if has_children %}
-              <ul class="nav-dropdown">
-              {% for child in item.get_children %}
-                <li><a href="{{child.get_link}}">{{child.title}}</a></li>
-              {% endfor %}
-              </ul>
-            {% endif %}
+            <a href="{{main_menu_right_item.get_link}}">{{main_menu_right_item.title}}</a>
           </li>
         {% endfor %}
       </ul>
