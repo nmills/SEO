@@ -37,6 +37,11 @@ class BSDStarterSite extends TimberSite {
 
   function add_to_context ( $context ) {
     $context['menu'] = new TimberMenu('header-menu');
+    /* New menus are added though here for the header */
+    $context['site_menu'] = new TimberMenu('site-menu');
+    $context['main_menu_left'] = new TimberMenu('main-menu');
+    $context['main_menu_right'] = new TimberMenu('main-menu-right');
+    /* End of header menus */
     $context['site'] = $this;
     $context['footer_widgets'] = Timber::get_widgets('footer_widgets');
     $cta = Timber::get_post( array(
