@@ -30,3 +30,7 @@
     opacity: 1;
   }
 }
+
+a {
+  transition: all .5s $cubic-transition;
+}
