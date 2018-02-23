@@ -2446,7 +2446,7 @@ $(".hamburger").show();
 
 function(){
 var searchForm=$('.c-searchform');
-var searchBtn=$('.c-search-btn');
+var searchBtn=$('.js-search-btn');
 var searchBtnClose=$('.c-searchform__close-btn');
 
 
