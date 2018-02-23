@@ -1,4 +1,4 @@
-<div class="c-mainnav">
+{#<div class="c-mainnav">
   <div class="c-logo__container">
     {% if logo[0] %}
       <a href="{{site.url}}" class="c-logo__link"><img src="{{logo[0]}}" class=""></a>
@@ -37,4 +37,43 @@
     </ul> <!-- /.menu -->
     {{side_menu_widget}}
   </div>
-</aside> <!-- /.off-canvas -->
+</aside> <!-- /.off-canvas -->#}
+
+<div class="c-nav">
+  <div class="c-nav--top">
+    <div class="c-nav__logo">
+      {% if logo[0] %}
+        <a href="{{site.url}}" class="c-logo__link">
+          <img src="{{logo[0]}}" class="">
+        </a>
+      {% else %}
+        <h1 class="c-logo__text">
+          <a href="{{site.url}}" class="c-logo__link">{{site.title}}</a>
+        </h1>
+      {% endif %}
+    </div>
+    <div class="c-nav__elements">
+      <div class="c-nav__multisite-nav">
+        <ul>
+          <li>
+            <a href="#" class="nav-title">SEO Programs</a>
+            <ul class="nav-dropdown">
+              <li><a href="#">SEO Scholars</a></li>
+              <li><a href="#">SEO Career</a></li>
+              <li><a href="#">SEO Law</a></li>
+              <li><a href="#">SEO Alternative Investments</a></li>
+              <li><a href="#">SEO USA</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="c-nav__donate-link">Donate</a>
+      <a href="#" class="c-nav__search-btn">
+        <span class="icon icon-search--small"></span>
+      </a>
+    </div>
+  </div>
+  <div class="c-nav--bottom">
+    
+  </div>
+</div>
