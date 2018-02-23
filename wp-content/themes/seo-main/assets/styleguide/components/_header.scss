@@ -38,7 +38,7 @@ header {
 
 .c-nav__logo {
   float: left;
-  padding: 20px 0 0 20px;
+  padding: 15px 0 0 15px;
 }
 
 .c-nav__elements {
@@ -48,7 +48,8 @@ header {
 
 .c-nav__multisite-nav,
 .c-nav__donate-link,
-.c-nav__search-btn {
+.c-nav__search-btn,
+.c-nav__elements-widget {
   float: left;
 }
 
@@ -136,11 +137,74 @@ header {
 }
 
 .c-nav__search-btn {
-  padding: 0 28px;
-  line-height: 3.75;
+  &,
   span {
-    margin-right: 0;
     display: inline-block;
+  }
+
+  padding: 0 26px;
+  line-height: 3.75;
+
+  span {
+    margin-top: 7px;
+    margin-right: 0;    
+  }
+}
+
+.c-nav--bottom {
+  background: $red;
+}
+
+.c-nav__nav--left {
+  float: left;
+
+  ul {
+    > li {
+      float: left;
+
+      > a {
+        float: left;
+        padding: 4px 15.5px;
+        color: $white;
+        border-left: 2px solid $red;
+        border-right: 2px solid $red;
+
+        &:hover,
+        &:focus {
+          background: $black;
+          color: $white;
+          border-left: 2px solid $white;
+          border-right: 2px solid $white;
+        }
+      }
+    }
+  }
+}
+
+.c-nav__nav--right {
+  float: right;
+  max-width: 330px;
+  width: 100%;  
+
+  ul {
+    width: 100%;
+    display: flex;
+
+    > li {
+      float: left;
+      width: 50%;
+      flex-grow: 1;
+
+      > a {
+        float: left;
+        text-align: center;
+        width: 100%;
+        padding: 4px 15.5px;
+        color: $white;
+        background: $black;
+        border-left: 2px solid $white;
+      }
+    }
   }
 }
 

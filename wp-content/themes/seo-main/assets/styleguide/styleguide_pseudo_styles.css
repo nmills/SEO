@@ -159,6 +159,14 @@
   background: #050505;
 }
 
+.c-nav__nav--left ul > li > a.pseudo-class-hover,
+.c-nav__nav--left ul > li > a.pseudo-class-focus {
+  background: #050505;
+  color: #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+}
+
 .c-searchform__close-btn.pseudo-class-hover span:before,
 .c-searchform__close-btn.pseudo-class-focus span:before {
   transform: rotate(90deg);

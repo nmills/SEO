@@ -1857,7 +1857,7 @@ header {
 
 .c-nav__logo {
   float: left;
-  padding: 20px 0 0 20px; }
+  padding: 15px 0 0 15px; }
 
 .c-nav__elements {
   float: right;
@@ -1865,7 +1865,8 @@ header {
 
 .c-nav__multisite-nav,
 .c-nav__donate-link,
-.c-nav__search-btn {
+.c-nav__search-btn,
+.c-nav__elements-widget {
   float: left; }
 
 .c-nav__multisite-nav {
@@ -1919,11 +1920,53 @@ header {
     background: #050505; }
 
 .c-nav__search-btn {
-  padding: 0 28px;
+  padding: 0 26px;
   line-height: 3.75; }
+  .c-nav__search-btn,
   .c-nav__search-btn span {
-    margin-right: 0;
     display: inline-block; }
+  .c-nav__search-btn span {
+    margin-top: 7px;
+    margin-right: 0; }
+
+.c-nav--bottom {
+  background: #eb0029; }
+
+.c-nav__nav--left {
+  float: left; }
+  .c-nav__nav--left ul > li {
+    float: left; }
+    .c-nav__nav--left ul > li > a {
+      float: left;
+      padding: 4px 15.5px;
+      color: #ffffff;
+      border-left: 2px solid #eb0029;
+      border-right: 2px solid #eb0029; }
+      .c-nav__nav--left ul > li > a:hover, .c-nav__nav--left ul > li > a:focus {
+        background: #050505;
+        color: #ffffff;
+        border-left: 2px solid #ffffff;
+        border-right: 2px solid #ffffff; }
+
+.c-nav__nav--right {
+  float: right;
+  max-width: 330px;
+  width: 100%; }
+  .c-nav__nav--right ul {
+    width: 100%;
+    display: flex; }
+    .c-nav__nav--right ul > li {
+      float: left;
+      width: 50%;
+      flex-grow: 1; }
+      .c-nav__nav--right ul > li > a {
+        float: left;
+        text-align: center;
+        width: 100%;
+        padding: 4px 15.5px;
+        color: #ffffff;
+        background: #050505;
+        border-left: 2px solid #ffffff; }
 
 /* Search Field */
 .c-searchform {
