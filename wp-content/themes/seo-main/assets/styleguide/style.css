@@ -8,24 +8,59 @@ Description: Seo Main Site Theme
 */
 @font-face {
   font-family: "Grotesk";
-  src: url("assets/fonts/Grotesk/HKGrotesk-Regular.eot");
-  src: url("assets/fonts/Grotesk/HKGrotesk-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Grotesk/HKGrotesk-Regular.woff") format("woff"), url("assets/fonts/Grotesk/HKGrotesk-Regular.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Grotesk";
-  src: url("assets/fonts/Grotesk/HKGrotesk-Light.eot");
-  src: url("assets/fonts/Grotesk/HKGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Grotesk/HKGrotesk-Light.woff") format("woff"), url("assets/fonts/Grotesk/HKGrotesk-Light.ttf") format("truetype");
+  src: url("assets/fonts/FoundersGroteskWeb-Light.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-Light.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-Light.woff2") format("woff"), url("assets/fonts/FoundersGroteskWeb-Light.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-Light.svg#FoundersGroteskWeb-Light") format("svg");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: "Grotesk";
-  src: url("assets/fonts/Grotesk/HKGrotesk-Bold.eot");
-  src: url("assets/fonts/Grotesk/HKGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Grotesk/HKGrotesk-Bold.woff") format("woff"), url("assets/fonts/Grotesk/HKGrotesk-Bold.ttf") format("truetype");
+  src: url("assets/fonts/FoundersGroteskWeb-LightItalic.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-LightItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-LightItalic.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-LightItalic.woff2") format("woff"), url("assets/fonts/FoundersGroteskWeb-LightItalic.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-LightItalic.svg#FoundersGroteskWeb-LightItalic") format("svg");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("assets/fonts/FoundersGroteskWeb-Regular.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-Regular.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-Regular.woff") format("woff2"), url("assets/fonts/FoundersGroteskWeb-Regular.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-Regular.svg#FoundersGroteskWeb-Regular") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("assets/fonts/FoundersGroteskWeb-RegularItalic.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-RegularItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-RegularItalic.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-RegularItalic.woff") format("woff2"), url("assets/fonts/FoundersGroteskWeb-RegularItalic.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-RegularItalic.svg#FoundersGroteskWeb-RegularItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("assets/fonts/FoundersGroteskWeb-Medium.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-Medium.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-Medium.woff") format("woff2"), url("assets/fonts/FoundersGroteskWeb-Medium.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-Medium.svg#FoundersGroteskWeb-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("assets/fonts/FoundersGroteskWeb-MediumItalic.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-MediumItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-MediumItalic.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-MediumItalic.woff") format("woff2"), url("assets/fonts/FoundersGroteskWeb-MediumItalic.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-MediumItalic.svg#FoundersGroteskWeb-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("assets/fonts/FoundersGroteskWeb-Bold.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-Bold.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-Bold.woff") format("woff2"), url("assets/fonts/FoundersGroteskWeb-Bold.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-Bold.svg#FoundersGroteskWeb-Bold") format("svg");
   font-weight: 700;
   font-style: normal; }
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("assets/fonts/FoundersGroteskWeb-BoldItalic.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-BoldItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-BoldItalic.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-BoldItalic.woff") format("woff2"), url("assets/fonts/FoundersGroteskWeb-BoldItalic.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-BoldItalic.svg#FoundersGroteskWeb-BoldItalic") format("svg");
+  font-weight: 700;
+  font-style: italic; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -236,7 +271,7 @@ h5 {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #050505;
   font-weight: 300;
-  font-size: 15.1px;
+  font-size: 16px;
   line-height: 1.59; }
 
 body {
@@ -247,7 +282,7 @@ body {
   line-height: 1.59; }
   @media only screen and (min-width: 768px) {
     body {
-      font-size: 19px;
+      font-size: 20px;
       line-height: 1.53; } }
 
 p {
@@ -260,13 +295,13 @@ p {
   margin-top: 15px; }
   @media only screen and (min-width: 768px) {
     p {
-      font-size: 19px;
+      font-size: 20px;
       line-height: 1.53; } }
   p.small-text {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
     font-weight: 300;
-    font-size: 15.1px;
+    font-size: 16px;
     line-height: 1.59; }
 
 strong {
@@ -300,18 +335,13 @@ img {
   display: block; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 15px; }
   .container::after {
     clear: both;
     content: "";
     display: block; }
-  .home .container {
-    padding: 0; }
-    @media only screen and (min-width: 768px) {
-      .home .container {
-        padding: 0 15px; } }
   @media only screen and (min-width: 1440px) {
     .container {
       padding: 0 5px; } }
@@ -793,7 +823,7 @@ Styleguide 1.1
     .c-rte a,
     .c-rte__link,
     .c-rte__accordion a {
-      font-size: 19px;
+      font-size: 20px;
       line-height: 1.53; } }
   .c-rte a:hover, .c-rte a:focus,
   .c-rte__link:hover,
@@ -978,7 +1008,7 @@ Styleguide 1.5
 /*
 Accodion
 
-Styleguide 4.0
+Styleguide 5.0
 */
 /*
 Hyperlink
@@ -1031,7 +1061,7 @@ Styleguide 4.1
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
     font-weight: 300;
-    font-size: 15.1px;
+    font-size: 16px;
     line-height: 1.59;
     font-weight: bold;
     color: #891a27;
@@ -1077,7 +1107,7 @@ Styleguide 4.1
 /*
 Video Component
 
-Styleguide 5.0
+Styleguide 6.0
 */
 /*
 Hyperlink
@@ -1287,7 +1317,7 @@ sg-wrapper:
   <sg-wrapper-content/>
 </section>
 
-Styleguide 3.0
+Styleguide 4.0
 */
 .c-signup {
   max-width: 350px;
