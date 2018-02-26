@@ -37,7 +37,7 @@ Styleguide 5.1
   padding: 40px;
 
   @include grid-media($lg) {
-    height: 530px;
+    height: 400px;
   }
 
 
@@ -47,7 +47,7 @@ Styleguide 5.1
     @include grid-media($lg) {
       @include grid-column(3, $no-gutter);
 
-      height: 450px;
+      height: 300px;
     }
 
 
@@ -71,10 +71,18 @@ Styleguide 5.1
   .video {
     @include grid-column(12, $no-gutter);
 
+    padding-top: 20px;
+
     @include grid-media($lg) {
       @include grid-column(6, $no-gutter);
 
-      height: 450px;
+      padding-top: 0px;
+      padding-left: 20px;
+      height: 300px;
+
+      .plyr {
+        max-height: 300px;
+      }
     }
 
 
@@ -99,10 +107,14 @@ Styleguide 5.1
   .quote {
     @include grid-column(12, $no-gutter);
 
+    padding-top: 20px;
+
     @include grid-media($lg) {
       @include grid-column(3, $no-gutter);
 
-      height: 450px;
+      padding-top: 0px;
+      padding-left: 20px;
+      height: 300px;
     }
 
 
