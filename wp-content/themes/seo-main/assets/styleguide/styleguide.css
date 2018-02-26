@@ -1071,6 +1071,8 @@ Styleguide 4.1
         color: #eb0029; }
       .c-accordion li .toggle.active {
         color: #eb0029; }
+      .c-accordion li .toggle span.content-grid {
+        cursor: pointer; }
 
 /*
 Video Component
@@ -1082,15 +1084,15 @@ Hyperlink
 
 markup:
 <div class="container video-component">
-	<div class="heading">
-		<h1>This is the heading for the video</h1>
-	</div>
-	<div class="video">
-		<iframe width="640" height="360" src="https://www.youtube.com/embed/V8S591S-eU0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-	</div>
-	<div class="quote">
-		This is the quote for the video, which was taken from youtube.
-	</div>
+  <div class="heading">
+    <h1>This is the heading for the video</h1>
+  </div>
+  <div class="video">
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/V8S591S-eU0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <div class="quote">
+    This is the quote for the video, which was taken from youtube.
+  </div>
 </div>
 
 sg-wrapper:
@@ -1109,7 +1111,7 @@ Styleguide 5.1
   padding: 40px; }
   @media only screen and (min-width: 1024px) {
     .video-component {
-      height: 530px; } }
+      height: 400px; } }
   .video-component .heading {
     width: calc(100%);
     float: left;
@@ -1120,7 +1122,7 @@ Styleguide 5.1
         width: calc(25%);
         float: left;
         margin-left: 0;
-        height: 450px; } }
+        height: 300px; } }
     .video-component .heading h1 {
       color: #ffffff;
       width: 100%;
@@ -1136,13 +1138,18 @@ Styleguide 5.1
     width: calc(100%);
     float: left;
     margin-left: 0;
+    padding-top: 20px;
     position: relative; }
     @media only screen and (min-width: 1024px) {
       .video-component .video {
         width: calc(50%);
         float: left;
         margin-left: 0;
-        height: 450px; } }
+        padding-top: 0px;
+        padding-left: 20px;
+        height: 300px; }
+        .video-component .video .plyr {
+          max-height: 300px; } }
     .video-component .video iframe {
       width: 100%;
       height: 100%;
@@ -1159,13 +1166,16 @@ Styleguide 5.1
     width: calc(100%);
     float: left;
     margin-left: 0;
+    padding-top: 20px;
     position: relative; }
     @media only screen and (min-width: 1024px) {
       .video-component .quote {
         width: calc(25%);
         float: left;
         margin-left: 0;
-        height: 450px; } }
+        padding-top: 0px;
+        padding-left: 20px;
+        height: 300px; } }
     .video-component .quote p {
       color: #ffffff;
       font-style: italic;
@@ -1831,7 +1841,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
-  width: 100%; }
+  width: 100%;
+  background: #ffffff; }
   header .container {
     border-bottom: 2px solid #ffffff !important;
     padding: 0 !important; }
