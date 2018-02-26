@@ -29,14 +29,6 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 
-  .home & {
-    padding: 0;
-
-    @include grid-media($md) {
-      padding: 0 15px;
-    }
-  }
-
   @include grid-media($xl) {
     padding: 0 5px;
   }
