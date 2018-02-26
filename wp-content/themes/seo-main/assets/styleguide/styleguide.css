@@ -1071,6 +1071,8 @@ Styleguide 4.1
         color: #eb0029; }
       .c-accordion li .toggle.active {
         color: #eb0029; }
+      .c-accordion li .toggle span.content-grid {
+        cursor: pointer; }
 
 /*
 Video Component
@@ -1831,7 +1833,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
-  width: 100%; }
+  width: 100%;
+  background: #ffffff; }
   header .container {
     border-bottom: 2px solid #ffffff !important;
     padding: 0 !important; }
