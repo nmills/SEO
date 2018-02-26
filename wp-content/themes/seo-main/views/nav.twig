@@ -16,10 +16,10 @@
         {# Setting up the SITE MENU  #}
         <ul>
           {% for item in site_menu.get_items %}
-            {% set has_children = item.get_children %}
+            {% set has_children_site_menu = item.get_children %}
             <li>
               <a href="{{item.get_link}}" class="nav-title">{{item.title}}</a>
-              {% if has_children %}
+              {% if has_children_site_menu %}
                 <ul class="nav-dropdown">
                 {% for child in item.get_children %}
                   <li><a href="{{child.get_link}}">{{child.title}}</a></li>
@@ -39,8 +39,16 @@
     <div class="c-nav__nav--left">
       <ul>
         {% for main_menu_item in main_menu_left.get_items %}
+          {% set has_children_main_menu_left = main_menu_item.get_children %}
           <li>
-            <a href="{{main_menu_item.get_link}}">{{main_menu_item.title}}</a>            
+            <a href="{{main_menu_item.get_link}}">{{main_menu_item.title}}</a>
+            {% if has_children_main_menu_left %}
+              <ul class="nav-dropdown">
+              {% for child in main_menu_item.get_children %}
+                <li><a href="{{child.get_link}}">{{child.title}}</a></li>
+              {% endfor %}
+              </ul>
+            {% endif %}
           </li>
         {% endfor %}
       </ul>
@@ -48,8 +56,16 @@
     <div class="c-nav__nav--right">
       <ul>
         {% for main_menu_right_item in main_menu_right.get_items %}
+          {% set has_children_main_menu_right = main_menu_right_item.get_children %}
           <li>
             <a href="{{main_menu_right_item.get_link}}">{{main_menu_right_item.title}}</a>
+            {% if has_children_main_menu_right %}
+              <ul class="nav-dropdown">
+              {% for child in main_menu_right_item.get_children %}
+                <li><a href="{{child.get_link}}">{{child.title}}</a></li>
+              {% endfor %}
+              </ul>
+            {% endif %}
           </li>
         {% endfor %}
       </ul>
