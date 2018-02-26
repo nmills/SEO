@@ -365,12 +365,10 @@ img {
       content: "";
       display: block; } }
 
-section {
-  margin: 40px 0; }
-  section::after {
-    clear: both;
-    content: "";
-    display: block; }
+section::after {
+  clear: both;
+  content: "";
+  display: block; }
 
 .slider__animation {
   transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
