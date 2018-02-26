@@ -3,11 +3,15 @@
 .c-searchform {
   opacity: 0;
   position: fixed;
-  top: -105px;
+  top: -160px;
   left: 0;
   z-index: 11;
   @include grid-column(12, $no-gutter);
   transition: all .5s $cubic-transition-2;
+
+  @include grid-media($lg){
+    top: -105px;
+  }
 
   &.active {
     top: 0;
@@ -19,7 +23,7 @@
   @include grid-container;
   background: $red;
   padding: 20px 30px;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
