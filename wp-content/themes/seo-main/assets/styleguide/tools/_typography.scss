@@ -9,7 +9,7 @@ $sans-stack: 'Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 15.1px;
   line-height: 1.59;
   @include grid-media($md) {
-    font-size: 19px;
+    font-size: 20px;
     line-height: 1.53;
   }
 }
@@ -78,7 +78,7 @@ $sans-stack: 'Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-family: $sans-stack;
   color: #{$color};
   font-weight: $font-normal;
-  font-size: 15.1px;
+  font-size: 16px;
   line-height: 1.59;
 }
 
@@ -86,7 +86,7 @@ $sans-stack: 'Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-family: $sans-stack;
   color: #{$color};
   font-weight: $font-bold;
-  font-size: 15.1px;
+  font-size: 16px;
   line-height: 1.59;
 }
 

@@ -1,23 +1,63 @@
 @font-face {
   font-family: "Grotesk";
-  src: url("assets/fonts/Grotesk/HKGrotesk-Regular.eot");
-  src: url("assets/fonts/Grotesk/HKGrotesk-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Grotesk/HKGrotesk-Regular.woff") format("woff"), url("assets/fonts/Grotesk/HKGrotesk-Regular.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Grotesk";
-  src: url("assets/fonts/Grotesk/HKGrotesk-Light.eot");
-  src: url("assets/fonts/Grotesk/HKGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Grotesk/HKGrotesk-Light.woff") format("woff"), url("assets/fonts/Grotesk/HKGrotesk-Light.ttf") format("truetype");
+  src: url("assets/fonts/FoundersGroteskWeb-Light.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-Light.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-Light.woff2") format("woff"), url("assets/fonts/FoundersGroteskWeb-Light.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-Light.svg#FoundersGroteskWeb-Light") format("svg");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Grotesk";
-  src: url("assets/fonts/Grotesk/HKGrotesk-Bold.eot");
-  src: url("assets/fonts/Grotesk/HKGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Grotesk/HKGrotesk-Bold.woff") format("woff"), url("assets/fonts/Grotesk/HKGrotesk-Bold.ttf") format("truetype");
+  src: url("assets/fonts/FoundersGroteskWeb-LightItalic.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-LightItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-LightItalic.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-LightItalic.woff2") format("woff"), url("assets/fonts/FoundersGroteskWeb-LightItalic.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-LightItalic.svg#FoundersGroteskWeb-LightItalic") format("svg");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("assets/fonts/FoundersGroteskWeb-Regular.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-Regular.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-Regular.woff") format("woff2"), url("assets/fonts/FoundersGroteskWeb-Regular.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-Regular.svg#FoundersGroteskWeb-Regular") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("assets/fonts/FoundersGroteskWeb-RegularItalic.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-RegularItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-RegularItalic.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-RegularItalic.woff") format("woff2"), url("assets/fonts/FoundersGroteskWeb-RegularItalic.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-RegularItalic.svg#FoundersGroteskWeb-RegularItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("assets/fonts/FoundersGroteskWeb-Medium.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-Medium.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-Medium.woff") format("woff2"), url("assets/fonts/FoundersGroteskWeb-Medium.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-Medium.svg#FoundersGroteskWeb-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("assets/fonts/FoundersGroteskWeb-MediumItalic.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-MediumItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-MediumItalic.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-MediumItalic.woff") format("woff2"), url("assets/fonts/FoundersGroteskWeb-MediumItalic.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-MediumItalic.svg#FoundersGroteskWeb-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("assets/fonts/FoundersGroteskWeb-Bold.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-Bold.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-Bold.woff") format("woff2"), url("assets/fonts/FoundersGroteskWeb-Bold.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-Bold.svg#FoundersGroteskWeb-Bold") format("svg");
   font-weight: 700;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("assets/fonts/FoundersGroteskWeb-BoldItalic.eot");
+  src: url("assets/fonts/FoundersGroteskWeb-BoldItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FoundersGroteskWeb-BoldItalic.woff") format("woff"), url("assets/fonts/FoundersGroteskWeb-BoldItalic.woff") format("woff2"), url("assets/fonts/FoundersGroteskWeb-BoldItalic.ttf") format("truetype"), url("assets/fonts/FoundersGroteskWeb-BoldItalic.svg#FoundersGroteskWeb-BoldItalic") format("svg");
+  font-weight: 700;
+  font-style: italic;
 }

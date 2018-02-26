@@ -1,7 +1,7 @@
 /*
 Video Component
 
-Styleguide 5.0
+Styleguide 6.0
 */
 
 /*
@@ -9,15 +9,15 @@ Hyperlink
 
 markup:
 <div class="container video-component">
-	<div class="heading">
-		<h1>This is the heading for the video</h1>
-	</div>
-	<div class="video">
-		<iframe width="640" height="360" src="https://www.youtube.com/embed/V8S591S-eU0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-	</div>
-	<div class="quote">
-		This is the quote for the video, which was taken from youtube.
-	</div>
+  <div class="heading">
+    <h1>This is the heading for the video</h1>
+  </div>
+  <div class="video">
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/V8S591S-eU0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <div class="quote">
+    This is the quote for the video, which was taken from youtube.
+  </div>
 </div>
 
 sg-wrapper:
@@ -37,7 +37,7 @@ Styleguide 5.1
   padding: 40px;
 
   @include grid-media($lg) {
-    height: 530px;
+    height: 400px;
   }
 
 
@@ -47,7 +47,7 @@ Styleguide 5.1
     @include grid-media($lg) {
       @include grid-column(3, $no-gutter);
 
-      height: 450px;
+      height: 300px;
     }
 
 
@@ -71,10 +71,18 @@ Styleguide 5.1
   .video {
     @include grid-column(12, $no-gutter);
 
+    padding-top: 20px;
+
     @include grid-media($lg) {
       @include grid-column(6, $no-gutter);
 
-      height: 450px;
+      padding-top: 0px;
+      padding-left: 20px;
+      height: 300px;
+
+      .plyr {
+        max-height: 300px;
+      }
     }
 
 
@@ -99,10 +107,14 @@ Styleguide 5.1
   .quote {
     @include grid-column(12, $no-gutter);
 
+    padding-top: 20px;
+
     @include grid-media($lg) {
       @include grid-column(3, $no-gutter);
 
-      height: 450px;
+      padding-top: 0px;
+      padding-left: 20px;
+      height: 300px;
     }
 
 

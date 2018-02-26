@@ -2383,10 +2383,10 @@ function ready(){
 
 
 function(){
-$('.toggle').click(function(e){
+$('.toggle span.content-grid').click(function(e){
 e.preventDefault();
 
-var $this=$(this);
+var $this=$(this).parent();
 
 // Collapse
 if($this.find('.answer').hasClass('show')){
