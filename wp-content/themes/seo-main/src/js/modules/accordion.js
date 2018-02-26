@@ -3,10 +3,10 @@
 */
 
 export default function() {
-  $('.toggle').click(function(e) {
+  $('.toggle span.content-grid').click(function(e) {
     e.preventDefault();
 
-    let $this = $(this);
+    let $this = $(this).parent();
 
     // Collapse
     if ($this.find('.answer').hasClass('show')) {

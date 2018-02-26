@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="93px" height="93px" viewBox="0 0 93 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Video-Play-BTN-Hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Video-Play-BTN-Hover">
+            <g id="Video-Play-Hover">
+                <circle id="Oval" fill="#EB0029" cx="46.5" cy="46.5" r="46.5"></circle>
+                <path d="M43,32.7432955 L43,62.2567045 L58.1350815,47.5 L43,32.7432955 Z" id="Path-2" stroke="#FFFFFF" stroke-width="4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

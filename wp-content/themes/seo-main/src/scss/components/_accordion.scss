@@ -1,7 +1,7 @@
 /*
 Accodion
 
-Styleguide 4.0
+Styleguide 5.0
 */
 
 /*
@@ -96,6 +96,10 @@ Styleguide 4.1
 
       &.active {
         color: $red;
+      }
+
+      span.content-grid {
+        cursor: pointer;
       }
     }
   }

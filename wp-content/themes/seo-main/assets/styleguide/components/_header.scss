@@ -5,6 +5,7 @@ header {
   top: 0;
   z-index: 10;
   width: 100%;
+  background: $white;
 
   .container {
     border-bottom: 2px solid $white !important;
@@ -23,6 +24,7 @@ header {
 
 .c-nav {
   @include grid-column(12, $no-gutter);
+
   position: relative;
   z-index: 2;
 
@@ -55,6 +57,7 @@ header {
 
 .c-nav__multisite-nav {
   border-right: 2px solid $white;
+
   ul {
     > li {
       &:hover,
@@ -118,7 +121,7 @@ header {
   }
 
   ul > li > a:hover + .nav-dropdown,
-  .nav-dropdown:hover, {
+  .nav-dropdown:hover {
     display: block;
   }
 }
@@ -147,7 +150,7 @@ header {
 
   span {
     margin-top: 7px;
-    margin-right: 0;    
+    margin-right: 0;
   }
 }
 
@@ -184,7 +187,7 @@ header {
 .c-nav__nav--right {
   float: right;
   max-width: 330px;
-  width: 100%;  
+  width: 100%;
 
   ul {
     width: 100%;
@@ -240,14 +243,12 @@ header {
 //       border-top: 2px solid $white;
 //     }
 
-
 //     .c-menu__list {
 //       @include grid-media($lg) {
 //         @include grid-column(8, $no-gutter);
 
 //         float: left;
 //       }
-
 
 //       .c-menu__list-item {
 //         @include grid-column(12, $no-gutter);        
@@ -314,9 +315,8 @@ header {
 //           }
 //         }
 
-
 //         li {
-//           text-align: left;          
+//           text-align: left;
 
 //           &:hover {
 //             a {
@@ -362,11 +362,9 @@ header {
 //       transform: none;
 //     }
 
-
 //     @include grid-media($lg) {
 //       @include grid-column(4, $no-gutter);
 //     }
-
 
 //     .c-logo__image {
 //       @include grid-column(9, $no-gutter);
@@ -374,7 +372,6 @@ header {
 //       @include grid-media($sm) {
 //         @include grid-column(4, $no-gutter);
 //       }
-
 
 //       // @include grid-media($md) {
 //       //   @include grid-column(12, $no-gutter);
@@ -561,7 +558,6 @@ header {
 //     float: right;
 //   }
 
-
 //   .menu {
 //     li {
 //       @include grid-column(12, $no-gutter);
@@ -579,7 +575,6 @@ header {
 //         border-left: 2px solid $white;
 //         border-bottom: 0;
 //       }
-
 
 //       a {
 //         color: $white;
