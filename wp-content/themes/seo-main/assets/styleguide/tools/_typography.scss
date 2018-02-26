@@ -79,7 +79,7 @@ $sans-stack: 'Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #{$color};
   font-weight: $font-normal;
   font-size: 16px;
-  line-height: 1.59;
+  line-height: 1.4;
 }
 
 @mixin type-5-bold($color: $black) {
@@ -87,7 +87,7 @@ $sans-stack: 'Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #{$color};
   font-weight: $font-bold;
   font-size: 16px;
-  line-height: 1.59;
+  line-height: 1.4;
 }
 
 @mixin type-custom($color: #{$color}, $font-weight: #{$font-weight}, $font-size: #{$font-size}, $line-height: #{$line-height} ) {
