@@ -365,12 +365,10 @@ img {
       content: "";
       display: block; } }
 
-section {
-  margin: 40px 0; }
-  section::after {
-    clear: both;
-    content: "";
-    display: block; }
+section::after {
+  clear: both;
+  content: "";
+  display: block; }
 
 .slider__animation {
   transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
@@ -1004,6 +1002,10 @@ Styleguide 1.5
     content: "";
     display: block;
     margin-bottom: 25px; }
+
+.c-rte .video {
+  border-left: 10px solid #eb0029;
+  padding-left: 10px; }
 
 /*
 Accodion
@@ -2145,7 +2147,7 @@ footer.site-footer .container {
       text-align: center; }
       @media only screen and (min-width: 1024px) {
         footer.site-footer .container .c-footer__widgets .menu-social-container {
-          width: calc(18.33333%);
+          width: calc(15%);
           float: left;
           margin-left: 0;
           text-align: left;

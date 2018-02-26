@@ -93,37 +93,56 @@
   margin-left: .3em;
 }
 .fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
 }
 .fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
 }
-@keyframes fa-spin {
+@-webkit-keyframes fa-spin {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
   transform: scale(1, -1);
 }
 :root .fa-rotate-90,
@@ -3453,31 +3472,39 @@ Styleguide 3.2.1
   background: white;
   margin-bottom: 9px;
   top: 0;
+  transition: top 0.1s ease-in-out 0.2s, opacity 0.25s ease-in-out 0.1s, -webkit-transform 0.15s ease-in-out;
   transition: transform 0.15s ease-in-out, top 0.1s ease-in-out 0.2s, opacity 0.25s ease-in-out 0.1s;
-  transform-origin: center;
+  transition: transform 0.15s ease-in-out, top 0.1s ease-in-out 0.2s, opacity 0.25s ease-in-out 0.1s, -webkit-transform 0.15s ease-in-out;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 
 .sg.sg-header .sg.sg-search-container .sg-hamburger-active .sg-hamburger-item {
+  transition: top 0.1s ease-in-out, opacity 0.25s ease-in-out, -webkit-transform 0.15s ease-in-out 0.2s;
   transition: transform 0.15s ease-in-out 0.2s, top 0.1s ease-in-out, opacity 0.25s ease-in-out;
+  transition: transform 0.15s ease-in-out 0.2s, top 0.1s ease-in-out, opacity 0.25s ease-in-out, -webkit-transform 0.15s ease-in-out 0.2s;
 }
 
 
 .sg.sg-header .sg.sg-search-container .sg-hamburger-active .top {
   top: 13px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 
 .sg.sg-header .sg.sg-search-container .sg-hamburger-active .middle {
   opacity: 0;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 
 .sg.sg-header .sg.sg-search-container .sg-hamburger-active .bottom {
   top: -13px;
-  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
 }
 
 
@@ -4173,8 +4200,10 @@ Styleguide 4.1
   background: #fff;
   transition: left .3s ease-out;
   transition-delay: .3s;
-  transform: rotate(-90deg);
-  transform-origin: left top;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
 }
 
 
@@ -4408,7 +4437,20 @@ Styleguide 4.4
 
 .sg.disconnection-icon i.fa {
   font-size: 20px;
-  animation: socket-disconnect-pulse 3s linear infinite;
+  -webkit-animation: socket-disconnect-pulse 3s linear infinite;
+          animation: socket-disconnect-pulse 3s linear infinite;
+}
+
+@-webkit-keyframes socket-disconnect-pulse {
+  80% {
+    color: rgba(255, 255, 255, 1);
+  }
+  90% {
+    color: rgba(255, 255, 255, .35);
+  }
+  100% {
+    color: rgba(255, 255, 255, 1);
+  }
 }
 
 @keyframes socket-disconnect-pulse {

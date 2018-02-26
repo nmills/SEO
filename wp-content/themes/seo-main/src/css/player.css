@@ -847,7 +847,7 @@
 }
 
 .plyr .plyr__play-large {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat !important;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat !important;
   background-size: cover !important;
   border: none;
   width: 15%;
@@ -855,7 +855,7 @@
 }
 
 .plyr .plyr__play-large:hover {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg") transparent left center no-repeat !important;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg") transparent left center no-repeat !important;
   background-size: cover !important;
   cursor: pointer;
 }
