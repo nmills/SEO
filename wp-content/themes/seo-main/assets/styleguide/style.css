@@ -2096,7 +2096,7 @@ header {
 
 /* Footer */
 footer.site-footer {
-  font-weight: regular; }
+  font-weight: 300; }
   footer.site-footer .container {
     background: #050505;
     padding: 15px; }
