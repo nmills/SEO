@@ -975,6 +975,10 @@ Styleguide 1.5
     display: block;
     margin-bottom: 25px; }
 
+.c-rte .video {
+  border-left: 10px solid #eb0029;
+  padding-left: 10px; }
+
 /*
 Accodion
 
