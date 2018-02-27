@@ -6,8 +6,10 @@
   top: -160px;
   left: 0;
   z-index: 11;
+
   @include grid-column(12, $no-gutter);
-  transition: all .5s $cubic-transition-2;
+
+  transition: all 0.5s $cubic-transition-2;
 
   @include grid-media($lg){
     top: -105px;
@@ -21,6 +23,7 @@
 
 .c-searchform__container {
   @include grid-container;
+
   background: $red;
   padding: 20px 30px;
   max-width: 1440px;
@@ -45,18 +48,23 @@
   padding-left: 30px;
   width: 65%;
 
-  @include grid-media($lg){
+  @include grid-media($lg) {
     width: 79%;
   }
 
+
   input {
     outline: none;
+
     @include grid-column(12);
-    @include type-custom($color: $white, $font-weight: $font-normal, $font-size: 60px, $line-height: 1.2);      
+
+    @include type-custom($color: $white, $font-weight: $font-normal, $font-size: 60px, $line-height: 1.2);
+
     background: none;
     border: none;
     margin-left: 0;
     max-height: 60px;
+    font-weight: $font-thinnest;                                     
 
     &::placeholder {
       color: $white;
@@ -76,7 +84,7 @@
     height: 36px;
     background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg");
     border: none;
-    outline: none;      
+    outline: none;
 
     &::placeholder {
       display: none;
@@ -86,12 +94,12 @@
 
 .c-searchform__close-btn {
   margin-top: 12px;
-  padding-left: 30px;    
+  padding-left: 30px;
 
   span {
     &:before {
       transform: rotate(0);
-      transition: all .3s $cubic-transition-2;
+      transition: all 0.3s $cubic-transition-2;
     }
   }
 

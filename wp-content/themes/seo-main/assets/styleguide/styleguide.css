@@ -1094,7 +1094,7 @@ Styleguide 4.1
       background: #ffffff;
       transition: all 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15);
       border-bottom: 1px solid #dbd7cc;
-      padding: 35px 0; }
+      padding: 15px 0; }
       @media only screen and (min-width: 768px) {
         .c-accordion li .toggle {
           font-size: 34.5px;
@@ -2255,7 +2255,8 @@ header {
     background: none;
     border: none;
     margin-left: 0;
-    max-height: 60px; }
+    max-height: 60px;
+    font-weight: 100; }
     .c-searchform__textfield input::placeholder {
       color: #ffffff; }
 
@@ -2290,7 +2291,7 @@ footer.site-footer {
     padding: 15px; }
     @media only screen and (min-width: 1024px) {
       footer.site-footer .container {
-        padding: 30px; } }
+        padding: 35px 50px; } }
     footer.site-footer .container a,
     footer.site-footer .container p {
       color: #ffffff; }
