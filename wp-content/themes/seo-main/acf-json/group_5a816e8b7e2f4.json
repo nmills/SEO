@@ -45,7 +45,7 @@
                                 {
                                     "key": "5a816f26abb4c",
                                     "name": "hero_image",
-                                    "label": "hero image",
+                                    "label": "hero image section",
                                     "display": "block",
                                     "sub_fields": [
                                         {
@@ -374,5 +374,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1519633345
+    "modified": 1519713800
 }
