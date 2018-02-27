@@ -8,7 +8,7 @@ footer.site-footer {
     padding: 15px;
 
     @include grid-media($lg) {
-      padding: 30px;
+      padding: 35px 50px;
     }
 
 
@@ -28,35 +28,41 @@ footer.site-footer {
       //   }     
       // }
 
+      img.image {
+        margin-bottom: 20px;
+
+        @include grid-media($lg) {
+          margin-bottom: 0;
+        }
+
+      }
+
       .menu-footer-left-container,
       .menu-footer-right-container {
         @include grid-column(12, $no-gutter);
 
-        border-left: none;
-        padding-left: 0;
+        border-left: 1px solid grey;
+        padding-left: 20px;
 
         @include grid-media($lg) {
           margin-top: -83px;
 
           @include grid-column(2, $no-gutter);
 
-          border-left: 1px solid grey;
-          padding-left: 20px;
           float: right;
         }
 
 
         li {
-          text-align: center;
+          text-align: left;
           width: auto;
           padding: 0;
 
           @include grid-column(12, $no-gutter);
 
-          @include grid-media($lg) {
-            text-align: left;
-          }
-
+          // @include grid-media($lg) {
+          //   text-align: left;
+          // }
 
           a {
             font-size: 15px;
@@ -68,6 +74,7 @@ footer.site-footer {
         @include grid-column(12, $no-gutter);
 
         text-align: center;
+        margin-top: 20px;
 
         @include grid-media($lg) {
           @include grid-column(1.8, $no-gutter);
@@ -78,13 +85,14 @@ footer.site-footer {
 
 
         #menu-social {
-          width: 140px;
-          margin: auto;
+          // width: 140px;
+          // margin: auto;
 
-          @include grid-media($lg) {
-            width: auto;
-          }
+          // @include grid-media($lg) {
+          //   width: auto;
+          // }
 
+          float: left;
 
           li {
             display: inline-block;
@@ -109,12 +117,13 @@ footer.site-footer {
       .textwidget {
         @include grid-column(12, $no-gutter);
 
-        text-align: center;
+        text-align: left;
+        margin-top: 20px;
 
         @include grid-media($lg) {
           @include grid-column(5, $no-gutter);
 
-          text-align: left;
+          // text-align: left;
           margin-top: 73px;
         }
 

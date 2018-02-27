@@ -116,3 +116,14 @@ function bsdstarter_video( $attr ) {
   return $output;
 }
 add_shortcode( 'iframe', 'bsdstarter_video' );
+
+
+function youtube_embed_func( $atts ){
+  $output = '';
+  $output .= '<div class="video">';
+  $output .= '<div data-type="youtube" data-video-id="' . $atts['link'] .'"></div>';
+  $output .= '</div>';
+
+  return $output;
+}
+add_shortcode( 'youtube', 'youtube_embed_func' );
