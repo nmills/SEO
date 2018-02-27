@@ -1,5 +1,5 @@
-<div class="container">
+{# <div class="container"> #}
   {% for component in region.region_full_width %}
     {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
   {% endfor %}
-</div>
+{# </div> #}
