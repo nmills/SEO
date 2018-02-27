@@ -2,14 +2,10 @@
 'use strict';
 
 import jquery from 'jquery';
-// import prepInputs from 'modules/prepinputs.js';
-// import socialShare from 'modules/socialShare.js';
-// import carousel from 'modules/carousel.js';
-// import qtip from 'modules/qtip.js';
 import accordion from 'modules/accordion.js';
-// import galleryWidget from 'modules/galleryWidget.js';
-import custom from 'modules/custom.js';
+// import custom from 'modules/custom.js';
 import searchBar from 'modules/searchBar.js';
+import hamburger from 'modules/hamburger.js';
 
 (function($) {
   $( document ).ready(function() {
@@ -46,7 +42,8 @@ import searchBar from 'modules/searchBar.js';
     // Initialize Gallery Slider
     // galleryWidget();
 
-    custom();
+    // custom();
     searchBar();
+    hamburger();
   }
 })(jquery);
