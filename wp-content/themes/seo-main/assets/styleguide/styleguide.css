@@ -2039,7 +2039,8 @@ header {
     background: none;
     border: none;
     margin-left: 0;
-    max-height: 60px; }
+    max-height: 60px;
+    font-weight: 100; }
     .c-searchform__textfield input::placeholder {
       color: #ffffff; }
 

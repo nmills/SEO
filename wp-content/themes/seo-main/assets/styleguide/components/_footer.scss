@@ -6,7 +6,7 @@ footer.site-footer {
     padding: 15px;
 
     @include grid-media($lg) {
-          padding: 35px 50px;
+      padding: 35px 50px;
     }
 
 
@@ -35,6 +35,7 @@ footer.site-footer {
 
         @include grid-media($lg) {
           margin-top: -83px;
+
           @include grid-column(2, $no-gutter);
 
           border-left: 1px solid grey;
@@ -121,6 +122,6 @@ footer.site-footer {
           margin: 0;
         }
       }
-    } 
+    }
   }
 }
