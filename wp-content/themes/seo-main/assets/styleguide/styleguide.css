@@ -2096,7 +2096,6 @@ header {
     transform: rotate(90deg); }
 
 /* Footer */
-<<<<<<< HEAD
 footer.site-footer {
   font-weight: 300; }
   footer.site-footer .container {
@@ -2104,28 +2103,11 @@ footer.site-footer {
     padding: 15px; }
     @media only screen and (min-width: 1024px) {
       footer.site-footer .container {
-        padding: 30px; } }
+        padding: 35px 50px; } }
     footer.site-footer .container a,
     footer.site-footer .container p {
       color: #ffffff; }
     footer.site-footer .container .c-footer__widgets {
-=======
-footer.site-footer .container {
-  background: #050505;
-  padding: 15px; }
-  @media only screen and (min-width: 1024px) {
-    footer.site-footer .container {
-      padding: 35px 50px; } }
-  footer.site-footer .container a,
-  footer.site-footer .container p {
-    color: #ffffff; }
-  footer.site-footer .container .c-footer__widgets {
-    width: calc(100%);
-    float: left;
-    margin-left: 0; }
-    footer.site-footer .container .c-footer__widgets .menu-footer-left-container,
-    footer.site-footer .container .c-footer__widgets .menu-footer-right-container {
->>>>>>> bug_fixes
       width: calc(100%);
       float: left;
       margin-left: 0; }
