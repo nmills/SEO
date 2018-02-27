@@ -1065,7 +1065,6 @@ Styleguide 4.1
     font-weight: 300;
     font-size: 16px;
     line-height: 1.4;
-    font-weight: bold;
     color: #891a27;
     text-transform: uppercase;
     margin: 0; }
@@ -1223,6 +1222,7 @@ Styleguide 5.1
         width: calc(83.33333%);
         float: left;
         margin-left: 0;
+        float: none;
         height: 2px;
         background: white;
         margin-top: 20px; }

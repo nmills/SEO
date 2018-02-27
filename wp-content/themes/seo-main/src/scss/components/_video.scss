@@ -138,6 +138,7 @@ Styleguide 5.1
 
         @include grid-column(10, $no-gutter);
 
+        float: none;
         height: 2px;
         background: white;
         margin-top: 20px;

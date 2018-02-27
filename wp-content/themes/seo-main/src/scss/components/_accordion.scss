@@ -54,7 +54,7 @@ Styleguide 4.1
   h3 {
     @include type-5;
 
-    font-weight: bold;
+    // font-weight: bold;
     color: $brown;
     text-transform: uppercase;
     margin: 0;
