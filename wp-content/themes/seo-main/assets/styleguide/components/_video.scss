@@ -37,7 +37,17 @@ Styleguide 5.1
   padding: 40px;
 
   @include grid-media($lg) {
-    height: 400px;
+    height: 548px;
+
+    .video {
+      .plyr__video-embed, .plyr {
+        position: static;
+      }
+
+      .plyr__video-embed {
+        padding: 0px;
+      }
+    }
   }
 
 
@@ -47,7 +57,7 @@ Styleguide 5.1
     @include grid-media($lg) {
       @include grid-column(3, $no-gutter);
 
-      height: 300px;
+      height: 460px;
     }
 
 
@@ -78,10 +88,10 @@ Styleguide 5.1
 
       padding-top: 0px;
       padding-left: 20px;
-      height: 300px;
+      height: 460px;
 
       .plyr {
-        max-height: 300px;
+        max-height: 460px;
       }
     }
 
@@ -98,7 +108,7 @@ Styleguide 5.1
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 20px;
+        // padding: 20px;
         margin-bottom: 0;
       }
     }
@@ -114,7 +124,7 @@ Styleguide 5.1
 
       padding-top: 0px;
       padding-left: 20px;
-      height: 300px;
+      height: 460px;
     }
 
 
@@ -138,6 +148,7 @@ Styleguide 5.1
 
         @include grid-column(10, $no-gutter);
 
+        float: none;
         height: 2px;
         background: white;
         margin-top: 20px;
