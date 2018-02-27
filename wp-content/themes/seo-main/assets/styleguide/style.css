@@ -2072,7 +2072,7 @@ footer.site-footer .container {
   padding: 15px; }
   @media only screen and (min-width: 1024px) {
     footer.site-footer .container {
-      padding: 30px; } }
+      padding: 35px 50px; } }
   footer.site-footer .container a,
   footer.site-footer .container p {
     color: #ffffff; }
