@@ -2004,7 +2004,7 @@ header {
 .c-nav--bottom {
   display: none;
   overflow-y: auto;
-  max-height: 90vh;
+  max-height: 85vh;
   background: #eb0029; }
   @media only screen and (min-width: 1024px) {
     .c-nav--bottom {
@@ -2144,6 +2144,7 @@ header {
 
 .c-nav__mobile-hamburger-btn {
   border: none;
+  background: none;
   padding: 0;
   padding: 20px 0;
   outline: none;

@@ -175,7 +175,7 @@ header {
 .c-nav--bottom {
   display: none;
   overflow-y: auto;
-  max-height: 90vh;
+  max-height: 85vh;
   background: $red;
 
   @include grid-media($lg) {
@@ -362,6 +362,7 @@ header {
 
 .c-nav__mobile-hamburger-btn {
   border: none;
+  background: none;
   padding: 0;
   padding: 20px 0;
   outline: none;
