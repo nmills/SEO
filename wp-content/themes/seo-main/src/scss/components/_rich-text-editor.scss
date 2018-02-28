@@ -45,7 +45,7 @@ Styleguide 1.1
 Heading
 
 markup:
-<div class="c-rte">
+<div class="page-title">
   <h1>Header cipsum dolor sit amet duo erat sea</h1>
 </div>
 
@@ -61,19 +61,21 @@ sg-wrapper:
 Styleguide 1.2
 */
 
-.c-rte h1 {
-  font-weight: bold;
+.page-title {
+  h1 {
+    font-weight: bold;
 
-  &:before {
-    content: " ";
-    display: block;
-    border-bottom: 5px solid $red;
-    width: 20%;
+    &:before {
+      content: " ";
+      display: block;
+      border-bottom: 5px solid $red;
+      width: 20%;
+    }
   }
-}
 
-.c-rte__text-spacing {
-  margin-left: 20%;
+  .page-title__text-spacing {
+    margin-left: 20%;
+  }
 }
 
 /*

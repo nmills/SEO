@@ -1,6 +1,7 @@
 {% extends "base.twig" %}
 
 {% block content %}
+  <div class="container">
   <main id="content">
     <div class="page-content">
       <article id="post-{{post.ID}}" class="article post-type-{{post.post_type}}" role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -24,4 +25,5 @@
       </aside> <!-- /.page-sidebar -->
     {% endblock %}
   </main> <!-- /#content -->
+  </div>
 {% endblock %}
