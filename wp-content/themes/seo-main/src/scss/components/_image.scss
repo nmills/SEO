@@ -66,24 +66,7 @@ sg-wrapper:
 Styleguide 3.1
 */
 .c-hero_image__wrapper {
-  // height: 164px;
-
   position: relative;
-
-  @include grid-media($lg) {
-    height: 369px;
-  }
-}
-
-.c-hero_image {
-  @include grid-column(12, $no-gutter);
-
-  float: none;
-  height: 164px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 0;
 
   @include grid-media($md) {
     height: 271px;
@@ -93,82 +76,103 @@ Styleguide 3.1
   @include grid-media($lg) {
     height: 369px;
   }
-}
-
-.c-hero_image--large_text, .c-hero_image--small_text {
-  // margin-bottom: 45%;
-
-  @include grid-media($sm) {
-    // margin-bottom: 30%;
-  }
 
 
-  @include grid-media($md) {
-    // margin-bottom: 0;
-  }
+  .c-hero_image {
+    @include grid-column(12, $no-gutter);
 
+    float: none;
+    height: 164px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
 
-  @include grid-media($lg) {
-    @include grid-column(8, $no-gutter);
+    @include grid-media($md) {
+      height: 271px;
+    }
 
-    display: inline-block;
-    float: right;
-    margin-left: -10%;
-  }
-}
-
-.c-hero_image__wrapper {
-  h1 {
-    font-size: 30px;
-    background: white;
-    padding: 15px 20px;
-    width: 60%;
-    margin: 0;
-    margin-top: -50px;
-    position: relative;
 
     @include grid-media($lg) {
-      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 120px, $line-height: 1);
-
-      @include grid-column(5, $no-gutter);
-
-      background: none;
-      float: left;
-      margin: 0;
-      margin-left: 5%;
-      display: inline-block;
-      position: absolute;
-      z-index: 10;
-      top: 50%;
-      transform: translateY(-50%);
+      height: 369px;
     }
   }
-}
 
-.c-hero_image__wrapper {
-  h2 {
-    font-size: 30px;
-    background: white;
-    padding: 15px 20px;
-    width: 60%;
-    margin: 0;
-    margin-top: -50px;
-    position: relative;
+  .c-hero_image--large_text, .c-hero_image--small_text {
+    // margin-bottom: 45%;
+
+    @include grid-media($sm) {
+      // margin-bottom: 30%;
+    }
+
+
+    @include grid-media($md) {
+      // margin-bottom: 0;
+    }
+
 
     @include grid-media($lg) {
-      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 90px, $line-height: 0.8);
+      @include grid-column(8, $no-gutter);
 
-      @include grid-column(5, $no-gutter);
-
-      background: none;
-      float: left;
-      margin: 0;
-      margin-left: 5%;
       display: inline-block;
-      position: absolute;
-      z-index: 10;
-      top: 50%;
-      transform: translateY(-50%);
+      float: right;
+      margin-left: -10%;
+    }
+  }
+
+  .c-hero_image__wrapper {
+    h1 {
+      font-size: 30px;
+      background: white;
+      padding: 15px 20px;
+      width: 60%;
+      margin: 0;
+      margin-top: -50px;
+      position: relative;
+
+      @include grid-media($lg) {
+        @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 120px, $line-height: 1);
+
+        @include grid-column(5, $no-gutter);
+
+        background: none;
+        float: left;
+        margin: 0;
+        margin-left: 5%;
+        display: inline-block;
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .c-hero_image__wrapper {
+    h2 {
+      font-size: 30px;
+      background: white;
+      padding: 15px 20px;
+      width: 60%;
+      margin: 0;
+      margin-top: -50px;
+      position: relative;
+
+      @include grid-media($lg) {
+        @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 90px, $line-height: 0.8);
+
+        @include grid-column(5, $no-gutter);
+
+        background: none;
+        float: left;
+        margin: 0;
+        margin-left: 5%;
+        display: inline-block;
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
   }
 }

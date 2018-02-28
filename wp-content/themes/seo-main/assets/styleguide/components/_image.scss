@@ -66,14 +66,18 @@ sg-wrapper:
 Styleguide 3.1
 */
 .c-hero_image__wrapper {
-  // height: 164px;
 
   position: relative;
+
+  @include grid-media($md) {
+    height: 271px;
+  }
+
 
   @include grid-media($lg) {
     height: 369px;
   }
-}
+
 
 .c-hero_image {
   @include grid-column(12, $no-gutter);
@@ -171,4 +175,5 @@ Styleguide 3.1
       transform: translateY(-50%);
     }
   }
+}
 }
