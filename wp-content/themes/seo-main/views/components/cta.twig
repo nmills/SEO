@@ -1,5 +1,13 @@
-<div class="container cta">
-	{{component.header_text}}
-	<img src="{{component.image.url}}">
-	<a href="{{component.link}}">Learn More</a>
+{% if component.header_text is not empty and component.image.url is not empty %}
+<div class="container c-cta__wrapper border">
+  <div class="c-cta--heading">
+    <h3>{{component.header_text}}</h3>
+  </div>
+  <div class="c-cta--image" style="background-image: url({{component.image.url}})"></div>
+  <a href="{{component.link}}" class="c-uie__calltoaction">Learn More</a>
 </div>
+{% else %}
+	<div class="container c-cta__wrapper">
+		<a href="{{component.link}}" class="c-uie__calltoaction">Learn More</a>
+	</div>
+{% endif %}

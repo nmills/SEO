@@ -850,12 +850,19 @@
   background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat !important;
   background-size: cover !important;
   border: none;
-  width: 15%;
-  height: 25%;
+  width: 5em;
+  height: 5em;
 }
 
 .plyr .plyr__play-large:hover {
   background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg") transparent left center no-repeat !important;
   background-size: cover !important;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .plyr .plyr__play-large {
+    width: 9em;
+    height: 9em;
+  }
 }
