@@ -63,22 +63,20 @@ Styleguide 1.2
 
 .page-title {
   h1 {
-  font-weight: bold;
+    font-weight: bold;
 
-  &:before {
-    content: " ";
-    display: block;
-    border-bottom: 5px solid $red;
-    width: 20%;
+    &:before {
+      content: " ";
+      display: block;
+      border-bottom: 5px solid $red;
+      width: 20%;
+    }
   }
-}
 
   .page-title__text-spacing {
-  margin-left: 20%;
+    margin-left: 20%;
+  }
 }
-
-}
-
 
 /*
 Quote Offset

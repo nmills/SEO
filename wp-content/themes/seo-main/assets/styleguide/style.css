@@ -1304,6 +1304,107 @@ Styleguide 3.0
     background: #e5e7e7; }
 
 /*
+Image full width
+
+markup:
+<div class="container hero_image" style="http://localhost/seo/wp-content/uploads/2018/02/IMG_7986.jpg"></div>
+
+sg-wrapper:
+<section>
+  <sg-wrapper-content/>
+</section>
+
+Styleguide 3.1
+*/
+.c-hero_image__wrapper {
+  position: relative; }
+  @media only screen and (min-width: 1024px) {
+    .c-hero_image__wrapper {
+      height: 369px; } }
+
+.c-hero_image {
+  width: calc(100%);
+  float: left;
+  margin-left: 0;
+  float: none;
+  height: 164px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0; }
+  @media only screen and (min-width: 768px) {
+    .c-hero_image {
+      height: 271px; } }
+  @media only screen and (min-width: 1024px) {
+    .c-hero_image {
+      height: 369px; } }
+
+@media only screen and (min-width: 1024px) {
+  .c-hero_image--large_text, .c-hero_image--small_text {
+    width: calc(66.66667%);
+    float: left;
+    margin-left: 0;
+    display: inline-block;
+    float: right;
+    margin-left: -10%; } }
+
+.c-hero_image__wrapper h1 {
+  font-size: 30px;
+  background: white;
+  padding: 15px 20px;
+  width: 60%;
+  margin: 0;
+  margin-top: -50px;
+  position: relative; }
+  @media only screen and (min-width: 1024px) {
+    .c-hero_image__wrapper h1 {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 100;
+      font-size: 120px;
+      line-height: 1;
+      width: calc(41.66667%);
+      float: left;
+      margin-left: 0;
+      background: none;
+      float: left;
+      margin: 0;
+      margin-left: 5%;
+      display: inline-block;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      transform: translateY(-50%); } }
+
+.c-hero_image__wrapper h2 {
+  font-size: 30px;
+  background: white;
+  padding: 15px 20px;
+  width: 60%;
+  margin: 0;
+  margin-top: -50px;
+  position: relative; }
+  @media only screen and (min-width: 1024px) {
+    .c-hero_image__wrapper h2 {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 100;
+      font-size: 90px;
+      line-height: 0.8;
+      width: calc(41.66667%);
+      float: left;
+      margin-left: 0;
+      background: none;
+      float: left;
+      margin: 0;
+      margin-left: 5%;
+      display: inline-block;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      transform: translateY(-50%); } }
+
+/*
 Signup
 
 markup:
