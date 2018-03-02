@@ -123,6 +123,9 @@ function youtube_embed_func( $atts ){
   $output .= '<div class="video">';
   $output .= '<div data-type="youtube" data-video-id="' . $atts['link'] .'"></div>';
   $output .= '</div>';
+  $output .= '<div class="video_heading">';
+  $output .= '<h1>' . $atts['heading'] .'</h1>';
+  $output .= '</div>';
 
   return $output;
 }
