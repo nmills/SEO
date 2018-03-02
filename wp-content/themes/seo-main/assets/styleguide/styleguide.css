@@ -2435,7 +2435,7 @@ footer.site-footer {
         @media only screen and (min-width: 1024px) {
           footer.site-footer .container .c-footer__widgets .menu-footer-left-container,
           footer.site-footer .container .c-footer__widgets .menu-footer-right-container {
-            margin-top: -83px;
+            margin-top: -75px;
             width: calc(18.33333%);
             float: left;
             margin-left: 0;

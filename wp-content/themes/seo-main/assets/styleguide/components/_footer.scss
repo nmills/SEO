@@ -44,7 +44,7 @@ footer.site-footer {
         padding-left: 20px;
 
         @include grid-media($lg) {
-          margin-top: -83px;
+          margin-top: -75px;
 
           @include grid-column(2.2, $no-gutter);
 
