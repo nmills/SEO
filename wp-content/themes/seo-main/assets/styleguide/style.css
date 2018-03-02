@@ -1320,6 +1320,9 @@ sg-wrapper:
 
 Styleguide 3.1
 */
+.hero_image {
+  padding: 0; }
+
 .c-hero_image__wrapper {
   position: relative; }
   @media only screen and (min-width: 768px) {
@@ -1986,10 +1989,10 @@ img.mfp-img {
   background: #ff7c7c; }
 
 body {
-  padding-top: 60px; }
+  padding-top: 14px; }
   @media only screen and (min-width: 1024px) {
     body {
-      padding-top: 100px; } }
+      padding-top: 60px; } }
 
 /* Header */
 header {

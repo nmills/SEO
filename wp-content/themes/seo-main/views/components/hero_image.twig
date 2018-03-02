@@ -1,11 +1,11 @@
 {% if component.image_type == 'image_only' %} {# When the full width is selected #}
-<div class="container">
+<div class="container hero_image">
   <div class="c-hero_image__wrapper">
     <div class="container c-hero_image" style="background-image: url({{component.image.url}})"></div>
   </div>
 </div>
 {% elseif component.image_type == 'image_with_text' %} {# When Image with text is selected #}
-<div class="container">
+<div class="container hero_image">
   <div class="c-hero_image__wrapper">
     <div class="container c-hero_image c-hero_image--large_text" style="background-image: url({{component.image.url}})">
     </div>
@@ -13,7 +13,7 @@
   </div>
 </div>
 {% else %} {# When Image with small text is selected #}
-<div class="container">
+<div class="container hero_image">
   <div class="c-hero_image__wrapper">
     <div class="container c-hero_image c-hero_image--small_text" style="background-image: url({{component.image.url}})">
     </div>

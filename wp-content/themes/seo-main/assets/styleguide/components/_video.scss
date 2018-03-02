@@ -98,10 +98,14 @@ Styleguide 5.1
 
     position: relative;
 
-    &:hover{ .plyr--playing {.plyr__play-large {
-            opacity: 1;
-            visibility: visible;
-        }}}
+    &:hover {
+      .plyr--playing {
+        .plyr__play-large {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
 
     iframe {
       width: 100%;
