@@ -103,6 +103,11 @@
   color: #eb0029;
 }
 
+.video-component .video.pseudo-class-hover .plyr--playing .plyr__play-large {
+  opacity: 1;
+  visibility: visible;
+}
+
 .c-signup__button.pseudo-class-hover,
 .c-signup__button.pseudo-class-focus {
   background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-submit--hover.svg") #eb0029 left -1px center no-repeat;
