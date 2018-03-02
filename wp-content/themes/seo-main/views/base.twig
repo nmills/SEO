@@ -7,7 +7,6 @@
 <body class="{{body_class}}" data-template="base.twig">
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-      
       <header class="site-header">
         <div class="container">
           {% block nav %}
@@ -30,16 +29,15 @@
             </main> <!-- /.page-content.row -->
           {% endblock %}
         {# </div> #}
-
         {{cta}}
       </div> <!-- /.off-canvas-content -->
       
       {% block footer %}
-          <footer class="site-footer" role="contentinfo">
-            {% include 'footer.twig' %}
-          </footer> <!-- /.site-footer -->
-          <a class="exit-off-canvas"></a>
-        {% endblock %}
+        <footer class="site-footer" role="contentinfo">
+          {% include 'footer.twig' %}
+        </footer> <!-- /.site-footer -->
+        <a class="exit-off-canvas"></a>
+      {% endblock %}
 
     </div> <!-- /.off-canvas-wrapper-inner -->
   </div> <!-- /.off-canvas-wrapper -->
