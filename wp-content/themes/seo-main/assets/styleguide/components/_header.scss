@@ -3,13 +3,14 @@
 header {
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 20;
   width: 100%;
   background: $white;
 
   @include grid-media($lg) {
-    height: auto;   
+    height: auto;
   }
+
 
   .container {
     border-bottom: 2px solid $white !important;
@@ -88,6 +89,7 @@ header {
         display: inline-block;
         padding: 19px 50px 19px 25px;
         max-height: 60px;
+
         @include type-5-bold($color: $black);
 
         &.nav-title {
@@ -126,7 +128,8 @@ header {
 
         > li {
           > a {
-            padding: 5px 25px;                 
+            padding: 5px 25px;
+
             @include type-5($color: $white);
           }
         }
@@ -145,6 +148,7 @@ header {
   background: $red;
   color: $white;
   padding: 0 25px;
+
   @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 17px, $line-height: 3.5);
 
   &:hover,
@@ -192,6 +196,7 @@ header {
     width: auto;
   }
 
+
   ul {
     > li {
       float: left;
@@ -201,9 +206,11 @@ header {
         width: auto;
       }
 
+
       &.has-submenu {
         > a {
           position: relative;
+
           &:before {
             content: '';
             position: absolute;
@@ -214,7 +221,7 @@ header {
             background: url("/wp-content/themes/seo-main/assets/img/icons/carat-nav-arrow-right--white.svg") center center no-repeat;
             background-size: contain;
             transform: rotate(0);
-            transition: all .5s $cubic-transition-2;
+            transition: all 0.5s $cubic-transition-2;
 
             @include grid-media($lg) {
               display: none;
@@ -234,6 +241,7 @@ header {
           > a {
             background: none;
           }
+
           .main-nav-dropdown {
             display: none !important;
           }
@@ -244,13 +252,15 @@ header {
         position: relative;
         float: left;
         padding: 8px 18px 8px 15.5px;
+
         @include type-custom($color: $white, $font-weight: $font-medium, $font-size: 22px, $line-height: 1.2);
-        
+
         border-left: 2px solid $red;
         border-right: 2px solid $red;
 
         @include grid-media($lg) {
           padding: 4px 15.5px;
+
           @include type-5-bold($color: $white);
 
           &:hover,
@@ -266,7 +276,8 @@ header {
       > ul {
         > li {
           > a {
-            padding: 5px 15px;            
+            padding: 5px 15px;
+
             @include type-5($color: $white);
           }
         }
@@ -280,7 +291,8 @@ header {
 
           > li {
             > a {
-              padding: 5px 25px;            
+              padding: 5px 25px;
+
               @include type-5($color: $white);
 
               &,
@@ -317,6 +329,7 @@ header {
     padding: 0;
   }
 
+
   ul {
     width: 100%;
     display: flex;
@@ -339,9 +352,11 @@ header {
         text-align: center;
         width: 100%;
         padding: 8px 15.5px;
+
         @include type-5-bold($color: $white);
+
         background: $black;
-        
+
         @include grid-media($lg) {
           border-left: 2px solid $white;
           padding: 4px 15.5px;
@@ -368,7 +383,7 @@ header {
   outline: none;
   cursor: pointer;
   transform: rotate(0);
-  transition: all .5s $cubic-transition-2;
+  transition: all 0.5s $cubic-transition-2;
 
   &.active {
     transform: rotate(90deg);
@@ -394,6 +409,7 @@ header {
     display: none !important;
   }
 
+
   .c-nav__multisite-nav {
     width: 100%;
     border-right: none;
@@ -418,10 +434,11 @@ header {
           }
         }
 
-        > ul {          
+        > ul {
           border-top: none;
           border-bottom: 2px solid $white;
           background: none;
+
           > li {
             padding-top: 0;
           }

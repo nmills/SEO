@@ -5,7 +5,7 @@ footer.site-footer {
 
   .container {
     background: $black;
-    padding: 15px;
+    padding: 20px;
 
     @include grid-media($lg) {
       padding: 35px 50px;
@@ -46,7 +46,7 @@ footer.site-footer {
         @include grid-media($lg) {
           margin-top: -83px;
 
-          @include grid-column(2, $no-gutter);
+          @include grid-column(2.2, $no-gutter);
 
           float: right;
         }
@@ -56,6 +56,8 @@ footer.site-footer {
           text-align: left;
           width: auto;
           padding: 0;
+          line-height: 0.5;
+          margin-bottom: 15px;
 
           @include grid-column(12, $no-gutter);
 
@@ -69,6 +71,24 @@ footer.site-footer {
         }
       }
 
+      .menu-footer-left-container {
+        li {
+          &:last-of-type {
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+      .menu-footer-right-container {
+        @include grid-media($lg) {
+          li {
+            &:last-of-type {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+
       .menu-social-container {
         @include grid-column(12, $no-gutter);
 
@@ -76,8 +96,8 @@ footer.site-footer {
         margin-top: 20px;
 
         @include grid-media($lg) {
-          @include grid-column(1.8, $no-gutter);
-
+          // @include grid-column(1.8, $no-gutter);
+          width: 160px;
           text-align: left;
           margin-top: 63px;
         }

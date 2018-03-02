@@ -71,8 +71,8 @@
 .c-uie__calltoaction-secondary.pseudo-class-hover:before,
 .c-uie__calltoaction-secondary.pseudo-class-hover:after {
   transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
 }
 
 .c-uie__dropdown-option.pseudo-class-hover {
@@ -172,4 +172,8 @@
 .c-searchform__close-btn.pseudo-class-hover span:before,
 .c-searchform__close-btn.pseudo-class-focus span:before {
   transform: rotate(90deg);
+}
+
+footer.site-footer .container .c-footer__widgets .menu-footer-left-container li.pseudo-class-last-of-type {
+  margin-bottom: 5px;
 }
