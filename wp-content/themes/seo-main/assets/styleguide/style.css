@@ -1155,10 +1155,11 @@ Styleguide 5.1
     position: relative; }
     @media only screen and (min-width: 1024px) {
       .video-component .heading {
-        width: calc(25%);
+        width: calc(16.66667%);
         float: left;
         margin-left: 0;
-        height: 460px; } }
+        height: 460px;
+        margin-right: 60px; } }
     .video-component .heading h1 {
       color: #ffffff;
       width: 100%;
@@ -1182,7 +1183,6 @@ Styleguide 5.1
         float: left;
         margin-left: 0;
         padding-top: 0px;
-        padding-left: 20px;
         height: 460px; }
         .video-component .video .plyr {
           max-height: 460px; } }
@@ -1208,11 +1208,11 @@ Styleguide 5.1
     position: relative; }
     @media only screen and (min-width: 1024px) {
       .video-component .quote {
-        width: calc(25%);
+        width: calc(16.66667%);
         float: left;
         margin-left: 0;
         padding-top: 0px;
-        padding-left: 20px;
+        padding-left: 80px;
         height: 460px; } }
     .video-component .quote p {
       color: #ffffff;
