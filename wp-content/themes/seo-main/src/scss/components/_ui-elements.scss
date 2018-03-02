@@ -42,75 +42,74 @@ input {
 }
 
 input[type="radio"] {
-    display: none;
+  display: none;
 }
 
 .c-uie__radiobutton {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
-    &:hover {
-        input {
-            ~ .c-uie__checkmark {
-                background-color: #ccc;
-            }       
-        }
-    }
-    
+  &:hover {
     input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-
-        &:checked {
-            ~ .c-uie__checkmark{
-                &:after{
-                    display: block;
-                    background: $light-blue;
-                    border: none;
-                }
-            }
-        }
+      ~ .c-uie__checkmark {
+        background-color: #ccc;
+      }
     }
+  }
 
-    .c-uie__checkmark{
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 
-    border-radius: 50%;
+    &:checked {
+      ~ .c-uie__checkmark {
         &:after {
-            top: 50%;
-            left: 50%;
-            width: 70%;
-            height: 70%;
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
+          display: block;
+          background: $light-blue;
+          border: none;
         }
+      }
     }
+  }
+
+  .c-uie__checkmark {
+    border-radius: 50%;
+
+    &:after {
+      top: 50%;
+      left: 50%;
+      width: 70%;
+      height: 70%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 .c-uie__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid $black;
+
+  &:after {
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #fff;
     border: 1px solid $black;
-
-    &:after{
-        content: "";
-        position: absolute;
-        border: 1px solid $black;
-    }
+  }
 }
-
 
 /*
 Check Box
@@ -146,50 +145,50 @@ Styleguide 2.2
 */
 
 .c-uie__checkbox {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
-    &:hover {
-        input {
-            ~ .c-uie__checkmark {
-                background-color: #ccc;
-            }       
-        }
-    }
-    
+  &:hover {
     input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-
-        &:checked {
-            ~ .c-uie__checkmark{
-                &:after{
-                    display: block;
-                    background: $light-blue;
-                    border: none;
-                }
-            }
-        }
+      ~ .c-uie__checkmark {
+        background-color: #ccc;
+      }
     }
+  }
 
-    .c-uie__checkmark{
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked {
+      ~ .c-uie__checkmark {
         &:after {
-            top: 50%;
-            left: 50%;
-            width: 70%;
-            height: 70%;
-            transform: translate(-50%, -50%);
+          display: block;
+          background: $light-blue;
+          border: none;
         }
+      }
     }
+  }
+
+  .c-uie__checkmark {
+    &:after {
+      top: 50%;
+      left: 50%;
+      width: 70%;
+      height: 70%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 /*
@@ -212,62 +211,77 @@ sg-wrapper:
 Styleguide 2.3
 */
 
-.c-uie__input { 
-    input {
-        border: none;
-        border-radius: 0;
-        background: none;
-        border-bottom: 2px solid $black;
-        padding: 0;
-        padding-bottom: 3px;
-        box-shadow: none;
-        transition: all .4s $cubic-transition;
-        height: auto;
-        
-        &::placeholder {
-            color: $black;
-        }
-        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-          color: $black;
-        }
-        &::-moz-placeholder { /* Firefox 19+ */
-          color: $black;
-        }
-        &:-ms-input-placeholder { /* IE 10+ */
-          color: $black;
-        }
-        &:-moz-placeholder { /* Firefox 18- */
-          color: $black;
-        }
+.c-uie__input {
+  input {
+    border: none;
+    border-radius: 0;
+    background: none;
+    border-bottom: 2px solid $black;
+    padding: 0;
+    padding-bottom: 3px;
+    box-shadow: none;
+    transition: all 0.4s $cubic-transition;
+    height: auto;
 
-        &:hover,
-        &:active,
-        &:focus {
-            box-shadow: none;
-            border: none;
-            border-bottom: 4px solid $black;
-            color: $light-blue;
-            padding-bottom: 1px;
-            
-            &::placeholder {
-              color: $light-blue;
-            }
-            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-              color: $light-blue;
-            }
-            &::-moz-placeholder { /* Firefox 19+ */
-              color: $light-blue;
-            }
-            &:-ms-input-placeholder { /* IE 10+ */
-              color: $light-blue;
-            }
-            &:-moz-placeholder { /* Firefox 18- */
-              color: $light-blue;
-            }
-        }
+    &::placeholder {
+      color: $black;
     }
-}
 
+    &::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: $black;
+    }
+
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $black;
+    }
+
+    &:-ms-input-placeholder {
+      /* IE 10+ */
+      color: $black;
+    }
+
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      color: $black;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: none;
+      border: none;
+      border-bottom: 4px solid $black;
+      color: $light-blue;
+      padding-bottom: 1px;
+
+      &::placeholder {
+        color: $light-blue;
+      }
+
+      &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: $light-blue;
+      }
+
+      &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $light-blue;
+      }
+
+      &:-ms-input-placeholder {
+        /* IE 10+ */
+        color: $light-blue;
+      }
+
+      &:-moz-placeholder {
+        /* Firefox 18- */
+        color: $light-blue;
+      }
+    }
+  }
+}
 
 /*
 Call to action
@@ -288,45 +302,43 @@ Styleguide 2.4
 */
 
 .c-uie__calltoaction {
-    padding: 10px 20px ;
-    border-left: 3px solid $red;
-    border-right: 3px solid $black;
-    position: relative;
-    color: $black;
-    font-weight: bold;
-    text-decoration: none;
-    
+  padding: 10px 20px;
+  border-left: 3px solid $red;
+  border-right: 3px solid $black;
+  position: relative;
+  color: $black;
+  font-weight: bold;
+  text-decoration: none;
 
-    &:before {
-      content:" ";
-      position:absolute;
-      top: 0; 
-      right: 0;
-      display: block;
-      border-bottom: 3px solid $black;
-      width: 50%;
-      transition: all .4s $cubic-transition-2;
-    }
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    border-bottom: 3px solid $black;
+    width: 50%;
+    transition: all 0.4s $cubic-transition-2;
+  }
 
-    &:after {
-      content:" ";
-      position:absolute;
-      bottom: 0; 
-      left: 0;
-      display: block;
-      border-bottom: 3px solid $red;
-      transition: all .4s $cubic-transition-2;
-      width: 50%;
-    }
+  &:after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-bottom: 3px solid $red;
+    transition: all 0.4s $cubic-transition-2;
+    width: 50%;
+  }
 
-    &:hover {
-      &:before, &:after {
-        transition: all .4s $cubic-transition-2;
-        width: 100%;
-      }
+  &:hover {
+    &:before, &:after {
+      transition: all 0.4s $cubic-transition-2;
+      width: 100%;
     }
+  }
 }
-
 
 /*
 Secondary Call to action
@@ -347,47 +359,45 @@ Styleguide 2.5
 */
 
 .c-uie__calltoaction-secondary {
-    padding: 10px 20px ;
-    
-    position: relative;
-    color: $black;
-    font-weight: bold;
-    text-decoration: none;
-    
+  padding: 10px 20px;
+  position: relative;
+  color: $black;
+  font-weight: bold;
+  text-decoration: none;
 
-    &:before {
-      content:" ";
-      position:absolute;
-      top: 0; 
-      left: 0;
-      display: block;
-      border-top: 3px solid $black;
-      border-left: 3px solid $black;
-      width: 20%;
-      height:50%;
-      transition: all .4s $cubic-transition-2;
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-top: 4px solid $black;
+    border-left: 4px solid $black;
+    width: 20%;
+    height: 50%;
+    transition: all 0.4s $cubic-transition-2;
+  }
+
+  &:after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    border-bottom: 4px solid $red;
+    border-right: 4px solid $red;
+    transition: all 0.4s $cubic-transition-2;
+    width: 20%;
+    height: 50%;
+  }
+
+  &:hover {
+    &:before, &:after {
+      transition: all 0.4s $cubic-transition-2;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
     }
-
-    &:after {
-      content:" ";
-      position:absolute;
-      bottom: 0; 
-      right: 0;
-      display: block;
-      border-bottom: 3px solid $light-blue;
-      border-right: 3px solid $light-blue;
-      transition: all .4s $cubic-transition-2;
-      width: 20%;
-      height: 50%;
-    } 
-
-    &:hover {
-      &:before, &:after {
-        transition: all .4s $cubic-transition-2;
-        width: 100%;
-        height: 100%;
-      }
-    }
+  }
 }
 
 /*
@@ -442,14 +452,14 @@ Styleguide 2.6
   overflow: hidden;
   transition: all .4s ease-in-out;
   position: absolute;
-  opacity:0;
+  opacity: 0;
   background: $white;
   margin-top: 1px;
 
   &.drop {
     max-height: 10em;
     overflow: auto;
-    opacity:1;
+    opacity: 1;
   }
 }
 
@@ -461,11 +471,12 @@ Styleguide 2.6
   color: $black;
   font-size: 13px;
   font-weight: 100;
-  transition: all .4s $cubic-transition-2;
+  transition: all 0.4s $cubic-transition-2;
 
   &:hover {
     color: $light-blue;
-    transition: all .4s $cubic-transition-2;
+    transition: all 0.4s $cubic-transition-2;
+
     &:before {
       content: "";
       position: absolute;
