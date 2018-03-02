@@ -94,12 +94,14 @@ footer.site-footer {
 
         text-align: center;
         margin-top: 20px;
+        line-height: 0;
 
         @include grid-media($lg) {
           // @include grid-column(1.8, $no-gutter);
           width: 160px;
           text-align: left;
           margin-top: 63px;
+          line-height: inherit;
         }
 
 
@@ -150,6 +152,7 @@ footer.site-footer {
         p {
           font-size: 15px;
           margin: 0;
+          line-height: 1;
         }
       }
     }
