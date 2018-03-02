@@ -122,11 +122,8 @@ function youtube_embed_func( $atts ){
   $output = '';
   $output .= '<div class="video">';
   $output .= '<div data-type="youtube" data-video-id="' . $atts['link'] .'"></div>';
+  $output .= '<p class="caption">' . $atts['heading'] .'</p>';
   $output .= '</div>';
-  $output .= '<div class="video_heading">';
-  $output .= '<h1>' . $atts['heading'] .'</h1>';
-  $output .= '</div>';
-
   return $output;
 }
 add_shortcode( 'youtube', 'youtube_embed_func' );
