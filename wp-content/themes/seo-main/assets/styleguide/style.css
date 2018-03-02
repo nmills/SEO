@@ -1485,7 +1485,10 @@ Styleguide 4.0
     padding: 40px 27px 40px 50px; }
   .c-cta__wrapper .c-cta--image {
     width: 294px;
-    height: 196px; }
+    height: 196px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
   .c-cta__wrapper .c-uie__calltoaction-secondary {
     margin: 40px 0 45px 50px;
     display: inline-block; }
