@@ -1007,6 +1007,11 @@ Styleguide 1.5
 .c-rte .video {
   border-left: 10px solid #eb0029;
   padding-left: 10px; }
+  .c-rte .video .caption {
+    margin: 0;
+    margin-top: 15px;
+    font-style: italic;
+    color: #050505; }
 
 /*
 Accodion
@@ -1186,11 +1191,6 @@ Styleguide 5.1
         height: 460px; }
         .video-component .video .plyr {
           max-height: 460px; } }
-    .video-component .video .caption {
-      margin: 0;
-      margin-top: 15px;
-      font-style: italic;
-      color: #050505; }
     .video-component .video:hover .plyr--playing .plyr__play-large {
       opacity: 1;
       visibility: visible; }
