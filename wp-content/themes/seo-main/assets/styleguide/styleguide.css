@@ -1186,6 +1186,9 @@ Styleguide 5.1
         height: 460px; }
         .video-component .video .plyr {
           max-height: 460px; } }
+    .video-component .video:hover .plyr--playing .plyr__play-large {
+      opacity: 1;
+      visibility: visible; }
     .video-component .video iframe {
       width: 100%;
       height: 100%;
