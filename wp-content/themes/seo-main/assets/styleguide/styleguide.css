@@ -851,12 +851,13 @@ sg-wrapper:
 Styleguide 1.2
 */
 .page-title h1 {
-  font-weight: bold; }
+  font-weight: bold;
+  display: inline-block; }
   .page-title h1:before {
     content: " ";
     display: block;
     border-bottom: 5px solid #eb0029;
-    width: 20%; }
+    width: 70%; }
 
 .page-title .page-title__text-spacing {
   margin-left: 20%; }
@@ -2412,7 +2413,7 @@ footer.site-footer {
   font-weight: 300; }
   footer.site-footer .container {
     background: #050505;
-    padding: 15px; }
+    padding: 20px; }
     @media only screen and (min-width: 1024px) {
       footer.site-footer .container {
         padding: 35px 50px; } }
@@ -2439,7 +2440,7 @@ footer.site-footer {
           footer.site-footer .container .c-footer__widgets .menu-footer-left-container,
           footer.site-footer .container .c-footer__widgets .menu-footer-right-container {
             margin-top: -83px;
-            width: calc(16.66667%);
+            width: calc(18.33333%);
             float: left;
             margin-left: 0;
             float: right; } }
@@ -2448,12 +2449,19 @@ footer.site-footer {
           text-align: left;
           width: auto;
           padding: 0;
+          line-height: 0.5;
+          margin-bottom: 15px;
           width: calc(100%);
           float: left;
           margin-left: 0; }
           footer.site-footer .container .c-footer__widgets .menu-footer-left-container li a,
           footer.site-footer .container .c-footer__widgets .menu-footer-right-container li a {
             font-size: 15px; }
+      footer.site-footer .container .c-footer__widgets .menu-footer-left-container li:last-of-type {
+        margin-bottom: 5px; }
+      @media only screen and (min-width: 1024px) {
+        footer.site-footer .container .c-footer__widgets .menu-footer-right-container li:last-of-type {
+          margin-bottom: 5px; } }
       footer.site-footer .container .c-footer__widgets .menu-social-container {
         width: calc(100%);
         float: left;
@@ -2462,9 +2470,7 @@ footer.site-footer {
         margin-top: 20px; }
         @media only screen and (min-width: 1024px) {
           footer.site-footer .container .c-footer__widgets .menu-social-container {
-            width: calc(15%);
-            float: left;
-            margin-left: 0;
+            width: 160px;
             text-align: left;
             margin-top: 63px; } }
         footer.site-footer .container .c-footer__widgets .menu-social-container #menu-social {

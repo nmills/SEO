@@ -173,3 +173,7 @@
 .c-searchform__close-btn.pseudo-class-focus span:before {
   transform: rotate(90deg);
 }
+
+footer.site-footer .container .c-footer__widgets .menu-footer-left-container li.pseudo-class-last-of-type {
+  margin-bottom: 5px;
+}
