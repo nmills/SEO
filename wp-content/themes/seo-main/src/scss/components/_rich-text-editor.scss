@@ -253,6 +253,10 @@ Styleguide 1.5
       margin-top: 15px;
       font-style: italic;
       color: $black;
+
+      @include type-4;
+
+      font-weight: $font-normal;
     }
   }
 }
