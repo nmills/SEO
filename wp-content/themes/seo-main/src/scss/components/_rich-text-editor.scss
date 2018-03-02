@@ -247,5 +247,16 @@ Styleguide 1.5
   .video {
     border-left: 10px solid $red;
     padding-left: 10px;
+
+    .caption {
+      margin: 0;
+      margin-top: 15px;
+      font-style: italic;
+      color: $black;
+
+      @include type-4;
+
+      font-weight: $font-normal;
+    }
   }
 }

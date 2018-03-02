@@ -1007,6 +1007,17 @@ Styleguide 1.5
 .c-rte .video {
   border-left: 10px solid #eb0029;
   padding-left: 10px; }
+  .c-rte .video .caption {
+    margin: 0;
+    margin-top: 15px;
+    font-style: italic;
+    color: #050505;
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.53;
+    font-weight: 300; }
 
 /*
 Accodion
@@ -1140,7 +1151,7 @@ Styleguide 5.1
 */
 .video-component {
   background: #050505;
-  padding: 40px; }
+  padding: 40px 60px; }
   @media only screen and (min-width: 1024px) {
     .video-component {
       height: 548px; }
@@ -1155,10 +1166,11 @@ Styleguide 5.1
     position: relative; }
     @media only screen and (min-width: 1024px) {
       .video-component .heading {
-        width: calc(25%);
+        width: calc(16.66667%);
         float: left;
         margin-left: 0;
-        height: 460px; } }
+        height: 460px;
+        margin-right: 60px; } }
     .video-component .heading h1 {
       color: #ffffff;
       width: 100%;
@@ -1182,7 +1194,6 @@ Styleguide 5.1
         float: left;
         margin-left: 0;
         padding-top: 0px;
-        padding-left: 20px;
         height: 460px; }
         .video-component .video .plyr {
           max-height: 460px; } }
@@ -1208,11 +1219,11 @@ Styleguide 5.1
     position: relative; }
     @media only screen and (min-width: 1024px) {
       .video-component .quote {
-        width: calc(25%);
+        width: calc(16.66667%);
         float: left;
         margin-left: 0;
         padding-top: 0px;
-        padding-left: 20px;
+        padding-left: 80px;
         height: 460px; } }
     .video-component .quote p {
       color: #ffffff;
@@ -1320,6 +1331,9 @@ sg-wrapper:
 
 Styleguide 3.1
 */
+.hero_image {
+  padding: 0; }
+
 .c-hero_image__wrapper {
   position: relative; }
   @media only screen and (min-width: 768px) {
@@ -1482,7 +1496,10 @@ Styleguide 4.0
     padding: 40px 27px 40px 50px; }
   .c-cta__wrapper .c-cta--image {
     width: 294px;
-    height: 196px; }
+    height: 196px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
   .c-cta__wrapper .c-uie__calltoaction-secondary {
     margin: 40px 0 45px 50px;
     display: inline-block; }
@@ -1986,10 +2003,10 @@ img.mfp-img {
   background: #ff7c7c; }
 
 body {
-  padding-top: 60px; }
+  padding-top: 14px; }
   @media only screen and (min-width: 1024px) {
     body {
-      padding-top: 100px; } }
+      padding-top: 60px; } }
 
 /* Header */
 header {

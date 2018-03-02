@@ -7,22 +7,10 @@
 				title : 'Add Youtube Embed', //set button label
 				image : url+'/icon.png', //set icon filename (20 X 20px). put icon in same folder
 				onclick : function() {
-					ed.execCommand('mceInsertContent', false, '[youtube link="Enter the link here"]');
+					ed.execCommand('mceInsertContent', false, '[youtube link="Enter the link here" heading="enter the heading here"]');
 				}
 			});
 		},
-		// createControl : function(n, cm) {
-		// 	return null;
-		// },
-		// getInfo : function() {
-		// 	return {
-		// 		longname : button_name,
-		// 		author : 'Justin Saad',
-		// 		authorurl : 'http://clevelandwebdeveloper.com/',
-		// 		infourl : 'http://clevelandwebdeveloper.com/',
-		// 		version : "1.0"
-		// 	};
-		// }
 	});
 	tinymce.PluginManager.add(button_name, tinymce.plugins[button_name]);
 })();
