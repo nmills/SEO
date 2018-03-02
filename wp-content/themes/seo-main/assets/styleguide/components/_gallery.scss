@@ -1,4 +1,118 @@
-//Gallery
+/*
+Gallery
+
+markup:
+<div class="c-gallery">
+  <div class="content-grid">
+    <div class="gd__image">
+      <img src="/wp-content/themes/mastercard-foundation/assets/img/gallery-default-img.jpg" alt="">
+    </div>
+    <div class="gd__content">
+      <h1 class="gd__content-title">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </h1>
+      <a href="#" class="gd__content-link js-popup-link">
+        <span class="icon icon-gallery"></span>
+        Open gallery
+      </a>
+    </div>
+  </div>
+  <div class="c-gallery__slide slider__animation">
+    <a href="#" class="po__close close__animation close__animation--1">
+      <img src="/wp-content/themes/mastercard-foundation/assets/img/icons/close-icon-gray.svg" alt="">
+    </a>
+    <div id="slider-container">
+      <div class="bxslide slideshow-cont" data-year="2003" data-title="Title 1">
+        <div class="container-slides group">
+          <div class="gal-row slider">
+            <div class="body-slide-img" style="background:url('/wp-content/themes/mastercard-foundation/assets/img/gallery-default-img.jpg') #141413 center center no-repeat;"></div>
+          </div>
+          <div class="gal-row slider">
+            <h1 class="bs-title">Title</h1>
+            <div class="body-slide">
+              <p>Text</p>
+            </div>
+            <div class="controls">
+              <div class="arrows">
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
+              <div class="pagination">
+                Image
+                <div class="cslide">1</div>
+                of
+                <div class="eslide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="bxslide slideshow-cont" data-year="2004" data-title="Title 2">
+        <div class="container-slides group">
+          <div class="gal-row slider">
+            <div class="body-slide-img" style="background:url('/wp-content/themes/mastercard-foundation/assets/img/4_3_grid.jpg') #141413  center center no-repeat;"></div>
+          </div>
+          <div class="gal-row slider">
+            <h1 class="bs-title">Title 1</h1>
+            <div class="body-slide">
+              <p>Text One</p>
+            </div>
+            <div class="controls">
+              <div class="arrows">
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
+              <div class="pagination">
+                Image
+                <div class="cslide">1</div>
+                of
+                <div class="eslide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bxslide slideshow-cont" data-year="2004" data-title="Title 2">
+        <div class="container-slides group">
+          <div class="gal-row slider">
+            <div class="body-slide-img" style="background:url('/wp-content/themes/mastercard-foundation/assets/img/16-9-dummy-image6.jpg') #141413 center center no-repeat;"></div>
+          </div>
+          <div class="gal-row slider">
+            <h1 class="bs-title">Title 1</h1>
+            <div class="body-slide">
+              <p>Text One</p>
+            </div>
+            <div class="controls">
+              <div class="arrows">
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
+              <div class="pagination">
+                Image
+                <div class="cslide">1</div>
+                of
+                <div class="eslide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 7.0
+*/
+
 .c-gallery {
   background: $white;
 }
@@ -10,20 +124,23 @@
 
 .gd__content-title {
   @include default;
+
   font-weight: $font-normal;
   margin: 0 0 15px;
 }
 
 .gd__content-link {
   color: $black;
+
   @include type-5-bold;
+
   display: flex;
   align-items: center;
 }
 
 /* -----------------
 Gallery
------------------ */
+-------------------- */
 .c-gallery__slide {
   position: fixed;
   top: 0;
@@ -101,12 +218,14 @@ Gallery
 
   @include grid-media($md) {
     height: 100%;
+
     @include grid-column(7, $no-gutter);
 
     &:last-child {
       @include grid-column(5, $no-gutter);
     }
   }
+
 
   @include grid-media($lg) {
     @include grid-column(8, $no-gutter);
@@ -129,20 +248,9 @@ Gallery
 }
 
 .group {
-  zoom: 1; /* For IE 6/7 */
-}
+  zoom: 1;
 
-.header h1 {
-  font-size: .85em;
-  padding: 10px 25px;
-}
-
-.header-left {
-  border-bottom: 1px solid $white;
-}
-
-.right-border {
-  border-right: 1px solid $white;
+  /* For IE 6/7 */
 }
 
 .body-slide {
@@ -154,6 +262,7 @@ Gallery
   @include grid-media($md) {
     max-height: 72.5%;
   }
+
 
   p {
     @include type-5;
@@ -168,15 +277,9 @@ Gallery
   }
 }
 
-.texture-btn {
-  height: 15px;
-  width: 100%;
-  background-image: url(../img/texture.jpg);
-  background-repeat: repeat-x;
-}
-
 .bs-title {
   @include default;
+
   margin: 0;
   display: block;
   padding: 30px;
@@ -185,12 +288,7 @@ Gallery
 
 .body-slide-img {
   height: 100%;
-  background-size: cover !important;
-}
-
-.left-border {
-  border-left: 1px solid $white;
-  position: relative;
+  background-size: contain !important;
 }
 
 .left,
@@ -205,18 +303,20 @@ Gallery
 }
 
 .left {
-  background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowleftgray.svg') left center no-repeat;
+  background: url("/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowleftgray.svg") left center no-repeat;
+
   &:hover,
   &:focus {
-    background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowleft.svg') left center no-repeat;
+    background: url("/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowleft.svg") left center no-repeat;
   }
 }
 
 .right {
-  background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowrightgray.svg') right center no-repeat;
+  background: url("/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowrightgray.svg") right center no-repeat;
+
   &:hover,
   &:focus {
-    background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowright.svg') right center no-repeat;
+    background: url("/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowright.svg") right center no-repeat;
   }
 }
 
@@ -243,46 +343,8 @@ Gallery
   @include type-5;
 }
 
-.thumbslide {
-  padding: 10px;
-  background-color: $white;
-  color: #0f2749;
-  position: relative;
-}
-
-.thumbslide:hover {
-  background-color: #0f2749;
-  color: $white;
-}
-
-.thumbslide {
-  border-right: 1px solid #f3e6d6;
-  border-top: 1px solid #f3e6d6;
-  color: #12355b;
-  cursor: pointer;
-}
-
-#restart {
-  float: right;
-  text-align: right;
-  cursor: pointer;
-  position: relative;
-  z-index: 5;
-}
-
-.title-head li {
-  display: none;
-  width: 100%;
-  height: 52px;
-  padding: 10px;
-}
-
 .active {
   display: block !important;
-}
-
-ul#thumb-cont {
-  height: 53px;
 }
 
 // POPUP
@@ -296,13 +358,14 @@ ul#thumb-cont {
   z-index: -1;
   display: flex;
   flex-wrap: wrap;
-  transition: all .4s $cubic-transition;
+  transition: all 0.4s $cubic-transition;
   transform: scale(0);
   opacity: 0;
 
   @include grid-media($lg) {
     @include grid-collapse;
   }
+
 
   .po__content {
     padding: 30px;
@@ -311,6 +374,7 @@ ul#thumb-cont {
     @include grid-media($md) {
       height: 65%;
     }
+
 
     @include grid-media($lg) {
       display: flex;
@@ -323,8 +387,10 @@ ul#thumb-cont {
       }
 
       @include grid-column(7);
+
       @include grid-shift(-5);
     }
+
 
     a {
       background-image: linear-gradient(to right, rgba(210, 42, 47, 1) 0%, rgba(255, 103, 27, 1) 100%);
@@ -348,6 +414,7 @@ ul#thumb-cont {
 
 .po__image {
   @include grid-column(12, $no-gutter);
+
   background-size: cover !important;
   height: 25%;
 
@@ -355,9 +422,12 @@ ul#thumb-cont {
     height: 35%;
   }
 
+
   @include grid-media($lg) {
     @include grid-column(5);
+
     @include grid-shift(7);
+
     height: 100%;
   }
 }
@@ -369,7 +439,7 @@ ul#thumb-cont {
   width: 48px;
   height: 48px;
   z-index: 1;
-  background: rgba(43, 43, 43, .75);
+  background: rgba(43, 43, 43, 0.75);
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -379,6 +449,7 @@ ul#thumb-cont {
     background: $dark-gray-two;
     right: 60px;
   }
+
 
   img {
     width: 20px;
