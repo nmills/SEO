@@ -1152,10 +1152,11 @@ Styleguide 5.1
 */
 .video-component {
   background: #050505;
-  padding: 40px 60px; }
+  padding: 40px 30px; }
   @media only screen and (min-width: 1024px) {
     .video-component {
-      height: 548px; }
+      height: 548px;
+      padding: 40px 60px; }
       .video-component .video .plyr__video-embed, .video-component .video .plyr {
         position: static; }
       .video-component .video .plyr__video-embed {
@@ -1495,15 +1496,29 @@ Styleguide 4.0
   .c-cta__wrapper h3 {
     margin: 0;
     padding: 40px 27px 40px 50px; }
+    @media only screen and (min-width: 480px) {
+      .c-cta__wrapper h3 {
+        padding: 20px; } }
+    @media only screen and (min-width: 768px) {
+      .c-cta__wrapper h3 {
+        padding: 40px 27px 40px 50px; } }
   .c-cta__wrapper .c-cta--image {
-    width: 294px;
+    width: 80%;
     height: 196px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
+    .c-cta__wrapper .c-cta--image include grid-media($sm) {
+      width: 294px; }
   .c-cta__wrapper .c-uie__calltoaction-secondary {
     margin: 40px 0 45px 50px;
     display: inline-block; }
+    @media only screen and (min-width: 480px) {
+      .c-cta__wrapper .c-uie__calltoaction-secondary {
+        margin: 20px; } }
+    @media only screen and (min-width: 768px) {
+      .c-cta__wrapper .c-uie__calltoaction-secondary {
+        margin: 40px 0 45px 50px; } }
 
 /*
 Gallery
@@ -1970,6 +1985,37 @@ Gallery
 
 .controls .arrows {
   width: calc(33.33333%);
+  float: left;
+  margin-left: 0; }
+
+.container.region_hero {
+  width: calc(100%);
+  float: left;
+  margin-left: 0; }
+
+.container.region_left_rail {
+  width: calc(100%);
+  float: left;
+  margin-left: 0; }
+  @media only screen and (min-width: 480px) {
+    .container.region_left_rail {
+      width: calc(33.33333%);
+      float: left;
+      margin-left: 0; } }
+
+.container.region_main_content {
+  width: calc(100%);
+  float: left;
+  margin-left: 0; }
+  @media only screen and (min-width: 480px) {
+    .container.region_main_content {
+      width: calc(66.66667%);
+      float: left;
+      margin-left: 0;
+      float: right; } }
+
+.container.region_bottom {
+  width: calc(100%);
   float: left;
   margin-left: 0; }
 

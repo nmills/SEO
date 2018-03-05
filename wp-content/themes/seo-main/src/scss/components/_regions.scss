@@ -1,0 +1,29 @@
+// Regions
+
+.container {
+  &.region_hero {
+    @include grid-column(12, $no-gutter);
+  }
+
+  &.region_left_rail {
+    @include grid-column(12, $no-gutter);
+
+    @include grid-media($sm) {
+      @include grid-column(4, $no-gutter);
+    }
+  }
+
+  &.region_main_content {
+    @include grid-column(12, $no-gutter);
+
+    @include grid-media($sm) {
+      @include grid-column(8, $no-gutter);
+
+      float: right;
+    }
+  }
+
+  &.region_bottom {
+    @include grid-column(12, $no-gutter);
+  }
+}

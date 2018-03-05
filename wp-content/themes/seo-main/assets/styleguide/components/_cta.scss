@@ -14,10 +14,21 @@
   h3 {
     margin: 0;
     padding: 40px 27px 40px 50px;
+    @include grid-media($sm) {
+      padding: 20px;
+    }
+    @include grid-media($md) {
+      padding: 40px 27px 40px 50px;
+    }
   }
 
   .c-cta--image {
-    width: 294px;
+    width: 80%;
+
+    include grid-media($sm) {
+      width: 294px;
+    }
+
     height: 196px;
     background-size: cover;
     background-position: center;
@@ -27,5 +38,13 @@
   .c-uie__calltoaction-secondary {
     margin: 40px 0 45px 50px;
     display: inline-block;
+
+    @include grid-media($sm) {
+      margin: 20px;
+    }
+    @include grid-media($md) {
+      margin: 40px 0 45px 50px;
+    
   }
+}
 }
