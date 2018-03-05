@@ -1758,6 +1758,12 @@ Gallery
   margin: 0;
   display: block;
   padding-top: 40px;
+  font-style: italic;
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #050505;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1;
   width: calc(50%);
   float: left;
   margin-left: 0; }
@@ -1803,14 +1809,14 @@ Gallery
   background-size: contain !important; }
 
 .left {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Inactive.svg") left center no-repeat; }
-  .left:hover, .left:focus {
-    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat; }
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat; }
+  .left:hover, .left:focus, .left.inactive {
+    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Inactive.svg") left center no-repeat; }
 
 .right {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat; }
-  .right:hover, .right:focus {
-    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Active.svg") right center no-repeat; }
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Active.svg") right center no-repeat; }
+  .right:hover, .right:focus, .right.inactive {
+    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat; }
 
 .cslide {
   display: inline-block;
@@ -1939,8 +1945,15 @@ Gallery
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #050505;
   font-weight: 700;
-  font-size: 55px;
+  font-size: 45px;
   line-height: 1; }
+  @media only screen and (min-width: 1024px) {
+    .cslide, .eslide {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 1; } }
 
 .eslide {
   font-weight: 300; }

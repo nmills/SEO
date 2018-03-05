@@ -2466,7 +2466,7 @@ controls:false,
 slideMargin:0,
 pager:false,
 adaptiveHeight:true,
-speed:500,
+speed:0,
 
 onSlideBefore:function onSlideBefore(){
 var count=slider.getCurrentSlide();
@@ -2494,10 +2494,20 @@ $("#restart").hide();
 }
 
 firstSlide.html(pager);
+// adding the inactive class to the arrows
+if(pager==slider.getSlideCount()){
+$('.arrows .right').addClass('inactive');
+$('.arrows .left').removeClass('inactive');
+}else if(pager=='1'){
+$('.arrows .left').addClass('inactive');
+$('.arrows .right').removeClass('inactive');
+}else{
+$('.arrows .left').removeClass('inactive');
+$('.arrows .right').removeClass('inactive');
+}
 },
 
 onSlideAfter:function onSlideAfter(){
-
 }});
 
 
