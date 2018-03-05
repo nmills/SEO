@@ -3,6 +3,7 @@
 .container {
   &.region_hero {
     @include grid-column(12, $no-gutter);
+
     float: none;
     margin: 0 auto;
     padding: 0;
@@ -28,7 +29,17 @@
 
   &.region_bottom {
     @include grid-column(12, $no-gutter);
+
     margin: 0 auto;
     padding: 0;
+    
+    .wysiwyg,
+    .faq,
+    .c-gallery{
+        @include grid-media($sm) {
+          @include grid-column(8, $no-gutter);
+    
+          float: right;
+        }}
   }
 }

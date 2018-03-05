@@ -2026,6 +2026,14 @@ Gallery
   margin-left: 0;
   margin: 0 auto;
   padding: 0; }
+  @media only screen and (min-width: 480px) {
+    .container.region_bottom .wysiwyg,
+    .container.region_bottom .faq,
+    .container.region_bottom .c-gallery {
+      width: calc(66.66667%);
+      float: left;
+      margin-left: 0;
+      float: right; } }
 
 /* Slider */
 .slick-slider {

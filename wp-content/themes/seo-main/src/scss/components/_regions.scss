@@ -32,5 +32,15 @@
 
     margin: 0 auto;
     padding: 0;
+
+    .wysiwyg,
+    .faq,
+    .c-gallery {
+      @include grid-media($sm) {
+        @include grid-column(8, $no-gutter);
+
+        float: right;
+      }
+    }
   }
 }
