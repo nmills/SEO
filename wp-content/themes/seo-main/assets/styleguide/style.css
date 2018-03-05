@@ -856,8 +856,9 @@ Styleguide 1.2
   .page-title h1:before {
     content: " ";
     display: block;
-    border-bottom: 5px solid #eb0029;
-    width: 70%; }
+    border-bottom: 10px solid #eb0029;
+    width: 70%;
+    margin-bottom: 15px; }
 
 .page-title .page-title__text-spacing {
   margin-left: 20%; }
