@@ -8,10 +8,22 @@
         <section class="entry-content" itemprop="articleBody">
 
           {# Amalan new codes #}
-          {% for region in post.get_field('template:_content_detail') %}
-            {% include ['region/'~region.acf_fc_layout~'.twig' , 'region/region.twig'] ignore missing with {"region": region} %}
+          {% for component in post.get_field('region:_content_region_top') %}
+            {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
           {% endfor %}
-          {# End of lines from amalan #}
+
+          {% for component in post.get_field('region:_content_region_left') %}
+            {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
+          {% endfor %}
+
+          {% for component in post.get_field('region:_content_region_main') %}
+            {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
+          {% endfor %}
+
+          {% for component in post.get_field('region:_content_region_bottom') %}
+            {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
+          {% endfor %}
+          {# End of the new codes - Amalan #}
 
         </section> <!-- /.entry-content -->
         {% block article_footer %}
