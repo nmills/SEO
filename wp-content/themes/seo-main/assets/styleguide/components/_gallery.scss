@@ -5,7 +5,7 @@ markup:
 <div class="c-gallery">
   <div class="content-grid">
     <div class="gd__image">
-      <img src="/wp-content/themes/mastercard-foundation/assets/img/gallery-default-img.jpg" alt="">
+      <img src="/wp-content/themes/seo-main/assets/img/gallery-default-img.jpg" alt="">
     </div>
     <div class="gd__content">
       <h1 class="gd__content-title">
@@ -19,13 +19,13 @@ markup:
   </div>
   <div class="c-gallery__slide slider__animation">
     <a href="#" class="po__close close__animation close__animation--1">
-      <img src="/wp-content/themes/mastercard-foundation/assets/img/icons/close-icon-gray.svg" alt="">
+      <img src="/wp-content/themes/seo-main/assets/img/icons/close-icon-gray.svg" alt="">
     </a>
     <div id="slider-container">
       <div class="bxslide slideshow-cont" data-year="2003" data-title="Title 1">
         <div class="container-slides group">
           <div class="gal-row slider">
-            <div class="body-slide-img" style="background:url('/wp-content/themes/mastercard-foundation/assets/img/gallery-default-img.jpg') #141413 center center no-repeat;"></div>
+            <div class="body-slide-img" style="background:url('/wp-content/themes/seo-main/assets/img/gallery-default-img.jpg') #141413 center center no-repeat;"></div>
           </div>
           <div class="gal-row slider">
             <h1 class="bs-title">Title</h1>
@@ -50,7 +50,7 @@ markup:
       <div class="bxslide slideshow-cont" data-year="2004" data-title="Title 2">
         <div class="container-slides group">
           <div class="gal-row slider">
-            <div class="body-slide-img" style="background:url('/wp-content/themes/mastercard-foundation/assets/img/4_3_grid.jpg') #141413  center center no-repeat;"></div>
+            <div class="body-slide-img" style="background:url('/wp-content/themes/seo-main/assets/img/4_3_grid.jpg') #141413  center center no-repeat;"></div>
           </div>
           <div class="gal-row slider">
             <h1 class="bs-title">Title 1</h1>
@@ -75,7 +75,7 @@ markup:
       <div class="bxslide slideshow-cont" data-year="2004" data-title="Title 2">
         <div class="container-slides group">
           <div class="gal-row slider">
-            <div class="body-slide-img" style="background:url('/wp-content/themes/mastercard-foundation/assets/img/16-9-dummy-image6.jpg') #141413 center center no-repeat;"></div>
+            <div class="body-slide-img" style="background:url('/wp-content/themes/seo-main/assets/img/16-9-dummy-image6.jpg') #141413 center center no-repeat;"></div>
           </div>
           <div class="gal-row slider">
             <h1 class="bs-title">Title 1</h1>
@@ -110,7 +110,7 @@ sg-wrapper:
   </div>
 </section>
 
-Styleguide 2.0
+Styleguide 8.0
 */
 
 .c-gallery {
@@ -124,13 +124,16 @@ Styleguide 2.0
 
 .gd__content-title {
   @include default;
+
   font-weight: $font-normal;
   margin: 0 0 15px;
 }
 
 .gd__content-link {
   color: $black;
+
   @include type-5-bold;
+
   display: flex;
   align-items: center;
 }
@@ -139,7 +142,7 @@ Styleguide 2.0
 Gallery
 -------------------- */
 .c-gallery__slide {
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   background: $white;
@@ -160,13 +163,13 @@ Gallery
 }
 
 .c-gallery__slide {
-  padding: 50px;
+  // padding: 50px;
 }
 
 .c-gallery__slide,
 #slider-container {
   width: 100%;
-  height: 100%;
+  height: 315px;
   background: $white;
 
   .po__close {
@@ -179,25 +182,16 @@ Gallery
 .slideshow-cont {
   width: 100% !important;
   height: 100% !important;
-}
-
-.controls {
-  border-top: 1px solid $eggshell;
-  color: $white;
-  background: $white;
-  width: 100%;
-  padding: 30px;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  align-items: center;
+  position: static !important;
 }
 
 .bx-viewport {
   border: none !important;
   left: 0 !important;
   box-shadow: none !important;
-  height: 100% !important;
+  overflow: unset !important;
+
+  // height: 100% !important;
 }
 
 .bx-wrapper,
@@ -215,12 +209,14 @@ Gallery
 
   @include grid-media($md) {
     height: 100%;
+
     @include grid-column(7, $no-gutter);
 
     &:last-child {
       @include grid-column(5, $no-gutter);
     }
   }
+
 
   @include grid-media($lg) {
     @include grid-column(8, $no-gutter);
@@ -243,7 +239,9 @@ Gallery
 }
 
 .group {
-  zoom: 1; /* For IE 6/7 */
+  zoom: 1;
+
+  /* For IE 6/7 */
 }
 
 .body-slide {
@@ -255,6 +253,7 @@ Gallery
   @include grid-media($md) {
     max-height: 72.5%;
   }
+
 
   p {
     @include type-5;
@@ -271,10 +270,42 @@ Gallery
 
 .bs-title {
   @include default;
+
   margin: 0;
   display: block;
-  padding: 30px;
-  border-bottom: 1px solid $eggshell;
+  padding-top: 40px;
+
+  // border-bottom: 1px solid $eggshell;
+
+  @include grid-column(6, $no-gutter);
+
+  @include grid-media($md) {
+    @include grid-column(8, $no-gutter);
+  }
+}
+
+.controls {
+  // border-top: 1px solid $eggshell;
+
+  @include grid-column(6, $no-gutter);
+
+  @include grid-media($md) {
+    @include grid-column(4, $no-gutter);
+
+  padding: 10px 30px;
+  }
+
+
+  color: $white;
+  background: $white;
+
+  // width: 100%;
+  padding: 10px 10px;
+
+  // position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
 }
 
 .body-slide-img {
@@ -294,29 +325,33 @@ Gallery
 }
 
 .left {
-  background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowleftgray.svg') left center no-repeat;
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Inactive.svg") left center no-repeat;
+
   &:hover,
   &:focus {
-    background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowleft.svg') left center no-repeat;
+    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat;
   }
 }
 
 .right {
-  background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowrightgray.svg') right center no-repeat;
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat;
+
   &:hover,
   &:focus {
-    background: url('/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowright.svg') right center no-repeat;
+    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Active.svg") right center no-repeat;
   }
 }
 
 .cslide {
   display: inline-block;
   text-align: center;
+  margin-right: 5px;
 }
 
 .eslide {
   display: inline-block;
   text-align: center;
+  margin-left: 5px;
 }
 
 .pagination,
@@ -325,7 +360,9 @@ Gallery
 }
 
 .arrows {
-  margin-right: 25px;
+  // margin-right: 25px;
+  line-height: 0;
+  text-align: right;
 }
 
 .pagination {
@@ -347,13 +384,14 @@ Gallery
   z-index: -1;
   display: flex;
   flex-wrap: wrap;
-  transition: all .4s $cubic-transition;
+  transition: all 0.4s $cubic-transition;
   transform: scale(0);
   opacity: 0;
 
   @include grid-media($lg) {
     @include grid-collapse;
   }
+
 
   .po__content {
     padding: 30px;
@@ -362,6 +400,7 @@ Gallery
     @include grid-media($md) {
       height: 65%;
     }
+
 
     @include grid-media($lg) {
       display: flex;
@@ -374,8 +413,10 @@ Gallery
       }
 
       @include grid-column(7);
+
       @include grid-shift(-5);
     }
+
 
     a {
       background-image: linear-gradient(to right, rgba(210, 42, 47, 1) 0%, rgba(255, 103, 27, 1) 100%);
@@ -399,6 +440,7 @@ Gallery
 
 .po__image {
   @include grid-column(12, $no-gutter);
+
   background-size: cover !important;
   height: 25%;
 
@@ -406,9 +448,12 @@ Gallery
     height: 35%;
   }
 
+
   @include grid-media($lg) {
     @include grid-column(5);
+
     @include grid-shift(7);
+
     height: 100%;
   }
 }
@@ -420,7 +465,7 @@ Gallery
   width: 48px;
   height: 48px;
   z-index: 1;
-  background: rgba(43, 43, 43, .75);
+  background: rgba(43, 43, 43, 0.75);
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -431,7 +476,34 @@ Gallery
     right: 60px;
   }
 
+
   img {
     width: 20px;
+  }
+}
+
+.gal-row.slider.image-area, .gal-row.slider.control-area {
+  @include grid-column(12, $no-gutter);
+}
+
+.control-area {
+  height: auto;
+}
+
+.cslide, .eslide {
+  @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 55px, $line-height: 1);
+}
+
+.eslide {
+  font-weight: $font-normal;
+}
+
+.controls {
+  .pagination {
+    @include grid-column(8, $no-gutter);
+  }
+
+  .arrows {
+    @include grid-column(4, $no-gutter);
   }
 }

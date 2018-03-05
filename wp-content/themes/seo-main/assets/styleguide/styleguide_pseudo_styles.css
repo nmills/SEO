@@ -125,12 +125,12 @@
 
 .left.pseudo-class-hover,
 .left.pseudo-class-focus {
-  background: url("/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowleft.svg") left center no-repeat;
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat;
 }
 
 .right.pseudo-class-hover,
 .right.pseudo-class-focus {
-  background: url("/wp-content/themes/mastercard-foundation/assets/img/icons/sliderIcon-arrowright.svg") right center no-repeat;
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Active.svg") right center no-repeat;
 }
 
 .slick-list.pseudo-class-focus {

@@ -6,6 +6,7 @@ import accordion from 'modules/accordion.js';
 // import custom from 'modules/custom.js';
 import searchBar from 'modules/searchBar.js';
 import hamburger from 'modules/hamburger.js';
+import bxslider from 'modules/jquery.bxslider.min.js';
 import galleryWidget from 'modules/galleryWidget.js';
 
 (function($) {
