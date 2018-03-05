@@ -34,10 +34,11 @@ Styleguide 5.1
 
 .video-component {
   background: $black;
-  padding: 40px 60px;
+  padding: 40px 30px;
 
   @include grid-media($lg) {
     height: 548px;
+    padding: 40px 60px;
 
     .video {
       .plyr__video-embed, .plyr {

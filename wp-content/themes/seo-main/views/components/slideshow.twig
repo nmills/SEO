@@ -1,8 +1,33 @@
-<div class="container slideshow">
-	{% for imagecomponent in component.slideshow %}
-		<img src="{{imagecomponent.image['url']}}" />
-		{{imagecomponent.caption}}
-
-		{{loop.index}} of {{loop.length}}
-	{% endfor %}
+<div class="c-gallery">
+  <div class="c-gallery__slide slider__animation popup-active">
+    <a href="#" class="po__close close__animation close__animation--1">
+      <img src="/wp-content/themes/mastercard-foundation/assets/img/icons/close-icon-gray.svg" alt="">
+    </a>
+    <div id="slider-container">
+      {% for imagecomponent in component.slideshow %} {# <img src="{{imagecomponent.image['url']}}" /> #}
+      <div class="bxslide slideshow-cont" data-year="2003" data-title="Title 1">
+        <div class="container-slides group">
+          <div class="gal-row slider image-area">
+            <div class="body-slide-img" style="background:url('{{imagecomponent.image['url']}}') #141413 center center no-repeat;"></div>
+          </div>
+          <div class="gal-row slider control-area">
+            <h1 class="bs-title">{{imagecomponent.caption}}</h1>
+            <div class="controls">
+              <div class="pagination">
+                {# Image #}
+                <div class="cslide">{{loop.index}}</div>
+                <span>of</span>
+                <div class="eslide">{{loop.length}}</div>
+              </div>
+              <div class="arrows">
+                <div class="left inactive"></div>
+                <div class="right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>

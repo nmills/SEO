@@ -69,8 +69,9 @@ Styleguide 1.2
     &:before {
       content: " ";
       display: block;
-      border-bottom: 5px solid $red;
+      border-bottom: 10px solid $red;
       width: 70%;
+      margin-bottom: 15px;
     }
   }
 
@@ -255,6 +256,7 @@ Styleguide 1.5
       color: $black;
 
       @include type-4;
+
       font-weight: $font-normal;
     }
   }
