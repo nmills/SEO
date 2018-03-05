@@ -309,6 +309,7 @@ Gallery
   bottom: 0;
   display: flex;
   align-items: center;
+  text-align: right;
 }
 
 .body-slide-img {
@@ -489,6 +490,9 @@ Gallery
 
 .gal-row.slider.image-area, .gal-row.slider.control-area {
   @include grid-column(12, $no-gutter);
+
+  border-left: 10px solid #eb0029;
+  padding-left: 10px;
 }
 
 .control-area {

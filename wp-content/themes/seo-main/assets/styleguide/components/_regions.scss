@@ -7,10 +7,12 @@
     float: none;
     margin: 0 auto;
     padding: 0;
+    margin-bottom: 50px;
   }
 
   &.region_left_rail {
     @include grid-column(12, $no-gutter);
+    margin-bottom: 50px;
 
     @include grid-media($sm) {
       @include grid-column(4, $no-gutter);
@@ -19,6 +21,7 @@
 
   &.region_main_content {
     @include grid-column(12, $no-gutter);
+    margin-bottom: 50px;
 
     @include grid-media($sm) {
       @include grid-column(8, $no-gutter);
@@ -28,18 +31,20 @@
   }
 
   &.region_bottom {
+    margin-bottom: 50px;
     @include grid-column(12, $no-gutter);
 
     margin: 0 auto;
     padding: 0;
-    
+
     .wysiwyg,
     .faq,
-    .c-gallery{
-        @include grid-media($sm) {
-          @include grid-column(8, $no-gutter);
-    
-          float: right;
-        }}
+    .c-gallery {
+      @include grid-media($sm) {
+        @include grid-column(8, $no-gutter);
+
+        float: right;
+      }
+    }
   }
 }
