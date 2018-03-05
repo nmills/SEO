@@ -5,7 +5,7 @@
   <main id="content">
     <div class="page-content">
       <article id="post-{{post.ID}}" class="article post-type-{{post.post_type}}" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-        <section class="entry-content" itemprop="articleBody">
+        <section class="entry-content container" itemprop="articleBody">
 
           {# Amalan new codes #}
           <div class="container region_hero">
@@ -15,6 +15,10 @@
           </div>
   
           <div class="container region_main_content">
+            <div class="page-title">
+              <h1>{{post.title}}</h1>
+              <div class="page-title__text-spacing">{{post.post_excerpt}}</div>
+            </div>
             {% for component in post.get_field('region:_content_region_main') %}
               {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
             {% endfor %}
