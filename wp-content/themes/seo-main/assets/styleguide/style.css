@@ -1963,6 +1963,10 @@ Gallery
   width: calc(66.66667%);
   float: left;
   margin-left: 0; }
+  .controls .pagination span {
+    position: relative;
+    top: -10px;
+    font-style: italic; }
 
 .controls .arrows {
   width: calc(33.33333%);

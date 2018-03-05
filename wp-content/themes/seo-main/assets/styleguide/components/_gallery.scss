@@ -510,6 +510,12 @@ Gallery
 .controls {
   .pagination {
     @include grid-column(8, $no-gutter);
+
+    span {
+      position: relative;
+      top: -10px;
+      font-style: italic;
+    }
   }
 
   .arrows {
