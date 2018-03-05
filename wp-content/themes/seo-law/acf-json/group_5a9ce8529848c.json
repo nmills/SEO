@@ -1,0 +1,136 @@
+{
+    "key": "group_5a9ce8529848c",
+    "title": "region: content region main",
+    "fields": [
+        {
+            "key": "field_5a9cea285edc0",
+            "label": "region: content region main",
+            "name": "region:_content_region_main",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Add Component",
+            "min": "",
+            "max": "",
+            "layouts": [
+                {
+                    "key": "5a9cea4e5edc2",
+                    "name": "wysiwyg",
+                    "label": "wysiwyg",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a9cea5e5edc3",
+                            "label": "wysiwyg",
+                            "name": "wysiwyg",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a8278f06871c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5a9cea2ddeede",
+                    "name": "faq",
+                    "label": "faq",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a9cea3a5edc1",
+                            "label": "faq",
+                            "name": "faq",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a827a1dd7b5d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5a9cea705edc4",
+                    "name": "slideshow",
+                    "label": "slideshow",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a9cea7a5edc5",
+                            "label": "slideshow",
+                            "name": "slideshow",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a827955cf48b"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1520235626
+}

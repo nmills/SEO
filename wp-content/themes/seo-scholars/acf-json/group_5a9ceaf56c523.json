@@ -1,0 +1,167 @@
+{
+    "key": "group_5a9ceaf56c523",
+    "title": "region: content region bottom",
+    "fields": [
+        {
+            "key": "field_5a9ceb004ab2b",
+            "label": "region: content region bottom",
+            "name": "region:_content_region_bottom",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Add Component",
+            "min": "",
+            "max": "",
+            "layouts": [
+                {
+                    "key": "5a9ceb0ac3887",
+                    "name": "video",
+                    "label": "video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a9ceb154ab2c",
+                            "label": "video",
+                            "name": "video",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a8279b723690"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5a9cf2224ab2d",
+                    "name": "wysiwyg",
+                    "label": "wysiwyg",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a9cf26f4ab2e",
+                            "label": "wysiwyg",
+                            "name": "wysiwyg",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a8278f06871c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5a9cf2814ab2f",
+                    "name": "faq",
+                    "label": "faq",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a9cf28b4ab30",
+                            "label": "faq",
+                            "name": "faq",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a827a1dd7b5d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5a9cf29c4ab31",
+                    "name": "slideshow",
+                    "label": "slideshow",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a9cf2a34ab32",
+                            "label": "slideshow",
+                            "name": "slideshow",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a827955cf48b"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1520238583
+}
