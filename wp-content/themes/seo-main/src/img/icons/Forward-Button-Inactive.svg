@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Forward-Button-Inactive</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Forward-Button-Inactive" fill="#E5E7E7">
+            <polygon id="Line" points="18.0053565 5.94070256 18.0053565 9.01535481 1.82498015e-14 9.01535481 -1.77635684e-15 5.94070256"></polygon>
+            <polygon id="Adjusted" fill-rule="nonzero" points="10.690847 2.40744836 12.8814869 0.25 20 7.47802868 12.8814869 14.7060574 10.690847 12.548609 15.8705902 7.53000021 15.8705902 7.4000001"></polygon>
+        </g>
+    </g>
+</svg>

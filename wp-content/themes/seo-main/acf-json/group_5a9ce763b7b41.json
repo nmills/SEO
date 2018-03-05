@@ -1,0 +1,136 @@
+{
+    "key": "group_5a9ce763b7b41",
+    "title": "region: content region left",
+    "fields": [
+        {
+            "key": "field_5a9ce779e3661",
+            "label": "region: content region left",
+            "name": "region:_content_region_left",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Add Component",
+            "min": "",
+            "max": "",
+            "layouts": [
+                {
+                    "key": "5a9ce783b10cd",
+                    "name": "image",
+                    "label": "image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a9ce7a2e3662",
+                            "label": "image",
+                            "name": "image",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a8bd61f412fd"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5a9ce7c4e3663",
+                    "name": "signup",
+                    "label": "signup",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a9ce7cee3664",
+                            "label": "signup",
+                            "name": "signup",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a8bd7b071ac1"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5a9ce7e1e3666",
+                    "name": "cta",
+                    "label": "cta",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a9ce7e9e3667",
+                            "label": "cta",
+                            "name": "cta",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a93bfe6d6041"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1520235629
+}
