@@ -1,8 +1,48 @@
-<div class="container slideshow">
-	{% for imagecomponent in component.slideshow %}
-		<img src="{{imagecomponent.image['url']}}" />
-		{{imagecomponent.caption}}
-
-		{{loop.index}} of {{loop.length}}
-	{% endfor %}
+<div class="c-gallery">
+  <div class="content-grid">
+    <div class="gd__image">
+      <img src="/wp-content/themes/mastercard-foundation/assets/img/gallery-default-img.jpg" alt="">
+    </div>
+    <div class="gd__content">
+      <h1 class="gd__content-title">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </h1>
+      <a href="#" class="gd__content-link js-popup-link">
+        <span class="icon icon-gallery"></span>
+        Open gallery
+      </a>
+    </div>
+  </div>
+  <div class="c-gallery__slide slider__animation">
+    <a href="#" class="po__close close__animation close__animation--1">
+      <img src="/wp-content/themes/mastercard-foundation/assets/img/icons/close-icon-gray.svg" alt="">
+    </a>
+    <div id="slider-container">
+    	{% for imagecomponent in component.slideshow %}
+				<img src="{{imagecomponent.image['url']}}" />
+				<div class="bxslide slideshow-cont" data-year="2003" data-title="Title 1">
+	        <div class="container-slides group">
+	          <div class="gal-row slider">
+	            <div class="body-slide-img" style="background:url('{{imagecomponent.image['url']}}') #141413 center center no-repeat;"></div>
+	          </div>
+	          <div class="gal-row slider">
+	            <h1 class="bs-title">{{imagecomponent.caption}}</h1>
+	            <div class="controls">
+	              <div class="arrows">
+	                <div class="left"></div>
+	                <div class="right"></div>
+	              </div>
+	              <div class="pagination">
+	                Image
+	                <div class="cslide">1</div>
+	                of
+	                <div class="eslide"></div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div> 
+			{% endfor %}
+    </div>
+  </div>
 </div>
