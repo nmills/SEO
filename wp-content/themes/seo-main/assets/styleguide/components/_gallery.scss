@@ -328,22 +328,22 @@ Gallery
 }
 
 .left {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat;
 
   &:hover,
   &:focus,
   &.inactive {
-    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Inactive.svg") left center no-repeat;
+    background: url("/wp-content/themes/seo-main/assets/img/icons/Back-Button-Inactive.svg") left center no-repeat;
   }
 }
 
 .right {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Active.svg") right center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Active.svg") right center no-repeat;
 
   &:hover,
   &:focus,
   &.inactive {
-    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat;
+    background: url("/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat;
   }
 }
 

@@ -3,6 +3,9 @@
 .container {
   &.region_hero {
     @include grid-column(12, $no-gutter);
+    float: none;
+    margin: 0 auto;
+    padding: 0;
   }
 
   &.region_left_rail {
@@ -25,5 +28,7 @@
 
   &.region_bottom {
     @include grid-column(12, $no-gutter);
+    margin: 0 auto;
+    padding: 0;
   }
 }

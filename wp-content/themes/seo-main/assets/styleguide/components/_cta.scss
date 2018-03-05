@@ -14,9 +14,12 @@
   h3 {
     margin: 0;
     padding: 40px 27px 40px 50px;
+
     @include grid-media($sm) {
       padding: 20px;
     }
+
+
     @include grid-media($md) {
       padding: 40px 27px 40px 50px;
     }
@@ -42,9 +45,10 @@
     @include grid-media($sm) {
       margin: 20px;
     }
+
+
     @include grid-media($md) {
       margin: 40px 0 45px 50px;
-    
+    }
   }
-}
 }
