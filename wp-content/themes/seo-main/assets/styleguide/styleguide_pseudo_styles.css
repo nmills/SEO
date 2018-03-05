@@ -115,6 +115,24 @@
   border: 3px solid red;
 }
 
+.body-slide p.pseudo-class-first-child {
+  margin-top: 0;
+}
+
+.body-slide p.pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
+.left.pseudo-class-hover,
+.left.pseudo-class-focus {
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Inactive.svg") left center no-repeat;
+}
+
+.right.pseudo-class-hover,
+.right.pseudo-class-focus {
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat;
+}
+
 .slick-list.pseudo-class-focus {
   outline: none;
 }
