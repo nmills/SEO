@@ -90,6 +90,18 @@ $sans-stack: 'Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.4;
 }
 
+@mixin type-6($color: $black) {
+  font-family: $sans-stack;
+  color: #{$color};
+  font-weight: $font-thin;
+  font-size: 23.6px;
+  line-height: 1.04;
+  @include grid-media($md) {
+    font-size: 34.5px;
+    line-height: 1.45;
+  }
+}
+
 @mixin type-custom($color: #{$color}, $font-weight: #{$font-weight}, $font-size: #{$font-size}, $line-height: #{$line-height} ) {
   font-family: $sans-stack;
   color: #{$color};

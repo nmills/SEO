@@ -269,47 +269,89 @@ Gallery
 }
 
 .bs-title {
-  @include default;
+  // @include default;
 
   margin: 0;
   display: block;
-  padding-top: 40px;
+  padding-top: 25px;
   font-style: italic;
 
   @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 17px, $line-height: 1);
 
   // border-bottom: 1px solid $eggshell;
 
-  @include grid-column(6, $no-gutter);
+  @include grid-column(5.2, $no-gutter);
 
   @include grid-media($md) {
+    padding-top: 30px;
+
     @include grid-column(8, $no-gutter);
+  }
+
+
+  @include grid-media($lg) {
+    padding-top: 10px;
   }
 }
 
 .controls {
   // border-top: 1px solid $eggshell;
 
-  @include grid-column(6, $no-gutter);
-
-  @include grid-media($md) {
-    @include grid-column(4, $no-gutter);
-
-    padding: 10px 30px;
-  }
-
+  @include grid-column(6.8, $no-gutter);
 
   color: $white;
   background: $white;
-
-  // width: 100%;
   padding: 10px 10px;
-
-  // position: absolute;
+  position: absolute;
+  right: 0;
+  top: 10px;
   bottom: 0;
   display: flex;
   align-items: center;
   text-align: right;
+  padding-right: 0;
+  padding-bottom: 0;
+
+  @include grid-media($md) {
+    @include grid-column(4, $no-gutter);
+
+    padding: 10px 10px;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+
+  @include grid-media($lg) {
+    padding: 10px 30px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+
+  .pagination {
+    @include grid-column(12, $no-gutter);
+
+    span {
+      position: relative;
+      top: -10px;
+      font-style: italic;
+    }
+  }
+
+  .arrows {
+    // @include grid-column(3, $no-gutter);
+
+    width: 50px;
+    margin-left: 10px;
+    float: right;
+
+    // padding-right: 10px;
+
+    @include grid-media($lg) {
+      padding-right: 0;
+    }
+  }
 }
 
 .body-slide-img {
@@ -323,9 +365,20 @@ Gallery
   position: relative;
   cursor: pointer;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-size: contain !important;
+
+  @include grid-media($sm) {
+    width: 25px;
+    height: 25px;
+  }
+
+
+  @include grid-media($lg) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .left {
@@ -491,12 +544,16 @@ Gallery
 .gal-row.slider.image-area, .gal-row.slider.control-area {
   @include grid-column(12, $no-gutter);
 
-  border-left: 10px solid #eb0029;
+  border-left: 10px solid $black;
   padding-left: 10px;
 }
 
 .control-area {
   height: auto;
+
+  @include grid-media($lg) {
+    padding-top: 30px;
+  }
 }
 
 .cslide, .eslide {
@@ -509,20 +566,4 @@ Gallery
 
 .eslide {
   font-weight: $font-normal;
-}
-
-.controls {
-  .pagination {
-    @include grid-column(8, $no-gutter);
-
-    span {
-      position: relative;
-      top: -10px;
-      font-style: italic;
-    }
-  }
-
-  .arrows {
-    @include grid-column(4, $no-gutter);
-  }
 }
