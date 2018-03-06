@@ -280,7 +280,7 @@ Gallery
 
   // border-bottom: 1px solid $eggshell;
 
-  @include grid-column(6, $no-gutter);
+  @include grid-column(5.2, $no-gutter);
 
   @include grid-media($md) {
     padding-top: 30px;
@@ -297,7 +297,7 @@ Gallery
 .controls {
   // border-top: 1px solid $eggshell;
 
-  @include grid-column(6, $no-gutter);
+  @include grid-column(6.8, $no-gutter);
 
   color: $white;
   background: $white;
@@ -330,7 +330,7 @@ Gallery
 
 
   .pagination {
-    @include grid-column(10, $no-gutter);
+    @include grid-column(12, $no-gutter);
 
     span {
       position: relative;

@@ -1799,7 +1799,7 @@ Gallery
   font-weight: 300;
   font-size: 17px;
   line-height: 1;
-  width: calc(50%);
+  width: calc(43.33333%);
   float: left;
   margin-left: 0; }
   @media only screen and (min-width: 768px) {
@@ -1813,7 +1813,7 @@ Gallery
       padding-top: 10px; } }
 
 .controls {
-  width: calc(50%);
+  width: calc(56.66667%);
   float: left;
   margin-left: 0;
   color: #ffffff;
@@ -1843,7 +1843,7 @@ Gallery
       padding-top: 0;
       padding-bottom: 0; } }
   .controls .pagination {
-    width: calc(83.33333%);
+    width: calc(100%);
     float: left;
     margin-left: 0; }
     .controls .pagination span {
