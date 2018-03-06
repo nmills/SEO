@@ -1790,11 +1790,6 @@ Gallery
       margin-bottom: 0; }
 
 .bs-title {
-  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #4e4e4e;
-  font-weight: 300;
-  font-size: 15.1px;
-  line-height: 1.59;
   margin: 0;
   display: block;
   padding-top: 25px;
@@ -1809,14 +1804,13 @@ Gallery
   margin-left: 0; }
   @media only screen and (min-width: 768px) {
     .bs-title {
-      font-size: 20px;
-      line-height: 1.53; } }
-  @media only screen and (min-width: 768px) {
-    .bs-title {
       padding-top: 30px;
       width: calc(66.66667%);
       float: left;
       margin-left: 0; } }
+  @media only screen and (min-width: 1024px) {
+    .bs-title {
+      padding-top: 10px; } }
 
 .controls {
   width: calc(50%);
@@ -1825,6 +1819,9 @@ Gallery
   color: #ffffff;
   background: #ffffff;
   padding: 10px 10px;
+  position: absolute;
+  right: 0;
+  top: 10px;
   bottom: 0;
   display: flex;
   align-items: center;
@@ -1837,13 +1834,29 @@ Gallery
       float: left;
       margin-left: 0;
       padding: 10px 10px;
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      padding-right: 0; } }
   @media only screen and (min-width: 1024px) {
     .controls {
       padding: 10px 30px;
-      padding-right: 30px;
+      padding-right: 0;
       padding-top: 0;
       padding-bottom: 0; } }
+  .controls .pagination {
+    width: calc(83.33333%);
+    float: left;
+    margin-left: 0; }
+    .controls .pagination span {
+      position: relative;
+      top: -10px;
+      font-style: italic; }
+  .controls .arrows {
+    width: 50px;
+    margin-left: 10px;
+    float: right; }
+    @media only screen and (min-width: 1024px) {
+      .controls .arrows {
+        padding-right: 0; } }
 
 .body-slide-img {
   height: 100%;
@@ -2003,6 +2016,9 @@ Gallery
 
 .control-area {
   height: auto; }
+  @media only screen and (min-width: 1024px) {
+    .control-area {
+      padding-top: 30px; } }
 
 .cslide, .eslide {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -2020,25 +2036,6 @@ Gallery
 
 .eslide {
   font-weight: 300; }
-
-.controls .pagination {
-  width: calc(66.66667%);
-  float: left;
-  margin-left: 0; }
-  .controls .pagination span {
-    position: relative;
-    top: -10px;
-    font-style: italic; }
-
-.controls .arrows {
-  width: calc(25%);
-  float: left;
-  margin-left: 0;
-  margin-left: 10px;
-  padding-right: 10px; }
-  @media only screen and (min-width: 1024px) {
-    .controls .arrows {
-      padding-right: 0; } }
 
 .container.region_hero {
   width: calc(100%);

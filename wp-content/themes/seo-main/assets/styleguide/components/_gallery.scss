@@ -269,7 +269,7 @@ Gallery
 }
 
 .bs-title {
-  @include default;
+  // @include default;
 
   margin: 0;
   display: block;
@@ -287,6 +287,11 @@ Gallery
 
     @include grid-column(8, $no-gutter);
   }
+
+
+  @include grid-media($lg) {
+    padding-top: 10px;
+  }
 }
 
 .controls {
@@ -296,11 +301,10 @@ Gallery
 
   color: $white;
   background: $white;
-
-  // width: 100%;
   padding: 10px 10px;
-
-  // position: absolute;
+  position: absolute;
+  right: 0;
+  top: 10px;
   bottom: 0;
   display: flex;
   align-items: center;
@@ -313,14 +317,40 @@ Gallery
 
     padding: 10px 10px;
     padding-bottom: 0;
+    padding-right: 0;
   }
 
 
   @include grid-media($lg) {
     padding: 10px 30px;
-    padding-right: 30px;
+    padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+
+  .pagination {
+    @include grid-column(10, $no-gutter);
+
+    span {
+      position: relative;
+      top: -10px;
+      font-style: italic;
+    }
+  }
+
+  .arrows {
+    // @include grid-column(3, $no-gutter);
+
+    width: 50px;
+    margin-left: 10px;
+    float: right;
+
+    // padding-right: 10px;
+
+    @include grid-media($lg) {
+      padding-right: 0;
+    }
   }
 }
 
@@ -520,6 +550,10 @@ Gallery
 
 .control-area {
   height: auto;
+
+  @include grid-media($lg) {
+    padding-top: 30px;
+  }
 }
 
 .cslide, .eslide {
@@ -532,29 +566,4 @@ Gallery
 
 .eslide {
   font-weight: $font-normal;
-}
-
-.controls {
-  .pagination {
-    @include grid-column(8, $no-gutter);
-
-    span {
-      position: relative;
-      top: -10px;
-      font-style: italic;
-    }
-  }
-
-  .arrows {
-    @include grid-column(3, $no-gutter);
-
-    margin-left: 10px;
-        padding-right: 10px;
-
-    @include grid-media($lg) {
-      padding-right: 0;
-
-    }
- 
-  }
 }
