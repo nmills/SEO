@@ -12,6 +12,7 @@
 
   &.region_left_rail {
     @include grid-column(12, $no-gutter);
+
     margin-bottom: 50px;
 
     @include grid-media($sm) {
@@ -21,6 +22,7 @@
 
   &.region_main_content {
     @include grid-column(12, $no-gutter);
+
     margin-bottom: 50px;
 
     @include grid-media($sm) {
@@ -32,6 +34,7 @@
 
   &.region_bottom {
     margin-bottom: 50px;
+
     @include grid-column(12, $no-gutter);
 
     margin: 0 auto;

@@ -70,13 +70,32 @@ Styleguide 1.2
       content: " ";
       display: block;
       border-bottom: 10px solid $red;
-      width: 70%;
+      width: 75px;
       margin-bottom: 15px;
+
+      @include grid-media($lg) {
+        width: 110px;
+      }
     }
   }
 
   .page-title__text-spacing {
-    margin-left: 20%;
+    margin-left: 10%;
+
+    @include type-custom($color: $dark-gray, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1.25);
+
+    &:after {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid $light-gray;
+      width: 75px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      @include grid-media($lg) {
+        width: 110px;
+      }
+    }
   }
 }
 

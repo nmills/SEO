@@ -860,11 +860,29 @@ Styleguide 1.2
     content: " ";
     display: block;
     border-bottom: 10px solid #eb0029;
-    width: 70%;
+    width: 75px;
     margin-bottom: 15px; }
+    @media only screen and (min-width: 1024px) {
+      .page-title h1:before {
+        width: 110px; } }
 
 .page-title .page-title__text-spacing {
-  margin-left: 20%; }
+  margin-left: 10%;
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #4d4d4d;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 1.25; }
+  .page-title .page-title__text-spacing:after {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #e5e7e7;
+    width: 75px;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    @media only screen and (min-width: 1024px) {
+      .page-title .page-title__text-spacing:after {
+        width: 110px; } }
 
 /*
 Quote Offset
