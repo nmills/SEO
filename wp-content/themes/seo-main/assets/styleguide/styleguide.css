@@ -1027,7 +1027,7 @@ Styleguide 1.5
     margin-bottom: 25px; }
 
 .c-rte .video {
-  border-left: 10px solid #eb0029;
+  border-left: 10px solid #050505;
   padding-left: 10px; }
   .c-rte .video .caption {
     margin: 0;
@@ -1975,7 +1975,7 @@ Gallery
   width: calc(100%);
   float: left;
   margin-left: 0;
-  border-left: 10px solid #eb0029;
+  border-left: 10px solid #050505;
   padding-left: 10px; }
 
 .control-area {
