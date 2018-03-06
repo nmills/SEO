@@ -2924,7 +2924,7 @@ header {
   position: fixed;
   top: -160px;
   left: 0;
-  z-index: 11;
+  z-index: 25;
   width: calc(100%);
   float: left;
   margin-left: 0;
