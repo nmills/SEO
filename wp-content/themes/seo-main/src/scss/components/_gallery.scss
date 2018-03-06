@@ -295,6 +295,12 @@ Gallery
   @include grid-media($md) {
     @include grid-column(4, $no-gutter);
 
+    padding: 10px 10px;
+    padding-bottom: 0;
+  }
+
+
+  @include grid-media($lg) {
     padding: 10px 30px;
   }
 
@@ -329,22 +335,22 @@ Gallery
 }
 
 .left {
-  background: url("/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat;
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat;
 
   &:hover,
   &:focus,
   &.inactive {
-    background: url("/wp-content/themes/seo-main/assets/img/icons/Back-Button-Inactive.svg") left center no-repeat;
+    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Inactive.svg") left center no-repeat;
   }
 }
 
 .right {
-  background: url("/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Active.svg") right center no-repeat;
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Active.svg") right center no-repeat;
 
   &:hover,
   &:focus,
   &.inactive {
-    background: url("/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat;
+    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat;
   }
 }
 
@@ -512,6 +518,13 @@ Gallery
 }
 
 .controls {
+  padding-right: 0;
+
+  @include grid-media($lg) {
+    padding-right: 30px;
+  }
+
+
   .pagination {
     @include grid-column(8, $no-gutter);
 
@@ -523,6 +536,13 @@ Gallery
   }
 
   .arrows {
-    @include grid-column(4, $no-gutter);
+    @include grid-column(3, $no-gutter);
+
+    margin-left: 10px;
+
+    // @include grid-media($lg) {
+    //   @include grid-column(3, $no-gutter);
+    // }
+ 
   }
 }
