@@ -11,9 +11,10 @@
 
   transition: all 0.5s $cubic-transition-2;
 
-  @include grid-media($lg){
+  @include grid-media($lg) {
     top: -105px;
   }
+
 
   &.active {
     top: 0;

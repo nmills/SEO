@@ -1883,14 +1883,14 @@ Gallery
       height: 30px; } }
 
 .left {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat; }
+  background: url("/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat; }
   .left:hover, .left:focus, .left.inactive {
-    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Inactive.svg") left center no-repeat; }
+    background: url("/wp-content/themes/seo-main/assets/img/icons/Back-Button-Inactive.svg") left center no-repeat; }
 
 .right {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Active.svg") right center no-repeat; }
+  background: url("/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Active.svg") right center no-repeat; }
   .right:hover, .right:focus, .right.inactive {
-    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat; }
+    background: url("/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat; }
 
 .cslide {
   display: inline-block;

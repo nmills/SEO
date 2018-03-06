@@ -125,12 +125,12 @@
 
 .left.pseudo-class-hover,
 .left.pseudo-class-focus {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Inactive.svg") left center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/Back-Button-Inactive.svg") left center no-repeat;
 }
 
 .right.pseudo-class-hover,
 .right.pseudo-class-focus {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat;
 }
 
 .slick-list.pseudo-class-focus {
