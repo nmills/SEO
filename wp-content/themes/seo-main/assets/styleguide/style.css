@@ -1797,7 +1797,7 @@ Gallery
   line-height: 1.59;
   margin: 0;
   display: block;
-  padding-top: 40px;
+  padding-top: 25px;
   font-style: italic;
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #050505;
@@ -1813,6 +1813,7 @@ Gallery
       line-height: 1.53; } }
   @media only screen and (min-width: 768px) {
     .bs-title {
+      padding-top: 30px;
       width: calc(66.66667%);
       float: left;
       margin-left: 0; } }
@@ -1827,7 +1828,9 @@ Gallery
   bottom: 0;
   display: flex;
   align-items: center;
-  text-align: right; }
+  text-align: right;
+  padding-right: 0;
+  padding-bottom: 0; }
   @media only screen and (min-width: 768px) {
     .controls {
       width: calc(33.33333%);
@@ -1837,7 +1840,10 @@ Gallery
       padding-bottom: 0; } }
   @media only screen and (min-width: 1024px) {
     .controls {
-      padding: 10px 30px; } }
+      padding: 10px 30px;
+      padding-right: 30px;
+      padding-top: 0;
+      padding-bottom: 0; } }
 
 .body-slide-img {
   height: 100%;
@@ -1849,9 +1855,19 @@ Gallery
   position: relative;
   cursor: pointer;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-size: contain !important; }
+  @media only screen and (min-width: 480px) {
+    .left,
+    .right {
+      width: 25px;
+      height: 25px; } }
+  @media only screen and (min-width: 1024px) {
+    .left,
+    .right {
+      width: 30px;
+      height: 30px; } }
 
 .left {
   background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat; }
@@ -2005,24 +2021,24 @@ Gallery
 .eslide {
   font-weight: 300; }
 
-.controls {
-  padding-right: 0; }
+.controls .pagination {
+  width: calc(66.66667%);
+  float: left;
+  margin-left: 0; }
+  .controls .pagination span {
+    position: relative;
+    top: -10px;
+    font-style: italic; }
+
+.controls .arrows {
+  width: calc(25%);
+  float: left;
+  margin-left: 0;
+  margin-left: 10px;
+  padding-right: 10px; }
   @media only screen and (min-width: 1024px) {
-    .controls {
-      padding-right: 30px; } }
-  .controls .pagination {
-    width: calc(66.66667%);
-    float: left;
-    margin-left: 0; }
-    .controls .pagination span {
-      position: relative;
-      top: -10px;
-      font-style: italic; }
-  .controls .arrows {
-    width: calc(25%);
-    float: left;
-    margin-left: 0;
-    margin-left: 10px; }
+    .controls .arrows {
+      padding-right: 0; } }
 
 .container.region_hero {
   width: calc(100%);
