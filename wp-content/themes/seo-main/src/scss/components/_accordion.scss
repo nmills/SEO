@@ -80,11 +80,11 @@ Styleguide 4.1
     margin: 0;
 
     .toggle {
-      @include type-2;
+      @include type-6;
 
       width: 100%;
       display: block;
-      font-weight: bold;
+      font-weight: $font-bold;
       background: $white;
       transition: all 0.3s $cubic-transition;
       border-bottom: 1px solid #dbd7cc;

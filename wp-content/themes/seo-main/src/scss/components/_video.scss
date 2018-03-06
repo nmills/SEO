@@ -149,9 +149,11 @@ Styleguide 5.1
       width: 100%;
       bottom: 0;
       margin: 0;
+      padding-left: 30%;
 
       @include grid-media($lg) {
         position: absolute;
+        padding-left: 0;
       }
 
 
