@@ -855,7 +855,8 @@ Styleguide 1.2
 */
 .page-title h1 {
   font-weight: bold;
-  display: inline-block; }
+  display: inline-block;
+  margin: 0; }
   .page-title h1:before {
     content: " ";
     display: block;
@@ -2043,6 +2044,15 @@ Gallery
   margin: 0 auto;
   padding: 0;
   margin-bottom: 50px; }
+
+.container.region_title {
+  max-width: 1280px; }
+  @media only screen and (min-width: 480px) {
+    .container.region_title .content {
+      width: calc(66.66667%);
+      float: left;
+      margin-left: 0;
+      float: right; } }
 
 .container.region_body {
   max-width: 1280px; }
