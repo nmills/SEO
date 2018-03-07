@@ -10,25 +10,35 @@
     margin-bottom: 50px;
   }
 
-  &.region_left_rail {
-    @include grid-column(12, $no-gutter);
+  &.region_body {
+    max-width: 1280px;
 
-    margin-bottom: 50px;
+    .region_left_rail {
+      @include grid-column(12, $no-gutter);
 
-    @include grid-media($sm) {
-      @include grid-column(4, $no-gutter);
+      margin-bottom: 50px;
+
+      @include grid-media($sm) {
+        @include grid-column(4, $no-gutter);
+      }
     }
-  }
 
-  &.region_main_content {
-    @include grid-column(12, $no-gutter);
+    .region_main_content {
+      @include grid-column(12, $no-gutter);
 
-    margin-bottom: 50px;
+      margin-bottom: 50px;
+      padding: 0;
 
-    @include grid-media($sm) {
-      @include grid-column(8, $no-gutter);
+      @include grid-media($sm) {
+        @include grid-column(8, $no-gutter);
 
-      float: right;
+        float: right;
+      }
+
+
+      .wysiwyg {
+        padding: 0;
+      }
     }
   }
 
@@ -40,13 +50,20 @@
     margin: 0 auto;
     padding: 0;
 
-    .wysiwyg,
-    .faq,
-    .c-gallery {
-      @include grid-media($sm) {
-        @include grid-column(8, $no-gutter);
+    .container {
+      &:not(.video-component) {
+        max-width: 1280px;
+      }
 
-        float: right;
+      &.wysiwyg,
+      &.faq,
+      &.c-gallery {
+        @include grid-media($sm) {
+          @include grid-column(8, $no-gutter);
+
+          float: right;
+          padding-left: 25px;
+        }
       }
     }
   }
