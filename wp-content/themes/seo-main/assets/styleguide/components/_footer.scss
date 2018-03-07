@@ -27,6 +27,7 @@ footer.site-footer {
       //     @include grid-column(6, $no-gutter);
       //   }     
       // }
+      position: relative;
 
       img.image {
         margin-bottom: 20px;
@@ -49,6 +50,8 @@ footer.site-footer {
           @include grid-column(2.2, $no-gutter);
 
           float: right;
+          position: absolute;
+          right: 0;
         }
 
 
@@ -71,7 +74,7 @@ footer.site-footer {
         }
       }
 
-      .menu-footer-left-container {
+      .menu-footer-right-container {
         li {
           &:last-of-type {
             margin-bottom: 5px;
@@ -79,8 +82,9 @@ footer.site-footer {
         }
       }
 
-      .menu-footer-right-container {
+      .menu-footer-left-container {
         @include grid-media($lg) {
+          right: 150px;
           li {
             &:last-of-type {
               margin-bottom: 5px;
