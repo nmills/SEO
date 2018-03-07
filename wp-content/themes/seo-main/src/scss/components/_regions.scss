@@ -10,6 +10,18 @@
     margin-bottom: 50px;
   }
 
+  &.region_title {
+    max-width: 1280px;
+
+    .content {
+      @include grid-media($sm) {
+        @include grid-column(8, $no-gutter);
+
+        float: right;
+      }
+    }
+  }
+
   &.region_body {
     max-width: 1280px;
 

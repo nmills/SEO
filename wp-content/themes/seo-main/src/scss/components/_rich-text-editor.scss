@@ -65,6 +65,7 @@ Styleguide 1.2
   h1 {
     font-weight: bold;
     display: inline-block;
+    margin: 0;
 
     &:before {
       content: " ";
