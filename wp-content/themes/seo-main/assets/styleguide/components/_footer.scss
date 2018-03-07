@@ -85,6 +85,7 @@ footer.site-footer {
       .menu-footer-left-container {
         @include grid-media($lg) {
           right: 150px;
+
           li {
             &:last-of-type {
               margin-bottom: 5px;

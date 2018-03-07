@@ -1414,10 +1414,7 @@ Styleguide 3.1
         margin: 0;
         margin-left: 65px;
         display: inline-block;
-        position: absolute;
-        z-index: 10;
-        top: 50%;
-        transform: translateY(-50%); } }
+        z-index: 10; } }
   .c-hero_image__wrapper h2 {
     font-size: 30px;
     background: white;
