@@ -2047,28 +2047,32 @@ Gallery
   padding: 0;
   margin-bottom: 50px; }
 
-.container.region_left_rail {
-  width: calc(100%);
-  float: left;
-  margin-left: 0;
-  margin-bottom: 50px; }
-  @media only screen and (min-width: 480px) {
-    .container.region_left_rail {
-      width: calc(33.33333%);
-      float: left;
-      margin-left: 0; } }
-
-.container.region_main_content {
-  width: calc(100%);
-  float: left;
-  margin-left: 0;
-  margin-bottom: 50px; }
-  @media only screen and (min-width: 480px) {
-    .container.region_main_content {
-      width: calc(66.66667%);
-      float: left;
-      margin-left: 0;
-      float: right; } }
+.container.region_body {
+  max-width: 1280px; }
+  .container.region_body .region_left_rail {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    margin-bottom: 50px; }
+    @media only screen and (min-width: 480px) {
+      .container.region_body .region_left_rail {
+        width: calc(33.33333%);
+        float: left;
+        margin-left: 0; } }
+  .container.region_body .region_main_content {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    margin-bottom: 50px;
+    padding: 0; }
+    @media only screen and (min-width: 480px) {
+      .container.region_body .region_main_content {
+        width: calc(66.66667%);
+        float: left;
+        margin-left: 0;
+        float: right; } }
+    .container.region_body .region_main_content .wysiwyg {
+      padding: 0; }
 
 .container.region_bottom {
   margin-bottom: 50px;
@@ -2077,14 +2081,15 @@ Gallery
   margin-left: 0;
   margin: 0 auto;
   padding: 0; }
+  .container.region_bottom .container:not(.video-component) {
+    max-width: 1280px; }
   @media only screen and (min-width: 480px) {
-    .container.region_bottom .wysiwyg,
-    .container.region_bottom .faq,
-    .container.region_bottom .c-gallery {
+    .container.region_bottom .container.wysiwyg, .container.region_bottom .container.faq, .container.region_bottom .container.c-gallery {
       width: calc(66.66667%);
       float: left;
       margin-left: 0;
-      float: right; } }
+      float: right;
+      padding-left: 25px; } }
 
 /* Slider */
 .slick-slider {
