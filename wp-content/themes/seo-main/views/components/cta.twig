@@ -1,15 +1,16 @@
+{# <pre>{{component|print_r}}</pre> #}
 <section>
   {% if component.header_text is not empty and component.image.url is not empty %}
-  <div class="container c-cta__wrapper border">
-    <div class="c-cta--heading">
-      <h3>{{component.header_text}}</h3>
+    <div class="container c-cta__wrapper border">
+      <div class="c-cta--heading">
+        <h3>{{component.header_text}}</h3>
+      </div>
+      <div class="c-cta--image" style="background-image: url({{component.image.url}})"></div>
+      <a href="{{component.link}}" class="c-uie__calltoaction-secondary">{{component.cta_btn_name}}</a>
     </div>
-    <div class="c-cta--image" style="background-image: url({{component.image.url}})"></div>
-    <a href="{{component.link}}" class="c-uie__calltoaction-secondary">{{component.cta_btn_name}}</a>
-  </div>
   {% else %}
-  <div class="container c-cta__wrapper">
-    <a href="{{component.link}}" class="c-uie__calltoaction-secondary">{{component.cta_btn_name}}</a>
-  </div>
+    <div class="container c-cta__wrapper">
+      <a href="{{component.link}}" class="c-uie__calltoaction-secondary">{{component.cta_btn_name}}</a>
+    </div>
   {% endif %}
 </section>
