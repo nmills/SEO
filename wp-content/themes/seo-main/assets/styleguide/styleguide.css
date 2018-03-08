@@ -314,6 +314,7 @@ a {
   text-decoration: none; }
 
 html {
+  margin-top: 32px !important;
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -869,6 +870,7 @@ Styleguide 1.2
 
 .page-title .page-title__text-spacing {
   margin-left: 10%;
+  margin-top: 30px;
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #4d4d4d;
   font-weight: 100;
@@ -1661,7 +1663,7 @@ Styleguide 8.0
   background: #ffffff; }
 
 .gd__content {
-  background: #f1efeb;
+  background: #ffffff;
   padding: 30px; }
 
 .gd__content-title {
@@ -1702,13 +1704,11 @@ Gallery
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(20, 20, 19, 0.65); }
+    height: 100%; }
 
 .c-gallery__slide,
 #slider-container {
   width: 100%;
-  height: 315px;
   background: #ffffff; }
   .c-gallery__slide .po__close,
   #slider-container .po__close {
@@ -1718,7 +1718,6 @@ Gallery
 
 .slideshow-cont {
   width: 100% !important;
-  height: 100% !important;
   position: static !important; }
 
 .bx-viewport {
@@ -1729,7 +1728,6 @@ Gallery
 
 .bx-wrapper,
 .container-slides {
-  height: 100%;
   position: relative;
   z-index: 0; }
 
@@ -1873,13 +1871,13 @@ Gallery
   @media only screen and (min-width: 480px) {
     .left,
     .right {
-      width: 25px;
-      height: 25px; } }
+      width: 20px;
+      height: 20px; } }
   @media only screen and (min-width: 1024px) {
     .left,
     .right {
-      width: 30px;
-      height: 30px; } }
+      width: 25px;
+      height: 25px; } }
 
 .left {
   background: url("/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat; }
@@ -1920,7 +1918,7 @@ Gallery
   display: block !important; }
 
 .po__popup {
-  background: #f1efeb;
+  background: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -1928,10 +1926,7 @@ Gallery
   height: 100%;
   z-index: -1;
   display: flex;
-  flex-wrap: wrap;
-  transition: all 0.4s cubic-bezier(0.51, 0.92, 0.24, 1.15);
-  transform: scale(0);
-  opacity: 0; }
+  flex-wrap: wrap; }
   @media only screen and (min-width: 1024px) {
     .po__popup {
       margin-left: -15px;
@@ -2013,11 +2008,19 @@ Gallery
   border-left: 10px solid #050505;
   padding-left: 10px; }
 
+.image-area {
+  height: 148px; }
+  @media only screen and (min-width: 1024px) {
+    .image-area {
+      height: 315px; } }
+
 .control-area {
-  height: auto; }
+  height: auto;
+  min-height: 25px; }
   @media only screen and (min-width: 1024px) {
     .control-area {
-      padding-top: 30px; } }
+      padding-top: 30px;
+      min-height: 55px; } }
 
 .cslide, .eslide {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
