@@ -1871,13 +1871,13 @@ Gallery
   @media only screen and (min-width: 480px) {
     .left,
     .right {
-      width: 25px;
-      height: 25px; } }
+      width: 20px;
+      height: 20px; } }
   @media only screen and (min-width: 1024px) {
     .left,
     .right {
-      width: 30px;
-      height: 30px; } }
+      width: 25px;
+      height: 25px; } }
 
 .left {
   background: url("/wp-content/themes/seo-main/assets/img/icons/Back-Button-Active.svg") left center no-repeat; }
@@ -2015,10 +2015,12 @@ Gallery
       height: 315px; } }
 
 .control-area {
-  height: auto; }
+  height: auto;
+  min-height: 25px; }
   @media only screen and (min-width: 1024px) {
     .control-area {
-      padding-top: 30px; } }
+      padding-top: 30px;
+      min-height: 55px; } }
 
 .cslide, .eslide {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
