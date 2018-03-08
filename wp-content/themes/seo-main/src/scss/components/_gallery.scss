@@ -118,7 +118,7 @@ Styleguide 8.0
 }
 
 .gd__content {
-  background: $eggshell;
+  background: $white;
   padding: 30px;
 }
 
@@ -158,7 +158,9 @@ Gallery
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(20, 20, 19, 0.65);
+
+    // background: rgba(20, 20, 19, 0.65);
+ 
   }
 }
 
@@ -169,7 +171,6 @@ Gallery
 .c-gallery__slide,
 #slider-container {
   width: 100%;
-  height: 315px;
   background: $white;
 
   .po__close {
@@ -179,9 +180,14 @@ Gallery
   }
 }
 
+// #slider-container {
+//   height: 315px;
+// }
+
 .slideshow-cont {
   width: 100% !important;
-  height: 100% !important;
+
+  // height: 100% !important;
   position: static !important;
 }
 
@@ -196,7 +202,7 @@ Gallery
 
 .bx-wrapper,
 .container-slides {
-  height: 100%;
+  // height: 100%;
   position: relative;
   z-index: 0;
 }
@@ -278,7 +284,7 @@ Gallery
 
   @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 17px, $line-height: 1);
 
-  // border-bottom: 1px solid $eggshell;
+  // border-bottom: 1px solid $white;
 
   @include grid-column(5.2, $no-gutter);
 
@@ -295,7 +301,7 @@ Gallery
 }
 
 .controls {
-  // border-top: 1px solid $eggshell;
+  // border-top: 1px solid $white;
 
   @include grid-column(6.8, $no-gutter);
 
@@ -434,7 +440,7 @@ Gallery
 
 // POPUP
 .po__popup {
-  background: $eggshell;
+  background: $white;
   position: fixed;
   top: 0;
   left: 0;
@@ -443,9 +449,10 @@ Gallery
   z-index: -1;
   display: flex;
   flex-wrap: wrap;
-  transition: all 0.4s $cubic-transition;
-  transform: scale(0);
-  opacity: 0;
+
+  // transition: all 0.4s $cubic-transition;
+  // transform: scale(0);
+  // opacity: 0;
 
   @include grid-media($lg) {
     @include grid-collapse;
@@ -546,6 +553,14 @@ Gallery
 
   border-left: 10px solid $black;
   padding-left: 10px;
+}
+
+.image-area {
+  height: 148px;
+
+  @include grid-media($lg) {
+    height: 315px;
+  }
 }
 
 .control-area {
