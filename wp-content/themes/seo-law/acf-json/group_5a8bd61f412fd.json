@@ -6,7 +6,7 @@
             "key": "field_5a8bd62eb5031",
             "label": "image",
             "name": "image",
-            "type": "image",
+            "type": "image_crop",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,16 +15,16 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "crop_type": "hard",
+            "target_size": "custom",
+            "width": 294,
+            "height": 196,
+            "preview_size": "medium",
+            "force_crop": "yes",
+            "save_in_media_library": "yes",
+            "retina_mode": "no",
+            "save_format": "id",
+            "library": "all"
         },
         {
             "key": "field_5a8bd648b5032",
@@ -63,5 +63,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1519956170
+    "modified": 1520501193
 }
