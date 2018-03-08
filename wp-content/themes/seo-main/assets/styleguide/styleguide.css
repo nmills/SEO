@@ -1126,6 +1126,7 @@ Styleguide 4.1
       font-weight: 200;
       font-size: 23.6px;
       line-height: 1.04;
+      line-height: 1 !important;
       width: 100%;
       display: block;
       font-weight: 700;
