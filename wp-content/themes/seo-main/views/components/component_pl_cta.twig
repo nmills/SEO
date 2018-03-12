@@ -5,7 +5,7 @@
         <h1>{{component.heading}}</h1>
       </div>
     	{% if component.cta_type == 'image' %}
-				<div class="c-program-image" style="background: url('{{Image(component.image).src }}')"></div>
+				<div class="c-program-image" style="background-image: url('{{Image(component.image).src }}')"></div>
 			{% elseif component.cta_type == 'video' %}
 	      <div class="c-program-video">
 	        <iframe src="{{component.link}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -14,11 +14,13 @@
       <div class="c-program-description">
         <p>{{component.body}}</p>
       </div>
-      <div class="c-program-links">
+      <ul class="c-program-links">
       	{% for link in component.links %}
-	        <a href="{{link.destination_url}}">{{link.text}}</a>
+          <li>
+  	        <a href="{{link.destination_url}}" class="c-rte__link">{{link.text}}</a>
+          </li>
 				{% endfor %}
-      </div>
+      </ul>
     </div>
   </div>
 </section>
