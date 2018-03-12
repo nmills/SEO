@@ -1,7 +1,7 @@
 <section>
   <div class="container">
     {% if component.header_type == 'image' %}
-      <div class="c-hero_image" style="background: url('{{Image(component.image).src }}')">
+      <div class="c-hero_image" style="background-image: url('{{Image(component.image).src }}')">
         <p>{{component.hero_text}}</p>
         <div class="c-next_button"></div>
       </div>

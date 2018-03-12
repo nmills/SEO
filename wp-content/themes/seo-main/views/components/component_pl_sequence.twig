@@ -1,19 +1,20 @@
 <section>
   <div class="container">
     <div class="c-sequence__sequeutal-container">
-      <div class="c-sequence__title-description">
-        <h1>{{component.heading}}</h1>
-        <p>{{component.text_blurb}}</p>
+      <div class="c-sequence__title-description-container">
+        <div class="c-sequence__title-description">
+          <h1>{{component.heading}}</h1>
+          <p>{{component.text_blurb}}</p>
+        </div>
       </div>
       <div class="c-sequence__sequeutal-items">
-      	{% set count = component.items|length %}
-				{% for item in component.items %}
-					<div class="c-sequence_item items-{{count}}">
-          	<h2>{{item.heading}}</h2>
-          	<p>{{item.body}}</p>
-          	<a href="{{item.destination.url}}">{{item.destination.title}}</a>
-        	</div>
-				{% endfor %}
+        {% set count = component.items|length %} {% for item in component.items %}
+        <div class="c-sequence_item items-{{count}}">
+          <h2>{{item.heading}}</h2>
+          <p>{{item.body}}</p>
+          <a href="{{item.destination.url}}">{{item.destination.title}}</a>
+        </div>
+        {% endfor %}
       </div>
       <div class="c-sequence__cta_button">
         <a href="{{component.cta_button_link}}">{{component.cta_button_text}}</a>
