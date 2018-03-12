@@ -14,14 +14,18 @@ section {
 
   @include grid-column(12, $no-gutter);
 
-  height: 300px;
+  height: 212px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 
+  @include grid-media($md) {
+    height: 411px;
+  }
+
   @include grid-media($lg) {
-    height: 600px;
+    height: 811px;
   }
 
 
@@ -69,30 +73,47 @@ section {
 }
 
 .c-tout_container {
-  max-width: 1000px;
   margin: auto;
   position: relative;
-  height: 500px;
+  height: auto;
+
+    max-width: 350px;
+
+    @include grid-media($md) {
+    height: 560px;
+
+  max-width: 750px;
+  }
+
+  @include grid-media($lg) {
+    height: 560px;
+
+  max-width: 1000px;
+  }
 
   .c-tout_item {
     @include grid-column(12, $no-gutter);
 
     margin-bottom: 40px;
 
-    h3,
-    a {
-      @include grid-column(5, $no-gutter);
+    .c-tout_text {
+      @include grid-column(4, $no-gutter);
+      margin-left: 20px;
+
+      p {
+        margin: 0;
+      }
     }
 
-    @include grid-media($lg) {
+    @include grid-media($md) {
       @include grid-column(6.5, $no-gutter);
 
       position: absolute;
       margin-bottom: 0;
 
-      h3,
-      a {
+      .c-tout_text {
         @include grid-column(7, $no-gutter);
+        margin: 0;
       }
     }
 
@@ -101,17 +122,23 @@ section {
       background: url(http://seomainsite.wpengine.com/wp-content/uploads/2018/03/12574259515_1a9d1e723c_o.jpg);
 
       @include grid-column(7, $no-gutter);
-
+      
       height: 129px;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       position: relative;
 
-      @include grid-media($lg) {
+      @include grid-media($md) {
         @include grid-column(12, $no-gutter);
 
-        height: 300px;
+        width: 390px;
+        height: 349px;
+      } 
+
+      @include grid-media($lg) {
+        width: 541px;
+        height: 349px;
       }
     }
 
@@ -125,6 +152,16 @@ section {
       bottom: 0;
       right: 0;
       height: auto;
+      .c-tout_text {
+      margin-right: 20px;
+    }
+      .c-tout_text {
+        margin: 0;
+      }
+    
+      .c-tout_image {
+          float: right;
+        }
     }
   }
 }
@@ -227,8 +264,20 @@ section {
     background: red;
     border-radius: 100%;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     border: 8px solid #e5e7e7;
+
+
+    @include grid-media($sm) {
+      width: 11rem;
+      height: 11rem;
+    }
+
+    @include grid-media($md) {
+      width: 14rem;
+      height: 14rem;
+    }
 
     @include grid-media($lg) {
       width: 20rem;
@@ -242,6 +291,14 @@ section {
     position: absolute;
     transform: translateY(10%);
     left: 7rem;
+
+    @include grid-media($sm) {
+      left: 10rem;
+    }
+
+    @include grid-media($md) {
+      left: 13rem;
+    }
 
     @include grid-media($lg) {
       left: 19rem;
@@ -260,7 +317,7 @@ body {
     .c-sequence__title-description {
     @include grid-column(12, $no-gutter);
 
-    @include grid-media($lg) {
+    @include grid-media($md) {
       width: 450px;
     }
   }
@@ -269,12 +326,14 @@ body {
   .c-sequence__sequeutal-items {
     @include grid-column(12, $no-gutter)
     .c-sequence_item {
+      position: relative;
+      padding-left: 20px;
       &.items-1 {
         @include grid-column(12, $no-gutter);
 
         margin: auto;
 
-        @include grid-media($lg) {
+        @include grid-media($md) {
           @include grid-column(8, $no-gutter);
         }
       }
@@ -282,7 +341,7 @@ body {
       &.items-2 {
         @include grid-column(12, $no-gutter);
 
-        @include grid-media($lg) {
+        @include grid-media($md) {
           @include grid-column(6, $no-gutter);
 
           margin: auto;
@@ -293,7 +352,7 @@ body {
       &.items-3 {
         @include grid-column(12, $no-gutter);
 
-        @include grid-media($lg) {
+        @include grid-media($md) {
           @include grid-column(4, $no-gutter);
 
           margin: auto;
@@ -304,7 +363,7 @@ body {
       &.items-4 {
         @include grid-column(12, $no-gutter);
 
-        @include grid-media($lg) {
+        @include grid-media($md) {
           @include grid-column(3, $no-gutter);
 
           margin: auto;
@@ -315,13 +374,30 @@ body {
       &:before {
         counter-increment: section;
         content: counter(section);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      h2 {
+        font-weight: $font-normal;
+        margin: 0;
+        line-height: 1;
       }
     }
   }
 
   .c-sequence__cta_button {
-    width: 250px;
+    @include grid-column(12, $no-gutter);
     margin: 0 auto;
+    display: inline-block;
+    margin-top: 50px;
+    text-align: left;
+
+    @include grid-media($md) {
+      margin-top: 120px;
+      text-align: center;
+    }
 
     a {
       padding: 10px;
@@ -397,7 +473,7 @@ body {
 
   .c-program-links {
     a {
-      display: block;
+      display: inline-block;
       margin-bottom: 10px;
     }
   }
