@@ -18,7 +18,7 @@
             "layouts": {
                 "5aa5669881b59": {
                     "key": "5aa5669881b59",
-                    "name": "component:_pl_hero",
+                    "name": "component_pl_hero",
                     "label": "component: PL Hero",
                     "display": "block",
                     "sub_fields": [
@@ -49,7 +49,7 @@
                 },
                 "5aa567010adee": {
                     "key": "5aa567010adee",
-                    "name": "component:_pl_touts",
+                    "name": "component_pl_touts",
                     "label": "component: PL Touts",
                     "display": "block",
                     "sub_fields": [
@@ -80,8 +80,8 @@
                 },
                 "5aa567250adf0": {
                     "key": "5aa567250adf0",
-                    "name": "component:_pl:_data_visualization",
-                    "label": "component: PL: Data Visualization",
+                    "name": "component_pl_data_visualization",
+                    "label": "component: PL Data Visualization",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -99,6 +99,68 @@
                             },
                             "clone": [
                                 "group_5aa56447dbe02"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5aa602a17e6b7": {
+                    "key": "5aa602a17e6b7",
+                    "name": "component_pl_cta",
+                    "label": "component: PL CTA",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5aa602a97e6b8",
+                            "label": "component: PL CTA",
+                            "name": "component:_pl_cta",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5aa5f9be91922"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5aa602cc7e6b9": {
+                    "key": "5aa602cc7e6b9",
+                    "name": "component_pl_sequence",
+                    "label": "component: PL Sequence",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5aa602e37e6ba",
+                            "label": "component: PL Sequence",
+                            "name": "component:_pl_sequence",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5aa5f8a1380df"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -132,5 +194,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1520789340
+    "modified": 1520829183
 }

@@ -1,6 +1,6 @@
 {
     "key": "group_5aa56447dbe02",
-    "title": "component: PL: Data Visualization",
+    "title": "component: PL Data Visualization",
     "fields": [
         {
             "key": "field_5aa56456abe24",
@@ -84,5 +84,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520788627
+    "modified": 1520789770
 }
