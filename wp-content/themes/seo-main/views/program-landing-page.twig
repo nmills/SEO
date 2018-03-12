@@ -4,8 +4,8 @@
   {# <div class="container"> #}
   <main id="content">
     <div class="page-content">
-      <article id="post-{{post.ID}}" class="article post-type-{{post.post_type}}" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-        <section class="entry-content container" itemprop="articleBody">
+      {# <article id="post-{{post.ID}}" class="article post-type-{{post.post_type}}" role="article" itemscope itemtype="http://schema.org/BlogPosting"> #}
+        {# <section class="entry-content container" itemprop="articleBody"> #}
 
           {# Amalan new codes #}
           <div class="container region_hero">
@@ -14,10 +14,10 @@
             {% endfor %}
           </div>
 
-        </section> <!-- /.entry-content -->
+        {# </section> <!-- /.entry-content --> #}
         {% block article_footer %}
         {% endblock %}
-      </article> <!-- /.article -->
+      {# </article> <!-- /.article --> #}
     </div> <!-- /.page-content.small-12.large-8.columns -->
 
     {% block sidebar %}
