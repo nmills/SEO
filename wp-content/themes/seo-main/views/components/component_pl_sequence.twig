@@ -12,12 +12,12 @@
         <div class="c-sequence_item items-{{count}}">
           <h2>{{item.heading}}</h2>
           <p>{{item.body}}</p>
-          <a href="{{item.destination.url}}">{{item.destination.title}}</a>
+          <a href="{{item.destination.url}}" class="c-rte__link">{{item.destination.title}}</a>
         </div>
         {% endfor %}
       </div>
       <div class="c-sequence__cta_button">
-        <a href="{{component.cta_button_link}}">{{component.cta_button_text}}</a>
+        <a href="{{component.cta_button_link}}" class="c-uie__calltoaction-secondary">{{component.cta_button_text}}</a>
       </div>
     </div>
   </div>
