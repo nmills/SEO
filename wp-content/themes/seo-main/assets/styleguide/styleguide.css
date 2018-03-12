@@ -2225,19 +2225,19 @@ section {
         .c-tout_container .c-tout_item .c-tout_image {
           width: 541px;
           height: 349px; } }
-    .c-tout_container .c-tout_item.left {
+    .c-tout_container .c-tout_item.item-left {
       top: 0;
       left: 0;
       height: auto; }
-    .c-tout_container .c-tout_item.right {
+    .c-tout_container .c-tout_item.item-right {
       bottom: 0;
       right: 0;
       height: auto; }
-      .c-tout_container .c-tout_item.right .c-tout_text {
+      .c-tout_container .c-tout_item.item-right .c-tout_text {
         margin-right: 20px; }
-      .c-tout_container .c-tout_item.right .c-tout_text {
+      .c-tout_container .c-tout_item.item-right .c-tout_text {
         margin: 0; }
-      .c-tout_container .c-tout_item.right .c-tout_image {
+      .c-tout_container .c-tout_item.item-right .c-tout_image {
         float: right; }
 
 .new .c-ratiometer_container {
