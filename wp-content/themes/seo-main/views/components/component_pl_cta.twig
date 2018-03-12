@@ -8,7 +8,10 @@
 				<div class="c-program-image" style="background-image: url('{{Image(component.image).src }}')"></div>
 			{% elseif component.cta_type == 'video' %}
 	      <div class="c-program-video">
-	        <iframe src="{{component.link}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="video">
+            <div data-type="youtube" data-video-id="{{component.link}}"></div>
+          </div>
+	        {# <iframe src="{{component.link}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> #}
 	      </div>
 			{% endif %}
       <div class="c-program-description">
