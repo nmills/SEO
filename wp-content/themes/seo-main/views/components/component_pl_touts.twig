@@ -2,7 +2,7 @@
   <div class="container">
 		<div class="c-tout_container">
 
-		{% set direction = ['left','right'] %}
+		{% set direction = ['item-left','item-right'] %}
 		
   	{% for tout in component.repeater %}
   		<div class="c-tout_item {{direction[(loop.index-1) % 2]}}">
