@@ -1,0 +1,404 @@
+/* Program Landing */
+
+section {
+  @include grid-column(12, $no-gutter);
+
+  margin: 0 auto;
+  float: left;
+  margin-bottom: 30px;
+}
+
+.c-hero_image,
+.c-hero_video {
+  background: url("http://seomainsite.wpengine.com/wp-content/uploads/2018/03/12574259515_1a9d1e723c_o.jpg");
+
+  @include grid-column(12, $no-gutter);
+
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @include grid-media($lg) {
+    height: 600px;
+  }
+
+
+  p {
+    margin: 0;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+    font-size: 30px;
+    width: 60%;
+  }
+
+  .c-next_button {
+    background: url("http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat;
+    background-size: cover !important;
+    border: none;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+
+    @include grid-media($lg) {
+      width: 5em;
+      height: 5em;
+    }
+
+
+    &:hover {
+      background: url("http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg");
+    }
+  }
+}
+
+.c-hero_video {
+  background: none;
+
+  iframe {
+    @include grid-column(12, $no-gutter);
+
+    height: 100%;
+  }
+}
+
+.c-tout_container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  height: 500px;
+
+  .c-tout_item {
+    @include grid-column(12, $no-gutter);
+
+    margin-bottom: 40px;
+
+    h3,
+    a {
+      @include grid-column(5, $no-gutter);
+    }
+
+    @include grid-media($lg) {
+      @include grid-column(6.5, $no-gutter);
+
+      position: absolute;
+      margin-bottom: 0;
+
+      h3,
+      a {
+        @include grid-column(7, $no-gutter);
+      }
+    }
+
+
+    .c-tout_image {
+      background: url(http://seomainsite.wpengine.com/wp-content/uploads/2018/03/12574259515_1a9d1e723c_o.jpg);
+
+      @include grid-column(7, $no-gutter);
+
+      height: 129px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+
+      @include grid-media($lg) {
+        @include grid-column(12, $no-gutter);
+
+        height: 300px;
+      }
+    }
+
+    &.left {
+      top: 0;
+      left: 0;
+      height: auto;
+    }
+
+    &.right {
+      bottom: 0;
+      right: 0;
+      height: auto;
+    }
+  }
+}
+
+.new {
+  .c-ratiometer_container {
+    @include grid-column(12, $no-gutter);
+
+    float: left;
+    background: #e5e7e7;
+    padding: 5%;
+
+    .c-ratiometer {
+      @include grid-column(7, $no-gutter);
+
+      position: relative;
+      height: 360px;
+      margin: auto;
+
+      .c-ratiometer-meter_out {
+        &:before {
+          content: "";
+          width: 21rem;
+          height: 21rem;
+          position: absolute;
+          z-index: 5;
+          top: -9px;
+          left: -9px;
+          border-radius: 100%;
+          padding: 10px;
+          transform: rotate(-35deg);
+
+          /*  Main part  */
+          background: rgb(124, 180, 246);
+          background: -moz-linear-gradient(-45deg, rgb(124, 180, 246) 0%, rgb(124, 180, 246) 80%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+          background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(124, 180, 246)), color-stop(80%, rgb(124, 180, 246)), color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+          background: -webkit-linear-gradient(-45deg, rgb(124, 180, 246) 0%, rgb(124, 180, 246) 80%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+          background: -o-linear-gradient(-45deg, rgb(124, 180, 246) 0%, rgb(124, 180, 246) 80%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+          background: -ms-linear-gradient(-45deg, rgb(124, 180, 246) 0%, rgb(124, 180, 246) 80%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        .c-rationmeter-meter {
+          width: 20rem;
+          height: 20rem;
+          background: red;
+          border-radius: 100%;
+          background-position: center;
+          background-size: contain;
+          border: 10px solid #e5e7e7;
+          position: relative;
+          z-index: 10;
+        }
+      }
+
+      .c-rationmeter-text {
+        @include grid-column(6, $no-gutter);
+
+        position: absolute;
+        z-index: 15;
+        transform: translateY(80%);
+        left: 19rem;
+        top: 0;
+
+        h1 {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+.old {
+  .c-ratiometer_container {
+    @include grid-column(12, $no-gutter);
+
+    float: left;
+    background: #e5e7e7;
+    padding: 5%;
+    min-height: 500px;
+  }
+
+  .c-ratiometer {
+    @include grid-column(12, $no-gutter);
+
+    position: relative;
+    height: 400px;
+  }
+
+  .c-ratiometer-meter_out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    padding: 10px;
+  }
+
+  .c-rationmeter-meter {
+    width: 8rem;
+    height: 8rem;
+    background: red;
+    border-radius: 100%;
+    background-position: center;
+    background-size: contain;
+    border: 8px solid #e5e7e7;
+
+    @include grid-media($lg) {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  .c-rationmeter-text {
+    @include grid-column(6, $no-gutter);
+
+    position: absolute;
+    transform: translateY(10%);
+    left: 7rem;
+
+    @include grid-media($lg) {
+      left: 19rem;
+    }
+  }
+}
+
+body {
+  counter-reset: section;
+}
+
+.c-sequence__sequeutal-container {
+  .c-sequence__title-description-container {
+    @include grid-column(12, $no-gutter);
+
+    .c-sequence__title-description {
+    @include grid-column(12, $no-gutter);
+
+    @include grid-media($lg) {
+      width: 450px;
+    }
+  }
+  }
+
+  .c-sequence__sequeutal-items {
+    @include grid-column(12, $no-gutter)
+    .c-sequence_item {
+      &.items-1 {
+        @include grid-column(12, $no-gutter);
+
+        margin: auto;
+
+        @include grid-media($lg) {
+          @include grid-column(8, $no-gutter);
+        }
+      }
+
+      &.items-2 {
+        @include grid-column(12, $no-gutter);
+
+        @include grid-media($lg) {
+          @include grid-column(6, $no-gutter);
+
+          margin: auto;
+          float: left;
+        }
+      }
+
+      &.items-3 {
+        @include grid-column(12, $no-gutter);
+
+        @include grid-media($lg) {
+          @include grid-column(4, $no-gutter);
+
+          margin: auto;
+          float: left;
+        }
+      }
+
+      &.items-4 {
+        @include grid-column(12, $no-gutter);
+
+        @include grid-media($lg) {
+          @include grid-column(3, $no-gutter);
+
+          margin: auto;
+          float: left;
+        }
+      }
+
+      &:before {
+        counter-increment: section;
+        content: counter(section);
+      }
+    }
+  }
+
+  .c-sequence__cta_button {
+    width: 250px;
+    margin: 0 auto;
+
+    a {
+      padding: 10px;
+    }
+  }
+}
+
+.c-program_cta__container {
+  .c-program-title,
+  .c-program-description,
+  .c-program-links {
+    @include grid-column(12, $no-gutter);
+
+    @include grid-media($lg) {
+      @include grid-column(5, $no-gutter);
+
+      float: right;
+      margin-left: 2%;
+    }
+  }
+
+  .c-program-title {}
+
+  .c-program-image, .c-program-video {
+    background: url(http://seomainsite.wpengine.com/wp-content/uploads/2018/03/12574259515_1a9d1e723c_o.jpg);
+
+    @include grid-column(12, $no-gutter);
+
+    height: 250px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    @include grid-media($lg) {
+      @include grid-column(6, $no-gutter);
+    }
+
+
+    &:after {
+      content: "";
+      background: url(http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg) transparent left center no-repeat;
+      background-size: cover !important;
+      border: none;
+      width: 5em;
+      height: 5em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+
+    &:hover {
+      &:after {
+        background: url(http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg);
+      }
+    }
+  }
+
+  .c-program-video {
+    background: none;
+
+    iframe {
+      @include grid-column(12, $no-gutter);
+
+      height: 100%;
+    }
+  }
+
+  .c-program-description {}
+
+  .c-program-links {
+    a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}
