@@ -254,7 +254,7 @@ Styleguide 1.5
         position: absolute;
         left: 0;
         color: $maroon;
-        font-weight: bold;
+        font-weight: $font-bold;
       }
 
       &:after {

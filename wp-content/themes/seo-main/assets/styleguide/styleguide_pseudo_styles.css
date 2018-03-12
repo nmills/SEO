@@ -138,6 +138,10 @@
   background: url("http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg");
 }
 
+.c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
 .c-program_cta__container .c-program-image.pseudo-class-hover:after,
 .c-program_cta__container .c-program-video.pseudo-class-hover:after {
   background: url(http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg);

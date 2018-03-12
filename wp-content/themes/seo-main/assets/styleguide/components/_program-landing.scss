@@ -248,6 +248,46 @@ section {
 
     position: relative;
     height: 400px;
+    margin: 0 auto;
+    float: none;
+
+    @include grid-media($sm) {
+      @include grid-column(10, $no-gutter);
+      margin: 0 auto;
+      float: none;
+    }
+    @include grid-media($md) {
+      @include grid-column(8, $no-gutter);
+      margin: 0 auto;
+      float: none;
+    }
+    @include grid-media($lg) {
+      @include grid-column(6, $no-gutter);
+      margin: 0 auto;
+      float: none;
+    }
+
+    .c-rationmeter-positioner {
+      position: absolute;
+      width: 250px;
+      height: 350px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include grid-media($sm) {
+        width: 330px;
+        height: 300px;
+      }
+      @include grid-media($md) {
+        width: 620px;
+        height: 350px;
+      }
+      @include grid-media($lg) {
+        width: 730px;
+        height: 350px;
+      }
+    }
   }
 
   .c-ratiometer-meter_out {
@@ -315,12 +355,24 @@ body {
     @include grid-column(12, $no-gutter);
 
     .c-sequence__title-description {
-    @include grid-column(12, $no-gutter);
+      @include grid-column(12, $no-gutter);
+      margin-bottom: 50px;
 
-    @include grid-media($md) {
-      width: 450px;
+      @include grid-media($md) {
+        width: 600px;
+        margin-bottom: 100px;
+      }
+
+      h1, p {
+        margin: 0;
+
+        padding-left: 20px;
+      }
+
+      h1 {
+        margin-bottom: 30px;
+      }
     }
-  }
   }
 
   .c-sequence__sequeutal-items {
@@ -328,6 +380,15 @@ body {
     .c-sequence_item {
       position: relative;
       padding-left: 20px;
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @include grid-media($md) {
+        margin-bottom: 0;
+      }
       &.items-1 {
         @include grid-column(12, $no-gutter);
 
@@ -377,6 +438,8 @@ body {
         position: absolute;
         top: 0;
         left: 0;
+        color: $maroon;
+        font-weight: $font-bold;
       }
 
       h2 {

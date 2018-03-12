@@ -1024,7 +1024,7 @@ Styleguide 1.5
     position: absolute;
     left: 0;
     color: #820d1b;
-    font-weight: bold; }
+    font-weight: 700; }
   .c-rte ol li:after, .c-rte__accordion ol li:after {
     content: "";
     display: block;
@@ -2308,7 +2308,49 @@ section {
   float: left;
   margin-left: 0;
   position: relative;
-  height: 400px; }
+  height: 400px;
+  margin: 0 auto;
+  float: none; }
+  @media only screen and (min-width: 480px) {
+    .old .c-ratiometer {
+      width: calc(83.33333%);
+      float: left;
+      margin-left: 0;
+      margin: 0 auto;
+      float: none; } }
+  @media only screen and (min-width: 768px) {
+    .old .c-ratiometer {
+      width: calc(66.66667%);
+      float: left;
+      margin-left: 0;
+      margin: 0 auto;
+      float: none; } }
+  @media only screen and (min-width: 1024px) {
+    .old .c-ratiometer {
+      width: calc(50%);
+      float: left;
+      margin-left: 0;
+      margin: 0 auto;
+      float: none; } }
+  .old .c-ratiometer .c-rationmeter-positioner {
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media only screen and (min-width: 480px) {
+      .old .c-ratiometer .c-rationmeter-positioner {
+        width: 330px;
+        height: 300px; } }
+    @media only screen and (min-width: 768px) {
+      .old .c-ratiometer .c-rationmeter-positioner {
+        width: 620px;
+        height: 350px; } }
+    @media only screen and (min-width: 1024px) {
+      .old .c-ratiometer .c-rationmeter-positioner {
+        width: 730px;
+        height: 350px; } }
 
 .old .c-ratiometer-meter_out {
   position: absolute;
@@ -2366,10 +2408,17 @@ body {
   .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description {
     width: calc(100%);
     float: left;
-    margin-left: 0; }
+    margin-left: 0;
+    margin-bottom: 50px; }
     @media only screen and (min-width: 768px) {
       .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description {
-        width: 450px; } }
+        width: 600px;
+        margin-bottom: 100px; } }
+    .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description h1, .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description p {
+      margin: 0;
+      padding-left: 20px; }
+    .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description h1 {
+      margin-bottom: 30px; }
 
 .c-sequence__sequeutal-container .c-sequence__sequeutal-items {
   width: calc(100%);
@@ -2377,7 +2426,13 @@ body {
   margin-left: 0; }
   .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item {
     position: relative;
-    padding-left: 20px; }
+    padding-left: 20px;
+    margin-bottom: 40px; }
+    .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item:last-child {
+      margin-bottom: 0; }
+    @media only screen and (min-width: 768px) {
+      .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item {
+        margin-bottom: 0; } }
     .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-1 {
       width: calc(100%);
       float: left;
@@ -2426,7 +2481,9 @@ body {
       content: counter(section);
       position: absolute;
       top: 0;
-      left: 0; }
+      left: 0;
+      color: #820d1b;
+      font-weight: 700; }
     .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item h2 {
       font-weight: 300;
       margin: 0;
