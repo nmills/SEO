@@ -1,0 +1,24 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  {# <div class="container"> #}
+  <main id="content">
+    <div class="page-content">
+      {# Amalan new codes #}
+      <div class="container region_hero">
+        {% for component in post.get_field('flexi_content') %}
+          {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
+        {% endfor %}
+      </div>
+      {% block article_footer %}
+      {% endblock %}
+    </div> <!-- /.page-content.small-12.large-8.columns -->
+
+    {% block sidebar %}
+      <aside class="page-sidebar">
+        {{sidebar}}
+      </aside> <!-- /.page-sidebar -->
+    {% endblock %}
+  </main> <!-- /#content -->
+  {# </div> #}
+{% endblock %}
