@@ -1,9 +1,28 @@
 {
-    "key": "group_5aa562c5c458a",
-    "title": "component: PL Touts",
+    "key": "group_5aa655cd521d0",
+    "title": "component: Gallery Text only",
     "fields": [
         {
-            "key": "field_5aa562d5b269a",
+            "key": "field_5aa656fbdb48c",
+            "label": "section header",
+            "name": "section_header",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5aa65742db48d",
             "label": "repeater",
             "name": "repeater",
             "type": "repeater",
@@ -17,41 +36,17 @@
             },
             "collapsed": "",
             "min": 0,
-            "max": 2,
-            "layout": "table",
+            "max": 0,
+            "layout": "block",
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_5aa562e1b269b",
-                    "label": "image",
-                    "name": "image",
-                    "type": "image_crop",
-                    "instructions": "",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "crop_type": "hard",
-                    "target_size": "thumbnail",
-                    "width": "",
-                    "height": "",
-                    "preview_size": "medium",
-                    "force_crop": "no",
-                    "save_in_media_library": "yes",
-                    "retina_mode": "no",
-                    "save_format": "id",
-                    "library": "all"
-                },
-                {
-                    "key": "field_5aa562ebb269c",
-                    "label": "text",
-                    "name": "text",
+                    "key": "field_5aa6574adb48e",
+                    "label": "heading",
+                    "name": "heading",
                     "type": "text",
                     "instructions": "",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -62,15 +57,34 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": 79
+                    "maxlength": ""
                 },
                 {
-                    "key": "field_5aa562f8b269d",
-                    "label": "url",
-                    "name": "url",
+                    "key": "field_5aa6575cdb48f",
+                    "label": "subheading",
+                    "name": "subheading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5aa65776db490",
+                    "label": "destination link",
+                    "name": "destination_link",
                     "type": "url",
                     "instructions": "",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -100,5 +114,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520837843
+    "modified": 1520851113
 }

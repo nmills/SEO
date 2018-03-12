@@ -1,0 +1,198 @@
+{
+    "key": "group_5aa65ace31c56",
+    "title": "gallery",
+    "fields": [
+        {
+            "key": "field_5aa65ad3c4eab",
+            "label": "flexi content",
+            "name": "flexi_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5aa65adc1e601": {
+                    "key": "5aa65adc1e601",
+                    "name": "component_gallery_text_only",
+                    "label": "component: Gallery Text only",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5aa65b5fc4eac",
+                            "label": "component: Gallery Text only",
+                            "name": "component:_gallery_text_only",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5aa655cd521d0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5aa65b8ac4ead": {
+                    "key": "5aa65b8ac4ead",
+                    "name": "component_gallery_small",
+                    "label": "component: Gallery Small",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5aa65b98c4eae",
+                            "label": "component: Gallery Small",
+                            "name": "component:_gallery_small",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5aa657e1722f0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5aa65bb3c4eaf": {
+                    "key": "5aa65bb3c4eaf",
+                    "name": "component_gallery_medium",
+                    "label": "component: Gallery Medium",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5aa65bc1c4eb0",
+                            "label": "component: Gallery Medium",
+                            "name": "component:_gallery_medium",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5aa658b8d2061"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5aa65bd9c4eb1": {
+                    "key": "5aa65bd9c4eb1",
+                    "name": "component_gallery_image_only",
+                    "label": "component: Gallery Image only",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5aa65beac4eb2",
+                            "label": "component: Gallery Image only",
+                            "name": "component:_gallery_image_only",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5aa658d8a2be7"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5aa65c2dc4eb3": {
+                    "key": "5aa65c2dc4eb3",
+                    "name": "component_gallery_large",
+                    "label": "component: Gallery Large",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5aa65c3bc4eb4",
+                            "label": "component: Gallery Large",
+                            "name": "component_gallery_large",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5aa65a7ad7265"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Component",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-gallery.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1520852073
+}
