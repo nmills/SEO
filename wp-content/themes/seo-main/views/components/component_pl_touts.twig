@@ -1,0 +1,19 @@
+<section>
+  <div class="container">
+		<div class="c-tout_container">
+
+		{% set direction = ['left','right'] %}
+		
+  	{% for tout in component.repeater %}
+  		<div class="c-tout_item {{direction[(loop.index-1) % 2]}}">
+        <div class="c-tout_image" style="background-image: url('{{Image(tout.image).src }}')"></div>
+        <div class="c-tout_text">
+          <p>{{tout.text}}</p>
+          <a href="{{tout.url}}" class="c-rte__link">Learn more</a>
+        </div>
+      </div>
+		{% endfor %}
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<section>
+  <div class="container">
+    <div class="c-gallery__section-header">
+      <h1>{{component.section_header}}</h1>
+    </div>
+    <div class="c-gallery__container image-medium">
+      {% for item in component.repeater %}
+        <div class="c-gallery__gallery-item">
+          <img src="{{Image(item.photo).src }}" />
+          <div class="item__heading">
+            <h3>{{item.heading}}</h3>
+          </div>
+          <div class="item__sub-heading">
+            <p>{{item.subheading}}</p>
+          </div>
+          {% if item.destination_link %}
+            <div class="item__link">
+              <a href="{{item.destination_link}}">Read full bio</a>
+            </div>
+          {% endif %}       
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
