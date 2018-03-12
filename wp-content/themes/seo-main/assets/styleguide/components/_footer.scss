@@ -1,6 +1,8 @@
 /* Footer */
 
 footer.site-footer {
+  @include grid-column(12, $no-gutter);
+
   font-weight: $font-normal;
 
   .container {

@@ -133,6 +133,16 @@
   background: url("/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat;
 }
 
+.c-hero_image .c-next_button.pseudo-class-hover,
+.c-hero_video .c-next_button.pseudo-class-hover {
+  background: url("http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg");
+}
+
+.c-program_cta__container .c-program-image.pseudo-class-hover:after,
+.c-program_cta__container .c-program-video.pseudo-class-hover:after {
+  background: url(http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg);
+}
+
 .slick-list.pseudo-class-focus {
   outline: none;
 }
