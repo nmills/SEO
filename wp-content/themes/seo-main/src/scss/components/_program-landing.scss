@@ -35,8 +35,14 @@ section {
     bottom: 5%;
     left: 5%;
     color: white;
-    font-size: 30px;
-    width: 60%;
+    font-size: 24px;
+    width: 80%;
+    line-height: 1;
+
+    @include grid-media($lg) {
+      font-size: 43px;
+      width: 60%;
+    }
   }
 
   .c-next_button {
@@ -76,19 +82,16 @@ section {
   margin: auto;
   position: relative;
   height: auto;
+  max-width: 350px;
 
-    max-width: 350px;
-
-    @include grid-media($md) {
+  @include grid-media($md) {
     height: 560px;
-
-  max-width: 750px;
+    max-width: 750px;
   }
 
   @include grid-media($lg) {
     height: 560px;
-
-  max-width: 1000px;
+    max-width: 1001px;
   }
 
   .c-tout_item {
@@ -99,13 +102,34 @@ section {
     .c-tout_text {
       @include grid-column(4, $no-gutter);
       margin-left: 20px;
+      margin-top: 20px;
+
+      @include grid-media($md) {
+        margin-top: 0;
+      }
 
       p {
         margin: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 1;
+
+        @include grid-media($lg) {
+          font-size: 30px;
+          margin-bottom: 20px;
+        }
+      }
+
+      a {
+        font-size: 14px;
+
+        @include grid-media($lg) {
+          font-size: 18px;
+        }
       }
     }
 
-    @include grid-media($md) {
+    c {
       @include grid-column(6.5, $no-gutter);
 
       position: absolute;
@@ -343,6 +367,14 @@ section {
     @include grid-media($lg) {
       left: 19rem;
     }
+
+    h1 {
+      font-size: 25px;
+
+      @include grid-media($lg) {
+        font-size: 48px;
+      }
+    }
   }
 }
 
@@ -371,6 +403,19 @@ body {
 
       h1 {
         margin-bottom: 30px;
+        font-size: 32px;
+
+        @include grid-media($lg) {
+          font-size: 42px;
+        }
+      }
+
+      p {
+        font-size: 23px;
+
+        @include grid-media($lg) {
+          font-size: 24px;
+        }
       }
     }
   }
@@ -446,6 +491,23 @@ body {
         font-weight: $font-normal;
         margin: 0;
         line-height: 1;
+        font-size: 28px;
+
+        @include grid-media($lg) {
+          font-size: 30px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      a {
+        font-size: 14px;
+
+        @include grid-media($lg) {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -460,10 +522,16 @@ body {
     @include grid-media($md) {
       margin-top: 120px;
       text-align: center;
+      margin-bottom: 50px;
     }
 
     a {
       padding: 10px;
+      font-size: 22px;
+
+      @include grid-media($lg) {
+        font-size: 26px;
+      }
     }
   }
 }
@@ -482,7 +550,49 @@ body {
     }
   }
 
-  .c-program-title {}
+  .c-program-title {
+    h1 {
+      margin: 0;
+      margin-bottom: 30px; 
+      font-size: 32px;
+
+      @include grid-media($lg) {
+        font-size: 42px;
+      }
+    }
+  }
+
+  .c-program-description {
+    p {
+      font-size: 23px;
+
+      @include grid-media($lg) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .c-program-links {
+    a {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 14px;
+
+      @include grid-media($lg) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .c-program-video {
+    background: none;
+
+    iframe {
+      @include grid-column(12, $no-gutter);
+
+      height: 100%;
+    }
+  }
 
   .c-program-image, .c-program-video {
     background: url(http://seomainsite.wpengine.com/wp-content/uploads/2018/03/12574259515_1a9d1e723c_o.jpg);
@@ -519,25 +629,6 @@ body {
       &:after {
         background: url(http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg);
       }
-    }
-  }
-
-  .c-program-video {
-    background: none;
-
-    iframe {
-      @include grid-column(12, $no-gutter);
-
-      height: 100%;
-    }
-  }
-
-  .c-program-description {}
-
-  .c-program-links {
-    a {
-      display: inline-block;
-      margin-bottom: 10px;
     }
   }
 }
