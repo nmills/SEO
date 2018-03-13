@@ -40,8 +40,12 @@ $cubic-transition-2: cubic-bezier(0, 0, 0.2, 1);
 // Mobiles
 $sm: (media: 480px);
 
+$max-sm: (gutter: 2rem, media: "only screen and (max-width: 479px)");
+
 // Small tablets (portrait view)
 $md: (media: 768px);
+
+$max-md: (gutter: 2rem, media: "only screen and (max-width: 767px)");
 
 // Tablets and small desktops
 $lg: (media: 1024px);
