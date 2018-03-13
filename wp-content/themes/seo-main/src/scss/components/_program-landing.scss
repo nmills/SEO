@@ -10,8 +10,6 @@ section {
 
 .c-hero_image,
 .c-hero_video {
-  background: url("http://seomainsite.wpengine.com/wp-content/uploads/2018/03/12574259515_1a9d1e723c_o.jpg");
-
   @include grid-column(12, $no-gutter);
 
   height: 212px;
@@ -129,7 +127,7 @@ section {
       }
     }
 
-    c {
+    @include grid-media($md) {
       @include grid-column(6.5, $no-gutter);
 
       position: absolute;
@@ -138,12 +136,12 @@ section {
       .c-tout_text {
         @include grid-column(7, $no-gutter);
         margin: 0;
+        margin-top: 20px;
       }
     }
 
 
     .c-tout_image {
-      background: url(http://seomainsite.wpengine.com/wp-content/uploads/2018/03/12574259515_1a9d1e723c_o.jpg);
 
       @include grid-column(7, $no-gutter);
       
@@ -176,16 +174,26 @@ section {
       bottom: 0;
       right: 0;
       height: auto;
+
       .c-tout_text {
-      margin-right: 20px;
-    }
+        margin-right: 20px;
+      }
+
       .c-tout_text {
         margin: 0;
+
+        @include grid-media($md) {
+          margin-top: 20px;
+        }
       }
     
       .c-tout_image {
-          float: right;
+        float: right;
+
+        @include grid-media($md) {
+          float: left;
         }
+      }
     }
   }
 }
@@ -537,12 +545,18 @@ body {
 }
 
 .c-program_cta__container {
+  
+  @include grid-media($md) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .c-program-title,
   .c-program-description,
   .c-program-links {
     @include grid-column(12, $no-gutter);
 
-    @include grid-media($lg) {
+    @include grid-media($md) {
       @include grid-column(5, $no-gutter);
 
       float: right;
@@ -556,7 +570,7 @@ body {
       margin-bottom: 30px; 
       font-size: 32px;
 
-      @include grid-media($lg) {
+      @include grid-media($md) {
         font-size: 42px;
       }
     }
@@ -566,7 +580,7 @@ body {
     p {
       font-size: 23px;
 
-      @include grid-media($lg) {
+      @include grid-media($md) {
         font-size: 24px;
       }
     }
@@ -578,7 +592,7 @@ body {
       margin-bottom: 10px;
       font-size: 14px;
 
-      @include grid-media($lg) {
+      @include grid-media($md) {
         font-size: 18px;
       }
     }
@@ -595,19 +609,21 @@ body {
   }
 
   .c-program-image, .c-program-video {
-    background: url(http://seomainsite.wpengine.com/wp-content/uploads/2018/03/12574259515_1a9d1e723c_o.jpg);
-
     @include grid-column(12, $no-gutter);
-
-    height: 250px;
+    
+    max-width: 279px;
+    height: 157px;
     float: left;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 
-    @include grid-media($lg) {
+    @include grid-media($md) {
       @include grid-column(6, $no-gutter);
+
+      max-width: 541px;
+      height: 323px;
     }
 
 

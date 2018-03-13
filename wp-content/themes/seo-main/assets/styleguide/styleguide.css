@@ -2113,7 +2113,6 @@ section {
 
 .c-hero_image,
 .c-hero_video {
-  background: url("http://seomainsite.wpengine.com/wp-content/uploads/2018/03/12574259515_1a9d1e723c_o.jpg");
   width: calc(100%);
   float: left;
   margin-left: 0;
@@ -2214,19 +2213,20 @@ section {
         @media only screen and (min-width: 1024px) {
           .c-tout_container .c-tout_item .c-tout_text a {
             font-size: 18px; } }
-    .c-tout_container .c-tout_item c {
-      width: calc(54.16667%);
-      float: left;
-      margin-left: 0;
-      position: absolute;
-      margin-bottom: 0; }
-      .c-tout_container .c-tout_item c .c-tout_text {
-        width: calc(58.33333%);
+    @media only screen and (min-width: 768px) {
+      .c-tout_container .c-tout_item {
+        width: calc(54.16667%);
         float: left;
         margin-left: 0;
-        margin: 0; }
+        position: absolute;
+        margin-bottom: 0; }
+        .c-tout_container .c-tout_item .c-tout_text {
+          width: calc(58.33333%);
+          float: left;
+          margin-left: 0;
+          margin: 0;
+          margin-top: 20px; } }
     .c-tout_container .c-tout_item .c-tout_image {
-      background: url(http://seomainsite.wpengine.com/wp-content/uploads/2018/03/12574259515_1a9d1e723c_o.jpg);
       width: calc(58.33333%);
       float: left;
       margin-left: 0;
@@ -2258,8 +2258,14 @@ section {
         margin-right: 20px; }
       .c-tout_container .c-tout_item.item-right .c-tout_text {
         margin: 0; }
+        @media only screen and (min-width: 768px) {
+          .c-tout_container .c-tout_item.item-right .c-tout_text {
+            margin-top: 20px; } }
       .c-tout_container .c-tout_item.item-right .c-tout_image {
         float: right; }
+        @media only screen and (min-width: 768px) {
+          .c-tout_container .c-tout_item.item-right .c-tout_image {
+            float: left; } }
 
 .new .c-ratiometer_container {
   width: calc(100%);
@@ -2555,13 +2561,18 @@ body {
       .c-sequence__sequeutal-container .c-sequence__cta_button a {
         font-size: 26px; } }
 
+@media only screen and (min-width: 768px) {
+  .c-program_cta__container {
+    max-width: 1200px;
+    margin: 0 auto; } }
+
 .c-program_cta__container .c-program-title,
 .c-program_cta__container .c-program-description,
 .c-program_cta__container .c-program-links {
   width: calc(100%);
   float: left;
   margin-left: 0; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .c-program_cta__container .c-program-title,
     .c-program_cta__container .c-program-description,
     .c-program_cta__container .c-program-links {
@@ -2575,13 +2586,13 @@ body {
   margin: 0;
   margin-bottom: 30px;
   font-size: 32px; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .c-program_cta__container .c-program-title h1 {
       font-size: 42px; } }
 
 .c-program_cta__container .c-program-description p {
   font-size: 23px; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .c-program_cta__container .c-program-description p {
       font-size: 24px; } }
 
@@ -2589,7 +2600,7 @@ body {
   display: inline-block;
   margin-bottom: 10px;
   font-size: 14px; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .c-program_cta__container .c-program-links a {
       font-size: 18px; } }
 
@@ -2602,21 +2613,23 @@ body {
     height: 100%; }
 
 .c-program_cta__container .c-program-image, .c-program_cta__container .c-program-video {
-  background: url(http://seomainsite.wpengine.com/wp-content/uploads/2018/03/12574259515_1a9d1e723c_o.jpg);
   width: calc(100%);
   float: left;
   margin-left: 0;
-  height: 250px;
+  max-width: 279px;
+  height: 157px;
   float: left;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .c-program_cta__container .c-program-image, .c-program_cta__container .c-program-video {
       width: calc(50%);
       float: left;
-      margin-left: 0; } }
+      margin-left: 0;
+      max-width: 541px;
+      height: 323px; } }
   .c-program_cta__container .c-program-image:after, .c-program_cta__container .c-program-video:after {
     content: "";
     background: url(http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg) transparent left center no-repeat;
