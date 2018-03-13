@@ -15,11 +15,8 @@
                 "class": "",
                 "id": ""
             },
-            "button_label": "Add Component",
-            "min": "",
-            "max": "",
-            "layouts": [
-                {
+            "layouts": {
+                "5a9cea4e5edc2": {
                     "key": "5a9cea4e5edc2",
                     "name": "wysiwyg",
                     "label": "wysiwyg",
@@ -50,7 +47,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "5a9cea2ddeede": {
                     "key": "5a9cea2ddeede",
                     "name": "faq",
                     "label": "faq",
@@ -81,7 +78,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "5a9cea705edc4": {
                     "key": "5a9cea705edc4",
                     "name": "slideshow",
                     "label": "slideshow",
@@ -111,8 +108,42 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5aa744f73722c": {
+                    "key": "5aa744f73722c",
+                    "name": "faq_new",
+                    "label": "faq new",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5aa745063722d",
+                            "label": "faq new",
+                            "name": "faq_new",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5aa740b58f6f2"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
-            ]
+            },
+            "button_label": "Add Component",
+            "min": "",
+            "max": ""
         }
     ],
     "location": [
@@ -132,5 +163,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520235626
+    "modified": 1520911970
 }

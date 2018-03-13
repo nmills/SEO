@@ -10,7 +10,7 @@ $sans-stack: 'Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.59;
   @include grid-media($md) {
     font-size: 20px;
-    line-height: 1.53;
+    line-height: 1;
   }
 }
 
