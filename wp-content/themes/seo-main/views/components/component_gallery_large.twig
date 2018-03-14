@@ -3,10 +3,10 @@
     <div class="c-gallery__section-header">
       <h1>{{component.section_header}}</h1>
     </div>
-    <div class="c-gallery__container image-medium">
+    <div class="c-gallery__container image-large">
       {% for item in component.repeater %}
         <div class="c-gallery__gallery-item">
-          <img src="{{Image(item.photo).src }}" />
+          <img class="item__image" src="{{Image(item.photo).src }}" />
           <div class="item__heading">
             <h3>{{item.heading}}</h3>
           </div>
