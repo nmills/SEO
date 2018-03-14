@@ -2111,25 +2111,24 @@ section {
   float: left;
   margin-bottom: 30px; }
 
-.program-landing-page {
-  text-align: center; }
-  .program-landing-page .page-title {
-    width: 80%;
-    margin: auto; }
-    .program-landing-page .page-title h1 {
-      font-weight: 100;
-      font-size: 40px;
-      max-width: 800px;
-      margin-top: 55px;
-      margin-bottom: 45px; }
-      .program-landing-page .page-title h1:before {
-        content: none; }
-      @media only screen and (min-width: 1024px) {
-        .program-landing-page .page-title h1 {
-          font-size: 75px;
-          max-width: 800px;
-          margin-top: 100px;
-          margin-bottom: 90px; } }
+.program-landing-page .page-title {
+  text-align: center;
+  width: 80%;
+  margin: auto; }
+  .program-landing-page .page-title h1 {
+    font-weight: 100;
+    font-size: 40px;
+    max-width: 800px;
+    margin-top: 55px;
+    margin-bottom: 45px; }
+    .program-landing-page .page-title h1:before {
+      content: none; }
+    @media only screen and (min-width: 1024px) {
+      .program-landing-page .page-title h1 {
+        font-size: 75px;
+        max-width: 800px;
+        margin-top: 100px;
+        margin-bottom: 90px; } }
 
 .c-hero_image,
 .c-hero_video {
@@ -2456,133 +2455,134 @@ section {
 body {
   counter-reset: section; }
 
-.c-sequence__sequeutal-container .c-sequence__title-description-container {
-  width: calc(100%);
-  float: left;
-  margin-left: 0; }
-  .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description {
+.c-sequence__sequeutal-container {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .c-sequence__sequeutal-container .c-sequence__title-description-container {
     width: calc(100%);
     float: left;
-    margin-left: 0;
-    margin-bottom: 50px; }
-    @media only screen and (min-width: 768px) {
-      .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description {
-        width: 600px;
-        margin-bottom: 100px; } }
-    .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description h1, .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description p {
-      margin: 0;
-      padding-left: 20px; }
-    .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description h1 {
-      margin-bottom: 30px;
-      font-size: 32px; }
-      @media only screen and (min-width: 1024px) {
-        .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description h1 {
-          font-size: 42px; } }
-    .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description p {
-      font-size: 23px; }
-      @media only screen and (min-width: 1024px) {
-        .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description p {
-          font-size: 24px; } }
-
-.c-sequence__sequeutal-container .c-sequence__sequeutal-items {
-  width: calc(100%);
-  float: left;
-  margin-left: 0; }
-  .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 40px; }
-    .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item:last-child {
-      margin-bottom: 0; }
-    @media only screen and (min-width: 768px) {
-      .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item {
-        margin-bottom: 0; } }
-    .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-1 {
+    margin-left: 0; }
+    .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description {
       width: calc(100%);
       float: left;
       margin-left: 0;
-      margin: auto; }
+      margin-bottom: 50px; }
       @media only screen and (min-width: 768px) {
-        .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-1 {
-          width: calc(66.66667%);
-          float: left;
-          margin-left: 0; } }
-    .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-2 {
-      width: calc(100%);
-      float: left;
-      margin-left: 0; }
+        .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description {
+          width: 600px;
+          margin-bottom: 100px; } }
+      .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description h1, .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description p {
+        margin: 0;
+        padding-left: 20px; }
+      .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description h1 {
+        margin-bottom: 30px;
+        font-size: 32px; }
+        @media only screen and (min-width: 1024px) {
+          .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description h1 {
+            font-size: 42px; } }
+      .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description p {
+        font-size: 23px; }
+        @media only screen and (min-width: 1024px) {
+          .c-sequence__sequeutal-container .c-sequence__title-description-container .c-sequence__title-description p {
+            font-size: 24px; } }
+  .c-sequence__sequeutal-container .c-sequence__sequeutal-items {
+    width: calc(100%);
+    float: left;
+    margin-left: 0; }
+    .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 40px; }
+      .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item:last-child {
+        margin-bottom: 0; }
       @media only screen and (min-width: 768px) {
-        .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-2 {
-          width: calc(50%);
-          float: left;
-          margin-left: 0;
-          margin: auto;
-          float: left; } }
-    .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-3 {
-      width: calc(100%);
-      float: left;
-      margin-left: 0; }
-      @media only screen and (min-width: 768px) {
-        .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-3 {
-          width: calc(33.33333%);
-          float: left;
-          margin-left: 0;
-          margin: auto;
-          float: left; } }
-    .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-4 {
-      width: calc(100%);
-      float: left;
-      margin-left: 0; }
-      @media only screen and (min-width: 768px) {
-        .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-4 {
-          width: calc(25%);
-          float: left;
-          margin-left: 0;
-          margin: auto;
-          float: left; } }
-    .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item:before {
-      counter-increment: section;
-      content: counter(section);
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: #820d1b;
-      font-weight: 700; }
-    .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item h2 {
-      font-weight: 300;
-      margin: 0;
-      line-height: 1;
-      font-size: 28px; }
+        .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item {
+          margin-bottom: 0; } }
+      .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-1 {
+        width: calc(100%);
+        float: left;
+        margin-left: 0;
+        margin: auto; }
+        @media only screen and (min-width: 768px) {
+          .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-1 {
+            width: calc(66.66667%);
+            float: left;
+            margin-left: 0; } }
+      .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-2 {
+        width: calc(100%);
+        float: left;
+        margin-left: 0; }
+        @media only screen and (min-width: 768px) {
+          .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-2 {
+            width: calc(50%);
+            float: left;
+            margin-left: 0;
+            margin: auto;
+            float: left; } }
+      .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-3 {
+        width: calc(100%);
+        float: left;
+        margin-left: 0; }
+        @media only screen and (min-width: 768px) {
+          .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-3 {
+            width: calc(33.33333%);
+            float: left;
+            margin-left: 0;
+            margin: auto;
+            float: left; } }
+      .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-4 {
+        width: calc(100%);
+        float: left;
+        margin-left: 0; }
+        @media only screen and (min-width: 768px) {
+          .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.items-4 {
+            width: calc(25%);
+            float: left;
+            margin-left: 0;
+            margin: auto;
+            float: left; } }
+      .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item:before {
+        counter-increment: section;
+        content: counter(section);
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #820d1b;
+        font-weight: 700; }
+      .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item h2 {
+        font-weight: 300;
+        margin: 0;
+        line-height: 1;
+        font-size: 28px; }
+        @media only screen and (min-width: 1024px) {
+          .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item h2 {
+            font-size: 30px; } }
+      .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item p {
+        font-size: 18px; }
+      .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item a {
+        font-size: 14px; }
+        @media only screen and (min-width: 1024px) {
+          .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item a {
+            font-size: 18px; } }
+  .c-sequence__sequeutal-container .c-sequence__cta_button {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    margin: 0 auto;
+    display: inline-block;
+    margin-top: 50px;
+    text-align: left; }
+    @media only screen and (min-width: 768px) {
+      .c-sequence__sequeutal-container .c-sequence__cta_button {
+        margin-top: 120px;
+        text-align: center;
+        margin-bottom: 50px; } }
+    .c-sequence__sequeutal-container .c-sequence__cta_button a {
+      padding: 10px;
+      font-size: 22px; }
       @media only screen and (min-width: 1024px) {
-        .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item h2 {
-          font-size: 30px; } }
-    .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item p {
-      font-size: 18px; }
-    .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item a {
-      font-size: 14px; }
-      @media only screen and (min-width: 1024px) {
-        .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item a {
-          font-size: 18px; } }
-
-.c-sequence__sequeutal-container .c-sequence__cta_button {
-  width: calc(100%);
-  float: left;
-  margin-left: 0;
-  margin: 0 auto;
-  display: inline-block;
-  margin-top: 50px;
-  text-align: left; }
-  @media only screen and (min-width: 768px) {
-    .c-sequence__sequeutal-container .c-sequence__cta_button {
-      margin-top: 120px;
-      text-align: center;
-      margin-bottom: 50px; } }
-  .c-sequence__sequeutal-container .c-sequence__cta_button a {
-    padding: 10px;
-    font-size: 22px; }
-    @media only screen and (min-width: 1024px) {
-      .c-sequence__sequeutal-container .c-sequence__cta_button a {
-        font-size: 26px; } }
+        .c-sequence__sequeutal-container .c-sequence__cta_button a {
+          font-size: 26px; } }
 
 @media only screen and (min-width: 768px) {
   .c-program_cta__container {
@@ -2653,20 +2653,6 @@ body {
       margin-left: 0;
       max-width: 541px;
       height: 323px; } }
-  .c-program_cta__container .c-program-image:after, .c-program_cta__container .c-program-video:after {
-    content: "";
-    background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg) transparent left center no-repeat;
-    background-size: cover !important;
-    border: none;
-    width: 5em;
-    height: 5em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer; }
-  .c-program_cta__container .c-program-image:hover:after, .c-program_cta__container .c-program-video:hover:after {
-    background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg); }
 
 /* Program Landing */
 section {

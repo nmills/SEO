@@ -9,10 +9,8 @@ section {
 }
 
 .program-landing-page {
-  text-align: center;
-
   .page-title {
-
+    text-align: center;
     width: 80%;
     margin: auto;
 
@@ -426,6 +424,8 @@ body {
 }
 
 .c-sequence__sequeutal-container {
+    max-width: 1200px;
+    margin: 0 auto;
   .c-sequence__title-description-container {
     @include grid-column(12, $no-gutter);
 
@@ -662,24 +662,24 @@ body {
     }
 
 
-    &:after {
-      content: "";
-      background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg) transparent left center no-repeat;
-      background-size: cover !important;
-      border: none;
-      width: 5em;
-      height: 5em;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      cursor: pointer;
-    }
+    // &:after {
+    //   content: "";
+    //   background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg) transparent left center no-repeat;
+    //   background-size: cover !important;
+    //   border: none;
+    //   width: 5em;
+    //   height: 5em;
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   cursor: pointer;
+    // }
 
-    &:hover {
-      &:after {
-        background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg);
-      }
-    }
+    // &:hover {
+    //   &:after {
+    //     background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg);
+    //   }
+    // }
   }
 }

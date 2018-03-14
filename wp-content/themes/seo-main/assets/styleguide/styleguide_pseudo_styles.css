@@ -142,11 +142,6 @@
   margin-bottom: 0;
 }
 
-.c-program_cta__container .c-program-image.pseudo-class-hover:after,
-.c-program_cta__container .c-program-video.pseudo-class-hover:after {
-  background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg);
-}
-
 .c-gallery__container.image-only .c-gallery__gallery-item.pseudo-class-hover:after {
   content: "";
   position: absolute;
