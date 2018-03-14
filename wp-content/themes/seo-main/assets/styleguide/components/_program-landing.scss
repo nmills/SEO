@@ -121,8 +121,8 @@ section {
   }
 
   @include grid-media($lg) {
-    height: 560px;
-    max-width: 1001px;
+    height: 630px;
+    max-width: 1027px;
   }
 
   .c-tout_item {
@@ -207,6 +207,10 @@ section {
       bottom: 0;
       right: 0;
       height: auto;
+
+      @include grid-media($lg) {
+        padding-left:15px;
+      }
 
       .c-tout_text {
         margin-right: 20px;

@@ -2205,8 +2205,8 @@ section {
       max-width: 750px; } }
   @media only screen and (min-width: 1024px) {
     .c-tout_container {
-      height: 560px;
-      max-width: 1001px; } }
+      height: 630px;
+      max-width: 1027px; } }
   .c-tout_container .c-tout_item {
     width: calc(100%);
     float: left;
@@ -2276,6 +2276,9 @@ section {
       bottom: 0;
       right: 0;
       height: auto; }
+      @media only screen and (min-width: 1024px) {
+        .c-tout_container .c-tout_item.item-right {
+          padding-left: 15px; } }
       .c-tout_container .c-tout_item.item-right .c-tout_text {
         margin-right: 20px; }
       .c-tout_container .c-tout_item.item-right .c-tout_text {
