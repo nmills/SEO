@@ -36,6 +36,7 @@ section {
     font-size: 24px;
     width: 80%;
     line-height: 1;
+    font-weight: $font-thinnest;
 
     @include grid-media($lg) {
       font-size: 43px;
@@ -43,31 +44,36 @@ section {
     }
   }
 
-  .c-next_button {
-    background: url("http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat;
+  .plyr .plyr__play-large {
+    background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat;
     background-size: cover !important;
     border: none;
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     position: absolute;
-    bottom: 5%;
-    right: 5%;
+    // bottom: 5%;
+    // right: 5%;
     cursor: pointer;
 
+        top: unset;
+    left: unset;
+    bottom: 0;
+    right: 0;
+
     @include grid-media($lg) {
-      width: 5em;
-      height: 5em;
+      width: 7em;
+      height: 7em;
     }
 
 
     &:hover {
-      background: url("http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg");
+      background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg");
     }
   }
 }
 
 .c-hero_video {
-  background: none;
+  background: $black;
 
   iframe {
     @include grid-column(12, $no-gutter);
@@ -629,7 +635,7 @@ body {
 
     &:after {
       content: "";
-      background: url(http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg) transparent left center no-repeat;
+      background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg) transparent left center no-repeat;
       background-size: cover !important;
       border: none;
       width: 5em;
@@ -643,7 +649,7 @@ body {
 
     &:hover {
       &:after {
-        background: url(http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg);
+        background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg);
       }
     }
   }

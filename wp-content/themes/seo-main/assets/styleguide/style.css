@@ -2138,34 +2138,37 @@ section {
     color: white;
     font-size: 24px;
     width: 80%;
-    line-height: 1; }
+    line-height: 1;
+    font-weight: 100; }
     @media only screen and (min-width: 1024px) {
       .c-hero_image p,
       .c-hero_video p {
         font-size: 43px;
         width: 60%; } }
-  .c-hero_image .c-next_button,
-  .c-hero_video .c-next_button {
-    background: url("http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat;
+  .c-hero_image .plyr .plyr__play-large,
+  .c-hero_video .plyr .plyr__play-large {
+    background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat;
     background-size: cover !important;
     border: none;
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     position: absolute;
-    bottom: 5%;
-    right: 5%;
-    cursor: pointer; }
+    cursor: pointer;
+    top: unset;
+    left: unset;
+    bottom: 0;
+    right: 0; }
     @media only screen and (min-width: 1024px) {
-      .c-hero_image .c-next_button,
-      .c-hero_video .c-next_button {
-        width: 5em;
-        height: 5em; } }
-    .c-hero_image .c-next_button:hover,
-    .c-hero_video .c-next_button:hover {
-      background: url("http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg"); }
+      .c-hero_image .plyr .plyr__play-large,
+      .c-hero_video .plyr .plyr__play-large {
+        width: 7em;
+        height: 7em; } }
+    .c-hero_image .plyr .plyr__play-large:hover,
+    .c-hero_video .plyr .plyr__play-large:hover {
+      background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg"); }
 
 .c-hero_video {
-  background: none; }
+  background: #050505; }
   .c-hero_video iframe {
     width: calc(100%);
     float: left;
@@ -2632,7 +2635,7 @@ body {
       height: 323px; } }
   .c-program_cta__container .c-program-image:after, .c-program_cta__container .c-program-video:after {
     content: "";
-    background: url(http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg) transparent left center no-repeat;
+    background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg) transparent left center no-repeat;
     background-size: cover !important;
     border: none;
     width: 5em;
@@ -2643,7 +2646,7 @@ body {
     transform: translate(-50%, -50%);
     cursor: pointer; }
   .c-program_cta__container .c-program-image:hover:after, .c-program_cta__container .c-program-video:hover:after {
-    background: url(http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg); }
+    background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg); }
 
 /* Program Landing */
 section {
