@@ -1137,7 +1137,8 @@ Styleguide 4.1
       font-weight: 700;
       transition: all 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15);
       border-bottom: 1px solid #dbd7cc;
-      padding: 15px 0; }
+      padding: 15px 0;
+      position: relative; }
       @media only screen and (min-width: 768px) {
         .c-accordion li .toggle {
           font-size: 34.5px;
@@ -1146,6 +1147,21 @@ Styleguide 4.1
         color: #eb0029; }
       .c-accordion li .toggle.active {
         color: #eb0029; }
+        .c-accordion li .toggle.active span:after {
+          transform: rotate(90deg); }
+      .c-accordion li .toggle span {
+        max-width: 100%;
+        width: 100%;
+        display: block; }
+        .c-accordion li .toggle span:after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-close.svg") right center no-repeat;
+          right: 0;
+          top: 0;
+          transition: all 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15); }
       .c-accordion li .toggle span.content-grid {
         cursor: pointer; }
 

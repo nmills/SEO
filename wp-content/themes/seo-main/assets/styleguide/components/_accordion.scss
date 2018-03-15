@@ -99,13 +99,37 @@ Styleguide 4.1
       transition: all 0.3s $cubic-transition;
       border-bottom: 1px solid #dbd7cc;
       padding: 15px 0;
+      position: relative;
 
       &:hover {
-      color: $red;
-    }
+        color: $red;
+      }
 
       &.active {
         color: $red;
+
+        span {
+          &:after {
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      span {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-close.svg") right center no-repeat;
+          right:0;
+          top: 0;
+          transition: all 0.3s $cubic-transition;
+        }
       }
 
       span.content-grid {
