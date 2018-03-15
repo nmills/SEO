@@ -1,5 +1,40 @@
 /* Program Landing */
 
+.gallery-page {
+  .page-title {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    // text-align: center;
+    // width: 80%;
+    // margin: auto;
+
+    h1 {
+      //   font-weight: $font-thinnest;
+      margin: 0;
+      font-size: 42px;
+
+      //   max-width: 800px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      &:before {
+        content: none;
+      }
+
+      //   @include grid-media($lg) {
+      font-size: 61px;
+
+      //     max-width: 800px;
+      margin-top: 100px;
+      margin-bottom: 45px;
+
+      //   }
+   
+    }
+  }
+}
+
 .container.region_hero {
   .c-gallery__container, .c-gallery__section-header {
     max-width: 1024px;
@@ -185,6 +220,11 @@
       .item__link {
         float: right;
         width: 45%;
+
+        @include grid-media($md) {
+          float: left;
+          margin-left: 15px;
+        }
       }
 
       .item__heading {
@@ -284,8 +324,8 @@
         &:after {
           content: "";
           position: absolute;
-          top: -8px;
-          right: -8px;
+          top: -16px;
+          right: -16px;
           width: 70px;
           height: 70px;
           border-top: 8px solid black;

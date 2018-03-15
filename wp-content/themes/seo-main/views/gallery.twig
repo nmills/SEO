@@ -2,10 +2,13 @@
 
 {% block content %}
   {# <div class="container"> #}
-  <main id="content">
+  <main id="content" class="gallery-page">
     <div class="page-content">
       {# Amalan new codes #}
       <div class="container region_hero">
+        <div class="page-title">
+          <h1>{{post.title}}</h1>
+        </div>
         {% for component in post.get_field('flexi_content') %}
           {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
         {% endfor %}
