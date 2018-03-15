@@ -24,4 +24,10 @@ export default function() {
       $this.find('.answer').slideToggle(350);
     }
   });
-}
+
+  $('li.cat-js').on('click', function(){
+    var cat_class = $(this).attr('class').split(' ')[1];
+      $('li.question-js').removeClass('hide');
+      $('li.question-js').not("li.question-js." + cat_class).addClass('hide');
+  });
+} 
