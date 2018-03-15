@@ -1,13 +1,5 @@
 /* Program Landing */
 
-section {
-  @include grid-column(12, $no-gutter);
-
-  margin: 0 auto;
-  float: left;
-  margin-bottom: 30px;
-}
-
 .program-landing-page {
   .page-title {
     text-align: center;
@@ -106,6 +98,33 @@ section {
     @include grid-column(12, $no-gutter);
 
     height: 100%;
+  }
+
+  .video {
+    height: 212px;
+
+    @include grid-media($md) {
+      height: 411px;
+    }
+
+    @include grid-media($lg) {
+      height: 811px;
+    }
+    .plyr.plyr--youtube.plyr--video {
+      height: 212px;
+    
+      @include grid-media($md) {
+        height: 411px;
+      }
+
+      @include grid-media($lg) {
+        height: 811px;
+      }
+      .plyr__video-wrapper.plyr__video-embed {
+        padding: 0;
+        position: static;
+      }
+    }
   }
 }
 

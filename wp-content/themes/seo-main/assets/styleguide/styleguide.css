@@ -369,10 +369,15 @@ section.entry-content.container {
       content: "";
       display: block; } }
 
-section::after {
-  clear: both;
-  content: "";
-  display: block; }
+section {
+  margin-bottom: 40px; }
+  section::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media only screen and (min-width: 768px) {
+    section {
+      margin-bottom: 120px; } }
 
 .slider__animation {
   transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
@@ -2086,12 +2091,13 @@ Gallery
       padding: 0; }
 
 .container.region_bottom {
-  margin-bottom: 50px;
   width: calc(100%);
   float: left;
   margin-left: 0;
+  float: none;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 50px; }
   .container.region_bottom .container:not(.video-component) {
     max-width: 1280px; }
   @media only screen and (min-width: 480px) {
@@ -2103,14 +2109,6 @@ Gallery
       padding-left: 25px; } }
 
 /* Program Landing */
-section {
-  width: calc(100%);
-  float: left;
-  margin-left: 0;
-  margin: 0 auto;
-  float: left;
-  margin-bottom: 30px; }
-
 .program-landing-page .page-title {
   text-align: center;
   width: 80%;
@@ -2193,6 +2191,25 @@ section {
     float: left;
     margin-left: 0;
     height: 100%; }
+  .c-hero_video .video {
+    height: 212px; }
+    @media only screen and (min-width: 768px) {
+      .c-hero_video .video {
+        height: 411px; } }
+    @media only screen and (min-width: 1024px) {
+      .c-hero_video .video {
+        height: 811px; } }
+    .c-hero_video .video .plyr.plyr--youtube.plyr--video {
+      height: 212px; }
+      @media only screen and (min-width: 768px) {
+        .c-hero_video .video .plyr.plyr--youtube.plyr--video {
+          height: 411px; } }
+      @media only screen and (min-width: 1024px) {
+        .c-hero_video .video .plyr.plyr--youtube.plyr--video {
+          height: 811px; } }
+      .c-hero_video .video .plyr.plyr--youtube.plyr--video .plyr__video-wrapper.plyr__video-embed {
+        padding: 0;
+        position: static; }
 
 .c-tout_container {
   margin: auto;
@@ -2658,12 +2675,6 @@ body {
       height: 323px; } }
 
 /* Program Landing */
-section {
-  width: 100%;
-  margin: 0 auto;
-  float: left;
-  margin-bottom: 30px; }
-
 .container.region_hero .c-gallery__container, .container.region_hero .c-gallery__section-header {
   max-width: 1024px;
   margin: 0 auto; }

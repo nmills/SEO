@@ -55,12 +55,12 @@
   }
 
   &.region_bottom {
-    margin-bottom: 50px;
-
     @include grid-column(12, $no-gutter);
 
+    float: none;
     margin: 0 auto;
     padding: 0;
+    margin-bottom: 50px;
 
     .container {
       &:not(.video-component) {
