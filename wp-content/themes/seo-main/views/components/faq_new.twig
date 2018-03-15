@@ -12,7 +12,7 @@
     <ul class="c-accordion">
       {% for category_set in component.category_repeater %}
         {% for question_set in category_set.question_repeater %}
-        <li class="question-js cat-{{loop.parent.loop.index}}">
+        <li class="question-js cat-{{loop.parent.loop.index}} cat-all">
           <div class="toggle" href="javascript:void(0);">
            <span class="content-grid">
             {{question_set.question}}
@@ -24,22 +24,6 @@
         </li>
         {% endfor %}
       {% endfor %}
-
-      {# print all the questions #}
-      {# {% for category_set in component.category_repeater %}
-        {% for question_set in category_set.question_repeater %}
-          <li>
-            <div class="toggle" href="javascript:void(0);">
-             <span class="content-grid">
-              {{question_set.question}}
-             </span>
-             <div class="answer c-rte__accordion">
-              {{question_set.answer}}
-            </div>
-           </div>
-          </li>
-        {% endfor %}
-      {% endfor %} #}
     </ul>
   </div>
 </div>
