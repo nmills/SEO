@@ -1,0 +1,23 @@
+<section>
+  <div class="container">
+    <div class="c-gallery__section-header">
+      <h1>{{component.section_header}}</h1>
+    </div>
+    <div class="c-gallery__container image-large">
+      {% for item in component.repeater %}
+        <div class="c-gallery__gallery-item">
+          <img class="item__image" src="{{Image(item.photo).src }}" />
+          <div class="item__heading">
+            <h3>{{item.heading}}</h3>
+          </div>
+          <div class="item__sub-heading">
+            <p>{{item.subheading}}</p>
+          </div>
+          <div class="item__description">
+            {{item.body}}
+          </div>      
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

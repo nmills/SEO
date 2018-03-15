@@ -1,27 +1,37 @@
 /**
-* Accordion
-*/
+ * Accordion
+ */
 
 export default function() {
   $('.toggle span.content-grid').click(function(e) {
     e.preventDefault();
 
-    let $this = $(this).parent();
+    let $parent = $(this).parent();
 
-    // Collapse
-    if ($this.find('.answer').hasClass('show')) {
-      $this.find('.answer').removeClass('show');
-      $this.removeClass('active');
-      $this.find('.answer').slideUp(350);
+    if (!$parent.hasClass('active')) {
+      $('.toggle').filter('.active')
+        .removeClass('active')
+        .find('.answer')
+        .slideUp('medium');
+
+      $parent
+        .addClass('active')
+        .find('.answer').slideDown('medium');
+    } else {
+      $parent
+        .removeClass('active')
+        .find('.answer').slideUp('medium');
     }
-    // Expand
-    else {
-      $this.find('.answer').removeClass('show');
-      $('.toggle').removeClass('active');
-      $this.find('.answer').slideUp(350);
-      $this.addClass('active');
-      $this.find('.answer').toggleClass('show');
-      $this.find('.answer').slideToggle(350);
-    }
+
+
+
+  });
+
+  $('li.cat-js').on('click', function() {
+    $('li.cat-js').removeClass('active-selection');
+    $(this).addClass('active-selection');
+    var cat_class = $(this).attr('class').split(' ')[1];
+    $('li.question-js').removeClass('hide');
+    $('li.question-js').not("li.question-js." + cat_class).addClass('hide');
   });
 }

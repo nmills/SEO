@@ -1,0 +1,18 @@
+<section>
+  <div class="container">
+    {% if component.header_type == 'image' %}
+      <a href="{{component.destination_link}}">
+        <div class="c-hero_image" style="background-image: url('{{Image(component.image).src }}')">
+          <p>{{component.hero_text}}</p>
+        </div>
+      </a>
+    {% elseif component.header_type == 'video' %}
+      <div class="c-hero_video">
+        <div class="video">
+          <div data-type="youtube" data-video-id="{{component.video}}"></div>
+        </div>
+        <p>{{component.hero_text}}</p>
+      </div>
+    {% endif %}  
+  </div>
+</section>
