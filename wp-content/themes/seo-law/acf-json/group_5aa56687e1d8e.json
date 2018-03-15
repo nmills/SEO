@@ -1,11 +1,11 @@
 {
-    "key": "group_5a9ce8529848c",
-    "title": "region: content region main",
+    "key": "group_5aa56687e1d8e",
+    "title": "program landing",
     "fields": [
         {
-            "key": "field_5a9cea285edc0",
-            "label": "region: content region main",
-            "name": "region:_content_region_main",
+            "key": "field_5aa566900adec",
+            "label": "flexi content",
+            "name": "flexi_content",
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
@@ -16,16 +16,16 @@
                 "id": ""
             },
             "layouts": {
-                "5a9cea4e5edc2": {
-                    "key": "5a9cea4e5edc2",
-                    "name": "wysiwyg",
-                    "label": "wysiwyg",
+                "5aa5669881b59": {
+                    "key": "5aa5669881b59",
+                    "name": "component_pl_hero",
+                    "label": "component: PL Hero",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5a9cea5e5edc3",
-                            "label": "wysiwyg",
-                            "name": "wysiwyg",
+                            "key": "field_5aa566b90aded",
+                            "label": "component: PL Hero",
+                            "name": "component:_pl_hero",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -36,7 +36,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_5a8278f06871c"
+                                "group_5aa5612ae0b02"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -47,16 +47,16 @@
                     "min": "",
                     "max": ""
                 },
-                "5a9cea2ddeede": {
-                    "key": "5a9cea2ddeede",
-                    "name": "faq",
-                    "label": "faq",
+                "5aa567010adee": {
+                    "key": "5aa567010adee",
+                    "name": "component_pl_touts",
+                    "label": "component: PL Touts",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5a9cea3a5edc1",
-                            "label": "faq",
-                            "name": "faq",
+                            "key": "field_5aa5670c0adef",
+                            "label": "component: PL Touts",
+                            "name": "component:_pl_touts",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -67,7 +67,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_5a827a1dd7b5d"
+                                "group_5aa562c5c458a"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -78,16 +78,16 @@
                     "min": "",
                     "max": ""
                 },
-                "5a9cea705edc4": {
-                    "key": "5a9cea705edc4",
-                    "name": "slideshow",
-                    "label": "slideshow",
+                "5aa567250adf0": {
+                    "key": "5aa567250adf0",
+                    "name": "component_pl_data_visualization",
+                    "label": "component: PL Data Visualization",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5a9cea7a5edc5",
-                            "label": "slideshow",
-                            "name": "slideshow",
+                            "key": "field_5aa567310adf1",
+                            "label": "component: PL: Data Visualization",
+                            "name": "component:_pl:_data_visualization",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -98,7 +98,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_5a827955cf48b"
+                                "group_5aa56447dbe02"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -109,16 +109,16 @@
                     "min": "",
                     "max": ""
                 },
-                "5aa744f73722c": {
-                    "key": "5aa744f73722c",
-                    "name": "faq_new",
-                    "label": "faq new",
+                "5aa602a17e6b7": {
+                    "key": "5aa602a17e6b7",
+                    "name": "component_pl_cta",
+                    "label": "component: PL CTA",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5aa745063722d",
-                            "label": "faq new",
-                            "name": "faq_new",
+                            "key": "field_5aa602a97e6b8",
+                            "label": "component: PL CTA",
+                            "name": "component:_pl_cta",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -129,7 +129,38 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_5aa740b58f6f2"
+                                "group_5aa5f9be91922"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5aa602cc7e6b9": {
+                    "key": "5aa602cc7e6b9",
+                    "name": "component_pl_sequence",
+                    "label": "component: PL Sequence",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5aa602e37e6ba",
+                            "label": "component: PL Sequence",
+                            "name": "component:_pl_sequence",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5aa5f8a1380df"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -149,9 +180,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "post_template",
                 "operator": "==",
-                "value": "post"
+                "value": "template-program_landing.php"
             }
         ]
     ],
@@ -161,7 +192,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 0,
+    "active": 1,
     "description": "",
-    "modified": 1520911970
+    "modified": 1520829183
 }
