@@ -1,6 +1,12 @@
 /* Program Landing */
 
 .gallery-page {
+  section {
+    @include grid-media($max-md) {
+      border-bottom: 1px solid $light-gray;
+    }
+  }
+
   .page-title {
     max-width: 1024px;
     margin: 0 auto;
@@ -90,19 +96,24 @@
 
 
       &:hover {
-        &:after {
-          content: "";
-          position: absolute;
-          top: -8px;
-          right: -8px;
-          width: 35px;
-          height: 35px;
-          border-top: 8px solid black;
-          border-right: 8px solid black;
+        @include grid-media($md) {
+          &:after {
+            content: "";
+            position: absolute;
+            top: -8px;
+            right: -8px;
 
-          @include grid-media($md) {
+            // width: 35px;
+            // height: 35px;
+            border-top: 8px solid black;
+            border-right: 8px solid black;
+
+            // @include grid-media($md) {
             width: 70px;
             height: 70px;
+
+            // }
+         
           }
         }
       }
@@ -321,15 +332,17 @@
           filter: grayscale(0%);
         }
 
-        &:after {
-          content: "";
-          position: absolute;
-          top: -16px;
-          right: -16px;
-          width: 70px;
-          height: 70px;
-          border-top: 8px solid black;
-          border-right: 8px solid black;
+        @include grid-media($md) {
+          &:after {
+            content: "";
+            position: absolute;
+            top: -16px;
+            right: -16px;
+            width: 70px;
+            height: 70px;
+            border-top: 8px solid black;
+            border-right: 8px solid black;
+          }
         }
       }
 
