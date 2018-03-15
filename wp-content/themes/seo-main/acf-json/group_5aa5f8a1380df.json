@@ -64,7 +64,7 @@
                     "label": "heading",
                     "name": "heading",
                     "type": "text",
-                    "instructions": "",
+                    "instructions": "The character limit is 25",
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -83,7 +83,7 @@
                     "label": "body",
                     "name": "body",
                     "type": "text",
-                    "instructions": "",
+                    "instructions": "The character limit is 140",
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -135,7 +135,7 @@
             "label": "cta button text",
             "name": "cta_button_text",
             "type": "text",
-            "instructions": "",
+            "instructions": "The character limit is 20",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -167,5 +167,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520837924
+    "modified": 1521094424
 }

@@ -31,7 +31,7 @@
             "label": "text",
             "name": "text",
             "type": "text",
-            "instructions": "",
+            "instructions": "The character limit is 100",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -84,5 +84,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520837877
+    "modified": 1521094330
 }
