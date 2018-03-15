@@ -83,11 +83,35 @@
             "library": "all"
         },
         {
+            "key": "field_5aaa0c3ac25cb",
+            "label": "destination link",
+            "name": "destination_link",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5aa5615ba93c5",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_5aa56235a93c8",
             "label": "hero text",
             "name": "hero_text",
             "type": "text",
-            "instructions": "",
+            "instructions": "The character limit is 140",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -119,5 +143,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520788655
+    "modified": 1521094194
 }

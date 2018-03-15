@@ -8,7 +8,7 @@
             "name": "section_header",
             "type": "text",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -46,7 +46,7 @@
                     "name": "heading",
                     "type": "text",
                     "instructions": "",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -114,5 +114,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520851113
+    "modified": 1521095886
 }
