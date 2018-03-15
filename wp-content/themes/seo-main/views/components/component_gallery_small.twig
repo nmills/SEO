@@ -6,8 +6,14 @@
     <div class="c-gallery__container image-small">
       {% for item in component.repeater %}
         <div class="c-gallery__gallery-item">
-          <img src="{{Image(item.photo).src }}" />
-          <div class="item__heading">
+          {% if item.destination_link %}
+            <a href="{{item.destination_link}}">
+              <img src="{{Image(item.photo).src }}" />
+            </a>
+          {% else %}
+             <img src="{{Image(item.photo).src }}" />
+          {% endif %}  
+        <div class="item__heading">
             <h3>{{item.heading}}</h3>
           </div>
           <div class="item__sub-heading">

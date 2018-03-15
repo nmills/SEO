@@ -171,8 +171,8 @@
 .c-gallery__container.image-medium .c-gallery__gallery-item.pseudo-class-hover:after {
   content: "";
   position: absolute;
-  top: -8px;
-  right: -8px;
+  top: -16px;
+  right: -16px;
   width: 70px;
   height: 70px;
   border-top: 8px solid black;
