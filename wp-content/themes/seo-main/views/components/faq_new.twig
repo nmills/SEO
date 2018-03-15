@@ -1,44 +1,28 @@
-{# <div class="container faq">
+<div class="container faq">
   <div class="c-accordion__wrapper">
     <h3>{{component.subheading}}</h3>
+    <ul class="c-accordion__filter">
+      {% for category_set in component.category_repeater %}
+        <li class="cat-js cat-{{loop.index}}">{{category_set.category_tag}}</li>
+      {% endfor %}
+      <li class="cat-js cat-all active-selection">All</li>
+    </ul>
+
     <ul class="c-accordion">
-      {% for faq in component.repeater %}
-      <li>
-        <div class="toggle" href="javascript:void(0);">
-	       <span class="content-grid">
-	        {{faq.question}}
-	       </span>
-         <div class="answer c-rte__accordion">
-            {{faq.answer}}
-        </div>
-	     </div>
-      </li>
+      {% for category_set in component.category_repeater %}
+        {% for question_set in category_set.question_repeater %}
+        <li class="question-js cat-{{loop.parent.loop.index}} cat-all">
+          <div class="toggle" href="javascript:void(0);">
+           <span class="content-grid">
+            {{question_set.question}}
+           </span>
+           <div class="answer c-rte__accordion">
+            {{question_set.answer}}
+          </div>
+         </div>
+        </li>
+        {% endfor %}
       {% endfor %}
     </ul>
   </div>
 </div>
- #}
-
-<div>{{component.header}}</div>
-
-<div>{{component.body}}</div>
-
-{# Printing categories separately #}
-{% for category_set in component.category_repeater %}
-  <div>{{category_set.category_tag}}</div>  
-
-  {% for question_set in category_set.question_repeater %}
-    <div>{{question_set.question}}</div>
-    <div>{{question_set.answer}}</div>
-  {% endfor %}
-
-{% endfor %}
-
-{# Print all the questions at once #}
-
-{% for category_set in component.category_repeater %}
-  {% for question_set in category_set.question_repeater %}
-    <div>{{question_set.question}}</div>
-    <div>{{question_set.answer}}</div>
-  {% endfor %}
-{% endfor %}

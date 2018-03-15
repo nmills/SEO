@@ -1,10 +1,44 @@
 /* Program Landing */
 
-section {
-  width: 100%;
-  margin: 0 auto;
-  float: left;
-  margin-bottom: 30px;
+.gallery-page {
+  section {
+    @include grid-media($max-md) {
+      border-bottom: 1px solid $light-gray;
+    }
+  }
+
+  .page-title {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    // text-align: center;
+    // width: 80%;
+    // margin: auto;
+
+    h1 {
+      //   font-weight: $font-thinnest;
+      margin: 0;
+      font-size: 42px;
+
+      //   max-width: 800px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      &:before {
+        content: none;
+      }
+
+      //   @include grid-media($lg) {
+      font-size: 61px;
+
+      //     max-width: 800px;
+      margin-top: 100px;
+      margin-bottom: 45px;
+
+      //   }
+   
+    }
+  }
 }
 
 .container.region_hero {
@@ -62,19 +96,24 @@ section {
 
 
       &:hover {
-        &:after {
-          content: "";
-          position: absolute;
-          top: -8px;
-          right: -8px;
-          width: 35px;
-          height: 35px;
-          border-top: 8px solid black;
-          border-right: 8px solid black;
+        @include grid-media($md) {
+          &:after {
+            content: "";
+            position: absolute;
+            top: -8px;
+            right: -8px;
 
-          @include grid-media($md) {
+            // width: 35px;
+            // height: 35px;
+            border-top: 8px solid black;
+            border-right: 8px solid black;
+
+            // @include grid-media($md) {
             width: 70px;
             height: 70px;
+
+            // }
+         
           }
         }
       }
@@ -192,6 +231,11 @@ section {
       .item__link {
         float: right;
         width: 45%;
+
+        @include grid-media($md) {
+          float: left;
+          margin-left: 15px;
+        }
       }
 
       .item__heading {
@@ -288,15 +332,17 @@ section {
           filter: grayscale(0%);
         }
 
-        &:after {
-          content: "";
-          position: absolute;
-          top: -8px;
-          right: -8px;
-          width: 70px;
-          height: 70px;
-          border-top: 8px solid black;
-          border-right: 8px solid black;
+        @include grid-media($md) {
+          &:after {
+            content: "";
+            position: absolute;
+            top: -16px;
+            right: -16px;
+            width: 70px;
+            height: 70px;
+            border-top: 8px solid black;
+            border-right: 8px solid black;
+          }
         }
       }
 

@@ -133,29 +133,13 @@
   background: url("/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat;
 }
 
-.c-hero_image .c-next_button.pseudo-class-hover,
-.c-hero_video .c-next_button.pseudo-class-hover {
-  background: url("http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg");
+.c-hero_image .plyr .plyr__play-large.pseudo-class-hover,
+.c-hero_video .plyr .plyr__play-large.pseudo-class-hover {
+  background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg");
 }
 
 .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.pseudo-class-last-child {
   margin-bottom: 0;
-}
-
-.c-program_cta__container .c-program-image.pseudo-class-hover:after,
-.c-program_cta__container .c-program-video.pseudo-class-hover:after {
-  background: url(http://seomainsite.wpengine.com/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg);
-}
-
-.c-gallery__container.image-only .c-gallery__gallery-item.pseudo-class-hover:after {
-  content: "";
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  width: 35px;
-  height: 35px;
-  border-top: 8px solid black;
-  border-right: 8px solid black;
 }
 
 .c-gallery__container.image-only .c-gallery__gallery-item img.pseudo-class-hover {
@@ -171,17 +155,6 @@
 .c-gallery__container.image-medium .c-gallery__gallery-item.pseudo-class-hover .c-gallery__image {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
-}
-
-.c-gallery__container.image-medium .c-gallery__gallery-item.pseudo-class-hover:after {
-  content: "";
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  width: 70px;
-  height: 70px;
-  border-top: 8px solid black;
-  border-right: 8px solid black;
 }
 
 .slick-list.pseudo-class-focus {
