@@ -15,11 +15,8 @@
                 "class": "",
                 "id": ""
             },
-            "button_label": "Add Component",
-            "min": "",
-            "max": "",
-            "layouts": [
-                {
+            "layouts": {
+                "5a9ceb0ac3887": {
                     "key": "5a9ceb0ac3887",
                     "name": "video",
                     "label": "video",
@@ -50,7 +47,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "5a9cf2224ab2d": {
                     "key": "5a9cf2224ab2d",
                     "name": "wysiwyg",
                     "label": "wysiwyg",
@@ -81,7 +78,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "5a9cf2814ab2f": {
                     "key": "5a9cf2814ab2f",
                     "name": "faq",
                     "label": "faq",
@@ -112,7 +109,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "5a9cf29c4ab31": {
                     "key": "5a9cf29c4ab31",
                     "name": "slideshow",
                     "label": "slideshow",
@@ -142,8 +139,42 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5aaa669f9aee5": {
+                    "key": "5aaa669f9aee5",
+                    "name": "faq_new",
+                    "label": "faq new",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5aaa66a99aee6",
+                            "label": "faq new",
+                            "name": "faq_new",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5aa740b58f6f2"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
-            ]
+            },
+            "button_label": "Add Component",
+            "min": "",
+            "max": ""
         }
     ],
     "location": [
@@ -163,5 +194,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520238583
+    "modified": 1521116914
 }
