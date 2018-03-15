@@ -26,6 +26,8 @@ export default function() {
   });
 
   $('li.cat-js').on('click', function(){
+    $('li.cat-js').removeClass('active-selection');
+    $(this).addClass('active-selection');
     var cat_class = $(this).attr('class').split(' ')[1];
       $('li.question-js').removeClass('hide');
       $('li.question-js').not("li.question-js." + cat_class).addClass('hide');
