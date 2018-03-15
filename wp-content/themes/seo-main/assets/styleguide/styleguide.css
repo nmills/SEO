@@ -2370,7 +2370,10 @@ Gallery
   float: left;
   background: #e5e7e7;
   padding: 5%;
-  min-height: 500px; }
+  height: 400px; }
+  @media only screen and (min-width: 1024px) {
+    .old .c-ratiometer_container {
+      height: 525px; } }
 
 .old .c-ratiometer {
   width: calc(100%);
@@ -2462,12 +2465,21 @@ Gallery
       left: 10rem; } }
   @media only screen and (min-width: 768px) {
     .old .c-rationmeter-text {
-      left: 13rem; } }
+      left: 13rem;
+      width: calc(70.83333%);
+      float: left;
+      margin-left: 0; } }
   @media only screen and (min-width: 1024px) {
     .old .c-rationmeter-text {
-      left: 19rem; } }
+      left: 19rem;
+      width: calc(75%);
+      float: left;
+      margin-left: 0; } }
   .old .c-rationmeter-text h1 {
     font-size: 25px; }
+    @media only screen and (min-width: 768px) {
+      .old .c-rationmeter-text h1 {
+        font-size: 38px; } }
     @media only screen and (min-width: 1024px) {
       .old .c-rationmeter-text h1 {
         font-size: 48px; } }
