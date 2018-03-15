@@ -3,9 +3,9 @@
     "title": "component: new FAQ",
     "fields": [
         {
-            "key": "field_5aa7427ad4f1b",
-            "label": "header",
-            "name": "header",
+            "key": "field_5aaa4d5b48dcd",
+            "label": "subheading",
+            "name": "subheading",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -20,25 +20,6 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
-        },
-        {
-            "key": "field_5aa7428dd4f1c",
-            "label": "body",
-            "name": "body",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
         },
         {
             "key": "field_5aa742e5d4f1d",
@@ -157,5 +138,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520911553
+    "modified": 1521110384
 }

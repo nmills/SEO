@@ -1,12 +1,11 @@
 <div class="container faq">
   <div class="c-accordion__wrapper">
-    <h3>{{component.header}}</h3>
-    <div>{{component.body}}</div>
+    <h3>{{component.subheading}}</h3>
     <ul class="c-accordion__filter">
       {% for category_set in component.category_repeater %}
         <li class="cat-js cat-{{loop.index}}">{{category_set.category_tag}}</li>
       {% endfor %}
-      <li class="cat-js cat-all">All</li>
+      <li class="cat-js cat-all active-selection">All</li>
     </ul>
 
     <ul class="c-accordion">
