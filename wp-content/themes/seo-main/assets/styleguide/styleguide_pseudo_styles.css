@@ -99,8 +99,20 @@
   border-bottom: 2px solid #050505;
 }
 
-.c-accordion li .toggle.pseudo-class-hover {
-  color: #eb0029;
+.c-accordion li .toggle.pseudo-class-hover span {
+  background: #eb0029;
+}
+
+.c-accordion li .toggle.pseudo-class-hover span:after {
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat;
+}
+
+.c-accordion li .toggle.pseudo-class-hover span h1 {
+  color: #ffffff;
+}
+
+.c-accordion li .toggle.pseudo-class-hover.active span:after {
+  transform: rotate(0deg);
 }
 
 .video-component .video.pseudo-class-hover .plyr--playing .plyr__play-large {
@@ -131,11 +143,6 @@
 .right.pseudo-class-hover,
 .right.pseudo-class-focus {
   background: url("/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat;
-}
-
-.c-hero_image .plyr .plyr__play-large.pseudo-class-hover,
-.c-hero_video .plyr .plyr__play-large.pseudo-class-hover {
-  background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg");
 }
 
 .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.pseudo-class-last-child {

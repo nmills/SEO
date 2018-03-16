@@ -284,3 +284,13 @@ Styleguide 1.5
     }
   }
 }
+
+// Image
+.c-rte, .c-rte__accordion {
+  img {
+    width: 100%;
+    height: 100%;
+    border-left: 10px solid #050505;
+    padding-left: 10px;
+  }
+}

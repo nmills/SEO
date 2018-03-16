@@ -1051,6 +1051,12 @@ Styleguide 1.5
     font-weight: 300;
     line-height: 1; }
 
+.c-rte img, .c-rte__accordion img {
+  width: 100%;
+  height: 100%;
+  border-left: 10px solid #050505;
+  padding-left: 10px; }
+
 /*
 Accodion
 
@@ -1119,7 +1125,10 @@ Styleguide 4.1
   margin: 0; }
   .c-accordion .answer {
     overflow: hidden;
-    display: none; }
+    display: none;
+    width: 80%; }
+    .c-accordion .answer p {
+      margin-top: 0; }
   .c-accordion .c-rte__accordion {
     font-size: initial;
     color: initial; }
@@ -1137,22 +1146,27 @@ Styleguide 4.1
       font-weight: 700;
       transition: all 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15);
       border-bottom: 1px solid #dbd7cc;
-      padding: 15px 0;
       position: relative; }
       @media only screen and (min-width: 768px) {
         .c-accordion li .toggle {
           font-size: 34.5px;
           line-height: 1.45; } }
-      .c-accordion li .toggle:hover {
-        color: #eb0029; }
-      .c-accordion li .toggle.active {
-        color: #eb0029; }
-        .c-accordion li .toggle.active span:after {
-          transform: rotate(90deg); }
+      .c-accordion li .toggle:hover span {
+        background: #eb0029; }
+        .c-accordion li .toggle:hover span:after {
+          background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat; }
+        .c-accordion li .toggle:hover span h1 {
+          color: #ffffff; }
+      .c-accordion li .toggle:hover.active span:after {
+        transform: rotate(0deg); }
+      .c-accordion li .toggle.active span:after {
+        transform: rotate(90deg); }
       .c-accordion li .toggle span {
         max-width: 100%;
         width: 100%;
-        display: block; }
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px; }
         .c-accordion li .toggle span:after {
           content: "";
           position: absolute;
@@ -1160,10 +1174,14 @@ Styleguide 4.1
           height: 30px;
           background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-close.svg") right center no-repeat;
           right: 0;
-          top: 0;
+          top: 17px;
           transition: all 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15); }
       .c-accordion li .toggle span.content-grid {
         cursor: pointer; }
+        .c-accordion li .toggle span.content-grid h1 {
+          margin: 0;
+          font-size: inherit;
+          width: 80%; }
 
 .c-accordion__filter {
   margin-bottom: 40px; }
@@ -2190,27 +2208,6 @@ Gallery
       .c-hero_video p {
         font-size: 43px;
         width: 60%; } }
-  .c-hero_image .plyr .plyr__play-large,
-  .c-hero_video .plyr .plyr__play-large {
-    background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat;
-    background-size: cover !important;
-    border: none;
-    width: 4em;
-    height: 4em;
-    position: absolute;
-    cursor: pointer;
-    top: unset;
-    left: unset;
-    bottom: 0;
-    right: 0; }
-    @media only screen and (min-width: 1024px) {
-      .c-hero_image .plyr .plyr__play-large,
-      .c-hero_video .plyr .plyr__play-large {
-        width: 7em;
-        height: 7em; } }
-    .c-hero_image .plyr .plyr__play-large:hover,
-    .c-hero_video .plyr .plyr__play-large:hover {
-      background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg"); }
 
 .c-hero_video {
   background: #050505; }
@@ -2237,7 +2234,14 @@ Gallery
           height: 811px; } }
       .c-hero_video .video .plyr.plyr--youtube.plyr--video .plyr__video-wrapper.plyr__video-embed {
         padding: 0;
-        position: static; }
+        position: static;
+        height: 212px; }
+        @media only screen and (min-width: 768px) {
+          .c-hero_video .video .plyr.plyr--youtube.plyr--video .plyr__video-wrapper.plyr__video-embed {
+            height: 411px; } }
+        @media only screen and (min-width: 1024px) {
+          .c-hero_video .video .plyr.plyr--youtube.plyr--video .plyr__video-wrapper.plyr__video-embed {
+            height: 811px; } }
 
 .c-tout_container {
   margin: auto;

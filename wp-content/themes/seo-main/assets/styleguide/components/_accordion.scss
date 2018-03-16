@@ -69,6 +69,11 @@ Styleguide 4.1
   .answer {
     overflow: hidden;
     display: none;
+    width: 80%;
+
+    p {
+      margin-top: 0;
+    }
   }
 
   .c-rte__accordion {
@@ -98,16 +103,33 @@ Styleguide 4.1
       // background: $white;
       transition: all 0.3s $cubic-transition;
       border-bottom: 1px solid #dbd7cc;
-      padding: 15px 0;
+
+      // padding-bottom: 15px;
       position: relative;
 
       &:hover {
-        color: $red;
+        span {
+          background: $red;
+
+          &:after {
+            background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat;
+          }
+
+          h1 {
+            color: $white;
+          }
+        }
+
+        &.active {
+          span {
+            &:after {
+              transform: rotate(0deg);
+            }
+          }
+        }
       }
 
       &.active {
-        color: $red;
-
         span {
           &:after {
             transform: rotate(90deg);
@@ -119,6 +141,8 @@ Styleguide 4.1
         max-width: 100%;
         width: 100%;
         display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
 
         &:after {
           content: "";
@@ -126,14 +150,20 @@ Styleguide 4.1
           width: 30px;
           height: 30px;
           background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-close.svg") right center no-repeat;
-          right:0;
-          top: 0;
+          right: 0;
+          top: 17px;
           transition: all 0.3s $cubic-transition;
         }
       }
 
       span.content-grid {
         cursor: pointer;
+
+        h1 {
+          margin: 0;
+          font-size: inherit;
+          width: 80%;
+        }
       }
     }
   }
