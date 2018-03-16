@@ -70,6 +70,7 @@ Styleguide 4.1
     overflow: hidden;
     display: none;
     width: 80%;
+    padding: 0 15px;
 
     p {
       margin-top: 0;
@@ -143,6 +144,7 @@ Styleguide 4.1
         display: block;
         padding-top: 15px;
         padding-bottom: 15px;
+        padding: 15px;
 
         &:after {
           content: "";
@@ -150,7 +152,7 @@ Styleguide 4.1
           width: 30px;
           height: 30px;
           background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-close.svg") right center no-repeat;
-          right: 0;
+          right: 15px;
           top: 17px;
           transition: all 0.3s $cubic-transition;
         }

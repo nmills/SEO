@@ -1126,7 +1126,8 @@ Styleguide 4.1
   .c-accordion .answer {
     overflow: hidden;
     display: none;
-    width: 80%; }
+    width: 80%;
+    padding: 0 15px; }
     .c-accordion .answer p {
       margin-top: 0; }
   .c-accordion .c-rte__accordion {
@@ -1166,14 +1167,15 @@ Styleguide 4.1
         width: 100%;
         display: block;
         padding-top: 15px;
-        padding-bottom: 15px; }
+        padding-bottom: 15px;
+        padding: 15px; }
         .c-accordion li .toggle span:after {
           content: "";
           position: absolute;
           width: 30px;
           height: 30px;
           background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-close.svg") right center no-repeat;
-          right: 0;
+          right: 15px;
           top: 17px;
           transition: all 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15); }
       .c-accordion li .toggle span.content-grid {
