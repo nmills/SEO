@@ -99,8 +99,20 @@
   border-bottom: 2px solid #050505;
 }
 
-.c-accordion li .toggle.pseudo-class-hover {
-  color: #eb0029;
+.c-accordion li .toggle.pseudo-class-hover span {
+  background: #eb0029;
+}
+
+.c-accordion li .toggle.pseudo-class-hover span:after {
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat;
+}
+
+.c-accordion li .toggle.pseudo-class-hover span h1 {
+  color: #ffffff;
+}
+
+.c-accordion li .toggle.pseudo-class-hover.active span:after {
+  transform: rotate(0deg);
 }
 
 .video-component .video.pseudo-class-hover .plyr--playing .plyr__play-large {
