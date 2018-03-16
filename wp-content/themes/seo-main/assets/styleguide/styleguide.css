@@ -2605,6 +2605,8 @@ body {
             margin-left: 0;
             margin: auto;
             float: left; } }
+      .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item .c-sequence_item-content {
+        width: 70%; }
       .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item:before {
         counter-increment: section;
         content: counter(section);
@@ -2612,7 +2614,9 @@ body {
         top: 0;
         left: 0;
         color: #820d1b;
-        font-weight: 700; }
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1; }
       .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item h2 {
         font-weight: 300;
         margin: 0;

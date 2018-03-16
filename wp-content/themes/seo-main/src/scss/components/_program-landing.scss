@@ -519,6 +519,7 @@ body {
       @include grid-media($md) {
         margin-bottom: 0;
       }
+
       &.items-1 {
         @include grid-column(12, $no-gutter);
 
@@ -561,6 +562,10 @@ body {
           float: left;
         }
       }
+      
+      .c-sequence_item-content {
+        width: 70%;
+      }
 
       &:before {
         counter-increment: section;
@@ -570,6 +575,8 @@ body {
         left: 0;
         color: $maroon;
         font-weight: $font-bold;
+        font-size: 28px;
+        line-height: 1;
       }
 
       h2 {
