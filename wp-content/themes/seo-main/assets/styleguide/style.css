@@ -2997,8 +2997,7 @@ body {
       width: 40%; } }
 
 .c-gallery__container.image-large .item__heading {
-  margin-top: 20px;
-  margin-bottom: 15px; }
+  margin-top: 20px; }
   @media only screen and (min-width: 768px) {
     .c-gallery__container.image-large .item__heading {
       margin-top: 0; } }
@@ -3018,7 +3017,7 @@ body {
 .c-gallery__container.image-large .item__sub-heading:after {
   content: " ";
   display: block;
-  border-bottom: 1px solid #e5e7e7;
+  border-bottom: 2px solid #e5e7e7;
   width: 75px;
   margin-top: 30px;
   margin-bottom: 15px; }

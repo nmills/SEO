@@ -427,7 +427,6 @@
 
     .item__heading {
       margin-top: 20px;
-      margin-bottom: 15px;
 
       @include grid-media($md) {
         margin-top: 0;
@@ -455,7 +454,7 @@
       &:after {
         content: " ";
         display: block;
-        border-bottom: 1px solid $light-gray;
+        border-bottom: 2px solid $light-gray;
         width: 75px;
         margin-top: 30px;
         margin-bottom: 15px;
