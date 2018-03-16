@@ -618,7 +618,7 @@ body {
     }
 
     a {
-      padding: 10px;
+      padding: 20px;
       font-size: 22px;
 
       @include grid-media($lg) {
@@ -631,7 +631,7 @@ body {
 .c-program_cta__container {
   
   @include grid-media($md) {
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
   }
 
@@ -644,14 +644,14 @@ body {
       @include grid-column(5, $no-gutter);
 
       float: right;
-      margin-left: 2%;
+      // margin-left: 2%;
     }
   }
 
   .c-program-title {
     h1 {
       margin: 0;
-      margin-bottom: 30px; 
+      // margin-bottom: 30px; 
       font-size: 32px;
 
       @include grid-media($md) {

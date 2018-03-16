@@ -2646,7 +2646,7 @@ body {
         text-align: center;
         margin-bottom: 50px; } }
     .c-sequence__sequeutal-container .c-sequence__cta_button a {
-      padding: 10px;
+      padding: 20px;
       font-size: 22px; }
       @media only screen and (min-width: 1024px) {
         .c-sequence__sequeutal-container .c-sequence__cta_button a {
@@ -2654,7 +2654,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .c-program_cta__container {
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto; } }
 
 .c-program_cta__container .c-program-title,
@@ -2670,12 +2670,10 @@ body {
       width: calc(41.66667%);
       float: left;
       margin-left: 0;
-      float: right;
-      margin-left: 2%; } }
+      float: right; } }
 
 .c-program_cta__container .c-program-title h1 {
   margin: 0;
-  margin-bottom: 30px;
   font-size: 32px; }
   @media only screen and (min-width: 768px) {
     .c-program_cta__container .c-program-title h1 {
