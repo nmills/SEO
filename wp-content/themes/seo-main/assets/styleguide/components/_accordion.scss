@@ -112,7 +112,7 @@ Styleguide 4.1
           background: $red;
 
           &:after {
-            background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat;
+            background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat;
           }
 
           h1 {
@@ -149,7 +149,7 @@ Styleguide 4.1
           position: absolute;
           width: 30px;
           height: 30px;
-          background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-close.svg") right center no-repeat;
+          background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-close.svg") right center no-repeat;
           right: 0;
           top: 17px;
           transition: all 0.3s $cubic-transition;
