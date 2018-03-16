@@ -104,7 +104,7 @@
 }
 
 .c-accordion li .toggle.pseudo-class-hover span:after {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat;
 }
 
 .c-accordion li .toggle.pseudo-class-hover span h1 {

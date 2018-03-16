@@ -1154,7 +1154,7 @@ Styleguide 4.1
       .c-accordion li .toggle:hover span {
         background: #eb0029; }
         .c-accordion li .toggle:hover span:after {
-          background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat; }
+          background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat; }
         .c-accordion li .toggle:hover span h1 {
           color: #ffffff; }
       .c-accordion li .toggle:hover.active span:after {
@@ -1172,7 +1172,7 @@ Styleguide 4.1
           position: absolute;
           width: 30px;
           height: 30px;
-          background: url("/seo/wp-content/themes/seo-main/assets/img/icons/carat-accordion-close.svg") right center no-repeat;
+          background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-close.svg") right center no-repeat;
           right: 0;
           top: 17px;
           transition: all 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15); }
