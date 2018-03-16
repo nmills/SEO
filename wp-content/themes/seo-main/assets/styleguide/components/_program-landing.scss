@@ -63,32 +63,32 @@
     }
   }
 
-  .plyr .plyr__play-large {
-    background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat;
-    background-size: cover !important;
-    border: none;
-    width: 4em;
-    height: 4em;
-    position: absolute;
-    // bottom: 5%;
-    // right: 5%;
-    cursor: pointer;
+  // .plyr .plyr__play-large {
+  //   background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat !important;
+  //   background-size: cover !important;
+  //   border: none;
+  //   width: 4em;
+  //   height: 4em;
+  //   position: absolute;
+  //   // bottom: 5%;
+  //   // right: 5%;
+  //   cursor: pointer;
 
-        top: unset;
-    left: unset;
-    bottom: 0;
-    right: 0;
+  //       top: unset;
+  //   left: unset;
+  //   bottom: 0;
+  //   right: 0;
 
-    @include grid-media($lg) {
-      width: 7em;
-      height: 7em;
-    }
+  //   @include grid-media($lg) {
+  //     width: 7em;
+  //     height: 7em;
+  //   }
 
 
-    &:hover {
-      background: url("/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg");
-    }
-  }
+  //   &:hover {
+  //     background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg") !important;
+  //   }
+  // }
 }
 
 .c-hero_video {
@@ -123,6 +123,15 @@
       .plyr__video-wrapper.plyr__video-embed {
         padding: 0;
         position: static;
+        height: 212px;
+    
+      @include grid-media($md) {
+        height: 411px;
+      }
+
+      @include grid-media($lg) {
+        height: 811px;
+      }
       }
     }
   }
@@ -510,6 +519,7 @@ body {
       @include grid-media($md) {
         margin-bottom: 0;
       }
+
       &.items-1 {
         @include grid-column(12, $no-gutter);
 
@@ -552,6 +562,10 @@ body {
           float: left;
         }
       }
+      
+      .c-sequence_item-content {
+        width: 70%;
+      }
 
       &:before {
         counter-increment: section;
@@ -561,6 +575,8 @@ body {
         left: 0;
         color: $maroon;
         font-weight: $font-bold;
+        font-size: 28px;
+        line-height: 1;
       }
 
       h2 {
@@ -602,7 +618,7 @@ body {
     }
 
     a {
-      padding: 10px;
+      padding: 20px;
       font-size: 22px;
 
       @include grid-media($lg) {
@@ -615,7 +631,7 @@ body {
 .c-program_cta__container {
   
   @include grid-media($md) {
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
   }
 
@@ -628,14 +644,14 @@ body {
       @include grid-column(5, $no-gutter);
 
       float: right;
-      margin-left: 2%;
+      // margin-left: 2%;
     }
   }
 
   .c-program-title {
     h1 {
       margin: 0;
-      margin-bottom: 30px; 
+      // margin-bottom: 30px; 
       font-size: 32px;
 
       @include grid-media($md) {
