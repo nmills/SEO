@@ -2848,7 +2848,7 @@ body {
       width: 279px; } }
   @media only screen and (min-width: 768px) {
     .c-gallery__container.image-small .c-gallery__gallery-item {
-      width: 314px;
+      width: 335px;
       margin-bottom: 45px; } }
   .c-gallery__container.image-small .c-gallery__gallery-item img {
     width: 130px;
@@ -3019,7 +3019,9 @@ body {
   content: " ";
   display: block;
   border-bottom: 1px solid #e5e7e7;
-  width: 75px; }
+  width: 75px;
+  margin-top: 30px;
+  margin-bottom: 15px; }
   @media only screen and (min-width: 1024px) {
     .c-gallery__container.image-large .item__sub-heading:after {
       width: 110px; } }
