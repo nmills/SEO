@@ -2749,13 +2749,17 @@ body {
   .gallery-page .page-title h1 {
     margin: 0;
     font-size: 42px;
+    padding: 0 35px;
     margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 61px;
-    margin-top: 100px;
-    margin-bottom: 45px; }
+    margin-bottom: 30px; }
     .gallery-page .page-title h1:before {
       content: none; }
+    @media only screen and (min-width: 1024px) {
+      .gallery-page .page-title h1 {
+        padding: 0 35px;
+        font-size: 61px;
+        margin-top: 100px;
+        margin-bottom: 45px; } }
 
 .gallery-page .container.gallery-large-image-container {
   padding: 0; }
