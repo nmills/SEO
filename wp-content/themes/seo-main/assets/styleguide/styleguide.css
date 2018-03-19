@@ -2687,10 +2687,12 @@ body {
 
 .c-program_cta__container .c-program-title h1 {
   margin: 0;
+  margin-bottom: 30px;
   font-size: 32px; }
   @media only screen and (min-width: 768px) {
     .c-program_cta__container .c-program-title h1 {
-      font-size: 42px; } }
+      font-size: 42px;
+      margin: 0; } }
 
 .c-program_cta__container .c-program-description p {
   font-size: 23px; }
