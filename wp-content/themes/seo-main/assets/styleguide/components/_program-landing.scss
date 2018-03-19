@@ -27,81 +27,17 @@
   }
 }
 
-.c-hero_image,
-.c-hero_video {
-  @include grid-column(12, $no-gutter);
-
-  height: 212px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-
-  @include grid-media($md) {
-    height: 411px;
-  }
-
-  @include grid-media($lg) {
-    height: 811px;
-  }
-
-
-  p {
-    margin: 0;
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    color: white;
-    font-size: 24px;
-    width: 80%;
-    line-height: 1;
-    font-weight: $font-thinnest;
-
-    @include grid-media($lg) {
-      font-size: 43px;
-      width: 60%;
-    }
-  }
-
-  // .plyr .plyr__play-large {
-  //   background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat !important;
-  //   background-size: cover !important;
-  //   border: none;
-  //   width: 4em;
-  //   height: 4em;
-  //   position: absolute;
-  //   // bottom: 5%;
-  //   // right: 5%;
-  //   cursor: pointer;
-
-  //       top: unset;
-  //   left: unset;
-  //   bottom: 0;
-  //   right: 0;
-
-  //   @include grid-media($lg) {
-  //     width: 7em;
-  //     height: 7em;
-  //   }
-
-
-  //   &:hover {
-  //     background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg") !important;
-  //   }
-  // }
-}
-
-.c-hero_video {
-  background: $black;
-
-  iframe {
+.hero-section {
+  padding: 0;
+  .c-hero_image,
+  .c-hero_video {
     @include grid-column(12, $no-gutter);
 
-    height: 100%;
-  }
-
-  .video {
     height: 212px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 
     @include grid-media($md) {
       height: 411px;
@@ -110,9 +46,65 @@
     @include grid-media($lg) {
       height: 811px;
     }
-    .plyr.plyr--youtube.plyr--video {
+
+
+    p {
+      margin: 0;
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+      color: white;
+      font-size: 24px;
+      width: 80%;
+      line-height: 1;
+      font-weight: $font-thinnest;
+
+      @include grid-media($lg) {
+        font-size: 43px;
+        width: 60%;
+      }
+    }
+
+    // .plyr .plyr__play-large {
+    //   background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg") transparent left center no-repeat !important;
+    //   background-size: cover !important;
+    //   border: none;
+    //   width: 4em;
+    //   height: 4em;
+    //   position: absolute;
+    //   // bottom: 5%;
+    //   // right: 5%;
+    //   cursor: pointer;
+
+    //       top: unset;
+    //   left: unset;
+    //   bottom: 0;
+    //   right: 0;
+
+    //   @include grid-media($lg) {
+    //     width: 7em;
+    //     height: 7em;
+    //   }
+
+
+    //   &:hover {
+    //     background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg") !important;
+    //   }
+    // }
+  }
+
+  .c-hero_video {
+    background: $black;
+
+    iframe {
+      @include grid-column(12, $no-gutter);
+
+      height: 100%;
+    }
+
+    .video {
       height: 212px;
-    
+
       @include grid-media($md) {
         height: 411px;
       }
@@ -120,143 +112,164 @@
       @include grid-media($lg) {
         height: 811px;
       }
-      .plyr__video-wrapper.plyr__video-embed {
-        padding: 0;
-        position: static;
+      .plyr.plyr--youtube.plyr--video {
         height: 212px;
-    
-      @include grid-media($md) {
-        height: 411px;
-      }
+      
+        @include grid-media($md) {
+          height: 411px;
+        }
 
-      @include grid-media($lg) {
-        height: 811px;
-      }
+        @include grid-media($lg) {
+          height: 811px;
+        }
+        .plyr__video-wrapper.plyr__video-embed {
+          padding: 0;
+          position: static;
+          height: 212px;
+      
+        @include grid-media($md) {
+          height: 411px;
+        }
+
+        @include grid-media($lg) {
+          height: 811px;
+        }
+        }
       }
     }
   }
 }
 
-.c-tout_container {
-  margin: auto;
-  position: relative;
-  height: auto;
-  max-width: 350px;
 
-  @include grid-media($md) {
-    height: 560px;
-    max-width: 750px;
+.tout-section {
+
+  @include grid-media($max-md) {
+    padding: 0;
   }
 
-  @include grid-media($lg) {
-    height: 630px;
-    max-width: 1027px;
-  }
-
-  .c-tout_item {
-    @include grid-column(12, $no-gutter);
-
-    margin-bottom: 40px;
-
-    .c-tout_text {
-      @include grid-column(4, $no-gutter);
-      margin-left: 20px;
-      margin-top: 20px;
-
-      @include grid-media($md) {
-        margin-top: 0;
-      }
-
-      p {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 20px;
-        line-height: 1;
-
-        @include grid-media($lg) {
-          font-size: 30px;
-          margin-bottom: 20px;
-        }
-      }
-
-      a {
-        font-size: 14px;
-
-        @include grid-media($lg) {
-          font-size: 18px;
-        }
-      }
-    }
+  .c-tout_container {
+    margin: auto;
+    position: relative;
+    height: auto;
+    max-width: 350px;
 
     @include grid-media($md) {
-      @include grid-column(6.5, $no-gutter);
-
-      position: absolute;
-      margin-bottom: 0;
-
-      .c-tout_text {
-        @include grid-column(7, $no-gutter);
-        margin: 0;
-        margin-top: 20px;
-      }
+      height: 560px;
+      max-width: 750px;
     }
 
-
-    .c-tout_image {
-
-      @include grid-column(7, $no-gutter);
-      
-      height: 129px;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
-
-      @include grid-media($md) {
-        @include grid-column(12, $no-gutter);
-
-        width: 390px;
-        height: 349px;
-      } 
-
-      @include grid-media($lg) {
-        width: 541px;
-        height: 349px;
-      }
+    @include grid-media($lg) {
+      height: 630px;
+      max-width: 1027px;
     }
 
-    &.item-left {
-      top: 0;
-      left: 0;
-      height: auto;
-    }
+    .c-tout_item {
+      @include grid-column(12, $no-gutter);
 
-    &.item-right {
-      bottom: 0;
-      right: 0;
-      height: auto;
-
-      @include grid-media($lg) {
-        padding-left:15px;
-      }
+      margin-bottom: 40px;
 
       .c-tout_text {
-        margin-right: 20px;
-      }
-
-      .c-tout_text {
-        margin: 0;
+        @include grid-column(5, $no-gutter);
+        // margin-left: 20px;
+        // margin-top: 20px;
+        padding: 20px;
+        padding-top: 0;
 
         @include grid-media($md) {
+          padding: 0;
+        }
+
+        p {
+          margin: 0;
+          margin-bottom: 10px;
+          font-size: 20px;
+          line-height: 1;
+
+          @include grid-media($lg) {
+            font-size: 30px;
+            margin-bottom: 20px;
+          }
+        }
+
+        a {
+          font-size: 14px;
+
+          @include grid-media($lg) {
+            font-size: 18px;
+          }
+        }
+      }
+
+      @include grid-media($md) {
+        @include grid-column(6.5, $no-gutter);
+
+        position: absolute;
+        margin-bottom: 0;
+
+        .c-tout_text {
+          @include grid-column(7, $no-gutter);
+          margin: 0;
           margin-top: 20px;
         }
       }
-    
+
+
       .c-tout_image {
-        float: right;
+
+        @include grid-column(7, $no-gutter);
+        
+        height: 129px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
 
         @include grid-media($md) {
-          float: left;
+          @include grid-column(12, $no-gutter);
+
+          width: 390px;
+          height: 349px;
+        } 
+
+        @include grid-media($lg) {
+          width: 541px;
+          height: 349px;
+        }
+      }
+
+      &.item-left {
+        top: 0;
+        left: 0;
+        height: auto;
+      }
+
+      &.item-right {
+        bottom: 0;
+        right: 0;
+        height: auto;
+
+        @include grid-media($lg) {
+          padding-left:15px;
+        }
+
+        .c-tout_text {
+          margin-right: 20px;
+        }
+
+        .c-tout_text {
+          margin: 0;
+
+          @include grid-media($md) {
+            margin-top: 20px;
+          }
+        }
+      
+        .c-tout_image {
+          float: right;
+
+          @include grid-media($md) {
+            float: left;
+          }
         }
       }
     }
@@ -609,12 +622,14 @@ body {
     margin: 0 auto;
     display: inline-block;
     margin-top: 50px;
+    margin-left: 20px;
     text-align: left;
 
     @include grid-media($md) {
-      margin-top: 120px;
       text-align: center;
+      margin-top: 120px;
       margin-bottom: 50px;
+      margin-left: 0;
     }
 
     a {
