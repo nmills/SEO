@@ -5,6 +5,11 @@
     @include grid-media($max-md) {
       border-bottom: 1px solid $light-gray;
     }
+
+
+    .container {
+      padding: 0 35px;
+    }
   }
 
   .page-title {
@@ -37,6 +42,24 @@
 
       //   }
    
+    }
+  }
+
+  .container.gallery-large-image-container {
+    padding: 0;
+
+    .c-gallery__gallery-item .item__image {
+      @include grid-media($max-md) {
+        max-width: 85%;
+      }
+    }
+
+    .c-gallery__section-header,
+    .c-gallery__gallery-item .item__heading,
+    .c-gallery__gallery-item .item__sub-heading,
+    .c-gallery__gallery-item .item__description {
+      @include grid-media($max-md) {
+            padding: 0 35px;}
     }
   }
 }
@@ -191,8 +214,9 @@
 
   &.image-small {
     .c-gallery__gallery-item {
-      // @include grid-column(12, $no-gutter);
-      width: 279px;
+      @include grid-column(12, $no-gutter);
+
+      // width: 279px;
       display: inline-block;
       position: relative;
       margin-bottom: 35px;
@@ -211,12 +235,17 @@
 
 
       img {
-        width: 130px;
-        height: 130px;
+        width: 45%;
+        height: 45%;
         float: left;
         transition: filter .5s ease-in-out;
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
+
+        @include grid-media($sm) {
+          width: 130px;
+          height: 130px;
+        }
       }
 
       &:hover {
@@ -229,12 +258,12 @@
       .item__heading,
       .item__sub-heading,
       .item__link {
-        float: right;
-        width: 45%;
+        float: left;
+        margin-left: 15px;
+        width: 35%;
 
         @include grid-media($md) {
-          float: left;
-          margin-left: 15px;
+          // float: left;
         }
       }
 
@@ -271,8 +300,9 @@
 
   &.image-medium {
     .c-gallery__gallery-item {
-      // @include grid-column(12, $no-gutter);
-      width: 279px;
+      @include grid-column(12, $no-gutter);
+
+      // width: 279px;
 
       // height: 279px;
       display: inline-block;
