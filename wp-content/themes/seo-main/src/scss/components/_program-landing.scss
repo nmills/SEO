@@ -666,11 +666,12 @@ body {
   .c-program-title {
     h1 {
       margin: 0;
-      // margin-bottom: 30px; 
+      margin-bottom: 30px; 
       font-size: 32px;
 
       @include grid-media($md) {
         font-size: 42px;
+        margin: 0;
       }
     }
   }
