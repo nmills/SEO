@@ -75,6 +75,10 @@ Styleguide 4.1
     p {
       margin-top: 0;
     }
+
+    img {
+    	margin: 35px 0;
+    }
   }
 
   .c-rte__accordion {
@@ -144,7 +148,7 @@ Styleguide 4.1
         display: block;
         padding-top: 15px;
         padding-bottom: 15px;
-        padding: 15px;
+        padding: 25px 15px;
 
         &:after {
           content: "";
@@ -181,6 +185,10 @@ Styleguide 4.1
     color: $black;
     margin-right: 30px;
     cursor: pointer;
+
+    &:hover {
+      color: $red;
+    }
 
     &.active-selection {
       font-weight: 100;
