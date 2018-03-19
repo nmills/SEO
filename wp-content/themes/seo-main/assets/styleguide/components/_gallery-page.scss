@@ -59,7 +59,8 @@
     .c-gallery__gallery-item .item__sub-heading,
     .c-gallery__gallery-item .item__description {
       @include grid-media($max-md) {
-            padding: 0 35px;}
+        padding: 0 35px;
+      }
     }
   }
 }
