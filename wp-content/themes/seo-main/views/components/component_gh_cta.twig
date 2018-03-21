@@ -1,8 +1,28 @@
-{# {% if component.hero_type == 'image' %}
-	<img src="{{Image(component.image).src }}" />
-{% elseif component.hero_type == 'video' %}
-	<video controls loop muted autoplay>
-  	<source src="{{component.video.url}}" type="video/mp4">
-	</video>
-{% endif %}
-{{component.text}} #}
+<section>
+  <div class="container">
+    <div class="c-program_cta__container">
+			<div class="c-program-title">
+        <h1>{{component.heading}}</h1>
+      </div>
+    	{% if component.cta_type == 'image' %}
+				<div class="c-program-image" style="background-image: url('{{Image(component.image).src }}')"></div>
+			{% elseif component.cta_type == 'video' %}
+	      <div class="c-program-video">
+          <div class="video">
+						<iframe id="ytplayer" type="text/html" src="{{component.link|replace({'watch?v=':'embed/'})}}" frameborder="0"></iframe>
+					</div>
+	      </div>
+			{% endif %}
+      <div class="c-program-description">
+        <p>{{component.body}}</p>
+      </div>
+      <ul class="c-program-links">
+      	{% for link in component.links %}
+          <li>
+  	        <a href="{{link.destination_url}}" class="c-rte__link">{{link.text}}</a>
+          </li>
+				{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

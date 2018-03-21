@@ -1,8 +1,8 @@
-{# {% if component.hero_type == 'image' %}
+{% if component.hero_type == 'image' %}
 	<img src="{{Image(component.image).src }}" />
 {% elseif component.hero_type == 'video' %}
 	<video controls loop muted autoplay>
   	<source src="{{component.video.url}}" type="video/mp4">
 	</video>
 {% endif %}
-{{component.text}} #}
+{{component.hero_text}}

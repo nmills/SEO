@@ -8,7 +8,12 @@
       {% set component = post.get_field('hero') %}
       {% include ['components/component_gh_hero.twig'] %}
 
-      
+      {% set component = post.get_field('intro') %}
+      {% include ['components/component_gh_intro.twig'] %}
+
+      {% set component = post.get_field('program_list') %}
+    	{% include ['components/component_gh_program_list.twig'] %}
+
       {% for component in post.get_field('flexi_content') %}
         {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
       {% endfor %}

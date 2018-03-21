@@ -9,9 +9,8 @@
 			{% elseif component.cta_type == 'video' %}
 	      <div class="c-program-video">
           <div class="video">
-            <div data-type="youtube" data-video-id="{{component.link}}"></div>
+            <iframe id="ytplayer" type="text/html" src="{{component.link|replace({'watch?v=':'embed/'})}}" frameborder="0"></iframe>
           </div>
-	        {# <iframe src="{{component.link}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> #}
 	      </div>
 			{% endif %}
       <div class="c-program-description">

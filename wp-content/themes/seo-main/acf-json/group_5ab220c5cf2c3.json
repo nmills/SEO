@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_5ab220c624d1a",
-            "label": "text",
-            "name": "text",
+            "label": "intro text",
+            "name": "intro_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -54,5 +54,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521623309
+    "modified": 1521633844
 }
