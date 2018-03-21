@@ -1,0 +1,13 @@
+{# <img src="{{Image(component.image).src }}" />
+{{component.text}} #}
+
+{{component.heading}}
+{{component.intro_text}}
+
+{% for repeater in component.repeater %}
+	<img src="{{Image(repeater.image).src }}" />
+{% endfor %}
+
+{{component.closing_line}}
+
+<a href="{{component.closing_link.url}}">{{component.closing_link.title}}</a>

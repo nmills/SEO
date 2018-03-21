@@ -1,0 +1,5 @@
+{% for repeater in component.repeater %}
+	<img src="{{Image(repeater.image).src }}" />
+	{{repeater.title}}
+	{{repeater.text_blurb}}
+{% endfor %}
