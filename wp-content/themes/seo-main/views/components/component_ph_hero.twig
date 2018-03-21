@@ -1,8 +1,19 @@
-{% if component.hero_type == 'image' %}
-	<img src="{{Image(component.image).src }}" />
-{% elseif component.hero_type == 'video' %}
-	<video controls loop muted autoplay>
-  	<source src="{{component.video.url}}" type="video/mp4">
-	</video>
-{% endif %}
-{{component.text}}
+<section>
+  <div class="container">
+    <div class="c-ph-hero__container">
+      <div class="c-ph-hero__content">
+      	{% if component.hero_type == 'image' %}
+	        <div class="container c-hero_image c-hero_image--large_text" style="background-image: url({{Image(component.image).src }})">
+  	      </div>
+				{% elseif component.hero_type == 'video' %}
+					<div class="container c-hero_image c-hero_image--large_text">
+						<video controls loop muted autoplay>
+						  <source src="{{component.video.url}}" type="video/mp4">
+						</video>
+        	</div>
+				{% endif %}
+        <h1>{{component.text}}</h1>
+      </div>
+    </div>
+  </div>
+</section>
