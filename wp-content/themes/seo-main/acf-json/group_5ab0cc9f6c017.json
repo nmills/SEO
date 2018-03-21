@@ -132,14 +132,14 @@
                 },
                 "5ab2169173557": {
                     "key": "5ab2169173557",
-                    "name": "component_ph_stat",
-                    "label": "component: PH stat",
+                    "name": "component_ph_stats",
+                    "label": "component: PH stats",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5ab216be73558",
-                            "label": "component: PH stat",
-                            "name": "component_ph_stat",
+                            "label": "component: PH stats",
+                            "name": "component_ph_stats",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -184,5 +184,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1521620708
+    "modified": 1521621447
 }
