@@ -1,13 +1,23 @@
-{# <img src="{{Image(component.image).src }}" />
-{{component.text}} #}
-
-{{component.heading}}
-{{component.intro_text}}
-
-{% for repeater in component.repeater %}
-	<img src="{{Image(repeater.image).src }}" />
-{% endfor %}
-
-{{component.closing_line}}
-
-<a href="{{component.closing_link.url}}">{{component.closing_link.title}}</a>
+<section>
+  <div class="container">
+    <div class="c-ph-gallery__header">
+      <h1>{{component.heading}}</h1>
+    </div>
+    <div class="c-ph-gallery__description">
+      <p>{{component.intro_text}}</p>
+    </div>
+    <div class="c-ph-gallery__container image-only">
+      {% for repeater in component.repeater %}
+      <div class="c-ph-gallery__gallery-item">
+        <img src="{{Image(repeater.image).src }}" />
+      </div>
+      {% endfor %}
+    </div>
+    <div class="c-ph-gallery__last-text">
+      <p>{{component.closing_line}}</p>
+    </div>
+    <div class="c-ph-gallery__last-link">
+      <a href="{{component.closing_link.url}}" class="c-rte__link">{{component.closing_link.title}}</a>
+    </div>
+  </div>
+</section>
