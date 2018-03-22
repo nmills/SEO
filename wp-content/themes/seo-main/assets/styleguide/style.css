@@ -3223,6 +3223,150 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
+  .c-ph-gallery__container .c-ph-gallery__last-text,
+  .c-ph-gallery__container .c-ph-gallery__last-link {
+    width: calc(100%);
+    float: left;
+    margin-left: 0; }
+    .c-ph-gallery__container .c-ph-gallery__last-text p,
+    .c-ph-gallery__container .c-ph-gallery__last-link p {
+      margin: 0; }
+
+.c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-ratiometer-meter_out .c-rationmeter-meter {
+  width: 9rem;
+  height: 9rem; }
+  @media only screen and (min-width: 768px) {
+    .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-ratiometer-meter_out .c-rationmeter-meter {
+      width: 15rem;
+      height: 15rem; } }
+
+.c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text {
+  left: 9rem;
+  width: 40%;
+  -webkit-transform: translateY(25%);
+  transform: translateY(25%); }
+  @media only screen and (min-width: 768px) {
+    .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text {
+      left: 15rem;
+      width: 30%;
+      -webkit-transform: translateY(10%);
+      transform: translateY(10%); } }
+  .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text h1 {
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1;
+    margin: 0;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text h1 {
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #050505;
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 1; } }
+  .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text p {
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text p {
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #050505;
+        font-weight: 100;
+        font-size: 30px;
+        line-height: 1; } }
+
+.c-ph-stats__container .c-ph-stats-border__container {
+  background: #e5e7e7;
+  height: 450px;
+  position: relative; }
+  .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details {
+    width: 160px;
+    margin: auto;
+    text-align: center;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -65%); }
+    @media only screen and (min-width: 768px) {
+      .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details {
+        width: 320px;
+        transform: translate(-50%, -65%); } }
+    .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details:after {
+      content: "";
+      position: absolute;
+      background: none;
+      width: 45%;
+      height: calc(100% - 30px);
+      top: 60px;
+      right: -40px;
+      border-right: 7px solid #7cb4f6;
+      border-bottom: 7px solid #7cb4f6;
+      border-bottom-right-radius: 50px; }
+      @media only screen and (min-width: 768px) {
+        .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details:after {
+          width: 50%;
+          height: calc(100% - 63px);
+          top: 100px;
+          border-right: 10px solid #7cb4f6;
+          border-bottom: 10px solid #7cb4f6; } }
+    .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details h1 {
+      margin: 0;
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 1; }
+      @media only screen and (min-width: 768px) {
+        .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details h1 {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 700;
+          font-size: 100px;
+          line-height: 1; } }
+    .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details p {
+      margin-top: 0; }
+      @media only screen and (min-width: 768px) {
+        .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details p {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 100;
+          font-size: 30px;
+          line-height: 1; } }
+    .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details .c-ph-stats-border__top-value,
+    .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details .c-ph-stats-border__bottom-value {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: black;
+      color: white;
+      padding: 1%;
+      border-radius: 100px; }
+      .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details .c-ph-stats-border__top-value h3,
+      .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details .c-ph-stats-border__bottom-value h3 {
+        margin: 0;
+        color: white;
+        font-weight: 100;
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details .c-ph-stats-border__top-value {
+      top: 5px;
+      right: -60px; }
+      @media only screen and (min-width: 768px) {
+        .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details .c-ph-stats-border__top-value {
+          top: 40px; } }
+    .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details .c-ph-stats-border__bottom-value {
+      left: 40%; }
 
 /* Slider */
 .slick-slider {
