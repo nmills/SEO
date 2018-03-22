@@ -77,14 +77,14 @@ class BSDStarterSite extends TimberSite {
       }
       
       /* Adding video JS files */
-        wp_enqueue_script( 'video-player-js', get_template_directory_uri() . '/src/js/videoplayer/player.js', array( 'jquery' ), '0.0.3', true );
-        wp_enqueue_script( 'video-component-js', get_template_directory_uri() . '/src/js/videoplayer/videocomponent.js', array( 'jquery' ), '0.0.3', true );
-        wp_enqueue_script( 'rangetouch-js', get_template_directory_uri() . '/src/js/videoplayer/rangetouch.js', array( 'jquery' ), '0.0.3', true );
-        wp_enqueue_script( 'shareone-js', get_template_directory_uri() . '/src/js/videoplayer/shr.js', array( 'jquery' ), '0.0.3', true );
+        // wp_enqueue_script( 'video-player-js', get_template_directory_uri() . '/src/js/videoplayer/player.js', array( 'jquery' ), '0.0.3', true );
+        // wp_enqueue_script( 'video-component-js', get_template_directory_uri() . '/src/js/videoplayer/videocomponent.js', array( 'jquery' ), '0.0.3', true );
+        // wp_enqueue_script( 'rangetouch-js', get_template_directory_uri() . '/src/js/videoplayer/rangetouch.js', array( 'jquery' ), '0.0.3', true );
+        // wp_enqueue_script( 'shareone-js', get_template_directory_uri() . '/src/js/videoplayer/shr.js', array( 'jquery' ), '0.0.3', true );
         /* End of Video JS files */
         /* Adding Video Styles */
-        wp_enqueue_style( 'player-style', get_template_directory_uri() . '/src/css/player.css' );
-        wp_enqueue_style( 'video-component-style', get_template_directory_uri() . '/src/css/videocomponent.css' );
+        // wp_enqueue_style( 'player-style', get_template_directory_uri() . '/src/css/player.css' );
+        // wp_enqueue_style( 'video-component-style', get_template_directory_uri() . '/src/css/videocomponent.css' );
         /*End of Video Styles*/
       
       //Adding child style css and making sure that it loads after the parent css so that it can be overidden for smaller tweaks.

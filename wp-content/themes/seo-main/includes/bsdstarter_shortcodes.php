@@ -119,9 +119,12 @@ add_shortcode( 'iframe', 'bsdstarter_video' );
 
 
 function youtube_embed_func( $atts ){
+
+  $embedlink = str_replace('watch?v=', 'embed/', $atts['link']);
+
   $output = '';
   $output .= '<div class="video">';
-  $output .= '<div data-type="youtube" data-video-id="' . $atts['link'] .'"></div>';
+  $output .= ' <iframe id="ytplayer" type="text/html" width="640" height="360" src="' . $embedlink .'" frameborder="0"></iframe>';
   $output .= '<p class="caption">' . $atts['heading'] .'</p>';
   $output .= '</div>';
   return $output;
