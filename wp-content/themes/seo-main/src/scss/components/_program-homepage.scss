@@ -222,8 +222,37 @@
 
 .c-ph-stats__container {
   .old {
+    background: $light-gray;
+    height: 450px;
+    position: relative;
+
+    @include grid-column(12, $no-gutter);
+
+    @include grid-media($md) {
+      @include grid-column(6, $no-gutter);
+    }
+
+
     .c-ratiometer_container {
+      height: auto;
+      padding: 0;
+
       .c-ratiometer {
+        width: 160px;
+        margin: auto;
+        text-align: center;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include grid-media($md) {
+          width: 320px;
+          transform: none;
+        }
+
+
         .c-rationmeter-positioner {
           .c-ratiometer-meter_out {
             .c-rationmeter-meter {
@@ -282,6 +311,15 @@
     background: $light-gray;
     height: 450px;
     position: relative;
+
+    @include grid-column(12, $no-gutter);
+
+    @include grid-media($md) {
+      @include grid-column(6, $no-gutter);
+
+      float: right;
+    }
+
 
     .c-ph-stats-border__details {
       width: 160px;

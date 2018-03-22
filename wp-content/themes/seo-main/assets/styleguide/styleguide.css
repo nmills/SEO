@@ -3244,60 +3244,96 @@ body {
     .c-ph-gallery__container .c-ph-gallery__last-link p {
       margin: 0; }
 
-.c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-ratiometer-meter_out .c-rationmeter-meter {
-  width: 9rem;
-  height: 9rem; }
+.c-ph-stats__container .old {
+  background: #e5e7e7;
+  height: 450px;
+  position: relative;
+  width: calc(100%);
+  float: left;
+  margin-left: 0; }
   @media only screen and (min-width: 768px) {
-    .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-ratiometer-meter_out .c-rationmeter-meter {
-      width: 15rem;
-      height: 15rem; } }
-
-.c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text {
-  left: 9rem;
-  width: 40%;
-  -webkit-transform: translateY(25%);
-  transform: translateY(25%); }
-  @media only screen and (min-width: 768px) {
-    .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text {
-      left: 15rem;
-      width: 30%;
-      -webkit-transform: translateY(10%);
-      transform: translateY(10%); } }
-  .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text h1 {
-    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #050505;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 1;
-    margin: 0;
-    text-align: center; }
-    @media only screen and (min-width: 768px) {
-      .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text h1 {
-        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-        color: #050505;
-        font-weight: 700;
-        font-size: 100px;
-        line-height: 1; } }
-  .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text p {
-    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #050505;
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 1;
-    margin: 0;
-    text-align: center; }
-    @media only screen and (min-width: 768px) {
-      .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text p {
-        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-        color: #050505;
-        font-weight: 100;
-        font-size: 30px;
-        line-height: 1; } }
+    .c-ph-stats__container .old {
+      width: calc(50%);
+      float: left;
+      margin-left: 0; } }
+  .c-ph-stats__container .old .c-ratiometer_container {
+    height: auto;
+    padding: 0; }
+    .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer {
+      width: 160px;
+      margin: auto;
+      text-align: center;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      @media only screen and (min-width: 768px) {
+        .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer {
+          width: 320px;
+          transform: none; } }
+      .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-ratiometer-meter_out .c-rationmeter-meter {
+        width: 9rem;
+        height: 9rem; }
+        @media only screen and (min-width: 768px) {
+          .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-ratiometer-meter_out .c-rationmeter-meter {
+            width: 15rem;
+            height: 15rem; } }
+      .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text {
+        left: 9rem;
+        width: 40%;
+        -webkit-transform: translateY(25%);
+        transform: translateY(25%); }
+        @media only screen and (min-width: 768px) {
+          .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text {
+            left: 15rem;
+            width: 30%;
+            -webkit-transform: translateY(10%);
+            transform: translateY(10%); } }
+        .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text h1 {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 700;
+          font-size: 45px;
+          line-height: 1;
+          margin: 0;
+          text-align: center; }
+          @media only screen and (min-width: 768px) {
+            .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text h1 {
+              font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+              color: #050505;
+              font-weight: 700;
+              font-size: 100px;
+              line-height: 1; } }
+        .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text p {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 100;
+          font-size: 20px;
+          line-height: 1;
+          margin: 0;
+          text-align: center; }
+          @media only screen and (min-width: 768px) {
+            .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text p {
+              font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+              color: #050505;
+              font-weight: 100;
+              font-size: 30px;
+              line-height: 1; } }
 
 .c-ph-stats__container .c-ph-stats-border__container {
   background: #e5e7e7;
   height: 450px;
-  position: relative; }
+  position: relative;
+  width: calc(100%);
+  float: left;
+  margin-left: 0; }
+  @media only screen and (min-width: 768px) {
+    .c-ph-stats__container .c-ph-stats-border__container {
+      width: calc(50%);
+      float: left;
+      margin-left: 0;
+      float: right; } }
   .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details {
     width: 160px;
     margin: auto;
