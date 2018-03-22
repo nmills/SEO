@@ -29,6 +29,23 @@
       }
     }
 
+    .c-ph-hero__video {
+      @include grid-column(12, $no-gutter);
+
+      float: none;
+      height: 460px;
+      padding: 0;
+
+      @include grid-media($md) {
+        height: 650px;
+      }
+
+
+      video {
+        width: 100%;
+      }
+    }
+
     h1 {
       @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
 

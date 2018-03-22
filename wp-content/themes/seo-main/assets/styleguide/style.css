@@ -3082,6 +3082,18 @@ body {
       @media only screen and (min-width: 768px) {
         .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
           height: 650px; } }
+    .c-ph-hero__container .c-ph-hero__content .c-ph-hero__video {
+      width: calc(100%);
+      float: left;
+      margin-left: 0;
+      float: none;
+      height: 460px;
+      padding: 0; }
+      @media only screen and (min-width: 768px) {
+        .c-ph-hero__container .c-ph-hero__content .c-ph-hero__video {
+          height: 650px; } }
+      .c-ph-hero__container .c-ph-hero__content .c-ph-hero__video video {
+        width: 100%; }
     .c-ph-hero__container .c-ph-hero__content h1 {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #050505;
