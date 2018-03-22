@@ -1,12 +1,13 @@
 <section>
   <div class="container">
+    <div class="c-ph-gallery__container">
     <div class="c-ph-gallery__header">
       <h1>{{component.heading}}</h1>
     </div>
     <div class="c-ph-gallery__description">
       <p>{{component.intro_text}}</p>
     </div>
-    <div class="c-ph-gallery__container image-only">
+    <div class="c-ph-gallery__content">
       {% for repeater in component.repeater %}
       <div class="c-ph-gallery__gallery-item">
         <img src="{{Image(repeater.image).src }}" />
@@ -18,6 +19,7 @@
     </div>
     <div class="c-ph-gallery__last-link">
       <a href="{{component.closing_link.url}}" class="c-rte__link">{{component.closing_link.title}}</a>
+    </div>
     </div>
   </div>
 </section>
