@@ -168,6 +168,11 @@
   filter: grayscale(0%);
 }
 
+.c-ph-gallery__container .c-ph-gallery__content .c-ph-gallery__gallery-item.pseudo-class-hover img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
 .slick-list.pseudo-class-focus {
   outline: none;
 }
