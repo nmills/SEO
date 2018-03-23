@@ -35,6 +35,14 @@ a {
   transition: all 0.5s $cubic-transition;
 }
 
+// Video Player
+video.video-player {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
 .c-hero_playbutton {
   background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg");
   background-size: cover;
