@@ -1,3 +1,8 @@
+.c-hero_playbutton.pseudo-class-hover {
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg");
+  background-size: cover;
+}
+
 .c-uie__radiobutton.pseudo-class-hover input ~ .c-uie__checkmark {
   background-color: #ccc;
 }
