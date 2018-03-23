@@ -25,7 +25,7 @@
             "key": "field_5a8279c682236",
             "label": "video",
             "name": "video",
-            "type": "url",
+            "type": "file",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,8 +34,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": ""
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "mp4"
         },
         {
             "key": "field_5a86561664fb7",
@@ -74,5 +77,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1519956184
+    "modified": 1521783035
 }
