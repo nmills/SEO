@@ -1591,6 +1591,19 @@ Styleguide 4.0
     background-size: 22px 20px;
     border: 3px solid red; }
 
+button.c-uie__calltoaction-secondary {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  position: relative;
+  color: #050505;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  margin-top: 40px;
+  cursor: pointer; }
+
 /* Cta */
 .c-cta__wrapper {
   width: calc(100%);
