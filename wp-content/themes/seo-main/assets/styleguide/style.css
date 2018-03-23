@@ -2223,6 +2223,11 @@ Gallery
       float: left;
       margin-left: 0;
       height: 100%; }
+    .hero-section .c-hero_video video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto; }
     .hero-section .c-hero_video .video {
       height: 212px; }
       @media only screen and (min-width: 768px) {
