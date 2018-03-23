@@ -2665,16 +2665,16 @@ searchForm.removeClass('active');
 
 function(){
 $('.c-hero_playbutton').click(function(){
-if($(".video-player").get(0).paused){
-$(".video-player").get(0).play();
-$(".c-hero_playbutton").fadeOut();
+if($(this).siblings(".video-player").get(0).paused){
+$(this).siblings(".video-player").get(0).play();
+$(this).fadeOut();
 }
 });
 
 $('.video-player').click(function(){
-if(!$(".video-player").get(0).paused){
-$(".video-player").get(0).pause();
-$(".c-hero_playbutton").fadeIn();
+if(!$(this).get(0).paused){
+$(this).get(0).pause();
+$(this).siblings(".c-hero_playbutton").fadeIn();
 }
 });
 };
