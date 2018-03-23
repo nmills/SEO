@@ -60,9 +60,9 @@
         },
         {
             "key": "field_5aa5fa7b3bc7c",
-            "label": "link",
-            "name": "link",
-            "type": "url",
+            "label": "video",
+            "name": "video",
+            "type": "file",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -79,8 +79,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": ""
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
             "key": "field_5aa5fa903bc7d",
@@ -194,5 +197,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521433240
+    "modified": 1521786856
 }
