@@ -82,7 +82,7 @@
             "return_format": "array",
             "library": "all",
             "min_size": "",
-            "max_size": "",
+            "max_size": 5,
             "mime_types": "mp4"
         },
         {
@@ -122,5 +122,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521620611
+    "modified": 1521804904
 }
