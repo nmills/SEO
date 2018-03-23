@@ -30,7 +30,7 @@
             "key": "field_5aa561fda93c6",
             "label": "video",
             "name": "video",
-            "type": "url",
+            "type": "file",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -47,8 +47,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": ""
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
             "key": "field_5aa5621ba93c7",
@@ -143,5 +146,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521094194
+    "modified": 1521783113
 }
