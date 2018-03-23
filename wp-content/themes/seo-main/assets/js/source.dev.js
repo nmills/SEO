@@ -2324,11 +2324,11 @@ window.matchMedia||(window.matchMedia=function(){"use strict";var a=window.style
 
 var _jquery=typeof window!=="undefined"?window['jQuery']:typeof global!=="undefined"?global['jQuery']:null;var _jquery2=_interopRequireDefault(_jquery);
 var _accordion=require('modules/accordion.js');var _accordion2=_interopRequireDefault(_accordion);
-
+var _video=require('modules/video.js');var _video2=_interopRequireDefault(_video);
 var _searchBar=require('modules/searchBar.js');var _searchBar2=_interopRequireDefault(_searchBar);
 var _hamburger=require('modules/hamburger.js');var _hamburger2=_interopRequireDefault(_hamburger);
 var _jqueryBxsliderMin=require('modules/jquery.bxslider.min.js');var _jqueryBxsliderMin2=_interopRequireDefault(_jqueryBxsliderMin);
-var _galleryWidget=require('modules/galleryWidget.js');var _galleryWidget2=_interopRequireDefault(_galleryWidget);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// import custom from 'modules/custom.js';
+var _galleryWidget=require('modules/galleryWidget.js');var _galleryWidget2=_interopRequireDefault(_galleryWidget);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
 
 (function($){
 $(document).ready(function(){
@@ -2365,7 +2365,7 @@ function ready(){
 // Initialize Gallery Slider
 (0,_galleryWidget2.default)();
 
-// custom();
+(0,_video2.default)();
 (0,_searchBar2.default)();
 (0,_hamburger2.default)();
 }
@@ -2373,7 +2373,7 @@ function ready(){
 
 }).call(this,typeof global!=="undefined"?global:typeof self!=="undefined"?self:typeof window!=="undefined"?window:{});
 
-},{"modules/accordion.js":2,"modules/galleryWidget.js":3,"modules/hamburger.js":4,"modules/jquery.bxslider.min.js":5,"modules/searchBar.js":6}],2:[function(require,module,exports){
+},{"modules/accordion.js":2,"modules/galleryWidget.js":3,"modules/hamburger.js":4,"modules/jquery.bxslider.min.js":5,"modules/searchBar.js":6,"modules/video.js":7}],2:[function(require,module,exports){
 'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 
@@ -2656,6 +2656,27 @@ e.preventDefault();
 searchForm.removeClass('active');
 });
 }
+};
+
+},{}],7:[function(require,module,exports){
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=
+
+
+
+function(){
+$('.c-hero_playbutton').click(function(){
+if($(".video-player").get(0).paused){
+$(".video-player").get(0).play();
+$(".c-hero_playbutton").fadeOut();
+}
+});
+
+$('.video-player').click(function(){
+if(!$(".video-player").get(0).paused){
+$(".video-player").get(0).pause();
+$(".c-hero_playbutton").fadeIn();
+}
+});
 };
 
 },{}]},{},[1]);
