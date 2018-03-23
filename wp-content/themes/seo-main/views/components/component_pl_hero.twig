@@ -11,9 +11,10 @@
         {# <div class="video">
           <div data-type="youtube" data-video-id="{{component.video}}"></div>
         </div> #}
-         <video controls loop muted autoplay>
+         <video controls loop muted>
           <source src="{{component.video.url}}" type="video/mp4">
         </video>
+        <div class="c-hero_playbutton"></div>
         <p>{{component.hero_text}}</p>
       </div>
     {% endif %}  
