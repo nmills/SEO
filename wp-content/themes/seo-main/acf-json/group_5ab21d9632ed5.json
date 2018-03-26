@@ -90,7 +90,7 @@
             "label": "hero text",
             "name": "hero_text",
             "type": "textarea",
-            "instructions": "",
+            "instructions": "The character limit is 60",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -122,5 +122,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521634056
+    "modified": 1522042279
 }

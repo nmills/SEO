@@ -90,7 +90,7 @@
             "label": "text",
             "name": "text",
             "type": "textarea",
-            "instructions": "",
+            "instructions": "The character limit is 100",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -122,5 +122,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521804904
+    "modified": 1522042288
 }
