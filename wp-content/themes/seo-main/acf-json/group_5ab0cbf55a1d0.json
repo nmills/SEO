@@ -63,7 +63,7 @@
             "label": "video",
             "name": "video",
             "type": "file",
-            "instructions": "",
+            "instructions": "Video must be uploaded as an mp4 encoded as H.264 to be supported by all browsers",
             "required": 0,
             "conditional_logic": [
                 [
@@ -122,5 +122,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522042288
+    "modified": 1522042689
 }
