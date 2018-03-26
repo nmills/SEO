@@ -51,7 +51,7 @@
             "name": "text",
             "type": "textarea",
             "instructions": "The character limit is 100",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -82,5 +82,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522043322
+    "modified": 1522052690
 }
