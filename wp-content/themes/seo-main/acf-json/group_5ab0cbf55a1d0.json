@@ -3,45 +3,13 @@
     "title": "component: PH Hero",
     "fields": [
         {
-            "key": "field_5ab2117f018c3",
-            "label": "hero type",
-            "name": "hero_type",
-            "type": "radio",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "image": "Image",
-                "video": "Video"
-            },
-            "allow_null": 0,
-            "other_choice": 0,
-            "save_other_choice": 0,
-            "default_value": "",
-            "layout": "vertical",
-            "return_format": "value"
-        },
-        {
             "key": "field_5ab0cc374161d",
             "label": "image",
             "name": "image",
             "type": "image_crop",
             "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5ab2117f018c3",
-                        "operator": "==",
-                        "value": "image"
-                    }
-                ]
-            ],
+            "required": 1,
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -65,15 +33,7 @@
             "type": "file",
             "instructions": "Video must be uploaded as an mp4 encoded as H.264 to be supported by all browsers",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5ab2117f018c3",
-                        "operator": "==",
-                        "value": "video"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -122,5 +82,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522042689
+    "modified": 1522043322
 }
