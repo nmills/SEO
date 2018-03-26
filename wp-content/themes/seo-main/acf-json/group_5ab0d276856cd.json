@@ -6,8 +6,8 @@
             "key": "field_5ab0d27e15c64",
             "label": "text",
             "name": "text",
-            "type": "wysiwyg",
-            "instructions": "",
+            "type": "textarea",
+            "instructions": "For red colour use \"< strong >This text will be red in colour< \/strong >\"",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,10 +16,10 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521537679
+    "modified": 1522067832
 }
