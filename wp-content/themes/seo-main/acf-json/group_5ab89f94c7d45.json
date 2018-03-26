@@ -1,13 +1,13 @@
 {
-    "key": "group_5ab0d276856cd",
-    "title": "component: PH text",
+    "key": "group_5ab89f94c7d45",
+    "title": "component: PH signup",
     "fields": [
         {
-            "key": "field_5ab0d27e15c64",
-            "label": "text",
-            "name": "text",
-            "type": "textarea",
-            "instructions": "For red colour use \"< strong >This text will be red in colour< \/strong >\"",
+            "key": "field_5ab89f94ef616",
+            "label": "header text",
+            "name": "header_text",
+            "type": "text",
+            "instructions": "The character limit is 140",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -17,9 +17,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": "",
+            "maxlength": 140
         }
     ],
     "location": [
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522067832
+    "modified": 1522049136
 }

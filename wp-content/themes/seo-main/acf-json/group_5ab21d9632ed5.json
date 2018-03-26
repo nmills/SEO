@@ -3,45 +3,13 @@
     "title": "component: GH Hero",
     "fields": [
         {
-            "key": "field_5ab21d9665b5e",
-            "label": "hero type",
-            "name": "hero_type",
-            "type": "radio",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "image": "Image",
-                "video": "Video"
-            },
-            "allow_null": 0,
-            "other_choice": 0,
-            "save_other_choice": 0,
-            "default_value": "",
-            "layout": "vertical",
-            "return_format": "value"
-        },
-        {
             "key": "field_5ab21d9665d4e",
             "label": "image",
             "name": "image",
             "type": "image_crop",
             "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5ab21d9665b5e",
-                        "operator": "==",
-                        "value": "image"
-                    }
-                ]
-            ],
+            "required": 1,
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -63,17 +31,9 @@
             "label": "video",
             "name": "video",
             "type": "file",
-            "instructions": "",
+            "instructions": "Video must be uploaded as an mp4 encoded as H.264 to be supported by all browsers",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5ab21d9665b5e",
-                        "operator": "==",
-                        "value": "video"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -82,7 +42,7 @@
             "return_format": "array",
             "library": "all",
             "min_size": "",
-            "max_size": "",
+            "max_size": 5,
             "mime_types": "mp4"
         },
         {
@@ -90,7 +50,7 @@
             "label": "hero text",
             "name": "hero_text",
             "type": "textarea",
-            "instructions": "",
+            "instructions": "The character limit is 60",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -122,5 +82,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521634056
+    "modified": 1522043298
 }

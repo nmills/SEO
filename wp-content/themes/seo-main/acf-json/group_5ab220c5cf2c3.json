@@ -6,8 +6,8 @@
             "key": "field_5ab220c624d1a",
             "label": "intro text",
             "name": "intro_text",
-            "type": "wysiwyg",
-            "instructions": "",
+            "type": "textarea",
+            "instructions": "For red colour use \"< strong >This text will be red in colour< \/strong >\"",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,10 +16,10 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
             "key": "field_5ab220c624f16",
@@ -54,5 +54,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521633844
+    "modified": 1522067919
 }
