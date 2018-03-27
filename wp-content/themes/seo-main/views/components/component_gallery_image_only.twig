@@ -4,12 +4,12 @@
       <h1>{{component.section_header}}</h1>
     </div>
     <div class="c-gallery__container image-only">
-      {% for item in component.repeater %}
+      {% for repeater in component.repeater %}
         {% if repeater.url %}
-          <a href="{{repeater.url}}">
+          <a href="{{repeater.url}}" class="bw-hover">
         {% endif %}
-            <div class="c-gallery__gallery-item">
-              <img src="{{Image(item.photo).src }}" />    
+            <div class="c-gallery__gallery-repeater">
+              <img src="{{Image(repeater.photo).src }}" />    
             </div>
         {% if repeater.url %}
           </a>
