@@ -10,7 +10,7 @@
     <div class="c-ph-gallery__content">
       {% for repeater in component.repeater %}
         {% if repeater.url %}
-          <a href="{{repeater.url}}">
+          <a href="{{repeater.url}}" class="bw-hover">
         {% endif %}
           <div class="c-ph-gallery__gallery-item">
             <img src="{{Image(repeater.image).src }}" />
