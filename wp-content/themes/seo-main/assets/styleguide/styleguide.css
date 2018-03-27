@@ -3783,13 +3783,15 @@ body {
   width: calc(100%);
   float: left;
   margin-left: 0;
-  max-width: 279px;
   height: 157px;
   float: right;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative; }
+  @media only screen and (min-width: 480px) {
+    .c-gh-program-cta__container .c-gh-program-cta__image, .c-gh-program-cta__container .c-gh-program-cta__video {
+      height: 265px; } }
   @media only screen and (min-width: 768px) {
     .c-gh-program-cta__container .c-gh-program-cta__image, .c-gh-program-cta__container .c-gh-program-cta__video {
       width: calc(50%);

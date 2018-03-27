@@ -323,13 +323,18 @@
   .c-gh-program-cta__image, .c-gh-program-cta__video {
     @include grid-column(12, $no-gutter);
 
-    max-width: 279px;
+    // max-width: 279px;
     height: 157px;
     float: right;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+
+    @include grid-media($sm) {
+      height: 265px;
+    }
+
 
     @include grid-media($md) {
       @include grid-column(6, $no-gutter);
