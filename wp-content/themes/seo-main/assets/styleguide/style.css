@@ -1358,6 +1358,18 @@ Styleguide 5.1
         background: white;
         margin-top: 20px; }
 
+.c-mobile-hero__image {
+  display: block; }
+  @media only screen and (min-width: 768px) {
+    .c-mobile-hero__image {
+      display: none; } }
+
+.c-desktop__video {
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    .c-desktop__video {
+      display: block; } }
+
 .icon:before {
   content: '';
   display: inline-block; }
@@ -3131,7 +3143,8 @@ body {
         .c-ph-hero__container .c-ph-hero__content .c-ph-hero__video {
           height: 650px; } }
       .c-ph-hero__container .c-ph-hero__content .c-ph-hero__video video {
-        width: 100%; }
+        width: 100%;
+        object-fit: fill; }
     .c-ph-hero__container .c-ph-hero__content h1 {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #050505;

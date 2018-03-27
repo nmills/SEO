@@ -63,6 +63,22 @@
                     "retina_mode": "no",
                     "save_format": "id",
                     "library": "all"
+                },
+                {
+                    "key": "field_5ab8b14e26200",
+                    "label": "url",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         }
@@ -84,5 +100,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521433331
+    "modified": 1522055967
 }

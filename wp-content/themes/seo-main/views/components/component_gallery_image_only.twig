@@ -5,9 +5,15 @@
     </div>
     <div class="c-gallery__container image-only">
       {% for item in component.repeater %}
-        <div class="c-gallery__gallery-item">
-          <img src="{{Image(item.photo).src }}" />    
-        </div>
+        {% if repeater.url %}
+          <a href="{{repeater.url}}">
+        {% endif %}
+            <div class="c-gallery__gallery-item">
+              <img src="{{Image(item.photo).src }}" />    
+            </div>
+        {% if repeater.url %}
+          </a>
+        {% endif %}
       {% endfor %}
     </div>
   </div>

@@ -259,16 +259,16 @@ require_once(get_template_directory() . '/includes/bsdstarter_editor_styles.php'
 require_once(get_template_directory() . '/includes/bsdstarter_shortcodes.php');
 
 
-/**
- * Hide editor on specific pages.
- *
- */
-add_filter( 'user_can_richedit', 'removing_wysiwyg_from_body');
+// /**
+//  * Hide editor on specific pages.
+//  *
+//  */
+// add_filter( 'user_can_richedit', 'removing_wysiwyg_from_body');
 
-function removing_wysiwyg_from_body($c) {
-    global $post_type;
+// function removing_wysiwyg_from_body($c) {
+//     global $post_type;
 
-    if ('page' == $post_type)
-        return false;
-    return $c;
-}
+//     if ('page' == $post_type)
+//         return false;
+//     return $c;
+// }

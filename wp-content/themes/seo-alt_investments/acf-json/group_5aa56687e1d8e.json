@@ -170,6 +170,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5ab8a49ab0f0e": {
+                    "key": "5ab8a49ab0f0e",
+                    "name": "component_pl_signup",
+                    "label": "component: PL signup",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ab8a4a2b0f0f",
+                            "label": "component: PL signup",
+                            "name": "component:_pl_signup",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ab89b705b5ca"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -194,5 +225,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1520829183
+    "modified": 1522053071
 }

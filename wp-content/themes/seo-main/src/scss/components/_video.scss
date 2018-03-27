@@ -171,3 +171,17 @@ Styleguide 5.1
     }
   }
 }
+
+.c-mobile-hero__image{
+  display: block;
+  @include grid-media($md) {
+   display: none;
+  }
+}
+
+.c-desktop__video{
+  display: none;
+  @include grid-media($md) {
+   display: block;
+  }
+}

@@ -9,9 +9,15 @@
     </div>
     <div class="c-ph-gallery__content">
       {% for repeater in component.repeater %}
-      <div class="c-ph-gallery__gallery-item">
-        <img src="{{Image(repeater.image).src }}" />
-      </div>
+        {% if repeater.url %}
+          <a href="{{repeater.url}}">
+        {% endif %}
+          <div class="c-ph-gallery__gallery-item">
+            <img src="{{Image(repeater.image).src }}" />
+          </div>
+        {% if repeater.url %}
+          </a>
+        {% endif %}
       {% endfor %}
     </div>
     <div class="c-ph-gallery__last-text">
