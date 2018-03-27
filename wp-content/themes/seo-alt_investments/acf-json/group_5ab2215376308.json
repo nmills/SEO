@@ -1,28 +1,9 @@
 {
-    "key": "group_5aa658d8a2be7",
-    "title": "component: Gallery Image only",
+    "key": "group_5ab2215376308",
+    "title": "component: GH program list",
     "fields": [
         {
-            "key": "field_5aa658d8db62a",
-            "label": "section header",
-            "name": "section_header",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5aa658d8db85d",
+            "key": "field_5ab2216bf3b88",
             "label": "repeater",
             "name": "repeater",
             "type": "repeater",
@@ -35,18 +16,18 @@
                 "id": ""
             },
             "collapsed": "",
-            "min": 0,
-            "max": 0,
-            "layout": "block",
+            "min": 4,
+            "max": 4,
+            "layout": "table",
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_5aa658d923430",
-                    "label": "photo",
-                    "name": "photo",
+                    "key": "field_5ab22174f3b89",
+                    "label": "image",
+                    "name": "image",
                     "type": "image_crop",
                     "instructions": "",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -65,10 +46,10 @@
                     "library": "all"
                 },
                 {
-                    "key": "field_5ab8b14e26200",
-                    "label": "url",
-                    "name": "url",
-                    "type": "url",
+                    "key": "field_5ab22183f3b8a",
+                    "label": "title",
+                    "name": "title",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -78,7 +59,29 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ab2218bf3b8b",
+                    "label": "text blurb",
+                    "name": "text_blurb",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
                 }
             ]
         }
@@ -100,5 +103,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522055967
+    "modified": 1521623505
 }

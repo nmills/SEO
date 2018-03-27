@@ -1,0 +1,86 @@
+{
+    "key": "group_5ab0cbf55a1d0",
+    "title": "component: PH Hero",
+    "fields": [
+        {
+            "key": "field_5ab0cc374161d",
+            "label": "image",
+            "name": "image",
+            "type": "image_crop",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "crop_type": "hard",
+            "target_size": "thumbnail",
+            "width": "",
+            "height": "",
+            "preview_size": "medium",
+            "force_crop": "no",
+            "save_in_media_library": "yes",
+            "retina_mode": "no",
+            "save_format": "id",
+            "library": "all"
+        },
+        {
+            "key": "field_5ab1ed49e3a05",
+            "label": "video",
+            "name": "video",
+            "type": "file",
+            "instructions": "Video must be uploaded as an mp4 encoded as H.264 to be supported by all browsers",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": 5,
+            "mime_types": "mp4"
+        },
+        {
+            "key": "field_5ab0cc444161e",
+            "label": "text",
+            "name": "text",
+            "type": "textarea",
+            "instructions": "The character limit is 100",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 100,
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1522052690
+}

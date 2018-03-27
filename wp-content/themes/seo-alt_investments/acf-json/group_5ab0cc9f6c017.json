@@ -1,9 +1,30 @@
 {
-    "key": "group_5aa56687e1d8e",
-    "title": "program landing",
+    "key": "group_5ab0cc9f6c017",
+    "title": "program homepage",
     "fields": [
         {
-            "key": "field_5aa566900adec",
+            "key": "field_5ab0cca8e3a96",
+            "label": "hero",
+            "name": "hero",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5ab0cbf55a1d0"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5ab0ee07d5474",
             "label": "flexi content",
             "name": "flexi_content",
             "type": "flexible_content",
@@ -16,16 +37,16 @@
                 "id": ""
             },
             "layouts": {
-                "5aa5669881b59": {
-                    "key": "5aa5669881b59",
-                    "name": "component_pl_hero",
-                    "label": "component: PL Hero",
+                "5ab0f8a466455": {
+                    "key": "5ab0f8a466455",
+                    "name": "component_ph_intro",
+                    "label": "component: PH Intro",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5aa566b90aded",
-                            "label": "component: PL Hero",
-                            "name": "component:_pl_hero",
+                            "key": "field_5ab0f8b666456",
+                            "label": "component: PH Intro",
+                            "name": "component_ph_intro",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -36,7 +57,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_5aa5612ae0b02"
+                                "group_5ab0cc82cc117"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -47,16 +68,16 @@
                     "min": "",
                     "max": ""
                 },
-                "5aa567010adee": {
-                    "key": "5aa567010adee",
-                    "name": "component_pl_touts",
-                    "label": "component: PL Touts",
+                "5ab0ee1345a39": {
+                    "key": "5ab0ee1345a39",
+                    "name": "component_ph_gallery",
+                    "label": "component: PH Gallery",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5aa5670c0adef",
-                            "label": "component: PL Touts",
-                            "name": "component:_pl_touts",
+                            "key": "field_5ab0f097d5475",
+                            "label": "component: PH Gallery",
+                            "name": "component_ph_gallery",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -67,7 +88,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_5aa562c5c458a"
+                                "group_5ab0d18caf471"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -78,16 +99,16 @@
                     "min": "",
                     "max": ""
                 },
-                "5aa567250adf0": {
-                    "key": "5aa567250adf0",
-                    "name": "component_pl_data_visualization",
-                    "label": "component: PL Data Visualization",
+                "5ab0f110d5476": {
+                    "key": "5ab0f110d5476",
+                    "name": "component_ph_text",
+                    "label": "component: PH text",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5aa567310adf1",
-                            "label": "component: PL: Data Visualization",
-                            "name": "component:_pl:_data_visualization",
+                            "key": "field_5ab0f11fd5477",
+                            "label": "component: PH text",
+                            "name": "component_ph_text",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -98,7 +119,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_5aa56447dbe02"
+                                "group_5ab0d276856cd"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -109,16 +130,16 @@
                     "min": "",
                     "max": ""
                 },
-                "5aa602a17e6b7": {
-                    "key": "5aa602a17e6b7",
-                    "name": "component_pl_cta",
-                    "label": "component: PL CTA",
+                "5ab2169173557": {
+                    "key": "5ab2169173557",
+                    "name": "component_ph_stats",
+                    "label": "component: PH stats",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5aa602a97e6b8",
-                            "label": "component: PL CTA",
-                            "name": "component:_pl_cta",
+                            "key": "field_5ab216be73558",
+                            "label": "component: PH stats",
+                            "name": "component_ph_stats",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -129,7 +150,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_5aa5f9be91922"
+                                "group_5ab214af73ad8"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -140,16 +161,16 @@
                     "min": "",
                     "max": ""
                 },
-                "5aa602cc7e6b9": {
-                    "key": "5aa602cc7e6b9",
-                    "name": "component_pl_sequence",
-                    "label": "component: PL Sequence",
+                "5ab8a3951615f": {
+                    "key": "5ab8a3951615f",
+                    "name": "component_ph_signup",
+                    "label": "component: PH signup",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5aa602e37e6ba",
-                            "label": "component: PL Sequence",
-                            "name": "component:_pl_sequence",
+                            "key": "field_5ab8a3a616160",
+                            "label": "component: PH signup",
+                            "name": "component_ph_signup",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -160,38 +181,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_5aa5f8a1380df"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "5ab8a49ab0f0e": {
-                    "key": "5ab8a49ab0f0e",
-                    "name": "component_pl_signup",
-                    "label": "component: PL signup",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5ab8a4a2b0f0f",
-                            "label": "component: PL signup",
-                            "name": "component:_pl_signup",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_5ab89b705b5ca"
+                                "group_5ab89f94c7d45"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -211,9 +201,9 @@
     "location": [
         [
             {
-                "param": "post_template",
+                "param": "page_template",
                 "operator": "==",
-                "value": "template-program_landing.php"
+                "value": "template-program_homepage.php"
             }
         ]
     ],
@@ -225,5 +215,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1522053071
+    "modified": 1522053045
 }

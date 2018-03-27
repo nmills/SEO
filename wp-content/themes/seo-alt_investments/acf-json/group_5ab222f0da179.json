@@ -1,11 +1,11 @@
 {
-    "key": "group_5a8279b723690",
-    "title": "component: video",
+    "key": "group_5ab222f0da179",
+    "title": "component: GH Donate",
     "fields": [
         {
-            "key": "field_5a86549164fb6",
-            "label": "heading",
-            "name": "heading",
+            "key": "field_5ab222f87b66c",
+            "label": "text",
+            "name": "text",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -22,10 +22,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_5a8279c682236",
-            "label": "video",
-            "name": "video",
-            "type": "url",
+            "key": "field_5ab223337b66d",
+            "label": "button",
+            "name": "button",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,27 +34,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
-            "key": "field_5a86561664fb7",
-            "label": "quote",
-            "name": "quote",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "return_format": "array"
         }
     ],
     "location": [
@@ -74,5 +54,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522070451
+    "modified": 1521623921
 }
