@@ -90,9 +90,9 @@
       margin-bottom: 50px;
 
       @include grid-media($md) {
-        @include type-custom($color: $dark-gray, $font-weight: $font-thinnest, $font-size: 25px, $line-height: 1.5);
+        @include type-custom($color: $dark-gray, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1.5);
 
-        margin-bottom: 65px;
+        margin-bottom: 55px;
       }
     }
   }
@@ -104,7 +104,7 @@
 
   .c-ph-news-events__content {
     position: relative;
-    padding-left: 50px;
+    padding-left: 40px;
 
     &:before {
       content: "";
@@ -113,21 +113,21 @@
       // border-left: 10px solid #050505;
       background: $black;
       width: 10px;
-      height: calc(100% - 15px);
-      top: 8px;
+      height: calc(100% - 20px);
+      top: 13px;
       left: 0;
 
       @include grid-media($md) {
-        height: calc(100% - 30px);
-        top: 17px;
+        height: calc(100% - 35px);
+        top: 20px;
       }
     }
 
     p {
-      @include type-custom($color: $dark-gray, $font-weight: $font-thinnest, $font-size: 20px, $line-height: 1.5);
+      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 28px, $line-height: 1.5);
 
       @include grid-media($md) {
-        @include type-custom($color: $dark-gray, $font-weight: $font-thinnest, $font-size: 35px, $line-height: 1.5);
+        @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 55px, $line-height: 1.3);
       }
 
 
@@ -143,6 +143,32 @@
   max-width: 1024px;
   margin: 0 auto;
 
+  .c-ph-gallery__header {
+    h1 {
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 32px, $line-height: 1);
+
+      margin-bottom: 15px;
+
+      @include grid-media($md) {
+        @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 42px, $line-height: 1);
+
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .c-ph-gallery__description {
+    p {
+      @include type-custom($color: $dark-gray, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1.3);
+
+      margin-bottom: 20px;
+
+      @include grid-media($md) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
   .c-ph-gallery__content {
     @include grid-column(12, $no-gutter);
 
@@ -154,7 +180,7 @@
       border: 2px solid $light-gray;
       height: 80px;
       margin-right: 8%;
-      margin-bottom: 35px;
+      margin-bottom: 20px;
 
       @include grid-media($max-sm) {
         &:nth-child(even) {
@@ -168,7 +194,6 @@
 
         height: 100px;
         margin-right: 5%;
-        margin-bottom: 35px;
 
         @include grid-media($max-md) {
           &:nth-child(3n) {
@@ -215,12 +240,44 @@
     }
   }
 
-  .c-ph-gallery__last-text,
-  .c-ph-gallery__last-link {
+  .c-ph-gallery__last-text {
     @include grid-column(12, $no-gutter);
 
     p {
-      margin: 0;
+      font-weight: $font-thinnest;
+      font-size: 14px;
+      line-height: 1;
+      margin-bottom: 7px;
+      color: $dark-gray;
+
+      @include grid-media($md) {
+        font-weight: $font-thinnest;
+        font-size: 18px;
+        line-height: 1;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .c-ph-gallery__last-link {
+    @include grid-column(12, $no-gutter);
+
+    a {
+      font-weight: $font-normal;
+      font-size: 14px;
+      margin-bottom: 7px;
+      color: $dark-gray;
+
+      @include grid-media($md) {
+        font-weight: $font-normal;
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+
+      &:hover {
+        color: $light-blue;
+      }
     }
   }
 }
@@ -228,12 +285,12 @@
 .c-ph-stats__container {
   .old {
     background: $light-gray;
-    height: 450px;
+    height: 400px;
     position: relative;
 
     @include grid-column(12, $no-gutter);
 
-    @include grid-media($md) {
+    @include grid-media($lg) {
       @include grid-column(6, $no-gutter);
     }
 
@@ -259,6 +316,12 @@
 
 
         .c-rationmeter-positioner {
+          height: 250px;
+
+          @include grid-media($md) {
+             height: 320px;
+          }
+
           .c-ratiometer-meter_out {
             .c-rationmeter-meter {
               width: 9rem;
@@ -291,8 +354,13 @@
               margin: 0;
               text-align: center;
 
+              @include grid-media($sm) {
+                @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 70px, $line-height: 1);
+              }
+
+
               @include grid-media($md) {
-                @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 100px, $line-height: 1);
+                @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 110px, $line-height: 1);
               }
             }
 
@@ -314,12 +382,12 @@
 
   .c-ph-stats-border__container {
     background: $light-gray;
-    height: 450px;
+    height: 400px;
     position: relative;
 
     @include grid-column(12, $no-gutter);
 
-    @include grid-media($md) {
+    @include grid-media($lg) {
       @include grid-column(6, $no-gutter);
 
       float: right;
@@ -366,14 +434,16 @@
       h1 {
         margin: 0;
 
-        @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 60px, $line-height: 1);
+        @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 70px, $line-height: 1);
 
         @include grid-media($md) {
-          @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 100px, $line-height: 1);
+          @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 110px, $line-height: 1);
         }
       }
 
       p {
+        @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 20px, $line-height: 1);
+
         margin-top: 0;
 
         @include grid-media($md) {

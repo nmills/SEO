@@ -178,6 +178,10 @@
   filter: grayscale(0%);
 }
 
+.c-ph-gallery__container .c-ph-gallery__last-link a.pseudo-class-hover {
+  color: #7cb4f6;
+}
+
 .slick-list.pseudo-class-focus {
   outline: none;
 }
