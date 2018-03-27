@@ -319,8 +319,9 @@
           height: 250px;
 
           @include grid-media($md) {
-             height: 320px;
+            height: 320px;
           }
+
 
           .c-ratiometer-meter_out {
             .c-rationmeter-meter {
