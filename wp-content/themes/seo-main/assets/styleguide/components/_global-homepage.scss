@@ -1,7 +1,8 @@
 // Global Homepage
 
 .c-gh-hero__container {
-  margin-bottom:0;
+  margin-bottom: 0;
+
   .container {
     padding: 0;
   }
@@ -98,6 +99,8 @@
 }
 
 .c-gh-intro {
+  margin: 0;
+
   .container {
     background: $red;
     padding: 50px 20%;
