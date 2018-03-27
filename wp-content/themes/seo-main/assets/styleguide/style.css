@@ -3612,41 +3612,42 @@ body {
           bottom: 80px;
           left: 60px; } }
 
-.c-gh-intro .container {
-  background: #eb0029;
-  padding: 50px 20%; }
-  @media only screen and (min-width: 1024px) {
-    .c-gh-intro .container {
-      padding: 130px 20%; } }
-
-.c-gh-intro .c-gh-intro__container {
-  max-width: 1024px;
-  margin: 0 auto; }
-  @media only screen and (min-width: 768px) {
-    .c-gh-intro .c-gh-intro__container .c-gh-intro__content {
-      padding: 0 100px; } }
-  .c-gh-intro .c-gh-intro__container .c-gh-intro__content p {
-    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #050505;
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 50px; }
+.c-gh-intro {
+  margin: 0; }
+  .c-gh-intro .container {
+    background: #eb0029;
+    padding: 50px 20%; }
+    @media only screen and (min-width: 1024px) {
+      .c-gh-intro .container {
+        padding: 130px 20%; } }
+  .c-gh-intro .c-gh-intro__container {
+    max-width: 1024px;
+    margin: 0 auto; }
     @media only screen and (min-width: 768px) {
-      .c-gh-intro .c-gh-intro__container .c-gh-intro__content p {
-        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-        color: #050505;
-        font-weight: 100;
-        font-size: 30px;
-        line-height: 1.5;
-        margin-bottom: 55px; } }
-    .c-gh-intro .c-gh-intro__container .c-gh-intro__content p strong {
-      font-weight: inherit;
-      color: #ffffff; }
-  .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction {
-    border-left-color: #ffffff; }
-    .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction:after {
-      border-bottom-color: #ffffff; }
+      .c-gh-intro .c-gh-intro__container .c-gh-intro__content {
+        padding: 0 100px; } }
+    .c-gh-intro .c-gh-intro__container .c-gh-intro__content p {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 100;
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 50px; }
+      @media only screen and (min-width: 768px) {
+        .c-gh-intro .c-gh-intro__container .c-gh-intro__content p {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 100;
+          font-size: 30px;
+          line-height: 1.5;
+          margin-bottom: 55px; } }
+      .c-gh-intro .c-gh-intro__container .c-gh-intro__content p strong {
+        font-weight: inherit;
+        color: #ffffff; }
+    .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction {
+      border-left-color: #ffffff; }
+      .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction:after {
+        border-bottom-color: #ffffff; }
 
 .c-gh-program__container {
   width: 100%;
