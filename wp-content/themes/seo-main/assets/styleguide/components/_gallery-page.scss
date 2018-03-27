@@ -79,7 +79,8 @@
 
       display: inline-block;
       position: relative;
-      background: #ededed;
+      border: 2px solid #e5e7e7;
+      background: white;
       height: 80px;
       margin-right: 8%;
       margin-bottom: 35px;
@@ -151,10 +152,16 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+      }
+    }
 
+        .bw-hover {
+      .c-gallery__gallery-item {
         &:hover {
-          -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
+          img {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+          }
         }
       }
     }

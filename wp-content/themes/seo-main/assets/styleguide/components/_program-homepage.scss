@@ -191,22 +191,26 @@
       }
 
 
-      &:hover {
-        img {
-          -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-        }
-      }
-
       img {
-        max-width: 100%;
         transition: filter .5s ease-in-out;
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
+        max-width: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+      }
+    }
+
+    .bw-hover {
+      .c-ph-gallery__gallery-item {
+        &:hover {
+          img {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+          }
+        }
       }
     }
   }
