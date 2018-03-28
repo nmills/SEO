@@ -151,108 +151,114 @@
   }
 }
 
-.c-gh-program__container {
-  width: 100%;
-  float: left;
+.c-gh-program {
+  .container {
+    padding: 0;
 
-  .c-gh-program__item {
-    @include grid-column(12, $no-gutter);
+    .c-gh-program__container {
+      width: 100%;
+      float: left;
 
-    float: left;
-    position: relative;
-    margin-bottom: 6px;
+      .c-gh-program__item {
+        @include grid-column(12, $no-gutter);
 
-    @include grid-media($sm) {
-      width: calc(50% - 6px);
-      margin-right: 6px;
-    }
+        float: left;
+        position: relative;
+        margin-bottom: 6px;
+
+        @include grid-media($sm) {
+          width: calc(50% - 6px);
+          margin-right: 6px;
+        }
 
 
-    @include grid-media($md) {
-      width: calc(25% - 6px);
-      margin-right: 6px;
-      margin-bottom: 0;
+        @include grid-media($md) {
+          width: calc(25% - 6px);
+          margin-right: 6px;
+          margin-bottom: 0;
 
-      &:hover {
-        h1 {
-          transform: rotate(0);
-          bottom: 190px;
+          &:hover {
+            h1 {
+              transform: rotate(0);
+              bottom: 190px;
+            }
+
+            p {
+              opacity: 1;
+              bottom: 20px;
+              visibility: visible;
+            }
+          }
+        }
+
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(to bottom, #ffffff00, #000000);
+          opacity: 0.6;
+        }
+
+        .c-gh-program__image {
+          width: 100%;
+          height: 470px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          @include grid-media($md) {
+            height: 450px;
+          }
+        }
+
+        h1,
+        p {
+          position: absolute;
+          color: $white;
+          -webkit-transition: all 1s;
+
+          /* Safari */
+          transition: all 1s;
         }
 
         p {
-          opacity: 1;
           bottom: 20px;
-          visibility: visible;
+          left: 10px;
+
+          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1);
+
+          @include grid-media($md) {
+            bottom: -30%;
+            visibility: hidden;
+            opacity: 0;
+          }
         }
-      }
-    }
+
+        h1 {
+          width: 50%;
+          margin: 0;
+          bottom: 170px;
+          left: 10px;
+
+          @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 42px, $line-height: 1);
+
+          @include grid-media($md) {
+            // @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 35px, $line-height: 1);
+
+            bottom: 0;
+            transform: rotate(-90deg);
+            transform-origin: top left;
+          }
 
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-image: linear-gradient(to bottom, #ffffff00, #000000);
-      opacity: 0.6;
-    }
-
-    .c-gh-program__image {
-      width: 100%;
-      height: 470px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-
-      @include grid-media($md) {
-        height: 450px;
-      }
-    }
-
-    h1,
-    p {
-      position: absolute;
-      color: $white;
-      -webkit-transition: all 1s;
-
-      /* Safari */
-      transition: all 1s;
-    }
-
-    p {
-      bottom: 20px;
-      left: 10px;
-
-      @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1);
-
-      @include grid-media($md) {
-        bottom: -30%;
-        visibility: hidden;
-        opacity: 0;
-      }
-    }
-
-    h1 {
-      width: 50%;
-      margin: 0;
-      bottom: 170px;
-      left: 10px;
-
-      @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 42px, $line-height: 1);
-
-      @include grid-media($md) {
-        // @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 35px, $line-height: 1);
-
-        bottom: 0;
-        transform: rotate(-90deg);
-        transform-origin: top left;
-      }
-
-
-      @include grid-media($lg) {
-        // @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 60px, $line-height: 1);
+          @include grid-media($lg) {
+            // @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 60px, $line-height: 1);
+          }
+        }
       }
     }
   }
