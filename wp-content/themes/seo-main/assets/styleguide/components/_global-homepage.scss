@@ -476,6 +476,7 @@
 
       .image_left {
         @include grid-column(7, $no-gutter);
+
         border-bottom-left-radius: 3em;
       }
     }
