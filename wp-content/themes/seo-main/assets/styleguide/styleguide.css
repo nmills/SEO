@@ -3837,7 +3837,7 @@ body {
     .c-gh-alumni .c-gh-alumni__container .c-gh-alumni__title h1 {
       font-size: 42px;
       margin: 0;
-      margin-top: 80px; } }
+      margin-top: 40px; } }
   @media only screen and (min-width: 1024px) {
     .c-gh-alumni .c-gh-alumni__container .c-gh-alumni__title h1 {
       margin-top: 120px; } }
@@ -3860,25 +3860,33 @@ body {
   width: calc(100%);
   float: left;
   margin-left: 0; }
+  @media only screen and (min-width: 480px) {
+    .c-gh-alumni .c-gh-alumni__container .c-gh-alumni__image {
+      max-width: 70%;
+      margin: auto;
+      float: none; } }
   @media only screen and (min-width: 768px) {
     .c-gh-alumni .c-gh-alumni__container .c-gh-alumni__image {
       width: calc(50%);
       float: left;
       margin-left: 0;
+      padding: 0;
       max-width: 541px; } }
   .c-gh-alumni .c-gh-alumni__container .c-gh-alumni__image .image_right {
     width: calc(58.33333%);
     float: left;
     margin-left: 0;
     float: right;
-    margin-top: -60px; }
+    margin-top: -60px;
+    border-bottom-right-radius: 3em; }
     @media only screen and (min-width: 768px) {
       .c-gh-alumni .c-gh-alumni__container .c-gh-alumni__image .image_right {
         margin-top: -150px; } }
   .c-gh-alumni .c-gh-alumni__container .c-gh-alumni__image .image_left {
     width: calc(58.33333%);
     float: left;
-    margin-left: 0; }
+    margin-left: 0;
+    border-bottom-left-radius: 3em; }
 
 .c-gh-donate {
   background: #050505; }

@@ -408,7 +408,7 @@
         @include grid-media($md) {
           font-size: 42px;
           margin: 0;
-          margin-top: 80px;
+          margin-top: 40px;
         }
 
 
@@ -443,17 +443,19 @@
     .c-gh-alumni__image {
       @include grid-column(12, $no-gutter);
 
-      // max-width: 279px;
-      // height: 157px;
-
       @include grid-media($sm) {
-        // height: 265px;
+        max-width: 70%;
+        margin: auto;
+        float: none;
+
+        // padding: 0 50px;
       }
 
 
       @include grid-media($md) {
         @include grid-column(6, $no-gutter);
 
+        padding: 0;
         max-width: 541px;
 
         // height: 323px;
@@ -465,6 +467,7 @@
 
         float: right;
         margin-top: -60px;
+        border-bottom-right-radius: 3em;
 
         @include grid-media($md) {
           margin-top: -150px;
@@ -473,6 +476,8 @@
 
       .image_left {
         @include grid-column(7, $no-gutter);
+
+        border-bottom-left-radius: 3em;
       }
     }
   }
