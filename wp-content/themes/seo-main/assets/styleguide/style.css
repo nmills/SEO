@@ -3649,85 +3649,87 @@ body {
       .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction:after {
         border-bottom-color: #ffffff; }
 
-.c-gh-program__container {
-  width: 100%;
-  float: left; }
-  .c-gh-program__container .c-gh-program__item {
-    width: calc(100%);
-    float: left;
-    margin-left: 0;
-    float: left;
-    position: relative;
-    margin-bottom: 6px; }
-    @media only screen and (min-width: 480px) {
-      .c-gh-program__container .c-gh-program__item {
-        width: calc(50% - 6px);
-        margin-right: 6px; } }
-    @media only screen and (min-width: 768px) {
-      .c-gh-program__container .c-gh-program__item {
-        width: calc(25% - 6px);
-        margin-right: 6px;
-        margin-bottom: 0; }
-        .c-gh-program__container .c-gh-program__item:hover h1 {
-          transform: rotate(0);
-          bottom: 190px; }
-        .c-gh-program__container .c-gh-program__item:hover p {
-          opacity: 1;
-          bottom: 20px;
-          visibility: visible; } }
-    .c-gh-program__container .c-gh-program__item:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-image: linear-gradient(to bottom, #ffffff00, #000000);
-      opacity: 0.6; }
-    .c-gh-program__container .c-gh-program__item .c-gh-program__image {
-      width: 100%;
-      height: 470px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; }
+.c-gh-program .container {
+  padding: 0; }
+  .c-gh-program .container .c-gh-program__container {
+    width: 100%;
+    float: left; }
+    .c-gh-program .container .c-gh-program__container .c-gh-program__item {
+      width: calc(100%);
+      float: left;
+      margin-left: 0;
+      float: left;
+      position: relative;
+      margin-bottom: 6px; }
+      @media only screen and (min-width: 480px) {
+        .c-gh-program .container .c-gh-program__container .c-gh-program__item {
+          width: calc(50% - 6px);
+          margin-right: 6px; } }
       @media only screen and (min-width: 768px) {
-        .c-gh-program__container .c-gh-program__item .c-gh-program__image {
-          height: 450px; } }
-    .c-gh-program__container .c-gh-program__item h1,
-    .c-gh-program__container .c-gh-program__item p {
-      position: absolute;
-      color: #ffffff;
-      -webkit-transition: all 1s;
-      /* Safari */
-      transition: all 1s; }
-    .c-gh-program__container .c-gh-program__item p {
-      bottom: 20px;
-      left: 10px;
-      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-      color: #ffffff;
-      font-weight: 100;
-      font-size: 24px;
-      line-height: 1; }
-      @media only screen and (min-width: 768px) {
-        .c-gh-program__container .c-gh-program__item p {
-          bottom: -30%;
-          visibility: hidden;
-          opacity: 0; } }
-    .c-gh-program__container .c-gh-program__item h1 {
-      width: 50%;
-      margin: 0;
-      bottom: 170px;
-      left: 10px;
-      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 42px;
-      line-height: 1; }
-      @media only screen and (min-width: 768px) {
-        .c-gh-program__container .c-gh-program__item h1 {
-          bottom: 0;
-          transform: rotate(-90deg);
-          transform-origin: top left; } }
+        .c-gh-program .container .c-gh-program__container .c-gh-program__item {
+          width: calc(25% - 6px);
+          margin-right: 6px;
+          margin-bottom: 0; }
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover h1 {
+            transform: rotate(0);
+            bottom: 190px; }
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover p {
+            opacity: 1;
+            bottom: 20px;
+            visibility: visible; } }
+      .c-gh-program .container .c-gh-program__container .c-gh-program__item:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, #ffffff00, #000000);
+        opacity: 0.6; }
+      .c-gh-program .container .c-gh-program__container .c-gh-program__item .c-gh-program__image {
+        width: 100%;
+        height: 470px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+        @media only screen and (min-width: 768px) {
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item .c-gh-program__image {
+            height: 450px; } }
+      .c-gh-program .container .c-gh-program__container .c-gh-program__item h1,
+      .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
+        position: absolute;
+        color: #ffffff;
+        -webkit-transition: all 1s;
+        /* Safari */
+        transition: all 1s; }
+      .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
+        bottom: 20px;
+        left: 10px;
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #ffffff;
+        font-weight: 100;
+        font-size: 24px;
+        line-height: 1; }
+        @media only screen and (min-width: 768px) {
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
+            bottom: -30%;
+            visibility: hidden;
+            opacity: 0; } }
+      .c-gh-program .container .c-gh-program__container .c-gh-program__item h1 {
+        width: 50%;
+        margin: 0;
+        bottom: 170px;
+        left: 10px;
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1; }
+        @media only screen and (min-width: 768px) {
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item h1 {
+            bottom: 0;
+            transform: rotate(-90deg);
+            transform-origin: top left; } }
 
 @media only screen and (min-width: 768px) {
   .c-gh-program-cta__container {
