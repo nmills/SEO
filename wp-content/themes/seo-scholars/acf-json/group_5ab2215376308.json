@@ -27,7 +27,7 @@
                     "name": "image",
                     "type": "image_crop",
                     "instructions": "",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -51,7 +51,7 @@
                     "name": "title",
                     "type": "text",
                     "instructions": "",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -70,7 +70,7 @@
                     "name": "text_blurb",
                     "type": "textarea",
                     "instructions": "",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -103,5 +103,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521623505
+    "modified": 1522315577
 }
