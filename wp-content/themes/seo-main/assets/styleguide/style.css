@@ -1368,18 +1368,6 @@ Styleguide 5.1
         background: white;
         margin-top: 20px; }
 
-.c-mobile-hero__image {
-  display: block; }
-  @media only screen and (min-width: 768px) {
-    .c-mobile-hero__image {
-      display: none; } }
-
-.c-desktop__video {
-  display: none; }
-  @media only screen and (min-width: 768px) {
-    .c-desktop__video {
-      display: block; } }
-
 .icon:before {
   content: '';
   display: inline-block; }
@@ -3708,14 +3696,31 @@ body {
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
           color: #ffffff;
           font-weight: 100;
-          font-size: 88px;
+          font-size: 70px;
           line-height: 1;
-          width: calc(41.66667%);
+          width: calc(50%);
           float: left;
           margin-left: 0;
           margin: 0;
           bottom: 80px;
           left: 60px; } }
+      @media only screen and (min-width: 1440px) {
+        .c-gh-hero__container .c-gh-hero__content h1 {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #ffffff;
+          font-weight: 100;
+          font-size: 88px;
+          line-height: 1; } }
+    .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image.c-mobile-hero__image {
+      display: block; }
+      @media only screen and (min-width: 768px) {
+        .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image.c-mobile-hero__image {
+          display: none; } }
+    .c-gh-hero__container .c-gh-hero__content .c-desktop__video, .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image {
+      display: none; }
+      @media only screen and (min-width: 768px) {
+        .c-gh-hero__container .c-gh-hero__content .c-desktop__video, .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image {
+          display: block; } }
 
 .c-gh-intro {
   margin: 0; }

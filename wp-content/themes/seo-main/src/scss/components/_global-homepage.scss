@@ -86,13 +86,34 @@
 
 
       @include grid-media($md) {
-        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 88px, $line-height: 1);
+        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 70px, $line-height: 1);
 
-        @include grid-column(5, $no-gutter);
+        @include grid-column(6, $no-gutter);
 
         margin: 0;
         bottom: 80px;
         left: 60px;
+      }
+
+
+      @include grid-media($xl) {
+        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 88px, $line-height: 1);
+      }
+    }
+
+    .c-gh-hero__image.c-mobile-hero__image {
+      display: block;
+
+      @include grid-media($md) {
+        display: none;
+      }
+    }
+
+    .c-desktop__video, .c-gh-hero__image {
+      display: none;
+
+      @include grid-media($md) {
+        display: block;
       }
     }
   }
