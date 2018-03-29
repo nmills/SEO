@@ -1368,6 +1368,9 @@ Styleguide 5.1
         background: white;
         margin-top: 20px; }
 
+iframe {
+  width: 100%; }
+
 .icon:before {
   content: '';
   display: inline-block; }
