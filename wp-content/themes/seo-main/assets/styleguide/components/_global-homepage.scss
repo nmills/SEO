@@ -203,15 +203,30 @@
         margin-bottom: 6px;
 
         @include grid-media($sm) {
-          width: calc(50% - 6px);
+          width: calc(50% - 3px);
           margin-right: 6px;
         }
 
 
+<<<<<<< HEAD
         @include grid-media($lg) {
+=======
+        @include grid-media($max-md) {
+          &:nth-child(even) {
+            margin-right: 0;
+          }
+        }
+
+
+        @include grid-media($md) {
+>>>>>>> Stag/master
           width: calc(25% - 6px);
-          margin-right: 6px;
+          margin-right: 8px;
           margin-bottom: 0;
+
+          &:last-child {
+            margin-right: 0;
+          }
 
           &:hover {
             h1 {
