@@ -4064,10 +4064,19 @@ body {
           margin-left: 0; } }
       .c-gh-donate .container .c-gh-donate__container .c-gh-donate__text h2 {
         margin-top: 0;
+        margin-bottom: 50px;
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
         color: #ffffff;
-        font-weight: 100; }
+        font-weight: 100;
+        font-size: 40px;
+        line-height: 1; }
         @media only screen and (min-width: 768px) {
           .c-gh-donate .container .c-gh-donate__container .c-gh-donate__text h2 {
+            font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            font-weight: 100;
+            font-size: 43px;
+            line-height: 1;
             margin: 0; } }
       @media only screen and (min-width: 768px) {
         .c-gh-donate .container .c-gh-donate__container .c-gh-donate__donate-button {
@@ -4082,11 +4091,16 @@ body {
       .c-gh-donate .container .c-gh-donate__container .c-gh-donate__donate-button .c-uie__calltoaction {
         color: #ffffff;
         border-left-color: #ffffff;
-        border-right-color: #eb0029; }
+        border-right-color: #eb0029;
+        border-left-width: 5px;
+        border-right-width: 5px;
+        padding: 15px 25px; }
         .c-gh-donate .container .c-gh-donate__container .c-gh-donate__donate-button .c-uie__calltoaction:before {
           border-bottom-color: #eb0029; }
         .c-gh-donate .container .c-gh-donate__container .c-gh-donate__donate-button .c-uie__calltoaction:after {
           border-bottom-color: #ffffff; }
+        .c-gh-donate .container .c-gh-donate__container .c-gh-donate__donate-button .c-uie__calltoaction:before, .c-gh-donate .container .c-gh-donate__container .c-gh-donate__donate-button .c-uie__calltoaction:after {
+          border-bottom-width: 5px; }
 
 /* Slider */
 .slick-slider {

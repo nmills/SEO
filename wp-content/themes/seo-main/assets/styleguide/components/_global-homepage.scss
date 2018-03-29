@@ -573,10 +573,13 @@
 
         h2 {
           margin-top: 0;
-          color: $white;
-          font-weight: $font-thinnest;
+          margin-bottom: 50px;
+
+          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 40px, $line-height: 1);
 
           @include grid-media($md) {
+            @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
+
             margin: 0;
           }
         }
@@ -598,6 +601,9 @@
           color: $white;
           border-left-color: $white;
           border-right-color: $red;
+          border-left-width: 5px;
+          border-right-width: 5px;
+          padding: 15px 25px;
 
           &:before {
             border-bottom-color: $red;
@@ -605,6 +611,10 @@
 
           &:after {
             border-bottom-color: $white;
+          }
+
+          &:before, &:after {
+            border-bottom-width: 5px;
           }
         }
       }
