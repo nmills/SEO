@@ -306,9 +306,14 @@ Styleguide 2.4
   border-left: 3px solid $red;
   border-right: 3px solid $black;
   position: relative;
-  color: $black;
-  font-weight: bold;
   text-decoration: none;
+
+  @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 22px, $line-height: 1);
+
+  @include grid-media($md) {
+    @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 26px, $line-height: 1);
+  }
+
 
   &:before {
     content: " ";
