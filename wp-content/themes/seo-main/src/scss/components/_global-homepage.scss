@@ -187,7 +187,7 @@
         }
 
 
-        @include grid-media($md) {
+        @include grid-media($lg) {
           width: calc(25% - 6px);
           margin-right: 6px;
           margin-bottom: 0;
@@ -195,7 +195,7 @@
           &:hover {
             h1 {
               transform: rotate(0);
-              bottom: 190px;
+              bottom: 170px;
             }
 
             p {
@@ -241,12 +241,18 @@
         }
 
         p {
-          bottom: 20px;
-          left: 10px;
+          top: calc(100% - 180px);
+          left: 30px;
+          max-width: 60%;
 
           @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1);
 
-          @include grid-media($md) {
+          @include grid-media($sm) {
+            max-width: 80%;
+          }
+
+
+          @include grid-media($lg) {
             bottom: -30%;
             visibility: hidden;
             opacity: 0;
@@ -257,12 +263,17 @@
           width: 50%;
           margin: 0;
           bottom: 170px;
-          left: 10px;
+          left: 30px;
 
           @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 42px, $line-height: 1);
 
-          @include grid-media($md) {
-            // @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 35px, $line-height: 1);
+          @include grid-media($sm) {
+            @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 35px, $line-height: 1);
+          }
+
+
+          @include grid-media($lg) {
+            @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 40px, $line-height: 1);
 
             bottom: 0;
             transform: rotate(-90deg);

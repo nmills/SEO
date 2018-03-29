@@ -3779,14 +3779,14 @@ body {
         .c-gh-program .container .c-gh-program__container .c-gh-program__item {
           width: calc(50% - 6px);
           margin-right: 6px; } }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1024px) {
         .c-gh-program .container .c-gh-program__container .c-gh-program__item {
           width: calc(25% - 6px);
           margin-right: 6px;
           margin-bottom: 0; }
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover h1 {
             transform: rotate(0);
-            bottom: 190px; }
+            bottom: 170px; }
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover p {
             opacity: 1;
             bottom: 20px;
@@ -3817,14 +3817,18 @@ body {
         /* Safari */
         transition: all 1s; }
       .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
-        bottom: 20px;
-        left: 10px;
+        top: calc(100% - 180px);
+        left: 30px;
+        max-width: 60%;
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
         color: #ffffff;
         font-weight: 100;
         font-size: 24px;
         line-height: 1; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 480px) {
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
+            max-width: 80%; } }
+        @media only screen and (min-width: 1024px) {
           .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
             bottom: -30%;
             visibility: hidden;
@@ -3833,14 +3837,26 @@ body {
         width: 50%;
         margin: 0;
         bottom: 170px;
-        left: 10px;
+        left: 30px;
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
         color: #ffffff;
         font-weight: 700;
         font-size: 42px;
         line-height: 1; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 480px) {
           .c-gh-program .container .c-gh-program__container .c-gh-program__item h1 {
+            font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 1; } }
+        @media only screen and (min-width: 1024px) {
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item h1 {
+            font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 1;
             bottom: 0;
             transform: rotate(-90deg);
             transform-origin: top left; } }
