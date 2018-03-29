@@ -3690,7 +3690,7 @@ body {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #ffffff;
       font-weight: 100;
-      font-size: 30px;
+      font-size: 46px;
       line-height: 1;
       width: calc(83.33333%);
       float: left;
@@ -3708,9 +3708,9 @@ body {
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
           color: #ffffff;
           font-weight: 100;
-          font-size: 70px;
+          font-size: 88px;
           line-height: 1;
-          width: calc(33.33333%);
+          width: calc(41.66667%);
           float: left;
           margin-left: 0;
           margin: 0;

@@ -72,7 +72,7 @@
     }
 
     h1 {
-      @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+      @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 46px, $line-height: 1);
 
       @include grid-column(10, $no-gutter);
 
@@ -86,9 +86,9 @@
 
 
       @include grid-media($md) {
-        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 70px, $line-height: 1);
+        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 88px, $line-height: 1);
 
-        @include grid-column(4, $no-gutter);
+        @include grid-column(5, $no-gutter);
 
         margin: 0;
         bottom: 80px;
