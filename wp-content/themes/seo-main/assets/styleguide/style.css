@@ -1368,18 +1368,6 @@ Styleguide 5.1
         background: white;
         margin-top: 20px; }
 
-.c-mobile-hero__image {
-  display: block; }
-  @media only screen and (min-width: 768px) {
-    .c-mobile-hero__image {
-      display: none; } }
-
-.c-desktop__video {
-  display: none; }
-  @media only screen and (min-width: 768px) {
-    .c-desktop__video {
-      display: block; } }
-
 .icon:before {
   content: '';
   display: inline-block; }
@@ -3690,7 +3678,7 @@ body {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #ffffff;
       font-weight: 100;
-      font-size: 30px;
+      font-size: 46px;
       line-height: 1;
       width: calc(83.33333%);
       float: left;
@@ -3710,47 +3698,73 @@ body {
           font-weight: 100;
           font-size: 70px;
           line-height: 1;
-          width: calc(33.33333%);
+          width: calc(50%);
           float: left;
           margin-left: 0;
           margin: 0;
           bottom: 80px;
           left: 60px; } }
+      @media only screen and (min-width: 1440px) {
+        .c-gh-hero__container .c-gh-hero__content h1 {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #ffffff;
+          font-weight: 100;
+          font-size: 88px;
+          line-height: 1; } }
+    .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image.c-mobile-hero__image {
+      display: block; }
+      @media only screen and (min-width: 768px) {
+        .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image.c-mobile-hero__image {
+          display: none; } }
+    .c-gh-hero__container .c-gh-hero__content .c-desktop__video, .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image {
+      display: none; }
+      @media only screen and (min-width: 768px) {
+        .c-gh-hero__container .c-gh-hero__content .c-desktop__video, .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image {
+          display: block; } }
 
 .c-gh-intro {
   margin: 0; }
   .c-gh-intro .container {
     background: #eb0029;
-    padding: 50px 20%; }
-    @media only screen and (min-width: 1024px) {
+    position: relative;
+    height: 530px; }
+    @media only screen and (min-width: 768px) {
       .c-gh-intro .container {
-        padding: 130px 20%; } }
+        height: 800px; } }
   .c-gh-intro .c-gh-intro__container {
     max-width: 1024px;
-    margin: 0 auto; }
-    @media only screen and (min-width: 768px) {
-      .c-gh-intro .c-gh-intro__container .c-gh-intro__content {
-        padding: 0 100px; } }
+    width: 100%;
+    padding: 0 10%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
     .c-gh-intro .c-gh-intro__container .c-gh-intro__content p {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #050505;
       font-weight: 100;
-      font-size: 20px;
-      line-height: 1.5;
+      font-size: 28px;
+      line-height: 1.3;
       margin-bottom: 50px; }
       @media only screen and (min-width: 768px) {
         .c-gh-intro .c-gh-intro__container .c-gh-intro__content p {
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
           color: #050505;
           font-weight: 100;
-          font-size: 30px;
-          line-height: 1.5;
+          font-size: 55px;
+          line-height: 1.3;
           margin-bottom: 55px; } }
       .c-gh-intro .c-gh-intro__container .c-gh-intro__content p strong {
         font-weight: inherit;
         color: #ffffff; }
     .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction {
-      border-left-color: #ffffff; }
+      border-left-color: #ffffff;
+      border-left-width: 5px;
+      border-right-width: 5px;
+      padding: 15px 25px; }
+      .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction:before, .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction:after {
+        border-bottom-width: 5px; }
       .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction:after {
         border-bottom-color: #ffffff; }
 
@@ -3770,14 +3784,14 @@ body {
         .c-gh-program .container .c-gh-program__container .c-gh-program__item {
           width: calc(50% - 6px);
           margin-right: 6px; } }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1024px) {
         .c-gh-program .container .c-gh-program__container .c-gh-program__item {
           width: calc(25% - 6px);
           margin-right: 6px;
           margin-bottom: 0; }
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover h1 {
             transform: rotate(0);
-            bottom: 190px; }
+            bottom: 170px; }
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover p {
             opacity: 1;
             bottom: 20px;
@@ -3808,14 +3822,18 @@ body {
         /* Safari */
         transition: all 1s; }
       .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
-        bottom: 20px;
-        left: 10px;
+        top: calc(100% - 180px);
+        left: 30px;
+        max-width: 60%;
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
         color: #ffffff;
         font-weight: 100;
         font-size: 24px;
         line-height: 1; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 480px) {
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
+            max-width: 80%; } }
+        @media only screen and (min-width: 1024px) {
           .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
             bottom: -30%;
             visibility: hidden;
@@ -3824,14 +3842,26 @@ body {
         width: 50%;
         margin: 0;
         bottom: 170px;
-        left: 10px;
+        left: 30px;
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
         color: #ffffff;
         font-weight: 700;
         font-size: 42px;
         line-height: 1; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 480px) {
           .c-gh-program .container .c-gh-program__container .c-gh-program__item h1 {
+            font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 1; } }
+        @media only screen and (min-width: 1024px) {
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item h1 {
+            font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 1;
             bottom: 0;
             transform: rotate(-90deg);
             transform-origin: top left; } }
@@ -3880,6 +3910,11 @@ body {
 
 .c-gh-program-cta__container .c-gh-program-cta__video {
   background: none; }
+  .c-gh-program-cta__container .c-gh-program-cta__video .video {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    height: 100%; }
   .c-gh-program-cta__container .c-gh-program-cta__video iframe {
     width: calc(100%);
     float: left;
