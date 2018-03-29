@@ -3173,6 +3173,16 @@ body {
           margin-left: 100px;
           z-index: 10;
           padding: 35px 40px; } }
+    .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image.c-mobile-hero__image {
+      display: block; }
+      @media only screen and (min-width: 768px) {
+        .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image.c-mobile-hero__image {
+          display: none; } }
+    .c-ph-hero__container .c-ph-hero__content .c-desktop__video, .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
+      display: none; }
+      @media only screen and (min-width: 768px) {
+        .c-ph-hero__container .c-ph-hero__content .c-desktop__video, .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
+          display: block; } }
 
 .c-ph-intro__container {
   max-width: 1024px;
