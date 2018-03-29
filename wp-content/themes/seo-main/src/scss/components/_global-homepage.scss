@@ -550,10 +550,9 @@
 }
 
 .c-gh-donate {
-  background: $black;
-
   .container {
     padding: 50px;
+    background: $black;
 
     @include grid-media($md) {
       padding: 50px 10%;
