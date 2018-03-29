@@ -8,7 +8,7 @@
             "name": "intro_text",
             "type": "textarea",
             "instructions": "For red colour use \"< strong >This text will be red in colour< \/strong >\"",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -54,5 +54,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522067919
+    "modified": 1522315439
 }
