@@ -3721,36 +3721,45 @@ body {
   margin: 0; }
   .c-gh-intro .container {
     background: #eb0029;
-    padding: 50px 20%; }
-    @media only screen and (min-width: 1024px) {
+    position: relative;
+    height: 530px; }
+    @media only screen and (min-width: 768px) {
       .c-gh-intro .container {
-        padding: 130px 20%; } }
+        height: 800px; } }
   .c-gh-intro .c-gh-intro__container {
     max-width: 1024px;
-    margin: 0 auto; }
-    @media only screen and (min-width: 768px) {
-      .c-gh-intro .c-gh-intro__container .c-gh-intro__content {
-        padding: 0 100px; } }
+    width: 100%;
+    padding: 0 10%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
     .c-gh-intro .c-gh-intro__container .c-gh-intro__content p {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #050505;
       font-weight: 100;
-      font-size: 20px;
-      line-height: 1.5;
+      font-size: 28px;
+      line-height: 1.3;
       margin-bottom: 50px; }
       @media only screen and (min-width: 768px) {
         .c-gh-intro .c-gh-intro__container .c-gh-intro__content p {
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
           color: #050505;
           font-weight: 100;
-          font-size: 30px;
-          line-height: 1.5;
+          font-size: 55px;
+          line-height: 1.3;
           margin-bottom: 55px; } }
       .c-gh-intro .c-gh-intro__container .c-gh-intro__content p strong {
         font-weight: inherit;
         color: #ffffff; }
     .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction {
-      border-left-color: #ffffff; }
+      border-left-color: #ffffff;
+      border-left-width: 5px;
+      border-right-width: 5px;
+      padding: 15px 25px; }
+      .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction:before, .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction:after {
+        border-bottom-width: 5px; }
       .c-gh-intro .c-gh-intro__container .c-gh-intro__content .c-uie__calltoaction:after {
         border-bottom-color: #ffffff; }
 
