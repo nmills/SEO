@@ -69,6 +69,22 @@
         padding: 35px 40px;
       }
     }
+
+    .c-ph-hero__image.c-mobile-hero__image {
+      display: block;
+
+      @include grid-media($md) {
+        display: none;
+      }
+    }
+
+    .c-desktop__video, .c-ph-hero__image {
+      display: none;
+
+      @include grid-media($md) {
+        display: block;
+      }
+    }
   }
 }
 

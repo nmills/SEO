@@ -3173,6 +3173,16 @@ body {
           margin-left: 100px;
           z-index: 10;
           padding: 35px 40px; } }
+    .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image.c-mobile-hero__image {
+      display: block; }
+      @media only screen and (min-width: 768px) {
+        .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image.c-mobile-hero__image {
+          display: none; } }
+    .c-ph-hero__container .c-ph-hero__content .c-desktop__video, .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
+      display: none; }
+      @media only screen and (min-width: 768px) {
+        .c-ph-hero__container .c-ph-hero__content .c-desktop__video, .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
+          display: block; } }
 
 .c-ph-intro__container {
   max-width: 1024px;
@@ -3782,12 +3792,14 @@ body {
       margin-bottom: 6px; }
       @media only screen and (min-width: 480px) {
         .c-gh-program .container .c-gh-program__container .c-gh-program__item {
-          width: calc(50% - 6px);
-          margin-right: 6px; } }
+          width: calc(50% - 3px);
+          margin-right: 6px; }
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item:nth-child(even) {
+            margin-right: 0; } }
       @media only screen and (min-width: 1024px) {
         .c-gh-program .container .c-gh-program__container .c-gh-program__item {
           width: calc(25% - 6px);
-          margin-right: 6px;
+          margin-right: 8px;
           margin-bottom: 0; }
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover h1 {
             transform: rotate(0);
@@ -3795,7 +3807,11 @@ body {
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover p {
             opacity: 1;
             bottom: 20px;
-            visibility: visible; } }
+            visibility: visible; }
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item:nth-child(even) {
+            margin-right: 8px; }
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item:last-child {
+            margin-right: 0; } }
       .c-gh-program .container .c-gh-program__container .c-gh-program__item:before {
         content: "";
         position: absolute;
