@@ -3905,6 +3905,11 @@ body {
 
 .c-gh-program-cta__container .c-gh-program-cta__video {
   background: none; }
+  .c-gh-program-cta__container .c-gh-program-cta__video .video {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    height: 100%; }
   .c-gh-program-cta__container .c-gh-program-cta__video iframe {
     width: calc(100%);
     float: left;

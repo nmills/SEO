@@ -345,6 +345,12 @@
   .c-gh-program-cta__video {
     background: none;
 
+    .video {
+      @include grid-column(12, $no-gutter);
+
+      height: 100%;
+    }
+
     iframe {
       @include grid-column(12, $no-gutter);
 

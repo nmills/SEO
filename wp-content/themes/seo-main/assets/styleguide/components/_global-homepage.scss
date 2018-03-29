@@ -271,6 +271,7 @@
             @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 35px, $line-height: 1);
           }
 
+
           @include grid-media($lg) {
             @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 40px, $line-height: 1);
 
@@ -343,6 +344,12 @@
 
   .c-gh-program-cta__video {
     background: none;
+
+    .video {
+   @include grid-column(12, $no-gutter);
+
+      height: 100%;
+}
 
     iframe {
       @include grid-column(12, $no-gutter);
