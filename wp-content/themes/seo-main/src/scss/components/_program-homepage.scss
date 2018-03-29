@@ -95,6 +95,16 @@
         margin-bottom: 55px;
       }
     }
+
+    .c-uie__calltoaction {
+      border-left-width: 5px;
+      border-right-width: 5px;
+      padding: 15px 25px;
+
+      &:before, &:after {
+        border-bottom-width: 5px;
+      }
+    }
   }
 }
 
