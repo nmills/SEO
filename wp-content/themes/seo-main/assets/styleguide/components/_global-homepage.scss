@@ -1,27 +1,20 @@
 // Global Homepage
-
 .c-gh-hero__container {
   margin-bottom: 0;
-
   .container {
     padding: 0;
   }
-
   .c-gh-hero__content {
     position: relative;
-
     // @include grid-media($md) {
     //   height: 271px;
     // }
-
     // @include grid-media($lg) {
     //   height: 369px;
     // }
-
     &:before {
       content: "";
       position: absolute;
-
       // top: 0;
       right: 0;
       bottom: 0;
@@ -30,109 +23,82 @@
       opacity: 0.6;
       width: 50%;
       height: 100%;
-
       @include grid-media($md) {
         background-image: linear-gradient(to bottom, $gradient-white, $gradient-black);
         width: 100%;
         height: 50%;
       }
     }
-
     .c-gh-hero__image {
       @include grid-column(12, $no-gutter);
-
       float: none;
       height: 460px;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       padding: 0;
-
       @include grid-media($md) {
         height: 650px;
       }
     }
-
     .c-gh-hero__video {
       @include grid-column(12, $no-gutter);
-
       float: none;
       height: 460px;
       padding: 0;
-
       @include grid-media($md) {
         height: 650px;
       }
-
-
       video {
         width: 100%;
         object-fit: fill;
       }
     }
-
     h1 {
       @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 46px, $line-height: 1);
-
       @include grid-column(10, $no-gutter);
-
       position: absolute;
       bottom: 25px;
       left: 25px;
-
       @include grid-media($sm) {
         @include grid-column(7, $no-gutter);
       }
-
-
       @include grid-media($md) {
         @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 70px, $line-height: 1);
-
         @include grid-column(6, $no-gutter);
-
         margin: 0;
         bottom: 80px;
         left: 60px;
       }
-
-
       @include grid-media($xl) {
         @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 88px, $line-height: 1);
       }
     }
-
     .c-gh-hero__image.c-mobile-hero__image {
       display: block;
-
       @include grid-media($md) {
         display: none;
       }
     }
-
     .c-desktop__video, .c-gh-hero__image {
       display: none;
-
       @include grid-media($md) {
         display: block;
       }
     }
   }
 }
-
 .c-gh-intro {
   margin: 0;
-
   .container {
     background: $red;
     position: relative;
     height: 530px;
-
     @include grid-media($md) {
       // padding: 130px 15%;
       height: 800px;
     }
   }
-
   .c-gh-intro__container {
     max-width: 1024px;
     width: 100%;
@@ -142,43 +108,31 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     .c-gh-intro__content {
       // padding: 0 50px;
-
       @include grid-media($md) {
         // padding: 0 100px;
       }
-
-
       p {
         @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 28px, $line-height: 1.3);
-
         margin-bottom: 50px;
-
         @include grid-media($md) {
           @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 55px, $line-height: 1.3);
-
           margin-bottom: 55px;
         }
-
-
         strong {
           font-weight: inherit;
           color: $white;
         }
       }
-
       .c-uie__calltoaction {
         border-left-color: $white;
         border-left-width: 5px;
         border-right-width: 5px;
         padding: 15px 25px;
-
         &:before, &:after {
           border-bottom-width: 5px;
         }
-
         &:after {
           border-bottom-color: $white;
         }
@@ -186,54 +140,30 @@
     }
   }
 }
-
 .c-gh-program {
   .container {
     padding: 0;
-
     .c-gh-program__container {
       width: 100%;
       float: left;
-
       .c-gh-program__item {
         @include grid-column(12, $no-gutter);
-
         float: left;
         position: relative;
         margin-bottom: 6px;
-
         @include grid-media($sm) {
-          width: calc(50% - 3px);
+          width: calc(50% - 6px);
           margin-right: 6px;
         }
-
-
-<<<<<<< HEAD
         @include grid-media($lg) {
-=======
-        @include grid-media($max-md) {
-          &:nth-child(even) {
-            margin-right: 0;
-          }
-        }
-
-
-        @include grid-media($md) {
->>>>>>> Stag/master
           width: calc(25% - 6px);
-          margin-right: 8px;
+          margin-right: 6px;
           margin-bottom: 0;
-
-          &:last-child {
-            margin-right: 0;
-          }
-
           &:hover {
             h1 {
               transform: rotate(0);
               bottom: 170px;
             }
-
             p {
               opacity: 1;
               bottom: 20px;
@@ -241,8 +171,6 @@
             }
           }
         }
-
-
         &:before {
           content: "";
           position: absolute;
@@ -253,70 +181,53 @@
           background-image: linear-gradient(to bottom, #ffffff00, #000000);
           opacity: 0.6;
         }
-
         .c-gh-program__image {
           width: 100%;
           height: 470px;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
-
           @include grid-media($md) {
             height: 450px;
           }
         }
-
         h1,
         p {
           position: absolute;
           color: $white;
           -webkit-transition: all 1s;
-
           /* Safari */
           transition: all 1s;
         }
-
         p {
           top: calc(100% - 180px);
           left: 30px;
           max-width: 60%;
-
           @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1);
-
           @include grid-media($sm) {
             max-width: 80%;
           }
-
-
           @include grid-media($lg) {
             bottom: -30%;
             visibility: hidden;
             opacity: 0;
           }
         }
-
         h1 {
           width: 50%;
           margin: 0;
           bottom: 170px;
           left: 30px;
-
           @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 42px, $line-height: 1);
-
           @include grid-media($sm) {
             @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 35px, $line-height: 1);
           }
-
-
           @include grid-media($lg) {
             @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 40px, $line-height: 1);
-
             bottom: 0;
             transform: rotate(-90deg);
             transform-origin: top left;
           }
-
-
           @include grid-media($lg) {
             // @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 60px, $line-height: 1);
           }
@@ -325,78 +236,61 @@
     }
   }
 }
-
 .c-gh-program-cta__container {
   @include grid-media($md) {
     max-width: 1080px;
     margin: 0 auto;
   }
-
-
   .c-gh-program-cta__title,
   .c-gh-program-cta__description,
   .c-gh-program-cta__links {
     @include grid-column(12, $no-gutter);
-
     @include grid-media($md) {
       @include grid-column(5, $no-gutter);
     }
   }
-
   .c-gh-program-cta__title {
     h1 {
       margin: 0;
       margin-bottom: 30px;
       font-size: 32px;
-
       @include grid-media($md) {
         font-size: 42px;
         margin: 0;
       }
     }
   }
-
   .c-gh-program-cta__description {
     p {
       font-size: 23px;
-
       @include grid-media($md) {
         font-size: 24px;
       }
     }
   }
-
   .c-gh-program-cta__links {
     a {
       display: inline-block;
       margin-bottom: 10px;
       font-size: 14px;
-
       @include grid-media($md) {
         font-size: 18px;
       }
     }
   }
-
   .c-gh-program-cta__video {
     background: none;
-
     .video {
       @include grid-column(12, $no-gutter);
-
       height: 100%;
     }
-
     iframe {
       @include grid-column(12, $no-gutter);
-
       height: 100%;
     }
   }
-
   .c-gh-program-cta__image, .c-gh-program-cta__video {
     @include grid-column(12, $no-gutter);
-
     // max-width: 279px;
     height: 157px;
     float: right;
@@ -404,21 +298,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-
     @include grid-media($sm) {
       height: 265px;
     }
-
-
     @include grid-media($md) {
       @include grid-column(6, $no-gutter);
-
       float: right;
       max-width: 541px;
       height: 323px;
     }
-
-
     // &:after {
     //   content: "";
     //   background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN.svg) transparent left center no-repeat;
@@ -432,7 +320,6 @@
     //   transform: translate(-50%, -50%);
     //   cursor: pointer;
     // }
-
     // &:hover {
     //   &:after {
     //     background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg);
@@ -441,176 +328,132 @@
  
   }
 }
-
 .c-gh-alumni {
   .container {
     padding: 0;
-
     @include grid-media($md) {
       padding: 0 15px;
     }
   }
-
   .c-gh-alumni__container {
     @include grid-media($md) {
       max-width: 1080px;
       margin: 0 auto;
     }
-
-
     .c-gh-alumni__title,
     .c-gh-alumni__description,
     .c-gh-alumni__links {
       @include grid-column(12, $no-gutter);
-
       padding: 0 50px;
-
       @include grid-media($md) {
         @include grid-column(5, $no-gutter);
-
         float: right;
         padding: 0;
       }
     }
-
     .c-gh-alumni__title {
       h1 {
         margin: 0;
         margin-bottom: 30px;
         font-size: 32px;
-
         @include grid-media($md) {
           font-size: 42px;
           margin: 0;
           margin-top: 40px;
         }
-
-
         @include grid-media($lg) {
           margin-top: 120px;
         }
       }
     }
-
     .c-gh-alumni__description {
       p {
         font-size: 23px;
-
         @include grid-media($md) {
           font-size: 24px;
         }
       }
     }
-
     .c-gh-alumni__links {
       a {
         display: inline-block;
         margin-bottom: 10px;
         font-size: 14px;
-
         @include grid-media($md) {
           font-size: 18px;
         }
       }
     }
-
     .c-gh-alumni__image {
       @include grid-column(12, $no-gutter);
-
       @include grid-media($sm) {
         max-width: 70%;
         margin: auto;
         float: none;
-
         // padding: 0 50px;
       }
-
-
       @include grid-media($md) {
         @include grid-column(6, $no-gutter);
-
         padding: 0;
         max-width: 541px;
-
         // height: 323px;
       }
-
-
       .image_right {
         @include grid-column(7, $no-gutter);
-
         float: right;
         margin-top: -60px;
         border-bottom-right-radius: 3em;
-
         @include grid-media($md) {
           margin-top: -150px;
         }
       }
-
       .image_left {
         @include grid-column(7, $no-gutter);
-
         border-bottom-left-radius: 3em;
       }
     }
   }
 }
-
 .c-gh-donate {
   background: $black;
-
   .container {
     padding: 50px;
-
     @include grid-media($md) {
       padding: 50px 10%;
       position: relative;
     }
-
-
     .c-gh-donate__container {
       max-width: 1024px;
       margin: 0 auto;
-
       .c-gh-donate__text {
         @include grid-media($md) {
           @include grid-column(8, $no-gutter);
         }
-
-
         h2 {
           margin-top: 0;
           color: $white;
           font-weight: $font-thinnest;
-
           @include grid-media($md) {
             margin: 0;
           }
         }
       }
-
       .c-gh-donate__donate-button {
         @include grid-media($md) {
           @include grid-column(4, $no-gutter);
-
           text-align: center;
           position: absolute;
           top: 50%;
           right: 0;
           transform: translateY(-50%);
         }
-
-
         .c-uie__calltoaction {
           color: $white;
           border-left-color: $white;
           border-right-color: $red;
-
           &:before {
             border-bottom-color: $red;
           }
-
           &:after {
             border-bottom-color: $white;
           }

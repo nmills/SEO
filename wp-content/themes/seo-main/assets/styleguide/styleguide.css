@@ -3782,22 +3782,13 @@ body {
       margin-bottom: 6px; }
       @media only screen and (min-width: 480px) {
         .c-gh-program .container .c-gh-program__container .c-gh-program__item {
-          width: calc(50% - 3px);
+          width: calc(50% - 6px);
           margin-right: 6px; } }
-<<<<<<< HEAD
       @media only screen and (min-width: 1024px) {
-=======
-      @media only screen and (max-width: 767px) {
-        .c-gh-program .container .c-gh-program__container .c-gh-program__item:nth-child(even) {
-          margin-right: 0; } }
-      @media only screen and (min-width: 768px) {
->>>>>>> Stag/master
         .c-gh-program .container .c-gh-program__container .c-gh-program__item {
           width: calc(25% - 6px);
-          margin-right: 8px;
+          margin-right: 6px;
           margin-bottom: 0; }
-          .c-gh-program .container .c-gh-program__container .c-gh-program__item:last-child {
-            margin-right: 0; }
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover h1 {
             transform: rotate(0);
             bottom: 170px; }
