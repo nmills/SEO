@@ -3361,6 +3361,11 @@ body {
       .c-ph-gallery__container .c-ph-gallery__last-link a:hover {
         color: #7cb4f6; }
 
+.c-ph-stats__container .c-ph-stats__content.single .old, .c-ph-stats__container .c-ph-stats__content.single .c-ph-stats-border__container {
+  width: calc(100%);
+  float: left;
+  margin-left: 0; }
+
 .c-ph-stats__container .old {
   background: #e5e7e7;
   height: 400px;

@@ -293,6 +293,14 @@
 }
 
 .c-ph-stats__container {
+  .c-ph-stats__content {
+    &.single {
+      .old, .c-ph-stats-border__container {
+        @include grid-column(12, $no-gutter);
+      }
+    }
+  }
+
   .old {
     background: $light-gray;
     height: 400px;

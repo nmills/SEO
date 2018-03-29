@@ -1,7 +1,11 @@
 <section>
   <div class="container">
     <div class="c-ph-stats__container">
+      {% if component.repeater|length == 1 %}
+      <div class="c-ph-stats__content single">
+      {% else %}
       <div class="c-ph-stats__content">
+      {% endif %}
         {% for repeater in component.repeater %} {% if repeater.stat_type == 'percentage' %}
         <div class="old">
           <div class="c-ratiometer_container">
