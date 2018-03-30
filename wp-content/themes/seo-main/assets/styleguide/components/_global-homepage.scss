@@ -451,8 +451,7 @@
 
 
     .c-gh-alumni__title,
-    .c-gh-alumni__description,
-    .c-gh-alumni__links {
+    .c-gh-alumni__description {
       @include grid-column(12, $no-gutter);
 
       padding: 0 50px;
@@ -492,16 +491,18 @@
           font-size: 24px;
         }
       }
-    }
 
-    .c-gh-alumni__links {
-      a {
-        display: inline-block;
-        margin-bottom: 10px;
-        font-size: 14px;
+      .c-gh-alumni__links {
+        float: left;
 
-        @include grid-media($md) {
-          font-size: 18px;
+        a {
+          display: inline-block;
+          margin-bottom: 10px;
+          font-size: 14px;
+
+          @include grid-media($md) {
+            font-size: 18px;
+          }
         }
       }
     }

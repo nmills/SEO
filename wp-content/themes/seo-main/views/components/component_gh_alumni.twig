@@ -10,12 +10,11 @@
       </div>
       <div class="c-gh-alumni__description">
         <p>{{component.text_blurb}}</p>
+        <ul class="c-gh-alumni__links">
+          {% if component.destination %}
+          <a href="{{component.destination.url}}" class="c-rte__link">{{component.destination.title}}</a> {% endif %}
+        </ul>
       </div>
-      <ul class="c-gh-alumni__links">
-        {% if component.destination %}
-          <a href="{{component.destination.url}}" class="c-rte__link">{{component.destination.title}}</a>
-        {% endif %}
-      </ul>
     </div>
   </div>
 </section>
