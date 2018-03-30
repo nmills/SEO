@@ -2328,7 +2328,9 @@ var _video=require('modules/video.js');var _video2=_interopRequireDefault(_video
 var _searchBar=require('modules/searchBar.js');var _searchBar2=_interopRequireDefault(_searchBar);
 var _hamburger=require('modules/hamburger.js');var _hamburger2=_interopRequireDefault(_hamburger);
 var _jqueryBxsliderMin=require('modules/jquery.bxslider.min.js');var _jqueryBxsliderMin2=_interopRequireDefault(_jqueryBxsliderMin);
-var _galleryWidget=require('modules/galleryWidget.js');var _galleryWidget2=_interopRequireDefault(_galleryWidget);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+var _galleryWidget=require('modules/galleryWidget.js');var _galleryWidget2=_interopRequireDefault(_galleryWidget);
+var _video_player_button=require('modules/video_player_button.js');var _video_player_button2=_interopRequireDefault(_video_player_button);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
 
 (function($){
 $(document).ready(function(){
@@ -2365,7 +2367,8 @@ function ready(){
 // Initialize Gallery Slider
 (0,_galleryWidget2.default)();
 
-(0,_video2.default)();
+// video();
+(0,_video_player_button2.default)();
 (0,_searchBar2.default)();
 (0,_hamburger2.default)();
 }
@@ -2373,7 +2376,7 @@ function ready(){
 
 }).call(this,typeof global!=="undefined"?global:typeof self!=="undefined"?self:typeof window!=="undefined"?window:{});
 
-},{"modules/accordion.js":2,"modules/galleryWidget.js":3,"modules/hamburger.js":4,"modules/jquery.bxslider.min.js":5,"modules/searchBar.js":6,"modules/video.js":7}],2:[function(require,module,exports){
+},{"modules/accordion.js":2,"modules/galleryWidget.js":3,"modules/hamburger.js":4,"modules/jquery.bxslider.min.js":5,"modules/searchBar.js":6,"modules/video.js":7,"modules/video_player_button.js":8}],2:[function(require,module,exports){
 'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 
@@ -2688,6 +2691,75 @@ $(this).get(0).pause();
 $(this).siblings(".c-hero_playbutton").fadeIn();
 }
 });
+};
+
+},{}],8:[function(require,module,exports){
+'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
+
+
+function(){
+// Inject YouTube API script
+var tag=document.createElement('script');
+tag.src="//www.youtube.com/player_api";
+var firstScriptTag=document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag,firstScriptTag);
+
+
+var playButton=$('#play-button');
+
+// Get youtube video ID function
+function getId(url){
+var regExp=/^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+var match=url.match(regExp);
+
+if(match&&match[2].length==11){
+return match[2];
+}else{
+return'error';
+}
+}
+
+// The first argument of YT.Player is an HTML element ID. YouTube API will replace my <div id="triptych__video"> tag with an iframe containing the youtube video.
+window.onYouTubeIframeAPIReady=function(){
+$('.fullwidth__video').each(function(){
+var VideoURL=$(this).attr('video-url');
+var playButton=$(this).siblings('#play-button');
+// Get youtube video ID from the URL
+var videoId=getId(VideoURL);
+var fullWidthplayer=new YT.Player($(this)[0],{
+height:320,
+width:400,
+playerVars:{
+controls:0,
+rel:0},
+
+videoId:videoId,
+events:{
+'onReady':onPlayerReady,
+'onStateChange':onPlayerStateChange}});
+
+
+
+function onPlayerStateChange(event){
+console.log(YT.PlayerState.PAUSED);
+if(event.data==YT.PlayerState.PAUSED){
+playButton.show();
+}
+}
+
+function onPlayerReady(event){
+playButton.on("click",function(e){
+// Playing video from start
+fullWidthplayer.playVideo();
+playButton.hide();
+});
+}
+
+
+});
+};
+
+
 };
 
 },{}]},{},[1]);
