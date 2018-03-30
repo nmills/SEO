@@ -112,27 +112,28 @@ Styleguide 4.1
       // padding-bottom: 15px;
       position: relative;
 
-      &:hover {
-        span {
-          background: $red;
-
-          &:after {
-            background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat;
-          }
-
-          h1 {
-            color: $white;
-          }
-        }
-
-        &.active {
+      @include grid-media($lg) {
+        &:hover {
           span {
+            background: $red;
+
+              color: $white;
+
             &:after {
-              transform: rotate(0deg);
+              background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat;
+            }
+          }
+
+          &.active {
+            span {
+              &:after {
+                transform: rotate(0deg);
+              }
             }
           }
         }
       }
+
 
       &.active {
         span {
@@ -149,6 +150,7 @@ Styleguide 4.1
         padding-top: 15px;
         padding-bottom: 15px;
         padding: 25px 15px;
+        padding-right: 45px;
 
         &:after {
           content: "";
