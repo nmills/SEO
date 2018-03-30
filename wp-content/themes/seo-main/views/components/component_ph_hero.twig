@@ -1,0 +1,33 @@
+<section>
+  <div class="container c-ph-hero__container">
+    <div class="c-ph-hero__content">
+      {# {% if component.hero_type == 'image' %}
+        <div class="c-ph-hero__image" style="background-image: url({{Image(component.image).src }})">
+        </div>
+      {% elseif component.hero_type == 'video' %}
+      <div class="c-ph-hero__video">
+        <video loop muted autoplay class="video-player">
+          <source src="{{component.video.url}}" type="video/mp4">
+        </video>
+      </div>
+      {% endif %} #}
+      {# Refactored Code by amalan #}
+
+      {% if component.video %}
+        <div class="c-ph-hero__video c-desktop__video">
+          <video loop muted autoplay class="video-player">
+            <source src="{{component.video.url}}" type="video/mp4">
+          </video>
+        </div>
+      {% else %}
+        <div class="c-ph-hero__image" style="background-image: url({{Image(component.image).src }})">
+        </div>
+      {% endif %}
+
+      <div class="c-ph-hero__image c-mobile-hero__image" style="background-image: url({{Image(component.image).src }})">
+      </div>
+
+      <h1>{{component.text}}</h1>
+    </div>
+  </div>
+</section>

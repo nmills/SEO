@@ -1,0 +1,14 @@
+<section class="c-gh-program">
+  <div class="container">
+    <div class="c-gh-program__container">
+      {% for repeater in component.repeater %}
+      <div class="c-gh-program__item">
+        <div class="c-gh-program__image" style="background-image: url({{Image(repeater.image).src }})"></div>
+        {# <img src="{{Image(repeater.image).src }}" /> #}
+        <h1>{{repeater.title}}</h1>
+        <p>{{repeater.text_blurb}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

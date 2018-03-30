@@ -1,28 +1,32 @@
 <section>
   <div class="container">
     <div class="c-program_cta__container">
-			<div class="c-program-title">
+      <div class="c-program-title">
         <h1>{{component.heading}}</h1>
       </div>
-    	{% if component.cta_type == 'image' %}
-				<div class="c-program-image" style="background-image: url('{{Image(component.image).src }}')"></div>
-			{% elseif component.cta_type == 'video' %}
-	      <div class="c-program-video">
-          <div class="video">
-            <div data-type="youtube" data-video-id="{{component.link}}"></div>
-          </div>
-	        {# <iframe src="{{component.link}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> #}
-	      </div>
-			{% endif %}
+      {% if component.cta_type == 'image' %}
+      <div class="c-program-image" style="background-image: url('{{Image(component.image).src }}')"></div>
+      {% elseif component.cta_type == 'video' %}
+      <div class="c-program-video">
+        {#
+        <div class="video">
+          <iframe id="ytplayer" type="text/html" src="{{component.link|replace({'watch?v=':'embed/'})}}" frameborder="0"></iframe>
+        </div> #}
+        <video loop muted class="video-player">
+          <source src="{{component.video.url}}" type="video/mp4">
+        </video>
+        <div class="c-hero_playbutton"></div>
+      </div>
+      {% endif %}
       <div class="c-program-description">
         <p>{{component.body}}</p>
       </div>
       <ul class="c-program-links">
-      	{% for link in component.links %}
-          <li>
-  	        <a href="{{link.destination_url}}" class="c-rte__link">{{link.text}}</a>
-          </li>
-				{% endfor %}
+        {% for link in component.links %}
+        <li>
+          <a href="{{link.destination_url}}" class="c-rte__link">{{link.text}}</a>
+        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>

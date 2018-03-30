@@ -1,0 +1,21 @@
+<section class="c-gh-hero__container">
+  <div class="container">
+    <div class="c-gh-hero__content">
+      {% if component.video %}
+        <div class="c-gh-hero__video c-desktop__video">
+          <video loop muted autoplay class="video-player">
+            <source src="{{component.video.url}}" type="video/mp4">
+          </video>
+        </div>
+      {% else %}
+        <div class="c-gh-hero__image" style="background-image: url({{Image(component.image).src }})">
+        </div>
+      {% endif %}
+
+      <div class="c-gh-hero__image c-mobile-hero__image" style="background-image: url({{Image(component.image).src }})">
+      </div>
+
+      <h1>{{component.hero_text}}</h1>
+    </div>
+  </div>
+</section>

@@ -2,10 +2,11 @@
   <div class="c-signup">
     <h1 class="c-signup__title">{{component.header_text}}</h1>
     <div class="c-signup__form">
-      <form action="">
-        <input type="text" class="c-signup__input" placeholder="name@email.com">
-        <input type="submit" class="c-signup__button" id="signup" value="">
+      <form action="" id="signup_form">
+        <input type="email" name="email" class="c-signup__input" placeholder="name@email.com">
+        <input type="text" name="zipcode" class="c-signup__input" placeholder="zipcode">
       </form>
+      <button class="c-uie__calltoaction-secondary" type="submit" form="signup_form" value="Sign Up">Sign Up</button>
     </div>
   </div>
 </section>

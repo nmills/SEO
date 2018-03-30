@@ -1,0 +1,43 @@
+{
+    "key": "group_5ab0d276856cd",
+    "title": "component: PH text",
+    "fields": [
+        {
+            "key": "field_5ab0d27e15c64",
+            "label": "text",
+            "name": "text",
+            "type": "textarea",
+            "instructions": "For red colour use \"< strong >This text will be red in colour< \/strong >\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1522067832
+}

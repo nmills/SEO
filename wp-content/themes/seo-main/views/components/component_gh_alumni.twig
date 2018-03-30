@@ -1,0 +1,21 @@
+<section class="c-gh-alumni">
+  <div class="container">
+    <div class="c-gh-alumni__container">
+      <div class="c-gh-alumni__title">
+        <h1>{{component.heading}}</h1>
+      </div>
+      <div class="c-gh-alumni__image">
+        <img class="image_left" src="{{Image(component.image_1).src }}" />
+        <img class="image_right" src="{{Image(component.image_2).src }}" />
+      </div>
+      <div class="c-gh-alumni__description">
+        <p>{{component.text_blurb}}</p>
+      </div>
+      <ul class="c-gh-alumni__links">
+        {% if component.destination %}
+          <a href="{{component.destination.url}}" class="c-rte__link">{{component.destination.title}}</a>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</section>
