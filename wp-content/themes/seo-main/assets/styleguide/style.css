@@ -4009,13 +4009,15 @@ body {
     .c-gh-alumni .c-gh-alumni__container .c-gh-alumni__description p {
       font-size: 24px; } }
 
-.c-gh-alumni .c-gh-alumni__container .c-gh-alumni__links a {
-  display: inline-block;
-  margin-bottom: 10px;
-  font-size: 14px; }
-  @media only screen and (min-width: 768px) {
-    .c-gh-alumni .c-gh-alumni__container .c-gh-alumni__links a {
-      font-size: 18px; } }
+.c-gh-alumni .c-gh-alumni__container .c-gh-alumni__description .c-gh-alumni__links {
+  float: left; }
+  .c-gh-alumni .c-gh-alumni__container .c-gh-alumni__description .c-gh-alumni__links a {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px; }
+    @media only screen and (min-width: 768px) {
+      .c-gh-alumni .c-gh-alumni__container .c-gh-alumni__description .c-gh-alumni__links a {
+        font-size: 18px; } }
 
 .c-gh-alumni .c-gh-alumni__container .c-gh-alumni__image {
   width: calc(100%);
