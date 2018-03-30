@@ -8,13 +8,9 @@
       <div class="c-program-image" style="background-image: url('{{Image(component.image).src }}')"></div>
       {% elseif component.cta_type == 'video' %}
       <div class="c-program-video">
-        {#
         <div class="video">
-          <iframe id="ytplayer" type="text/html" src="{{component.link|replace({'watch?v=':'embed/'})}}" frameborder="0"></iframe>
-        </div> #}
-        <video loop muted class="video-player">
-          <source src="{{component.video.url}}" type="video/mp4">
-        </video>
+          <iframe id="ytplayer" type="text/html" src="{{component.video|replace({'watch?v=':'embed/'})}}" frameborder="0"></iframe>
+        </div>
         <div class="c-hero_playbutton"></div>
       </div>
       {% endif %}
