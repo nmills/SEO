@@ -9,7 +9,7 @@
       {% elseif component.cta_type == 'video' %}
       <div class="c-program-video">
         <div class="video">
-          <iframe id="ytplayer" type="text/html" src="{{component.video|replace({'watch?v=':'embed/'})}}" frameborder="0"></iframe>
+          <iframe id="ytplayer" type="text/html" src="{{component.link|replace({'watch?v=':'embed/'})}}" frameborder="0"></iframe>
         </div>
         <div class="c-hero_playbutton"></div>
       </div>
