@@ -8,6 +8,8 @@ import searchBar from 'modules/searchBar.js';
 import hamburger from 'modules/hamburger.js';
 import bxslider from 'modules/jquery.bxslider.min.js';
 import galleryWidget from 'modules/galleryWidget.js';
+import player_button from 'modules/video_player_button.js';
+
 
 (function($) {
   $( document ).ready(function() {
@@ -44,7 +46,8 @@ import galleryWidget from 'modules/galleryWidget.js';
     // Initialize Gallery Slider
     galleryWidget();
 
-    video();
+    // video();
+    player_button();
     searchBar();
     hamburger();
   }
