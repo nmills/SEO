@@ -34,4 +34,15 @@ export default function() {
     $('li.question-js').removeClass('hide');
     $('li.question-js').not("li.question-js." + cat_class).addClass('hide');
   });
+  
+  // FAQ filter mobile
+  $('span#select').click(function() {
+    $('#sel-option li').show();
+  });
+
+  $('#sel-option li').click(function(e) {
+    $('span#select').text($(this).text());
+    $('#sel-option li').hide();
+    e.preventDefault();
+  })
 }

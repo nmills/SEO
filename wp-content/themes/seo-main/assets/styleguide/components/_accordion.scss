@@ -116,8 +116,7 @@ Styleguide 4.1
         &:hover {
           span {
             background: $red;
-
-              color: $white;
+            color: $white;
 
             &:after {
               background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat;
@@ -178,6 +177,13 @@ Styleguide 4.1
 }
 
 .c-accordion__filter {
+  display: none;
+
+  @include grid-media($md) {
+    display: block;
+  }
+
+
   margin-bottom: 40px;
 
   li {
@@ -195,6 +201,41 @@ Styleguide 4.1
     &.active-selection {
       font-weight: 100;
       color: $maroon;
+    }
+  }
+}
+
+.c-accordion__filter-mobile {
+  @include grid-media($md) {
+    display: none;
+  }
+
+
+  h3 {
+    display: inline-block;
+    margin-right: 10px;
+    text-transform: lowercase;
+
+    @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
+  }
+
+  #select {
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @include type-custom($color: $maroon, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
+  }
+
+  #sel-option {
+    margin-left: 62px;
+    display: block;
+
+    li {
+      font-size: 14px;
+      display: inline-block;
+      width: 100%;
+      display: none;
+      margin-bottom: 5px;
     }
   }
 }

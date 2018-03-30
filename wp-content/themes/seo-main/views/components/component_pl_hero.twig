@@ -8,12 +8,10 @@
       </a>
     {% elseif component.header_type == 'video' %}
       <div class="c-hero_video">
-        {# <div class="video">
-          <div data-type="youtube" data-video-id="{{component.video}}"></div>
-        </div> #}
-         <video loop muted class="video-player">
-          <source src="{{component.video.url}}" type="video/mp4">
-        </video>
+        <div class="video">
+          {# <div data-type="youtube" data-video-id="{{component.video}}"></div> #}
+          <iframe id="ytplayer" type="text/html" src="{{component.video|replace({'watch?v=':'embed/'})}}" frameborder="0"></iframe>
+        </div>
         <div class="c-hero_playbutton"></div>
         <p>{{component.hero_text}}</p>
       </div>

@@ -1224,7 +1224,11 @@ Styleguide 4.1
           width: 80%; }
 
 .c-accordion__filter {
+  display: none;
   margin-bottom: 40px; }
+  @media only screen and (min-width: 768px) {
+    .c-accordion__filter {
+      display: block; } }
   .c-accordion__filter li {
     display: inline;
     text-transform: uppercase;
@@ -1237,6 +1241,39 @@ Styleguide 4.1
     .c-accordion__filter li.active-selection {
       font-weight: 100;
       color: #820d1b; }
+
+@media only screen and (min-width: 768px) {
+  .c-accordion__filter-mobile {
+    display: none; } }
+
+.c-accordion__filter-mobile h3 {
+  display: inline-block;
+  margin-right: 10px;
+  text-transform: lowercase;
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #050505;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1; }
+
+.c-accordion__filter-mobile #select {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #820d1b;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1; }
+
+.c-accordion__filter-mobile #sel-option {
+  margin-left: 62px;
+  display: block; }
+  .c-accordion__filter-mobile #sel-option li {
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    display: none;
+    margin-bottom: 5px; }
 
 /*
 Video Component

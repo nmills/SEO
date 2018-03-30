@@ -2410,6 +2410,17 @@ var cat_class=$(this).attr('class').split(' ')[1];
 $('li.question-js').removeClass('hide');
 $('li.question-js').not("li.question-js."+cat_class).addClass('hide');
 });
+
+// FAQ filter mobile
+$('span#select').click(function(){
+$('#sel-option li').show();
+});
+
+$('#sel-option li').click(function(e){
+$('span#select').text($(this).text());
+$('#sel-option li').hide();
+e.preventDefault();
+});
 };
 
 },{}],3:[function(require,module,exports){
