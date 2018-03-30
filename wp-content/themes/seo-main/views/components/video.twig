@@ -3,8 +3,9 @@
 		<h1>{{component.heading}}</h1>
 	</div>
 	<div class="video">
-		<iframe id="ytplayer" type="text/html" src="{{component.video|replace({'watch?v=':'embed/'})}}" frameborder="0"></iframe>
-	</div>
+          <div class="fullwidth__video" video-url="{{component.video}}"></div>
+        </div>
+        <div id="play-button" class="c-hero_playbutton"></div>
 	<div class="quote">
 		<p>
 		{{component.quote}}
