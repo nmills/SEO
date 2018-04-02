@@ -215,8 +215,9 @@
 
           &:hover {
             h1 {
-              transform: rotate(0);
               bottom: 170px;
+              transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+              transform: rotate(0);
             }
 
             p {

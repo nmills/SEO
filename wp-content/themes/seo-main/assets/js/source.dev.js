@@ -2721,7 +2721,6 @@ return'error';
 
 // The first argument of YT.Player is an HTML element ID. YouTube API will replace my <div id="triptych__video"> tag with an iframe containing the youtube video.
 window.onYouTubeIframeAPIReady=function(){
-console.log("asd");
 $('.fullwidth__video').each(function(){
 var VideoURL=$(this).attr('video-url');
 var playButton=$(this).siblings('#play-button');
@@ -2750,7 +2749,6 @@ playButton.show();
 
 function onPlayerReady(event){
 playButton.on("click",function(e){
-console.log('test');
 // Playing video from start
 fullWidthplayer.playVideo();
 playButton.hide();
