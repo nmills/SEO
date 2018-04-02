@@ -15,11 +15,8 @@
                 "class": "",
                 "id": ""
             },
-            "button_label": "Add Component",
-            "min": "",
-            "max": "",
-            "layouts": [
-                {
+            "layouts": {
+                "5a9ce783b10cd": {
                     "key": "5a9ce783b10cd",
                     "name": "image",
                     "label": "image",
@@ -50,7 +47,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "5a9ce7c4e3663": {
                     "key": "5a9ce7c4e3663",
                     "name": "signup",
                     "label": "signup",
@@ -81,7 +78,7 @@
                     "min": "",
                     "max": ""
                 },
-                {
+                "5a9ce7e1e3666": {
                     "key": "5a9ce7e1e3666",
                     "name": "cta",
                     "label": "cta",
@@ -112,7 +109,10 @@
                     "min": "",
                     "max": ""
                 }
-            ]
+            },
+            "button_label": "Add Component",
+            "min": "",
+            "max": 3
         }
     ],
     "location": [
@@ -132,5 +132,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520235629
+    "modified": 1522654274
 }
