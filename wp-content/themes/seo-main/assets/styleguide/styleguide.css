@@ -3848,13 +3848,15 @@ body {
           margin-right: 8px;
           margin-bottom: 0; }
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover h1 {
-            bottom: 170px;
-            transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
-            transform: rotate(0); }
+            transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1); }
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover p {
             opacity: 1;
             bottom: 20px;
             visibility: visible; }
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover h1.heading_desktop {
+            opacity: 0; }
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover h1.heading_hover {
+            opacity: 1; }
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:nth-child(even) {
             margin-right: 8px; }
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:last-child {
@@ -3925,9 +3927,19 @@ body {
             font-weight: 700;
             font-size: 40px;
             line-height: 1;
-            bottom: 0;
-            transform: rotate(-90deg);
-            transform-origin: top left; } }
+            bottom: 0; } }
+        .c-gh-program .container .c-gh-program__container .c-gh-program__item h1.heading_desktop {
+          transform: rotate(-90deg);
+          transform-origin: top left;
+          display: none; }
+          @media only screen and (min-width: 1024px) {
+            .c-gh-program .container .c-gh-program__container .c-gh-program__item h1.heading_desktop {
+              display: block; } }
+        .c-gh-program .container .c-gh-program__container .c-gh-program__item h1.heading_hover {
+          bottom: 170px; }
+          @media only screen and (min-width: 1024px) {
+            .c-gh-program .container .c-gh-program__container .c-gh-program__item h1.heading_hover {
+              opacity: 0; } }
 
 @media only screen and (min-width: 768px) {
   .c-gh-program-cta__container {
