@@ -1189,14 +1189,14 @@ Styleguide 4.1
         .c-accordion li .toggle {
           font-size: 34.5px;
           line-height: 1.45; } }
-      .c-accordion li .toggle:hover span {
-        background: #eb0029; }
-        .c-accordion li .toggle:hover span:after {
-          background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat; }
-        .c-accordion li .toggle:hover span h1 {
+      @media only screen and (min-width: 1024px) {
+        .c-accordion li .toggle:hover span {
+          background: #eb0029;
           color: #ffffff; }
-      .c-accordion li .toggle:hover.active span:after {
-        transform: rotate(0deg); }
+          .c-accordion li .toggle:hover span:after {
+            background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat; }
+        .c-accordion li .toggle:hover.active span:after {
+          transform: rotate(0deg); } }
       .c-accordion li .toggle.active span:after {
         transform: rotate(90deg); }
       .c-accordion li .toggle span {
@@ -1205,7 +1205,8 @@ Styleguide 4.1
         display: block;
         padding-top: 15px;
         padding-bottom: 15px;
-        padding: 25px 15px; }
+        padding: 25px 15px;
+        padding-right: 45px; }
         .c-accordion li .toggle span:after {
           content: "";
           position: absolute;
@@ -1223,7 +1224,11 @@ Styleguide 4.1
           width: 80%; }
 
 .c-accordion__filter {
+  display: none;
   margin-bottom: 40px; }
+  @media only screen and (min-width: 768px) {
+    .c-accordion__filter {
+      display: block; } }
   .c-accordion__filter li {
     display: inline;
     text-transform: uppercase;
@@ -1232,10 +1237,43 @@ Styleguide 4.1
     margin-right: 30px;
     cursor: pointer; }
     .c-accordion__filter li:hover {
-      color: #eb0029; }
+      color: #820d1b; }
     .c-accordion__filter li.active-selection {
       font-weight: 100;
       color: #820d1b; }
+
+@media only screen and (min-width: 768px) {
+  .c-accordion__filter-mobile {
+    display: none; } }
+
+.c-accordion__filter-mobile h3 {
+  display: inline-block;
+  margin-right: 10px;
+  text-transform: lowercase;
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #050505;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1; }
+
+.c-accordion__filter-mobile #select {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #820d1b;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1; }
+
+.c-accordion__filter-mobile #sel-option {
+  margin-left: 62px;
+  display: block; }
+  .c-accordion__filter-mobile #sel-option li {
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    display: none;
+    margin-bottom: 5px; }
 
 /*
 Video Component
@@ -1367,6 +1405,11 @@ Styleguide 5.1
         height: 2px;
         background: white;
         margin-top: 20px; }
+
+.video {
+  width: 100%;
+  height: 100%;
+  position: relative; }
 
 iframe {
   width: 100%; }

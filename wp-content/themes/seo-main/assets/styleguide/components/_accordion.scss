@@ -112,27 +112,27 @@ Styleguide 4.1
       // padding-bottom: 15px;
       position: relative;
 
-      &:hover {
-        span {
-          background: $red;
-
-          &:after {
-            background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat;
-          }
-
-          h1 {
-            color: $white;
-          }
-        }
-
-        &.active {
+      @include grid-media($lg) {
+        &:hover {
           span {
+            background: $red;
+            color: $white;
+
             &:after {
-              transform: rotate(0deg);
+              background: url("/wp-content/themes/seo-main/assets/img/icons/carat-accordion-open.svg") right center no-repeat;
+            }
+          }
+
+          &.active {
+            span {
+              &:after {
+                transform: rotate(0deg);
+              }
             }
           }
         }
       }
+
 
       &.active {
         span {
@@ -149,6 +149,7 @@ Styleguide 4.1
         padding-top: 15px;
         padding-bottom: 15px;
         padding: 25px 15px;
+        padding-right: 45px;
 
         &:after {
           content: "";
@@ -176,6 +177,13 @@ Styleguide 4.1
 }
 
 .c-accordion__filter {
+  display: none;
+
+  @include grid-media($md) {
+    display: block;
+  }
+
+
   margin-bottom: 40px;
 
   li {
@@ -187,12 +195,47 @@ Styleguide 4.1
     cursor: pointer;
 
     &:hover {
-      color: $red;
+      color: $maroon;
     }
 
     &.active-selection {
       font-weight: 100;
       color: $maroon;
+    }
+  }
+}
+
+.c-accordion__filter-mobile {
+  @include grid-media($md) {
+    display: none;
+  }
+
+
+  h3 {
+    display: inline-block;
+    margin-right: 10px;
+    text-transform: lowercase;
+
+    @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
+  }
+
+  #select {
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @include type-custom($color: $maroon, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
+  }
+
+  #sel-option {
+    margin-left: 62px;
+    display: block;
+
+    li {
+      font-size: 14px;
+      display: inline-block;
+      width: 100%;
+      display: none;
+      margin-bottom: 5px;
     }
   }
 }

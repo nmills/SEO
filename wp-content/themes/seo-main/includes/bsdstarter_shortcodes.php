@@ -120,13 +120,13 @@ add_shortcode( 'iframe', 'bsdstarter_video' );
 
 function youtube_embed_func( $atts ){
 
-  $embedlink = str_replace('watch?v=', 'embed/', $atts['link']);
+  // $embedlink = str_replace('watch?v=', 'embed/', $atts['link']);
 
   $output = '';
   $output .= '<div class="video">';
-  $output .= ' <iframe id="ytplayer" type="text/html" width="640" height="360" src="' . $embedlink .'" frameborder="0"></iframe>';
+  $output .= '<div class="fullwidth__video" video-url="' . $atts['link'] .'"></div>';
   $output .= '<p class="caption">' . $atts['heading'] .'</p>';
-  $output .= '</div>';
+  $output .= '<div id="play-button" class="c-hero_playbutton"></div></div>';
   return $output;
 }
 add_shortcode( 'youtube', 'youtube_embed_func' );
