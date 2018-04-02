@@ -181,10 +181,9 @@ Styleguide 4.1
 
   @include grid-media($md) {
     display: block;
+    margin-bottom: 40px;
   }
 
-
-  margin-bottom: 40px;
 
   li {
     display: inline;
@@ -206,6 +205,10 @@ Styleguide 4.1
 }
 
 .c-accordion__filter-mobile {
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  padding: 10px 0px;
+
   @include grid-media($md) {
     display: none;
   }
