@@ -1550,7 +1550,7 @@ Styleguide 3.1
         font-weight: 100;
         font-size: 120px;
         line-height: 0.8;
-        width: 515px;
+        width: 36%;
         background: none;
         float: left;
         margin: 0;
@@ -3161,74 +3161,76 @@ body {
 .c-gallery__container.image-large .item__description p {
   font-size: 18px; }
 
-.c-ph-hero__container {
-  padding: 0; }
-  .c-ph-hero__container .c-ph-hero__content {
-    position: relative; }
-    .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
-      width: calc(100%);
-      float: left;
-      margin-left: 0;
-      float: none;
-      height: 460px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      padding: 0; }
-      @media only screen and (min-width: 768px) {
-        .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
-          height: 650px; } }
-    .c-ph-hero__container .c-ph-hero__content .c-ph-hero__video {
-      width: calc(100%);
-      float: left;
-      margin-left: 0;
-      float: none;
-      height: 460px;
-      padding: 0; }
-      @media only screen and (min-width: 768px) {
-        .c-ph-hero__container .c-ph-hero__content .c-ph-hero__video {
-          height: 650px; } }
-      .c-ph-hero__container .c-ph-hero__content .c-ph-hero__video video {
-        width: 100%;
-        object-fit: fill; }
-    .c-ph-hero__container .c-ph-hero__content h1 {
-      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-      color: #050505;
-      font-weight: 100;
-      font-size: 30px;
-      line-height: 1;
-      width: calc(83.33333%);
-      float: left;
-      margin-left: 0;
-      background: white;
-      padding: 15px 20px;
-      margin: 0;
-      margin-top: -50px;
+.c-ph-hero {
+  margin-bottom: 0; }
+  .c-ph-hero .c-ph-hero__container {
+    padding: 0; }
+    .c-ph-hero .c-ph-hero__container .c-ph-hero__content {
       position: relative; }
-      @media only screen and (min-width: 768px) {
-        .c-ph-hero__container .c-ph-hero__content h1 {
-          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-          color: #050505;
-          font-weight: 100;
-          font-size: 70px;
-          line-height: 1;
-          width: calc(66.66667%);
-          float: left;
-          margin-left: 0;
-          margin-top: -160px;
-          margin-left: 100px;
-          z-index: 10;
-          padding: 35px 40px; } }
-    .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image.c-mobile-hero__image {
-      display: block; }
-      @media only screen and (min-width: 768px) {
-        .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image.c-mobile-hero__image {
-          display: none; } }
-    .c-ph-hero__container .c-ph-hero__content .c-desktop__video, .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
-      display: none; }
-      @media only screen and (min-width: 768px) {
-        .c-ph-hero__container .c-ph-hero__content .c-desktop__video, .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
-          display: block; } }
+      .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
+        width: calc(100%);
+        float: left;
+        margin-left: 0;
+        float: none;
+        height: 460px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0; }
+        @media only screen and (min-width: 768px) {
+          .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
+            height: 650px; } }
+      .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-ph-hero__video {
+        width: calc(100%);
+        float: left;
+        margin-left: 0;
+        float: none;
+        height: 460px;
+        padding: 0; }
+        @media only screen and (min-width: 768px) {
+          .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-ph-hero__video {
+            height: 650px; } }
+        .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-ph-hero__video video {
+          width: 100%;
+          object-fit: fill; }
+      .c-ph-hero .c-ph-hero__container .c-ph-hero__content h1 {
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #050505;
+        font-weight: 100;
+        font-size: 30px;
+        line-height: 1;
+        width: calc(83.33333%);
+        float: left;
+        margin-left: 0;
+        background: white;
+        padding: 15px 20px;
+        margin: 0;
+        margin-top: -50px;
+        position: relative; }
+        @media only screen and (min-width: 768px) {
+          .c-ph-hero .c-ph-hero__container .c-ph-hero__content h1 {
+            font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: #050505;
+            font-weight: 100;
+            font-size: 70px;
+            line-height: 1;
+            width: calc(66.66667%);
+            float: left;
+            margin-left: 0;
+            margin-top: -160px;
+            margin-left: 100px;
+            z-index: 10;
+            padding: 35px 40px; } }
+      .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image.c-mobile-hero__image {
+        display: block; }
+        @media only screen and (min-width: 768px) {
+          .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image.c-mobile-hero__image {
+            display: none; } }
+      .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-desktop__video, .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
+        display: none; }
+        @media only screen and (min-width: 768px) {
+          .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-desktop__video, .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
+            display: block; } }
 
 .c-ph-intro__container {
   max-width: 1024px;
