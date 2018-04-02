@@ -3783,19 +3783,17 @@ body {
   .c-gh-intro .container {
     background: #eb0029;
     position: relative;
-    height: 530px; }
+    padding: 55px 15%;
+    padding-bottom: 75px; }
     @media only screen and (min-width: 768px) {
       .c-gh-intro .container {
-        height: 800px; } }
+        padding: 130px 15%;
+        padding-bottom: 150px; } }
   .c-gh-intro .c-gh-intro__container {
     max-width: 1024px;
     width: 100%;
     padding: 0 10%;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    margin: 0 auto; }
     .c-gh-intro .c-gh-intro__container .c-gh-intro__content p {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #050505;
