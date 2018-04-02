@@ -105,8 +105,8 @@
             "key": "field_5ab222b01e05d",
             "label": "body",
             "name": "body",
-            "type": "text",
-            "instructions": "The character limit is 140",
+            "type": "textarea",
+            "instructions": "The character limit is 140. For emphasized text use \"< strong>\" & \"< \/strong>\" before and after your text",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -116,9 +116,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": 140
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
             "key": "field_5ab222b01e3e5",
@@ -194,5 +194,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521623751
+    "modified": 1522657035
 }

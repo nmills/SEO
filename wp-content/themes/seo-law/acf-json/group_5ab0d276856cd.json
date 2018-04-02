@@ -7,7 +7,7 @@
             "label": "text",
             "name": "text",
             "type": "textarea",
-            "instructions": "For red colour use \"< strong >This text will be red in colour< \/strong >\"",
+            "instructions": "For emphasized text use \"< strong>\" & \"< \/strong>\" before and after your text",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522067832
+    "modified": 1522656997
 }
