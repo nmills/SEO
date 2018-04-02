@@ -1609,7 +1609,8 @@ Styleguide 4.0
   padding-bottom: 20px; }
 
 .c-signup__title {
-  text-align: left; }
+  text-align: left;
+  font-weight: 100; }
 
 .c-signup,
 .c-signup__form {
