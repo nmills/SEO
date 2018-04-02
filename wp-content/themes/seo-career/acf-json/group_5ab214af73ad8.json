@@ -140,7 +140,7 @@
                     "label": "text",
                     "name": "text",
                     "type": "text",
-                    "instructions": "",
+                    "instructions": "The character limit is 120",
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -152,7 +152,7 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": 120
                 },
                 {
                     "key": "field_5ab215c7fff12",
@@ -232,5 +232,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521620904
+    "modified": 1522657375
 }

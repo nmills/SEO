@@ -258,17 +258,8 @@ require_once(get_template_directory() . '/includes/bsdstarter_editor_styles.php'
 // Custom Shortcodes
 require_once(get_template_directory() . '/includes/bsdstarter_shortcodes.php');
 
-
-// /**
-//  * Hide editor on specific pages.
-//  *
-//  */
-// add_filter( 'user_can_richedit', 'removing_wysiwyg_from_body');
-
-// function removing_wysiwyg_from_body($c) {
-//     global $post_type;
-
-//     if ('page' == $post_type)
-//         return false;
-//     return $c;
-// }
+/* Removing Add media button  */
+function RemoveAddMediaButtons(){
+  remove_action( 'media_buttons', 'media_buttons' );
+}
+add_action('admin_head', 'RemoveAddMediaButtons');
