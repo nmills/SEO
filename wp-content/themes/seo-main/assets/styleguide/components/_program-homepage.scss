@@ -1,88 +1,92 @@
 // Program Homepage
 
-.c-ph-hero__container {
-  padding: 0;
+.c-ph-hero {
+  margin-bottom: 0;
 
-  .c-ph-hero__content {
-    position: relative;
+  .c-ph-hero__container {
+    padding: 0;
 
-    // @include grid-media($md) {
-    //   height: 271px;
-    // }
-
-    // @include grid-media($lg) {
-    //   height: 369px;
-    // }
-
-    .c-ph-hero__image {
-      @include grid-column(12, $no-gutter);
-
-      float: none;
-      height: 460px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      padding: 0;
-
-      @include grid-media($md) {
-        height: 650px;
-      }
-    }
-
-    .c-ph-hero__video {
-      @include grid-column(12, $no-gutter);
-
-      float: none;
-      height: 460px;
-      padding: 0;
-
-      @include grid-media($md) {
-        height: 650px;
-      }
-
-
-      video {
-        width: 100%;
-        object-fit: fill;
-      }
-    }
-
-    h1 {
-      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
-
-      @include grid-column(10, $no-gutter);
-
-      background: white;
-      padding: 15px 20px;
-      margin: 0;
-      margin-top: -50px;
+    .c-ph-hero__content {
       position: relative;
 
-      @include grid-media($md) {
-        @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 70px, $line-height: 1);
+      // @include grid-media($md) {
+      //   height: 271px;
+      // }
 
-        @include grid-column(8, $no-gutter);
+      // @include grid-media($lg) {
+      //   height: 369px;
+      // }
 
-        margin-top: -160px;
-        margin-left: 100px;
-        z-index: 10;
-        padding: 35px 40px;
+      .c-ph-hero__image {
+        @include grid-column(12, $no-gutter);
+
+        float: none;
+        height: 460px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0;
+
+        @include grid-media($md) {
+          height: 650px;
+        }
       }
-    }
 
-    .c-ph-hero__image.c-mobile-hero__image {
-      display: block;
+      .c-ph-hero__video {
+        @include grid-column(12, $no-gutter);
 
-      @include grid-media($md) {
-        display: none;
+        float: none;
+        height: 460px;
+        padding: 0;
+
+        @include grid-media($md) {
+          height: 650px;
+        }
+
+
+        video {
+          width: 100%;
+          object-fit: fill;
+        }
       }
-    }
 
-    .c-desktop__video, .c-ph-hero__image {
-      display: none;
+      h1 {
+        @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
 
-      @include grid-media($md) {
+        @include grid-column(10, $no-gutter);
+
+        background: white;
+        padding: 15px 20px;
+        margin: 0;
+        margin-top: -50px;
+        position: relative;
+
+        @include grid-media($md) {
+          @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 70px, $line-height: 1);
+
+          @include grid-column(8, $no-gutter);
+
+          margin-top: -160px;
+          margin-left: 100px;
+          z-index: 10;
+          padding: 35px 40px;
+        }
+      }
+
+      .c-ph-hero__image.c-mobile-hero__image {
         display: block;
+
+        @include grid-media($md) {
+          display: none;
+        }
+      }
+
+      .c-desktop__video, .c-ph-hero__image {
+        display: none;
+
+        @include grid-media($md) {
+          display: block;
+        }
       }
     }
   }
