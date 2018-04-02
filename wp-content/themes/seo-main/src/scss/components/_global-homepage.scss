@@ -215,14 +215,25 @@
 
           &:hover {
             h1 {
-              transform: rotate(0);
-              bottom: 170px;
+              // bottom: 170px;
+              transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+
+              // transform: rotate(0);
+           
             }
 
             p {
               opacity: 1;
               bottom: 20px;
               visibility: visible;
+            }
+
+            h1.heading_desktop {
+              opacity: 0;
+            }
+
+            h1.heading_hover {
+              opacity: 1;
             }
           }
 
@@ -305,10 +316,29 @@
             @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 40px, $line-height: 1);
 
             bottom: 0;
-            transform: rotate(-90deg);
-            transform-origin: top left;
+
+            // transform: rotate(-90deg);
+            // transform-origin: top left;
           }
 
+
+          &.heading_desktop {
+            transform: rotate(-90deg);
+            transform-origin: top left;
+            display: none;
+
+            @include grid-media($lg) {
+              display: block;
+            }
+          }
+
+          &.heading_hover {
+            bottom: 170px;
+
+            @include grid-media($lg) {
+              opacity: 0;
+            }
+          }
 
           @include grid-media($lg) {
             // @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 60px, $line-height: 1);

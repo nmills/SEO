@@ -2,6 +2,7 @@
 'use strict';
 
 import jquery from 'jquery';
+import custom from 'modules/custom.js';
 import accordion from 'modules/accordion.js';
 import video from 'modules/video.js';
 import searchBar from 'modules/searchBar.js';
@@ -23,6 +24,7 @@ import player_button from 'modules/video_player_button.js';
 
   // Initalizing all modules
   function ready() {
+    custom();
     // Prepare form inputs
     // prepInputs();
     // Initialize social share functionality.
