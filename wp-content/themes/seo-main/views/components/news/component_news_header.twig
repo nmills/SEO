@@ -1,7 +1,8 @@
-{{post.title}}
-
-{% if component.header_medium %}
-  {{component.header_medium}} {{component.header_text}}
-{% endif %}
-
-<img src="{{Image(component['header_image']).src}}">
+<section class="c-news-header">
+  <div class="container">
+    <h1>{{post.title}}</h1> {% if component.header_medium %}
+    <p><span class="c-news-header__medium">{{component.header_medium}}</span>{{component.header_text}}</p>
+    {% endif %}
+    <img src="{{Image(component['header_image']).src}}">
+  </div>
+</section>
