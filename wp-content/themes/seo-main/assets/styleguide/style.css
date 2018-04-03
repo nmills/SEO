@@ -4166,11 +4166,32 @@ body {
       .c-gh-donate .container .c-gh-donate__container .c-gh-donate__donate-button .c-uie__calltoaction:before, .c-gh-donate .container .c-gh-donate__container .c-gh-donate__donate-button .c-uie__calltoaction:after {
         border-bottom-width: 5px; }
 
-.c-news-header p {
-  font-wight: 700; }
+.c-news-header .container {
+  max-width: 660px;
+  margin: 0 auto; }
+  .c-news-header .container h1 {
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px; }
+  .c-news-header .container p {
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 65px; }
+  .c-news-header .container .c-news-header__medium {
+    font-style: italic;
+    font-weight: 100; }
 
-.c-news-header .c-news-header__medium {
-  font-style: italics; }
+.c-news-header img {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto; }
 
 .c-news-body .wysiwyg {
   width: calc(100%);

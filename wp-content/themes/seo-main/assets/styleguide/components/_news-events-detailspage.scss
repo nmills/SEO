@@ -1,15 +1,33 @@
 // Program Homepage
 
 .c-news-header {
-  h1 {
+  .container {
+    max-width: 660px;
+    margin: 0 auto;
 
-  }
-  p {
-    font-wight: $font-bold;
+    h1 {
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 60px, $line-height: 1);
+
+      margin-bottom: 20px;
+    }
+
+    p {
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 16px, $line-height: 1);
+
+      margin: 0;
+      margin-bottom: 65px;
+    }
+
+    .c-news-header__medium {
+      font-style: italic;
+      font-weight: $font-thinnest;
+    }
   }
 
-  .c-news-header__medium {
-font-style: italics;
+  img {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
