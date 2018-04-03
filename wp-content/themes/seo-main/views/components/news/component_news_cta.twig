@@ -1,0 +1,14 @@
+<section>
+  {% if component.cta_text is empty %}
+    <div class="container c-cta__wrapper">
+      <a href="{{component.cta_link}}" class="c-uie__calltoaction-secondary">{{component.cta_btn_name}}</a>
+    </div>
+  {% else %}
+    <div class="container c-cta__wrapper border">
+      <div class="c-cta--heading">
+        <h3>{{component.cta_text}}</h3>
+      </div>
+      <a href="{{component.cta_link}}" class="c-rte__link">{{component.cta_btn_name}}</a>
+    </div>
+  {% endif %}
+</section>

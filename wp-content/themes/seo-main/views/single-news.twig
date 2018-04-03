@@ -1,0 +1,34 @@
+{% extends "single.twig" %}
+
+{% block content %}
+
+  <main id="content" class="single-news">
+    <div class="page-content">
+		
+			{# Adding news header #}
+			{% set component = post.get_field('header') %}
+			{% include ['components/news/component_news_header.twig'] %}
+
+			{# Adding Body #}
+			{% set component = post.get_field('body') %}
+			{% include ['components/news/component_news_body.twig'] %}
+
+			{# Adding CTA #}
+			{% set component = post.get_field('cta') %}
+			{% if component.include_cta == "yes" %}
+				{% include ['components/news/component_news_cta.twig'] %}
+			{% endif %}
+			
+			{# Adding Event module #}
+			{% set component = post.get_field('event') %}
+			{% if component.include_event == "yes" %}
+				{% include ['components/news/component_news_event.twig'] %}
+			{% endif %}
+
+			{# Adding Share #}
+			{% include ['share.twig'] %}
+
+    </div>
+
+  </main>
+{% endblock %}
