@@ -5,7 +5,7 @@
         {
             "key": "field_5ac31e2e0fec0",
             "label": "body",
-            "name": "body",
+            "name": "news_body",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522736701
+    "modified": 1522752698
 }

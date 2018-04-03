@@ -4,14 +4,14 @@
 
   <main id="content" class="single-news">
     <div class="page-content">
-
-			{{post.get_field('header')|print_r}}
-			
+		
 			{# Adding news header #}
 			{% set component = post.get_field('header') %}
 			{% include ['components/news/component_news_header.twig'] %}
 
-{# Adding Body #}
+			{# Adding Body #}
+			{% set component = post.get_field('body') %}
+			{% include ['components/news/component_news_body.twig'] %}
 
 {# Adding CTA #}
 
