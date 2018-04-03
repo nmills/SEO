@@ -338,11 +338,14 @@ img {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px; }
+  padding: 0 10%; }
   .container::after {
     clear: both;
     content: "";
     display: block; }
+  @media only screen and (min-width: 480px) {
+    .container {
+      padding: 0 15px; } }
   @media only screen and (min-width: 1440px) {
     .container {
       padding: 0 5px; } }
@@ -1091,6 +1094,9 @@ Styleguide 1.5
   height: 100%;
   border-left: 10px solid #050505;
   padding-left: 10px; }
+
+.c-rte p {
+  margin-top: 0; }
 
 /*
 Accodion
@@ -2235,8 +2241,6 @@ Gallery
         float: left;
         margin-left: 0;
         float: right; } }
-    .container.region_body .region_main_content .wysiwyg {
-      padding: 0; }
 
 .container.region_bottom {
   width: calc(100%);
@@ -2885,7 +2889,7 @@ body {
   margin-right: 8%;
   margin-bottom: 35px; }
   @media only screen and (max-width: 479px) {
-    .c-gallery__container.image-only .c-gallery__gallery-item:nth-child(even) {
+    .c-gallery__container.image-only .c-gallery__gallery-item.even {
       margin-right: 0; } }
   @media only screen and (min-width: 480px) {
     .c-gallery__container.image-only .c-gallery__gallery-item {

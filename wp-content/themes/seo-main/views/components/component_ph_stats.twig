@@ -1,5 +1,4 @@
 <section>
-  <div class="container">
     <div class="c-ph-stats__container">
       <div class="c-ph-stats__content {% if component.repeater|length == 1 %}single{% endif %}">
         {% for repeater in component.repeater %} {% if repeater.stat_type == 'percentage' %}
@@ -40,5 +39,4 @@
         {% endif %} {% endfor %}
       </div>
     </div>
-  </div>
 </section>
