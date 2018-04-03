@@ -230,6 +230,6 @@
   transform: rotate(90deg);
 }
 
-footer.site-footer .container .c-footer__widgets .menu-footer-right-container li.pseudo-class-last-of-type {
+footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-footer-right-container li.pseudo-class-last-of-type {
   margin-bottom: 5px;
 }

@@ -3,11 +3,15 @@
 footer.site-footer {
   @include grid-column(12, $no-gutter);
 
+  background: $black;
   font-weight: $font-normal;
 
-  .container {
-    background: $black;
+  .c-footer__widget-container {
     padding: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    display: table;
 
     @include grid-media($lg) {
       padding: 35px 50px;
