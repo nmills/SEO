@@ -13,14 +13,22 @@
 			{% set component = post.get_field('body') %}
 			{% include ['components/news/component_news_body.twig'] %}
 
-{# Adding CTA #}
+			{# Adding CTA #}
+			{% set component = post.get_field('cta') %}
+			{% if component.include_cta == "yes" %}
+				{% include ['components/news/component_news_cta.twig'] %}
+			{% endif %}
+			
+			{# Adding Event module #}
+			{% set component = post.get_field('event') %}
+			{% if component.include_event == "yes" %}
+				{% include ['components/news/component_news_event.twig'] %}
+			{% endif %}
 
-{# Adding Event module #}
 
 {# Adding Share #}
 
-{#       {% set component = post.get_field('hero') %}
-      {% include ['components/component_gh_hero.twig'] %} #}
+
     </div>
 
   </main>
