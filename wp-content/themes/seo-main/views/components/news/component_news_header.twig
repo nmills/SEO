@@ -1,0 +1,7 @@
+{{post.title}}
+
+{% if component.header_medium %}
+  {{component.header_medium}} {{component.header_text}}
+{% endif %}
+
+<img src="{{Image(component['header_image']).src}}">

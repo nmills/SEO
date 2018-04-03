@@ -1,0 +1,27 @@
+{% extends "single.twig" %}
+
+{% block content %}
+
+  <main id="content" class="single-news">
+    <div class="page-content">
+
+			{{post.get_field('header')|print_r}}
+			
+			{# Adding news header #}
+			{% set component = post.get_field('header') %}
+			{% include ['components/news/component_news_header.twig'] %}
+
+{# Adding Body #}
+
+{# Adding CTA #}
+
+{# Adding Event module #}
+
+{# Adding Share #}
+
+{#       {% set component = post.get_field('hero') %}
+      {% include ['components/component_gh_hero.twig'] %} #}
+    </div>
+
+  </main>
+{% endblock %}
