@@ -32,7 +32,7 @@
 
         @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 12px, $line-height: 1);
 
-        span {
+        span { 
           font-size: 12px;
           font-weight: $font-normal;
 
@@ -170,7 +170,6 @@
 .c-news-event {
   margin: 0;
 
-
   .container {
     background: $red;
     position: relative;
@@ -183,10 +182,8 @@
   }
 
   .c-news-event__container {
-
     .c-news-event__content {
-      @include grid-media($md) {
-      }
+      @include grid-media($md) {}
 
 
       h3 {
