@@ -1,0 +1,11 @@
+<section class="c-news-header">
+  <div class="container">
+  	<div class="c-news-header__breadcrumb">
+  		<p><span class="parent c-rte__link">news & events</span>  >  <span class="current">seo ai</span></p>
+  	</div>
+    <h1>{{post.title}}</h1> {% if component.header_medium %}
+    <p><span class="c-news-header__medium">{{component.header_medium}}</span> {{component.header_text}}</p>
+    {% endif %}
+  </div>
+  <img src="{{Image(component['header_image']).src}}">
+</section>
