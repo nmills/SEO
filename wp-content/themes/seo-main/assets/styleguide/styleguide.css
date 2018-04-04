@@ -4166,6 +4166,17 @@ body {
       .c-gh-donate .container .c-gh-donate__container .c-gh-donate__donate-button .c-uie__calltoaction:before, .c-gh-donate .container .c-gh-donate__container .c-gh-donate__donate-button .c-uie__calltoaction:after {
         border-bottom-width: 5px; }
 
+.news-page .region_body {
+  max-width: 1125px; }
+
+.news-page .region_left_rail {
+  max-width: 300px; }
+  .news-page .region_left_rail section {
+    margin-bottom: 100px; }
+
+.news-page .region_main_content {
+  max-width: 700px; }
+
 .c-news-header .container {
   max-width: 660px;
   margin: 0 auto; }
@@ -4212,16 +4223,20 @@ body {
   max-width: 1440px;
   margin: 0 auto; }
 
-.c-news-body .wysiwyg {
+.c-news-body .wysiwyg code {
   width: calc(100%);
   float: left;
-  margin-left: 0; }
-  @media only screen and (min-width: 768px) {
-    .c-news-body .wysiwyg {
-      width: calc(41.66667%);
-      float: left;
-      margin-left: 0;
-      float: right; } }
+  margin-left: 0;
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #050505;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  border-left: 10px solid #050505;
+  padding-left: 10px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  padding-top: 17px; }
 
 .c-news-cta .container {
   padding: 50px;
@@ -4279,48 +4294,43 @@ body {
         border-bottom-width: 5px; }
 
 .c-news-event {
-  margin: 0;
-  width: calc(100%);
-  float: left;
-  margin-left: 0; }
-  @media only screen and (min-width: 768px) {
-    .c-news-event {
-      width: calc(25%);
-      float: left;
-      margin-left: 0; } }
+  margin: 0; }
   .c-news-event .container {
     background: #eb0029;
     position: relative;
     padding: 35px;
     padding-bottom: 60px; }
-  .c-news-event .c-news-event__container {
-    max-width: 1024px;
-    width: 100%;
-    padding: 0 10%;
-    margin: 0 auto; }
-    .c-news-event .c-news-event__container .c-news-event__content h3 {
-      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-      color: #ffffff;
-      font-weight: 100;
-      font-size: 40px;
-      line-height: 1.3;
-      margin: 0; }
-    .c-news-event .c-news-event__container .c-news-event__content p {
-      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-      color: #ffffff;
-      font-weight: 100;
-      font-size: 28px;
-      line-height: 1.3;
-      margin-bottom: 50px; }
-    .c-news-event .c-news-event__container .c-news-event__content .c-uie__calltoaction {
-      border-left-color: #ffffff;
-      border-left-width: 5px;
-      border-right-width: 5px;
-      padding: 15px 25px; }
-      .c-news-event .c-news-event__container .c-news-event__content .c-uie__calltoaction:before, .c-news-event .c-news-event__container .c-news-event__content .c-uie__calltoaction:after {
-        border-bottom-width: 5px; }
-      .c-news-event .c-news-event__container .c-news-event__content .c-uie__calltoaction:after {
-        border-bottom-color: #ffffff; }
+  .c-news-event .c-news-event__container .c-news-event__content h3 {
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 1.3;
+    margin: 0; }
+  .c-news-event .c-news-event__container .c-news-event__content p {
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 50px; }
+  .c-news-event .c-news-event__container .c-news-event__content .c-uie__calltoaction {
+    border-left-color: #ffffff;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    padding: 15px 25px; }
+    .c-news-event .c-news-event__container .c-news-event__content .c-uie__calltoaction:before, .c-news-event .c-news-event__container .c-news-event__content .c-uie__calltoaction:after {
+      border-bottom-width: 5px; }
+    .c-news-event .c-news-event__container .c-news-event__content .c-uie__calltoaction:after {
+      border-bottom-color: #ffffff; }
+
+.c-share__container {
+  padding: 35px;
+  border: 1px solid #e5e7e7; }
+  .c-share__container h2 {
+    margin: 0;
+    margin-bottom: 35px;
+    line-height: 1; }
 
 /* Slider */
 .slick-slider {

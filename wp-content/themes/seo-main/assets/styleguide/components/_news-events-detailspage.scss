@@ -1,5 +1,23 @@
 // Program Homepage
 
+.news-page {
+  .region_body {
+    max-width: 1125px;
+  }
+
+  .region_left_rail {
+    max-width: 300px;
+
+    section {
+      margin-bottom: 100px;
+    }
+  }
+
+  .region_main_content {
+    max-width: 700px;
+  }
+}
+
 .c-news-header {
   .container {
     max-width: 660px;
@@ -60,12 +78,23 @@
 
 .c-news-body {
   .wysiwyg {
-    @include grid-column(12, $no-gutter);
+    // @include grid-column(12, $no-gutter);
 
-    @include grid-media($md) {
-      @include grid-column(5, $no-gutter);
+    // @include grid-media($md) {
+    //   @include grid-column(5, $no-gutter);
 
-      float: right;
+    //   float: right;
+    // }
+    code {
+      @include grid-column(12, $no-gutter);
+
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
+
+      border-left: 10px solid #050505;
+      padding-left: 10px;
+      margin-top: -15px;
+      margin-bottom: 15px;
+      padding-top: 17px;
     }
   }
 }
@@ -145,12 +174,11 @@
 .c-news-event {
   margin: 0;
 
-  @include grid-column(12, $no-gutter);
+  // @include grid-column(12, $no-gutter);
 
-  @include grid-media($md) {
-    @include grid-column(3, $no-gutter);
-  }
-
+  // @include grid-media($md) {
+  //   @include grid-column(3, $no-gutter);
+  // }
 
   .container {
     background: $red;
@@ -170,10 +198,10 @@
   }
 
   .c-news-event__container {
-    max-width: 1024px;
-    width: 100%;
-    padding: 0 10%;
-    margin: 0 auto;
+    // max-width: 1024px;
+    // width: 100%;
+    // padding: 0 10%;
+    // margin: 0 auto;
 
     // position: absolute;
     // top: 50%;
@@ -221,5 +249,16 @@
         }
       }
     }
+  }
+}
+
+.c-share__container {
+  padding: 35px;
+  border: 1px solid $light-gray;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 35px;
+    line-height: 1;
   }
 }
