@@ -61,7 +61,16 @@ class BSDStarterSite extends TimberSite {
     $context['header_widget'] = Timber::get_widgets('header_widget');
     //Adding Side Menu Widget
     $context['side_menu_widget'] = Timber::get_widgets('side_menu_widget');
+
+    /* Getting the featured post */
+    $args = array(
+      'post_type'  => 'news',
+      'meta_key'   => '_is_ns_featured_post',
+      'meta_value' => 'yes',
+    );
+    $context['featured_posts'] = Timber::get_posts($args);
     return $context;
+    
   }
 
   function add_styles_and_scripts() {

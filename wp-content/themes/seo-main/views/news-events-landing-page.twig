@@ -1,4 +1,10 @@
 {% extends "base.twig" %}
 
 {% block content %}
+
+  {# including the featured Event #}
+  {% if featured_posts %}
+    {% include ['partials/featured_news.twig'] %}
+  {% endif %}
+
 {% endblock %}

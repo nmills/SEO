@@ -1,0 +1,13 @@
+{% for featured_post in featured_posts %}
+
+	{{featured_post.title}}
+
+	{% if featured_post.get_field('header_medium') %}
+    {{featured_post.get_field('header_medium')}} {{featured_post.get_field('header_text')}}
+  {% endif %}
+
+	{% if featured_post.get_field('header_image') %}
+		<img src="{{Image(featured_post.get_field('header_image')).src}}">
+	{% endif %}
+
+{% endfor %}
