@@ -32,7 +32,7 @@
 
         @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 12px, $line-height: 1);
 
-        span { 
+        span {
           font-size: 12px;
           font-weight: $font-normal;
 
@@ -96,7 +96,9 @@
 }
 
 .c-news-cta {
-  .container {
+  .c-news-cta__container-wrapper {
+    display: inline-block;
+    width: 100%;
     padding: 50px;
     background: $black;
 

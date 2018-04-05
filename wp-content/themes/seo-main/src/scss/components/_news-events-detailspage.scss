@@ -96,7 +96,9 @@
 }
 
 .c-news-cta {
-  .container {
+  .c-news-cta__container-wrapper {
+    display: inline-block;
+    width: 100%;
     padding: 50px;
     background: $black;
 
