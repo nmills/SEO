@@ -1,13 +1,28 @@
-{% for featured_post in featured_posts %}
+<section>
+	<div class="container">
+		<div class="page-title">
+	      <h1>{{post.title}}</h1>
+	    </div>
+	</div>
+	{% for featured_post in featured_posts %}
+		<div class="c-news-events__content featured">
+			<div class="c-news-events__image">
+				{% if featured_post.get_field('header_image') %}
+				  <img src="{{Image(featured_post.get_field('header_image')).src}}">
+				{% endif %}
+			</div>
 
-	{{featured_post.title}}
+			<div class="c-news-events__details">
+				<div class="c-news-events__breadcrumb">
+					<p><span class="parent c-rte__link">news & events</span> > <span class="current">{{site_name}}</span></p>
+				</div>
 
-	{% if featured_post.get_field('header_medium') %}
-    {{featured_post.get_field('header_medium')}} {{featured_post.get_field('header_text')}}
-  {% endif %}
-
-	{% if featured_post.get_field('header_image') %}
-		<img src="{{Image(featured_post.get_field('header_image')).src}}">
-	{% endif %}
-
-{% endfor %}
+				<h1>{{featured_post.title}}</h1>
+				
+				{% if featured_post.get_field('header_medium') %}
+					<p><span class="c-news-events__medium">{{featured_post.get_field('header_medium')}} </span> {{featured_post.get_field('header_text')}}</p>
+				{% endif %}
+			</div>
+		</div>
+	{% endfor %}
+</section>

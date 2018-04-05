@@ -425,11 +425,13 @@
   &.image-large {
     .c-gallery__gallery-item {
       @include grid-column(12, $no-gutter);
+
       margin-bottom: 60px;
 
       @include grid-media($lg) {
-          margin-bottom: 100px;
-        }
+        margin-bottom: 100px;
+      }
+
 
       .item__image {
         width: 500px;
