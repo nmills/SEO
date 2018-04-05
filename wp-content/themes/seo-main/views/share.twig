@@ -1,15 +1,33 @@
 <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
 <section>
-	{# <div class="container"> #}
-		<div class="c-share__container">
-			<div class="c-share__title">
-				<h2>Share this article</h2>
-			</div>
-			<div class="c-share__buttons">
-				<a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=Hello%20world"
-  data-size="small"></a>
-			</div>
+	<div class="c-share__container">
+		<div class="c-share__title">
+			<h2>Share this article</h2>
 		</div>
-	{# </div> #}
+		<div class="c-share__buttons">
+			<a class="twitter-share-button"  href="https://twitter.com/intent/tweet?text={{post.title}}" data-size="small"></a>
+		</div>
+
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url"           content="{{post.link}}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="{{post.title}}" />
+    <meta property="og:description"   content="{{post.get_field('news_body')}}" />
+    <meta property="og:image"         content="{{Image(post.get_field('header_image')).src}}" />
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=2082234315393277&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your share button code -->
+    <div class="fb-share-button" data-href="{{post.link}}" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{post.link}}%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+	</div>
 </section>
