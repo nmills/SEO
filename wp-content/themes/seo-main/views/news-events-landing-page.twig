@@ -1,0 +1,16 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+  {# including the featured Event #}
+  {% if featured_posts %}
+    {% include ['partials/featured_news.twig'] %}
+  {% endif %}
+
+  {# Adding promotional #}
+  {% set component = post.get_field('promotional_area') %}
+  {% if component.include_promotional == "yes" %}
+    {% include ['components/news_landing/component_promotional.twig'] %}
+  {% endif %}
+
+{% endblock %}
