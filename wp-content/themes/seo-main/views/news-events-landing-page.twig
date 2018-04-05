@@ -7,4 +7,10 @@
     {% include ['partials/featured_news.twig'] %}
   {% endif %}
 
+  {# Adding promotional #}
+  {% set component = post.get_field('promotional_area') %}
+  {% if component.include_promotional == "yes" %}
+    {% include ['components/news_landing/component_promotional.twig'] %}
+  {% endif %}
+
 {% endblock %}
