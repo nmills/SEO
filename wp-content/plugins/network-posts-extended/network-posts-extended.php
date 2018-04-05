@@ -767,7 +767,7 @@ function netsposts_shortcode( $atts ) {
 		$html .= '<div class="clear"></div>';
 
 		if ( ( $paginate ) and ( $total_pages > 1 ) ) {
-			$html .= '<div id="netsposts-paginate">';
+			$html .= '<div id="netsposts-paginate" class="netsposts-paginate">';
 
 			$big = 999999999;
 

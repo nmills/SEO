@@ -1,7 +1,10 @@
 {% block content %}
-  {{news.title}}
+  <div class="post-selector">
+  	{{news.title}}
 
-  {{news.header_medium}} {{news.header_text}}
+  	{{news.header_medium}} {{news.header_text}}
 
-  <img src="{{Image(news.get_field('header_image')).src}}">
+  	<img src="{{Image(news.get_field('header_image')).src}}">
+  </div>
+
 {% endblock %}
