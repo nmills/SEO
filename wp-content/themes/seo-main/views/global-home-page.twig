@@ -18,6 +18,9 @@
         {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
       {% endfor %}
 
+      {# Pull in the recent News Items #}
+      {% include ['components/component_gh_recent_news.twig'] %}
+
       {% block article_footer %}
       {% endblock %}
 

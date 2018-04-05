@@ -1,0 +1,9 @@
+{% for recent_news in recent_posts %}
+
+  {{recent_news.title}}
+  {{recent_news.get_field('header_medium')}} {{recent_news.get_field('header_text')}}
+  <img src="{{Image(recent_news.get_field('header_image')).src}}">
+
+  {# Summary #}
+  {{recent_news.get_field('news_body')|slice(0, 300)}}
+{% endfor %}
