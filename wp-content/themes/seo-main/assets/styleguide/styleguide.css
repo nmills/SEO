@@ -912,7 +912,7 @@ Styleguide 1.2
         width: 110px; } }
 
 .page-title .page-title__text-spacing {
-  margin-left: 10%;
+  margin-left: 20%;
   margin-top: 30px;
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #4d4d4d;
@@ -1679,13 +1679,28 @@ button.c-uie__calltoaction-secondary {
   .c-cta__wrapper.border {
     border: 1px solid #e5e7e7; }
   .c-cta__wrapper h3 {
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 100;
+    font-size: 43px;
+    line-height: 1;
     margin: 0;
     padding: 40px 27px 40px 50px; }
     @media only screen and (min-width: 480px) {
       .c-cta__wrapper h3 {
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #050505;
+        font-weight: 100;
+        font-size: 30px;
+        line-height: 1;
         padding: 20px; } }
     @media only screen and (min-width: 768px) {
       .c-cta__wrapper h3 {
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #050505;
+        font-weight: 100;
+        font-size: 43px;
+        line-height: 1;
         padding: 40px 27px 40px 50px; } }
   .c-cta__wrapper .c-cta--image {
     width: 80%;
@@ -1695,14 +1710,14 @@ button.c-uie__calltoaction-secondary {
     background-repeat: no-repeat; }
     .c-cta__wrapper .c-cta--image include grid-media($sm) {
       width: 294px; }
-  .c-cta__wrapper .c-uie__calltoaction-secondary {
+  .c-cta__wrapper .c-rte__link {
     margin: 40px 0 45px 50px;
     display: inline-block; }
     @media only screen and (min-width: 480px) {
-      .c-cta__wrapper .c-uie__calltoaction-secondary {
+      .c-cta__wrapper .c-rte__link {
         margin: 20px; } }
     @media only screen and (min-width: 768px) {
-      .c-cta__wrapper .c-uie__calltoaction-secondary {
+      .c-cta__wrapper .c-rte__link {
         margin: 40px 0 45px 50px; } }
 
 /*
@@ -2212,7 +2227,7 @@ Gallery
   max-width: 1280px; }
   @media only screen and (min-width: 480px) {
     .container.region_title .content {
-      width: calc(66.66667%);
+      width: calc(83.33333%);
       float: left;
       margin-left: 0;
       float: right; } }
@@ -2228,7 +2243,8 @@ Gallery
       .container.region_body .region_left_rail {
         width: calc(33.33333%);
         float: left;
-        margin-left: 0; } }
+        margin-left: 0;
+        padding-right: 5%; } }
   .container.region_body .region_main_content {
     width: calc(100%);
     float: left;
