@@ -4515,6 +4515,20 @@ body {
     font-style: italic;
     font-weight: 100; }
 
+.c-news-events .c-news-events__content.list {
+  border-left: 10px solid #050505;
+  padding-left: 10px;
+  display: inline-block;
+  margin-bottom: 65px; }
+  .c-news-events .c-news-events__content.list .c-news-events__image, .c-news-events .c-news-events__content.list .c-news-events__details {
+    width: calc(50%);
+    float: left;
+    margin-left: 0; }
+  .c-news-events .c-news-events__content.list .c-news-events__details.no-image {
+    width: calc(100%);
+    float: left;
+    margin-left: 0; }
+
 .c-news-events .c-news-events__promotion {
   width: calc(75%);
   float: left;

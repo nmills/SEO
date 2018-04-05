@@ -97,7 +97,22 @@
 
     &.featured {}
 
-    &.list {}
+    &.list {
+      border-left: 10px solid $black;
+      padding-left: 10px;
+      display: inline-block;
+      margin-bottom: 65px;
+
+      .c-news-events__image, .c-news-events__details {
+        @include grid-column(6, $no-gutter);
+      }
+
+      .c-news-events__details {
+        &.no-image {
+          @include grid-column(12, $no-gutter);
+        }
+      }
+    }
   }
 
   .c-news-events__promotion {
