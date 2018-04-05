@@ -4463,6 +4463,15 @@ body {
       float: left;
       margin-left: 0;
       padding-left: 25px; } }
+  @media only screen and (min-width: 768px) {
+    .c-news-events .c-news-events__content .c-news-events__details.no-image {
+      width: calc(100%);
+      float: left;
+      margin-left: 0;
+      max-width: 1265px;
+      padding-left: 0;
+      margin: 0 auto;
+      float: none; } }
   .c-news-events .c-news-events__content .c-news-events__details .c-news-events__breadcrumb p {
     text-transform: uppercase;
     margin: 0;

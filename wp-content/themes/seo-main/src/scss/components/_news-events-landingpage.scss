@@ -37,6 +37,17 @@
       }
 
 
+      &.no-image {
+        @include grid-media($md) {
+          @include grid-column(12, $no-gutter);
+
+          max-width: 1265px;
+          padding-left: 0;
+          margin: 0 auto;
+          float: none;
+        }
+      }
+
       .c-news-events__breadcrumb {
         p {
           text-transform: uppercase;
