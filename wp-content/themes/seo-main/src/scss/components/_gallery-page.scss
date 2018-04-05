@@ -86,7 +86,7 @@
       margin-bottom: 35px;
 
       @include grid-media($max-sm) {
-        &:nth-child(even) {
+        &.even {
           margin-right: 0;
         }
       }

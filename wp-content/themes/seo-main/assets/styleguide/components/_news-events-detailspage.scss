@@ -1,0 +1,281 @@
+// Program Homepage
+
+.news-page {
+  .region_body {
+    max-width: 1125px;
+  }
+
+  .region_left_rail {
+    max-width: 300px;
+
+    section {
+      margin-bottom: 100px;
+    }
+  }
+
+  .region_main_content {
+    max-width: 700px;
+  }
+}
+
+.c-news-header {
+  .container {
+    max-width: 660px;
+    margin: 0 auto;
+
+    .c-news-header__breadcrumb {
+      margin-top: 100px;
+
+      p {
+        text-transform: uppercase;
+        margin: 0;
+
+        @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 12px, $line-height: 1);
+
+        span { 
+          font-size: 12px;
+          font-weight: $font-normal;
+
+          &.parent {
+            cursor: pointer;
+            margin-right: 10px;
+          }
+
+          &.current {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    h1 {
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 45px, $line-height: 1);
+
+      margin-top: 10px;
+      margin-bottom: 20px;
+
+      @include grid-media($md) {
+        @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 61px, $line-height: 1);
+      }
+    }
+
+    p {
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
+
+      margin: 0;
+      margin-bottom: 65px;
+    }
+
+    .c-news-header__medium {
+      font-style: italic;
+      font-weight: $font-thinnest;
+    }
+  }
+
+  img {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.c-news-body {
+  .wysiwyg {
+    code {
+      @include grid-column(12, $no-gutter);
+
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
+
+      border-left: 10px solid #050505;
+      padding-left: 10px;
+      margin-top: -15px;
+      margin-bottom: 15px;
+      padding-top: 17px;
+    }
+  }
+}
+
+.c-news-cta {
+  .container {
+    padding: 50px;
+    background: $black;
+
+    @include grid-media($md) {
+      padding: 50px 10%;
+      position: relative;
+    }
+
+
+    .c-news-cta__container {
+      max-width: 1024px;
+      margin: 0 auto;
+
+      .c-news-cta__text {
+        @include grid-media($md) {
+          @include grid-column(8, $no-gutter);
+        }
+
+
+        h2 {
+          margin-top: 0;
+          margin-bottom: 50px;
+
+          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 40px, $line-height: 1);
+
+          @include grid-media($md) {
+            @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
+
+            margin: 0;
+          }
+        }
+      }
+
+      .c-news-cta__button {
+        @include grid-media($md) {
+          @include grid-column(4, $no-gutter);
+
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+        }
+
+
+        .c-uie__calltoaction {
+          color: $white;
+          border-left-color: $white;
+          border-right-color: $red;
+          border-left-width: 5px;
+          border-right-width: 5px;
+          padding: 15px 25px;
+
+          &:before {
+            border-bottom-color: $red;
+          }
+
+          &:after {
+            border-bottom-color: $white;
+          }
+
+          &:before, &:after {
+            border-bottom-width: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.c-news-event {
+  margin: 0;
+
+  .container {
+    background: $red;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 60px;
+
+    @include grid-media($md) {
+      padding: 35px;
+    }
+  }
+
+  .c-news-event__container {
+    .c-news-event__content {
+      @include grid-media($md) {}
+
+
+      h3 {
+        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
+
+        margin: 0;
+
+        @include grid-media($sm) {
+          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+        }
+
+
+        @include grid-media($md) {
+          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
+        }
+      }
+
+      p {
+        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+
+        margin-bottom: 50px;
+
+        @include grid-media($sm) {
+          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 20px, $line-height: 1);
+        }
+
+
+        @include grid-media($md) {
+          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+        }
+      }
+
+      .c-uie__calltoaction {
+        border-left-color: $white;
+        border-left-width: 5px;
+        border-right-width: 5px;
+        padding: 15px 25px;
+
+        @include grid-media($sm) {
+          padding: 15px 10px;
+
+          @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 15px, $line-height: 1);
+        }
+
+
+        @include grid-media($md) {
+          padding: 15px 25px;
+
+          @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 26px, $line-height: 1);
+        }
+
+
+        &:before, &:after {
+          border-bottom-width: 5px;
+        }
+
+        &:after {
+          border-bottom-color: $white;
+        }
+      }
+    }
+  }
+}
+
+.c-share__container {
+  border: 1px solid $light-gray;
+  padding: 15px 25px;
+
+  @include grid-media($sm) {
+    padding: 15px 10px;
+  }
+
+
+  @include grid-media($md) {
+    padding: 15px 25px;
+  }
+
+
+  h2 {
+    @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
+
+    margin: 0;
+    margin-bottom: 35px;
+    line-height: 1;
+
+    @include grid-media($sm) {
+      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+    }
+
+
+    @include grid-media($md) {
+      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
+    }
+  }
+}

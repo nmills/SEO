@@ -2,14 +2,12 @@
   <div class="c-nav--top">
     <div class="c-nav__logo">
       {% if logo[0] %}
-        <a href="{{site.url}}" class="c-logo__link">
+      <a href="{{site.url}}" class="c-logo__link">
           <img src="{{logo[0]}}" class="">
-        </a>
-      {% else %}
-        <h1 class="c-logo__text">
+        </a> {% else %}
+      <h1 class="c-logo__text">
           <a href="{{site.url}}" class="c-logo__link">{{site.title}}</a>
-        </h1>
-      {% endif %}
+        </h1> {% endif %}
     </div>
     <div class="c-nav__mobile">
       <a href="#" class="c-nav__search-btn js-search-btn">
@@ -23,20 +21,18 @@
     </div>
     <div class="c-nav__elements">
       <div class="c-nav__multisite-nav">
-        {# Setting up the SITE MENU  #}
+        {# Setting up the SITE MENU #}
         <ul>
-          {% for item in site_menu.get_items %}
-            {% set has_children_site_menu = item.get_children %}
-            <li>
-              <a href="{{item.get_link}}" class="nav-title">{{item.title}}</a>
-              {% if has_children_site_menu %}
-                <ul class="nav-dropdown">
-                {% for child in item.get_children %}
-                  <li><a href="{{child.get_link}}">{{child.title}}</a></li>
-                {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
+          {% for item in site_menu.get_items %} {% set has_children_site_menu = item.get_children %}
+          <li>
+            <a href="{{item.get_link}}" class="nav-title">{{item.title}}</a> {% if has_children_site_menu %}
+            <ul class="nav-dropdown">
+              {% for child in item.get_children %}
+              <li><a href="{{child.get_link}}">{{child.title}}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
           {% endfor %}
         </ul>
       </div>
@@ -46,62 +42,57 @@
     </div>
   </div>
   <div class="c-nav--bottom">
-    <div class="c-nav__nav--left">
-      <ul>
-        {% for main_menu_item in main_menu_left.get_items %}
-          {% set has_children_main_menu_left = main_menu_item.get_children %}
-          <li {% if has_children_main_menu_left %} class="has-submenu" {% endif %}>
-            <a href="{{main_menu_item.get_link}}">{{main_menu_item.title}}</a>
-            {% if has_children_main_menu_left %}
-              <ul class="main-nav-dropdown">
-              {% for child in main_menu_item.get_children %}
-                <li><a href="{{child.get_link}}">{{child.title}}</a></li>
-              {% endfor %}
-              </ul>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="c-nav__nav--right">
-      <ul>
-        {% for main_menu_right_item in main_menu_right.get_items %}
-          {% set has_children_main_menu_right = main_menu_right_item.get_children %}
-          <li>
-            <a href="{{main_menu_right_item.get_link}}">{{main_menu_right_item.title}}</a>
-            {% if has_children_main_menu_right %}
-              <ul class="nav-dropdown">
-              {% for child in main_menu_right_item.get_children %}
-                <li><a href="{{child.get_link}}">{{child.title}}</a></li>
-              {% endfor %}
-              </ul>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="c-nav__elements c-nav__elements--mobile">
-      <div class="c-nav__multisite-nav">
-        {# Setting up the SITE MENU  #}
+    <div class="c-nav--bottom__container">
+      <div class="c-nav__nav--left">
         <ul>
-          {% for item in site_menu.get_items %}
-            {% set has_children_site_menu = item.get_children %}
-            <li>
-              <a href="{{item.get_link}}" class="nav-title">{{item.title}}</a>
-              {% if has_children_site_menu %}
-                <ul class="nav-dropdown">
-                {% for child in item.get_children %}
-                  <li><a href="{{child.get_link}}">{{child.title}}</a></li>
-                {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
+          {% for main_menu_item in main_menu_left.get_items %} {% set has_children_main_menu_left = main_menu_item.get_children %}
+          <li {% if has_children_main_menu_left %} class="has-submenu" {% endif %}>
+            <a href="{{main_menu_item.get_link}}">{{main_menu_item.title}}</a> {% if has_children_main_menu_left %}
+            <ul class="main-nav-dropdown">
+              {% for child in main_menu_item.get_children %}
+              <li><a href="{{child.get_link}}">{{child.title}}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
           {% endfor %}
         </ul>
       </div>
-      <div class="c-nav__elements-widget">
-        {{header_widget}}
+      <div class="c-nav__nav--right">
+        <ul>
+          {% for main_menu_right_item in main_menu_right.get_items %} {% set has_children_main_menu_right = main_menu_right_item.get_children %}
+          <li>
+            <a href="{{main_menu_right_item.get_link}}">{{main_menu_right_item.title}}</a> {% if has_children_main_menu_right %}
+            <ul class="nav-dropdown">
+              {% for child in main_menu_right_item.get_children %}
+              <li><a href="{{child.get_link}}">{{child.title}}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="c-nav__elements c-nav__elements--mobile">
+        <div class="c-nav__multisite-nav">
+          {# Setting up the SITE MENU #}
+          <ul>
+            {% for item in site_menu.get_items %} {% set has_children_site_menu = item.get_children %}
+            <li>
+              <a href="{{item.get_link}}" class="nav-title">{{item.title}}</a> {% if has_children_site_menu %}
+              <ul class="nav-dropdown">
+                {% for child in item.get_children %}
+                <li><a href="{{child.get_link}}">{{child.title}}</a></li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="c-nav__elements-widget">
+          {{header_widget}}
+        </div>
       </div>
     </div>
   </div>
-</div>
