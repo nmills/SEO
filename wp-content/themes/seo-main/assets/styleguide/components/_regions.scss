@@ -32,7 +32,8 @@
 
       @include grid-media($sm) {
         @include grid-column(4, $no-gutter);
-            padding-right: 5%;
+
+        padding-right: 5%;
       }
     }
 
