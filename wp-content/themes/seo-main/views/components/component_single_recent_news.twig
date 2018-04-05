@@ -1,0 +1,15 @@
+<!-- First one has to be a featured post -->
+{% for featured_post in featured_posts %}
+	  <img src="{{Image(featured_post.get_field('header_image')).src}}">
+		{{featured_post.title}} 
+{% endfor %}
+
+Recent posts <br>
+
+{% for recent_news in recent_posts %}
+
+  {{recent_news.title}} <br>
+  
+  {# <img src="{{Image(recent_news.get_field('header_image')).src}}"> #}
+
+{% endfor %}

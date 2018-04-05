@@ -1,0 +1,7 @@
+a.netsposts-read-more-link {
+    color: green;
+}
+
+a.netsposts-read-more-link:hover {
+    color: red; 
+}

@@ -1,0 +1,9 @@
+Sort in ascending order (default value) :
+order_post_by= 'alphabetical_order'
+order_post_by= 'date_order'
+order_post_by= 'page_order'
+
+Sort in descending order :
+order_post_by= 'alphabetical_order desc'
+order_post_by= 'date_order desc'
+order_post_by= 'page_order desc' 

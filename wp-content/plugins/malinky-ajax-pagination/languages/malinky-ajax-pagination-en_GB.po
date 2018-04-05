@@ -1,0 +1,208 @@
+# Copyright (C) 2016 Ajax Pagination and Infinite Scroll
+# This file is distributed under the same license as the Ajax Pagination and Infinite Scroll package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ajax Pagination and Infinite Scroll 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/malinky-ajax-"
+"pagination\n"
+"POT-Creation-Date: 2016-10-01 17:00+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-10-01 17:03+0100\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.9\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_GB\n"
+
+#: malinky-ajax-pagination-settings.php:96
+msgid "Ajax Pagination Setting"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:97
+#: malinky-ajax-pagination-settings.php:125
+msgid "Ajax Pagination Settings"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:126
+msgid "Add New"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:132
+msgid "Saved Settings"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:144
+msgid "Delete"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:183
+msgid "Wrapper Settings"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:190
+msgid "Pagination Type Settings"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:197
+msgid "Loader Settings"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:204
+msgid "Load More Button Settings"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:211
+msgid "Callback Settings"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:222
+msgid "Theme Defaults"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:231
+msgid "Select from popular themes or overwrite the settings below yourself."
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:237
+msgid "Posts Selector"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:245
+msgid ""
+"The selector that wraps all of the posts/products.<br /><strong>If "
+"displaying multiple paginations on the same page this must be a parent of "
+"the navigation selector.</strong>"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:251
+msgid "Post Selector"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:259
+msgid "The selector of an individual post/product."
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:265
+msgid "Navigation Selector"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:273
+msgid ""
+"The selector of the post/product navigation.<br /><strong>If displaying "
+"multiple paginations on the same page this must be a child of the posts "
+"selector.</strong>"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:279
+msgid "Next Selector"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:287
+msgid "The selector of the navigation next link."
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:297
+msgid "Paging Type"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:311
+msgid "Choose a pagination type."
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:317
+msgid "Infinite Scroll Buffer (px)"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:325
+msgid ""
+"The higher the buffer the earlier, during scrolling, additional posts/"
+"products will be loaded.<br /><em>Only used when Infinite Scroll is selected "
+"as the paging type.</em>"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:335
+msgid "AJAX Loader"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:353
+msgid "Load More Button Text"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:361
+msgid "Change the button text."
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:367
+msgid "Loading More Posts Text"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:375
+msgid ""
+"Change the text that is displayed on the button while new posts/products are "
+"being loaded."
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:385
+msgid "Callback"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:406
+msgid ""
+"<p>These options allow you to set the selectors that contain your posts/"
+"products and pagination.<br />If you use a popular theme it may be listed in "
+"the Theme Defaults, if not just overwrite the settings.<br /><em>Include a "
+"leading . before the selector names.</em></p>"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:411
+msgid ""
+"<p>These options control the type of ajax pagination used.<br />Infinite "
+"Scroll automatically loads new posts/products as the user scrolls to the "
+"bottom of the screen.<br />Load More Button displays a single button at the "
+"bottom of the posts/products that when clicked loads new posts/products via "
+"ajax.<br />Pagination displays the themes standard pagination but new posts/"
+"products are now loaded via ajax.</p>"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:416
+msgid "<p>This option allows you to upload a new preloader .gif.</p>"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:421
+msgid ""
+"<p>These options allow you to override the button text if Load More Button "
+"is selected as the paging type.</p>"
+msgstr ""
+
+#: malinky-ajax-pagination-settings.php:426
+msgid ""
+"<p>Code that is called after each new set of posts are loaded.<br />Receives "
+"two parameters: loadedPosts (An array of the new posts) and url (The url "
+"that was loaded).</p>"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Ajax Pagination and Infinite Scroll"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/malinky/malinky-ajax-pagination"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Choose from infinite scroll, load more button and pagination to load paged "
+"content with Ajax on your posts, pages, custom post types and WooCommerce. "
+"Multiple pagination settings can be created for different post types and "
+"templates."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Malinky"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/malinky"
+msgstr ""

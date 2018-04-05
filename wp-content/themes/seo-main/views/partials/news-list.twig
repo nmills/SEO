@@ -1,0 +1,21 @@
+{% block content %}
+	<div class="c-news-events__content list post-selector">
+		{% if news.get_field('header_image') %}
+			<div class="c-news-events__image">
+				  <img src="{{Image(news.get_field('header_image')).src}}">
+			</div>
+		{% endif %}
+
+		<div class="c-news-events__details {% if news.get_field('header_image') is empty %}no-image{% endif %}">
+			<div class="c-news-events__breadcrumb">
+				<p>{{result_site_name}}</p>
+			</div>
+
+			<h1>{{news.title}}</h1>
+			
+			{% if news.get_field('header_medium') %}
+				<p><span class="c-news-events__medium">{{news.get_field('header_medium')}} </span> {{news.get_field('header_text')}}</p>
+			{% endif %}
+		</div>
+	</div>
+{% endblock %}
