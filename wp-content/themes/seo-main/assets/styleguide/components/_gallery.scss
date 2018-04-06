@@ -337,7 +337,8 @@ Gallery
 
     span {
       position: relative;
-      top: -10px;
+      top: -15px;
+      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 14px, $line-height: 1);
       font-style: italic;
     }
   }
@@ -583,5 +584,5 @@ Gallery
 }
 
 .eslide {
-  font-weight: $font-normal;
+  font-weight: $font-thinnest;
 }

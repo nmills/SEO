@@ -2028,7 +2028,12 @@ Gallery
     margin-left: 0; }
     .controls .pagination span {
       position: relative;
-      top: -10px;
+      top: -15px;
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 100;
+      font-size: 14px;
+      line-height: 1;
       font-style: italic; }
   .controls .arrows {
     width: 50px;
@@ -2220,7 +2225,7 @@ Gallery
       line-height: 1; } }
 
 .eslide {
-  font-weight: 300; }
+  font-weight: 100; }
 
 .container.region_hero {
   width: calc(100%);
