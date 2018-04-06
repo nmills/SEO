@@ -900,7 +900,12 @@ Styleguide 1.2
 .page-title h1 {
   font-weight: bold;
   display: inline-block;
-  margin: 0; }
+  margin: 0;
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #050505;
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 1; }
   .page-title h1:before {
     content: " ";
     display: block;
@@ -912,23 +917,25 @@ Styleguide 1.2
         width: 110px; } }
 
 .page-title .page-title__text-spacing {
-  margin-left: 20%;
-  margin-top: 30px;
-  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #4d4d4d;
-  font-weight: 100;
-  font-size: 24px;
-  line-height: 1.25; }
+  margin-top: 30px; }
+  .page-title .page-title__text-spacing,
+  .page-title .page-title__text-spacing p {
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 1.25; }
   .page-title .page-title__text-spacing:after {
-    content: " ";
+    content: "";
     display: block;
     border-bottom: 1px solid #e5e7e7;
     width: 75px;
-    margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-top: 60px;
+    margin-bottom: 60px; }
     @media only screen and (min-width: 1024px) {
       .page-title .page-title__text-spacing:after {
-        width: 110px; } }
+        width: 110px;
+        margin-left: 205px; } }
 
 /*
 Quote Offset
@@ -2227,36 +2234,36 @@ Gallery
   max-width: 1280px; }
   @media only screen and (min-width: 480px) {
     .container.region_title .content {
-      width: calc(83.33333%);
-      float: left;
-      margin-left: 0;
+      max-width: 780px;
+      margin-right: 120px;
       float: right; } }
 
 .container.region_body {
-  max-width: 1280px; }
+  max-width: 1130px; }
   .container.region_body .region_left_rail {
     width: calc(100%);
     float: left;
     margin-left: 0;
     margin-bottom: 50px; }
-    @media only screen and (min-width: 480px) {
+    @media only screen and (min-width: 768px) {
       .container.region_body .region_left_rail {
         width: calc(33.33333%);
         float: left;
         margin-left: 0;
-        padding-right: 5%; } }
+        max-width: 330px; } }
   .container.region_body .region_main_content {
     width: calc(100%);
     float: left;
     margin-left: 0;
     margin-bottom: 50px;
     padding: 0; }
-    @media only screen and (min-width: 480px) {
+    @media only screen and (min-width: 768px) {
       .container.region_body .region_main_content {
         width: calc(66.66667%);
         float: left;
         margin-left: 0;
-        float: right; } }
+        float: right;
+        max-width: 700px; } }
 
 .container.region_bottom {
   width: calc(100%);
