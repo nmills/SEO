@@ -253,9 +253,11 @@
 .c-share__container {
   border: 1px solid $light-gray;
   padding: 15px 25px;
+  display: none;
 
   @include grid-media($sm) {
     padding: 15px 10px;
+    display: block;
   }
 
 
