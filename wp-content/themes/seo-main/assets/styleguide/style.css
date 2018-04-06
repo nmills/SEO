@@ -380,7 +380,7 @@ section {
     display: block; }
   @media only screen and (min-width: 768px) {
     section {
-      margin-bottom: 120px; } }
+      margin-bottom: 145px; } }
 
 .slider__animation {
   transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
@@ -1625,7 +1625,8 @@ Styleguide 4.0
 
 .c-signup__title {
   text-align: left;
-  font-weight: 100; }
+  font-weight: 100;
+  margin-top: 0; }
 
 .c-signup,
 .c-signup__form {
@@ -2236,7 +2237,7 @@ Gallery
   @media only screen and (min-width: 480px) {
     .container.region_title .content {
       max-width: 780px;
-      margin-right: 120px;
+      margin-right: 110px;
       float: right; } }
 
 .container.region_body {
