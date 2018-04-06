@@ -1564,12 +1564,13 @@ Styleguide 3.1
         font-weight: 100;
         font-size: 120px;
         line-height: 0.8;
-        width: 36%;
+        max-width: 560px;
         background: none;
         float: left;
         margin: 0;
         margin-left: 65px;
         display: inline-block;
+        position: absolute;
         z-index: 10; } }
   .c-hero_image__wrapper h2 {
     font-size: 30px;
