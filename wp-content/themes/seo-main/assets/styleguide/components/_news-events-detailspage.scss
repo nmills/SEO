@@ -162,10 +162,9 @@
           font-size: 16px;
 
           @include grid-media($md) {
-
-          font-size: 26px;
-
+            font-size: 26px;
           }
+
 
           &:before {
             border-bottom-color: $red;
