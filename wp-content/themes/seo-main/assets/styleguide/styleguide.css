@@ -1486,8 +1486,8 @@ Styleguide 3.0
   clear: both;
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #050505;
-  font-weight: 300;
-  font-size: 17px;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 1.3;
   text-align: left;
   margin-bottom: 10px;
@@ -1974,11 +1974,10 @@ Gallery
   margin: 0;
   display: block;
   padding-top: 25px;
-  font-style: italic;
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #050505;
-  font-weight: 300;
-  font-size: 17px;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 1;
   width: calc(43.33333%);
   float: left;
@@ -2217,7 +2216,7 @@ Gallery
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #050505;
       font-weight: 700;
-      font-size: 55px;
+      font-size: 61px;
       line-height: 1; } }
 
 .eslide {
@@ -2237,7 +2236,7 @@ Gallery
   @media only screen and (min-width: 480px) {
     .container.region_title .content {
       max-width: 780px;
-      margin-right: 110px;
+      margin-right: 11%;
       float: right; } }
 
 .container.region_body {

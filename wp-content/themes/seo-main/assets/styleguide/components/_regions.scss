@@ -16,7 +16,7 @@
     .content {
       @include grid-media($sm) {
         max-width: 780px;
-        margin-right: 110px;
+        margin-right: 11%;
         float: right;
       }
     }
