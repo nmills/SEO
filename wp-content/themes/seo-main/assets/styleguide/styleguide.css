@@ -4190,7 +4190,10 @@ body {
 .news-page .region_left_rail {
   max-width: 300px; }
   .news-page .region_left_rail section {
-    margin-bottom: 100px; }
+    margin-bottom: 40px; }
+    @media only screen and (min-width: 480px) {
+      .news-page .region_left_rail section {
+        margin-bottom: 100px; } }
 
 .news-page .region_main_content {
   max-width: 700px; }
@@ -4248,20 +4251,26 @@ body {
   max-width: 1440px;
   margin: 0 auto; }
 
-.c-news-body .wysiwyg code {
-  width: calc(100%);
-  float: left;
-  margin-left: 0;
+.c-news-body .wysiwyg p {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #050505;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1;
-  border-left: 10px solid #050505;
-  padding-left: 10px;
-  margin-top: -15px;
-  margin-bottom: 15px;
-  padding-top: 17px; }
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 1.5; }
+  .c-news-body .wysiwyg p code {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    border-left: 10px solid #050505;
+    padding-left: 10px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    padding-top: 17px; }
 
 .c-news-cta .c-news-cta__container-wrapper {
   display: inline-block;
@@ -4286,7 +4295,7 @@ body {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #ffffff;
       font-weight: 100;
-      font-size: 40px;
+      font-size: 34px;
       line-height: 1; }
       @media only screen and (min-width: 768px) {
         .c-news-cta .c-news-cta__container-wrapper .c-news-cta__container .c-news-cta__text h2 {
@@ -4312,7 +4321,11 @@ body {
       border-right-color: #eb0029;
       border-left-width: 5px;
       border-right-width: 5px;
-      padding: 15px 25px; }
+      padding: 15px 25px;
+      font-size: 16px; }
+      @media only screen and (min-width: 768px) {
+        .c-news-cta .c-news-cta__container-wrapper .c-news-cta__container .c-news-cta__button .c-uie__calltoaction {
+          font-size: 26px; } }
       .c-news-cta .c-news-cta__container-wrapper .c-news-cta__container .c-news-cta__button .c-uie__calltoaction:before {
         border-bottom-color: #eb0029; }
       .c-news-cta .c-news-cta__container-wrapper .c-news-cta__container .c-news-cta__button .c-uie__calltoaction:after {
@@ -4334,7 +4347,7 @@ body {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #ffffff;
     font-weight: 100;
-    font-size: 43px;
+    font-size: 34px;
     line-height: 1;
     margin: 0; }
     @media only screen and (min-width: 480px) {
@@ -4355,16 +4368,9 @@ body {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #ffffff;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1;
     margin-bottom: 50px; }
-    @media only screen and (min-width: 480px) {
-      .c-news-event .c-news-event__container .c-news-event__content p {
-        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-        color: #ffffff;
-        font-weight: 100;
-        font-size: 20px;
-        line-height: 1; } }
     @media only screen and (min-width: 768px) {
       .c-news-event .c-news-event__container .c-news-event__content p {
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
