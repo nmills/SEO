@@ -12,6 +12,8 @@
   }
 
   .c-news-events__content {
+    @include grid-column(12, $no-gutter);
+
     .c-news-events__image {
       @include grid-column(12, $no-gutter);
 
