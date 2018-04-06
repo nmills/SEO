@@ -1349,8 +1349,12 @@ Styleguide 5.1
       width: 100%;
       top: 0;
       margin: 0;
-      font-size: 25px;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1; }
       @media only screen and (min-width: 1024px) {
         .video-component .heading h1 {
           position: absolute;
@@ -1399,8 +1403,11 @@ Styleguide 5.1
         padding-left: 80px;
         height: 460px; } }
     .video-component .quote p {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #ffffff;
-      font-style: italic;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.3;
       width: 100%;
       bottom: 0;
       margin: 0;

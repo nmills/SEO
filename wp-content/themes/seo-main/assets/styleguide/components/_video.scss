@@ -70,8 +70,8 @@ Styleguide 5.1
       width: 100%;
       top: 0;
       margin: 0;
-      font-size: 25px;
       margin-bottom: 25px;
+      @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 32px, $line-height: 1);
 
       @include grid-media($lg) {
         position: absolute;
@@ -144,8 +144,7 @@ Styleguide 5.1
     position: relative;
 
     p {
-      color: $white;
-      font-style: italic;
+      @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 14px, $line-height: 1.3);
       width: 100%;
       bottom: 0;
       margin: 0;
