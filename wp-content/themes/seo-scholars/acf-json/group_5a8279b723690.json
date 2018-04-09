@@ -1,10 +1,10 @@
 {
     "key": "group_5a8279b723690",
-    "title": "component: video",
+    "title": "Video",
     "fields": [
         {
             "key": "field_5a86549164fb6",
-            "label": "heading",
+            "label": "Heading",
             "name": "heading",
             "type": "text",
             "instructions": "",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5a8279c682236",
-            "label": "video",
+            "label": "Video",
             "name": "video",
             "type": "url",
             "instructions": "",
@@ -39,7 +39,7 @@
         },
         {
             "key": "field_5a86561664fb7",
-            "label": "quote",
+            "label": "Quote",
             "name": "quote",
             "type": "text",
             "instructions": "",
@@ -74,5 +74,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522070451
+    "modified": 1523166384
 }

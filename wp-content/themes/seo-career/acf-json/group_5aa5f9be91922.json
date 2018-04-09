@@ -1,10 +1,10 @@
 {
     "key": "group_5aa5f9be91922",
-    "title": "component: PL CTA",
+    "title": "PL CTA",
     "fields": [
         {
             "key": "field_5aa5f9ec3bc7a",
-            "label": "cta type",
+            "label": "CTA Type",
             "name": "cta_type",
             "type": "radio",
             "instructions": "",
@@ -28,7 +28,7 @@
         },
         {
             "key": "field_5aa5fa3e3bc7b",
-            "label": "image",
+            "label": "Image",
             "name": "image",
             "type": "image_crop",
             "instructions": "",
@@ -60,7 +60,7 @@
         },
         {
             "key": "field_5aa5fa7b3bc7c",
-            "label": "video",
+            "label": "Video",
             "name": "video",
             "type": "url",
             "instructions": "",
@@ -84,7 +84,7 @@
         },
         {
             "key": "field_5aa5fa903bc7d",
-            "label": "heading",
+            "label": "Heading",
             "name": "heading",
             "type": "text",
             "instructions": "The character limit is 80",
@@ -103,7 +103,7 @@
         },
         {
             "key": "field_5aa5fd763bc7e",
-            "label": "body",
+            "label": "Body",
             "name": "body",
             "type": "text",
             "instructions": "The character limit is 140",
@@ -122,7 +122,7 @@
         },
         {
             "key": "field_5aa5fd873bc7f",
-            "label": "links",
+            "label": "Links",
             "name": "links",
             "type": "repeater",
             "instructions": "",
@@ -194,5 +194,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522662377
+    "modified": 1523165323
 }

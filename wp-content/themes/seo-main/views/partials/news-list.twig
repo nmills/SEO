@@ -1,21 +1,21 @@
 {% block content %}
 	<div class="c-news-events__content list post-selector">
 		<a href="{{news_link}}">
-		{% if news.get_field('header_image') %}
-			<div class="c-news-events__image">
-				  <img src="{{Image(news.get_field('header_image')).src}}">
-			</div>
-		{% endif %}
-
-		<div class="c-news-events__details {% if news.get_field('header_image') is empty %}no-image{% endif %}">
+		<div class="c-news-events__details {% if header_image_url is empty %}no-image{% endif %}">
 			<div class="c-news-events__breadcrumb">
 				<p>{{result_site_name}}</p>
 			</div>
 
+			{% if header_image_url %}
+			<div class="c-news-events__image">
+			  <img src="{{header_image_url}}">
+			</div>
+			{% endif %}
+
 			<h1>{{news.title}}</h1>
 			
-			{% if news.get_field('header_medium') %}
-				<p><span class="c-news-events__medium">{{news.get_field('header_medium')}} </span> {{news.get_field('header_text')}}</p>
+			{% if news.header_medium %}
+				<p><span class="c-news-events__medium">{{news.header_medium}} </span> {{news.header_text}}</p>
 			{% endif %}
 		</div>
 		</a>

@@ -1,10 +1,10 @@
 {
     "key": "group_5a93bfe6d6041",
-    "title": "component: cta",
+    "title": "CTA",
     "fields": [
         {
             "key": "field_5a93bff5dc3c8",
-            "label": "header text",
+            "label": "Header Text",
             "name": "header_text",
             "type": "text",
             "instructions": "",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5a93c000dc3c9",
-            "label": "image",
+            "label": "Image",
             "name": "image",
             "type": "image_crop",
             "instructions": "",
@@ -47,7 +47,7 @@
         },
         {
             "key": "field_5a93c009dc3ca",
-            "label": "link",
+            "label": "Link",
             "name": "link",
             "type": "url",
             "instructions": "",
@@ -63,7 +63,7 @@
         },
         {
             "key": "field_5a9927fd0a9b7",
-            "label": "button name",
+            "label": "Link Name",
             "name": "cta_btn_name",
             "type": "text",
             "instructions": "",
@@ -98,5 +98,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520501310
+    "modified": 1523162175
 }

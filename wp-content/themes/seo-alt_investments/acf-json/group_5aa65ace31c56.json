@@ -1,6 +1,6 @@
 {
     "key": "group_5aa65ace31c56",
-    "title": "gallery",
+    "title": "Gallery",
     "fields": [
         {
             "key": "field_5aa65ad3c4eab",
@@ -19,12 +19,12 @@
                 "5aa65adc1e601": {
                     "key": "5aa65adc1e601",
                     "name": "component_gallery_text_only",
-                    "label": "component: Gallery Text only",
+                    "label": "Text only Gallery",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5aa65b5fc4eac",
-                            "label": "component: Gallery Text only",
+                            "label": "Text only  Gallery",
                             "name": "component:_gallery_text_only",
                             "type": "clone",
                             "instructions": "",
@@ -50,12 +50,12 @@
                 "5aa65b8ac4ead": {
                     "key": "5aa65b8ac4ead",
                     "name": "component_gallery_small",
-                    "label": "component: Gallery Small",
+                    "label": "Small Image Gallery",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5aa65b98c4eae",
-                            "label": "component: Gallery Small",
+                            "label": "Small Image Gallery",
                             "name": "component:_gallery_small",
                             "type": "clone",
                             "instructions": "",
@@ -81,12 +81,12 @@
                 "5aa65bb3c4eaf": {
                     "key": "5aa65bb3c4eaf",
                     "name": "component_gallery_medium",
-                    "label": "component: Gallery Medium",
+                    "label": "Medium Image Gallery",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5aa65bc1c4eb0",
-                            "label": "component: Gallery Medium",
+                            "label": "Medium Image Gallery",
                             "name": "component:_gallery_medium",
                             "type": "clone",
                             "instructions": "",
@@ -112,12 +112,12 @@
                 "5aa65bd9c4eb1": {
                     "key": "5aa65bd9c4eb1",
                     "name": "component_gallery_image_only",
-                    "label": "component: Gallery Image only",
+                    "label": "Image only Gallery",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5aa65beac4eb2",
-                            "label": "component: Gallery Image only",
+                            "label": "Image only Gallery",
                             "name": "component:_gallery_image_only",
                             "type": "clone",
                             "instructions": "",
@@ -143,12 +143,12 @@
                 "5aa65c2dc4eb3": {
                     "key": "5aa65c2dc4eb3",
                     "name": "component_gallery_large",
-                    "label": "component: Gallery Large",
+                    "label": "Large Image Gallery",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5aa65c3bc4eb4",
-                            "label": "component: Gallery Large",
+                            "label": "Large Image Gallery",
                             "name": "component_gallery_large",
                             "type": "clone",
                             "instructions": "",
@@ -194,5 +194,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1520852073
+    "modified": 1523170440
 }

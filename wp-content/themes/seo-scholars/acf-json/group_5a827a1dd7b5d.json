@@ -1,6 +1,6 @@
 {
     "key": "group_5a827a1dd7b5d",
-    "title": "component: faq",
+    "title": "FAQ",
     "fields": [
         {
             "key": "field_5a827a277c4ce",
@@ -23,7 +23,7 @@
             "sub_fields": [
                 {
                     "key": "field_5a827a367c4cf",
-                    "label": "question",
+                    "label": "Question",
                     "name": "question",
                     "type": "text",
                     "instructions": "",
@@ -42,7 +42,7 @@
                 },
                 {
                     "key": "field_5a827a4b7c4d0",
-                    "label": "answer",
+                    "label": "Answer",
                     "name": "answer",
                     "type": "wysiwyg",
                     "instructions": "",
@@ -79,5 +79,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522666007
+    "modified": 1523173330
 }

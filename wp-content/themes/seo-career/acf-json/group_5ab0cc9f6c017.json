@@ -1,10 +1,10 @@
 {
     "key": "group_5ab0cc9f6c017",
-    "title": "program homepage",
+    "title": "Program Homepage",
     "fields": [
         {
             "key": "field_5ab0cca8e3a96",
-            "label": "hero",
+            "label": "Hero",
             "name": "hero",
             "type": "clone",
             "instructions": "",
@@ -40,12 +40,12 @@
                 "5ab0f8a466455": {
                     "key": "5ab0f8a466455",
                     "name": "component_ph_intro",
-                    "label": "component: PH Intro",
+                    "label": "Intro",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5ab0f8b666456",
-                            "label": "component: PH Intro",
+                            "label": "PH Intro",
                             "name": "component_ph_intro",
                             "type": "clone",
                             "instructions": "",
@@ -71,12 +71,12 @@
                 "5ab0ee1345a39": {
                     "key": "5ab0ee1345a39",
                     "name": "component_ph_gallery",
-                    "label": "component: PH Gallery",
+                    "label": "Gallery",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5ab0f097d5475",
-                            "label": "component: PH Gallery",
+                            "label": "PH Gallery",
                             "name": "component_ph_gallery",
                             "type": "clone",
                             "instructions": "",
@@ -102,12 +102,12 @@
                 "5ab0f110d5476": {
                     "key": "5ab0f110d5476",
                     "name": "component_ph_text",
-                    "label": "component: PH text",
+                    "label": "Text",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5ab0f11fd5477",
-                            "label": "component: PH text",
+                            "label": "PH Text",
                             "name": "component_ph_text",
                             "type": "clone",
                             "instructions": "",
@@ -133,12 +133,12 @@
                 "5ab2169173557": {
                     "key": "5ab2169173557",
                     "name": "component_ph_stats",
-                    "label": "component: PH stats",
+                    "label": "Stats",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5ab216be73558",
-                            "label": "component: PH stats",
+                            "label": "PH Stats",
                             "name": "component_ph_stats",
                             "type": "clone",
                             "instructions": "",
@@ -164,12 +164,12 @@
                 "5ab8a3951615f": {
                     "key": "5ab8a3951615f",
                     "name": "component_ph_signup",
-                    "label": "component: PH signup",
+                    "label": "Signup",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5ab8a3a616160",
-                            "label": "component: PH signup",
+                            "label": "PH Signup",
                             "name": "component_ph_signup",
                             "type": "clone",
                             "instructions": "",
@@ -215,5 +215,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1522053045
+    "modified": 1523171421
 }

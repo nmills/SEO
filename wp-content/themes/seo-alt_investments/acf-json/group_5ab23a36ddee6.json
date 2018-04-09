@@ -1,10 +1,10 @@
 {
     "key": "group_5ab23a36ddee6",
-    "title": "global homepage",
+    "title": "Global Homepage",
     "fields": [
         {
             "key": "field_5ab23a371c6cc",
-            "label": "hero",
+            "label": "Hero",
             "name": "hero",
             "type": "clone",
             "instructions": "",
@@ -25,7 +25,7 @@
         },
         {
             "key": "field_5ab23f98df949",
-            "label": "intro",
+            "label": "Intro",
             "name": "intro",
             "type": "clone",
             "instructions": "",
@@ -46,7 +46,7 @@
         },
         {
             "key": "field_5ab23fc2df94a",
-            "label": "program list",
+            "label": "Program List",
             "name": "program_list",
             "type": "clone",
             "instructions": "",
@@ -82,12 +82,12 @@
                 "5ab2403c57f76": {
                     "key": "5ab2403c57f76",
                     "name": "component_gh_cta",
-                    "label": "component: GH CTA",
+                    "label": "CTA",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5ab2406957f77",
-                            "label": "component: GH CTA",
+                            "label": "GH CTA",
                             "name": "component_gh_cta",
                             "type": "clone",
                             "instructions": "",
@@ -113,12 +113,12 @@
                 "5ab2408657f79": {
                     "key": "5ab2408657f79",
                     "name": "component_gh_donate",
-                    "label": "component: GH Donate",
+                    "label": "Donate",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5ab2409657f7a",
-                            "label": "component: GH Donate",
+                            "label": "GH Donate",
                             "name": "component_gh_donate",
                             "type": "clone",
                             "instructions": "",
@@ -144,12 +144,12 @@
                 "5ab246e2d6a18": {
                     "key": "5ab246e2d6a18",
                     "name": "component_gh_alumni",
-                    "label": "component: GH Alumni",
+                    "label": "Alumni",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5ab246ecd6a19",
-                            "label": "component: GH Alumni",
+                            "label": "GH Alumni",
                             "name": "component_gh_alumni",
                             "type": "clone",
                             "instructions": "",
@@ -195,5 +195,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1522316048
+    "modified": 1523170804
 }

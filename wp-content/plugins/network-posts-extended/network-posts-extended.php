@@ -681,7 +681,7 @@ function netsposts_shortcode( $atts ) {
 
 	}
 
-	$html = '<div id="netsposts-menu">';
+	$html = '';
 
 	if ( $shortcode_mgr->has_value( 'menu_name' ) ) {
 		$menu = array(
@@ -700,7 +700,7 @@ function netsposts_shortcode( $atts ) {
 		$link_open_new_window = false;
 	}
 
-	$html .= '</div>';
+	$html .= '';
 
 	if ( $postdata ) {
 		$html .= '<div id="block-wrapper">';
@@ -739,7 +739,7 @@ function netsposts_shortcode( $atts ) {
 					$html .= html_entity_decode( $shortcode_mgr->get( 'wrap_start' ) );
 				}
 
-				$html .= '<div class="netsposts-content" style="' . $height_content . '">';
+				$html .= '';
 
 				if ( $use_inline_layout ) {
 					include( POST_VIEWS_PATH . '/layout/layout_inline.php' );
@@ -747,15 +747,15 @@ function netsposts_shortcode( $atts ) {
 					include( POST_VIEWS_PATH . '/layout/layout_default.php' );
 				}
 
-				$html .= '</div>';//end of netsposts-content
+				$html .= '';//end of netsposts-content
 
-				$html .= "<br />";
+				$html .= "";
 
 				if ( $shortcode_mgr->has_value( 'wrap_end' ) ) {
 					$html .= html_entity_decode( $shortcode_mgr->get( 'wrap_end' ) );
 				}
 
-				$html .= "<div style='clear: both;'></div>";
+				$html .= "";
 			}
 
 			if ( $column > 1 ) {
@@ -764,7 +764,7 @@ function netsposts_shortcode( $atts ) {
 
 		}
 
-		$html .= '<div class="clear"></div>';
+		$html .= '';
 
 		if ( ( $paginate ) and ( $total_pages > 1 ) ) {
 			$html .= '<div id="netsposts-paginate" class="netsposts-paginate">';
@@ -798,6 +798,8 @@ function netsposts_shortcode( $atts ) {
 
 	}
 
+	// Quick fix by amalan to hide all the unwated HTMLs
+	// $html = '';
 	return $html;
 }
 
