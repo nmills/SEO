@@ -72,7 +72,7 @@ function generate_links_of_taxonomies_news(){
   }
   else{
     $selected_type_taxonomy = get_term_by('slug', $selected , 'type');
-    $selected_type_name = $selected_type_taxonomy['name'];
+    $selected_type_name = $selected_type_taxonomy->name;
   }
 
   $filter_type = "<h3>Type: </h3>";
@@ -81,7 +81,7 @@ function generate_links_of_taxonomies_news(){
 
 
   foreach ($terms as $term) {
-    if($selected == $term['slug']) {
+    if($selected == $term->slug) {
       $class = 'active-selected';
     }
     else{
@@ -89,7 +89,7 @@ function generate_links_of_taxonomies_news(){
     }
 
     $filter_type .= "<li class='c-news-filter__item ".$class."'>";
-    $filter_type .= "<a href='".$current_page_link.'?taxonomy='.$term['slug']."'>".$term['name']."</a>";
+    $filter_type .= "<a href='".$current_page_link.'?taxonomy='.$term->slug."'>".$term->name."</a>";
     $filter_type .= "</li>";
   }
 
