@@ -47,8 +47,7 @@
         @include grid-column(4, $no-gutter);
 
         margin-top: 0;
-
-        // padding-left: 25px;
+        padding-left: 25px;
       }
 
 
@@ -132,7 +131,10 @@
 
       .c-news-events__details {
         @include grid-column(12, $no-gutter);
+
         margin-top: 0;
+
+        padding-left: 0;
 
         @include grid-media($md) {
           .c-news-events__image, h1, p, .c-news-events__breadcrumb {
@@ -155,6 +157,7 @@
           @include grid-column(12, $no-gutter);
 
           margin-top: 0;
+          padding-left: 0;
 
           h1, > p, .c-news-events__breadcrumb {
             @include grid-column(12, $no-gutter);
