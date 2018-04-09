@@ -4695,6 +4695,10 @@ body {
 .c-news-events .posts-selector .c-news-events__details p {
   margin-bottom: 0; }
 
+.c-news-events .posts-selector .malinky-load-more {
+  text-align: left;
+  margin-left: 19px; }
+
 .c-news-filter {
   width: calc(100%);
   float: left;

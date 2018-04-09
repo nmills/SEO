@@ -133,7 +133,6 @@
         @include grid-column(12, $no-gutter);
 
         margin-top: 0;
-
         padding-left: 0;
 
         @include grid-media($md) {
@@ -230,6 +229,11 @@
       p {
         margin-bottom: 0;
       }
+    }
+
+    .malinky-load-more {
+      text-align: left;
+          margin-left: 19px;
     }
   }
 }
