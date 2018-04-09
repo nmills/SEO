@@ -9,6 +9,15 @@
       margin-top: 150px;
       margin-bottom: 65px;
     }
+
+
+    h1 {
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 42px, $line-height: 1);
+
+      @include grid-media($md) {
+        @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 61px, $line-height: 1);
+      }
+    }
   }
 
   .c-news-events__content {
@@ -32,9 +41,12 @@
     .c-news-events__details {
       @include grid-column(12, $no-gutter);
 
+      margin-top: 15px;
+
       @include grid-media($md) {
         @include grid-column(4, $no-gutter);
 
+        margin-top: 0;
         padding-left: 25px;
       }
 
@@ -53,9 +65,14 @@
       .c-news-events__breadcrumb {
         p {
           text-transform: uppercase;
-          margin: 0;
+          margin-bottom: 10px;
 
           @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 12px, $line-height: 1);
+
+          @include grid-media($md) {
+            margin: 0;
+          }
+
 
           span {
             font-size: 12px;
@@ -88,7 +105,10 @@
         @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
 
         margin: 0;
-        margin-bottom: 65px;
+
+        @include grid-media($md) {
+          margin-bottom: 65px;
+        }
       }
 
       .c-news-events__medium {
@@ -105,23 +125,59 @@
       display: inline-block;
       margin-bottom: 65px;
 
-      .c-news-events__image, .c-news-events__details {
-        @include grid-column(6, $no-gutter);
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .c-news-events__details {
+        @include grid-column(12, $no-gutter);
+
+        margin-top: 0;
+        padding-left: 0;
+
+        @include grid-media($md) {
+          .c-news-events__image, h1, p, .c-news-events__breadcrumb {
+            @include grid-column(6, $no-gutter);
+          }
+
+          h1, > p, .c-news-events__breadcrumb {
+            float: right;
+            padding-left: 25px;
+          }
+
+          .c-news-events__image {
+            min-height: 200px;
+          }
+        }
       }
 
       .c-news-events__details {
         &.no-image {
           @include grid-column(12, $no-gutter);
+
+          margin-top: 0;
+          padding-left: 0;
+
+          h1, > p, .c-news-events__breadcrumb {
+            @include grid-column(12, $no-gutter);
+
+            padding-left: 0;
+          }
         }
       }
     }
   }
 
   .c-news-events__promotion {
-    @include grid-column(9, $no-gutter);
+    @include grid-column(12, $no-gutter);
+
+    @include grid-media($md) {
+      @include grid-column(10, $no-gutter);
+    }
+
 
     border: 1px solid $light-gray;
-    padding: 15px 25px;
+    padding: 15px 20px;
 
     @include grid-media($sm) {
       padding: 15px 10px;
@@ -134,7 +190,7 @@
 
 
     h2 {
-      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
+      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 34px, $line-height: 1);
 
       margin: 0;
       margin-bottom: 35px;
@@ -145,7 +201,7 @@
       }
 
 
-      @include grid-media($md) {
+      @include grid-media($lg) {
         @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
       }
 
@@ -156,13 +212,42 @@
       }
     }
   }
+
+  .posts-selector {
+    .c-news-events__details {
+      h1 {
+        @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 24px, $line-height: 1);
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        @include grid-media($md) {
+          @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 32px, $line-height: 1);
+        }
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .c-news-filter {
+  @include grid-column(12, $no-gutter);
+
   padding: 10px 0px;
-  width: 100%;
-  max-width: 240px;
+
+  // max-width: 240px;
   position: relative;
+  display: inline-block;
+  border-top: 2px solid $light-gray;
+  border-bottom: 2px solid $light-gray;
+
+  &:nth-child(2) {
+    border-top: 0;
+    margin-bottom: 40px;
+  }
 
   &:hover {
     h3, #selected {
@@ -170,6 +255,13 @@
       color: $white;
     }
   }
+
+  @include grid-media($md) {
+    @include grid-column(6, $no-gutter);
+
+    border: 0;
+  }
+
 
   h3 {
     display: inline-block;
@@ -189,14 +281,14 @@
     cursor: pointer;
     position: relative;
     padding: 8px 0;
-    padding-right: 25px;
+    padding-right: 35px;
     padding-bottom: 9px;
 
     &:after {
       content: "";
       position: absolute;
       top: 40%;
-      right: 5px;
+      right: 15px;
       transition: all .4s ease-in-out;
 
       // transform: translateY(-50%);
@@ -229,6 +321,8 @@
     padding-left: 27px;
     margin-top: -4px;
     position: absolute;
+    left: 0;
+    z-index: 10;
 
     &:hover {
       display: block;
@@ -244,7 +338,7 @@
         @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 19px, $line-height: 1);
 
         width: 100%;
-        padding: 5px 25px;
+        padding: 5px 35px;
         padding-left: 0;
         display: inline-block;
       }

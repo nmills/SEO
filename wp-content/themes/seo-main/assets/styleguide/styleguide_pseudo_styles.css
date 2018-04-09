@@ -166,6 +166,10 @@
   color: #7cb4f6;
 }
 
+.c-news-events .c-news-events__content.list.pseudo-class-last-of-type {
+  margin-bottom: 0;
+}
+
 .c-news-filter.pseudo-class-hover h3,
 .c-news-filter.pseudo-class-hover #selected {
   background: #050505;
