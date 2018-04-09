@@ -5,12 +5,24 @@ function add_query_vars_filter( $vars ){
 }
 add_filter( 'query_vars', 'add_query_vars_filter' );
 
-
 function generate_links_of_sites(){
   $current_page_link = get_permalink();
-  $filter_site = "";
   $all_sites = wp_get_sites();
   $selected = get_query_var('include_blog' , 'all');
+
+  if($selected == 'all') {
+    $selected_site_name = 'All';
+  }
+  else{
+    switch_to_blog($selected);
+    $selected_site_name = get_bloginfo('name');
+    restore_current_blog();
+  }
+
+
+  $filter_site = "<h3>Program: </h3>";
+  $filter_site .= "<span id='selected'>".$selected_site_name."</span>";
+  $filter_site .= "<ul class='c-news-filter__items' id='selection-options'>";
 
   foreach ($all_sites as $site) {
     switch_to_blog($site['blog_id']);
@@ -39,6 +51,8 @@ function generate_links_of_sites(){
   $filter_site .= "<li class='c-news-filter__item ".$class."'>";
   $filter_site .= "<a href='".$current_page_link."'>All</a>";
   $filter_site .= "</li>";
+
+  $filter_site .= "</ul>";
 
   return $filter_site;
 }
