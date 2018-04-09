@@ -163,6 +163,7 @@
   width: 100%;
   max-width: 240px;
   position: relative;
+  display: inline-block;
 
   &:hover {
     h3, #selected {
@@ -229,6 +230,7 @@
     padding-left: 27px;
     margin-top: -4px;
     position: absolute;
+    left: 0;
 
     &:hover {
       display: block;

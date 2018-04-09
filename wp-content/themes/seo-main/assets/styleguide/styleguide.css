@@ -4634,7 +4634,8 @@ body {
   padding: 10px 0px;
   width: 100%;
   max-width: 240px;
-  position: relative; }
+  position: relative;
+  display: inline-block; }
   .c-news-filter:hover h3, .c-news-filter:hover #selected {
     background: #050505;
     color: #ffffff; }
@@ -4682,7 +4683,8 @@ body {
     background: #050505;
     padding-left: 27px;
     margin-top: -4px;
-    position: absolute; }
+    position: absolute;
+    left: 0; }
     .c-news-filter #selection-options:hover {
       display: block; }
     .c-news-filter #selection-options li {
