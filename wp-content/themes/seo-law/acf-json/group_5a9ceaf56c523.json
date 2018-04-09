@@ -1,10 +1,10 @@
 {
     "key": "group_5a9ceaf56c523",
-    "title": "region: content region bottom",
+    "title": "Region Bottom",
     "fields": [
         {
             "key": "field_5a9ceb004ab2b",
-            "label": "region: content region bottom",
+            "label": "Region Bottom",
             "name": "region:_content_region_bottom",
             "type": "flexible_content",
             "instructions": "",
@@ -19,7 +19,7 @@
                 "5a9ceb0ac3887": {
                     "key": "5a9ceb0ac3887",
                     "name": "video",
-                    "label": "video",
+                    "label": "Video",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -50,7 +50,7 @@
                 "5a9cf2224ab2d": {
                     "key": "5a9cf2224ab2d",
                     "name": "wysiwyg",
-                    "label": "wysiwyg",
+                    "label": "WYSIWYG",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -81,7 +81,7 @@
                 "5a9cf2814ab2f": {
                     "key": "5a9cf2814ab2f",
                     "name": "faq",
-                    "label": "faq",
+                    "label": "FAQ",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -112,7 +112,7 @@
                 "5a9cf29c4ab31": {
                     "key": "5a9cf29c4ab31",
                     "name": "slideshow",
-                    "label": "slideshow",
+                    "label": "Slideshow",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -143,7 +143,7 @@
                 "5aaa669f9aee5": {
                     "key": "5aaa669f9aee5",
                     "name": "faq_new",
-                    "label": "faq new",
+                    "label": "FAQ New",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -194,5 +194,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521116914
+    "modified": 1523172033
 }

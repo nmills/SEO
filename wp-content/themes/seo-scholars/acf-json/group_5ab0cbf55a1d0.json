@@ -1,10 +1,10 @@
 {
     "key": "group_5ab0cbf55a1d0",
-    "title": "component: PH Hero",
+    "title": "PH Hero",
     "fields": [
         {
             "key": "field_5ab0cc374161d",
-            "label": "image",
+            "label": "Image",
             "name": "image",
             "type": "image_crop",
             "instructions": "",
@@ -28,7 +28,7 @@
         },
         {
             "key": "field_5ab1ed49e3a05",
-            "label": "video",
+            "label": "Video",
             "name": "video",
             "type": "file",
             "instructions": "Video must be uploaded as an mp4 encoded as H.264 to be supported by all browsers",
@@ -47,7 +47,7 @@
         },
         {
             "key": "field_5ab0cc444161e",
-            "label": "text",
+            "label": "Text",
             "name": "text",
             "type": "textarea",
             "instructions": "The character limit is 100",
@@ -82,5 +82,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522052690
+    "modified": 1523163912
 }

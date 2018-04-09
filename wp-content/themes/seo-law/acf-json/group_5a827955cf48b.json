@@ -1,10 +1,10 @@
 {
     "key": "group_5a827955cf48b",
-    "title": "component: slideshow",
+    "title": "Slideshow",
     "fields": [
         {
             "key": "field_5a8abe8986d22",
-            "label": "slideshow",
+            "label": "Slideshow",
             "name": "slideshow",
             "type": "repeater",
             "instructions": "",
@@ -23,7 +23,7 @@
             "sub_fields": [
                 {
                     "key": "field_5a8abe9586d23",
-                    "label": "image",
+                    "label": "Image",
                     "name": "image",
                     "type": "image",
                     "instructions": "",
@@ -47,7 +47,7 @@
                 },
                 {
                     "key": "field_5a8abea086d24",
-                    "label": "caption",
+                    "label": "Caption",
                     "name": "caption",
                     "type": "text",
                     "instructions": "",
@@ -84,5 +84,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1519956179
+    "modified": 1523166194
 }

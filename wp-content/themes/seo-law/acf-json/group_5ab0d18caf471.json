@@ -1,10 +1,10 @@
 {
     "key": "group_5ab0d18caf471",
-    "title": "component: PH Gallery",
+    "title": "PH Gallery",
     "fields": [
         {
             "key": "field_5ab0d19bd67ef",
-            "label": "heading",
+            "label": "Heading",
             "name": "heading",
             "type": "text",
             "instructions": "",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5ab0d1a3d67f0",
-            "label": "intro text",
+            "label": "Intro Text",
             "name": "intro_text",
             "type": "textarea",
             "instructions": "",
@@ -106,7 +106,7 @@
         },
         {
             "key": "field_5ab0d213d67f3",
-            "label": "closing line",
+            "label": "Closing Line",
             "name": "closing_line",
             "type": "text",
             "instructions": "",
@@ -125,7 +125,7 @@
         },
         {
             "key": "field_5ab0d21cd67f4",
-            "label": "closing link",
+            "label": "Closing Link",
             "name": "closing_link",
             "type": "link",
             "instructions": "",
@@ -156,5 +156,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522055481
+    "modified": 1523163819
 }

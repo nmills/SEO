@@ -1,6 +1,6 @@
 {
     "key": "group_5ab214af73ad8",
-    "title": "component: PH stats",
+    "title": "PH Stats",
     "fields": [
         {
             "key": "field_5ab214c0fff0d",
@@ -23,7 +23,7 @@
             "sub_fields": [
                 {
                     "key": "field_5ab214d3fff0e",
-                    "label": "stat type",
+                    "label": "Stats Type",
                     "name": "stat_type",
                     "type": "radio",
                     "instructions": "",
@@ -47,7 +47,7 @@
                 },
                 {
                     "key": "field_5ab21556fff0f",
-                    "label": "image",
+                    "label": "Image",
                     "name": "image",
                     "type": "image_crop",
                     "instructions": "",
@@ -79,7 +79,7 @@
                 },
                 {
                     "key": "field_5ab2159dfff10",
-                    "label": "percent",
+                    "label": "Percent",
                     "name": "percent",
                     "type": "number",
                     "instructions": "",
@@ -108,7 +108,7 @@
                 },
                 {
                     "key": "field_5ab21617fff14",
-                    "label": "number",
+                    "label": "Number",
                     "name": "number",
                     "type": "number",
                     "instructions": "",
@@ -137,7 +137,7 @@
                 },
                 {
                     "key": "field_5ab215abfff11",
-                    "label": "text",
+                    "label": "Text",
                     "name": "text",
                     "type": "text",
                     "instructions": "The character limit is 120",
@@ -156,7 +156,7 @@
                 },
                 {
                     "key": "field_5ab215c7fff12",
-                    "label": "year 1",
+                    "label": "Year 1",
                     "name": "year_1",
                     "type": "number",
                     "instructions": "",
@@ -185,7 +185,7 @@
                 },
                 {
                     "key": "field_5ab215f7fff13",
-                    "label": "year 2",
+                    "label": "Year 2",
                     "name": "year_2",
                     "type": "number",
                     "instructions": "",
@@ -232,5 +232,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522657375
+    "modified": 1523173785
 }

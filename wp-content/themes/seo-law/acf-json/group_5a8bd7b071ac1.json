@@ -1,10 +1,10 @@
 {
     "key": "group_5a8bd7b071ac1",
-    "title": "component: signup",
+    "title": "Signup",
     "fields": [
         {
             "key": "field_5a8bd7b9f3fd6",
-            "label": "header text",
+            "label": "Header Text",
             "name": "header_text",
             "type": "text",
             "instructions": "",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5ac21469ab6c0",
-            "label": "signup button label",
+            "label": "Button Label",
             "name": "signup_button_label",
             "type": "text",
             "instructions": "The character limit is 20",
@@ -58,5 +58,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522668792
+    "modified": 1523166114
 }

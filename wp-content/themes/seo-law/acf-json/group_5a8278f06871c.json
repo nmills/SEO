@@ -1,10 +1,10 @@
 {
     "key": "group_5a8278f06871c",
-    "title": "component: wysiwyg",
+    "title": "WYSIWYG",
     "fields": [
         {
             "key": "field_5a82793c239e2",
-            "label": "wysiwyg",
+            "label": "WYSIWYG",
             "name": "wysiwyg",
             "type": "wysiwyg",
             "instructions": "",
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1519956188
+    "modified": 1523166492
 }

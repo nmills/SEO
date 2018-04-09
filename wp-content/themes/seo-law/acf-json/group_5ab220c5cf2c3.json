@@ -1,10 +1,10 @@
 {
     "key": "group_5ab220c5cf2c3",
-    "title": "component: GH Intro",
+    "title": "GH Intro",
     "fields": [
         {
             "key": "field_5ab220c624d1a",
-            "label": "intro text",
+            "label": "Intro Text",
             "name": "intro_text",
             "type": "textarea",
             "instructions": "For emphasized text use \"< strong>\" & \"<\/ strong>\" before and after your text",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5ab220c624f16",
-            "label": "button",
+            "label": "Button",
             "name": "button",
             "type": "link",
             "instructions": "",
@@ -54,5 +54,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522656957
+    "modified": 1523174465
 }
