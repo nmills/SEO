@@ -14,6 +14,14 @@
 	        <div class="container region_main_content">
 	          {# Adding Body #}
             <section class="posts-selector">
+            	{# Need to add the filters here #}
+            	<div class="c-news-filter">
+								{{tags_filter_NE_landingpage}}
+							</div>
+							<div class="c-news-filter">
+								{{site_filter_NE_landingpage}}
+							</div>
+							
               {{post.content}}
             </section>
 	        </div>

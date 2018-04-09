@@ -1,10 +1,10 @@
 {
     "key": "group_5ab222f0da179",
-    "title": "component: GH Donate",
+    "title": "GH Donate",
     "fields": [
         {
             "key": "field_5ab222f87b66c",
-            "label": "text",
+            "label": "Text",
             "name": "text",
             "type": "text",
             "instructions": "",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5ab223337b66d",
-            "label": "button",
+            "label": "Button",
             "name": "button",
             "type": "link",
             "instructions": "",
@@ -54,5 +54,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522315650
+    "modified": 1523162432
 }

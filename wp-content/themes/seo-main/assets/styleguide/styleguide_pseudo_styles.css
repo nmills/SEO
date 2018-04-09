@@ -166,6 +166,25 @@
   color: #7cb4f6;
 }
 
+.c-news-filter.pseudo-class-hover h3,
+.c-news-filter.pseudo-class-hover #selected {
+  background: #050505;
+  color: #ffffff;
+}
+
+.c-news-filter #selected.pseudo-class-hover:after {
+  top: 25%;
+  transform: rotate(180deg);
+}
+
+.c-news-filter #selected.pseudo-class-hover + #selection-options {
+  display: block;
+}
+
+.c-news-filter #selection-options.pseudo-class-hover {
+  display: block;
+}
+
 .slick-list.pseudo-class-focus {
   outline: none;
 }

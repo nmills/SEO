@@ -67,7 +67,12 @@ class BSDStarterSite extends TimberSite {
       'post_type'  => 'news',
       'meta_key'   => '_is_ns_featured_post',
       'meta_value' => 'yes',
+      'posts_per_page'=> 1,
+      'order' => 'DESC'
     );
+
+
+
     $context['featured_posts'] = Timber::get_posts($args);
     return $context;
     
@@ -268,6 +273,9 @@ require_once(get_template_directory() . '/includes/bsdstarter_editor_styles.php'
 
 // Custom Shortcodes
 require_once(get_template_directory() . '/includes/bsdstarter_shortcodes.php');
+
+// Custom Development
+require_once(get_template_directory() . '/includes/bsdstarter_overides.php');
 
 /* Removing Add media button  */
 function RemoveAddMediaButtons(){

@@ -1,10 +1,10 @@
 {
     "key": "group_5ab2215376308",
-    "title": "component: GH program list",
+    "title": "GH Program List",
     "fields": [
         {
             "key": "field_5ab2216bf3b88",
-            "label": "repeater",
+            "label": "Programs",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -23,7 +23,7 @@
             "sub_fields": [
                 {
                     "key": "field_5ab22174f3b89",
-                    "label": "image",
+                    "label": "Image",
                     "name": "image",
                     "type": "image_crop",
                     "instructions": "",
@@ -47,7 +47,7 @@
                 },
                 {
                     "key": "field_5ab22183f3b8a",
-                    "label": "title",
+                    "label": "Title",
                     "name": "title",
                     "type": "text",
                     "instructions": "",
@@ -66,7 +66,7 @@
                 },
                 {
                     "key": "field_5ab2218bf3b8b",
-                    "label": "text blurb",
+                    "label": "Text Blurb",
                     "name": "text_blurb",
                     "type": "textarea",
                     "instructions": "The character limit is 140",
@@ -82,6 +82,22 @@
                     "maxlength": 140,
                     "rows": "",
                     "new_lines": ""
+                },
+                {
+                    "key": "field_5acb044b05ca6",
+                    "label": "Url",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         }
@@ -103,5 +119,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522668262
+    "modified": 1523254391
 }

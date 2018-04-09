@@ -2426,6 +2426,26 @@ $('span#select').text($(this).text());
 $('#sel-option li').hide();
 e.preventDefault();
 });
+
+// $('span#selected').hover(function() {
+//   $('#selection-options li').show();
+// });
+
+//  $('span#selected').hover(
+//     function () {
+//         $("#selection-option").fadeIn();
+//         $('#selection-options li').show();
+//     },
+//     function () {
+//         $("#selection-option").fadeOut();
+//         $('#selection-options li').hide();
+//     }
+// );
+
+// $('#selection-options li').hover(function(e) {
+//   $('#selection-options li').hide();
+//   e.preventDefault();
+// })
 };
 
 },{}],3:[function(require,module,exports){
