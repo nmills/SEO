@@ -1,0 +1,32 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<main id="content">
+	    <div class="page-content c-news-events">
+	      {# <div class="container region_hero"> #}
+	        {# including the featured Event #}
+			{% if featured_posts %}
+				{% include ['partials/featured_news.twig'] %}
+			{% endif %}
+	      {# </div> #}
+
+	      <div class="container region_body">
+	        <div class="container region_main_content">
+	          {# Adding Body #}
+            <section class="posts-selector">
+              {{post.content}}
+            </section>
+	        </div>
+
+	        <div class="container region_left_rail">
+          	{# Adding promotional #}
+    				{% set component = post.get_field('promotional_area') %}
+    				{% if component.include_promotional == "yes" %}
+    					{% include ['components/news_landing/component_promotional.twig'] %}
+    				{% endif %}
+
+	        </div>
+	      </div>
+	    </div>
+	</main>
+{% endblock %}

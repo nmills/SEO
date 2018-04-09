@@ -9,7 +9,11 @@
     max-width: 300px;
 
     section {
-      margin-bottom: 100px;
+      margin-bottom: 40px;
+
+      @include grid-media($sm) {
+        margin-bottom: 100px;
+      }
     }
   }
 
@@ -81,22 +85,28 @@
 
 .c-news-body {
   .wysiwyg {
-    code {
-      @include grid-column(12, $no-gutter);
+    p {
+      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 18px, $line-height: 1.5);
 
-      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
+      code {
+        @include grid-column(12, $no-gutter);
 
-      border-left: 10px solid #050505;
-      padding-left: 10px;
-      margin-top: -15px;
-      margin-bottom: 15px;
-      padding-top: 17px;
+        @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
+
+        border-left: 10px solid #050505;
+        padding-left: 10px;
+        margin-top: -15px;
+        margin-bottom: 15px;
+        padding-top: 17px;
+      }
     }
   }
 }
 
 .c-news-cta {
-  .container {
+  .c-news-cta__container-wrapper {
+    display: inline-block;
+    width: 100%;
     padding: 50px;
     background: $black;
 
@@ -120,7 +130,7 @@
           margin-top: 0;
           margin-bottom: 50px;
 
-          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 40px, $line-height: 1);
+          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 34px, $line-height: 1);
 
           @include grid-media($md) {
             @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
@@ -149,6 +159,12 @@
           border-left-width: 5px;
           border-right-width: 5px;
           padding: 15px 25px;
+          font-size: 16px;
+
+          @include grid-media($md) {
+            font-size: 26px;
+          }
+
 
           &:before {
             border-bottom-color: $red;
@@ -187,7 +203,7 @@
 
 
       h3 {
-        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
+        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 34px, $line-height: 1);
 
         margin: 0;
 
@@ -202,12 +218,12 @@
       }
 
       p {
-        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 20px, $line-height: 1);
 
         margin-bottom: 50px;
 
         @include grid-media($sm) {
-          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 20px, $line-height: 1);
+          // @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 20px, $line-height: 1);
         }
 
 
@@ -251,9 +267,11 @@
 .c-share__container {
   border: 1px solid $light-gray;
   padding: 15px 25px;
+  display: none;
 
   @include grid-media($sm) {
     padding: 15px 10px;
+    display: block;
   }
 
 
