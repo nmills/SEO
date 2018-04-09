@@ -41,8 +41,12 @@
     .c-news-events__details {
       @include grid-column(12, $no-gutter);
 
+      margin-top: 15px;
+
       @include grid-media($md) {
         @include grid-column(4, $no-gutter);
+
+        margin-top: 0;
 
         // padding-left: 25px;
       }
@@ -122,8 +126,14 @@
       display: inline-block;
       margin-bottom: 65px;
 
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
       .c-news-events__details {
         @include grid-column(12, $no-gutter);
+
+        margin-top: 0;
 
         @include grid-media($md) {
           .c-news-events__image, h1, p, .c-news-events__breadcrumb {
@@ -144,6 +154,8 @@
       .c-news-events__details {
         &.no-image {
           @include grid-column(12, $no-gutter);
+
+          margin-top: 0;
 
           h1, > p, .c-news-events__breadcrumb {
             @include grid-column(12, $no-gutter);
