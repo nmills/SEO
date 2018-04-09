@@ -3,11 +3,13 @@
     <div class="c-gh-program__container">
       {% for repeater in component.repeater %}
       <div class="c-gh-program__item">
-        <div class="c-gh-program__image" style="background-image: url({{Image(repeater.image).src }})"></div>
-        {# <img src="{{Image(repeater.image).src }}" /> #}
-        <h1 class="heading_hover">{{repeater.title}}</h1>
-        <h1 class="heading_desktop">{{repeater.title}}</h1>
-        <p>{{repeater.text_blurb}}</p>
+        <a href="{{repeater.url}}">
+          <div class="c-gh-program__image" style="background-image: url({{Image(repeater.image).src }})"></div>
+          {# <img src="{{Image(repeater.image).src }}" /> #}
+          <h1 class="heading_hover">{{repeater.title}}</h1>
+          <h1 class="heading_desktop">{{repeater.title}}</h1>
+          <p>{{repeater.text_blurb}}</p>
+        </a>
       </div>
       {% endfor %}
     </div>
