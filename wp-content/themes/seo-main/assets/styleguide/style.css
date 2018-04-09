@@ -4660,13 +4660,13 @@ body {
     cursor: pointer;
     position: relative;
     padding: 8px 0;
-    padding-right: 25px;
+    padding-right: 35px;
     padding-bottom: 9px; }
     .c-news-filter #selected:after {
       content: "";
       position: absolute;
       top: 40%;
-      right: 5px;
+      right: 15px;
       transition: all .4s ease-in-out;
       background-image: url("./assets/img/icons/carat-closed-universal-nav.svg");
       background-repeat: no-repeat;
@@ -4699,7 +4699,7 @@ body {
         font-size: 19px;
         line-height: 1;
         width: 100%;
-        padding: 5px 25px;
+        padding: 5px 35px;
         padding-left: 0;
         display: inline-block; }
 
