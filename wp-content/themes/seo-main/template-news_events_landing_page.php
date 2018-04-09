@@ -11,5 +11,5 @@ $templates = array( 'news-events-landing-page.twig' );
 $context['post'] = $post;
 
 $context['site_filter_NE_landingpage'] = generate_links_of_sites();
-// $context['tags_filter_NE_landingpage'] = generate_links_of_taxonomies_news();
+$context['tags_filter_NE_landingpage'] = generate_links_of_taxonomies_news();
 Timber::render( $templates, $context );
