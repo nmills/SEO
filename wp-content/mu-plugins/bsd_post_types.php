@@ -64,3 +64,5 @@ function create_type_taxonomy() {
 }
 
 add_action( 'init', 'create_type_taxonomy' );
+
+// Debug pointer
