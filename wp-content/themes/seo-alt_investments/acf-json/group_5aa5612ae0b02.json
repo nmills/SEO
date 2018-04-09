@@ -1,10 +1,10 @@
 {
     "key": "group_5aa5612ae0b02",
-    "title": "component: PL Hero",
+    "title": "PL Hero",
     "fields": [
         {
             "key": "field_5aa5615ba93c5",
-            "label": "header type",
+            "label": "Header Type",
             "name": "header_type",
             "type": "radio",
             "instructions": "",
@@ -28,7 +28,7 @@
         },
         {
             "key": "field_5aa561fda93c6",
-            "label": "video",
+            "label": "Video",
             "name": "video",
             "type": "url",
             "instructions": "",
@@ -52,11 +52,11 @@
         },
         {
             "key": "field_5aa5621ba93c7",
-            "label": "image",
+            "label": "Image",
             "name": "image",
             "type": "image_crop",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": [
                 [
                     {
@@ -84,7 +84,7 @@
         },
         {
             "key": "field_5aaa0c3ac25cb",
-            "label": "destination link",
+            "label": "Destination Link",
             "name": "destination_link",
             "type": "url",
             "instructions": "",
@@ -108,7 +108,7 @@
         },
         {
             "key": "field_5aa56235a93c8",
-            "label": "hero text",
+            "label": "Hero Text",
             "name": "hero_text",
             "type": "text",
             "instructions": "The character limit is 140",
@@ -143,5 +143,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522070421
+    "modified": 1523253625
 }

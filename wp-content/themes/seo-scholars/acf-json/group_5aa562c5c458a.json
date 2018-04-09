@@ -1,6 +1,6 @@
 {
     "key": "group_5aa562c5c458a",
-    "title": "component: PL Touts",
+    "title": "PL Touts",
     "fields": [
         {
             "key": "field_5aa562d5b269a",
@@ -23,7 +23,7 @@
             "sub_fields": [
                 {
                     "key": "field_5aa562e1b269b",
-                    "label": "image",
+                    "label": "Image",
                     "name": "image",
                     "type": "image_crop",
                     "instructions": "",
@@ -47,7 +47,7 @@
                 },
                 {
                     "key": "field_5aa562ebb269c",
-                    "label": "text",
+                    "label": "Text",
                     "name": "text",
                     "type": "text",
                     "instructions": "The character limit is 80",
@@ -66,7 +66,7 @@
                 },
                 {
                     "key": "field_5aa562f8b269d",
-                    "label": "url",
+                    "label": "URL",
                     "name": "url",
                     "type": "url",
                     "instructions": "",
@@ -100,5 +100,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521094304
+    "modified": 1523173956
 }

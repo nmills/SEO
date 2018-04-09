@@ -1,10 +1,10 @@
 {
     "key": "group_5ab222afdd3e4",
-    "title": "component: GH CTA",
+    "title": "GH CTA",
     "fields": [
         {
             "key": "field_5ab222b01d0e3",
-            "label": "cta type",
+            "label": "CTA Type",
             "name": "cta_type",
             "type": "radio",
             "instructions": "",
@@ -28,7 +28,7 @@
         },
         {
             "key": "field_5ab222b01d4b5",
-            "label": "image",
+            "label": "Image",
             "name": "image",
             "type": "image_crop",
             "instructions": "",
@@ -60,7 +60,7 @@
         },
         {
             "key": "field_5ab222b01d84f",
-            "label": "link",
+            "label": "Link",
             "name": "link",
             "type": "url",
             "instructions": "",
@@ -84,7 +84,7 @@
         },
         {
             "key": "field_5ab222b01dc15",
-            "label": "heading",
+            "label": "Heading",
             "name": "heading",
             "type": "text",
             "instructions": "The character limit is 80",
@@ -103,7 +103,7 @@
         },
         {
             "key": "field_5ab222b01e05d",
-            "label": "body",
+            "label": "Body",
             "name": "body",
             "type": "textarea",
             "instructions": "The character limit is 140. For emphasized text use \"< strong>\" & \"< \/strong>\" before and after your text",
@@ -122,7 +122,7 @@
         },
         {
             "key": "field_5ab222b01e3e5",
-            "label": "links",
+            "label": "Links",
             "name": "links",
             "type": "repeater",
             "instructions": "",
@@ -141,7 +141,7 @@
             "sub_fields": [
                 {
                     "key": "field_5ab222b11b539",
-                    "label": "destination url",
+                    "label": "Destination URL",
                     "name": "destination_url",
                     "type": "url",
                     "instructions": "",
@@ -157,7 +157,7 @@
                 },
                 {
                     "key": "field_5ab222b11b962",
-                    "label": "text",
+                    "label": "Link Name",
                     "name": "text",
                     "type": "text",
                     "instructions": "The character limit is 25",
@@ -194,5 +194,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522657035
+    "modified": 1523162271
 }

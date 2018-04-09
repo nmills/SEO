@@ -23,7 +23,7 @@
             "force_crop": "no",
             "save_in_media_library": "yes",
             "retina_mode": "no",
-            "save_format": "id",
+            "save_format": "url",
             "library": "all"
         },
         {
@@ -110,5 +110,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522744957
+    "modified": 1523275804
 }
