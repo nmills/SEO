@@ -1,5 +1,6 @@
 {% block content %}
 	<div class="c-news-events__content list post-selector">
+		<a href="{{news_link}}">
 		{% if news.get_field('header_image') %}
 			<div class="c-news-events__image">
 				  <img src="{{Image(news.get_field('header_image')).src}}">
@@ -17,5 +18,6 @@
 				<p><span class="c-news-events__medium">{{news.get_field('header_medium')}} </span> {{news.get_field('header_text')}}</p>
 			{% endif %}
 		</div>
+		</a>
 	</div>
 {% endblock %}

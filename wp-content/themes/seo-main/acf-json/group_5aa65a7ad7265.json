@@ -1,10 +1,10 @@
 {
     "key": "group_5aa65a7ad7265",
-    "title": "component: Gallery Large",
+    "title": "Large Image Gallery",
     "fields": [
         {
             "key": "field_5aa65a7b1396b",
-            "label": "section header",
+            "label": "Section Header",
             "name": "section_header",
             "type": "text",
             "instructions": "",
@@ -141,5 +141,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521433336
+    "modified": 1523163068
 }

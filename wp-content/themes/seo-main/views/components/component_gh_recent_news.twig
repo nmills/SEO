@@ -1,5 +1,6 @@
 {% for recent_news in recent_posts %}
 
+	<a href="recent_news.link"></a>
   {{recent_news.title}}
   
   <img src="{{Image(recent_news.get_field('header_image')).src}}">
