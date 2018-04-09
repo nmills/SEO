@@ -1,6 +1,7 @@
 <?php
 function add_query_vars_filter( $vars ){
   $vars[] = "include_blog";
+  $vars[] = "taxonomy";
   return $vars;
 }
 add_filter( 'query_vars', 'add_query_vars_filter' );
@@ -58,25 +59,52 @@ function generate_links_of_sites(){
 }
 
 
-// function generate_links_of_taxonomies_news(){
-//   $terms = get_terms( array(
-//     'taxonomy' => 'type',
-//     'hide_empty' => false,
-//   ) );
+function generate_links_of_taxonomies_news(){
+  $terms = get_terms( array(
+    'taxonomy' => 'type',
+    'hide_empty' => false,
+  ) );
 
-  // print_r($terms);
+  $selected = get_query_var('taxonomy' , null);
 
-  // $current_page_link = get_permalink();
-  // $filter_site = "<a href='".$current_page_link."'>All</a>";
-  // $all_sites = wp_get_sites();
+  if($selected == null) {
+    $selected_type_name = 'All';
+  }
+  else{
+    $selected_type_taxonomy = get_term_by('slug', $selected , 'type');
+    $selected_type_name = $selected_type_taxonomy->name;
+  }
 
-  // // $selected = get_query_var();
-  // foreach ($all_sites as $site) {
-  //   switch_to_blog($site['blog_id']);
-  //   $site_name = get_bloginfo('name');
-  //   restore_current_blog();
+  $filter_type = "<h3>Type: </h3>";
+  $filter_type .= "<span id='selected'>".$selected_type_name."</span>";
+  $filter_type .= "<ul class='c-news-filter__items' id='selection-options'>";
 
-  //   $filter_site = $filter_site."<a href='".$current_page_link.'?include_blog='.$site['blog_id']."'>".$site_name."</a>";
-  // }
-  // return $filter_site;
-// }
+
+  foreach ($terms as $term) {
+    if($selected == $term->slug) {
+      $class = 'active-selected';
+    }
+    else{
+      $class = '';
+    }
+
+    $filter_type .= "<li class='c-news-filter__item ".$class."'>";
+    $filter_type .= "<a href='".$current_page_link.'?taxonomy='.$term->slug."'>".$term->name."</a>";
+    $filter_type .= "</li>";
+  }
+
+  if($selected == null) {
+    $class = 'active-selected';
+  }
+  else{
+    $class = '';
+  }
+  
+  $filter_type .= "<li class='c-news-filter__item ".$class."'>";
+  $filter_type .= "<a href='".$current_page_link."'>All</a>";
+  $filter_type .= "</li>";
+
+  $filter_type .= "</ul>";
+
+  return $filter_type;
+}
