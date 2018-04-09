@@ -157,3 +157,97 @@
     }
   }
 }
+
+.c-news-filter {
+  padding: 10px 0px;
+  width: 100%;
+  max-width: 240px;
+  position: relative;
+
+  &:hover {
+    h3, #selected {
+      background: $black;
+      color: $white;
+    }
+  }
+
+  h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 10px;
+    text-transform: capitalize;
+
+    @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 19px, $line-height: 1);
+  }
+
+  #selected {
+    @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 19px, $line-height: 1);
+
+    // text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    padding: 8px 0;
+    padding-right: 25px;
+    padding-bottom: 9px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 40%;
+      right: 5px;
+      transition: all .4s ease-in-out;
+
+      // transform: translateY(-50%);
+      background-image: url("./assets/img/icons/carat-closed-universal-nav.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 13px;
+      height: 13px;
+    }
+
+    &:hover {
+      &:after {
+        top: 25%;
+        transform: rotate(180deg);
+      }
+
+      + #selection-options {
+        display: block;
+
+        li {}
+      }
+    }
+  }
+
+  #selection-options {
+    // margin-left: 62px;
+
+    display: none;
+    background: $black;
+    padding-left: 27px;
+    margin-top: -4px;
+    position: absolute;
+
+    &:hover {
+      display: block;
+    }
+
+    li {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 5px;
+      transition: all .4s ease-in-out;
+
+      a {
+        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 19px, $line-height: 1);
+
+        width: 100%;
+        padding: 5px 25px;
+        padding-left: 0;
+        display: inline-block;
+      }
+    }
+  }
+}

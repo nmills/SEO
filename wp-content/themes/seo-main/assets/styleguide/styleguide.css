@@ -4630,6 +4630,77 @@ body {
       font-weight: inherit;
       color: #eb0029; }
 
+.c-news-filter {
+  padding: 10px 0px;
+  width: 100%;
+  max-width: 240px;
+  position: relative; }
+  .c-news-filter:hover h3, .c-news-filter:hover #selected {
+    background: #050505;
+    color: #ffffff; }
+  .c-news-filter h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 10px;
+    text-transform: capitalize;
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1; }
+  .c-news-filter #selected {
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 100;
+    font-size: 19px;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    padding: 8px 0;
+    padding-right: 25px;
+    padding-bottom: 9px; }
+    .c-news-filter #selected:after {
+      content: "";
+      position: absolute;
+      top: 40%;
+      right: 5px;
+      transition: all .4s ease-in-out;
+      background-image: url("./assets/img/icons/carat-closed-universal-nav.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 13px;
+      height: 13px; }
+    .c-news-filter #selected:hover:after {
+      top: 25%;
+      transform: rotate(180deg); }
+    .c-news-filter #selected:hover + #selection-options {
+      display: block; }
+  .c-news-filter #selection-options {
+    display: none;
+    background: #050505;
+    padding-left: 27px;
+    margin-top: -4px;
+    position: absolute; }
+    .c-news-filter #selection-options:hover {
+      display: block; }
+    .c-news-filter #selection-options li {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 5px;
+      transition: all .4s ease-in-out; }
+      .c-news-filter #selection-options li a {
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #ffffff;
+        font-weight: 100;
+        font-size: 19px;
+        line-height: 1;
+        width: 100%;
+        padding: 5px 25px;
+        padding-left: 0;
+        display: inline-block; }
+
 /* Slider */
 .slick-slider {
   position: relative;
