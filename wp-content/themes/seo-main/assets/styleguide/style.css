@@ -2263,7 +2263,7 @@ Gallery
         width: calc(33.33333%);
         float: left;
         margin-left: 0;
-        max-width: 330px; } }
+        max-width: 300px; } }
   .container.region_body .region_main_content {
     width: calc(100%);
     float: left;
