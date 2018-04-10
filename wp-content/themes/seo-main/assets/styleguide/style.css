@@ -4491,6 +4491,100 @@ body {
           width: 25px;
           height: 25px; }
 
+.c-recent-news {
+  background: #e5e7e7; }
+  .c-recent-news .c-recent-news__container {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    padding: 50px 10%; }
+    @media only screen and (min-width: 768px) {
+      .c-recent-news .c-recent-news__container {
+        padding: 70px 10%; } }
+    .c-recent-news .c-recent-news__container h2 {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1;
+      margin: 0;
+      margin-bottom: 45px; }
+      @media only screen and (min-width: 768px) {
+        .c-recent-news .c-recent-news__container h2 {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 700;
+          font-size: 42px;
+          line-height: 1;
+          margin-bottom: 70px; } }
+    .c-recent-news .c-recent-news__container .c-recent-news__items a:last-of-type .c-recent-news__item {
+      margin-right: 0; }
+    .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item {
+      width: calc(100%);
+      float: left;
+      margin-left: 0;
+      border-left: 10px solid #050505;
+      padding-left: 15px;
+      margin-bottom: 45px; }
+      @media only screen and (min-width: 1024px) {
+        .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item {
+          width: calc(33.33333%);
+          float: left;
+          margin-left: 0;
+          max-width: 300px;
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 1440px) {
+        .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item {
+          margin-right: 55px; } }
+      .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item .c-recent-news__image {
+        float: left;
+        width: 70px;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-right: 15px; }
+      .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item .c-recent-news__program,
+      .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item .c-recent-news__title,
+      .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item .c-recent-news__event-details {
+        width: calc(100% - 85px);
+        float: right; }
+      .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item .c-recent-news__program p {
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #050505;
+        font-weight: 100;
+        font-size: 12px;
+        line-height: 1;
+        margin: 0; }
+      @media only screen and (min-width: 1024px) {
+        .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item .c-recent-news__title {
+          padding-right: 10px; } }
+      .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item .c-recent-news__title h3 {
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #050505;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1;
+        margin: 0;
+        display: inline; }
+        @media only screen and (min-width: 768px) {
+          .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item .c-recent-news__title h3 {
+            font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: #050505;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1; } }
+        .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item .c-recent-news__title h3:hover {
+          color: #7cb4f6; }
+      .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item .c-recent-news__event-details p {
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #050505;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1;
+        margin: 0;
+        margin-top: 5px; }
+
 .c-news-events .page-title {
   margin-top: 90px;
   margin-bottom: 45px; }

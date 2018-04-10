@@ -166,6 +166,14 @@
   color: #7cb4f6;
 }
 
+.c-recent-news .c-recent-news__container .c-recent-news__items a.pseudo-class-last-of-type .c-recent-news__item {
+  margin-right: 0;
+}
+
+.c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item .c-recent-news__title h3.pseudo-class-hover {
+  color: #7cb4f6;
+}
+
 .c-news-events .c-news-events__content.list.pseudo-class-last-of-type {
   margin-bottom: 0;
 }

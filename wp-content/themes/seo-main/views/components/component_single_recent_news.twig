@@ -1,15 +1,51 @@
 <!-- First one has to be a featured post -->
-{% for featured_post in featured_posts %}
-	  <img src="{{Image(featured_post.get_field('header_image')).src}}">
-		{{featured_post.title}} 
-{% endfor %}
+<section class="c-recent-news">
+  <div class="container">
+    <div class="c-recent-news__container">
+      <h2>Recent posts</h2>
 
-Recent posts <br>
+      <div class="c-recent-news__items">
+        {% for featured_post in featured_posts %}
+        <a href="{{featured_post.link}}">
+          <div class="c-recent-news__item">
+            <div class="c-recent-news__image" style="background-image: url({{Image(featured_post.get_field('header_image')).src}});">
+              {# <img src=""> #}
+            </div>
+            <div class="c-recent-news__program">
+                <p>{{site_name}}</p>
+            </div>
+            <div class="c-recent-news__title">
+              <h3 class="c-rte__link">{{featured_post.title}} </h3>
+            </div>
+            <div class="c-recent-news__event-details">
+              <p></p>
+            </div>
+          </div>
+        </a>
+        {% endfor %}
 
-{% for recent_news in recent_posts %}
 
-  {{recent_news.title}} <br>
-  
-  {# <img src="{{Image(recent_news.get_field('header_image')).src}}"> #}
+        {% for recent_news in recent_posts %}
+      	<a href="{{recent_news.link}}">
+	        <div class="c-recent-news__item">
+	          <div class="c-recent-news__image" style="background-image: url({{Image(recent_news.get_field('header_image')).src}});">
+	            {# <img src="{{Image(recent_news.get_field('header_image')).src}}"> #}
+	          </div>
+	          <div class="c-recent-news__program">
+	            <p>{{site_name}}</p>
+	          </div>
+	          <div class="c-recent-news__title">
+	            <h3 class="c-rte__link">{{recent_news.title}}</h3>
+	          </div>
+	          <div class="c-recent-news__event-details">
+	            <p>{{recent_news.header_text}}</p>
+	          </div>
+	        </div>
+        </a>
+        {% endfor %}
 
-{% endfor %}
+
+      </div>
+    </div>
+  </div>
+</section>
