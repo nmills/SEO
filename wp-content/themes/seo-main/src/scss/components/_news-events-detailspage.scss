@@ -405,6 +405,34 @@
         }
 
 
+        &.count-2 {
+          @include grid-media($lg) {
+            @include grid-column(6, $no-gutter);
+
+            max-width: 50%;
+            margin-bottom: 0;
+          }
+
+
+          @include grid-media($xl) {
+            margin-right: 0;
+          }
+        }
+
+        &.count-1 {
+          @include grid-media($lg) {
+            @include grid-column(12, $no-gutter);
+
+            max-width: 100%;
+            margin-bottom: 0;
+          }
+
+
+          @include grid-media($xl) {
+            margin-right: 0;
+          }
+        }
+
         .c-recent-news__image {
           float: left;
           width: 70px;
