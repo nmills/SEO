@@ -171,10 +171,9 @@
   .c-news-events__promotion {
     @include grid-column(12, $no-gutter);
 
-    @include grid-media($md) {
-      @include grid-column(10, $no-gutter);
-    }
-
+    // @include grid-media($md) {
+    //   @include grid-column(12, $no-gutter);
+    // }
 
     border: 1px solid $light-gray;
     padding: 15px 20px;
