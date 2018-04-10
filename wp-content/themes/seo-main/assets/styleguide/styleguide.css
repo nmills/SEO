@@ -4610,6 +4610,8 @@ body {
   margin-bottom: 45px; }
   @media only screen and (min-width: 768px) {
     .c-news-events .page-title {
+      max-width: 660px;
+      margin: 0 auto;
       margin-top: 150px;
       margin-bottom: 65px; } }
   .c-news-events .page-title h1 {
@@ -4725,11 +4727,11 @@ body {
       margin-top: 0;
       padding-left: 0; }
       @media only screen and (min-width: 768px) {
-        .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__image, .c-news-events .c-news-events__content.list .c-news-events__details h1, .c-news-events .c-news-events__content.list .c-news-events__details p, .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__breadcrumb {
+        .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__image, .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__title-medium, .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__breadcrumb {
           width: calc(50%);
           float: left;
           margin-left: 0; }
-        .c-news-events .c-news-events__content.list .c-news-events__details h1, .c-news-events .c-news-events__content.list .c-news-events__details > p, .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__breadcrumb {
+        .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__title-medium, .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__breadcrumb {
           float: right;
           padding-left: 25px; }
         .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__image {
@@ -4740,7 +4742,7 @@ body {
       margin-left: 0;
       margin-top: 0;
       padding-left: 0; }
-      .c-news-events .c-news-events__content.list .c-news-events__details.no-image h1, .c-news-events .c-news-events__content.list .c-news-events__details.no-image > p, .c-news-events .c-news-events__content.list .c-news-events__details.no-image .c-news-events__breadcrumb {
+      .c-news-events .c-news-events__content.list .c-news-events__details.no-image .c-news-events__title-medium, .c-news-events .c-news-events__content.list .c-news-events__details.no-image .c-news-events__breadcrumb {
         width: calc(100%);
         float: left;
         margin-left: 0;
