@@ -16,6 +16,9 @@
     .content {
       @include grid-media($sm) {
         max-width: 780px;
+
+        @include grid-column(12, $no-gutter);
+
         margin-right: 11%;
         float: right;
       }

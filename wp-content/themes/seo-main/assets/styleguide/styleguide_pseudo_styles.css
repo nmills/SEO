@@ -108,7 +108,7 @@
   color: #820d1b;
 }
 
-.video-component .video.pseudo-class-hover .plyr--playing .plyr__play-large {
+.video-comp .video-component .video.pseudo-class-hover .plyr--playing .plyr__play-large {
   opacity: 1;
   visibility: visible;
 }

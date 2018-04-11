@@ -242,3 +242,15 @@ Styleguide 4.1
     }
   }
 }
+
+
+.container {
+  &.faq {
+    @include grid-media($sm) {
+      @include grid-column(8, $no-gutter);
+
+      float: right;
+      padding-left: 25px;
+    }
+  }
+}
