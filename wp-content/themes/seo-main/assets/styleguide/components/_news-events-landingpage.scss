@@ -265,9 +265,7 @@
   }
 
   @include grid-media($md) {
-  width: auto;
-    
-
+    width: auto;
     border: 0;
   }
 

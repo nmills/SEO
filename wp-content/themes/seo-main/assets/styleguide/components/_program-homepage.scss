@@ -317,7 +317,7 @@
 
   .old {
     background: $light-gray;
-    height: 400px;
+    height: 500px;
     position: relative;
 
     @include grid-column(12, $no-gutter);
@@ -415,7 +415,7 @@
 
   .c-ph-stats-border__container {
     background: $light-gray;
-    height: 400px;
+    height: 500px;
     position: relative;
 
     @include grid-column(12, $no-gutter);
@@ -536,9 +536,9 @@
 }
 
 .c-ph-signup {
-  .container {
-    background: $red;
-  }
+  background: $red;
+
+  .container {}
 
   .c-ph-signup__container {
     padding: 65px 15px;
