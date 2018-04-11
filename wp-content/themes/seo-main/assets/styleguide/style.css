@@ -4723,7 +4723,7 @@ body {
       font-weight: 100; }
   .c-news-events .c-news-events__content.list {
     border-left: 10px solid #050505;
-    padding-left: 10px;
+    padding-left: 25px;
     display: inline-block;
     margin-bottom: 65px; }
     .c-news-events .c-news-events__content.list:last-of-type {
