@@ -4556,6 +4556,14 @@ body {
       @media only screen and (min-width: 1440px) {
         .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item.count-1 {
           margin-right: 0; } }
+      .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item.no-image {
+        min-height: 70px; }
+        .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item.no-image .c-recent-news__program,
+        .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item.no-image .c-recent-news__title,
+        .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item.no-image .c-recent-news__event-details {
+          width: calc(100%);
+          float: left;
+          margin-left: 0; }
       .c-recent-news .c-recent-news__container .c-recent-news__items .c-recent-news__item .c-recent-news__image {
         float: left;
         width: 70px;
@@ -4610,6 +4618,8 @@ body {
   margin-bottom: 45px; }
   @media only screen and (min-width: 768px) {
     .c-news-events .page-title {
+      max-width: 660px;
+      margin: 0 auto;
       margin-top: 150px;
       margin-bottom: 65px; } }
   .c-news-events .page-title h1 {
@@ -4725,11 +4735,11 @@ body {
       margin-top: 0;
       padding-left: 0; }
       @media only screen and (min-width: 768px) {
-        .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__image, .c-news-events .c-news-events__content.list .c-news-events__details h1, .c-news-events .c-news-events__content.list .c-news-events__details p, .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__breadcrumb {
+        .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__image, .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__title-medium, .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__breadcrumb {
           width: calc(50%);
           float: left;
           margin-left: 0; }
-        .c-news-events .c-news-events__content.list .c-news-events__details h1, .c-news-events .c-news-events__content.list .c-news-events__details > p, .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__breadcrumb {
+        .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__title-medium, .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__breadcrumb {
           float: right;
           padding-left: 25px; }
         .c-news-events .c-news-events__content.list .c-news-events__details .c-news-events__image {
@@ -4740,7 +4750,7 @@ body {
       margin-left: 0;
       margin-top: 0;
       padding-left: 0; }
-      .c-news-events .c-news-events__content.list .c-news-events__details.no-image h1, .c-news-events .c-news-events__content.list .c-news-events__details.no-image > p, .c-news-events .c-news-events__content.list .c-news-events__details.no-image .c-news-events__breadcrumb {
+      .c-news-events .c-news-events__content.list .c-news-events__details.no-image .c-news-events__title-medium, .c-news-events .c-news-events__content.list .c-news-events__details.no-image .c-news-events__breadcrumb {
         width: calc(100%);
         float: left;
         margin-left: 0;
@@ -4816,18 +4826,18 @@ body {
   position: relative;
   display: inline-block;
   border-top: 2px solid #e5e7e7;
-  border-bottom: 2px solid #e5e7e7; }
+  border-bottom: 2px solid #e5e7e7;
+  margin-right: 50px; }
   .c-news-filter:nth-child(2) {
     border-top: 0;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    margin-right: 0; }
   .c-news-filter:hover h3, .c-news-filter:hover #selected {
     background: #050505;
     color: #ffffff; }
   @media only screen and (min-width: 768px) {
     .c-news-filter {
-      width: calc(50%);
-      float: left;
-      margin-left: 0;
+      width: auto;
       border: 0; } }
   .c-news-filter h3 {
     display: inline-block;
@@ -4893,6 +4903,11 @@ body {
         padding: 5px 35px;
         padding-left: 0;
         display: inline-block; }
+
+#block-wrapper {
+  width: calc(100%);
+  float: left;
+  margin-left: 0; }
 
 /* Slider */
 .slick-slider {
