@@ -104,11 +104,12 @@
 }
 
 .c-news-cta {
+  background: $black;
+
   .c-news-cta__container-wrapper {
     display: inline-block;
     width: 100%;
     padding: 50px;
-    background: $black;
 
     @include grid-media($md) {
       padding: 50px 10%;
