@@ -433,6 +433,15 @@
           }
         }
 
+        &.no-image {
+          min-height: 70px;
+          .c-recent-news__program,
+          .c-recent-news__title,
+          .c-recent-news__event-details {
+            @include grid-column(12, $no-gutter);
+          }
+        }
+
         .c-recent-news__image {
           float: left;
           width: 70px;

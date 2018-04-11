@@ -351,3 +351,7 @@
     }
   }
 }
+
+#block-wrapper {
+  @include grid-column(12, $no-gutter);
+}
