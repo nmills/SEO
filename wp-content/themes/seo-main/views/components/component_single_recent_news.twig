@@ -7,10 +7,12 @@
       <div class="c-recent-news__items">
         {% for featured_post in featured_posts %}
         <a href="{{featured_post.link}}">
-          <div class="c-recent-news__item count-{{count}}">
-            <div class="c-recent-news__image" style="background-image: url({{Image(featured_post.get_field('header_image')).src}});">
-              {# <img src=""> #}
-            </div>
+          <div class="c-recent-news__item count-{{count}} {% if featured_post.header_image is empty %}no-image{% endif %}">
+            {% if featured_post.header_image is not empty %}
+              <div class="c-recent-news__image" style="background-image: url({{Image(featured_post.get_field('header_image')).src}});">
+              {# <img src="{{Image(featured_post.get_field('header_image')).src}}"> #}
+              </div>
+            {% endif %}
             <div class="c-recent-news__program">
                 <p>{{site_name}}</p>
             </div>
@@ -26,10 +28,12 @@
 
         {% for recent_news in recent_posts %}
       	<a href="{{recent_news.link}}">
-	        <div class="c-recent-news__item count-{{count}}">
-	          <div class="c-recent-news__image" style="background-image: url({{Image(recent_news.get_field('header_image')).src}});">
-	            {# <img src="{{Image(recent_news.get_field('header_image')).src}}"> #}
-	          </div>
+	        <div class="c-recent-news__item count-{{count}} {% if recent_news.header_image is empty %}no-image{% endif %}">
+	          {% if recent_news.header_image is not empty %}
+              <div class="c-recent-news__image" style="background-image: url({{Image(recent_news.get_field('header_image')).src}});">
+              {# <img src="{{Image(recent_news.get_field('header_image')).src}}"> #}
+              </div>
+            {% endif %}
 	          <div class="c-recent-news__program">
 	            <p>{{site_name}}</p>
 	          </div>
