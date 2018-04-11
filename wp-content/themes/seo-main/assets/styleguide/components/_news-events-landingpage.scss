@@ -249,10 +249,12 @@
   display: inline-block;
   border-top: 2px solid $light-gray;
   border-bottom: 2px solid $light-gray;
+  margin-right: 50px;
 
   &:nth-child(2) {
     border-top: 0;
     margin-bottom: 40px;
+    margin-right: 0;
   }
 
   &:hover {
@@ -263,7 +265,8 @@
   }
 
   @include grid-media($md) {
-    @include grid-column(6, $no-gutter);
+  width: auto;
+    
 
     border: 0;
   }
