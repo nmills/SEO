@@ -2309,6 +2309,9 @@ Gallery
       float: right;
       padding-left: 25px; } }
 
+.region_bottom {
+  margin-bottom: 50px; }
+
 /* Program Landing */
 .program-landing-page .page-title {
   text-align: center;
