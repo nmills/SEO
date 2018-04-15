@@ -46,7 +46,7 @@
         },
         {
             "key": "field_5ac33950adaec",
-            "label": "cta",
+            "label": "CTA",
             "name": "cta",
             "type": "clone",
             "instructions": "",

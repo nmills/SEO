@@ -25,7 +25,7 @@
         },
         {
             "key": "field_5ab0ee07d5474",
-            "label": "flexi content",
+            "label": "Multi-Content Component",
             "name": "flexi_content",
             "type": "flexible_content",
             "instructions": "",
