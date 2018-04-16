@@ -1,10 +1,10 @@
 {
     "key": "group_5a9ce545262b9",
-    "title": "region: content region top",
+    "title": "Region Top",
     "fields": [
         {
             "key": "field_5a9ce66b96f0b",
-            "label": "region: content region top",
+            "label": "Region Top",
             "name": "region:_content_region_top",
             "type": "flexible_content",
             "instructions": "",
@@ -15,19 +15,16 @@
                 "class": "",
                 "id": ""
             },
-            "button_label": "Add Component",
-            "min": "",
-            "max": "",
-            "layouts": [
-                {
+            "layouts": {
+                "5a9ce67326bc8": {
                     "key": "5a9ce67326bc8",
                     "name": "hero_image",
-                    "label": "hero",
+                    "label": "Hero",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5a9ce6bd96f0c",
-                            "label": "hero image",
+                            "label": "Hero Image",
                             "name": "hero_image",
                             "type": "clone",
                             "instructions": "",
@@ -50,7 +47,10 @@
                     "min": "",
                     "max": ""
                 }
-            ]
+            },
+            "button_label": "Add Component",
+            "min": "",
+            "max": ""
         }
     ],
     "location": [
@@ -70,5 +70,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520236735
+    "modified": 1523172279
 }

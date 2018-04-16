@@ -36,6 +36,8 @@ class BSDStarterSite extends TimberSite {
   }
 
   function add_to_context ( $context ) {
+    /* Site name */
+    $context['site_name'] = get_bloginfo('name');
     $context['menu'] = new TimberMenu('header-menu');
     /* New menus are added though here for the header */
     $context['site_menu'] = new TimberMenu('site-menu');
@@ -59,7 +61,19 @@ class BSDStarterSite extends TimberSite {
     $context['header_widget'] = Timber::get_widgets('header_widget');
     //Adding Side Menu Widget
     $context['side_menu_widget'] = Timber::get_widgets('side_menu_widget');
+
+    /* Getting the featured post */
+    $args = array(
+      'post_type'  => 'news',
+      'meta_key'   => '_is_ns_featured_post',
+      'meta_value' => 'yes',
+      'posts_per_page'=> 1,
+      'order' => 'DESC'
+    );
+
+    $context['featured_posts'] = Timber::get_posts($args);
     return $context;
+    
   }
 
   function add_styles_and_scripts() {
@@ -75,18 +89,7 @@ class BSDStarterSite extends TimberSite {
       } else {
         wp_enqueue_script( 'parent-site-js', get_template_directory_uri() . '/assets/js/source.dev.js', array( 'jquery' ), '0.0.3', true );
       }
-      
-      /* Adding video JS files */
-        // wp_enqueue_script( 'video-player-js', get_template_directory_uri() . '/src/js/videoplayer/player.js', array( 'jquery' ), '0.0.3', true );
-        // wp_enqueue_script( 'video-component-js', get_template_directory_uri() . '/src/js/videoplayer/videocomponent.js', array( 'jquery' ), '0.0.3', true );
-        // wp_enqueue_script( 'rangetouch-js', get_template_directory_uri() . '/src/js/videoplayer/rangetouch.js', array( 'jquery' ), '0.0.3', true );
-        // wp_enqueue_script( 'shareone-js', get_template_directory_uri() . '/src/js/videoplayer/shr.js', array( 'jquery' ), '0.0.3', true );
-        /* End of Video JS files */
-        /* Adding Video Styles */
-        // wp_enqueue_style( 'player-style', get_template_directory_uri() . '/src/css/player.css' );
-        // wp_enqueue_style( 'video-component-style', get_template_directory_uri() . '/src/css/videocomponent.css' );
-        /*End of Video Styles*/
-      
+
       //Adding child style css and making sure that it loads after the parent css so that it can be overidden for smaller tweaks.
       $parent_style = 'parent-style';
       if ( get_template_directory_uri() != get_stylesheet_directory_uri()) {
@@ -257,6 +260,9 @@ require_once(get_template_directory() . '/includes/bsdstarter_editor_styles.php'
 
 // Custom Shortcodes
 require_once(get_template_directory() . '/includes/bsdstarter_shortcodes.php');
+
+// Custom Development
+require_once(get_template_directory() . '/includes/bsdstarter_overides.php');
 
 /* Removing Add media button  */
 function RemoveAddMediaButtons(){

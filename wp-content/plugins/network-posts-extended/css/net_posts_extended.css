@@ -1,0 +1,330 @@
+#netsposts-menu{
+
+     float:left;
+
+ }
+
+.netsposts-ul {
+
+    font-size:20px;
+
+    padding:0;
+
+    margin: 0 0 8px 0 !important;
+
+}
+
+.netsposts-ul li{
+
+    list-style:none;
+
+    border-left:20px solid #d2def0;
+
+    line-height:120%;
+
+    margin-bottom:10px;
+
+    padding-left:8px;
+
+}
+
+#block-wrapper {
+
+
+
+}
+
+.clear {
+
+    clear:both;
+
+}
+
+.align-left{
+    float:left !important;
+}
+
+.align-right{
+    float:right !important;
+}
+
+
+.netsposts-content {
+
+    display:inline-block;
+
+    margin-bottom:15px;
+    width:100%;
+
+
+
+}
+
+.netsposts-content .inline-post > div{
+    position: relative;
+    float:left;
+}
+
+.netsposts-content .inline-post > .netsposts-post-thumbnail.align-left{
+    margin-right:10px;
+}
+
+.netsposts-content .inline-post > .netsposts-post-thumbnail.align-right{
+    margin-left:10px;
+}
+
+.netsposts-content .inline-post > .netsposts-text-content{
+	width:75%;
+}
+
+@media(max-width:985px){
+	.netsposts-content .inline-post > .netsposts-text-content{
+		width:70%;
+	}
+}
+
+@media(max-width:835px){
+	.netsposts-content .inline-post > .netsposts-text-content{
+		width:65%;
+	}
+}
+
+@media(max-width:500px){
+	.netsposts-content .inline-post > .netsposts-text-content{
+		width:100%;
+	}
+	
+	.netsposts-content .inline-post > .netsposts-post-thumbnail{
+		width:100%;
+		text-align: center;
+	}
+}
+
+.netsposts-content img{
+
+    display: inline!important;
+
+}
+
+.netsposts-content .more-column{
+
+    float: none!important;
+
+}
+
+
+
+.netsposts-title {
+
+    font-family: 'Open Sans Condensed',sans-serif;
+
+    font-size:32px;
+
+    border-bottom:2px solid  #ccc;
+
+    margin-left:30px;
+
+    margin-left:0px;
+
+    font-weight:400;
+
+    display:block;
+
+    padding:2px 5px 12px 5px;
+
+}
+
+
+
+.netsposts-post-titles-only {
+
+    font-family:impact;
+
+    font-size:22px;
+
+    font-weight:lighter;
+
+    margin-bottom:5px;
+
+    display:block;
+
+
+
+}
+
+
+
+.netsposts-posttitle {
+
+    font-family:impact;
+
+    font-size:22px;
+
+    font-weight:lighter;
+
+    margin-bottom:5px;
+
+    display:inline-block;
+
+}
+
+
+
+.netsposts-posttitle a {
+
+    color:#004080; color:#800000;
+
+    line-height:120%;
+
+}
+
+
+
+.netsposts-content .price{
+
+    margin: 0 0 4px;
+
+    font-weight: bold;
+
+}
+
+
+
+.netsposts-column {
+
+    display:inline-block;
+
+    float:left;
+
+    width:360px;
+
+    margin:0 0 0 30px ;
+
+}
+
+
+
+.netsposts-source {
+
+    display:block;
+
+    border-top:1px dotted #ccc;
+
+    border-bottom:1px dotted #ccc;
+
+    margin-bottom:5px;
+
+    font-family:serif;
+
+    color:#8d8d8d;
+
+}
+
+
+
+.netsposts-excerpt{
+
+    font-family:Arial Narrow, Helvetica, Arial;
+
+    line-height:120%;
+
+    text-align:justify;
+
+}
+
+
+
+#netsposts-paginate {
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    padding: 3px;
+
+    border-top:1px dotted #ccc;
+
+    border-bottom:1px dotted #ccc;
+
+    margin:0 0 0 30px ;
+
+}
+
+
+
+#netsposts-paginate a {
+
+    text-decoration:none;
+
+    color: #000080;
+
+}
+
+#netsposts-paginate a:hover {
+
+    background-color: #800000;
+
+}
+
+#netsposts-paginate span.current {
+
+    padding:2px 5px 2px 5px;
+
+    background-color: #d0dff2;
+
+    color:#000080;
+
+    margin: 2px;
+
+}
+
+
+
+#netsposts-paginate  a.next , #netsposts-paginate  a.prev  {
+
+
+
+}
+
+
+
+#netsposts-paginate .page-numbers {
+
+    padding: 2px 5px 2px 5px;
+
+    color:#fffbf0;
+
+    background-color: #7d99c4;
+
+
+
+    margin: 2px;
+
+}
+
+a.netsposts-read-more-link {
+
+    color: #0000ff;
+
+}
+
+
+
+a.netsposts-read-more-link:hover {
+
+    color: ff0000; 
+
+}
+
+
+
+.img-hover:hover {
+
+    filter: none;
+
+    -webkit-filter: grayscale(1);
+
+    opacity: 0.7;
+
+}
+
+
+

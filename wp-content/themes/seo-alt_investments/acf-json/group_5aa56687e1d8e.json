@@ -1,6 +1,6 @@
 {
     "key": "group_5aa56687e1d8e",
-    "title": "program landing",
+    "title": "Program Landing",
     "fields": [
         {
             "key": "field_5aa566900adec",
@@ -19,12 +19,12 @@
                 "5aa5669881b59": {
                     "key": "5aa5669881b59",
                     "name": "component_pl_hero",
-                    "label": "component: PL Hero",
+                    "label": "Hero",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5aa566b90aded",
-                            "label": "component: PL Hero",
+                            "label": "PL Hero",
                             "name": "component:_pl_hero",
                             "type": "clone",
                             "instructions": "",
@@ -50,12 +50,12 @@
                 "5aa567010adee": {
                     "key": "5aa567010adee",
                     "name": "component_pl_touts",
-                    "label": "component: PL Touts",
+                    "label": "Touts",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5aa5670c0adef",
-                            "label": "component: PL Touts",
+                            "label": "PL Touts",
                             "name": "component:_pl_touts",
                             "type": "clone",
                             "instructions": "",
@@ -81,12 +81,12 @@
                 "5aa567250adf0": {
                     "key": "5aa567250adf0",
                     "name": "component_pl_data_visualization",
-                    "label": "component: PL Data Visualization",
+                    "label": "Data Visualization",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5aa567310adf1",
-                            "label": "component: PL: Data Visualization",
+                            "label": "PL Data Visualization",
                             "name": "component:_pl:_data_visualization",
                             "type": "clone",
                             "instructions": "",
@@ -112,12 +112,12 @@
                 "5aa602a17e6b7": {
                     "key": "5aa602a17e6b7",
                     "name": "component_pl_cta",
-                    "label": "component: PL CTA",
+                    "label": "CTA",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5aa602a97e6b8",
-                            "label": "component: PL CTA",
+                            "label": "PL CTA",
                             "name": "component:_pl_cta",
                             "type": "clone",
                             "instructions": "",
@@ -143,12 +143,12 @@
                 "5aa602cc7e6b9": {
                     "key": "5aa602cc7e6b9",
                     "name": "component_pl_sequence",
-                    "label": "component: PL Sequence",
+                    "label": "Sequence",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5aa602e37e6ba",
-                            "label": "component: PL Sequence",
+                            "label": "PL Sequence",
                             "name": "component:_pl_sequence",
                             "type": "clone",
                             "instructions": "",
@@ -174,12 +174,12 @@
                 "5ab8a49ab0f0e": {
                     "key": "5ab8a49ab0f0e",
                     "name": "component_pl_signup",
-                    "label": "component: PL signup",
+                    "label": "Signup",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5ab8a4a2b0f0f",
-                            "label": "component: PL signup",
+                            "label": "PL Signup",
                             "name": "component:_pl_signup",
                             "type": "clone",
                             "instructions": "",
@@ -225,5 +225,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1522053071
+    "modified": 1523853725
 }

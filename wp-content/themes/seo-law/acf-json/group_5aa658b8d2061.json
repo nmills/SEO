@@ -1,10 +1,10 @@
 {
     "key": "group_5aa658b8d2061",
-    "title": "component: Gallery Medium",
+    "title": "Medium Image Gallery",
     "fields": [
         {
             "key": "field_5aa658b917aac",
-            "label": "section header",
+            "label": "Section Header",
             "name": "section_header",
             "type": "text",
             "instructions": "",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5aa658b917cc3",
-            "label": "repeater",
+            "label": "Repeater",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -138,5 +138,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521433341
+    "modified": 1523163172
 }

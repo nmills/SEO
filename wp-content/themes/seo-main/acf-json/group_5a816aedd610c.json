@@ -1,10 +1,10 @@
 {
     "key": "group_5a816aedd610c",
-    "title": "component: hero image",
+    "title": "Hero Image",
     "fields": [
         {
             "key": "field_5a8283f91d2cc",
-            "label": "image type",
+            "label": "Image Type",
             "name": "image_type",
             "type": "radio",
             "instructions": "",
@@ -29,7 +29,7 @@
         },
         {
             "key": "field_5a8284861d2ce",
-            "label": "image",
+            "label": "Image",
             "name": "image",
             "type": "image_crop",
             "instructions": "",
@@ -75,7 +75,7 @@
         },
         {
             "key": "field_5a8284941d2cf",
-            "label": "text",
+            "label": "Text",
             "name": "text",
             "type": "text",
             "instructions": "",
@@ -102,7 +102,7 @@
         },
         {
             "key": "field_5a94fdaa3ba80",
-            "label": "small text",
+            "label": "Small Text",
             "name": "small_text",
             "type": "text",
             "instructions": "",
@@ -145,5 +145,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520420344
+    "modified": 1523162809
 }

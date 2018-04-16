@@ -1,0 +1,114 @@
+{
+    "key": "group_5ac31b48281f0",
+    "title": "component: NEWS header",
+    "fields": [
+        {
+            "key": "field_5ac31b546920b",
+            "label": "Header Image",
+            "name": "header_image",
+            "type": "image_crop",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "crop_type": "hard",
+            "target_size": "thumbnail",
+            "width": "",
+            "height": "",
+            "preview_size": "medium",
+            "force_crop": "no",
+            "save_in_media_library": "yes",
+            "retina_mode": "no",
+            "save_format": "url",
+            "library": "all"
+        },
+        {
+            "key": "field_5ac31d8b6920c",
+            "label": "Medium",
+            "name": "header_medium",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "via": "Via",
+                "by": "By",
+                "happening on": "Happening On"
+            },
+            "allow_null": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5ac31dd26920d",
+            "label": "Text",
+            "name": "header_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ac31d8b6920c",
+                        "operator": "==",
+                        "value": "via"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5ac31d8b6920c",
+                        "operator": "==",
+                        "value": "by"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5ac31d8b6920c",
+                        "operator": "==",
+                        "value": "happening on"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1523854023
+}

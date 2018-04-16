@@ -275,14 +275,11 @@ Gallery
 }
 
 .bs-title {
-  // @include default;
-
   margin: 0;
   display: block;
   padding-top: 25px;
-  font-style: italic;
 
-  @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 17px, $line-height: 1);
+  @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
 
   // border-bottom: 1px solid $white;
 
@@ -340,7 +337,8 @@ Gallery
 
     span {
       position: relative;
-      top: -10px;
+      top: -15px;
+      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 14px, $line-height: 1);
       font-style: italic;
     }
   }
@@ -581,10 +579,10 @@ Gallery
   @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 45px, $line-height: 1);
 
   @include grid-media($lg) {
-    @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 55px, $line-height: 1);
+    @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 61px, $line-height: 1);
   }
 }
 
 .eslide {
-  font-weight: $font-normal;
+  font-weight: $font-thinnest;
 }

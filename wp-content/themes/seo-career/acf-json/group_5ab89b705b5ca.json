@@ -1,10 +1,10 @@
 {
     "key": "group_5ab89b705b5ca",
-    "title": "component: PL signup",
+    "title": "PL Signup",
     "fields": [
         {
             "key": "field_5ab89b70d9a2f",
-            "label": "header text",
+            "label": "Header Text",
             "name": "header_text",
             "type": "text",
             "instructions": "The character limit is 140",
@@ -20,6 +20,25 @@
             "prepend": "",
             "append": "",
             "maxlength": 140
+        },
+        {
+            "key": "field_5ac2149bd0fb4",
+            "label": "Button Label",
+            "name": "signup_button_label",
+            "type": "text",
+            "instructions": "The character limit is 20",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 20
         }
     ],
     "location": [
@@ -39,5 +58,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522049121
+    "modified": 1523165937
 }

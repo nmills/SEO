@@ -1,10 +1,10 @@
 {
     "key": "group_5a9ce8529848c",
-    "title": "region: content region main",
+    "title": "Region Main",
     "fields": [
         {
             "key": "field_5a9cea285edc0",
-            "label": "region: content region main",
+            "label": "Region Main",
             "name": "region:_content_region_main",
             "type": "flexible_content",
             "instructions": "",
@@ -19,7 +19,7 @@
                 "5a9cea4e5edc2": {
                     "key": "5a9cea4e5edc2",
                     "name": "wysiwyg",
-                    "label": "wysiwyg",
+                    "label": "WYSIWYG",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -50,7 +50,7 @@
                 "5a9cea2ddeede": {
                     "key": "5a9cea2ddeede",
                     "name": "faq",
-                    "label": "faq",
+                    "label": "FAQ",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -81,7 +81,7 @@
                 "5a9cea705edc4": {
                     "key": "5a9cea705edc4",
                     "name": "slideshow",
-                    "label": "slideshow",
+                    "label": "Slideshow",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -112,7 +112,7 @@
                 "5aa744f73722c": {
                     "key": "5aa744f73722c",
                     "name": "faq_new",
-                    "label": "faq new",
+                    "label": "FAQ New",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -163,5 +163,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1520911970
+    "modified": 1523172197
 }

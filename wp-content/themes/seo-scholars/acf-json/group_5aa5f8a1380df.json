@@ -1,10 +1,10 @@
 {
     "key": "group_5aa5f8a1380df",
-    "title": "component: PL Sequence",
+    "title": "PL Sequence",
     "fields": [
         {
             "key": "field_5aa5f8b93925b",
-            "label": "heading",
+            "label": "Heading",
             "name": "heading",
             "type": "text",
             "instructions": "",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5aa5f8c53925c",
-            "label": "text blurb",
+            "label": "Text Blurb",
             "name": "text_blurb",
             "type": "textarea",
             "instructions": "",
@@ -42,7 +42,7 @@
         },
         {
             "key": "field_5aa5f8d23925d",
-            "label": "items",
+            "label": "Items",
             "name": "items",
             "type": "repeater",
             "instructions": "",
@@ -61,7 +61,7 @@
             "sub_fields": [
                 {
                     "key": "field_5aa5f8ef3925e",
-                    "label": "heading",
+                    "label": "Heading",
                     "name": "heading",
                     "type": "text",
                     "instructions": "The character limit is 25",
@@ -80,7 +80,7 @@
                 },
                 {
                     "key": "field_5aa5f9013925f",
-                    "label": "body",
+                    "label": "Body",
                     "name": "body",
                     "type": "text",
                     "instructions": "The character limit is 140",
@@ -99,7 +99,7 @@
                 },
                 {
                     "key": "field_5aa5f91639260",
-                    "label": "destination",
+                    "label": "Destination",
                     "name": "destination",
                     "type": "link",
                     "instructions": "",
@@ -116,7 +116,7 @@
         },
         {
             "key": "field_5aa5f95639263",
-            "label": "cta button link",
+            "label": "Button Link",
             "name": "cta_button_link",
             "type": "url",
             "instructions": "",
@@ -132,7 +132,7 @@
         },
         {
             "key": "field_5aa5f97339264",
-            "label": "cta button text",
+            "label": "Button Text",
             "name": "cta_button_text",
             "type": "text",
             "instructions": "The character limit is 20",
@@ -167,5 +167,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1521094424
+    "modified": 1523165713
 }

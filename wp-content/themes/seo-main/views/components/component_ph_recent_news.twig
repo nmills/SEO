@@ -1,0 +1,62 @@
+<!-- First one has to be a featured post -->
+<section class="c-recent-news">
+  <div class="container">
+    <div class="c-recent-news__container">
+      <h2>News & Events</h2>
+      {% set count = recent_posts|length +  featured_posts|length %}
+      {% set recent_posts_to_show = 3 %}
+      {# Make sure that the count does not exceed 3 #}
+      {% if count > 3 %}
+        {% set count = 3 %}
+      {% endif %}
+
+      <div class="c-recent-news__items">
+
+        {% if featured_posts %}
+          {% set recent_posts_to_show = 2 %}
+          {% for featured_post in featured_posts %}
+          <a href="{{featured_post.link}}">
+            <div class="c-recent-news__item count-{{count}} {% if featured_post.header_image is empty %}no-image{% endif %}">
+              {% if featured_post.header_image is not empty %}
+                <div class="c-recent-news__image" style="background-image: url({{Image(featured_post.get_field('header_image')).src}});">
+                {# <img src="{{Image(featured_post.get_field('header_image')).src}}"> #}
+                </div>
+              {% endif %}
+              <div class="c-recent-news__program">
+                  <p>{{site_name}}</p>
+              </div>
+              <div class="c-recent-news__title">
+                <h3 class="c-rte__link">{{featured_post.title}} </h3>
+              </div>
+              <div class="c-recent-news__event-details">
+                <p></p>
+              </div>
+            </div>
+          </a>
+          {% endfor %}
+        {% endif %}
+
+        {% for recent_news in recent_posts|slice(0,recent_posts_to_show) %}
+      	<a href="{{recent_news.link}}">
+	        <div class="c-recent-news__item count-{{count}} {% if recent_news.header_image is empty %}no-image{% endif %}">
+	          {% if recent_news.header_image is not empty %}
+              <div class="c-recent-news__image" style="background-image: url({{Image(recent_news.get_field('header_image')).src}});">
+              </div>
+            {% endif %}
+	          <div class="c-recent-news__program">
+	            <p>{{site_name}}</p>
+	          </div>
+	          <div class="c-recent-news__title">
+	            <h3 class="c-rte__link">{{recent_news.title}}</h3>
+	          </div>
+	          <div class="c-recent-news__event-details">
+	            <p>{{recent_news.header_text}}</p>
+	          </div>
+	        </div>
+        </a>
+        {% endfor %}
+        
+      </div>
+    </div>
+  </div>
+</section>

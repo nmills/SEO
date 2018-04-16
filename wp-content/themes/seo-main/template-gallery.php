@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Gallery
+	Template Name: Gallery
 */
 
 $context = Timber::get_context();

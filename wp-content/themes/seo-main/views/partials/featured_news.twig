@@ -1,0 +1,30 @@
+<section>
+  <div class="container">
+    <div class="page-title">
+      <h1>{{post.title}}</h1>
+    </div>
+    {% for featured_post in featured_posts %}
+    <div class="c-news-events__content featured">
+      <a href="{{featured_post.link}}">
+				{% if featured_post.get_field('header_image') %}
+					<div class="c-news-events__image">
+						  <img src="{{Image(featured_post.get_field('header_image')).src}}">
+					</div>
+				{% endif %}
+
+				<div class="c-news-events__details {% if featured_post.get_field('header_image') is empty %}no-image{% endif %}">
+					<div class="c-news-events__breadcrumb">
+						<p>{{site_name}}</p>
+					</div>
+
+					<h1>{{featured_post.title}}</h1>
+					
+					{% if featured_post.get_field('header_medium') %}
+						<p><span class="c-news-events__medium">{{featured_post.get_field('header_medium')}} </span> {{featured_post.get_field('header_text')}}</p>
+					{% endif %}
+				</div>
+			</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>

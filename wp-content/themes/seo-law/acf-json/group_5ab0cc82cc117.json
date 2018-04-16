@@ -1,10 +1,10 @@
 {
     "key": "group_5ab0cc82cc117",
-    "title": "component: PH Intro",
+    "title": "PH Intro",
     "fields": [
         {
             "key": "field_5ab0cda8e08cd",
-            "label": "text",
+            "label": "Text",
             "name": "text",
             "type": "textarea",
             "instructions": "The character limit is 500",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5ab0cddbe08cf",
-            "label": "button",
+            "label": "Button",
             "name": "button",
             "type": "link",
             "instructions": "",
@@ -54,5 +54,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522042939
+    "modified": 1523164866
 }

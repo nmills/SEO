@@ -1,0 +1,222 @@
+/***********Custom image size settings***********/
+#size_parameters{
+    margin-top:8px;
+}
+
+.invisible{
+    display: none;
+}
+
+label{
+    font-weight:bold;
+    font-size:13px;
+}
+.form-group{
+    margin-top: 16px;
+    margin-bottom:16px;
+}
+
+.form-group, .param-group{
+    margin-bottom:12px;
+}
+
+.form-group > div {
+    margin-top:16px;
+}
+
+
+.param-group > label {
+    display: block;
+}
+
+.param-group {
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: top;
+}
+
+#size_name, #alias{
+    width:360px;
+}
+
+.checkbox-label{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox-label input{
+    vertical-align: middle;
+}
+
+.error-text{
+    color:red;
+    visibility: hidden;
+}
+
+input.error{
+    border-color:red;
+}
+
+.btn {
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    color:white;
+    -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    outline: none !important;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn:active{
+    -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    -moz-box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+.btn.btn-primary{
+    background: rgb(0, 128, 255);
+}
+
+.btn.btn-primary:hover{
+    background: rgb(0, 115, 242);
+}
+
+.btn.btn-disabled{
+    background:#b6b6b6 !important;
+}
+
+.btn.btn-success{
+    background: rgb(34, 177, 76);
+}
+
+.btn.btn-success:hover{
+    background: rgb(21, 164, 63);
+}
+
+.btn.btn-flat{
+    box-shadow: none;
+    background:transparent !important;
+}
+
+.btn.btn-flat.btn-remove{
+    color:rgb(237, 28, 36);
+}
+
+.btn.btn-flat.btn-remove:hover{
+    color:white;
+}
+
+.btn.btn-flat.btn-remove:active{
+    background:#bbb !important;
+}
+
+.btn.btn-remove{
+    background: rgb(237, 28, 36);
+}
+
+.btn.btn-remove:hover{
+    background: rgb(224, 15, 50) !important;
+}
+
+.btn.active{
+    background: #FF9100;
+}
+
+#add_size{
+    margin-top:18px;
+}
+
+#show_image_generator_form, #cancel{
+    margin-left:8px;
+}
+
+#show_image_generator_form{
+    margin-right:8px;
+}
+
+.form-control{
+    padding: 6px 8px;
+    border-radius:4px;
+}
+.form-control:focus{
+    -webkit-box-shadow: 0px 0px 5px rgb(0,128,255) !important;
+    -moz-box-shadow: 0px 0px 5px rgb(0,128,255) !important;
+    box-shadow: 0px 0px 5px rgb(0,128,255) !important;
+}
+.table-wrapper{
+    width:100%;
+    min-width: 600px;
+    margin-bottom: 16px;
+}
+
+table.table {
+    background-color: white;
+    /* padding: 8px 16px; */
+    border-radius: 3px;
+    border: 1px solid #efefef;
+    border-spacing: 0px;
+    width:100%;
+    min-width:600px;
+}
+
+.table th {
+    padding: 16px;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border: 1px solid #efefef;
+    border-top: none;
+    background: #e6e6e6;
+}
+
+.table tbody{
+    min-height:300px;
+}
+
+.table tbody td {
+    padding: 4px;
+    text-align: center;
+    border-right: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.table tbody tr {
+    border-bottom: 2px solid #ccc;
+}
+
+.table tbody tr:not(#empty-row):not(.loading-row):hover{
+    background:#efefef;
+    cursor: pointer;
+}
+
+#crop_directions{
+    display: none;
+}
+
+.button-loading-gif{
+    width:18px;
+    vertical-align: middle;
+    margin-left:4px;
+}
+
+.model-loading{
+    text-align: center;
+    display: none;
+}
+
+.model-loading img{
+    vertical-align: middle;
+}
+
+.progress-bar-wrapper{
+    margin-top:16px;
+}
+
+.progress-bar-wrapper > label{
+    display: block;
+    margin-bottom: 8px;
+}

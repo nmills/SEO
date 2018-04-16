@@ -40,6 +40,9 @@ header {
 
   &--top {
     border-bottom: 2px solid $white;
+    max-width: 1440px;
+    margin: 0 auto;
+    float: none;
   }
 }
 
@@ -184,6 +187,13 @@ header {
 
   @include grid-media($lg) {
     display: block !important;
+  }
+
+
+  .c-nav--bottom__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    float: none;
   }
 }
 

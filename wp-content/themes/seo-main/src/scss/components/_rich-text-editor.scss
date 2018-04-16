@@ -66,6 +66,7 @@ Styleguide 1.2
     font-weight: bold;
     display: inline-block;
     margin: 0;
+    @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 61px, $line-height: 1);
 
     &:before {
       content: " ";
@@ -81,21 +82,24 @@ Styleguide 1.2
   }
 
   .page-title__text-spacing {
-    margin-left: 10%;
     margin-top: 30px;
 
-    @include type-custom($color: $dark-gray, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1.25);
+    &,
+    p {
+      @include type-custom($color: $dark-gray, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1.25);
+    }
 
     &:after {
-      content: " ";
+      content: "";
       display: block;
       border-bottom: 1px solid $light-gray;
       width: 75px;
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 60px;
+      margin-bottom: 60px;
 
       @include grid-media($lg) {
         width: 110px;
+        margin-left: 205px;
       }
     }
   }
@@ -292,5 +296,11 @@ Styleguide 1.5
     height: 100%;
     border-left: 10px solid #050505;
     padding-left: 10px;
+  }
+}
+
+.c-rte {
+  p {
+    margin-top: 0;
   }
 }

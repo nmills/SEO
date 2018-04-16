@@ -1,10 +1,10 @@
 {
     "key": "group_5a9ce763b7b41",
-    "title": "region: content region left",
+    "title": "Region Left Rail",
     "fields": [
         {
             "key": "field_5a9ce779e3661",
-            "label": "region: content region left",
+            "label": "Region Left Rail",
             "name": "region:_content_region_left",
             "type": "flexible_content",
             "instructions": "",
@@ -19,12 +19,12 @@
                 "5a9ce783b10cd": {
                     "key": "5a9ce783b10cd",
                     "name": "image",
-                    "label": "image",
+                    "label": "Image",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5a9ce7a2e3662",
-                            "label": "image",
+                            "label": "Image",
                             "name": "image",
                             "type": "clone",
                             "instructions": "",
@@ -50,7 +50,7 @@
                 "5a9ce7c4e3663": {
                     "key": "5a9ce7c4e3663",
                     "name": "signup",
-                    "label": "signup",
+                    "label": "Signup",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -81,12 +81,12 @@
                 "5a9ce7e1e3666": {
                     "key": "5a9ce7e1e3666",
                     "name": "cta",
-                    "label": "cta",
+                    "label": "CTA",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5a9ce7e9e3667",
-                            "label": "cta",
+                            "label": "CTA",
                             "name": "cta",
                             "type": "clone",
                             "instructions": "",
@@ -132,5 +132,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522654274
+    "modified": 1523172120
 }

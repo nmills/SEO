@@ -28,7 +28,12 @@ img {
 
   max-width: $container-width;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10%;
+
+  @include grid-media($sm) {
+    padding: 0 15px;
+  }
+
 
   @include grid-media($xl) {
     padding: 0 5px;
@@ -62,6 +67,6 @@ section {
   margin-bottom: 40px;
 
   @include grid-media($md) {
-    margin-bottom: 120px;
+    margin-bottom: 145px;
   }
 }
