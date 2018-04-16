@@ -3,12 +3,10 @@
 {% block content %}
 	<main id="content">
 	    <div class="page-content c-news-events">
-	      {# <div class="container region_hero"> #}
-	        {# including the featured Event #}
+
 			{% if featured_posts %}
 				{% include ['partials/featured_news.twig'] %}
 			{% endif %}
-	      {# </div> #}
 
 	      <div class="container region_body">
 	        <div class="container region_main_content">
@@ -21,8 +19,13 @@
 							<div class="c-news-filter">
 								{{site_filter_NE_landingpage}}
 							</div>
-							
-              {{post.content}}
+
+							{% set arr = [] %}
+							{% set arr = arr|merge({'post_type': 'news'}) %}
+							{% set arr = arr|merge({'list': 2}) %}
+							{% set arr = arr|merge({'paginate': 'true'}) %}
+							{{ function('netsposts_shortcode', arr) }}
+
             </section>
 	        </div>
 
