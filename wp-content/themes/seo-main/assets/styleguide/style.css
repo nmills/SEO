@@ -1082,18 +1082,15 @@ Styleguide 1.5
 
 .c-rte .video {
   border-left: 10px solid #050505;
-  padding-left: 10px; }
+  padding-left: 10px;
+  margin-bottom: 50px; }
   .c-rte .video .caption {
     margin: 0;
     margin-top: 15px;
-    font-style: italic;
-    color: #050505;
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
     font-weight: 700;
-    font-size: 19px;
-    line-height: 1.53;
-    font-weight: 300;
+    font-size: 14px;
     line-height: 1; }
 
 .c-rte img, .c-rte__accordion img {
@@ -1219,7 +1216,7 @@ Styleguide 4.1
         padding-top: 15px;
         padding-bottom: 15px;
         padding: 25px 15px;
-        padding-right: 45px; }
+        padding-right: 95px; }
         .c-accordion li .toggle span:after {
           content: "";
           position: absolute;
@@ -1289,13 +1286,16 @@ Styleguide 4.1
       display: none;
       margin-bottom: 5px; }
 
-@media only screen and (min-width: 480px) {
-  .container.faq {
-    width: calc(66.66667%);
-    float: left;
-    margin-left: 0;
-    float: right;
-    padding-left: 25px; } }
+.container.faq {
+  padding: 0; }
+  @media only screen and (min-width: 480px) {
+    .container.faq {
+      width: calc(66.66667%);
+      float: left;
+      margin-left: 0;
+      padding: inherit;
+      float: right;
+      padding-left: 25px; } }
 
 /*
 Video Component
@@ -4227,7 +4227,7 @@ body {
   max-width: 700px; }
 
 .c-news-header .container {
-  max-width: 660px;
+  max-width: 860px;
   margin: 0 auto; }
   .c-news-header .container .c-news-header__breadcrumb {
     margin-top: 100px; }
