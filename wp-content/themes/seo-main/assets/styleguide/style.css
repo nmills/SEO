@@ -1216,7 +1216,7 @@ Styleguide 4.1
         padding-top: 15px;
         padding-bottom: 15px;
         padding: 25px 15px;
-        padding-right: 45px; }
+        padding-right: 95px; }
         .c-accordion li .toggle span:after {
           content: "";
           position: absolute;
@@ -1286,13 +1286,16 @@ Styleguide 4.1
       display: none;
       margin-bottom: 5px; }
 
-@media only screen and (min-width: 480px) {
-  .container.faq {
-    width: calc(66.66667%);
-    float: left;
-    margin-left: 0;
-    float: right;
-    padding-left: 25px; } }
+.container.faq {
+  padding: 0; }
+  @media only screen and (min-width: 480px) {
+    .container.faq {
+      width: calc(66.66667%);
+      float: left;
+      margin-left: 0;
+      padding: inherit;
+      float: right;
+      padding-left: 25px; } }
 
 /*
 Video Component
