@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ac33b257ac20",
-            "label": "include event",
+            "label": "Include Event",
             "name": "include_event",
             "type": "radio",
             "instructions": "",
@@ -28,7 +28,7 @@
         },
         {
             "key": "field_5ac322b050cf9",
-            "label": "heading text",
+            "label": "Heading Text",
             "name": "event_heading_text",
             "type": "text",
             "instructions": "",
@@ -55,7 +55,7 @@
         },
         {
             "key": "field_5ac322c650cfa",
-            "label": "body text",
+            "label": "Body Text",
             "name": "event_body_text",
             "type": "textarea",
             "instructions": "",
@@ -82,7 +82,7 @@
         },
         {
             "key": "field_5ac322d450cfb",
-            "label": "button label",
+            "label": "Button Label",
             "name": "event_button_label",
             "type": "text",
             "instructions": "",
@@ -109,7 +109,7 @@
         },
         {
             "key": "field_5ac322eb50cfc",
-            "label": "destination url",
+            "label": "Destination Url",
             "name": "event_destination_url",
             "type": "url",
             "instructions": "",
@@ -149,5 +149,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522744922
+    "modified": 1523854129
 }
