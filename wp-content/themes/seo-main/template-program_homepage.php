@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Program Home page
+	Template Name: Program Homepage
 */
 
 $context = Timber::get_context();

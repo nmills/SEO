@@ -24,7 +24,7 @@
                     "sub_fields": [
                         {
                             "key": "field_5a9ce6bd96f0c",
-                            "label": "hero image",
+                            "label": "Hero Image",
                             "name": "hero_image",
                             "type": "clone",
                             "instructions": "",

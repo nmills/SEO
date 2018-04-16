@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ac5c2faf67f7",
-            "label": "include promotional",
+            "label": "Include Promotional",
             "name": "include_promotional",
             "type": "radio",
             "instructions": "",
@@ -28,7 +28,7 @@
         },
         {
             "key": "field_5ac5c3caf67f8",
-            "label": "text",
+            "label": "Text",
             "name": "text",
             "type": "textarea",
             "instructions": "For emphasized text use \"< strong>\" & \"<\/ strong>\" before and after your text",
@@ -55,7 +55,7 @@
         },
         {
             "key": "field_5ac5c44cf67f9",
-            "label": "link label",
+            "label": "Link Label",
             "name": "link_label",
             "type": "text",
             "instructions": "",
@@ -82,7 +82,7 @@
         },
         {
             "key": "field_5ac5c453f67fa",
-            "label": "destination url",
+            "label": "Destination Url",
             "name": "destination_url",
             "type": "url",
             "instructions": "",
@@ -122,5 +122,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522910354
+    "modified": 1523854300
 }

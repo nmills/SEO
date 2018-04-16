@@ -42,7 +42,7 @@
         },
         {
             "key": "field_5ab0d1e7d67f1",
-            "label": "repeater",
+            "label": "Repeater",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -61,7 +61,7 @@
             "sub_fields": [
                 {
                     "key": "field_5ab0d1f3d67f2",
-                    "label": "image",
+                    "label": "Image",
                     "name": "image",
                     "type": "image",
                     "instructions": "",

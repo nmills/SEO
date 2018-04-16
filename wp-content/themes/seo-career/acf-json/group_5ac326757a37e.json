@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ac3267cadae7",
-            "label": "header",
+            "label": "Header",
             "name": "header",
             "type": "clone",
             "instructions": "",
@@ -25,7 +25,7 @@
         },
         {
             "key": "field_5ac32865adae8",
-            "label": "body",
+            "label": "Body",
             "name": "body",
             "type": "clone",
             "instructions": "",
@@ -46,7 +46,7 @@
         },
         {
             "key": "field_5ac33950adaec",
-            "label": "cta",
+            "label": "Cta",
             "name": "cta",
             "type": "clone",
             "instructions": "",
@@ -67,7 +67,7 @@
         },
         {
             "key": "field_5ac33c25adaed",
-            "label": "event",
+            "label": "Event",
             "name": "event",
             "type": "clone",
             "instructions": "",
@@ -104,5 +104,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1522910385
+    "modified": 1523853987
 }
