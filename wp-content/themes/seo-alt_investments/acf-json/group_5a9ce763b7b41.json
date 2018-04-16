@@ -24,7 +24,7 @@
                     "sub_fields": [
                         {
                             "key": "field_5a9ce7a2e3662",
-                            "label": "image",
+                            "label": "Image",
                             "name": "image",
                             "type": "clone",
                             "instructions": "",
@@ -86,7 +86,7 @@
                     "sub_fields": [
                         {
                             "key": "field_5a9ce7e9e3667",
-                            "label": "cta",
+                            "label": "CTA",
                             "name": "cta",
                             "type": "clone",
                             "instructions": "",
