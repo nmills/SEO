@@ -249,200 +249,179 @@
   }
 }
 
-.new {
-  .c-ratiometer_container {
+.program-landing-page{
+
+  .old {
+    background: $light-gray;
+
     @include grid-column(12, $no-gutter);
 
-    float: left;
-    background: #e5e7e7;
-    padding: 5%;
+    // @include grid-media($lg) {
+    //   @include grid-column(6, $no-gutter);
+    // }
+
+
+    .c-ratiometer_container {
+      padding: 5%; 
+
+      @include grid-media($lg) {}
+    }
 
     .c-ratiometer {
-      @include grid-column(7, $no-gutter);
-
+      width: calc(100%);
+      float: left;
       position: relative;
-      height: 360px;
-      margin: auto;
-
-      .c-ratiometer-meter_out {
-        &:before {
-          content: "";
-          width: 21rem;
-          height: 21rem;
-          position: absolute;
-          z-index: 5;
-          top: -9px;
-          left: -9px;
-          border-radius: 100%;
-          padding: 10px;
-          transform: rotate(-35deg);
-
-          /*  Main part  */
-          background: rgb(124, 180, 246);
-          background: -moz-linear-gradient(-45deg, rgb(124, 180, 246) 0%, rgb(124, 180, 246) 80%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
-          background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(124, 180, 246)), color-stop(80%, rgb(124, 180, 246)), color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
-          background: -webkit-linear-gradient(-45deg, rgb(124, 180, 246) 0%, rgb(124, 180, 246) 80%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
-          background: -o-linear-gradient(-45deg, rgb(124, 180, 246) 0%, rgb(124, 180, 246) 80%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
-          background: -ms-linear-gradient(-45deg, rgb(124, 180, 246) 0%, rgb(124, 180, 246) 80%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
-        }
-
-        .c-rationmeter-meter {
-          width: 20rem;
-          height: 20rem;
-          background: red;
-          border-radius: 100%;
-          background-position: center;
-          background-size: contain;
-          border: 10px solid #e5e7e7;
-          position: relative;
-          z-index: 10;
-        }
-      }
-
-      .c-rationmeter-text {
-        @include grid-column(6, $no-gutter);
-
-        position: absolute;
-        z-index: 15;
-        transform: translateY(80%);
-        left: 19rem;
-        top: 0;
-
-        h1 {
-          font-size: 28px;
-        }
-      }
-    }
-  }
-}
-
-.old {
-  .c-ratiometer_container {
-    @include grid-column(12, $no-gutter);
-
-    float: left;
-    background: #e5e7e7;
-    padding: 5%;
-    height: 400px;
-
-    @include grid-media($lg) {
-      height: 525px;
-    }
-  }
-
-  .c-ratiometer {
-    @include grid-column(12, $no-gutter);
-
-    position: relative;
-    height: 400px;
-    margin: 0 auto;
-    float: none;
-
-    @include grid-media($sm) {
-      @include grid-column(10, $no-gutter);
       margin: 0 auto;
       float: none;
-    }
-    @include grid-media($md) {
-      @include grid-column(8, $no-gutter);
-      margin: 0 auto;
-      float: none;
-    }
-    @include grid-media($lg) {
-      @include grid-column(6, $no-gutter);
-      margin: 0 auto;
-      float: none;
-    }
-
-    .c-rationmeter-positioner {
-      position: absolute;
-      width: 250px;
-      height: 350px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
 
       @include grid-media($sm) {
-        width: 330px;
-        height: 300px;
+        width: calc(80%);
+        float: left;
+        margin: 0 auto;
+        float: none;
       }
-      @include grid-media($md) {
-        width: 620px;
-        height: 350px;
-      }
-      @include grid-media($lg) {
-        width: 730px;
-        height: 350px;
-      }
-    }
-  }
 
-  .c-ratiometer-meter_out {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 100%;
-    padding: 10px;
-  }
-
-  .c-rationmeter-meter {
-    width: 8rem;
-    height: 8rem;
-    background: red;
-    border-radius: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 8px solid #e5e7e7;
-
-
-    @include grid-media($sm) {
-      width: 11rem;
-      height: 11rem;
-    }
-
-    @include grid-media($md) {
-      width: 14rem;
-      height: 14rem;
-    }
-
-    @include grid-media($lg) {
-      width: 20rem;
-      height: 20rem;
-    }
-  }
-
-  .c-rationmeter-text {
-    @include grid-column(6, $no-gutter);
-
-    position: absolute;
-    transform: translateY(10%);
-    left: 7rem;
-
-    @include grid-media($sm) {
-      left: 10rem;
-    }
-
-    @include grid-media($md) {
-      left: 13rem;
-      @include grid-column(8.5, $no-gutter);
-    }
-
-    @include grid-media($lg) {
-      left: 19rem;
-      @include grid-column(9, $no-gutter);
-    }
-
-    h1 {
-      font-size: 25px;
 
       @include grid-media($md) {
-        font-size: 38px;
+        width: calc(75%);
+        float: left;
+        margin: 0 auto;
+        float: none;
       }
 
-      @include grid-media($lg) {
-        font-size: 48px;
+
+      @include grid-media($xl) {
+        width: calc(50%);
+        float: left;
+        margin: 0 auto;
+        float: none;
       }
+
+
+      .c-rationmeter-positioner {
+        width: 250px;
+        display: flex;
+        margin: 0 auto;
+
+        @include grid-media($sm) {
+          width: 330px;
+        }
+
+
+        @include grid-media($md) {
+          width: 580px;
+        }
+
+
+        @include grid-media($lg) {
+          width: 730px;
+        }
+
+        @include grid-media($xl) {
+          width: 880px;
+        }
+      }
+    }
+
+    .c-ratiometer-meter_out {
+      width: 150px;
+      height: 150px;
+      border-radius: 100%;
+      padding: 10px;
+
+      @include grid-media($sm) {
+        width: 190px;
+        height: 190px;
+      }
+
+
+      @include grid-media($md) {
+        width: 240px;
+        height: 240px;
+      }
+
+
+      @include grid-media($xl) {
+        width: 340px;
+        height: 340px;
+      }
+    }
+
+    .c-rationmeter-meter {
+      width: 130px;
+      height: 130px;
+      background: red;
+      border-radius: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 8px solid #e5e7e7;
+
+      @include grid-media($sm) {
+        width: 170px;
+        height: 170px;
+      }
+
+
+      @include grid-media($md) {
+        width: 220px;
+        height: 220px;
+      }
+
+
+      @include grid-media($xl) {
+        width: 320px;
+        height: 320px;
+      }
+    }
+
+    .c-rationmeter-text {
+      // width: calc(50%);
+      float: left;
+      margin-left: -30px;
+      margin-top: 30px;
+
+      @include grid-media($sm) {}
+
+
+      @include grid-media($md) {
+        // width: calc(35%);
+        float: left;
+      }
+
+
+      @include grid-media($xl) {
+        // width: calc(25%);
+        float: left;
+      }
+
+
+      h1 {
+        font-size: 25px;
+
+        @include grid-media($md) {
+          font-size: 38px;
+        }
+
+        @include grid-media($lg) {
+          font-size: 48px;
+        }
+      }
+      // h1 {
+      //   @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 45px, $line-height: 1);
+
+      //   margin: 0;
+      //   text-align: center;
+
+      //   @include grid-media($sm) {
+      //     @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 70px, $line-height: 1);
+      //   }
+
+
+      //   @include grid-media($md) {
+      //     @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 110px, $line-height: 1);
+      //   }
+      // }
     }
   }
 }

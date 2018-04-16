@@ -2504,180 +2504,109 @@ Gallery
           .tout-section .c-tout_container .c-tout_item.item-right .c-tout_image {
             float: left; } }
 
-.new .c-ratiometer_container {
+.program-landing-page .old {
+  background: #e5e7e7;
   width: calc(100%);
   float: left;
-  margin-left: 0;
-  float: left;
-  background: #e5e7e7;
-  padding: 5%; }
-  .new .c-ratiometer_container .c-ratiometer {
-    width: calc(58.33333%);
+  margin-left: 0; }
+  .program-landing-page .old .c-ratiometer_container {
+    padding: 5%; }
+  .program-landing-page .old .c-ratiometer {
+    width: calc(100%);
     float: left;
-    margin-left: 0;
     position: relative;
-    height: 360px;
-    margin: auto; }
-    .new .c-ratiometer_container .c-ratiometer .c-ratiometer-meter_out:before {
-      content: "";
-      width: 21rem;
-      height: 21rem;
-      position: absolute;
-      z-index: 5;
-      top: -9px;
-      left: -9px;
-      border-radius: 100%;
-      padding: 10px;
-      transform: rotate(-35deg);
-      /*  Main part  */
-      background: #7cb4f6;
-      background: -moz-linear-gradient(-45deg, #7cb4f6 0%, #7cb4f6 80%, white 0%, white 100%);
-      background: -webkit-gradient(left top, right bottom, color-stop(0%, #7cb4f6), color-stop(80%, #7cb4f6), color-stop(0%, white), color-stop(100%, white));
-      background: -webkit-linear-gradient(-45deg, #7cb4f6 0%, #7cb4f6 80%, white 0%, white 100%);
-      background: -o-linear-gradient(-45deg, #7cb4f6 0%, #7cb4f6 80%, white 0%, white 100%);
-      background: -ms-linear-gradient(-45deg, #7cb4f6 0%, #7cb4f6 80%, white 0%, white 100%); }
-    .new .c-ratiometer_container .c-ratiometer .c-ratiometer-meter_out .c-rationmeter-meter {
-      width: 20rem;
-      height: 20rem;
-      background: red;
-      border-radius: 100%;
-      background-position: center;
-      background-size: contain;
-      border: 10px solid #e5e7e7;
-      position: relative;
-      z-index: 10; }
-    .new .c-ratiometer_container .c-ratiometer .c-rationmeter-text {
-      width: calc(50%);
-      float: left;
-      margin-left: 0;
-      position: absolute;
-      z-index: 15;
-      transform: translateY(80%);
-      left: 19rem;
-      top: 0; }
-      .new .c-ratiometer_container .c-ratiometer .c-rationmeter-text h1 {
-        font-size: 28px; }
-
-.old .c-ratiometer_container {
-  width: calc(100%);
-  float: left;
-  margin-left: 0;
-  float: left;
-  background: #e5e7e7;
-  padding: 5%;
-  height: 400px; }
-  @media only screen and (min-width: 1024px) {
-    .old .c-ratiometer_container {
-      height: 525px; } }
-
-.old .c-ratiometer {
-  width: calc(100%);
-  float: left;
-  margin-left: 0;
-  position: relative;
-  height: 400px;
-  margin: 0 auto;
-  float: none; }
-  @media only screen and (min-width: 480px) {
-    .old .c-ratiometer {
-      width: calc(83.33333%);
-      float: left;
-      margin-left: 0;
-      margin: 0 auto;
-      float: none; } }
-  @media only screen and (min-width: 768px) {
-    .old .c-ratiometer {
-      width: calc(66.66667%);
-      float: left;
-      margin-left: 0;
-      margin: 0 auto;
-      float: none; } }
-  @media only screen and (min-width: 1024px) {
-    .old .c-ratiometer {
-      width: calc(50%);
-      float: left;
-      margin-left: 0;
-      margin: 0 auto;
-      float: none; } }
-  .old .c-ratiometer .c-rationmeter-positioner {
-    position: absolute;
-    width: 250px;
-    height: 350px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    margin: 0 auto;
+    float: none; }
     @media only screen and (min-width: 480px) {
-      .old .c-ratiometer .c-rationmeter-positioner {
-        width: 330px;
-        height: 300px; } }
+      .program-landing-page .old .c-ratiometer {
+        width: calc(80%);
+        float: left;
+        margin: 0 auto;
+        float: none; } }
     @media only screen and (min-width: 768px) {
-      .old .c-ratiometer .c-rationmeter-positioner {
-        width: 620px;
-        height: 350px; } }
-    @media only screen and (min-width: 1024px) {
-      .old .c-ratiometer .c-rationmeter-positioner {
-        width: 730px;
-        height: 350px; } }
-
-.old .c-ratiometer-meter_out {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 100%;
-  padding: 10px; }
-
-.old .c-rationmeter-meter {
-  width: 8rem;
-  height: 8rem;
-  background: red;
-  border-radius: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 8px solid #e5e7e7; }
-  @media only screen and (min-width: 480px) {
-    .old .c-rationmeter-meter {
-      width: 11rem;
-      height: 11rem; } }
-  @media only screen and (min-width: 768px) {
-    .old .c-rationmeter-meter {
-      width: 14rem;
-      height: 14rem; } }
-  @media only screen and (min-width: 1024px) {
-    .old .c-rationmeter-meter {
-      width: 20rem;
-      height: 20rem; } }
-
-.old .c-rationmeter-text {
-  width: calc(50%);
-  float: left;
-  margin-left: 0;
-  position: absolute;
-  transform: translateY(10%);
-  left: 7rem; }
-  @media only screen and (min-width: 480px) {
-    .old .c-rationmeter-text {
-      left: 10rem; } }
-  @media only screen and (min-width: 768px) {
-    .old .c-rationmeter-text {
-      left: 13rem;
-      width: calc(70.83333%);
-      float: left;
-      margin-left: 0; } }
-  @media only screen and (min-width: 1024px) {
-    .old .c-rationmeter-text {
-      left: 19rem;
-      width: calc(75%);
-      float: left;
-      margin-left: 0; } }
-  .old .c-rationmeter-text h1 {
-    font-size: 25px; }
+      .program-landing-page .old .c-ratiometer {
+        width: calc(75%);
+        float: left;
+        margin: 0 auto;
+        float: none; } }
+    @media only screen and (min-width: 1440px) {
+      .program-landing-page .old .c-ratiometer {
+        width: calc(50%);
+        float: left;
+        margin: 0 auto;
+        float: none; } }
+    .program-landing-page .old .c-ratiometer .c-rationmeter-positioner {
+      width: 250px;
+      display: flex;
+      margin: 0 auto; }
+      @media only screen and (min-width: 480px) {
+        .program-landing-page .old .c-ratiometer .c-rationmeter-positioner {
+          width: 330px; } }
+      @media only screen and (min-width: 768px) {
+        .program-landing-page .old .c-ratiometer .c-rationmeter-positioner {
+          width: 580px; } }
+      @media only screen and (min-width: 1024px) {
+        .program-landing-page .old .c-ratiometer .c-rationmeter-positioner {
+          width: 730px; } }
+      @media only screen and (min-width: 1440px) {
+        .program-landing-page .old .c-ratiometer .c-rationmeter-positioner {
+          width: 880px; } }
+  .program-landing-page .old .c-ratiometer-meter_out {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    padding: 10px; }
+    @media only screen and (min-width: 480px) {
+      .program-landing-page .old .c-ratiometer-meter_out {
+        width: 190px;
+        height: 190px; } }
     @media only screen and (min-width: 768px) {
-      .old .c-rationmeter-text h1 {
-        font-size: 38px; } }
-    @media only screen and (min-width: 1024px) {
-      .old .c-rationmeter-text h1 {
-        font-size: 48px; } }
+      .program-landing-page .old .c-ratiometer-meter_out {
+        width: 240px;
+        height: 240px; } }
+    @media only screen and (min-width: 1440px) {
+      .program-landing-page .old .c-ratiometer-meter_out {
+        width: 340px;
+        height: 340px; } }
+  .program-landing-page .old .c-rationmeter-meter {
+    width: 130px;
+    height: 130px;
+    background: red;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 8px solid #e5e7e7; }
+    @media only screen and (min-width: 480px) {
+      .program-landing-page .old .c-rationmeter-meter {
+        width: 170px;
+        height: 170px; } }
+    @media only screen and (min-width: 768px) {
+      .program-landing-page .old .c-rationmeter-meter {
+        width: 220px;
+        height: 220px; } }
+    @media only screen and (min-width: 1440px) {
+      .program-landing-page .old .c-rationmeter-meter {
+        width: 320px;
+        height: 320px; } }
+  .program-landing-page .old .c-rationmeter-text {
+    float: left;
+    margin-left: -30px;
+    margin-top: 30px; }
+    @media only screen and (min-width: 768px) {
+      .program-landing-page .old .c-rationmeter-text {
+        float: left; } }
+    @media only screen and (min-width: 1440px) {
+      .program-landing-page .old .c-rationmeter-text {
+        float: left; } }
+    .program-landing-page .old .c-rationmeter-text h1 {
+      font-size: 25px; }
+      @media only screen and (min-width: 768px) {
+        .program-landing-page .old .c-rationmeter-text h1 {
+          font-size: 38px; } }
+      @media only screen and (min-width: 1024px) {
+        .program-landing-page .old .c-rationmeter-text h1 {
+          font-size: 48px; } }
 
 body {
   counter-reset: section; }
@@ -3464,15 +3393,20 @@ body {
       .c-ph-gallery__container .c-ph-gallery__last-link a:hover {
         color: #7cb4f6; }
 
-.c-ph-stats__container .c-ph-stats__content.single .old, .c-ph-stats__container .c-ph-stats__content.single .c-ph-stats-border__container {
+.c-ph-stats__container .c-ph-stats__content {
   width: calc(100%);
   float: left;
-  margin-left: 0; }
+  margin-left: 0;
+  background: #e5e7e7; }
+  @media only screen and (min-width: 1024px) {
+    .c-ph-stats__container .c-ph-stats__content {
+      position: relative; } }
+  .c-ph-stats__container .c-ph-stats__content.single .old, .c-ph-stats__container .c-ph-stats__content.single .c-ph-stats-border__container {
+    width: calc(100%);
+    float: left;
+    margin-left: 0; }
 
 .c-ph-stats__container .old {
-  background: #e5e7e7;
-  height: 500px;
-  position: relative;
   width: calc(100%);
   float: left;
   margin-left: 0; }
@@ -3482,95 +3416,153 @@ body {
       float: left;
       margin-left: 0; } }
   .c-ph-stats__container .old .c-ratiometer_container {
-    height: auto;
-    padding: 0; }
-    .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer {
-      width: 160px;
-      margin: auto;
-      text-align: center;
-      height: auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
+    padding: 5%; }
+  .c-ph-stats__container .old .c-ratiometer {
+    width: calc(100%);
+    float: left;
+    position: relative;
+    margin: 0 auto;
+    float: none; }
+    @media only screen and (min-width: 480px) {
+      .c-ph-stats__container .old .c-ratiometer {
+        width: calc(80%);
+        float: left;
+        margin: 0 auto;
+        float: none; } }
+    @media only screen and (min-width: 768px) {
+      .c-ph-stats__container .old .c-ratiometer {
+        width: calc(75%);
+        float: left;
+        margin: 0 auto;
+        float: none; } }
+    @media only screen and (min-width: 1440px) {
+      .c-ph-stats__container .old .c-ratiometer {
+        width: calc(50%);
+        float: left;
+        margin: 0 auto;
+        float: none; } }
+    .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
+      width: 250px;
+      display: flex;
+      margin: 0 auto; }
+      @media only screen and (min-width: 480px) {
+        .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
+          width: 330px; } }
       @media only screen and (min-width: 768px) {
-        .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer {
-          width: 320px;
-          transform: none; } }
-      .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner {
-        height: 250px; }
-        @media only screen and (min-width: 768px) {
-          .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner {
-            height: 320px; } }
-        .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-ratiometer-meter_out .c-rationmeter-meter {
-          width: 9rem;
-          height: 9rem; }
-          @media only screen and (min-width: 768px) {
-            .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-ratiometer-meter_out .c-rationmeter-meter {
-              width: 15rem;
-              height: 15rem; } }
-        .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text {
-          left: 9rem;
-          width: 40%;
-          -webkit-transform: translateY(25%);
-          transform: translateY(25%); }
-          @media only screen and (min-width: 768px) {
-            .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text {
-              left: 15rem;
-              width: 30%;
-              -webkit-transform: translateY(10%);
-              transform: translateY(10%); } }
-          .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text h1 {
-            font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-            color: #050505;
-            font-weight: 700;
-            font-size: 45px;
-            line-height: 1;
-            margin: 0;
-            text-align: center; }
-            @media only screen and (min-width: 480px) {
-              .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text h1 {
-                font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-                color: #050505;
-                font-weight: 700;
-                font-size: 70px;
-                line-height: 1; } }
-            @media only screen and (min-width: 768px) {
-              .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text h1 {
-                font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-                color: #050505;
-                font-weight: 700;
-                font-size: 110px;
-                line-height: 1; } }
-          .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text p {
-            font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-            color: #050505;
-            font-weight: 100;
-            font-size: 20px;
-            line-height: 1;
-            margin: 0;
-            text-align: center; }
-            @media only screen and (min-width: 768px) {
-              .c-ph-stats__container .old .c-ratiometer_container .c-ratiometer .c-rationmeter-positioner .c-rationmeter-text p {
-                font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-                color: #050505;
-                font-weight: 100;
-                font-size: 30px;
-                line-height: 1; } }
+        .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
+          width: 500px; } }
+      @media only screen and (min-width: 1440px) {
+        .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
+          width: 730px; } }
+  .c-ph-stats__container .old .c-ratiometer-meter_out {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    padding: 10px; }
+    @media only screen and (min-width: 480px) {
+      .c-ph-stats__container .old .c-ratiometer-meter_out {
+        width: 190px;
+        height: 190px; } }
+    @media only screen and (min-width: 768px) {
+      .c-ph-stats__container .old .c-ratiometer-meter_out {
+        width: 240px;
+        height: 240px; } }
+    @media only screen and (min-width: 1440px) {
+      .c-ph-stats__container .old .c-ratiometer-meter_out {
+        width: 340px;
+        height: 340px; } }
+  .c-ph-stats__container .old .c-rationmeter-meter {
+    width: 130px;
+    height: 130px;
+    background: red;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 8px solid #e5e7e7; }
+    @media only screen and (min-width: 480px) {
+      .c-ph-stats__container .old .c-rationmeter-meter {
+        width: 170px;
+        height: 170px; } }
+    @media only screen and (min-width: 768px) {
+      .c-ph-stats__container .old .c-rationmeter-meter {
+        width: 220px;
+        height: 220px; } }
+    @media only screen and (min-width: 1440px) {
+      .c-ph-stats__container .old .c-rationmeter-meter {
+        width: 320px;
+        height: 320px; } }
+  .c-ph-stats__container .old .c-rationmeter-text {
+    width: calc(50%);
+    float: left;
+    margin-left: -30px;
+    margin-top: 30px; }
+    @media only screen and (min-width: 768px) {
+      .c-ph-stats__container .old .c-rationmeter-text {
+        width: calc(35%);
+        float: left; } }
+    @media only screen and (min-width: 1440px) {
+      .c-ph-stats__container .old .c-rationmeter-text {
+        width: calc(25%);
+        float: left; } }
+    .c-ph-stats__container .old .c-rationmeter-text h1 {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 1;
+      margin: 0;
+      text-align: center; }
+      @media only screen and (min-width: 480px) {
+        .c-ph-stats__container .old .c-rationmeter-text h1 {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 700;
+          font-size: 70px;
+          line-height: 1; } }
+      @media only screen and (min-width: 768px) {
+        .c-ph-stats__container .old .c-rationmeter-text h1 {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 700;
+          font-size: 110px;
+          line-height: 1; } }
+    .c-ph-stats__container .old .c-rationmeter-text p {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 100;
+      font-size: 20px;
+      line-height: 1;
+      margin: 0;
+      text-align: center; }
+      @media only screen and (min-width: 768px) {
+        .c-ph-stats__container .old .c-rationmeter-text p {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 100;
+          font-size: 30px;
+          line-height: 1; } }
 
 .c-ph-stats__container .c-ph-stats-border__container {
-  background: #e5e7e7;
-  height: 500px;
+  height: 350px;
   position: relative;
   width: calc(100%);
   float: left;
   margin-left: 0; }
+  @media only screen and (min-width: 768px) {
+    .c-ph-stats__container .c-ph-stats-border__container {
+      height: 450px; } }
   @media only screen and (min-width: 1024px) {
     .c-ph-stats__container .c-ph-stats-border__container {
       width: calc(50%);
       float: left;
       margin-left: 0;
-      float: right; } }
+      float: right;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(25%);
+      transform: translateY(-50%); } }
   .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details {
     width: 160px;
     margin: auto;

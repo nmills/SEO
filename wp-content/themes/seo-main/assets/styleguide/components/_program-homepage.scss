@@ -308,6 +308,15 @@
 
 .c-ph-stats__container {
   .c-ph-stats__content {
+    @include grid-column(12, $no-gutter);
+
+    background: $light-gray;
+
+    @include grid-media($lg) {
+      position: relative;
+    }
+
+
     &.single {
       .old, .c-ph-stats-border__container {
         @include grid-column(12, $no-gutter);
@@ -316,10 +325,6 @@
   }
 
   .old {
-    background: $light-gray;
-    height: 500px;
-    position: relative;
-
     @include grid-column(12, $no-gutter);
 
     @include grid-media($lg) {
@@ -328,102 +333,197 @@
 
 
     .c-ratiometer_container {
-      height: auto;
-      padding: 0;
+      padding: 5%;
 
-      .c-ratiometer {
-        width: 160px;
-        margin: auto;
-        text-align: center;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      @include grid-media($lg) {}
+    }
 
-        @include grid-media($md) {
-          width: 320px;
-          transform: none;
+    .c-ratiometer {
+      width: calc(100%);
+      float: left;
+      position: relative;
+      margin: 0 auto;
+      float: none;
+
+      @include grid-media($sm) {
+        width: calc(80%);
+        float: left;
+        margin: 0 auto;
+        float: none;
+      }
+
+
+      @include grid-media($md) {
+        width: calc(75%);
+        float: left;
+        margin: 0 auto;
+        float: none;
+      }
+
+
+      @include grid-media($xl) {
+        width: calc(50%);
+        float: left;
+        margin: 0 auto;
+        float: none;
+      }
+
+
+      .c-rationmeter-positioner {
+        width: 250px;
+        display: flex;
+        margin: 0 auto;
+
+        @include grid-media($sm) {
+          width: 330px;
         }
 
 
-        .c-rationmeter-positioner {
-          height: 250px;
-
-          @include grid-media($md) {
-            height: 320px;
-          }
+        @include grid-media($md) {
+          width: 500px;
+        }
 
 
-          .c-ratiometer-meter_out {
-            .c-rationmeter-meter {
-              width: 9rem;
-              height: 9rem;
+        @include grid-media($xl) {
+          width: 730px;
+        }
+      }
+    }
 
-              @include grid-media($md) {
-                width: 15rem;
-                height: 15rem;
-              }
-            }
-          }
+    .c-ratiometer-meter_out {
+      width: 150px;
+      height: 150px;
+      border-radius: 100%;
+      padding: 10px;
 
-          .c-rationmeter-text {
-            left: 9rem;
-            width: 40%;
-            -webkit-transform: translateY(25%);
-            transform: translateY(25%);
-
-            @include grid-media($md) {
-              left: 15rem;
-              width: 30%;
-              -webkit-transform: translateY(10%);
-              transform: translateY(10%);
-            }
+      @include grid-media($sm) {
+        width: 190px;
+        height: 190px;
+      }
 
 
-            h1 {
-              @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 45px, $line-height: 1);
-
-              margin: 0;
-              text-align: center;
-
-              @include grid-media($sm) {
-                @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 70px, $line-height: 1);
-              }
+      @include grid-media($md) {
+        width: 240px;
+        height: 240px;
+      }
 
 
-              @include grid-media($md) {
-                @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 110px, $line-height: 1);
-              }
-            }
+      @include grid-media($xl) {
+        width: 340px;
+        height: 340px;
+      }
+    }
 
-            p {
-              @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 20px, $line-height: 1);
+    .c-rationmeter-meter {
+      width: 130px;
+      height: 130px;
+      background: red;
+      border-radius: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 8px solid #e5e7e7;
 
-              margin: 0;
-              text-align: center;
+      @include grid-media($sm) {
+        width: 170px;
+        height: 170px;
+      }
 
-              @include grid-media($md) {
-                @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
-              }
-            }
-          }
+
+      @include grid-media($md) {
+        width: 220px;
+        height: 220px;
+      }
+
+
+      @include grid-media($xl) {
+        width: 320px;
+        height: 320px;
+      }
+    }
+
+    .c-rationmeter-text {
+      width: calc(50%);
+      float: left;
+      margin-left: -30px;
+      margin-top: 30px;
+
+      @include grid-media($sm) {}
+
+
+      @include grid-media($md) {
+        width: calc(35%);
+        float: left;
+      }
+
+
+      @include grid-media($xl) {
+        width: calc(25%);
+        float: left;
+      }
+
+
+      // h1 {
+      //   font-size: 25px;
+
+      //   @include grid-media($md) {
+      //     font-size: 38px;
+      //   }
+
+      //   @include grid-media($lg) {
+      //     font-size: 48px;
+      //   }
+      // }
+      h1 {
+        @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 45px, $line-height: 1);
+
+        margin: 0;
+        text-align: center;
+
+        @include grid-media($sm) {
+          @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 70px, $line-height: 1);
+        }
+
+
+        @include grid-media($md) {
+          @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 110px, $line-height: 1);
+        }
+      }
+
+      p {
+        @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 20px, $line-height: 1);
+
+        margin: 0;
+        text-align: center;
+
+        @include grid-media($md) {
+          @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
         }
       }
     }
   }
 
   .c-ph-stats-border__container {
-    background: $light-gray;
-    height: 500px;
+    // background: $light-gray;
+    height: 350px;
     position: relative;
 
     @include grid-column(12, $no-gutter);
+
+    @include grid-media($md) {
+      height: 450px;
+    }
+
 
     @include grid-media($lg) {
       @include grid-column(6, $no-gutter);
 
       float: right;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(25%);
+      transform: translateY(-50%);
     }
 
 
