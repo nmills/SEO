@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5aa566900adec",
-            "label": "Multi-Content Component",
+            "label": "flexi content",
             "name": "flexi_content",
             "type": "flexible_content",
             "instructions": "",
@@ -86,7 +86,7 @@
                     "sub_fields": [
                         {
                             "key": "field_5aa567310adf1",
-                            "label": "Data Visualization",
+                            "label": "PL Data Visualization",
                             "name": "component:_pl:_data_visualization",
                             "type": "clone",
                             "instructions": "",
@@ -225,5 +225,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1523171722
+    "modified": 1523853725
 }

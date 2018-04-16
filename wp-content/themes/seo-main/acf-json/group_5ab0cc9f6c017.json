@@ -25,7 +25,7 @@
         },
         {
             "key": "field_5ab0ee07d5474",
-            "label": "Multi-Content Component",
+            "label": "flexi content",
             "name": "flexi_content",
             "type": "flexible_content",
             "instructions": "",
@@ -215,5 +215,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1523171421
+    "modified": 1523853724
 }
