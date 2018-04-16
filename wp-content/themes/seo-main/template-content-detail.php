@@ -1,6 +1,6 @@
 <?php
 /*
-    Template Name: Content Detail Page
+  Template Name: Content Detail
 */
 
 $context = Timber::get_context();
