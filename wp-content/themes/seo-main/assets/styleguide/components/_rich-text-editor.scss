@@ -66,6 +66,7 @@ Styleguide 1.2
     font-weight: bold;
     display: inline-block;
     margin: 0;
+
     @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 61px, $line-height: 1);
 
     &:before {
@@ -274,17 +275,20 @@ Styleguide 1.5
   .video {
     border-left: 10px solid $black;
     padding-left: 10px;
+        margin-bottom: 50px;
 
     .caption {
       margin: 0;
       margin-top: 15px;
-      font-style: italic;
-      color: $black;
 
-      @include type-4;
+      // font-style: italic;
+      // color: $black;
 
-      font-weight: $font-normal;
-      line-height: 1;
+      // @include type-4;
+
+      // font-weight: $font-normal;
+      // line-height: 1;
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
     }
   }
 }
