@@ -60,6 +60,7 @@ function generate_links_of_sites(){
 
 
 function generate_links_of_taxonomies_news(){
+  $current_page_link = get_permalink();
   $terms = get_terms( array(
     'taxonomy' => 'type',
     'hide_empty' => false,
