@@ -925,17 +925,6 @@ Styleguide 1.2
     font-weight: 100;
     font-size: 24px;
     line-height: 1.25; }
-  .page-title .page-title__text-spacing:after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid #e5e7e7;
-    width: 75px;
-    margin-top: 60px;
-    margin-bottom: 60px; }
-    @media only screen and (min-width: 1024px) {
-      .page-title .page-title__text-spacing:after {
-        width: 110px;
-        margin-left: 205px; } }
 
 /*
 Quote Offset
@@ -1711,7 +1700,7 @@ button.c-uie__calltoaction-secondary {
     font-size: 43px;
     line-height: 1;
     margin: 0;
-    padding: 40px 27px 40px 50px; }
+    padding: 40px 35px 40px 35px; }
     @media only screen and (min-width: 480px) {
       .c-cta__wrapper h3 {
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -1727,7 +1716,7 @@ button.c-uie__calltoaction-secondary {
         font-weight: 100;
         font-size: 43px;
         line-height: 1;
-        padding: 40px 27px 40px 50px; } }
+        padding: 40px 35px 40px 35px; } }
   .c-cta__wrapper .c-cta--image {
     width: 80%;
     height: 196px;
@@ -1737,14 +1726,14 @@ button.c-uie__calltoaction-secondary {
     .c-cta__wrapper .c-cta--image include grid-media($sm) {
       width: 294px; }
   .c-cta__wrapper .c-rte__link {
-    margin: 40px 0 45px 50px;
+    margin: 40px 35px 45px 35px;
     display: inline-block; }
     @media only screen and (min-width: 480px) {
       .c-cta__wrapper .c-rte__link {
         margin: 20px; } }
     @media only screen and (min-width: 768px) {
       .c-cta__wrapper .c-rte__link {
-        margin: 40px 0 45px 50px; } }
+        margin: 40px 35px 45px 35px; } }
 
 /*
 Gallery
@@ -2261,7 +2250,6 @@ Gallery
       width: calc(100%);
       float: left;
       margin-left: 0;
-      margin-right: 11%;
       float: right; } }
 
 .container.region_body {
@@ -2290,6 +2278,16 @@ Gallery
         margin-left: 0;
         float: right;
         max-width: 700px; } }
+    .container.region_body .region_main_content.title-border:before {
+      content: "";
+      display: block;
+      border-bottom: 1px solid #e5e7e7;
+      width: 75px;
+      margin-top: 60px;
+      margin-bottom: 60px; }
+      @media only screen and (min-width: 1024px) {
+        .container.region_body .region_main_content.title-border:before {
+          width: 110px; } }
 
 .container.region_bottom {
   width: calc(100%);

@@ -16,10 +16,7 @@
     .content {
       @include grid-media($sm) {
         max-width: 780px;
-
         @include grid-column(12, $no-gutter);
-
-        margin-right: 11%;
         float: right;
       }
     }
@@ -53,11 +50,20 @@
         max-width: 700px;
       }
 
+      &.title-border {
+        &:before {
+          content: "";
+          display: block;
+          border-bottom: 1px solid $light-gray;
+          width: 75px;
+          margin-top: 60px;
+          margin-bottom: 60px;
 
-      // .wysiwyg {
-      //   padding: 0;
-      // }
-   
+          @include grid-media($lg) {
+            width: 110px;
+          }
+        }
+      }   
     }
   }
 
