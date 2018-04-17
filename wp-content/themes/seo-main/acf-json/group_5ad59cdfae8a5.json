@@ -1,14 +1,14 @@
 {
-    "key": "group_5ac31e25124f3",
-    "title": "NEWS body",
+    "key": "group_5ad59cdfae8a5",
+    "title": "PL WYSIWYG",
     "fields": [
         {
-            "key": "field_5ac31e2e0fec0",
-            "label": "Body",
-            "name": "news_body",
+            "key": "field_5ad59cf9f21d0",
+            "label": "body",
+            "name": "body",
             "type": "wysiwyg",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523948257
+    "modified": 1523948866
 }

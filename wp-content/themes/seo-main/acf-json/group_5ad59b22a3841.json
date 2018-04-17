@@ -1,11 +1,11 @@
 {
-    "key": "group_5ac322774451b",
-    "title": "NEWS event module",
+    "key": "group_5ad59b22a3841",
+    "title": "PL Event Info",
     "fields": [
         {
-            "key": "field_5ac33b257ac20",
-            "label": "Include Event",
-            "name": "include_event",
+            "key": "field_5ad59b713f9ef",
+            "label": "Include Event Info",
+            "name": "include_event_info",
             "type": "radio",
             "instructions": "",
             "required": 0,
@@ -27,43 +27,16 @@
             "return_format": "value"
         },
         {
-            "key": "field_5ac322b050cf9",
-            "label": "Heading Text",
-            "name": "event_heading_text",
-            "type": "text",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5ac33b257ac20",
-                        "operator": "==",
-                        "value": "yes"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5ac322c650cfa",
-            "label": "Body Text",
-            "name": "event_body_text",
+            "key": "field_5ad59bb03f9f0",
+            "label": "Event Details",
+            "name": "event_info_event_details",
             "type": "textarea",
             "instructions": "",
             "required": 1,
             "conditional_logic": [
                 [
                     {
-                        "field": "field_5ac33b257ac20",
+                        "field": "field_5ad59b713f9ef",
                         "operator": "==",
                         "value": "yes"
                     }
@@ -81,16 +54,16 @@
             "new_lines": ""
         },
         {
-            "key": "field_5ac322d450cfb",
+            "key": "field_5ad59bbc3f9f1",
             "label": "Button Label",
-            "name": "event_button_label",
+            "name": "event_info_button_label",
             "type": "text",
             "instructions": "",
             "required": 1,
             "conditional_logic": [
                 [
                     {
-                        "field": "field_5ac33b257ac20",
+                        "field": "field_5ad59b713f9ef",
                         "operator": "==",
                         "value": "yes"
                     }
@@ -108,16 +81,16 @@
             "maxlength": ""
         },
         {
-            "key": "field_5ac322eb50cfc",
-            "label": "Destination Url",
-            "name": "event_destination_url",
+            "key": "field_5ad59bc93f9f2",
+            "label": "Button URL",
+            "name": "event_info_button_url",
             "type": "url",
             "instructions": "",
             "required": 1,
             "conditional_logic": [
                 [
                     {
-                        "field": "field_5ac33b257ac20",
+                        "field": "field_5ad59b713f9ef",
                         "operator": "==",
                         "value": "yes"
                     }
@@ -149,5 +122,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523948284
+    "modified": 1523948870
 }

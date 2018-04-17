@@ -137,7 +137,7 @@ Styleguide 3.1
     @include grid-media($lg) {
       @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 120px, $line-height: 0.8);
 
-      max-width: 560px;
+      max-width: 600px;
       background: none;
       float: left;
       margin: 0;

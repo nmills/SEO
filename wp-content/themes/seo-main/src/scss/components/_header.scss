@@ -181,7 +181,8 @@ header {
 
 .c-nav--bottom {
   display: none;
-  overflow-y: auto;
+
+  // overflow-y: auto;
   max-height: 85vh;
   background: $red;
 
@@ -194,11 +195,11 @@ header {
     max-width: 1440px;
     margin: 0 auto;
     float: none;
+    position: relative;
   }
 }
 
 .c-nav__nav--left {
-  position: relative;
   float: left;
   width: 100%;
 
@@ -218,6 +219,17 @@ header {
 
 
       &.has-submenu {
+        // position: relative;
+
+        // &:after {
+        //   content: "";
+        //   position: absolute;
+        //   border-bottom: 2px solid black;
+        //   right: 0;
+        //   bottom: 0;
+        //   width: 15px;
+        // }
+
         > a {
           position: relative;
 
@@ -252,9 +264,9 @@ header {
             background: none;
           }
 
-          .main-nav-dropdown {
-            display: none !important;
-          }
+          // .main-nav-dropdown {
+          //   display: none !important;
+          // }
         }
       }
 
@@ -295,20 +307,41 @@ header {
         @include grid-media($lg) {
           display: none;
           position: absolute;
+          width: 100%;
+          left: 0;
           top: 30px;
-          background: $black;
-          padding-bottom: 15px;
+          background: $white;
+          padding: 15px;
 
           > li {
             > a {
               padding: 5px 25px;
 
-              @include type-5($color: $white);
+              @include type-5($color: $black);
+
+              font-weight: $font-bold;
 
               &,
               &:hover,
               &:focus {
                 border: none;
+                border-bottom: 2px solid $white;
+              }
+
+              &:hover {
+                background: none;
+                color: $black;
+                position: relative;
+
+                &:after {
+                  content: "";
+                  position: absolute;
+                  width: calc(100% - 50px);
+                  border-bottom: 2px solid $black;
+                  left: 50%;
+                  bottom: -17px;
+                  transform: translateX(-50%);
+                }
               }
             }
           }
@@ -317,15 +350,18 @@ header {
     }
   }
 
-  // ul > li > a:hover + .main-nav-dropdown,
-  // .main-nav-dropdown:hover {
-  //   display: block;
-  // }
+  ul > li > a:hover + .main-nav-dropdown,
+  .main-nav-dropdown:hover {
+    display: block;
+  }
 }
 
 .main-nav-dropdown {
   display: none;
   width: 100%;
+  -webkit-box-shadow: 0px 10px 25px -7px rgba(107, 107, 107, 0.6);
+  -moz-box-shadow: 0px 10px 25px -7px rgba(107, 107, 107, 0.6);
+  box-shadow: 0px 10px 35px -14px rgba(107, 107, 107, 0.6);
 }
 
 .c-nav__nav--right {

@@ -1,6 +1,6 @@
 {
     "key": "group_5ac31b48281f0",
-    "title": "component: NEWS header",
+    "title": "NEWS header",
     "fields": [
         {
             "key": "field_5ac31b546920b",
@@ -110,5 +110,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523854023
+    "modified": 1523948288
 }
