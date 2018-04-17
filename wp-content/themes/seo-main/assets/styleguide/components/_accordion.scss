@@ -245,7 +245,7 @@ Styleguide 4.1
 
 .container {
   &.faq {
-    padding: 0;   
+    padding: 0;
 
     @include grid-media($sm) {
       @include grid-column(8, $no-gutter);

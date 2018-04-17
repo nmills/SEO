@@ -4493,7 +4493,8 @@ body {
     .c-share__container .c-share__buttons .twitter-share-button {
       width: calc(41.66667%);
       float: left;
-      margin-left: 0; }
+      margin-left: 0;
+      margin-left: 5px; }
       .c-share__container .c-share__buttons .twitter-share-button .resp-sharing-button {
         padding: 0; }
         .c-share__container .c-share__buttons .twitter-share-button .resp-sharing-button .resp-sharing-button__icon svg {
