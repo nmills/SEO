@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ac33a7f0e0dc",
-            "label": "include cta",
+            "label": "Include CTA",
             "name": "include_cta",
             "type": "radio",
             "instructions": "",
@@ -28,7 +28,7 @@
         },
         {
             "key": "field_5ac3215926e48",
-            "label": "cta text",
+            "label": "CTA Text",
             "name": "cta_text",
             "type": "text",
             "instructions": "",
@@ -55,7 +55,7 @@
         },
         {
             "key": "field_5ac321592780f",
-            "label": "button name",
+            "label": "Button Name",
             "name": "cta_btn_name",
             "type": "text",
             "instructions": "",
@@ -82,7 +82,7 @@
         },
         {
             "key": "field_5ac3215927423",
-            "label": "link",
+            "label": "Link",
             "name": "cta_link",
             "type": "url",
             "instructions": "",
@@ -122,5 +122,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1522744850
+    "modified": 1523854082
 }

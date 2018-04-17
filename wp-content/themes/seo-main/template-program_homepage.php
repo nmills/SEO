@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Program Home page
+	Template Name: Program Homepage
 */
 
 $context = Timber::get_context();
@@ -13,7 +13,7 @@ $context['post'] = $post;
 /* Wiring Recent News and events */
 $args = array(
   'post_type' => 'news',
-  'posts_per_page'=> 2,
+  'posts_per_page'=> 3,
   'order' => 'DESC'
 );
 $context['recent_posts'] = Timber::get_posts($args);

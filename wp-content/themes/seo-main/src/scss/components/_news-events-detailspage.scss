@@ -24,7 +24,7 @@
 
 .c-news-header {
   .container {
-    max-width: 660px;
+    max-width: 860px;
     margin: 0 auto;
 
     .c-news-header__breadcrumb {
@@ -195,6 +195,7 @@
 
     @include grid-media($md) {
       padding: 35px;
+      padding-bottom: 57px;
     }
   }
 
@@ -334,6 +335,8 @@
 
     .twitter-share-button {
       @include grid-column(5, $no-gutter);
+
+      margin-left: 5px;
 
       .resp-sharing-button {
         padding: 0;

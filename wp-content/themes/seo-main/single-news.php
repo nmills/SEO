@@ -18,7 +18,7 @@ $context['post'] = $post;
 
 $args = array(
   'post_type' => 'news',
-  'posts_per_page'=> 2,
+  'posts_per_page'=> 3,
   'post__not_in' => array ($post->ID),
   'meta_query' => array(
 		array(
