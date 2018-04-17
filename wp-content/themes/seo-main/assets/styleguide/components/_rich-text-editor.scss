@@ -198,9 +198,8 @@ Styleguide 1.4
     li {
       position: relative;
       padding-left: 40px;
-      
-      @include type-custom($color: $black, $font-weight: $font-medium, $font-size: 20px, $line-height: 1.2);
 
+      @include type-custom($color: $black, $font-weight: $font-medium, $font-size: 20px, $line-height: 1.2);
 
       &:before {
         content: "";

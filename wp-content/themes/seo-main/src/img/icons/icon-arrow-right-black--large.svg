@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="53px" height="34px" viewBox="0 0 53 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-    <title>Submit</title>
+    <title>Submit Hover</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Submit" fill="#FFFFFF" fill-rule="nonzero">
+        <g id="Submit-Hover" fill="#050505" fill-rule="nonzero">
             <polygon id="Line-7" points="46.4904701 13.2 46.4904701 18.8 0.2 18.8 0.2 13.2"></polygon>
             <polygon id="Path-2" transform="translate(41.690470, 16.989949) rotate(-90.000000) translate(-41.690470, -16.989949) " points="41.6904701 19.540202 54.7105711 6.52010101 58.6703691 10.479899 41.6904701 27.459798 24.7105711 10.479899 28.6703691 6.52010101"></polygon>
         </g>

@@ -256,6 +256,11 @@
   background: none;
 }
 
+.c-searchform__button input.pseudo-class-hover,
+.c-searchform__button input.pseudo-class-focus {
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg");
+}
+
 .c-searchform__close-btn.pseudo-class-hover span:before,
 .c-searchform__close-btn.pseudo-class-focus span:before {
   transform: rotate(90deg);
