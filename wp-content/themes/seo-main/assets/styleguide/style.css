@@ -4371,7 +4371,8 @@ body {
     padding-bottom: 60px; }
     @media only screen and (min-width: 768px) {
       .c-news-event .container {
-        padding: 35px; } }
+        padding: 35px;
+        padding-bottom: 57px; } }
   .c-news-event .c-news-event__container .c-news-event__content h3 {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #ffffff;
