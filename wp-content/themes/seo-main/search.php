@@ -12,10 +12,6 @@ if ( ! class_exists( 'Timber' ) ) {
 }
 $context = Timber::get_context();
 $context['posts'] = Timber::get_posts();
-$templates = array( 'index.twig' );
-
-if ( is_post_type_archive('people') ) {
-  array_unshift( $templates, 'index-grid.twig' );
-}
+$templates = array( 'search.twig' );
 
 Timber::render( $templates, $context );
