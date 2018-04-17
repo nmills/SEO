@@ -1,33 +1,30 @@
 {% extends "base.twig" %}
 
 {% block content %}
-  {# <div class="container"> #}
   <main id="content" class="program-landing-page">
     <div class="page-content">
-      {# <article id="post-{{post.ID}}" class="article post-type-{{post.post_type}}" role="article" itemscope itemtype="http://schema.org/BlogPosting"> #}
-        {# <section class="entry-content container" itemprop="articleBody"> #}
-
           {# Amalan new codes #}
           <div class="region_hero">
             <div class="page-title">
               <h1>{{post.title}}</h1>
             </div>
+
+            {% set component = post.get_field('event_info') %}
+            {% include ['components/component_pl_event_info.twig'] %}
+
             {% for component in post.get_field('flexi_content') %}
               {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
             {% endfor %}
           </div>
 
-        {# </section> <!-- /.entry-content --> #}
         {% block article_footer %}
         {% endblock %}
-      {# </article> <!-- /.article --> #}
-    </div> <!-- /.page-content.small-12.large-8.columns -->
+    </div>
 
     {% block sidebar %}
       <aside class="page-sidebar">
         {{sidebar}}
-      </aside> <!-- /.page-sidebar -->
+      </aside>
     {% endblock %}
-  </main> <!-- /#content -->
-  {# </div> #}
+  </main>
 {% endblock %}
