@@ -1581,7 +1581,7 @@ Styleguide 3.1
         font-weight: 100;
         font-size: 120px;
         line-height: 0.8;
-        max-width: 560px;
+        max-width: 600px;
         background: none;
         float: left;
         margin: 0;
@@ -2255,13 +2255,17 @@ Gallery
 
 .container.region_title {
   max-width: 1280px; }
-  @media only screen and (min-width: 480px) {
-    .container.region_title .content {
-      max-width: 780px;
-      width: calc(100%);
-      float: left;
-      margin-left: 0;
-      float: right; } }
+  .container.region_title .content {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    max-width: 780px; }
+    @media only screen and (min-width: 1024px) {
+      .container.region_title .content {
+        margin-left: 220px; } }
+    @media only screen and (min-width: 1440px) {
+      .container.region_title .content {
+        margin-left: 160px; } }
 
 .container.region_body {
   max-width: 1130px;
@@ -2290,16 +2294,18 @@ Gallery
         margin-left: 0;
         float: right;
         max-width: 700px; } }
-    .container.region_body .region_main_content.title-border:before {
-      content: "";
-      display: block;
-      border-bottom: 1px solid #e5e7e7;
-      width: 75px;
-      margin-top: 60px;
-      margin-bottom: 60px; }
-      @media only screen and (min-width: 1024px) {
-        .container.region_body .region_main_content.title-border:before {
-          width: 110px; } }
+  .container.region_body.title-border .region_main_content:before {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #e5e7e7;
+    width: 75px;
+    margin-top: 60px;
+    margin-bottom: 60px; }
+    @media only screen and (min-width: 1024px) {
+      .container.region_body.title-border .region_main_content:before {
+        width: 110px; } }
+  .container.region_body.title-border .region_left_rail {
+    margin-top: 120px; }
 
 .container.region_bottom {
   width: calc(100%);

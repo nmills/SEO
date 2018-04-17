@@ -14,10 +14,15 @@
     max-width: 1280px;
 
     .content {
-      @include grid-media($sm) {
-        max-width: 780px;
-        @include grid-column(12, $no-gutter);
-        float: right;
+      @include grid-column(12, $no-gutter);
+      max-width: 780px;
+
+      @include grid-media($lg) {
+        margin-left: 220px;
+      }
+
+      @include grid-media($xl) {
+        margin-left: 160px;
       }
     }
   }
@@ -50,8 +55,10 @@
         float: right;
         max-width: 700px;
       }
+    }
 
-      &.title-border {
+    &.title-border {
+      .region_main_content {
         &:before {
           content: "";
           display: block;
@@ -64,7 +71,11 @@
             width: 110px;
           }
         }
-      }   
+      }
+
+      .region_left_rail {
+        margin-top: 120px;
+      }
     }
   }
 
