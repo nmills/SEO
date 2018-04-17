@@ -2,19 +2,8 @@
 
 {% block content %}
 
-  <div class="facets">
-    {{facet_search}}
-{#     {{facet_countries}}
-    {{facet_topics}} #}
-    {{facet_categories}}
-  </div>
-
-  <div class="posts">
-    {{posts}}
-  </div>
-
-  <div class="pagination">
-    {{pagination}}
-  </div>
+{% for post in posts %}
+  {% include ['partials/search-teaser.twig', 'teaser.twig'] %}
+{% endfor %}
 
 {% endblock %}
