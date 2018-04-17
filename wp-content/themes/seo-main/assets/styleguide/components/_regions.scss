@@ -27,6 +27,8 @@
 
   &.region_body {
     max-width: 1130px;
+    
+      margin-bottom: 50px;
 
     .region_left_rail {
       @include grid-column(12, $no-gutter);
@@ -38,6 +40,8 @@
 
         max-width: 300px;
       }
+
+
     }
 
     .region_main_content {

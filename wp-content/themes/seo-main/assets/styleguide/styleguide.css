@@ -2276,7 +2276,8 @@ Gallery
       float: right; } }
 
 .container.region_body {
-  max-width: 1130px; }
+  max-width: 1130px;
+  margin-bottom: 50px; }
   .container.region_body .region_left_rail {
     width: calc(100%);
     float: left;
