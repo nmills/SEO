@@ -861,8 +861,8 @@ Styleguide 1.1
   font-size: 15.1px;
   line-height: 1.59;
   transition: all 0.4s cubic-bezier(0.51, 0.92, 0.24, 1.15);
-  font-weight: bold;
-  border-bottom: 2px solid #7cb4f6;
+  font-weight: 500;
+  border-bottom: 4px solid #7cb4f6;
   text-decoration: none; }
   @media only screen and (min-width: 768px) {
     .c-rte a,
@@ -876,7 +876,7 @@ Styleguide 1.1
   .c-rte__accordion a:hover,
   .c-rte__accordion a:focus {
     color: #7cb4f6;
-    border-bottom: 2px solid #050505; }
+    border-bottom: 4px solid #050505; }
 
 /*
 Heading
@@ -961,29 +961,27 @@ blockquote,
 .c-rte__accordion blockquote {
   width: 100%;
   float: right;
-  padding: 20px;
+  padding: 35px;
   background: #e5e7e7;
   border-bottom-right-radius: 150px;
-  padding-right: 10%;
+  padding-right: 8%;
   margin-left: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  max-width: 320px; }
   @media only screen and (min-width: 1024px) {
     blockquote,
     .c-rte__offset-quote,
     .c-rte__accordion blockquote {
-      width: 40%;
       margin-left: 60px;
       margin-bottom: 60px; } }
   blockquote p,
   .c-rte__offset-quote p,
   .c-rte__accordion blockquote p {
-    font-size: 12px;
-    color: #050505; }
-    @media only screen and (min-width: 1024px) {
-      blockquote p,
-      .c-rte__offset-quote p,
-      .c-rte__accordion blockquote p {
-        font-size: 25px; } }
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 200;
+    font-size: 38px;
+    line-height: 1.2; }
     blockquote p em,
     .c-rte__offset-quote p em,
     .c-rte__accordion blockquote p em {
@@ -993,7 +991,7 @@ blockquote,
       font-weight: bold;
       text-transform: uppercase;
       font-size: 12px;
-      margin-top: 10px;
+      margin-top: 40px;
       font-style: normal; }
 
 /*
@@ -1021,27 +1019,29 @@ sg-wrapper:
 
 Styleguide 1.4
 */
-.c-rte ul li, .c-rte__accordion ul li {
-  position: relative;
-  padding-left: 40px;
-  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #050505;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2; }
-  .c-rte ul li:before, .c-rte__accordion ul li:before {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 10px;
-    background: #820d1b;
-    position: absolute;
-    left: 0;
-    top: 5px; }
-  .c-rte ul li:after, .c-rte__accordion ul li:after {
-    content: "";
-    display: block;
-    margin-bottom: 25px; }
+.c-rte ul, .c-rte__accordion ul {
+  margin: 50px 0px; }
+  .c-rte ul li, .c-rte__accordion ul li {
+    position: relative;
+    padding-left: 40px;
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2; }
+    .c-rte ul li:before, .c-rte__accordion ul li:before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 10px;
+      background: #820d1b;
+      position: absolute;
+      left: 0;
+      top: 5px; }
+    .c-rte ul li:after, .c-rte__accordion ul li:after {
+      content: "";
+      display: block;
+      margin-bottom: 25px; }
 
 /*
 Numbered List
@@ -1068,25 +1068,27 @@ sg-wrapper:
 
 Styleguide 1.5
 */
-.c-rte ol li, .c-rte__accordion ol li {
-  position: relative;
-  padding-left: 40px;
-  counter-increment: table-ol;
-  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #050505;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2; }
-  .c-rte ol li:before, .c-rte__accordion ol li:before {
-    content: counter(table-ol);
-    position: absolute;
-    left: 0;
-    color: #820d1b;
-    font-weight: 700; }
-  .c-rte ol li:after, .c-rte__accordion ol li:after {
-    content: "";
-    display: block;
-    margin-bottom: 25px; }
+.c-rte ol, .c-rte__accordion ol {
+  margin: 50px 0px; }
+  .c-rte ol li, .c-rte__accordion ol li {
+    position: relative;
+    padding-left: 40px;
+    counter-increment: table-ol;
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2; }
+    .c-rte ol li:before, .c-rte__accordion ol li:before {
+      content: counter(table-ol);
+      position: absolute;
+      left: 0;
+      color: #820d1b;
+      font-weight: 700; }
+    .c-rte ol li:after, .c-rte__accordion ol li:after {
+      content: "";
+      display: block;
+      margin-bottom: 25px; }
 
 .c-rte .video {
   border-left: 10px solid #050505;
@@ -1108,7 +1110,8 @@ Styleguide 1.5
   padding-left: 10px; }
 
 .c-rte p {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 40px; }
 
 /*
 Accodion

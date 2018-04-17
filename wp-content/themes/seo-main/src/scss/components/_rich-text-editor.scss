@@ -30,14 +30,14 @@ Styleguide 1.1
   @include default($color: $black);
 
   transition: all 0.4s $cubic-transition;
-  font-weight: bold;
-  border-bottom: 2px solid $light-blue;
+  font-weight: $font-medium;
+  border-bottom: 4px solid $light-blue;
   text-decoration: none;
 
   &:hover,
   &:focus {
     color: $light-blue;
-    border-bottom: 2px solid $black;
+    border-bottom: 4px solid $black;
   }
 }
 
@@ -131,28 +131,27 @@ blockquote,
 .c-rte__accordion blockquote {
   width: 100%;
   float: right;
-  padding: 20px;
+  padding: 35px;
   background: $light-gray;
   border-bottom-right-radius: 150px;
-  padding-right: 10%;
+  padding-right: 8%;
   margin-left: 30px;
   margin-bottom: 30px;
+  max-width: 320px;
 
   @include grid-media($lg) {
-    width: 40%;
+    // width: 40%;
     margin-left: 60px;
     margin-bottom: 60px;
   }
 
 
   p {
-    font-size: 12px;
-    color: $black;
+    @include type-custom($color: $black, $font-weight: $font-thin, $font-size: 38px, $line-height: 1.2);
 
-    @include grid-media($lg) {
-      font-size: 25px;
-    }
-
+    // @include grid-media($lg) {
+    //   font-size: 25px;
+    // }
 
     em {
       float: left;
@@ -161,7 +160,7 @@ blockquote,
       font-weight: bold;
       text-transform: uppercase;
       font-size: 12px;
-      margin-top: 10px;
+      margin-top: 40px;
       font-style: normal;
     }
   }
@@ -195,6 +194,8 @@ Styleguide 1.4
 
 .c-rte, .c-rte__accordion {
   ul {
+    margin: 50px 0px;
+
     li {
       position: relative;
       padding-left: 40px;
@@ -249,6 +250,8 @@ Styleguide 1.5
 
 .c-rte, .c-rte__accordion {
   ol {
+    margin: 50px 0px;
+
     li {
       position: relative;
       padding-left: 40px;
@@ -308,5 +311,6 @@ Styleguide 1.5
 .c-rte {
   p {
     margin-top: 0;
+    margin-bottom: 40px;
   }
 }
