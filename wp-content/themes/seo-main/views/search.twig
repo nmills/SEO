@@ -1,9 +1,40 @@
 {% extends "base.twig" %}
 
 {% block content %}
+	<section class="c-search-results__wrapper">
+		<div class="container">
+			<div class="content">
+				<div class="page-title">
+					<h1>
+						<span>Search results for</span><br>
+						"Conferences in New York"
+					</h1>
+				</div>
+			</div>
+		</div>
+	</section>
 
-{% for post in posts %}
-  {% include ['partials/search-teaser.twig', 'teaser.twig'] %}
-{% endfor %}
+	<div class="container">
+		<div class="c-main-content">
+			<div class="c-search-filter">
+				<div class="c-search-filter__filter">
+					<label>Program:</label>
+					<select>
+						<option value="0">All</option>
+						<option value="1">This</option>
+						<option value="2">That</option>
+					</select>
+				</div>
+				<a href="#" class="c-search-filter__btn js-search-filter__btn">
+					Search again <span class="icon icon-search-red--small"></span>
+				</a>
+			</div>
 
+			{% include ['search-results-form.twig'] %}
+
+			{% for post in posts %}
+				{% include ['partials/search-teaser.twig', 'teaser.twig'] %}
+			{% endfor %}
+		</div>
+	</div>
 {% endblock %}

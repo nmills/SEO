@@ -117,7 +117,7 @@
   input {
     width: 30px;
     height: 20px;
-    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg") no-repeat;
+    background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg") no-repeat;
     background-size: contain !important;
     border: none;
     outline: none;
@@ -128,7 +128,7 @@
 
     &:hover,
     &:focus {
-      background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg");
+      background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg");
     }
 
     @include grid-media($md) {
