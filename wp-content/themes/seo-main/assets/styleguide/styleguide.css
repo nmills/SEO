@@ -1450,19 +1450,19 @@ iframe {
   display: inline-block; }
 
 .icon-search--small:before {
-  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-search--small.svg") center center no-repeat;
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-search--small.svg") center center no-repeat;
   background-size: contain;
   width: 20px;
   height: 20px; }
 
 .icon-search--large:before {
-  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-search--large.svg") center center no-repeat;
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-search--large.svg") center center no-repeat;
   background-size: contain;
   width: 50px;
   height: 50px; }
 
 .icon-close--large:before {
-  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-close--large.svg") center center no-repeat;
+  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-close--large.svg") center center no-repeat;
   background-size: contain;
   width: 35px;
   height: 35px;
@@ -5785,7 +5785,7 @@ header {
 
 .c-searchform__container {
   background: #eb0029;
-  padding: 20px 30px;
+  padding: 15px 30px;
   max-width: 1440px;
   margin: 0 auto; }
   .c-searchform__container::after {
@@ -5835,13 +5835,16 @@ header {
 .c-searchform__button {
   margin: 12px 30px 0 0; }
   .c-searchform__button input {
-    width: 48px;
-    height: 36px;
-    background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg");
+    width: 53px;
+    height: 34px;
+    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg");
+    background-size: contain !important;
     border: none;
     outline: none; }
     .c-searchform__button input::placeholder {
       display: none; }
+    .c-searchform__button input:hover, .c-searchform__button input:focus {
+      background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg"); }
 
 .c-searchform__close-btn {
   margin-top: 12px;
