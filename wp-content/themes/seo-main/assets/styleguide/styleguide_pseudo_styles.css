@@ -101,7 +101,7 @@
 .c-rte__accordion a.pseudo-class-hover,
 .c-rte__accordion a.pseudo-class-focus {
   color: #7cb4f6;
-  border-bottom: 2px solid #050505;
+  border-bottom: 4px solid #050505;
 }
 
 .c-accordion__filter li.pseudo-class-hover {
@@ -246,6 +246,11 @@
   background: #050505;
 }
 
+.c-nav__nav--left ul > li > a.pseudo-class-hover + .main-nav-dropdown,
+.c-nav__nav--left .main-nav-dropdown.pseudo-class-hover {
+  display: block;
+}
+
 .c-nav__nav--right ul > li.pseudo-class-first-child {
   margin-right: 3px;
 }
@@ -254,6 +259,11 @@
 .c-nav__elements--mobile .c-nav__multisite-nav ul > li > a.pseudo-class-focus {
   color: #ffffff;
   background: none;
+}
+
+.c-searchform__button input.pseudo-class-hover,
+.c-searchform__button input.pseudo-class-focus {
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg");
 }
 
 .c-searchform__close-btn.pseudo-class-hover span:before,

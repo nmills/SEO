@@ -1,9 +1,9 @@
 {
-    "key": "group_5aa658b8d2061",
-    "title": "Medium Image Gallery",
+    "key": "group_5ad59f353660c",
+    "title": "PL Medium Image Gallery",
     "fields": [
         {
-            "key": "field_5aa658b917aac",
+            "key": "field_5ad59f3565534",
             "label": "Section Header",
             "name": "section_header",
             "type": "text",
@@ -22,7 +22,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5aa658b917cc3",
+            "key": "field_5ad59f3565748",
             "label": "repeater",
             "name": "repeater",
             "type": "repeater",
@@ -41,7 +41,7 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_5aa658b95111a",
+                    "key": "field_5ad59f359b85c",
                     "label": "photo",
                     "name": "photo",
                     "type": "image_crop",
@@ -65,7 +65,7 @@
                     "library": "all"
                 },
                 {
-                    "key": "field_5aa658b95131d",
+                    "key": "field_5ad59f359ba4e",
                     "label": "heading",
                     "name": "heading",
                     "type": "text",
@@ -84,7 +84,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5aa658b951502",
+                    "key": "field_5ad59f359bc5e",
                     "label": "subheading",
                     "name": "subheading",
                     "type": "text",
@@ -103,11 +103,11 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5aa658b95171c",
+                    "key": "field_5ad59f359bec4",
                     "label": "destination link",
                     "name": "destination_link",
                     "type": "url",
-                    "instructions": "include http or https in the URL",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -119,6 +119,21 @@
                     "placeholder": ""
                 }
             ]
+        },
+        {
+            "key": "field_5ad59f4bca6c5",
+            "label": "Destination",
+            "name": "destination",
+            "type": "link",
+            "instructions": "include http or https in the URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -138,5 +153,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523956577
+    "modified": 1523956788
 }

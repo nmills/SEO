@@ -15,7 +15,7 @@
     @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
 
     margin: 0;
-    padding: 40px 27px 40px 50px;
+    padding: 40px 35px 40px 35px;
 
     @include grid-media($sm) {
       @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
@@ -27,7 +27,7 @@
     @include grid-media($md) {
       @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
 
-      padding: 40px 27px 40px 50px;
+      padding: 40px 35px 40px 35px;
     }
   }
 
@@ -45,7 +45,7 @@
   }
 
   .c-rte__link {
-    margin: 40px 0 45px 50px;
+    margin: 40px 35px 45px 35px;
     display: inline-block;
 
     @include grid-media($sm) {
@@ -54,7 +54,7 @@
 
 
     @include grid-media($md) {
-      margin: 40px 0 45px 50px;
+      margin: 40px 35px 45px 35px;
     }
   }
 }

@@ -93,7 +93,7 @@
             "label": "Destination",
             "name": "destination",
             "type": "link",
-            "instructions": "",
+            "instructions": "include http or https in the URL",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -121,5 +121,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523162148
+    "modified": 1523956374
 }

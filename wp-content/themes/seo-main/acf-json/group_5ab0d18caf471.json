@@ -42,7 +42,7 @@
         },
         {
             "key": "field_5ab0d1e7d67f1",
-            "label": "Repeater",
+            "label": "repeater",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -61,7 +61,7 @@
             "sub_fields": [
                 {
                     "key": "field_5ab0d1f3d67f2",
-                    "label": "Image",
+                    "label": "image",
                     "name": "image",
                     "type": "image",
                     "instructions": "",
@@ -88,7 +88,7 @@
                     "label": "url",
                     "name": "url",
                     "type": "text",
-                    "instructions": "",
+                    "instructions": "include http or https in the URL",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -128,7 +128,7 @@
             "label": "Closing Link",
             "name": "closing_link",
             "type": "link",
-            "instructions": "",
+            "instructions": "include http or https in the URL",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -156,5 +156,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523163819
+    "modified": 1523956697
 }

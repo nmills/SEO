@@ -15,7 +15,6 @@
     top: -105px;
   }
 
-
   &.active {
     top: 0;
     opacity: 1;
@@ -26,9 +25,13 @@
   @include grid-container;
 
   background: $red;
-  padding: 20px 30px;
+  padding: 15px;
   max-width: 1440px;
   margin: 0 auto;
+
+  @include grid-media($md) {
+    padding: 15px 30px;
+  }
 }
 
 .c-searchform__search-icon,
@@ -40,32 +43,51 @@
 }
 
 .c-searchform__search-icon {
-  padding-right: 30px;
+  padding-right: 15px;
   margin-top: 5px;
+
+  @include grid-media($md) {
+    padding-right: 30px;
+  }
+
+  .icon {
+    &:before {
+      width: 20px;
+      height: 20px;
+
+      @include grid-media($md) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
 }
 
 .c-searchform__textfield {
   border-left: 2px solid $black;
-  padding-left: 30px;
+  padding-left: 15px;
   width: 65%;
+  width: calc(100% - 120px);
 
-  @include grid-media($lg) {
-    width: 79%;
+  @include grid-media($md) {
+    padding-left: 30px;
+    width: calc(100% - 235px);
   }
-
 
   input {
     outline: none;
-
-    @include grid-column(12);
-
-    @include type-custom($color: $white, $font-weight: $font-normal, $font-size: 60px, $line-height: 1.2);
-
     background: none;
     border: none;
     margin-left: 0;
     max-height: 60px;
     font-weight: $font-thinnest;
+    @include type-custom($color: $white, $font-weight: $font-normal, $font-size: 24px, $line-height: 1.2);
+    @include grid-column(12);
+    margin-left: 0;
+
+    @include grid-media($md) {
+      @include type-custom($color: $white, $font-weight: $font-normal, $font-size: 60px, $line-height: 1.2);
+    }
 
     &::placeholder {
       color: $white;
@@ -75,32 +97,67 @@
 
 .c-searchform__right {
   float: right;
+
+  .seporator {
+    height: 30px;
+
+    @include grid-media($md) {
+      height: 60px;
+    }
+  }
 }
 
 .c-searchform__button {
-  margin: 12px 30px 0 0;
+  margin: 3px 15px 0 0;
+
+  @include grid-media($md) {
+    margin: 12px 30px 0 0;  
+  }
 
   input {
-    width: 48px;
-    height: 36px;
-    background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg");
+    width: 30px;
+    height: 20px;
+    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg") no-repeat;
+    background-size: contain !important;
     border: none;
     outline: none;
 
     &::placeholder {
       display: none;
     }
+
+    &:hover,
+    &:focus {
+      background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg");
+    }
+
+    @include grid-media($md) {
+      width: 53px;
+      height: 34px;
+    }
   }
 }
 
 .c-searchform__close-btn {
-  margin-top: 12px;
-  padding-left: 30px;
+  margin-top: 0;
+  padding-left: 15px;
+
+  @include grid-media($md) {
+    margin-top: 12px;
+    padding-left: 30px;
+  }
 
   span {
     &:before {
       transform: rotate(0);
       transition: all 0.3s $cubic-transition-2;
+      width: 20px;
+      height: 20px;
+
+      @include grid-media($md) {
+        width: 35px;
+        height: 35px;
+      }
     }
   }
 
