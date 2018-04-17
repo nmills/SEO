@@ -1,0 +1,37 @@
+<section>
+  <div class="container">
+    <div class="c-gallery__section-header">
+      <h1>{{component.section_header}}</h1>
+    </div>
+    <div class="c-gallery__container image-medium">
+      {% for item in component.repeater %}
+        <div class="c-gallery__gallery-item">
+          {% if item.destination_link %}
+            <a href="{{item.destination_link}}">
+              <div class="c-gallery__image" style="background-image: url({{Image(item.photo).src }})"></div>
+            </a>  
+          {% else %}
+             <div class="c-gallery__image" style="background-image: url({{Image(item.photo).src }})"></div>
+          {% endif %}      
+          {# <img src="" /> #}
+          <div class="item__heading">
+            <h3>{{item.heading}}</h3>
+          </div>
+          <div class="item__sub-heading">
+            <p>{{item.subheading}}</p>
+          </div>
+          {% if item.destination_link %}
+            <div class="item__link">
+              <a href="{{item.destination_link}}" class="c-rte__link">Read full bio</a>
+            </div>
+          {% endif %}       
+        </div>
+      {% endfor %}
+    </div>
+
+    {# Adding the new link option #}
+    {% if component['destination'] %}
+      <a href="{{component['destination']['url']}}">{{component['destination']['title']}}</a>
+    {% endif %}
+  </div>
+</section>
