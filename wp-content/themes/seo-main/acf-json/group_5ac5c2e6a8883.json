@@ -1,6 +1,6 @@
 {
     "key": "group_5ac5c2e6a8883",
-    "title": "component: NL promotional",
+    "title": "NL promotional",
     "fields": [
         {
             "key": "field_5ac5c2faf67f7",
@@ -122,5 +122,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523854300
+    "modified": 1523948293
 }

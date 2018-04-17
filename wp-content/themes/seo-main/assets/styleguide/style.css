@@ -925,17 +925,6 @@ Styleguide 1.2
     font-weight: 100;
     font-size: 24px;
     line-height: 1.25; }
-  .page-title .page-title__text-spacing:after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid #e5e7e7;
-    width: 75px;
-    margin-top: 60px;
-    margin-bottom: 60px; }
-    @media only screen and (min-width: 1024px) {
-      .page-title .page-title__text-spacing:after {
-        width: 110px;
-        margin-left: 205px; } }
 
 /*
 Quote Offset
@@ -1592,7 +1581,7 @@ Styleguide 3.1
         font-weight: 100;
         font-size: 120px;
         line-height: 0.8;
-        max-width: 560px;
+        max-width: 600px;
         background: none;
         float: left;
         margin: 0;
@@ -1722,7 +1711,7 @@ button.c-uie__calltoaction-secondary {
     font-size: 43px;
     line-height: 1;
     margin: 0;
-    padding: 40px 27px 40px 50px; }
+    padding: 40px 35px 40px 35px; }
     @media only screen and (min-width: 480px) {
       .c-cta__wrapper h3 {
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -1738,7 +1727,7 @@ button.c-uie__calltoaction-secondary {
         font-weight: 100;
         font-size: 43px;
         line-height: 1;
-        padding: 40px 27px 40px 50px; } }
+        padding: 40px 35px 40px 35px; } }
   .c-cta__wrapper .c-cta--image {
     width: 80%;
     height: 196px;
@@ -1748,14 +1737,14 @@ button.c-uie__calltoaction-secondary {
     .c-cta__wrapper .c-cta--image include grid-media($sm) {
       width: 294px; }
   .c-cta__wrapper .c-rte__link {
-    margin: 40px 0 45px 50px;
+    margin: 40px 35px 45px 35px;
     display: inline-block; }
     @media only screen and (min-width: 480px) {
       .c-cta__wrapper .c-rte__link {
         margin: 20px; } }
     @media only screen and (min-width: 768px) {
       .c-cta__wrapper .c-rte__link {
-        margin: 40px 0 45px 50px; } }
+        margin: 40px 35px 45px 35px; } }
 
 /*
 Gallery
@@ -2266,14 +2255,17 @@ Gallery
 
 .container.region_title {
   max-width: 1280px; }
-  @media only screen and (min-width: 480px) {
-    .container.region_title .content {
-      max-width: 780px;
-      width: calc(100%);
-      float: left;
-      margin-left: 0;
-      margin-right: 11%;
-      float: right; } }
+  .container.region_title .content {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    max-width: 780px; }
+    @media only screen and (min-width: 1024px) {
+      .container.region_title .content {
+        margin-left: 220px; } }
+    @media only screen and (min-width: 1440px) {
+      .container.region_title .content {
+        margin-left: 160px; } }
 
 .container.region_body {
   max-width: 1130px;
@@ -2302,6 +2294,18 @@ Gallery
         margin-left: 0;
         float: right;
         max-width: 700px; } }
+  .container.region_body.title-border .region_main_content:before {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #e5e7e7;
+    width: 75px;
+    margin-top: 60px;
+    margin-bottom: 60px; }
+    @media only screen and (min-width: 1024px) {
+      .container.region_body.title-border .region_main_content:before {
+        width: 110px; } }
+  .container.region_body.title-border .region_left_rail {
+    margin-top: 120px; }
 
 .container.region_bottom {
   width: calc(100%);
@@ -5812,13 +5816,16 @@ header {
 
 .c-searchform__container {
   background: #eb0029;
-  padding: 15px 30px;
+  padding: 15px;
   max-width: 1440px;
   margin: 0 auto; }
   .c-searchform__container::after {
     clear: both;
     content: "";
     display: block; }
+  @media only screen and (min-width: 768px) {
+    .c-searchform__container {
+      padding: 15px 30px; } }
 
 .c-searchform__search-icon,
 .c-searchform__textfield,
@@ -5828,43 +5835,71 @@ header {
   float: left; }
 
 .c-searchform__search-icon {
-  padding-right: 30px;
+  padding-right: 15px;
   margin-top: 5px; }
+  @media only screen and (min-width: 768px) {
+    .c-searchform__search-icon {
+      padding-right: 30px; } }
+  .c-searchform__search-icon .icon:before {
+    width: 20px;
+    height: 20px; }
+    @media only screen and (min-width: 768px) {
+      .c-searchform__search-icon .icon:before {
+        width: 50px;
+        height: 50px; } }
 
 .c-searchform__textfield {
   border-left: 2px solid #050505;
-  padding-left: 30px;
-  width: 65%; }
-  @media only screen and (min-width: 1024px) {
+  padding-left: 15px;
+  width: 65%;
+  width: calc(100% - 120px); }
+  @media only screen and (min-width: 768px) {
     .c-searchform__textfield {
-      width: 79%; } }
+      padding-left: 30px;
+      width: calc(100% - 235px); } }
   .c-searchform__textfield input {
     outline: none;
-    width: calc(100% - 30px);
-    float: left;
-    margin-left: 15px;
-    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 60px;
-    line-height: 1.2;
     background: none;
     border: none;
     margin-left: 0;
     max-height: 60px;
-    font-weight: 100; }
+    font-weight: 100;
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.2;
+    width: calc(100% - 30px);
+    float: left;
+    margin-left: 15px;
+    margin-left: 0; }
+    @media only screen and (min-width: 768px) {
+      .c-searchform__textfield input {
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 60px;
+        line-height: 1.2; } }
     .c-searchform__textfield input::placeholder {
       color: #ffffff; }
 
 .c-searchform__right {
   float: right; }
+  .c-searchform__right .seporator {
+    height: 30px; }
+    @media only screen and (min-width: 768px) {
+      .c-searchform__right .seporator {
+        height: 60px; } }
 
 .c-searchform__button {
-  margin: 12px 30px 0 0; }
+  margin: 3px 15px 0 0; }
+  @media only screen and (min-width: 768px) {
+    .c-searchform__button {
+      margin: 12px 30px 0 0; } }
   .c-searchform__button input {
-    width: 53px;
-    height: 34px;
-    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg");
+    width: 30px;
+    height: 20px;
+    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg") no-repeat;
     background-size: contain !important;
     border: none;
     outline: none; }
@@ -5872,13 +5907,27 @@ header {
       display: none; }
     .c-searchform__button input:hover, .c-searchform__button input:focus {
       background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg"); }
+    @media only screen and (min-width: 768px) {
+      .c-searchform__button input {
+        width: 53px;
+        height: 34px; } }
 
 .c-searchform__close-btn {
-  margin-top: 12px;
-  padding-left: 30px; }
+  margin-top: 0;
+  padding-left: 15px; }
+  @media only screen and (min-width: 768px) {
+    .c-searchform__close-btn {
+      margin-top: 12px;
+      padding-left: 30px; } }
   .c-searchform__close-btn span:before {
     transform: rotate(0);
-    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1); }
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+    width: 20px;
+    height: 20px; }
+    @media only screen and (min-width: 768px) {
+      .c-searchform__close-btn span:before {
+        width: 35px;
+        height: 35px; } }
   .c-searchform__close-btn:hover span:before, .c-searchform__close-btn:focus span:before {
     transform: rotate(90deg); }
 

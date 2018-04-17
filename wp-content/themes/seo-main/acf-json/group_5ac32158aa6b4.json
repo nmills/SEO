@@ -1,6 +1,6 @@
 {
     "key": "group_5ac32158aa6b4",
-    "title": "component: NEWS cta",
+    "title": "NEWS cta",
     "fields": [
         {
             "key": "field_5ac33a7f0e0dc",
@@ -122,5 +122,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523854082
+    "modified": 1523948278
 }
