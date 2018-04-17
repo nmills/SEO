@@ -137,15 +137,21 @@
         margin-top: 0;
         padding-left: 0;
 
+        .c-news-events__title-medium, .c-news-events__breadcrumb {
+            float: left;
+          }
+
         @include grid-media($md) {
           .c-news-events__image, .c-news-events__title-medium, .c-news-events__breadcrumb {
             @include grid-column(6, $no-gutter);
           }
 
           .c-news-events__title-medium, .c-news-events__breadcrumb {
-            float: right;
-            padding-left: 25px;
-          }
+
+              float: right;
+              padding-left: 25px;
+            }
+          
 
           .c-news-events__image {
             min-height: 200px;

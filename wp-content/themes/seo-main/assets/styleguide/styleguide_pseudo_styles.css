@@ -246,6 +246,11 @@
   background: #050505;
 }
 
+.c-nav__nav--left ul > li > a.pseudo-class-hover + .main-nav-dropdown,
+.c-nav__nav--left .main-nav-dropdown.pseudo-class-hover {
+  display: block;
+}
+
 .c-nav__nav--right ul > li.pseudo-class-first-child {
   margin-right: 3px;
 }
