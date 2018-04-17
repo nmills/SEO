@@ -85,7 +85,7 @@
             "label": "Destination Url",
             "name": "destination_url",
             "type": "url",
-            "instructions": "",
+            "instructions": "include http or https in the URL",
             "required": 1,
             "conditional_logic": [
                 [
@@ -122,5 +122,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523948293
+    "modified": 1523956617
 }
