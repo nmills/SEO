@@ -1024,7 +1024,11 @@ Styleguide 1.4
 .c-rte ul li, .c-rte__accordion ul li {
   position: relative;
   padding-left: 40px;
-  line-height: 1; }
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #050505;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2; }
   .c-rte ul li:before, .c-rte__accordion ul li:before {
     content: "";
     display: block;
@@ -1067,8 +1071,12 @@ Styleguide 1.5
 .c-rte ol li, .c-rte__accordion ol li {
   position: relative;
   padding-left: 40px;
-  line-height: 1;
-  counter-increment: table-ol; }
+  counter-increment: table-ol;
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #050505;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2; }
   .c-rte ol li:before, .c-rte__accordion ol li:before {
     content: counter(table-ol);
     position: absolute;

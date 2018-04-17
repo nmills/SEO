@@ -198,7 +198,9 @@ Styleguide 1.4
     li {
       position: relative;
       padding-left: 40px;
-      line-height: 1;
+      
+      @include type-custom($color: $black, $font-weight: $font-medium, $font-size: 20px, $line-height: 1.2);
+
 
       &:before {
         content: "";
@@ -251,8 +253,9 @@ Styleguide 1.5
     li {
       position: relative;
       padding-left: 40px;
-      line-height: 1;
       counter-increment: table-ol;
+
+      @include type-custom($color: $black, $font-weight: $font-medium, $font-size: 20px, $line-height: 1.2);
 
       &:before {
         content: counter(table-ol);
