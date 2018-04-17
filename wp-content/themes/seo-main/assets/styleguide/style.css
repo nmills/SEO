@@ -906,6 +906,8 @@ Styleguide 1.2
   font-weight: 700;
   font-size: 61px;
   line-height: 1; }
+  .page-title h1 span {
+    font-weight: 200; }
   .page-title h1:before {
     content: " ";
     display: block;
@@ -1450,19 +1452,19 @@ iframe {
   display: inline-block; }
 
 .icon-search--small:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-search--small.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-search--small.svg") center center no-repeat;
   background-size: contain;
   width: 20px;
   height: 20px; }
 
 .icon-search--large:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-search--large.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-search--large.svg") center center no-repeat;
   background-size: contain;
   width: 50px;
   height: 50px; }
 
 .icon-close--large:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-close--large.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-close--large.svg") center center no-repeat;
   background-size: contain;
   width: 35px;
   height: 35px;
@@ -5899,14 +5901,14 @@ header {
   .c-searchform__button input {
     width: 30px;
     height: 20px;
-    background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg") no-repeat;
+    background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg") no-repeat;
     background-size: contain !important;
     border: none;
     outline: none; }
     .c-searchform__button input::placeholder {
       display: none; }
     .c-searchform__button input:hover, .c-searchform__button input:focus {
-      background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg"); }
+      background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg"); }
     @media only screen and (min-width: 768px) {
       .c-searchform__button input {
         width: 53px;
@@ -5930,6 +5932,10 @@ header {
         height: 35px; } }
   .c-searchform__close-btn:hover span:before, .c-searchform__close-btn:focus span:before {
     transform: rotate(90deg); }
+
+/* Search Results Page */
+.c-search-results__wrapper {
+  margin: 100px 0; }
 
 /* Footer */
 footer.site-footer {
