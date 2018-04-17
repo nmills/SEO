@@ -1,0 +1,6 @@
+{% if component['include_event_info'] == 'yes' %}
+
+	{{component['event_info_event_details']}}
+
+	<a href="{{component['event_info_button_url']}}">{{component['event_info_button_label']}}</a>
+{% endif %}
