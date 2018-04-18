@@ -2,14 +2,11 @@
 <section class="c-recent-news">
   <div class="container">
     <div class="c-recent-news__container">
-      <h2>News & Events</h2>
-      {% set count = recent_posts|length +  featured_posts|length %}
+      <h2>Recent News</h2>
+      {% set count = 3 %}
       {% set recent_posts_to_show = 3 %}
       {% set featured_post_ID = '' %}
-      {# Make sure that the count does not exceed 3 #}
-      {% if count > 3 %}
-        {% set count = 3 %}
-      {% endif %}
+      {% set current_post_ID = post.ID %}
 
       <div class="c-recent-news__items">
 
@@ -20,7 +17,6 @@
             <div class="c-recent-news__item count-{{count}} {% if featured_post.header_image is empty %}no-image{% endif %}">
               {% if featured_post.header_image is not empty %}
                 <div class="c-recent-news__image" style="background-image: url({{Image(featured_post.get_field('header_image')).src}});">
-                {# <img src="{{Image(featured_post.get_field('header_image')).src}}"> #}
                 </div>
               {% endif %}
               <div class="c-recent-news__program">
@@ -42,7 +38,7 @@
         {% set arr = [] %}
         {% set arr = arr|merge({'post_type': 'news'}) %}
         {% set arr = arr|merge({'list': recent_posts_to_show}) %}
-        {% set arr = arr|merge({'exclude_post': featured_post_ID}) %}
+        {% set arr = arr|merge({'exclude_post': featured_post_ID ~','~current_post_ID }) %}
         {% set arr = arr|merge({'paginate': 'false'}) %}
         {% set arr = arr|merge({'use_layout': 'inline'}) %}
         {{ function('netsposts_shortcode', arr) }}
@@ -51,4 +47,3 @@
     </div>
   </div>
 </section>
-
