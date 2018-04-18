@@ -27,6 +27,6 @@ $args = array(
 	),
   'order' => 'DESC'
 );
-$context['recent_posts'] = Timber::get_posts($args);
+$context['recent_child_posts'] = Timber::get_posts($args);
 
 Timber::render( $templates, $context );
