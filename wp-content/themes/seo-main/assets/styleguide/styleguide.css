@@ -1104,6 +1104,13 @@ Styleguide 1.5
   margin-top: 0;
   margin-bottom: 40px; }
 
+.c-rte strong {
+  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #050505;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.2; }
+
 /*
 Accodion
 
@@ -2346,7 +2353,7 @@ Gallery
     font-size: 40px;
     max-width: 800px;
     margin-top: 55px;
-    margin-bottom: 45px; }
+    margin-bottom: 15px; }
     .program-landing-page .page-title h1:before {
       content: none; }
     @media only screen and (min-width: 1024px) {
@@ -2354,7 +2361,7 @@ Gallery
         font-size: 75px;
         max-width: 800px;
         margin-top: 100px;
-        margin-bottom: 90px; } }
+        margin-bottom: 30px; } }
 
 .hero-section {
   padding: 0; }
@@ -2568,13 +2575,10 @@ Gallery
           width: 330px; } }
       @media only screen and (min-width: 768px) {
         .program-landing-page .old .c-ratiometer .c-rationmeter-positioner {
-          width: 580px; } }
-      @media only screen and (min-width: 1024px) {
-        .program-landing-page .old .c-ratiometer .c-rationmeter-positioner {
-          width: 730px; } }
+          width: 500px; } }
       @media only screen and (min-width: 1440px) {
         .program-landing-page .old .c-ratiometer .c-rationmeter-positioner {
-          width: 880px; } }
+          width: 730px; } }
   .program-landing-page .old .c-ratiometer-meter_out {
     width: 150px;
     height: 150px;
@@ -2614,23 +2618,55 @@ Gallery
         width: 320px;
         height: 320px; } }
   .program-landing-page .old .c-rationmeter-text {
+    width: calc(50%);
     float: left;
     margin-left: -30px;
     margin-top: 30px; }
     @media only screen and (min-width: 768px) {
       .program-landing-page .old .c-rationmeter-text {
+        width: calc(35%);
         float: left; } }
     @media only screen and (min-width: 1440px) {
       .program-landing-page .old .c-rationmeter-text {
+        width: calc(25%);
         float: left; } }
     .program-landing-page .old .c-rationmeter-text h1 {
-      font-size: 25px; }
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 1;
+      margin: 0;
+      text-align: center; }
+      @media only screen and (min-width: 480px) {
+        .program-landing-page .old .c-rationmeter-text h1 {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 700;
+          font-size: 70px;
+          line-height: 1; } }
       @media only screen and (min-width: 768px) {
         .program-landing-page .old .c-rationmeter-text h1 {
-          font-size: 38px; } }
-      @media only screen and (min-width: 1024px) {
-        .program-landing-page .old .c-rationmeter-text h1 {
-          font-size: 48px; } }
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 700;
+          font-size: 110px;
+          line-height: 1; } }
+    .program-landing-page .old .c-rationmeter-text p {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 100;
+      font-size: 20px;
+      line-height: 1;
+      margin: 0;
+      text-align: center; }
+      @media only screen and (min-width: 768px) {
+        .program-landing-page .old .c-rationmeter-text p {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 100;
+          font-size: 30px;
+          line-height: 1; } }
 
 body {
   counter-reset: section; }
@@ -2839,6 +2875,40 @@ body {
       margin-left: 0;
       max-width: 541px;
       height: 323px; } }
+
+.program-landing-page .c-ph__event-details {
+  text-align: center; }
+  .program-landing-page .c-ph__event-details h2 {
+    width: 25%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 80px; }
+
+.program-landing-page .wysiwyg {
+  max-width: 700px;
+  margin: auto; }
+  .program-landing-page .wysiwyg h2 {
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 700;
+    font-size: 34.5px;
+    line-height: 1.10;
+    letter-spacing: -0.3px;
+    font-size: 32px; }
+    @media only screen and (min-width: 768px) {
+      .program-landing-page .wysiwyg h2 {
+        font-size: 49.1px;
+        line-height: 1.10;
+        letter-spacing: -0.5px; } }
+    @media only screen and (min-width: 768px) {
+      .program-landing-page .wysiwyg h2 {
+        font-size: 42px; } }
+
+.program-landing-page .c-gallery__container {
+  max-width: 1024px;
+  margin: auto; }
+  .program-landing-page .c-gallery__container a.c-rte__link {
+    display: inline-block; }
 
 /* Program Landing */
 @media only screen and (max-width: 767px) {
