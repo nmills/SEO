@@ -3,13 +3,10 @@
   <div class="container">
     <div class="c-recent-news__container">
       <h2>Recent News</h2>
-      {% set count = recent_posts|length +  featured_posts|length %}
+      {% set count = 3 %}
       {% set recent_posts_to_show = 3 %}
       {% set featured_post_ID = '' %}
-      {# Make sure that the count does not exceed 3 #}
-      {% if count > 3 %}
-        {% set count = 3 %}
-      {% endif %}
+      {% set current_post_ID = post.ID %}
 
       <div class="c-recent-news__items">
 
@@ -41,7 +38,7 @@
         {% set arr = [] %}
         {% set arr = arr|merge({'post_type': 'news'}) %}
         {% set arr = arr|merge({'list': recent_posts_to_show}) %}
-        {% set arr = arr|merge({'exclude_post': featured_post_ID}) %}
+        {% set arr = arr|merge({'exclude_post': featured_post_ID ~','~current_post_ID }) %}
         {% set arr = arr|merge({'paginate': 'false'}) %}
         {% set arr = arr|merge({'use_layout': 'inline'}) %}
         {{ function('netsposts_shortcode', arr) }}
