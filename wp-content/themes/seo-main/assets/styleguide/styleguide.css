@@ -2343,6 +2343,10 @@ Gallery
 .region_bottom {
   margin-bottom: 50px; }
 
+@media only screen and (max-width: 767px) {
+  .c-news-events .container.region_body {
+    padding: 0; } }
+
 /* Program Landing */
 .program-landing-page .page-title {
   text-align: center;
@@ -4545,73 +4549,77 @@ body {
     .c-news-event .c-news-event__container .c-news-event__content .c-uie__calltoaction:after {
       border-bottom-color: #ffffff; }
 
-.c-share__container {
-  border: 1px solid #e5e7e7;
-  padding: 15px 25px;
+.c-share {
   display: none; }
   @media only screen and (min-width: 480px) {
-    .c-share__container {
-      padding: 15px 10px;
+    .c-share {
       display: inline-block; } }
-  @media only screen and (min-width: 768px) {
-    .c-share__container {
-      padding: 15px 25px; } }
-  .c-share__container h2 {
-    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #050505;
-    font-weight: 100;
-    font-size: 43px;
-    line-height: 1;
-    margin: 0;
-    margin-bottom: 35px;
-    line-height: 1; }
+  .c-share .c-share__container {
+    border: 1px solid #e5e7e7;
+    padding: 15px 25px; }
     @media only screen and (min-width: 480px) {
-      .c-share__container h2 {
-        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-        color: #050505;
-        font-weight: 100;
-        font-size: 30px;
-        line-height: 1; } }
+      .c-share .c-share__container {
+        padding: 15px 10px;
+        display: inline-block; } }
     @media only screen and (min-width: 768px) {
-      .c-share__container h2 {
-        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-        color: #050505;
-        font-weight: 100;
-        font-size: 43px;
-        line-height: 1; } }
-  .c-share__container .c-share__buttons {
-    width: calc(33.33333%);
-    float: left;
-    margin-left: 0; }
-    .c-share__container .c-share__buttons .resp-sharing-button__icon svg {
-      width: 20px;
-      height: 20px;
-      vertical-align: top; }
-    .c-share__container .c-share__buttons #share-icon {
-      fill: #55acee; }
-    .c-share__container .c-share__buttons .resp-sharing-button {
-      float: left;
-      border-radius: 3px;
-      padding: 5px 0px 0 5px; }
-    .c-share__container .c-share__buttons .fb-share-button {
-      width: calc(41.66667%);
+      .c-share .c-share__container {
+        padding: 15px 25px; } }
+    .c-share .c-share__container h2 {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 100;
+      font-size: 43px;
+      line-height: 1;
+      margin: 0;
+      margin-bottom: 35px;
+      line-height: 1; }
+      @media only screen and (min-width: 480px) {
+        .c-share .c-share__container h2 {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 100;
+          font-size: 30px;
+          line-height: 1; } }
+      @media only screen and (min-width: 768px) {
+        .c-share .c-share__container h2 {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 100;
+          font-size: 43px;
+          line-height: 1; } }
+    .c-share .c-share__container .c-share__buttons {
+      width: calc(33.33333%);
       float: left;
       margin-left: 0; }
-      .c-share__container .c-share__buttons .fb-share-button .resp-sharing-button {
-        background: #55acee;
-        height: 24px; }
-        .c-share__container .c-share__buttons .fb-share-button .resp-sharing-button #share-icon {
-          fill: #ffffff; }
-    .c-share__container .c-share__buttons .twitter-share-button {
-      width: calc(41.66667%);
-      float: left;
-      margin-left: 0;
-      margin-left: 5px; }
-      .c-share__container .c-share__buttons .twitter-share-button .resp-sharing-button {
-        padding: 0; }
-        .c-share__container .c-share__buttons .twitter-share-button .resp-sharing-button .resp-sharing-button__icon svg {
-          width: 25px;
-          height: 25px; }
+      .c-share .c-share__container .c-share__buttons .resp-sharing-button__icon svg {
+        width: 20px;
+        height: 20px;
+        vertical-align: top; }
+      .c-share .c-share__container .c-share__buttons #share-icon {
+        fill: #55acee; }
+      .c-share .c-share__container .c-share__buttons .resp-sharing-button {
+        float: left;
+        border-radius: 3px;
+        padding: 5px 0px 0 5px; }
+      .c-share .c-share__container .c-share__buttons .fb-share-button {
+        width: calc(41.66667%);
+        float: left;
+        margin-left: 0; }
+        .c-share .c-share__container .c-share__buttons .fb-share-button .resp-sharing-button {
+          background: #55acee;
+          height: 24px; }
+          .c-share .c-share__container .c-share__buttons .fb-share-button .resp-sharing-button #share-icon {
+            fill: #ffffff; }
+      .c-share .c-share__container .c-share__buttons .twitter-share-button {
+        width: calc(41.66667%);
+        float: left;
+        margin-left: 0;
+        margin-left: 5px; }
+        .c-share .c-share__container .c-share__buttons .twitter-share-button .resp-sharing-button {
+          padding: 0; }
+          .c-share .c-share__container .c-share__buttons .twitter-share-button .resp-sharing-button .resp-sharing-button__icon svg {
+            width: 25px;
+            height: 25px; }
 
 .c-recent-news {
   background: #e5e7e7; }
