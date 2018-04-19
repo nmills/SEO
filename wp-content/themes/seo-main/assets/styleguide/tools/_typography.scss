@@ -26,21 +26,21 @@ $sans-stack: 'Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
     line-height: 1.10;
     letter-spacing: -0.5px;
   }
-}
+} 
 
-@mixin type-2($color: $dark-gray-two) {
+@mixin type-2($color: $black) {
   font-family: $sans-stack;
   color: #{$color};
   font-weight: $font-thin;
-  font-size: 30.6px;
-  line-height: 1.04;
+  font-size: 34px;
+  line-height: 1;
   @include grid-media($md) {
-    font-size: 34.5px;
-    line-height: 1.45;
+    font-size: 43px;
+    line-height: 1;
   }
 }
 
-@mixin type-2-bold($color: $dark-gray-two) {
+@mixin type-2-bold($color: $black) {
   font-family: $sans-stack;
   color: #{$color};
   font-weight: $font-bold;

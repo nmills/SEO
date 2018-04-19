@@ -238,14 +238,14 @@ h1 {
 
 h2 {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #2b2b2b;
+  color: #050505;
   font-weight: 200;
-  font-size: 30.6px;
-  line-height: 1.04; }
+  font-size: 34px;
+  line-height: 1; }
   @media only screen and (min-width: 768px) {
     h2 {
-      font-size: 34.5px;
-      line-height: 1.45; } }
+      font-size: 43px;
+      line-height: 1; } }
 
 h3 {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
