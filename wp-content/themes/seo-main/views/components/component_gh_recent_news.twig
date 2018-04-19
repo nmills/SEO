@@ -3,13 +3,10 @@
   <div class="container">
     <div class="c-recent-news__container">
       <h2>News & Events</h2>
-      {% set count = recent_posts|length +  featured_posts|length %}
       {% set recent_posts_to_show = 3 %}
       {% set featured_post_ID = '' %}
       {# Make sure that the count does not exceed 3 #}
-      {% if count > 3 %}
-        {% set count = 3 %}
-      {% endif %}
+      {% set count = 3 %}
 
       <div class="c-recent-news__items">
 
