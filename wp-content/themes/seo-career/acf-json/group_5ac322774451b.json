@@ -1,6 +1,6 @@
 {
     "key": "group_5ac322774451b",
-    "title": "component: NEWS event module",
+    "title": "NEWS event module",
     "fields": [
         {
             "key": "field_5ac33b257ac20",
@@ -112,7 +112,7 @@
             "label": "Destination Url",
             "name": "event_destination_url",
             "type": "url",
-            "instructions": "",
+            "instructions": "include http or https in the URL",
             "required": 1,
             "conditional_logic": [
                 [
@@ -149,5 +149,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523854129
+    "modified": 1523956607
 }

@@ -1,0 +1,138 @@
+{
+    "key": "group_5ad59d78021a7",
+    "title": "PL Image only Gallery",
+    "fields": [
+        {
+            "key": "field_5ad59d782c836",
+            "label": "Section Header",
+            "name": "section_header",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ad818842025d",
+            "label": "Section Intro",
+            "name": "section_intro",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5ad59d782cc1e",
+            "label": "repeater",
+            "name": "repeater",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5ad59d786a1a9",
+                    "label": "photo",
+                    "name": "photo",
+                    "type": "image_crop",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "crop_type": "hard",
+                    "target_size": "thumbnail",
+                    "width": "",
+                    "height": "",
+                    "preview_size": "medium",
+                    "force_crop": "no",
+                    "save_in_media_library": "yes",
+                    "retina_mode": "no",
+                    "save_format": "id",
+                    "library": "all"
+                },
+                {
+                    "key": "field_5ad59d786a3ab",
+                    "label": "url",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5ad59d9a4033f",
+            "label": "Destination",
+            "name": "destination",
+            "type": "link",
+            "instructions": "include http or https in the URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1524111537
+}

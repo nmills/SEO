@@ -119,7 +119,7 @@
             "label": "Button Link",
             "name": "cta_button_link",
             "type": "url",
-            "instructions": "",
+            "instructions": "include http or https in the URL",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -167,5 +167,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523165713
+    "modified": 1523956805
 }

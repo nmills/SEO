@@ -1,0 +1,126 @@
+{
+    "key": "group_5ad59b22a3841",
+    "title": "PL Event Info",
+    "fields": [
+        {
+            "key": "field_5ad59b713f9ef",
+            "label": "Include Event Info",
+            "name": "include_event_info",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "no": "No",
+                "yes": "Yes"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5ad59bb03f9f0",
+            "label": "Event Details",
+            "name": "event_info_event_details",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ad59b713f9ef",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5ad59bbc3f9f1",
+            "label": "Button Label",
+            "name": "event_info_button_label",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ad59b713f9ef",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ad59bc93f9f2",
+            "label": "Button URL",
+            "name": "event_info_button_url",
+            "type": "url",
+            "instructions": "include http or https in the URL",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ad59b713f9ef",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1523956751
+}
