@@ -148,6 +148,13 @@ Styleguide 3.1
     }
   }
 
+  .c-hero_image--large_text + h1 {
+    @include grid-media($lg) {
+      position: relative;
+      margin-top: -370px;
+    }
+  }
+
   h2 {
     font-size: 30px;
     background: white;
