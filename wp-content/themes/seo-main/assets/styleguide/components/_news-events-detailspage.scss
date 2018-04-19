@@ -266,84 +266,95 @@
   }
 }
 
-.c-share__container {
-  border: 1px solid $light-gray;
-  padding: 15px 25px;
+.c-share {
   display: none;
 
   @include grid-media($sm) {
-    padding: 15px 10px;
     display: inline-block;
   }
 
 
-  @include grid-media($md) {
+  .c-share__container {
+    border: 1px solid $light-gray;
     padding: 15px 25px;
-  }
 
-
-  h2 {
-    @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
-
-    margin: 0;
-    margin-bottom: 35px;
-    line-height: 1;
+    // display: none;
 
     @include grid-media($sm) {
-      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+      padding: 15px 10px;
+
+      display: inline-block;
     }
 
 
     @include grid-media($md) {
+      padding: 15px 25px;
+    }
+
+
+    h2 {
       @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
-    }
-  }
 
-  .c-share__buttons {
-    //Share Twitter and Facebook styles
+      margin: 0;
+      margin-bottom: 35px;
+      line-height: 1;
 
-    .resp-sharing-button__icon svg {
-      width: 20px;
-      height: 20px;
-      vertical-align: top;
-    }
+      @include grid-media($sm) {
+        @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+      }
 
-    #share-icon {
-      fill: #55acee;
-    }
 
-    @include grid-column(4, $no-gutter);
-
-    .resp-sharing-button {
-      float: left;
-      border-radius: 3px;
-      padding: 5px 0px 0 5px;
-    }
-
-    .fb-share-button {
-      @include grid-column(5, $no-gutter);
-
-      .resp-sharing-button {
-        background: #55acee;
-        height: 24px;
-
-        #share-icon {
-          fill: $white;
-        }
+      @include grid-media($md) {
+        @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
       }
     }
 
-    .twitter-share-button {
-      @include grid-column(5, $no-gutter);
+    //Share Twitter and Facebook styles
 
-      margin-left: 5px;
+    .c-share__buttons {
+      .resp-sharing-button__icon svg {
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+      }
+
+      #share-icon {
+        fill: #55acee;
+      }
+
+      @include grid-column(4, $no-gutter);
 
       .resp-sharing-button {
-        padding: 0;
+        float: left;
+        border-radius: 3px;
+        padding: 5px 0px 0 5px;
+      }
 
-        .resp-sharing-button__icon svg {
-          width: 25px;
-          height: 25px;
+      .fb-share-button {
+        @include grid-column(5, $no-gutter);
+
+        .resp-sharing-button {
+          background: #55acee;
+          height: 24px;
+
+          #share-icon {
+            fill: $white;
+          }
+        }
+      }
+
+      .twitter-share-button {
+        @include grid-column(5, $no-gutter);
+
+        margin-left: 5px;
+
+        .resp-sharing-button {
+          padding: 0;
+
+          .resp-sharing-button__icon svg {
+            width: 25px;
+            height: 25px;
+          }
         }
       }
     }

@@ -11,7 +11,7 @@
       font-size: 40px;
       max-width: 800px;
       margin-top: 55px;
-      margin-bottom: 45px;
+      margin-bottom: 15px;
 
       &:before {
         content: none;
@@ -21,7 +21,7 @@
         font-size: 75px;
         max-width: 800px;
         margin-top: 100px;
-        margin-bottom: 90px;
+        margin-bottom: 30px;
       }
     }
   }
@@ -249,20 +249,190 @@
   }
 }
 
-.program-landing-page{
+.program-landing-page {
+  // Old design
+  // .old {
+  //   background: $light-gray;
 
+  //   @include grid-column(12, $no-gutter);
+
+  //   // @include grid-media($lg) {
+  //   //   @include grid-column(6, $no-gutter);
+  //   // }
+
+
+  //   .c-ratiometer_container {
+  //     padding: 5%; 
+
+  //     @include grid-media($lg) {}
+  //   }
+
+  //   .c-ratiometer {
+  //     width: calc(100%);
+  //     float: left;
+  //     position: relative;
+  //     margin: 0 auto;
+  //     float: none;
+
+  //     @include grid-media($sm) {
+  //       width: calc(80%);
+  //       float: left;
+  //       margin: 0 auto;
+  //       float: none;
+  //     }
+
+
+  //     @include grid-media($md) {
+  //       width: calc(75%);
+  //       float: left;
+  //       margin: 0 auto;
+  //       float: none;
+  //     }
+
+
+  //     @include grid-media($xl) {
+  //       width: calc(50%);
+  //       float: left;
+  //       margin: 0 auto;
+  //       float: none;
+  //     }
+
+
+  //     .c-rationmeter-positioner {
+  //       width: 250px;
+  //       display: flex;
+  //       margin: 0 auto;
+
+  //       @include grid-media($sm) {
+  //         width: 330px;
+  //       }
+
+
+  //       @include grid-media($md) {
+  //         width: 580px;
+  //       }
+
+
+  //       @include grid-media($lg) {
+  //         width: 730px;
+  //       }
+
+  //       @include grid-media($xl) {
+  //         width: 880px;
+  //       }
+  //     }
+  //   }
+
+  //   .c-ratiometer-meter_out {
+  //     width: 150px;
+  //     height: 150px;
+  //     border-radius: 100%;
+  //     padding: 10px;
+
+  //     @include grid-media($sm) {
+  //       width: 190px;
+  //       height: 190px;
+  //     }
+
+
+  //     @include grid-media($md) {
+  //       width: 240px;
+  //       height: 240px;
+  //     }
+
+
+  //     @include grid-media($xl) {
+  //       width: 340px;
+  //       height: 340px;
+  //     }
+  //   }
+
+  //   .c-rationmeter-meter {
+  //     width: 130px;
+  //     height: 130px;
+  //     background: red;
+  //     border-radius: 100%;
+  //     background-position: center;
+  //     background-size: cover;
+  //     background-repeat: no-repeat;
+  //     border: 8px solid #e5e7e7;
+
+  //     @include grid-media($sm) {
+  //       width: 170px;
+  //       height: 170px;
+  //     }
+
+
+  //     @include grid-media($md) {
+  //       width: 220px;
+  //       height: 220px;
+  //     }
+
+
+  //     @include grid-media($xl) {
+  //       width: 320px;
+  //       height: 320px;
+  //     }
+  //   }
+
+  //   .c-rationmeter-text {
+  //     // width: calc(50%);
+  //     float: left;
+  //     margin-left: -30px;
+  //     margin-top: 30px;
+
+  //     @include grid-media($sm) {}
+
+
+  //     @include grid-media($md) {
+  //       // width: calc(35%);
+  //       float: left;
+  //     }
+
+
+  //     @include grid-media($xl) {
+  //       // width: calc(25%);
+  //       float: left;
+  //     }
+
+
+  //     h1 {
+  //       font-size: 25px;
+
+  //       @include grid-media($md) {
+  //         font-size: 38px;
+  //       }
+
+  //       @include grid-media($lg) {
+  //         font-size: 48px;
+  //       }
+  //     }
+  //     // h1 {
+  //     //   @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 45px, $line-height: 1);
+
+  //     //   margin: 0;
+  //     //   text-align: center;
+
+  //     //   @include grid-media($sm) {
+  //     //     @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 70px, $line-height: 1);
+  //     //   }
+
+
+  //     //   @include grid-media($md) {
+  //     //     @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 110px, $line-height: 1);
+  //     //   }
+  //     // }
+  //   }
+  // }
+
+  //New design
   .old {
     background: $light-gray;
 
     @include grid-column(12, $no-gutter);
 
-    // @include grid-media($lg) {
-    //   @include grid-column(6, $no-gutter);
-    // }
-
-
     .c-ratiometer_container {
-      padding: 5%; 
+      padding: 5%;
 
       @include grid-media($lg) {}
     }
@@ -309,16 +479,12 @@
 
 
         @include grid-media($md) {
-          width: 580px;
+          width: 500px;
         }
 
-
-        @include grid-media($lg) {
-          width: 730px;
-        }
 
         @include grid-media($xl) {
-          width: 880px;
+          width: 730px;
         }
       }
     }
@@ -376,7 +542,7 @@
     }
 
     .c-rationmeter-text {
-      // width: calc(50%);
+      width: calc(50%);
       float: left;
       margin-left: -30px;
       margin-top: 30px;
@@ -385,43 +551,42 @@
 
 
       @include grid-media($md) {
-        // width: calc(35%);
+        width: calc(35%);
         float: left;
       }
 
 
       @include grid-media($xl) {
-        // width: calc(25%);
+        width: calc(25%);
         float: left;
       }
 
-
       h1 {
-        font-size: 25px;
+        @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 45px, $line-height: 1);
+
+        margin: 0;
+        text-align: center;
+
+        @include grid-media($sm) {
+          @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 70px, $line-height: 1);
+        }
+
 
         @include grid-media($md) {
-          font-size: 38px;
-        }
-
-        @include grid-media($lg) {
-          font-size: 48px;
+          @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 110px, $line-height: 1);
         }
       }
-      // h1 {
-      //   @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 45px, $line-height: 1);
 
-      //   margin: 0;
-      //   text-align: center;
+      p {
+        @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 20px, $line-height: 1);
 
-      //   @include grid-media($sm) {
-      //     @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 70px, $line-height: 1);
-      //   }
+        margin: 0;
+        text-align: center;
 
-
-      //   @include grid-media($md) {
-      //     @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 110px, $line-height: 1);
-      //   }
-      // }
+        @include grid-media($md) {
+          @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+        }
+      }
     }
   }
 }
@@ -698,5 +863,64 @@ body {
     //     background: url(/wp-content/themes/seo-main/assets/img/icons/Video-Play-BTN-Hover.svg);
     //   }
     // }
+  }
+}
+
+.program-landing-page {
+  .c-ph__event-details {
+    text-align: center;
+    h2 {
+      width: 25%;
+      margin: auto;
+      margin-top: 0;
+      margin-bottom: 80px;
+    } 
+  }
+
+  .wysiwyg {
+    max-width: 700px;
+    margin: auto;
+
+    h2 {
+      @include type-1;
+      font-size: 32px;
+
+      @include grid-media($md) {
+        font-size: 42px;
+      }
+    }
+  }
+
+  .c-gallery__container {
+    max-width: 1024px;
+    margin: auto;
+
+    .c-gallery__section-header {
+      @include grid-column(12, $no-gutter);
+      
+      clear: both;
+      float: none;
+      margin-bottom: 35px;
+        
+      @include grid-media($md) {
+        width: 750px;
+      }
+
+      h1 {
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 23px;
+
+        @include grid-media($lg) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    a.c-rte__link {
+        display: inline-block;
+    }
   }
 }
