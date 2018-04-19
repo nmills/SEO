@@ -2907,6 +2907,23 @@ body {
 .program-landing-page .c-gallery__container {
   max-width: 1024px;
   margin: auto; }
+  .program-landing-page .c-gallery__container .c-gallery__section-header {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    clear: both;
+    float: none;
+    margin-bottom: 35px; }
+    @media only screen and (min-width: 768px) {
+      .program-landing-page .c-gallery__container .c-gallery__section-header {
+        width: 750px; } }
+    .program-landing-page .c-gallery__container .c-gallery__section-header h1 {
+      margin-bottom: 0; }
+    .program-landing-page .c-gallery__container .c-gallery__section-header p {
+      font-size: 23px; }
+      @media only screen and (min-width: 1024px) {
+        .program-landing-page .c-gallery__container .c-gallery__section-header p {
+          font-size: 24px; } }
   .program-landing-page .c-gallery__container a.c-rte__link {
     display: inline-block; }
 

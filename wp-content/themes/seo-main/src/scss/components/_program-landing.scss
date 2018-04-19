@@ -895,6 +895,30 @@ body {
     max-width: 1024px;
     margin: auto;
 
+    .c-gallery__section-header {
+      @include grid-column(12, $no-gutter);
+      
+      clear: both;
+      float: none;
+      margin-bottom: 35px;
+        
+      @include grid-media($md) {
+        width: 750px;
+      }
+
+      h1 {
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 23px;
+
+        @include grid-media($lg) {
+          font-size: 24px;
+        }
+      }
+    }
+
     a.c-rte__link {
         display: inline-block;
     }
