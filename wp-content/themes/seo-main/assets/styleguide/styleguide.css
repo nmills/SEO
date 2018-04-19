@@ -5652,7 +5652,7 @@ header {
     display: block; }
 
 .c-nav__donate-link {
-  height: 60px;
+  height: 50px;
   background: #eb0029;
   padding: 0 25px;
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -5665,7 +5665,7 @@ header {
 
 .c-nav__search-btn {
   padding: 0 26px;
-  line-height: 3.75; }
+  line-height: 2.9; }
   .c-nav__search-btn,
   .c-nav__search-btn span {
     display: inline-block; }
