@@ -22,6 +22,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_5ad818842025d",
+            "label": "Section Intro",
+            "name": "section_intro",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_5ad59d782cc1e",
             "label": "repeater",
             "name": "repeater",
@@ -115,5 +134,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523956779
+    "modified": 1524111537
 }
