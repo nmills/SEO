@@ -1,0 +1,49 @@
+<!-- First one has to be a featured post -->
+<section class="c-recent-news">
+  <div class="container">
+    <div class="c-recent-news__container">
+      <h2>Recent News</h2>
+      {% set count = 3 %}
+      {% set recent_posts_to_show = 3 %}
+      {% set featured_post_ID = '' %}
+      {% set current_post_ID = post.ID %}
+
+      <div class="c-recent-news__items">
+
+        {% if featured_posts %}
+          {% set recent_posts_to_show = 2 %}
+          {% for featured_post in featured_posts %}
+          <a href="{{featured_post.link}}">
+            <div class="c-recent-news__item count-{{count}} {% if featured_post.header_image is empty %}no-image{% endif %}">
+              {% if featured_post.header_image is not empty %}
+                <div class="c-recent-news__image" style="background-image: url({{Image(featured_post.get_field('header_image')).src}});">
+                </div>
+              {% endif %}
+              <div class="c-recent-news__program">
+                  <p>{{site_name}}</p>
+              </div>
+              <div class="c-recent-news__title">
+                <h3 class="c-rte__link">{{featured_post.title}} </h3>
+              </div>
+              <div class="c-recent-news__event-details">
+                <p></p>
+              </div>
+            </div>
+          </a>
+          {% set featured_post_ID = featured_post.ID %}
+          {% endfor %}
+        {% endif %}
+
+        {# Make sure featured post is excluded in query the site #}
+        {% set arr = [] %}
+        {% set arr = arr|merge({'post_type': 'news'}) %}
+        {% set arr = arr|merge({'list': recent_posts_to_show}) %}
+        {% set arr = arr|merge({'exclude_post': featured_post_ID ~','~current_post_ID }) %}
+        {% set arr = arr|merge({'paginate': 'false'}) %}
+        {% set arr = arr|merge({'use_layout': 'inline'}) %}
+        {{ function('netsposts_shortcode', arr) }}
+        
+      </div>
+    </div>
+  </div>
+</section>

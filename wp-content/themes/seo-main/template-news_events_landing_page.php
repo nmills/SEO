@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: News and Events Landing Page
+Template Name: News & Events Landing
 */
 
 $context = Timber::get_context();
