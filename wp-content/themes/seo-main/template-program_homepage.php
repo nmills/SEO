@@ -14,7 +14,13 @@ $context['post'] = $post;
 $args = array(
   'post_type' => 'news',
   'posts_per_page'=> 3,
-  'order' => 'DESC'
+  'order' => 'DESC',
+  'meta_query' => array(
+		array(
+			'key' => '_is_ns_featured_post',
+			'compare' => 'NOT EXISTS'
+		)
+	),
 );
 $context['recent_posts'] = Timber::get_posts($args);
 
