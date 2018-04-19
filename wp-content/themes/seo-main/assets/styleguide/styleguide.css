@@ -5616,8 +5616,8 @@ header {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.4; }
+    font-size: 14px;
+    line-height: 1; }
     .c-nav__multisite-nav ul > li > a.nav-title:after {
       content: "";
       position: absolute;
@@ -5654,12 +5654,11 @@ header {
 .c-nav__donate-link {
   height: 60px;
   background: #eb0029;
-  color: #ffffff;
   padding: 0 25px;
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #ffffff;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 3.5; }
   .c-nav__donate-link:hover, .c-nav__donate-link:focus {
     background: #050505; }
