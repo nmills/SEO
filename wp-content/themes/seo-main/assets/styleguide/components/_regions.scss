@@ -108,6 +108,12 @@
   }
 }
 
+.container .region_main_content {
+  .container.faq {
+    @include grid-column(12, $no-gutter);
+  }
+}
+
 .region_bottom {
   margin-bottom: 50px;
 }

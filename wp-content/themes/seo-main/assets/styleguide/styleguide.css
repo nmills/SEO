@@ -1604,6 +1604,10 @@ Styleguide 3.1
         display: inline-block;
         position: absolute;
         z-index: 10; } }
+  @media only screen and (min-width: 1024px) {
+    .c-hero_image__wrapper .c-hero_image--large_text + h1 {
+      position: relative;
+      margin-top: -370px; } }
   .c-hero_image__wrapper h2 {
     font-size: 30px;
     background: white;
@@ -2339,6 +2343,11 @@ Gallery
       margin-left: 0;
       float: right;
       padding-left: 25px; } }
+
+.container .region_main_content .container.faq {
+  width: calc(100%);
+  float: left;
+  margin-left: 0; }
 
 .region_bottom {
   margin-bottom: 50px; }
@@ -5542,6 +5551,9 @@ body {
       padding-top: 60px; } }
 
 .hide {
+  display: none !important; }
+
+.no-display {
   display: none !important; }
 
 /* Header */
