@@ -1011,7 +1011,8 @@ sg-wrapper:
 Styleguide 1.4
 */
 .c-rte ul, .c-rte__accordion ul {
-  margin: 50px 0px; }
+  margin: 50px 0px;
+  list-style-type: none !important; }
   .c-rte ul li, .c-rte__accordion ul li {
     position: relative;
     padding-left: 40px;
@@ -1060,7 +1061,8 @@ sg-wrapper:
 Styleguide 1.5
 */
 .c-rte ol, .c-rte__accordion ol {
-  margin: 50px 0px; }
+  margin: 50px 0px;
+  list-style-type: none !important; }
   .c-rte ol li, .c-rte__accordion ol li {
     position: relative;
     padding-left: 40px;

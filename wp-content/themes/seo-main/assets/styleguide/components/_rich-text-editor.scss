@@ -185,6 +185,7 @@ Styleguide 1.4
 .c-rte, .c-rte__accordion {
   ul {
     margin: 50px 0px;
+    list-style-type: none !important;
 
     li {
       position: relative;
@@ -241,6 +242,8 @@ Styleguide 1.5
 .c-rte, .c-rte__accordion {
   ol {
     margin: 50px 0px;
+    list-style-type: none !important;
+    
 
     li {
       position: relative;
