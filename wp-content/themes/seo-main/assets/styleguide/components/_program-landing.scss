@@ -870,10 +870,18 @@ body {
   .c-ph__event-details {
     text-align: center;
     h2 {
-      width: 25%;
+      width: 80%;
       margin: auto;
       margin-top: 0;
       margin-bottom: 80px;
+      font-size: 20px;
+
+      @include grid-media($md) {
+      width: 25%;
+
+      font-size: 30px;
+
+      }
     } 
   }
 
