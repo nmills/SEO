@@ -2908,7 +2908,14 @@ body {
 
 .program-landing-page .wysiwyg {
   max-width: 700px;
-  margin: auto; }
+  margin: auto;
+  padding: 0 10%; }
+  @media only screen and (min-width: 480px) {
+    .program-landing-page .wysiwyg {
+      padding: 0 15px; } }
+  @media only screen and (min-width: 1024px) {
+    .program-landing-page .wysiwyg {
+      padding: 0 5px; } }
   .program-landing-page .wysiwyg h2 {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
