@@ -111,6 +111,8 @@
 .container .region_main_content {
   .container.faq {
     @include grid-column(12, $no-gutter);
+
+    padding: 0;
   }
 }
 

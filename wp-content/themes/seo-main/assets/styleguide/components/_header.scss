@@ -134,6 +134,7 @@ header {
             padding: 5px 25px;
 
             @include type-5($color: $white);
+            width: 100%;
           }
         }
       }
@@ -149,13 +150,13 @@ header {
 .c-nav__donate-link {
   height: 50px;
   background: $red;
-  padding: 0 25px;
+  padding: 0 22px;
 
   @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 15px, $line-height: 3.5);
 
   &:hover,
   &:focus {
-    background: $black;
+    background: $light-blue;
   }
 }
 
@@ -405,6 +406,11 @@ header {
         @include grid-media($lg) {
           border-left: 2px solid $white;
           padding: 4px 15.5px;
+        }
+
+
+        &:hover {
+          background: $light-blue;
         }
       }
     }

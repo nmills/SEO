@@ -2349,7 +2349,8 @@ Gallery
 .container .region_main_content .container.faq {
   width: calc(100%);
   float: left;
-  margin-left: 0; }
+  margin-left: 0;
+  padding: 0; }
 
 .region_bottom {
   margin-bottom: 50px; }
@@ -5664,7 +5665,8 @@ header {
       color: #ffffff;
       font-weight: 300;
       font-size: 16px;
-      line-height: 1.4; }
+      line-height: 1.4;
+      width: 100%; }
   .c-nav__multisite-nav ul > li > a:hover + .nav-dropdown,
   .c-nav__multisite-nav .nav-dropdown:hover {
     display: block; }
@@ -5672,14 +5674,14 @@ header {
 .c-nav__donate-link {
   height: 50px;
   background: #eb0029;
-  padding: 0 25px;
+  padding: 0 22px;
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #ffffff;
   font-weight: 700;
   font-size: 15px;
   line-height: 3.5; }
   .c-nav__donate-link:hover, .c-nav__donate-link:focus {
-    background: #050505; }
+    background: #7cb4f6; }
 
 .c-nav__search-btn {
   padding: 0 26px;
@@ -5850,6 +5852,8 @@ header {
           .c-nav__nav--right ul > li > a {
             border-left: 2px solid #ffffff;
             padding: 4px 15.5px; } }
+        .c-nav__nav--right ul > li > a:hover {
+          background: #7cb4f6; }
 
 .c-nav__mobile {
   float: right;
