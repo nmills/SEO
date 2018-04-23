@@ -894,6 +894,8 @@ body {
   .c-gallery__container {
     max-width: 1024px;
     margin: auto;
+    display: block; 
+    width: 100%;
 
     .c-gallery__section-header {
       @include grid-column(12, $no-gutter);
