@@ -69,6 +69,10 @@ Styleguide 1.2
 
     @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 61px, $line-height: 1);
 
+    span {
+      font-weight: $font-thin;
+    }
+
     &:before {
       content: " ";
       display: block;
@@ -181,6 +185,7 @@ Styleguide 1.4
 .c-rte, .c-rte__accordion {
   ul {
     margin: 50px 0px;
+    list-style-type: none !important;
 
     li {
       position: relative;
@@ -237,6 +242,7 @@ Styleguide 1.5
 .c-rte, .c-rte__accordion {
   ol {
     margin: 50px 0px;
+    list-style-type: none !important;
 
     li {
       position: relative;
@@ -298,5 +304,9 @@ Styleguide 1.5
   p {
     margin-top: 0;
     margin-bottom: 40px;
+  }
+
+  strong {
+    @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 19px, $line-height: 1.2);
   }
 }

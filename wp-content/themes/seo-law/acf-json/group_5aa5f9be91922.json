@@ -63,7 +63,7 @@
             "label": "Video",
             "name": "video",
             "type": "url",
-            "instructions": "",
+            "instructions": "include http or https in the URL",
             "required": 0,
             "conditional_logic": [
                 [
@@ -144,7 +144,7 @@
                     "label": "destination url",
                     "name": "destination_url",
                     "type": "url",
-                    "instructions": "",
+                    "instructions": "include http or https in the URL",
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -194,5 +194,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523165323
+    "modified": 1523956743
 }

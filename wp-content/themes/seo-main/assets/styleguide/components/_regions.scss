@@ -15,11 +15,13 @@
 
     .content {
       @include grid-column(12, $no-gutter);
+
       max-width: 780px;
 
       @include grid-media($lg) {
         margin-left: 220px;
       }
+
 
       @include grid-media($xl) {
         margin-left: 160px;
@@ -106,6 +108,22 @@
   }
 }
 
+.container .region_main_content {
+  .container.faq {
+    @include grid-column(12, $no-gutter);
+
+    padding: 0;
+  }
+}
+
 .region_bottom {
   margin-bottom: 50px;
+}
+
+.c-news-events {
+  .container.region_body {
+    @include grid-media($max-md) {
+      padding: 0;
+    }
+  }
 }

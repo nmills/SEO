@@ -22,7 +22,7 @@
                 {# <img src="{{Image(featured_post.get_field('header_image')).src}}"> #}
                 </div>
               {% endif %}
-              <div class="c-recent-news__program">
+              <div class="c-recent-news__program no-display">
                   <p>{{site_name}}</p>
               </div>
               <div class="c-recent-news__title">
@@ -43,7 +43,7 @@
               <div class="c-recent-news__image" style="background-image: url({{Image(recent_news.get_field('header_image')).src}});">
               </div>
             {% endif %}
-	          <div class="c-recent-news__program">
+	          <div class="c-recent-news__program no-display">
 	            <p>{{site_name}}</p>
 	          </div>
 	          <div class="c-recent-news__title">

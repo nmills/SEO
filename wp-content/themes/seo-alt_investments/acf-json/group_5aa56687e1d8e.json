@@ -3,6 +3,27 @@
     "title": "Program Landing",
     "fields": [
         {
+            "key": "field_5ad5a1752f6b3",
+            "label": "Event Info",
+            "name": "event_info",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5ad59b22a3841"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
             "key": "field_5aa566900adec",
             "label": "flexi content",
             "name": "flexi_content",
@@ -201,6 +222,99 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5ad5a1b12f6b4": {
+                    "key": "5ad5a1b12f6b4",
+                    "name": "component_pl_wysiwyg",
+                    "label": "Wysiwyg",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ad5a1e72f6b7",
+                            "label": "PL WYSIWYG",
+                            "name": "component:pl_wysiwyg",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ad59cdfae8a5"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5ad5a1b32f6b5": {
+                    "key": "5ad5a1b32f6b5",
+                    "name": "component_pl_image_only_gallery",
+                    "label": "Image Only Gallery",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ad5abbf2f6b8",
+                            "label": "PL Image Only Gallery",
+                            "name": "component:pl_image_only_gallery",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ad59d78021a7"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5ad5a1b52f6b6": {
+                    "key": "5ad5a1b52f6b6",
+                    "name": "component_pl_medium_image_gallery",
+                    "label": "Medium Image Gallery",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ad5ac1b2f6b9",
+                            "label": "PL Medium Image Gallery",
+                            "name": "component:pl_medium_image_gallery",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ad59f353660c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -222,8 +336,10 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1523853725
+    "modified": 1523965678
 }

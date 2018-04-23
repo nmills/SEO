@@ -15,7 +15,6 @@ $context['post'] = $post;
 /* Wiring Recent News and events 
 	Make sure featured post and current post does not appear in the recent posts
 */
-
 $args = array(
   'post_type' => 'news',
   'posts_per_page'=> 3,
@@ -28,6 +27,6 @@ $args = array(
 	),
   'order' => 'DESC'
 );
-$context['recent_posts'] = Timber::get_posts($args);
+$context['recent_child_posts'] = Timber::get_posts($args);
 
 Timber::render( $templates, $context );
