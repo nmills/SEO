@@ -2922,7 +2922,7 @@ body {
 .program-landing-page .c-gallery__container {
   max-width: 1024px;
   margin: auto;
-  display: inline-block;
+  display: block;
   width: 100%; }
   .program-landing-page .c-gallery__container .c-gallery__section-header {
     width: calc(100%);
