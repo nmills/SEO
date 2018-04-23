@@ -2903,7 +2903,8 @@ body {
     @media only screen and (min-width: 768px) {
       .program-landing-page .c-ph__event-details h2 {
         width: 25%;
-        font-size: 30px; } }
+        font-size: 30px;
+        max-width: 320px; } }
 
 .program-landing-page .wysiwyg {
   max-width: 700px;
