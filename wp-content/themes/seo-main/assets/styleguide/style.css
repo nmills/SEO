@@ -1461,25 +1461,25 @@ iframe {
   display: inline-block; }
 
 .icon-search--small:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-search--small.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-search--small.svg") center center no-repeat;
   background-size: contain;
   width: 20px;
   height: 20px; }
 
 .icon-search--large:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-search--large.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-search--large.svg") center center no-repeat;
   background-size: contain;
   width: 50px;
   height: 50px; }
 
 .icon-search-red--small:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-search-red--small.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-search-red--small.svg") center center no-repeat;
   background-size: contain;
   width: 16px;
   height: 19px; }
 
 .icon-close--large:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-close--large.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-close--large.svg") center center no-repeat;
   background-size: contain;
   width: 35px;
   height: 35px;
