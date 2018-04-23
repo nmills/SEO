@@ -91,6 +91,11 @@
         }
       }
 
+       &.last {
+          margin-right: 0;
+        }
+
+
 
       @include grid-media($sm) {
         @include grid-column(3.6, $no-gutter);

@@ -2919,7 +2919,9 @@ body {
 
 .program-landing-page .c-gallery__container {
   max-width: 1024px;
-  margin: auto; }
+  margin: auto;
+  display: inline-block;
+  width: 100%; }
   .program-landing-page .c-gallery__container .c-gallery__section-header {
     width: calc(100%);
     float: left;
@@ -2996,6 +2998,8 @@ body {
   @media only screen and (max-width: 479px) {
     .c-gallery__container.image-only .c-gallery__gallery-item.even {
       margin-right: 0; } }
+  .c-gallery__container.image-only .c-gallery__gallery-item.last {
+    margin-right: 0; }
   @media only screen and (min-width: 480px) {
     .c-gallery__container.image-only .c-gallery__gallery-item {
       width: calc(30%);
