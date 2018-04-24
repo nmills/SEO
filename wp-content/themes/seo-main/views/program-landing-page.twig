@@ -5,9 +5,7 @@
     <div class="page-content">
           {# Amalan new codes #}
           <div class="region_hero">
-            <div class="page-title">
-              <h1>{{post.title}}</h1>
-            </div>
+            
 
             {% set component = post.get_field('event_info') %}
             {% include ['components/component_pl_event_info.twig'] %}
