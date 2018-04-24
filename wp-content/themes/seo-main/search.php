@@ -11,7 +11,7 @@ if ( ! class_exists( 'Timber' ) ) {
   return;
 }
 $context = Timber::get_context();
-$context['posts'] = Timber::get_posts();
+$context['posts'] = new Timber\PostQuery();
 $templates = array( 'search.twig' );
 
 Timber::render( $templates, $context );
