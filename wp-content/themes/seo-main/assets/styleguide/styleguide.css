@@ -1011,7 +1011,8 @@ sg-wrapper:
 Styleguide 1.4
 */
 .c-rte ul, .c-rte__accordion ul {
-  margin: 50px 0px; }
+  margin: 50px 0px;
+  list-style-type: none !important; }
   .c-rte ul li, .c-rte__accordion ul li {
     position: relative;
     padding-left: 40px;
@@ -1060,7 +1061,8 @@ sg-wrapper:
 Styleguide 1.5
 */
 .c-rte ol, .c-rte__accordion ol {
-  margin: 50px 0px; }
+  margin: 50px 0px;
+  list-style-type: none !important; }
   .c-rte ol li, .c-rte__accordion ol li {
     position: relative;
     padding-left: 40px;
@@ -1459,25 +1461,25 @@ iframe {
   display: inline-block; }
 
 .icon-search--small:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-search--small.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-search--small.svg") center center no-repeat;
   background-size: contain;
   width: 20px;
   height: 20px; }
 
 .icon-search--large:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-search--large.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-search--large.svg") center center no-repeat;
   background-size: contain;
   width: 50px;
   height: 50px; }
 
 .icon-search-red--small:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-search-red--small.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-search-red--small.svg") center center no-repeat;
   background-size: contain;
   width: 16px;
   height: 19px; }
 
 .icon-close--large:before {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-close--large.svg") center center no-repeat;
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-close--large.svg") center center no-repeat;
   background-size: contain;
   width: 35px;
   height: 35px;
@@ -2347,7 +2349,8 @@ Gallery
 .container .region_main_content .container.faq {
   width: calc(100%);
   float: left;
-  margin-left: 0; }
+  margin-left: 0;
+  padding: 0; }
 
 .region_bottom {
   margin-bottom: 50px; }
@@ -2892,14 +2895,27 @@ body {
 .program-landing-page .c-ph__event-details {
   text-align: center; }
   .program-landing-page .c-ph__event-details h2 {
-    width: 25%;
+    width: 80%;
     margin: auto;
     margin-top: 0;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    font-size: 20px; }
+    @media only screen and (min-width: 768px) {
+      .program-landing-page .c-ph__event-details h2 {
+        width: 25%;
+        font-size: 30px;
+        max-width: 320px; } }
 
 .program-landing-page .wysiwyg {
   max-width: 700px;
-  margin: auto; }
+  margin: auto;
+  padding: 0 10%; }
+  @media only screen and (min-width: 480px) {
+    .program-landing-page .wysiwyg {
+      padding: 0 15px; } }
+  @media only screen and (min-width: 1024px) {
+    .program-landing-page .wysiwyg {
+      padding: 0 5px; } }
   .program-landing-page .wysiwyg h2 {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
@@ -2919,7 +2935,9 @@ body {
 
 .program-landing-page .c-gallery__container {
   max-width: 1024px;
-  margin: auto; }
+  margin: auto;
+  display: block;
+  width: 100%; }
   .program-landing-page .c-gallery__container .c-gallery__section-header {
     width: calc(100%);
     float: left;
@@ -2996,6 +3014,8 @@ body {
   @media only screen and (max-width: 479px) {
     .c-gallery__container.image-only .c-gallery__gallery-item.even {
       margin-right: 0; } }
+  .c-gallery__container.image-only .c-gallery__gallery-item.last {
+    margin-right: 0; }
   @media only screen and (min-width: 480px) {
     .c-gallery__container.image-only .c-gallery__gallery-item {
       width: calc(30%);
@@ -3025,8 +3045,8 @@ body {
       right: -12px;
       border-top: 8px solid black;
       border-right: 8px solid black;
-      width: 70px;
-      height: 70px; } }
+      width: 59px;
+      height: 48px; } }
   .c-gallery__container.image-only .c-gallery__gallery-item img {
     max-width: 100%;
     transition: filter .5s ease-in-out;
@@ -3176,8 +3196,8 @@ body {
       position: absolute;
       top: -16px;
       right: -16px;
-      width: 70px;
-      height: 70px;
+      width: 59px;
+      height: 48px;
       border-top: 8px solid black;
       border-right: 8px solid black; } }
   .c-gallery__container.image-medium .c-gallery__gallery-item .item__heading,
@@ -5658,7 +5678,8 @@ header {
       color: #ffffff;
       font-weight: 300;
       font-size: 16px;
-      line-height: 1.4; }
+      line-height: 1.4;
+      width: 100%; }
   .c-nav__multisite-nav ul > li > a:hover + .nav-dropdown,
   .c-nav__multisite-nav .nav-dropdown:hover {
     display: block; }
@@ -5666,14 +5687,14 @@ header {
 .c-nav__donate-link {
   height: 50px;
   background: #eb0029;
-  padding: 0 25px;
+  padding: 0 22px;
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #ffffff;
   font-weight: 700;
   font-size: 15px;
   line-height: 3.5; }
   .c-nav__donate-link:hover, .c-nav__donate-link:focus {
-    background: #050505; }
+    background: #7cb4f6; }
 
 .c-nav__search-btn {
   padding: 0 26px;
@@ -5844,6 +5865,8 @@ header {
           .c-nav__nav--right ul > li > a {
             border-left: 2px solid #ffffff;
             padding: 4px 15.5px; } }
+        .c-nav__nav--right ul > li > a:hover {
+          background: #7cb4f6; }
 
 .c-nav__mobile {
   float: right;

@@ -870,16 +870,33 @@ body {
   .c-ph__event-details {
     text-align: center;
     h2 {
-      width: 25%;
+      width: 80%;
       margin: auto;
       margin-top: 0;
       margin-bottom: 80px;
+      font-size: 20px;
+
+      @include grid-media($md) {
+      width: 25%;
+
+      font-size: 30px;
+      max-width: 320px;
+      }
     } 
   }
 
   .wysiwyg {
     max-width: 700px;
     margin: auto;
+        padding: 0 10%;
+
+        @include grid-media($sm) {
+           padding: 0 15px;
+      }
+
+      @include grid-media($lg) {
+        padding: 0 5px;
+      }
 
     h2 {
       @include type-1;
@@ -894,6 +911,8 @@ body {
   .c-gallery__container {
     max-width: 1024px;
     margin: auto;
+    display: block; 
+    width: 100%;
 
     .c-gallery__section-header {
       @include grid-column(12, $no-gutter);
