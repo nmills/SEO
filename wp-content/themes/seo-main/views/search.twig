@@ -7,7 +7,7 @@
 				<div class="page-title">
 					<h1>
 						<span>Search results for</span><br>
-						"Conferences in New York"
+						{{search_phrase}}
 					</h1>
 				</div>
 			</div>
@@ -19,11 +19,16 @@
 			<div class="c-search-filter">
 				<div class="c-search-filter__filter">
 					<label>Program:</label>
-					<select>
+					{# <select>
 						<option value="0">All</option>
 						<option value="1">This</option>
 						<option value="2">That</option>
-					</select>
+					</select> #}
+
+					{% for site in search_filters %}
+						{{site|print_r}}
+					{% endfor %}
+
 				</div>
 				<a href="#" class="c-search-filter__btn js-search-filter__btn">
 					Search again <span class="icon icon-search-red--small"></span>
@@ -35,6 +40,29 @@
 			{% for post in posts %}
 				{% include ['partials/search-teaser.twig', 'teaser.twig'] %}
 			{% endfor %}
+
+			{# Pagination added in #}
+			<div class="tool-pagination">
+				{% if posts.pagination.prev %}
+					<a href="{{posts.pagination.prev.link}}" class="prev {{posts.pagination.prev.link|length ? '' : 'invisible'}}">Prev</a>
+				{% endif %}
+				<ul class="pages">
+					{% for page in posts.pagination.pages %}
+						<li>
+							{% if page.link %}
+								<a href="{{page.link}}" class="{{page.class}}">{{page.title}}</a>
+							{% else %}
+								<span class="{{page.class}}">{{page.title}}</span>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+				{% if posts.pagination.next %}
+					<a href="{{posts.pagination.next.link}}" class="next {{posts.pagination.next.link|length ? '' : 'invisible'}}">Next</a>
+				{% endif %}
+			</div>
+
+
 		</div>
 	</div>
 {% endblock %}

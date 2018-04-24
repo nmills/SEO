@@ -72,6 +72,9 @@ class BSDStarterSite extends TimberSite {
     );
 
     $context['featured_posts'] = Timber::get_posts($args);
+
+    /*Search site ID*/
+    $context['search_site_IDS'] = get_search_sites();
     return $context;
     
   }
@@ -254,6 +257,21 @@ function bsdstarter_get_sidebar_slug( $post ) {
 
   return '';
 }
+
+/* returns the site ID's for the search*/
+function get_search_sites(){
+  $current_site = get_current_site();
+  $site_id_to_search = $current_site->id;
+  if($site_id_to_search == 1){
+    $site_id_to_search = '1,2,3,4,5';
+  }
+  return $site_id_to_search;
+}
+
+/* Returns the sites and their URL's for search filters */
+/*function get_all_sites(){
+  return get_sites();
+}*/
 
 // Customize TinyMCE settings
 require_once(get_template_directory() . '/includes/bsdstarter_editor_styles.php');
