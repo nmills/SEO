@@ -309,17 +309,16 @@
 .c-ph-stats__container {
   @include grid-column(12, $no-gutter);
 
-    background: $light-gray;
-  .c-ph-stats__content {
-   
+  background: $light-gray;
 
-        width: calc(100%);
+  .c-ph-stats__content {
+    width: calc(100%);
     margin: 0 auto;
     display: inline-block;
 
     @include grid-media($lg) {
       position: relative;
-       width: calc(80%);
+      width: calc(80%);
       display: flex;
     }
 
