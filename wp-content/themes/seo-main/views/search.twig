@@ -19,16 +19,13 @@
 			<div class="c-search-filter">
 				<div class="c-search-filter__filter">
 					<label>Program:</label>
-					{# <select>
-						<option value="0">All</option>
-						<option value="1">This</option>
-						<option value="2">That</option>
-					</select> #}
-
 					{% for site in search_filters %}
-						{{site|print_r}}
+						{% if site.id == 1 %}
+							<a href="{{site.link}}?s={{search_phrase}}&searchblogs=1,2,3,4,5">{{site.name}}</a>
+						{% else %}
+							<a href="{{site.link}}?s={{search_phrase}}">{{site.name}}</a>
+						{% endif %}
 					{% endfor %}
-
 				</div>
 				<a href="#" class="c-search-filter__btn js-search-filter__btn">
 					Search again <span class="icon icon-search-red--small"></span>

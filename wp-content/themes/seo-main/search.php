@@ -19,14 +19,13 @@ $sites_array = array();
 $all_sites = get_sites();
 foreach ($all_sites as $site) {
 	$new_site = array();
-	$new_site['link'] = $site->domain.$site->path;
+	$new_site['link'] = '//'.$site->domain.$site->path;
 	$new_site['id'] = $site->id;
 	switch_to_blog($site->id);
 	$new_site['name'] = get_bloginfo('name');
 	restore_current_blog();
 	array_push($sites_array, $new_site);
 }
-
 
 $context['search_filters'] = $sites_array;
 
