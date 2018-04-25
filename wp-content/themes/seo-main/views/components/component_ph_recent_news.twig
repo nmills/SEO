@@ -26,10 +26,10 @@
               </div>
               <div class="c-recent-news__title">
                 <h3 class="c-rte__link">{{featured_post.title}} </h3>
-              </div>
-              <div class="c-recent-news__event-details">
-                {% set component = featured_post.get_field('header') %}
-                <p>{{component.header_text}}</p>
+                <div class="c-recent-news__event-details">
+                  {% set component = featured_post.get_field('header') %}
+                  <p>{{component.header_text}}</p>
+                </div>
               </div>
             </div>
           </a>
@@ -48,15 +48,14 @@
 	          </div>
 	          <div class="c-recent-news__title">
 	            <h3 class="c-rte__link">{{recent_news.title}}</h3>
-	          </div>
-	          <div class="c-recent-news__event-details">
-              {% set component = recent_news.get_field('header') %}
-              <p>{{component.header_text}}</p>
+              <div class="c-recent-news__event-details">
+                {% set component = recent_news.get_field('header') %}
+                <p>{{component.header_text}}</p>
+              </div>
 	          </div>
 	        </div>
         </a>
         {% endfor %}
-        
       </div>
     </div>
   </div>
