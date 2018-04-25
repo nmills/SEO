@@ -362,6 +362,7 @@
 
 .c-recent-news {
   background: $light-gray;
+  margin-bottom: 0;
 
   .c-recent-news__container {
     @include grid-column(12, $no-gutter);
