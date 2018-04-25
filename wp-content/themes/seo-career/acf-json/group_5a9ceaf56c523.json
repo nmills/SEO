@@ -78,37 +78,6 @@
                     "min": "",
                     "max": ""
                 },
-                "5a9cf2814ab2f": {
-                    "key": "5a9cf2814ab2f",
-                    "name": "faq",
-                    "label": "FAQ",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5a9cf28b4ab30",
-                            "label": "faq",
-                            "name": "faq",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_5a827a1dd7b5d"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "5a9cf29c4ab31": {
                     "key": "5a9cf29c4ab31",
                     "name": "slideshow",
@@ -142,14 +111,14 @@
                 },
                 "5aaa669f9aee5": {
                     "key": "5aaa669f9aee5",
-                    "name": "faq_new",
-                    "label": "FAQ New",
+                    "name": "faq",
+                    "label": "FAQ",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5aaa66a99aee6",
-                            "label": "faq new",
-                            "name": "faq_new",
+                            "label": "faq",
+                            "name": "faq",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -194,5 +163,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523172033
+    "modified": 1524634684
 }
