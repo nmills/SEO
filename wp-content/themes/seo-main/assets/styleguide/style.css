@@ -4655,7 +4655,8 @@ body {
             height: 25px; }
 
 .c-recent-news {
-  background: #e5e7e7; }
+  background: #e5e7e7;
+  margin-bottom: 0; }
   .c-recent-news .c-recent-news__container {
     width: calc(100%);
     float: left;
