@@ -1,4 +1,4 @@
-<a href="{{recent_news.link}}">
+<a href="{{news_link}}">
   <div class="c-recent-news__item count-{{count}} {% if recent_news.header_image is empty %}no-image{% endif %}">
     {% if recent_news.header_image is not empty %}
       <div class="c-recent-news__image" style="background-image: url({{header_image_url}});">
@@ -11,7 +11,7 @@
       <h3 class="c-rte__link">{{recent_news.title}}</h3>
     </div>
     <div class="c-recent-news__event-details">
-      <p>{{recent_news.header_text}}</p>
+      <p>{{header_text}}</p>
     </div>
   </div>
 </a>
