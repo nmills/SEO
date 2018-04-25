@@ -5966,7 +5966,7 @@ header {
     display: block; }
   @media only screen and (min-width: 768px) {
     .c-searchform__container {
-      padding: 15px 30px; } }
+      padding: 10px 30px; } }
 
 .c-searchform__search-icon,
 .c-searchform__textfield,
