@@ -39,13 +39,15 @@
 
 			{% include ['search-results-form.twig'] %}
 
-			{% for post in posts %}
-				{% include ['partials/search-teaser.twig', 'teaser.twig'] %}
-			{% endfor %}
-
+			<div class="posts-selector">
+				{% for post in posts %}
+					{% include ['partials/search-teaser.twig', 'teaser.twig'] %}
+				{% endfor %}
+			</div>
+			
 			{# Pagination added in #}
-			<div class="tool-pagination">
-				{% if posts.pagination.prev %}
+			<div id="block-wrapper">
+				{# {% if posts.pagination.prev %}
 					<a href="{{posts.pagination.prev.link}}" class="prev {{posts.pagination.prev.link|length ? '' : 'invisible'}}">Prev</a>
 				{% endif %}
 				<ul class="pages">
@@ -61,7 +63,12 @@
 				</ul>
 				{% if posts.pagination.next %}
 					<a href="{{posts.pagination.next.link}}" class="next {{posts.pagination.next.link|length ? '' : 'invisible'}}">Next</a>
-				{% endif %}
+				{% endif %} #}
+				<div class="netsposts-paginate">
+					{% if posts.pagination.next %}
+						<a class="next page-numbers" href="{{posts.pagination.next.link}}">Next</a>
+					{% endif %}
+				</div>
 			</div>
 
 

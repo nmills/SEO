@@ -1,4 +1,4 @@
-<div class="c-search-results__result">
+<div class="c-search-results__result post-selector">
 	<p hidden class="no-display">{{ function('switch_to_blog', post.blog_id) }}</p>
   <a class="c-search-results__link" href="{{post.link}}">{{post.title}}</a>
   <div class="c-search-results__content">{{post.get_preview(20,false,false,true) }}</div>
