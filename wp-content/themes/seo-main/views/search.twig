@@ -17,15 +17,20 @@
 	<div class="container">
 		<div class="c-main-content">
 			<div class="c-search-filter">
-				<div class="c-search-filter__filter">
-					<label>Program:</label>
-					{% for site in search_filters %}
-						{% if site.id == 1 %}
-							<a href="{{site.link}}?s={{search_phrase}}&searchblogs=1,2,3,4,5">{{site.name}}</a>
-						{% else %}
-							<a href="{{site.link}}?s={{search_phrase}}">{{site.name}}</a>
-						{% endif %}
-					{% endfor %}
+				<div class="c-search-filter__filter c-news-filter">
+					<h3>Program: </h3><span id="selected">
+						{% if current_site_id == 1 %}All{% else %}{{current_site_name}}{% endif %}</span>
+					<ul class="c-news-filter__items" id="selection-options">
+						{% for site in search_filters %}
+							<li class="c-news-filter__item {% if site.active_site %} active-selected {% endif %} ">
+								{% if site.id == 1 %}
+									<a href="{{site.link}}?s={{search_phrase}}&searchblogs=1,2,3,4,5">All</a>
+								{% else %}
+									<a href="{{site.link}}?s={{search_phrase}}">{{site.name}}</a>
+								{% endif %}
+							</li>
+						{% endfor %}
+					</ul>
 				</div>
 				<a href="#" class="c-search-filter__btn js-search-filter__btn">
 					Search again <span class="icon icon-search-red--small"></span>
