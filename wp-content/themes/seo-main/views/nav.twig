@@ -62,10 +62,9 @@
                 {% endif %}
               {% endfor %}
 
-            <li class=" {% if main_menu_item.children %} has-submenu {% endif %} 
-              {% if mainlinkactive or childlinkactive %} active-parent {% endif %}"> 
+            <li class=" {% if main_menu_item.children %} has-submenu {% endif %}"> 
 
-              <a href="{{main_menu_item.get_link}}">{{main_menu_item.title}}</a> 
+              <a href="{{main_menu_item.get_link}}" class="{% if mainlinkactive or childlinkactive %} active-parent {% endif %}">{{main_menu_item.title}}</a> 
               {% if main_menu_item.children and (mainlinkactive or childlinkactive) %}
                 <ul class="main-nav-dropdown">
                   {% for child in main_menu_item.get_children %}
