@@ -36,11 +36,11 @@
         	{% if component.include_cta == "yes" %}
         		{% include ['components/news/component_news_cta.twig'] %}
         	{% endif %}
-
-        {# Pull in the recent News Items #}
-        {% include ['components/component_global_recent_news.twig'] %}
-
       </div>
+
+      {# Pull in the recent News Items #}
+      {% include ['components/component_global_recent_news.twig'] %}
+
       {% block article_footer %}
       {% endblock %}
     </div>
