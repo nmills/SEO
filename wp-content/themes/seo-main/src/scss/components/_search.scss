@@ -15,6 +15,7 @@
     top: -105px;
   }
 
+
   &.active {
     top: 0;
     opacity: 1;
@@ -30,7 +31,7 @@
   margin: 0 auto;
 
   @include grid-media($md) {
-    padding: 15px 30px;
+    padding: 10px 30px;
   }
 }
 
@@ -49,6 +50,7 @@
   @include grid-media($md) {
     padding-right: 30px;
   }
+
 
   .icon {
     &:before {
@@ -74,6 +76,7 @@
     width: calc(100% - 235px);
   }
 
+
   input {
     outline: none;
     background: none;
@@ -81,13 +84,17 @@
     margin-left: 0;
     max-height: 60px;
     font-weight: $font-thinnest;
+
     @include type-custom($color: $white, $font-weight: $font-normal, $font-size: 24px, $line-height: 1.2);
+
     @include grid-column(12);
+
     margin-left: 0;
 
     @include grid-media($md) {
       @include type-custom($color: $white, $font-weight: $font-normal, $font-size: 60px, $line-height: 1.2);
     }
+
 
     &::placeholder {
       color: $white;
@@ -111,8 +118,9 @@
   margin: 3px 15px 0 0;
 
   @include grid-media($md) {
-    margin: 12px 30px 0 0;  
+    margin: 12px 30px 0 0;
   }
+
 
   input {
     width: 30px;
@@ -146,6 +154,7 @@
     margin-top: 12px;
     padding-left: 30px;
   }
+
 
   span {
     &:before {
