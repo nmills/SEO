@@ -24,13 +24,11 @@
               </div>
               <div class="c-recent-news__title">
                 <h3 class="c-rte__link">{{featured_post.title}} </h3>
-              </div>
-              <div class="c-recent-news__event-details">
-                {% set component = featured_post.get_field('header') %}
-                {% if component.header_medium == 'happening on' %}
+                <div class="c-recent-news__event-details">
+                  {% set component = featured_post.get_field('header') %}
                   <p>{{component.header_text}}</p>
-                {% endif %}
-              </div>
+                </div>
+              </div> 
             </div>
           </a>
           {% set featured_post_ID = featured_post.ID %}
