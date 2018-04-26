@@ -48,7 +48,9 @@
 								{{tags_filter_NE_landingpage}}
 							</div>
 							<div class="c-news-filter">
-								{{site_filter_NE_landingpage}}
+								{% if current_blog_id == 1 %}
+									{{site_filter_NE_landingpage}}
+								{% endif %}
 							</div>
 							
 
