@@ -1,0 +1,40 @@
+{
+    "key": "group_5ae163cb56bf1",
+    "title": "Global settings",
+    "fields": [
+        {
+            "key": "field_5ae163d280a7f",
+            "label": "News & Events Landing page",
+            "name": "news_&_events_landing_page",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "seo-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1524720629
+}
