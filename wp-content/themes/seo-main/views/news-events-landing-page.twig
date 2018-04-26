@@ -8,7 +8,7 @@
 				{% include ['partials/featured_news.twig'] %}
 			{% endif %}
 
-	      <div class="container region_body">
+	      <div class="container region_body" id="filter-news">
 	        <div class="container region_main_content">
 	          {# Adding Body #}
             <section class="posts-selector">
@@ -23,12 +23,11 @@
 							<div class="container news-list">
 								{% set arr = [] %}
 								{% set arr = arr|merge({'post_type': 'news'}) %}
-								{% set arr = arr|merge({'list': 2}) %}
+								{% set arr = arr|merge({'list': 10}) %}
 								{% set arr = arr|merge({'paginate': 'true'}) %}
 								{{ function('netsposts_shortcode', arr) }}
 							</div>
 							
-
             </section>
 	        </div>
 
