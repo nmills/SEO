@@ -1,0 +1,7 @@
+{% for item in component.repeater %}
+  <img src="{{Image(item.photo).src}}">
+
+  {{item.text}}
+
+  <a href="{{item.destination_link}}">Test link</a>
+{% endfor %}
