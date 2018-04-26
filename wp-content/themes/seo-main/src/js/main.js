@@ -10,6 +10,7 @@ import hamburger from 'modules/hamburger.js';
 import bxslider from 'modules/jquery.bxslider.min.js';
 import galleryWidget from 'modules/galleryWidget.js';
 import player_button from 'modules/video_player_button.js';
+import navigation from 'modules/navigation.js';
 
 
 (function($) {
@@ -19,6 +20,10 @@ import player_button from 'modules/video_player_button.js';
     // Styleguide event when an element is rendered
     $(window).bind("styleguide:onRendered", function(e) {
       ready();
+    });
+
+    $(window).resize(function(){
+      resize();
     });
   });
 
@@ -52,5 +57,10 @@ import player_button from 'modules/video_player_button.js';
     player_button();
     searchBar();
     hamburger();
+    // navigation();
+  }
+
+  function resize() {
+    // navigation();
   }
 })(jquery);

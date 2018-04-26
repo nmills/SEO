@@ -4395,6 +4395,25 @@ body {
           margin-right: 10px; }
         .c-news-header .container .c-news-header__breadcrumb p span.current {
           margin-left: 10px; }
+    .c-news-header .container .c-news-header__breadcrumb p {
+      display: inline-block; }
+    .c-news-header .container .c-news-header__breadcrumb a {
+      text-transform: uppercase;
+      margin: 0;
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 1;
+      font-size: 12px;
+      font-weight: 300; }
+      .c-news-header .container .c-news-header__breadcrumb a.parent {
+        cursor: pointer;
+        margin-right: 10px; }
+      .c-news-header .container .c-news-header__breadcrumb a.current {
+        margin-left: 10px; }
+        .c-news-header .container .c-news-header__breadcrumb a.current:hover {
+          color: #7cb4f6; }
   .c-news-header .container h1 {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
@@ -5788,13 +5807,6 @@ header {
             color: #ffffff;
             border-left: 2px solid #ffffff;
             border-right: 2px solid #ffffff; } }
-    .c-nav__nav--left ul > li > ul > li > a {
-      padding: 5px 15px;
-      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-      color: #ffffff;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 1.4; }
     @media only screen and (min-width: 1024px) {
       .c-nav__nav--left ul > li > ul {
         position: absolute;
@@ -5802,8 +5814,24 @@ header {
         left: 0;
         top: 30px;
         background: #ffffff;
-        padding: 15px; }
-        .c-nav__nav--left ul > li > ul > li > a {
+        padding: 15px; } }
+    .c-nav__nav--left ul > li > ul > .child-menu {
+      position: relative; }
+      .c-nav__nav--left ul > li > ul > .child-menu > li {
+        float: left;
+        width: 100%; }
+        @media only screen and (min-width: 1024px) {
+          .c-nav__nav--left ul > li > ul > .child-menu > li {
+            width: auto; } }
+        .c-nav__nav--left ul > li > ul > .child-menu > li > a {
+          padding: 5px 15px;
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #ffffff;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 1.4; }
+      @media only screen and (min-width: 1024px) {
+        .c-nav__nav--left ul > li > ul > .child-menu > li > a {
           padding: 5px 25px;
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
           color: #050505;
@@ -5812,7 +5840,7 @@ header {
           line-height: 1.4;
           font-weight: 700;
           position: relative; }
-          .c-nav__nav--left ul > li > ul > li > a.active-child:after {
+          .c-nav__nav--left ul > li > ul > .child-menu > li > a.active-child:after {
             content: "";
             position: absolute;
             width: calc(100% - 50px);
@@ -5820,12 +5848,12 @@ header {
             left: 50%;
             bottom: -17px;
             transform: translateX(-50%); }
-          .c-nav__nav--left ul > li > ul > li > a, .c-nav__nav--left ul > li > ul > li > a:hover, .c-nav__nav--left ul > li > ul > li > a:focus {
+          .c-nav__nav--left ul > li > ul > .child-menu > li > a, .c-nav__nav--left ul > li > ul > .child-menu > li > a:hover, .c-nav__nav--left ul > li > ul > .child-menu > li > a:focus {
             background: none;
             color: #050505;
             border: none;
             border-bottom: 2px solid #ffffff; }
-          .c-nav__nav--left ul > li > ul > li > a:hover:after {
+          .c-nav__nav--left ul > li > ul > .child-menu > li > a:hover:after {
             content: "";
             position: absolute;
             width: calc(100% - 50px);

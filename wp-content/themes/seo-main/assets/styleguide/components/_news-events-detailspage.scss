@@ -50,6 +50,33 @@
           }
         }
       }
+
+      p {
+        display: inline-block;
+      }
+
+      a {
+        text-transform: uppercase;
+        margin: 0;
+
+        @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 12px, $line-height: 1);
+
+        font-size: 12px;
+        font-weight: $font-normal;
+
+        &.parent {
+          cursor: pointer;
+          margin-right: 10px;
+        }
+
+        &.current {
+          margin-left: 10px;
+
+          &:hover {
+            color: $light-blue;
+          }
+        }
+      }
     }
 
     h1 {

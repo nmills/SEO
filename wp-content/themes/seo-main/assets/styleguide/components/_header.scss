@@ -254,7 +254,6 @@ header {
           &.active-parent {
             background: $white;
             color: $red;
-
             border-left: 2px solid $white;
             border-right: 2px solid $white;
           }
@@ -305,14 +304,6 @@ header {
       }
 
       > ul {
-        > li {
-          > a {
-            padding: 5px 15px;
-
-            @include type-5($color: $white);
-          }
-        }
-
         @include grid-media($lg) {
           // display: none;
           position: absolute;
@@ -321,46 +312,76 @@ header {
           top: 30px;
           background: $white;
           padding: 15px;
+        }
 
+
+        > .child-menu {
+          position: relative;
           > li {
+            float: left;
+            width: 100%;
+
+            @include grid-media($lg) {
+              width: auto;
+            }
+
+
             > a {
-              padding: 5px 25px;
+              padding: 5px 15px;
 
-              @include type-5($color: $black);
+              @include type-5($color: $white);
+            }
+          }
 
-              font-weight: $font-bold;
-              position: relative;
+          @include grid-media($lg) {
+            // display: none;
+            // position: absolute;
+            // width: 100%;
+            // left: 0;
+            // top: 30px;
+            // background: $white;
+            // padding: 15px;
 
-              &.active-child {
-                &:after {
-                  content: "";
-                  position: absolute;
-                  width: calc(100% - 50px);
-                  border-bottom: 2px solid $black;
-                  left: 50%;
-                  bottom: -17px;
-                  transform: translateX(-50%);
+            > li {
+              > a {
+                padding: 5px 25px;
+
+                @include type-5($color: $black);
+
+                font-weight: $font-bold;
+                position: relative;
+
+                &.active-child {
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    width: calc(100% - 50px);
+                    border-bottom: 2px solid $black;
+                    left: 50%;
+                    bottom: -17px;
+                    transform: translateX(-50%);
+                  }
                 }
-              }
 
-              &,
-              &:hover,
-              &:focus {
-                background: none;
-                color: $black;
-                border: none;
-                border-bottom: 2px solid $white;
-              }
+                &,
+                &:hover,
+                &:focus {
+                  background: none;
+                  color: $black;
+                  border: none;
+                  border-bottom: 2px solid $white;
+                }
 
-              &:hover {
-                &:after {
-                  content: "";
-                  position: absolute;
-                  width: calc(100% - 50px);
-                  border-bottom: 2px solid $black;
-                  left: 50%;
-                  bottom: -17px;
-                  transform: translateX(-50%);
+                &:hover {
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    width: calc(100% - 50px);
+                    border-bottom: 2px solid $black;
+                    left: 50%;
+                    bottom: -17px;
+                    transform: translateX(-50%);
+                  }
                 }
               }
             }
