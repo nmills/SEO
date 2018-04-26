@@ -12,4 +12,6 @@ $context['post'] = $post;
 
 $context['site_filter_NE_landingpage'] = generate_links_of_sites();
 $context['tags_filter_NE_landingpage'] = generate_links_of_taxonomies_news();
+
+$context['current_blog_id'] = get_current_blog_id();
 Timber::render( $templates, $context );

@@ -51,12 +51,18 @@
 								{{site_filter_NE_landingpage}}
 							</div>
 							
+
 							<div class="container news-list">
 								{% set arr = [] %}
 								{% set arr = arr|merge({'post_type': 'news'}) %}
 								{% set arr = arr|merge({'list': 10}) %}
 								{% set arr = arr|merge({'exclude_post': featured_post_ID }) %}
 								{% set arr = arr|merge({'paginate': 'true'}) %}
+
+								{% if current_blog_id != 1 %}
+									{% set arr = arr|merge({'include_blog': current_blog_id }) %}										
+								{% endif %}
+
 								{{ function('netsposts_shortcode', arr) }}
 							</div>
 							
