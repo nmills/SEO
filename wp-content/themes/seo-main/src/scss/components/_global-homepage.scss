@@ -204,6 +204,13 @@
         position: relative;
         margin-bottom: 6px;
 
+        a {
+          display: block;
+          width: 100%;
+          position: relative;
+          z-index: 100;
+        }
+
         @include grid-media($sm) {
           width: calc(50% - 3px);
           margin-right: 6px;
