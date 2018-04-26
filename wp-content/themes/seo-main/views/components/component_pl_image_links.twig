@@ -1,7 +1,21 @@
-{% for item in component.repeater %}
-  <img src="{{Image(item.photo).src}}">
+<section>
+	<div class="container">
+		<div class="c-pl__image-link-container">
+			{% for item in component.repeater %}
+				<div class="c-pl__image-link-item">
+					<a href="{{item.destination_link}}">
+						{# <div class="c-pl__image-link-image">
+							<img src="{{Image(item.photo).src}}">
+						</div> #}
 
-  {{item.text}}
+						<div class="c-pl__image-link-image" style="background-image: url({{Image(item.photo).src}});"></div>
 
-  <a href="{{item.destination_link}}">Test link</a>
-{% endfor %}
+						<div class="c-pl__image-link-title">
+							<h3>{{item.text}}</h3>
+						</div>
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

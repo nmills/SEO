@@ -206,9 +206,9 @@
 
         a {
           display: block;
-    width: 100%;
-    position: relative;
-    z-index: 100;
+          width: 100%;
+          position: relative;
+          z-index: 100;
         }
 
         @include grid-media($sm) {

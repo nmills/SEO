@@ -20,6 +20,10 @@
   .region_main_content {
     max-width: 700px;
   }
+
+  .region_bottom {
+    margin-bottom: 0;
+  }
 }
 
 .c-news-header {
@@ -132,6 +136,7 @@
 
 .c-news-cta {
   background: $black;
+  margin-bottom: 0;
 
   .c-news-cta__container-wrapper {
     display: inline-block;
