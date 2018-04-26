@@ -3,6 +3,25 @@
     "title": "PL Event Info",
     "fields": [
         {
+            "key": "field_5adec35512dbf",
+            "label": "Event Header",
+            "name": "event_header",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5ad59b713f9ef",
             "label": "Include Event Info",
             "name": "include_event_info",
@@ -122,5 +141,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523956751
+    "modified": 1524548915
 }

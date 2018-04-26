@@ -19,7 +19,6 @@
             <div class="c-recent-news__item count-{{count}} {% if featured_post.header_image is empty %}no-image{% endif %}">
               {% if featured_post.header_image is not empty %}
                 <div class="c-recent-news__image" style="background-image: url({{Image(featured_post.get_field('header_image')).src}});">
-                {# <img src="{{Image(featured_post.get_field('header_image')).src}}"> #}
                 </div>
               {% endif %}
               <div class="c-recent-news__program no-display">
@@ -27,9 +26,10 @@
               </div>
               <div class="c-recent-news__title">
                 <h3 class="c-rte__link">{{featured_post.title}} </h3>
-              </div>
-              <div class="c-recent-news__event-details">
-                <p></p>
+                <div class="c-recent-news__event-details">
+                  {% set component = featured_post.get_field('header') %}
+                  <p>{{component.header_text}}</p>
+                </div>
               </div>
             </div>
           </a>
@@ -48,14 +48,14 @@
 	          </div>
 	          <div class="c-recent-news__title">
 	            <h3 class="c-rte__link">{{recent_news.title}}</h3>
-	          </div>
-	          <div class="c-recent-news__event-details">
-	            <p>{{recent_news.header_text}}</p>
+              <div class="c-recent-news__event-details">
+                {% set component = recent_news.get_field('header') %}
+                <p>{{component.header_text}}</p>
+              </div>
 	          </div>
 	        </div>
         </a>
         {% endfor %}
-        
       </div>
     </div>
   </div>

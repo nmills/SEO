@@ -24,12 +24,18 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
+      // Popup window code
+      function newPopup(url) {
+        popupWindow = window.open(
+        url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+      }
+
       </script>
       <!-- Your share button code -->
       <div class="fb-share-button" data-href="{{post.link}}" data-layout="button" data-size="large" data-mobile-iframe="true">
         {# <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{post.link}}%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a> #}
         <!-- Sharingbutton Facebook -->
-        <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u={{post.link}}" target="_blank" aria-label="Share on Facebook">
+          <a class="resp-sharing-button__link" href="JavaScript:newPopup('https://facebook.com/sharer/sharer.php?u={{post.link}}');" target="_blank" aria-label="Share on Facebook">
           <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large">
             <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
