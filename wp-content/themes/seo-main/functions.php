@@ -15,6 +15,7 @@ class BSDStarterSite extends TimberSite {
     add_theme_support( 'menus' );
     add_action( 'init', array( $this, 'cleanup_header' ) );
     add_action( 'init', array( $this, 'add_menus' ) );
+    add_action( 'init', array( $this, 'add_options_page' ));
     add_filter( 'timber_context', array( $this, 'add_to_context' ) );
     add_action( 'wp_enqueue_scripts', array( $this, 'add_styles_and_scripts' ), 999 );
     add_action( 'widgets_init', array( $this, 'add_sidebars' ) );
@@ -38,6 +39,7 @@ class BSDStarterSite extends TimberSite {
   function add_to_context ( $context ) {
     /* Site name */
     $context['site_name'] = get_bloginfo('name');
+    $context['site_url'] = get_bloginfo('url');
     $context['menu'] = new TimberMenu('header-menu');
     /* New menus are added though here for the header */
     $context['site_menu'] = new TimberMenu('site-menu');
@@ -75,6 +77,9 @@ class BSDStarterSite extends TimberSite {
 
     /*Search site ID*/
     $context['search_site_IDS'] = get_search_sites();
+
+    /*Global settings*/
+    $context['options'] = get_fields('options');
     return $context;
     
   }
@@ -168,6 +173,19 @@ class BSDStarterSite extends TimberSite {
         'header-menu' => __( 'Header Menu' )
       )
     );
+  }
+
+  /*Adding an option page to make custom settings*/
+  function add_options_page() {
+      if( function_exists('acf_add_options_page') ) {
+        acf_add_options_page(array(
+          'page_title'  => 'SEO Global Settings',
+          'menu_title'  => 'Global Settings',
+          'menu_slug'   => 'seo-general-settings',
+          'capability'  => 'edit_posts',
+          'redirect'    => false
+        ));
+      }
   }
 }
 

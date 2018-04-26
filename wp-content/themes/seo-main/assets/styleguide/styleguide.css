@@ -2958,6 +2958,48 @@ body {
   .program-landing-page .c-gallery__container a.c-rte__link {
     display: inline-block; }
 
+.c-pl__image-link-container {
+  max-width: 1027px;
+  margin: 0 auto; }
+  .c-pl__image-link-container .c-pl__image-link-item {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 50px; }
+    @media only screen and (min-width: 480px) {
+      .c-pl__image-link-container .c-pl__image-link-item {
+        height: 320px;
+        margin-right: 5%;
+        margin-bottom: 35px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .c-pl__image-link-container .c-pl__image-link-item:nth-child(even) {
+      margin-right: 0; } }
+    @media only screen and (min-width: 768px) {
+      .c-pl__image-link-container .c-pl__image-link-item {
+        width: 222px;
+        height: 260px;
+        margin-right: 4.5%;
+        margin-bottom: 40px; }
+        .c-pl__image-link-container .c-pl__image-link-item:nth-child(4n) {
+          margin-right: 0; } }
+    .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-image {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 140px; }
+      @media only screen and (min-width: 480px) {
+        .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-image {
+          height: 270px; } }
+      @media only screen and (min-width: 768px) {
+        .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-image {
+          height: 140px; } }
+    .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-title h3 {
+      margin-top: 25px;
+      font-size: 19px; }
+
 /* Program Landing */
 @media only screen and (max-width: 767px) {
   .gallery-page section {
@@ -4035,6 +4077,11 @@ body {
       float: left;
       position: relative;
       margin-bottom: 6px; }
+      .c-gh-program .container .c-gh-program__container .c-gh-program__item a {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 100; }
       @media only screen and (min-width: 480px) {
         .c-gh-program .container .c-gh-program__container .c-gh-program__item {
           width: calc(50% - 3px);
@@ -4374,6 +4421,9 @@ body {
 .news-page .region_main_content {
   max-width: 700px; }
 
+.news-page .region_bottom {
+  margin-bottom: 0; }
+
 .c-news-header .container {
   max-width: 860px;
   margin: 0 auto; }
@@ -4395,6 +4445,25 @@ body {
           margin-right: 10px; }
         .c-news-header .container .c-news-header__breadcrumb p span.current {
           margin-left: 10px; }
+    .c-news-header .container .c-news-header__breadcrumb p {
+      display: inline-block; }
+    .c-news-header .container .c-news-header__breadcrumb a {
+      text-transform: uppercase;
+      margin: 0;
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 1;
+      font-size: 12px;
+      font-weight: 300; }
+      .c-news-header .container .c-news-header__breadcrumb a.parent {
+        cursor: pointer;
+        margin-right: 10px; }
+      .c-news-header .container .c-news-header__breadcrumb a.current {
+        margin-left: 10px; }
+        .c-news-header .container .c-news-header__breadcrumb a.current:hover {
+          color: #7cb4f6; }
   .c-news-header .container h1 {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
@@ -4449,7 +4518,8 @@ body {
     padding-top: 17px; }
 
 .c-news-cta {
-  background: #050505; }
+  background: #050505;
+  margin-bottom: 0; }
   .c-news-cta .c-news-cta__container-wrapper {
     display: inline-block;
     width: 100%;
@@ -5788,13 +5858,6 @@ header {
             color: #ffffff;
             border-left: 2px solid #ffffff;
             border-right: 2px solid #ffffff; } }
-    .c-nav__nav--left ul > li > ul > li > a {
-      padding: 5px 15px;
-      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-      color: #ffffff;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 1.4; }
     @media only screen and (min-width: 1024px) {
       .c-nav__nav--left ul > li > ul {
         position: absolute;
@@ -5802,8 +5865,24 @@ header {
         left: 0;
         top: 30px;
         background: #ffffff;
-        padding: 15px; }
-        .c-nav__nav--left ul > li > ul > li > a {
+        padding: 15px; } }
+    .c-nav__nav--left ul > li > ul > .child-menu {
+      position: relative; }
+      .c-nav__nav--left ul > li > ul > .child-menu > li {
+        float: left;
+        width: 100%; }
+        @media only screen and (min-width: 1024px) {
+          .c-nav__nav--left ul > li > ul > .child-menu > li {
+            width: auto; } }
+        .c-nav__nav--left ul > li > ul > .child-menu > li > a {
+          padding: 5px 15px;
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #ffffff;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 1.4; }
+      @media only screen and (min-width: 1024px) {
+        .c-nav__nav--left ul > li > ul > .child-menu > li > a {
           padding: 5px 25px;
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
           color: #050505;
@@ -5812,7 +5891,7 @@ header {
           line-height: 1.4;
           font-weight: 700;
           position: relative; }
-          .c-nav__nav--left ul > li > ul > li > a.active-child:after {
+          .c-nav__nav--left ul > li > ul > .child-menu > li > a.active-child:after {
             content: "";
             position: absolute;
             width: calc(100% - 50px);
@@ -5820,12 +5899,12 @@ header {
             left: 50%;
             bottom: -17px;
             transform: translateX(-50%); }
-          .c-nav__nav--left ul > li > ul > li > a, .c-nav__nav--left ul > li > ul > li > a:hover, .c-nav__nav--left ul > li > ul > li > a:focus {
+          .c-nav__nav--left ul > li > ul > .child-menu > li > a, .c-nav__nav--left ul > li > ul > .child-menu > li > a:hover, .c-nav__nav--left ul > li > ul > .child-menu > li > a:focus {
             background: none;
             color: #050505;
             border: none;
             border-bottom: 2px solid #ffffff; }
-          .c-nav__nav--left ul > li > ul > li > a:hover:after {
+          .c-nav__nav--left ul > li > ul > .child-menu > li > a:hover:after {
             content: "";
             position: absolute;
             width: calc(100% - 50px);

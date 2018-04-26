@@ -1,0 +1,104 @@
+{
+    "key": "group_5ae167c9dddb5",
+    "title": "PL Image Links",
+    "fields": [
+        {
+            "key": "field_5ae167ca1caca",
+            "label": "repeater",
+            "name": "repeater",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 4,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5ae167ca69f4d",
+                    "label": "photo",
+                    "name": "photo",
+                    "type": "image_crop",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "crop_type": "hard",
+                    "target_size": "thumbnail",
+                    "width": "",
+                    "height": "",
+                    "preview_size": "medium",
+                    "force_crop": "no",
+                    "save_in_media_library": "yes",
+                    "retina_mode": "no",
+                    "save_format": "id",
+                    "library": "all"
+                },
+                {
+                    "key": "field_5ae167ca6a31d",
+                    "label": "text",
+                    "name": "text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ae167ca6aac4",
+                    "label": "destination link",
+                    "name": "destination_link",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1524722018
+}

@@ -2330,7 +2330,8 @@ var _searchBar=require('modules/searchBar.js');var _searchBar2=_interopRequireDe
 var _hamburger=require('modules/hamburger.js');var _hamburger2=_interopRequireDefault(_hamburger);
 var _jqueryBxsliderMin=require('modules/jquery.bxslider.min.js');var _jqueryBxsliderMin2=_interopRequireDefault(_jqueryBxsliderMin);
 var _galleryWidget=require('modules/galleryWidget.js');var _galleryWidget2=_interopRequireDefault(_galleryWidget);
-var _video_player_button=require('modules/video_player_button.js');var _video_player_button2=_interopRequireDefault(_video_player_button);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+var _video_player_button=require('modules/video_player_button.js');var _video_player_button2=_interopRequireDefault(_video_player_button);
+var _navigation=require('modules/navigation.js');var _navigation2=_interopRequireDefault(_navigation);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
 
 
 (function($){
@@ -2340,6 +2341,10 @@ ready();
 // Styleguide event when an element is rendered
 $(window).bind("styleguide:onRendered",function(e){
 ready();
+});
+
+$(window).resize(function(){
+resize();
 });
 });
 
@@ -2373,12 +2378,17 @@ function ready(){
 (0,_video_player_button2.default)();
 (0,_searchBar2.default)();
 (0,_hamburger2.default)();
+// navigation();
+}
+
+function resize(){
+// navigation();
 }
 })(_jquery2.default);
 
 }).call(this,typeof global!=="undefined"?global:typeof self!=="undefined"?self:typeof window!=="undefined"?window:{});
 
-},{"modules/accordion.js":2,"modules/custom.js":3,"modules/galleryWidget.js":4,"modules/hamburger.js":5,"modules/jquery.bxslider.min.js":6,"modules/searchBar.js":7,"modules/video.js":8,"modules/video_player_button.js":9}],2:[function(require,module,exports){
+},{"modules/accordion.js":2,"modules/custom.js":3,"modules/galleryWidget.js":4,"modules/hamburger.js":5,"modules/jquery.bxslider.min.js":6,"modules/navigation.js":7,"modules/searchBar.js":8,"modules/video.js":9,"modules/video_player_button.js":10}],2:[function(require,module,exports){
 'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 
@@ -2697,6 +2707,30 @@ console[method]=noop;
 
 
 
+
+function(){
+// Adding position to submenu items to align with parent
+
+var width=$(window).width();
+
+if(width>=1024){
+if($('.main-nav-dropdown').length){
+var active_parent=$('a.active-parent').offset().left;
+var container=$('.container.region_hero').offset().left;
+var left_offset=active_parent-container;
+
+console.log(left_offset);
+
+$(".child-menu").css("left",left_offset+"px");
+}
+}
+};
+
+},{}],8:[function(require,module,exports){
+'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
+
+
+
 function(){
 var searchForm=$('.c-searchform--header');
 var searchFormResults=$('.c-searchform--results');
@@ -2730,7 +2764,7 @@ searchFormResults.removeClass('active');
 }
 };
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 "use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 
@@ -2751,7 +2785,7 @@ $(this).siblings(".c-hero_playbutton").fadeIn();
 });
 };
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 
