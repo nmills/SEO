@@ -5882,6 +5882,12 @@ header {
             width: auto; } }
         .c-nav__nav--left ul > li > ul > .child-menu > li:first-of-type > a {
           padding-left: 0; }
+          .c-nav__nav--left ul > li > ul > .child-menu > li:first-of-type > a.active-child:after {
+            width: calc(100% - 25px);
+            left: 36%; }
+          .c-nav__nav--left ul > li > ul > .child-menu > li:first-of-type > a:hover:after {
+            width: calc(100% - 25px);
+            left: 36%; }
         .c-nav__nav--left ul > li > ul > .child-menu > li > a {
           padding: 5px 15px;
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
