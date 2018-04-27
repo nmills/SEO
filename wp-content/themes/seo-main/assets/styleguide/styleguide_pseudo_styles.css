@@ -258,6 +258,16 @@
   padding-left: 0;
 }
 
+.c-nav__nav--left ul > li > ul > .child-menu > li.pseudo-class-first-of-type > a.active-child:after {
+  width: calc(100% - 25px);
+  left: 36%;
+}
+
+.c-nav__nav--left ul > li > ul > .child-menu > li.pseudo-class-first-of-type > a.pseudo-class-hover:after {
+  width: calc(100% - 25px);
+  left: 36%;
+}
+
 .c-nav__nav--left ul > li > a.pseudo-class-hover + .main-nav-dropdown,
 .c-nav__nav--left .main-nav-dropdown.pseudo-class-hover {
   display: block;
