@@ -24,7 +24,8 @@ switch_to_blog($the_post['blog_id']);
   $context['recent_news'] = $resultpost;
 
   $context['header_image_url'] = get_field('header_image', $the_post['ID']);
-
+	$context['header_text'] = get_field('header_text', $the_post['ID']);
+  
   $templates = array( 'partials/teaser_recent_news.twig' );
 
 restore_current_blog();

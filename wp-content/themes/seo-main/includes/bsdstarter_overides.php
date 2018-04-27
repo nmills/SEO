@@ -8,6 +8,7 @@ add_filter( 'query_vars', 'add_query_vars_filter' );
 
 function generate_links_of_sites(){
   $current_page_link = get_permalink();
+  $current_page_link = rtrim($current_page_link,'/');
   $all_sites = wp_get_sites();
   $selected = get_query_var('include_blog' , 'all');
 
@@ -38,7 +39,7 @@ function generate_links_of_sites(){
     }
 
     $filter_site .= "<li class='c-news-filter__item ".$class."'>";
-    $filter_site .= "<a href='".$current_page_link.'?include_blog='.$site['blog_id']."'>".$site_name."</a>";
+    $filter_site .= "<a href='".$current_page_link.'?include_blog='.$site['blog_id']."#filter-news'>".$site_name."</a>";
     $filter_site .= "</li>";
   }
 
@@ -50,7 +51,7 @@ function generate_links_of_sites(){
   }
   
   $filter_site .= "<li class='c-news-filter__item ".$class."'>";
-  $filter_site .= "<a href='".$current_page_link."'>All</a>";
+  $filter_site .= "<a href='".$current_page_link."#filter-news'>All</a>";
   $filter_site .= "</li>";
 
   $filter_site .= "</ul>";
@@ -61,6 +62,7 @@ function generate_links_of_sites(){
 
 function generate_links_of_taxonomies_news(){
   $current_page_link = get_permalink();
+  $current_page_link = rtrim($current_page_link,'/');
   $terms = get_terms( array(
     'taxonomy' => 'type',
     'hide_empty' => false,
@@ -90,7 +92,7 @@ function generate_links_of_taxonomies_news(){
     }
 
     $filter_type .= "<li class='c-news-filter__item ".$class."'>";
-    $filter_type .= "<a href='".$current_page_link.'?taxonomy='.$term->slug."'>".$term->name."</a>";
+    $filter_type .= "<a href='".$current_page_link.'?taxonomy='.$term->slug."#filter-news'>".$term->name."</a>";
     $filter_type .= "</li>";
   }
 
@@ -102,7 +104,7 @@ function generate_links_of_taxonomies_news(){
   }
   
   $filter_type .= "<li class='c-news-filter__item ".$class."'>";
-  $filter_type .= "<a href='".$current_page_link."'>All</a>";
+  $filter_type .= "<a href='".$current_page_link."#filter-news'>All</a>";
   $filter_type .= "</li>";
 
   $filter_type .= "</ul>";

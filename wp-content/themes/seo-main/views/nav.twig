@@ -43,39 +43,63 @@
   </div>
   <div class="c-nav--bottom">
     <div class="c-nav--bottom__container">
+
+      {# Operation RED #}
       <div class="c-nav__nav--left">
         <ul>
-          {% for main_menu_item in main_menu_left.get_items %} {% set has_children_main_menu_left = main_menu_item.get_children %}
-          <li {% if has_children_main_menu_left %} class="has-submenu" {% endif %}>
-            <a href="{{main_menu_item.get_link}}">{{main_menu_item.title}}</a> {% if has_children_main_menu_left %}
-            <ul class="main-nav-dropdown">
+          {% for main_menu_item in main_menu_left.items %} 
+
+              {% if main_menu_item.current %} 
+                {% set mainlinkactive = true %}
+              {% else %}
+                {% set mainlinkactive = false %} 
+              {% endif %}
+              
+              {% set childlinkactive = false %}
               {% for child in main_menu_item.get_children %}
-              <li><a href="{{child.get_link}}">{{child.title}}</a></li>
+                {% if child.current %} 
+                  {% set childlinkactive = true %}
+                {% endif %}
               {% endfor %}
-            </ul>
-            {% endif %}
-          </li>
+
+            <li class=" {% if main_menu_item.children %} has-submenu {% endif %}"> 
+
+              <a href="{{main_menu_item.get_link}}" class="{% if mainlinkactive or childlinkactive %} active-parent {% endif %}">{{main_menu_item.title}}</a> 
+              {% if main_menu_item.children and (mainlinkactive or childlinkactive) %}
+                <ul class="main-nav-dropdown">
+                  <div class="child-menu">
+                    {% for child in main_menu_item.get_children %}
+                      <li>
+                        <a {% if child.current %}class="active-child"{% endif %}href="{{child.get_link}}">{{child.title}}</a>
+                      </li>
+                    {% endfor %}
+                  </div>
+                </ul>
+              {% endif %}
+            </li>
           {% endfor %}
         </ul>
       </div>
+      {# End of Operation #}
+
       <div class="c-nav__nav--right">
         <ul>
-          {% for main_menu_right_item in main_menu_right.get_items %} {% set has_children_main_menu_right = main_menu_right_item.get_children %}
-          <li>
-            <a href="{{main_menu_right_item.get_link}}">{{main_menu_right_item.title}}</a> {% if has_children_main_menu_right %}
-            <ul class="nav-dropdown">
-              {% for child in main_menu_right_item.get_children %}
-              <li><a href="{{child.get_link}}">{{child.title}}</a></li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-          </li>
+          {% for main_menu_right_item in main_menu_right.get_items %} 
+            {% set has_children_main_menu_right = main_menu_right_item.get_children %}
+            <li>
+              <a href="{{main_menu_right_item.get_link}}">{{main_menu_right_item.title}}</a> {% if has_children_main_menu_right %}
+              <ul class="nav-dropdown">
+                {% for child in main_menu_right_item.get_children %}
+                <li><a href="{{child.get_link}}">{{child.title}}</a></li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </li>
           {% endfor %}
         </ul>
       </div>
       <div class="c-nav__elements c-nav__elements--mobile">
         <div class="c-nav__multisite-nav">
-          {# Setting up the SITE MENU #}
           <ul>
             {% for item in site_menu.get_items %} {% set has_children_site_menu = item.get_children %}
             <li>

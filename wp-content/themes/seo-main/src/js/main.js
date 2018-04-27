@@ -10,6 +10,7 @@ import hamburger from 'modules/hamburger.js';
 import bxslider from 'modules/jquery.bxslider.min.js';
 import galleryWidget from 'modules/galleryWidget.js';
 import player_button from 'modules/video_player_button.js';
+import navigation from 'modules/navigation.js';
 
 
 (function($) {
@@ -20,6 +21,10 @@ import player_button from 'modules/video_player_button.js';
     $(window).bind("styleguide:onRendered", function(e) {
       ready();
     });
+
+    $(window).resize(function(){
+      resize();
+    });
   });
 
   // Initalizing all modules
@@ -27,7 +32,7 @@ import player_button from 'modules/video_player_button.js';
     custom();
     // Prepare form inputs
     // prepInputs();
-    // Initialize social share functionality.
+    // Initialize social share functionality. 
     // Replace the empty string parameter with your Facebook ID
     // socialShare('');
 
@@ -52,5 +57,10 @@ import player_button from 'modules/video_player_button.js';
     player_button();
     searchBar();
     hamburger();
+    navigation();
+  }
+
+  function resize() {
+    navigation();
   }
 })(jquery);
