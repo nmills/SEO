@@ -2997,8 +2997,12 @@ body {
         .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-image {
           height: 140px; } }
     .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-title h3 {
-      margin-top: 25px;
+      position: relative;
+      top: 17px;
+      display: inline;
       font-size: 19px; }
+      .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-title h3:hover {
+        border-bottom: 4px solid #7cb4f6; }
 
 /* Program Landing */
 @media only screen and (max-width: 767px) {

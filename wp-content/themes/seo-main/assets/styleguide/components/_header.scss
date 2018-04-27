@@ -318,8 +318,7 @@ header {
         > .child-menu {
           position: relative;
           opacity: 0;
-            transition: all 0.5s $cubic-transition-2;
-          
+          transition: all 0.5s $cubic-transition-2;
 
           > li {
             float: left;

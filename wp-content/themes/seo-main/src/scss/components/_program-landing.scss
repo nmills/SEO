@@ -998,8 +998,14 @@ body {
     .c-pl__image-link-title {
 
       h3 {
-        margin-top: 25px;
+        position: relative;
+        top: 17px;
+        display: inline;
         font-size: 19px;
+
+        &:hover {
+          border-bottom: 4px solid $light-blue;
+        }
       }
     }
   }
