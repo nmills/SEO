@@ -28,7 +28,9 @@
             <a href="{{item.get_link}}" class="nav-title">{{item.title}}</a> {% if has_children_site_menu %}
             <ul class="nav-dropdown">
               {% for child in item.get_children %}
-              <li><a href="{{child.get_link}}">{{child.title}}</a></li>
+                <li {% if site_url == child.get_link %}class="active-program"{% endif %}>
+                  <a href="{{child.get_link}}">{{child.title}}</a>
+                </li>
               {% endfor %}
             </ul>
             {% endif %}
