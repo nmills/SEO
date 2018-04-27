@@ -32,7 +32,7 @@ import navigation from 'modules/navigation.js';
     custom();
     // Prepare form inputs
     // prepInputs();
-    // Initialize social share functionality.
+    // Initialize social share functionality. 
     // Replace the empty string parameter with your Facebook ID
     // socialShare('');
 
@@ -57,10 +57,10 @@ import navigation from 'modules/navigation.js';
     player_button();
     searchBar();
     hamburger();
-    // navigation();
+    navigation();
   }
 
   function resize() {
-    // navigation();
+    navigation();
   }
 })(jquery);
