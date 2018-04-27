@@ -2713,17 +2713,17 @@ function(){
 
 var width=$(window).width();
 
+setTimeout(function(){
 if(width>=1024){
 if($('.main-nav-dropdown').length){
-var active_parent=$('a.active-parent').offset().left;
-var container=$('.main-nav-dropdown').offset().left;
-var left_offset=active_parent-container-32;
+var active_parent=$('a.active-parent').position().left;
+$(".child-menu").css({
+'left':active_parent+'px',
+'opacity':'1'});
 
-console.log(left_offset);
-
-$(".child-menu").css("left",left_offset+"px");
 }
 }
+},10);
 };
 
 },{}],8:[function(require,module,exports){

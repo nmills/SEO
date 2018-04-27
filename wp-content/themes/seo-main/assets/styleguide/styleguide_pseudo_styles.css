@@ -250,6 +250,10 @@
   background: #7cb4f6;
 }
 
+.c-nav__nav--left ul > li > ul > .child-menu > li.pseudo-class-first-of-type > a {
+  padding-left: 0;
+}
+
 .c-nav__nav--left ul > li > a.pseudo-class-hover + .main-nav-dropdown,
 .c-nav__nav--left .main-nav-dropdown.pseudo-class-hover {
   display: block;

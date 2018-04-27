@@ -317,6 +317,9 @@ header {
 
         > .child-menu {
           position: relative;
+          opacity: 0;
+            transition: all 0.5s $cubic-transition-2;
+          
 
           > li {
             float: left;
@@ -326,6 +329,12 @@ header {
               width: auto;
             }
 
+
+            &:first-of-type {
+              > a {
+                padding-left: 0;
+              }
+            }
 
             > a {
               padding: 5px 15px;
