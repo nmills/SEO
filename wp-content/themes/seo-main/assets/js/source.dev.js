@@ -2353,7 +2353,7 @@ function ready(){
 (0,_custom2.default)();
 // Prepare form inputs
 // prepInputs();
-// Initialize social share functionality.
+// Initialize social share functionality. 
 // Replace the empty string parameter with your Facebook ID
 // socialShare('');
 
@@ -2378,11 +2378,11 @@ function ready(){
 (0,_video_player_button2.default)();
 (0,_searchBar2.default)();
 (0,_hamburger2.default)();
-// navigation();
+(0,_navigation2.default)();
 }
 
 function resize(){
-// navigation();
+(0,_navigation2.default)();
 }
 })(_jquery2.default);
 
@@ -2713,17 +2713,17 @@ function(){
 
 var width=$(window).width();
 
+setTimeout(function(){
 if(width>=1024){
 if($('.main-nav-dropdown').length){
-var active_parent=$('a.active-parent').offset().left;
-var container=$('.container.region_hero').offset().left;
-var left_offset=active_parent-container;
+var active_parent=$('a.active-parent').position().left;
+$(".child-menu").css({
+'left':active_parent+'px',
+'opacity':'1'});
 
-console.log(left_offset);
-
-$(".child-menu").css("left",left_offset+"px");
 }
 }
+},10);
 };
 
 },{}],8:[function(require,module,exports){

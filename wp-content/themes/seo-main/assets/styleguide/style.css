@@ -2997,8 +2997,12 @@ body {
         .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-image {
           height: 140px; } }
     .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-title h3 {
-      margin-top: 25px;
+      position: relative;
+      top: 17px;
+      display: inline;
       font-size: 19px; }
+      .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-title h3:hover {
+        border-bottom: 4px solid #7cb4f6; }
 
 /* Program Landing */
 @media only screen and (max-width: 767px) {
@@ -5867,13 +5871,17 @@ header {
         background: #ffffff;
         padding: 15px; } }
     .c-nav__nav--left ul > li > ul > .child-menu {
-      position: relative; }
+      position: relative;
+      opacity: 0;
+      transition: all 0.5s cubic-bezier(0, 0, 0.2, 1); }
       .c-nav__nav--left ul > li > ul > .child-menu > li {
         float: left;
         width: 100%; }
         @media only screen and (min-width: 1024px) {
           .c-nav__nav--left ul > li > ul > .child-menu > li {
             width: auto; } }
+        .c-nav__nav--left ul > li > ul > .child-menu > li:first-of-type > a {
+          padding-left: 0; }
         .c-nav__nav--left ul > li > ul > .child-menu > li > a {
           padding: 5px 15px;
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;

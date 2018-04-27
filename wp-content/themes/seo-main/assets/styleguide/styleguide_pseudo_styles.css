@@ -142,6 +142,10 @@
   margin-bottom: 0;
 }
 
+.c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-title h3.pseudo-class-hover {
+  border-bottom: 4px solid #7cb4f6;
+}
+
 .c-gallery__container.image-only .bw-hover .c-gallery__gallery-item.pseudo-class-hover img {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
@@ -248,6 +252,10 @@
 .c-nav__donate-link.pseudo-class-hover,
 .c-nav__donate-link.pseudo-class-focus {
   background: #7cb4f6;
+}
+
+.c-nav__nav--left ul > li > ul > .child-menu > li.pseudo-class-first-of-type > a {
+  padding-left: 0;
 }
 
 .c-nav__nav--left ul > li > a.pseudo-class-hover + .main-nav-dropdown,
