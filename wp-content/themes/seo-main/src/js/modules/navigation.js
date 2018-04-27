@@ -12,7 +12,7 @@ export default function() {
     if ($('.main-nav-dropdown').length) {
       var active_parent = $('a.active-parent').offset().left;
       var container = $('.container.region_hero').offset().left;
-      var left_offset = active_parent - container;
+      var left_offset = active_parent - container - 24;
 
       console.log(left_offset);
 
