@@ -119,9 +119,6 @@ add_shortcode( 'iframe', 'bsdstarter_video' );
 
 
 function youtube_embed_func( $atts ){
-
-  // $embedlink = str_replace('watch?v=', 'embed/', $atts['link']);
-
   $output = '';
   $output .= '<div class="video">';
   $output .= '<div class="fullwidth__video" video-url="' . $atts['link'] .'"></div>';
@@ -130,3 +127,13 @@ function youtube_embed_func( $atts ){
   return $output;
 }
 add_shortcode( 'youtube', 'youtube_embed_func' );
+
+function get_current_year( $atts ){
+  $output = '';
+  $output .= '<span>';
+  $output .= '&copy; ';
+  $output .= date("Y");
+  $output .= '</span>';
+  return $output;
+}
+add_shortcode('currentyear', 'get_current_year');
