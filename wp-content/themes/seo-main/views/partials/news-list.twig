@@ -3,7 +3,9 @@
 		<a href="{{news_link}}">
 		<div class="c-news-events__details {% if header_image_url is empty %}no-image{% endif %}">
 			<div class="c-news-events__breadcrumb">
-				<p>{{result_site_name}}</p>
+				{% if current_blog_id == 1 %}
+					<p>{{result_site_name}}</p>
+				{% endif %}
 			</div>
 
 			{% if header_image_url %}
