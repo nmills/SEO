@@ -5758,6 +5758,16 @@ header {
       font-size: 16px;
       line-height: 1.4;
       width: 100%; }
+    .c-nav__multisite-nav ul > li > ul > li.active-program a {
+      position: relative; }
+      .c-nav__multisite-nav ul > li > ul > li.active-program a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-left: 4px solid #eb0029; }
   .c-nav__multisite-nav ul > li > a:hover + .nav-dropdown,
   .c-nav__multisite-nav .nav-dropdown:hover {
     display: block; }
