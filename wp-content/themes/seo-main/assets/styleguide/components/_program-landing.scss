@@ -953,6 +953,10 @@ body {
       }
     }
 
+    .c-gallery_item-container {
+      @include grid-column(12, $no-gutter);
+    }
+
     a.c-rte__link {
         display: inline-block;
     }

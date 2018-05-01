@@ -2960,6 +2960,10 @@ body {
       @media only screen and (min-width: 1024px) {
         .program-landing-page .c-gallery__container .c-gallery__section-header p {
           font-size: 24px; } }
+  .program-landing-page .c-gallery__container .c-gallery_item-container {
+    width: calc(100%);
+    float: left;
+    margin-left: 0; }
   .program-landing-page .c-gallery__container a.c-rte__link {
     display: inline-block; }
 
