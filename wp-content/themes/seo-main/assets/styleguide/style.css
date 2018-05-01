@@ -4942,7 +4942,8 @@ body {
       font-size: 30px;
       line-height: 1;
       margin-top: 10px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      display: inline; }
       @media only screen and (min-width: 768px) {
         .c-news-events .c-news-events__content .c-news-events__details h1 {
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -4950,13 +4951,16 @@ body {
           font-weight: 700;
           font-size: 42px;
           line-height: 1; } }
+      .c-news-events .c-news-events__content .c-news-events__details h1:hover {
+        border-bottom: 4px solid #7cb4f6; }
     .c-news-events .c-news-events__content .c-news-events__details p {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #050505;
       font-weight: 700;
       font-size: 14px;
       line-height: 1;
-      margin: 0; }
+      margin: 0;
+      margin-top: 15px; }
       @media only screen and (min-width: 768px) {
         .c-news-events .c-news-events__content .c-news-events__details p {
           margin-bottom: 65px; } }

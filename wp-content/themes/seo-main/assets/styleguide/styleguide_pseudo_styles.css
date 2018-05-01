@@ -187,6 +187,10 @@
   color: #7cb4f6;
 }
 
+.c-news-events .c-news-events__content .c-news-events__details h1.pseudo-class-hover {
+  border-bottom: 4px solid #7cb4f6;
+}
+
 .c-news-events .c-news-events__content.list.pseudo-class-last-of-type {
   margin-bottom: 0;
 }
