@@ -1882,7 +1882,8 @@ sg-wrapper:
 Styleguide 8.0
 */
 .c-gallery {
-  background: #ffffff; }
+  background: #ffffff;
+  margin-bottom: 40px; }
 
 .gd__content {
   background: #ffffff;

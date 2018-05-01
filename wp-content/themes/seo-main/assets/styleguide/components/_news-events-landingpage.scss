@@ -52,6 +52,7 @@
         padding-left: 25px;
       }
 
+
       &.no-image {
         @include grid-media($md) {
           @include grid-column(12, $no-gutter);
