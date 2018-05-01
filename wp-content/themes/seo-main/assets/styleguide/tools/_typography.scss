@@ -5,7 +5,7 @@ $sans-stack: 'Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
 @mixin default($color: $dark-gray-one) {
   font-family: $sans-stack;
   color: #{$color};
-  font-weight: $font-normal;
+  font-weight: $font-thinnest;
   font-size: 15.1px;
   line-height: 1.59;
   @include grid-media($md) {
