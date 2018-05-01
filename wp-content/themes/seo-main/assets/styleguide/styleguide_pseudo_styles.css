@@ -142,6 +142,11 @@
   margin-bottom: 0;
 }
 
+.program-landing-page .c-ph__event-details .c-uie__calltoaction.pseudo-class-hover:before,
+.program-landing-page .c-ph__event-details .c-uie__calltoaction.pseudo-class-hover:after {
+  width: 100%;
+}
+
 .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-title h3.pseudo-class-hover {
   border-bottom: 4px solid #7cb4f6;
 }
@@ -252,20 +257,6 @@
 .c-nav__donate-link.pseudo-class-hover,
 .c-nav__donate-link.pseudo-class-focus {
   background: #7cb4f6;
-}
-
-.c-nav__nav--left ul > li > ul > .child-menu > li.pseudo-class-first-of-type > a {
-  padding-left: 0;
-}
-
-.c-nav__nav--left ul > li > ul > .child-menu > li.pseudo-class-first-of-type > a.active-child:after {
-  width: calc(100% - 25px);
-  left: 36%;
-}
-
-.c-nav__nav--left ul > li > ul > .child-menu > li.pseudo-class-first-of-type > a.pseudo-class-hover:after {
-  width: calc(100% - 25px);
-  left: 36%;
 }
 
 .c-nav__nav--left ul > li > a.pseudo-class-hover + .main-nav-dropdown,
