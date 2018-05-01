@@ -115,6 +115,7 @@ Styleguide 8.0
 
 .c-gallery {
   background: $white;
+  margin-bottom: 40px;
 }
 
 .gd__content {
@@ -338,7 +339,9 @@ Gallery
     span {
       position: relative;
       top: -15px;
+
       @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 14px, $line-height: 1);
+
       font-style: italic;
     }
   }
