@@ -5,23 +5,32 @@
         <h1>{{component.section_header}}</h1>
         <p>{{component.section_intro}}</p>
       </div>
-      <div class="c-gallery__container image-only">
-        {% for repeater in component.repeater %}
-          {% if repeater.url %}
-            <a href="{{repeater.url}}" class="bw-hover">
-          {% endif %}
-              <div class="c-gallery__gallery-item {% if loop.index % 2 == 0 %}even{% endif %} {% if loop.last %}last{% endif %}">
-                <img src="{{Image(repeater.photo).src }}" />    
-              </div>
-          {% if repeater.url %}
-            </a>
-          {% endif %}
-        {% endfor %}
+
+      <div class="c-gallery_item-container">
+        <div class="c-gallery__container image-only">
+          {% for repeater in component.repeater %}
+            {% if repeater.url %}
+              <a href="{{repeater.url}}" class="bw-hover">
+            {% endif %}
+                <div class="c-gallery__gallery-item {% if loop.index % 2 == 0 %}even{% endif %} {% if loop.last %}last{% endif %}">
+                  <img src="{{Image(repeater.photo).src }}" />    
+                </div>
+            {% if repeater.url %}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
       </div>
 
       {# Adding the new link option #}
       {% if component['destination'] %}
-        <a href="{{component['destination']['url']}}" class="c-rte__link">{{component['destination']['title']}}</a>
+        <a href="{{component['destination']['url']}}" class="c-rte__link">
+          {% if component['destination']['title'] %}
+            {{component['destination']['title']}}
+          {% else %}
+            {{component['destination']['url']}}
+          {% endif %}
+        </a>
       {% endif %}
     </div>
   </div>
