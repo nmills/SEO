@@ -34,7 +34,13 @@
 
       {# Adding the new link option #}
       {% if component['destination'] %}
-        <a href="{{component['destination']['url']}}" class="c-rte__link">{{component['destination']['title']}}</a>
+        <a href="{{component['destination']['url']}}" class="c-rte__link">
+          {% if component['destination']['title'] %}
+            {{component['destination']['title']}}
+          {% else %}
+            {{component['destination']['url']}}
+          {% endif %}
+        </a>
       {% endif %}
     </div>
   </div>
