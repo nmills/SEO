@@ -4,11 +4,11 @@
     "fields": [
         {
             "key": "field_5adec35512dbf",
-            "label": "Event Header",
+            "label": "Page Header",
             "name": "event_header",
             "type": "text",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -141,5 +141,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1524548915
+    "modified": 1525148249
 }
