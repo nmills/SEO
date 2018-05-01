@@ -28,7 +28,7 @@ function bsd_custom_post_type() {
       'query_var' => true,
       'show_ui' => true,
       'hierarchical' => false,
-      'supports' => array( 'title', 'thumbnail' ),
+      'supports' => array( 'title', 'thumbnail', 'excerpt' ),
       'menu_icon' => 'dashicons-format-quote'
     )
   );
