@@ -875,6 +875,7 @@ body {
       margin-top: 0;
       margin-bottom: 80px;
       font-size: 20px;
+      line-height: 1.3;
 
       @include grid-media($md) {
       width: 25%;
@@ -883,6 +884,20 @@ body {
       max-width: 320px;
       }
     } 
+
+    .c-uie__calltoaction {
+      &:before,
+      &:after {
+        width: 75%;
+      }
+
+      &:hover {
+        &:before,
+        &:after {
+          width: 100%;
+        }
+      }
+    }
   }
 
   .wysiwyg {

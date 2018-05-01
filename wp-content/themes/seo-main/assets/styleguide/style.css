@@ -662,9 +662,9 @@ sg-wrapper:
 Styleguide 2.4
 */
 .c-uie__calltoaction {
-  padding: 10px 20px;
-  border-left: 3px solid #eb0029;
-  border-right: 3px solid #050505;
+  padding: 15px 24px;
+  border-left: 4px solid #eb0029;
+  border-right: 4px solid #050505;
   position: relative;
   text-decoration: none;
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -685,7 +685,7 @@ Styleguide 2.4
     top: 0;
     right: 0;
     display: block;
-    border-bottom: 3px solid #050505;
+    border-bottom: 4px solid #050505;
     width: 50%;
     transition: all 0.4s cubic-bezier(0, 0, 0.2, 1); }
   .c-uie__calltoaction:after {
@@ -694,7 +694,7 @@ Styleguide 2.4
     bottom: 0;
     left: 0;
     display: block;
-    border-bottom: 3px solid #eb0029;
+    border-bottom: 4px solid #eb0029;
     transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
     width: 50%; }
   .c-uie__calltoaction:hover:before, .c-uie__calltoaction:hover:after {
@@ -2899,12 +2899,17 @@ body {
     margin: auto;
     margin-top: 0;
     margin-bottom: 80px;
-    font-size: 20px; }
+    font-size: 20px;
+    line-height: 1.3; }
     @media only screen and (min-width: 768px) {
       .program-landing-page .c-ph__event-details h2 {
         width: 25%;
         font-size: 30px;
         max-width: 320px; } }
+  .program-landing-page .c-ph__event-details .c-uie__calltoaction:before, .program-landing-page .c-ph__event-details .c-uie__calltoaction:after {
+    width: 75%; }
+  .program-landing-page .c-ph__event-details .c-uie__calltoaction:hover:before, .program-landing-page .c-ph__event-details .c-uie__calltoaction:hover:after {
+    width: 100%; }
 
 .program-landing-page .wysiwyg {
   max-width: 700px;

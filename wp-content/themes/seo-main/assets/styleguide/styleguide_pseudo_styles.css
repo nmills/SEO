@@ -142,6 +142,11 @@
   margin-bottom: 0;
 }
 
+.program-landing-page .c-ph__event-details .c-uie__calltoaction.pseudo-class-hover:before,
+.program-landing-page .c-ph__event-details .c-uie__calltoaction.pseudo-class-hover:after {
+  width: 100%;
+}
+
 .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-title h3.pseudo-class-hover {
   border-bottom: 4px solid #7cb4f6;
 }
