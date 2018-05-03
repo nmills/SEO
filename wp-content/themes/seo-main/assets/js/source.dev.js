@@ -2478,6 +2478,11 @@ $(this).find(".heading_desktop").css('bottom','-40px');
 });
 }
 
+$('.c-gh-program__item').click(function(e){
+var link=$(this).find("a").attr('href');
+window.open(link,"_self");
+});
+
 };
 
 },{}],4:[function(require,module,exports){
