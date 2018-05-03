@@ -39,7 +39,7 @@
         content: none;
       }
 
-      @include grid-media($lg) {
+      @include grid-media($hd) {
         padding: 0;
         font-size: 61px;
 
@@ -373,28 +373,26 @@
         }
       }
 
-      
-
       &.bw-hover {
         &:hover {
-        .c-gallery__image {
-          -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-        }
+          .c-gallery__image {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+          }
 
-        @include grid-media($md) {
-          &:after {
-            content: "";
-            position: absolute;
-            top: -16px;
-            right: -16px;
-            width: 59px;
-            height: 48px;
-            border-top: 8px solid black;
-            border-right: 8px solid black;
+          @include grid-media($md) {
+            &:after {
+              content: "";
+              position: absolute;
+              top: -16px;
+              right: -16px;
+              width: 59px;
+              height: 48px;
+              border-top: 8px solid black;
+              border-right: 8px solid black;
+            }
           }
         }
-      }
       }
 
       .item__heading,

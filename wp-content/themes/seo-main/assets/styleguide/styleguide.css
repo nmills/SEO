@@ -3037,7 +3037,7 @@ body {
     margin-bottom: 30px; }
     .gallery-page .page-title h1:before {
       content: none; }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 840px) {
       .gallery-page .page-title h1 {
         padding: 0;
         font-size: 61px;
@@ -5671,7 +5671,7 @@ img.mfp-img {
 
 body {
   padding-top: 14px; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 840px) {
     body {
       padding-top: 52px; } }
 
