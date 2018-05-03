@@ -5691,7 +5691,7 @@ body {
 header {
   position: fixed;
   top: 0;
-  z-index: 20;
+  z-index: 110;
   width: 100%;
   background: #ffffff; }
   @media only screen and (min-width: 840px) {
