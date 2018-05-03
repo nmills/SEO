@@ -101,7 +101,7 @@
 .c-rte__accordion a.pseudo-class-hover,
 .c-rte__accordion a.pseudo-class-focus {
   color: #7cb4f6;
-  border-bottom: 3px solid #050505;
+  border-bottom: 4px solid #050505;
 }
 
 .c-accordion__filter li.pseudo-class-hover {
