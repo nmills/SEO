@@ -17,4 +17,9 @@ export default function() {
     });
   }
 
+  $('.c-gh-program__item').click(function(e) { 
+      var link = $(this).find("a").attr('href')
+      window.open(link,"_self");
+  });
+
 }

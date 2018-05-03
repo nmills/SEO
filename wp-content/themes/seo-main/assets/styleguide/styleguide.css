@@ -4101,12 +4101,12 @@ body {
       margin-left: 0;
       float: left;
       position: relative;
-      margin-bottom: 6px; }
+      margin-bottom: 6px;
+      cursor: pointer; }
       .c-gh-program .container .c-gh-program__container .c-gh-program__item a {
         display: block;
         width: 100%;
-        position: relative;
-        z-index: 100; }
+        z-index: 101; }
       @media only screen and (min-width: 480px) {
         .c-gh-program .container .c-gh-program__container .c-gh-program__item {
           width: calc(50% - 3px);
