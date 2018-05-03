@@ -10,7 +10,7 @@
 body {
   padding-top: 14px;
 
-  @include grid-media($lg) {
+  @include grid-media($hd) {
     padding-top: 52px;
   }
 }

@@ -7,6 +7,11 @@
     }
 
 
+    @include grid-media($md) {
+      margin-bottom: -40px;
+    }
+
+
     .container {
       padding: 0 35px;
     }
@@ -34,8 +39,8 @@
         content: none;
       }
 
-      @include grid-media($lg) {
-        padding: 0 35px;
+      @include grid-media($hd) {
+        padding: 0;
         font-size: 61px;
 
         //     max-width: 800px;
@@ -124,29 +129,6 @@
       }
 
 
-      &:hover {
-        @include grid-media($md) {
-          &:after {
-            content: "";
-            position: absolute;
-            top: -12px;
-            right: -12px;
-
-            // width: 35px;
-            // height: 35px;
-            border-top: 8px solid black;
-            border-right: 8px solid black;
-
-            // @include grid-media($md) {
-            width: 59px;
-            height: 48px;
-
-            // }
-         
-          }
-        }
-      }
-
       img {
         max-width: 100%;
         transition: filter .5s ease-in-out;
@@ -165,6 +147,29 @@
           img {
             -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
+          }
+        }
+
+        &:hover {
+          @include grid-media($md) {
+            &:after {
+              content: "";
+              position: absolute;
+              top: -12px;
+              right: -12px;
+
+              // width: 35px;
+              // height: 35px;
+              border-top: 8px solid black;
+              border-right: 8px solid black;
+
+              // @include grid-media($md) {
+              width: 59px;
+              height: 48px;
+
+              // }
+           
+            }
           }
         }
       }
@@ -368,22 +373,24 @@
         }
       }
 
-      &:hover {
-        .c-gallery__image {
-          -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-        }
+      &.bw-hover {
+        &:hover {
+          .c-gallery__image {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+          }
 
-        @include grid-media($md) {
-          &:after {
-            content: "";
-            position: absolute;
-            top: -16px;
-            right: -16px;
-            width: 59px;
-            height: 48px;
-            border-top: 8px solid black;
-            border-right: 8px solid black;
+          @include grid-media($md) {
+            &:after {
+              content: "";
+              position: absolute;
+              top: -16px;
+              right: -16px;
+              width: 59px;
+              height: 48px;
+              border-top: 8px solid black;
+              border-right: 8px solid black;
+            }
           }
         }
       }

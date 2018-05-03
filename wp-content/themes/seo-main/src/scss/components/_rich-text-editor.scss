@@ -30,7 +30,7 @@ Styleguide 1.1
   @include default($color: $black);
 
   transition: all 0.4s $cubic-transition;
-  font-weight: $font-medium;
+  font-weight: $font-normal;
   border-bottom: 4px solid $light-blue;
   text-decoration: none;
 

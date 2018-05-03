@@ -7,7 +7,7 @@ header {
   width: 100%;
   background: $white;
 
-  @include grid-media($lg) {
+  @include grid-media($hd) {
     height: auto;
   }
 
@@ -21,7 +21,7 @@ header {
     color: $black;
     font-size: 12px;
 
-    @include grid-media($lg) {
+    @include grid-media($hd) {
       font-size: 15px;
     }
   }
@@ -51,7 +51,7 @@ header {
   padding: 15px 0 0 15px;
   width: 60%;
 
-  @include grid-media($lg) {
+  @include grid-media($hd) {
     width: auto;
   }
 }
@@ -61,7 +61,7 @@ header {
   position: relative;
   display: none;
 
-  @include grid-media($lg) {
+  @include grid-media($hd) {
     display: block;
   }
 }
@@ -190,7 +190,7 @@ header {
     margin-top: 15px;
     margin-right: 0;
 
-    @include grid-media($lg) {
+    @include grid-media($hd) {
       margin-top: 7px;
     }
   }
@@ -203,7 +203,7 @@ header {
   max-height: 85vh;
   background: $red;
 
-  @include grid-media($lg) {
+  @include grid-media($hd) {
     display: block !important;
   }
 
@@ -220,7 +220,7 @@ header {
   float: left;
   width: 100%;
 
-  @include grid-media($lg) {
+  @include grid-media($hd) {
     width: auto;
   }
 
@@ -230,7 +230,7 @@ header {
       float: left;
       width: 100%;
 
-      @include grid-media($lg) {
+      @include grid-media($hd) {
         width: auto;
       }
 
@@ -262,7 +262,7 @@ header {
             transform: rotate(0);
             transition: all 0.5s $cubic-transition-2;
 
-            @include grid-media($lg) {
+            @include grid-media($hd) {
               display: none;
             }
           }
@@ -286,12 +286,12 @@ header {
               transform: rotate(90deg);
               transition: all 0.5s $cubic-transition-2;
 
-              @include grid-media($lg) {
+              @include grid-media($hd) {
                 display: none;
               }
             }
 
-            @include grid-media($lg) {
+            @include grid-media($hd) {
               background: $white;
               color: $red;
               border-left: 2px solid $white;
@@ -308,7 +308,7 @@ header {
           }
         }
 
-        @include grid-media($lg) {
+        @include grid-media($hd) {
           > a {
             background: none;
           }
@@ -329,7 +329,7 @@ header {
         border-left: 2px solid $red;
         border-right: 2px solid $red;
 
-        @include grid-media($lg) {
+        @include grid-media($hd) {
           padding: 4px 15.5px;
 
           @include type-5-bold($color: $white);
@@ -345,7 +345,7 @@ header {
       }
 
       > ul {
-        @include grid-media($lg) {
+        @include grid-media($hd) {
           // display: none;
           position: absolute;
           width: 100%;
@@ -357,7 +357,7 @@ header {
 
 
         > .child-menu {
-          @include grid-media($lg) {
+          @include grid-media($hd) {
             position: relative;
             opacity: 0;
             transition: all 0.5s $cubic-transition-2;
@@ -368,13 +368,13 @@ header {
             float: left;
             width: 100%;
 
-            @include grid-media($lg) {
+            @include grid-media($hd) {
               width: auto;
             }
 
 
             &:first-of-type {
-              @include grid-media($lg) {
+              @include grid-media($hd) {
                 > a {
                   padding-left: 0;
 
@@ -402,7 +402,7 @@ header {
             }
           }
 
-          @include grid-media($lg) {
+          @include grid-media($hd) {
             // display: none;
             // position: absolute;
             // width: 100%;
@@ -479,7 +479,7 @@ header {
   width: 100%;
   padding: 10px 15px 20px;
 
-  @include grid-media($lg) {
+  @include grid-media($hd) {
     float: right;
     max-width: 330px;
     padding: 0;
@@ -498,7 +498,7 @@ header {
       &:first-child {
         margin-right: 3px;
 
-        @include grid-media($lg) {
+        @include grid-media($hd) {
           margin-right: 0;
         }
       }
@@ -513,7 +513,7 @@ header {
 
         background: $black;
 
-        @include grid-media($lg) {
+        @include grid-media($hd) {
           border-left: 2px solid $white;
           padding: 4px 15.5px;
         }
@@ -531,7 +531,7 @@ header {
   float: right;
   padding-right: 15px;
 
-  @include grid-media($lg) {
+  @include grid-media($hd) {
     display: none;
   }
 }
@@ -566,7 +566,7 @@ header {
   display: block;
   width: 100%;
 
-  @include grid-media($lg) {
+  @include grid-media($hd) {
     display: none !important;
   }
 
@@ -626,375 +626,3 @@ header {
     }
   }
 }
-
-// .c-nav {
-//   @include grid-column(12, $no-gutter);
-
-//   position: relative;
-//   z-index: 2;
-//   // background: $red;
-
-//   .c-menu__container {
-//     @include grid-column(12, $no-gutter);
-
-//     float: right;
-
-//     // position: absolute;
-//     left: 0;
-//     top: calc(100% + 20px);
-//     background: $red;
-//     display: none;
-//     position: relative;
-//     position: 1;
-
-//     @include grid-media($lg) {
-//       @include grid-column(12, $no-gutter);
-
-//       display: block !important;
-//       right: 0;
-//       bottom: 0;
-//       left: unset;
-//       top: unset;
-//       background: none;
-//       border-top: 2px solid $white;
-//     }
-
-//     .c-menu__list {
-//       @include grid-media($lg) {
-//         @include grid-column(8, $no-gutter);
-
-//         float: left;
-//       }
-
-//       .c-menu__list-item {
-//         @include grid-column(12, $no-gutter);        
-//         text-align: center;
-
-//         &:first-child {
-
-//           a {
-//             padding-left: 25px;
-//           }
-//         }
-
-//         a {
-//           color: $white;
-//           float: left;
-//           padding: 4px 17px;
-
-//           &:hover,
-//           &:focus {
-//             background: $black;
-//           }
-//         }
-
-//         @include grid-media($lg) {
-//           width: auto;
-//           height: 30px;
-//         }
-//       }
-
-//       .c-menu__list-item.has-child {
-//         position: relative;
-//         display: inline-block;
-
-//         &:hover {
-//           background: $black;
-
-//           .c-menu__sublist {
-//             display: block;
-//           }
-//         }
-//       }
-
-//       .c-menu__sublist {
-//         display: none;
-//         min-width: 180px;
-
-//         // padding: 12px 16px;
-//         z-index: 1;
-
-//         a {
-//           color: $white;
-//         }
-
-//         @include grid-media($lg) {
-//           position: absolute;
-//           top: 30px;
-//           width: auto;
-//           background-color: $black;
-//           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-//           left: 0;
-
-//           a {
-//             color: $white;
-//           }
-//         }
-
-//         li {
-//           text-align: left;
-
-//           &:hover {
-//             a {
-//               color: $white;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   .c-menu__hamburger {
-//     display: block;
-//     text-align: right;
-
-//     @include grid-media($lg) {
-//       display: none;
-//     }
-//   }
-// }
-
-// .c-mainnav {
-//   @include grid-column(12, $no-gutter);
-
-//   position: relative;
-//   background: $white;
-
-//   .c-logo__link {
-//     padding: 15px 0 0 25px;
-//     display: inline-block;
-//   }
-
-//   .c-logo__container {
-//     @include grid-column(4, $no-gutter);
-
-//     position: absolute;
-//     top: 50%;
-//     left: 0;
-//     transform: translateY(-50%);
-
-//     @include grid-media($md) {
-//       position: relative;
-//       transform: none;
-//     }
-
-//     @include grid-media($lg) {
-//       @include grid-column(4, $no-gutter);
-//     }
-
-//     .c-logo__image {
-//       @include grid-column(9, $no-gutter);
-
-//       @include grid-media($sm) {
-//         @include grid-column(4, $no-gutter);
-//       }
-
-//       // @include grid-media($md) {
-//       //   @include grid-column(12, $no-gutter);
-//       // }
-
-//       @include grid-media($lg) {
-//         @include grid-column(12, $no-gutter);
-//       }
-//     }
-//   }
-
-//   .c-mainnav__content {
-//     @include grid-column(8, $no-gutter);
-//     float: right;
-
-//     @include grid-media($sm) {
-//       @include grid-column(3.5, $no-gutter);
-//       float: right;
-//     }
-
-//     .custom-html-widget {
-//       float: left;
-//     }
-//   }
-
-//   .menu-site-menu-container {
-//     float: left;
-//   }
-
-//   .textwidget.custom-html-widget {
-//     float: left;
-//   }
-
-//   .c-mainnav__donate {
-//     float: left;
-//     background: $red;
-//     color: $white;
-//     text-align: center;
-//     height: 65px;
-//     line-height: 4;
-//     padding-left: 25px;
-//     padding-right: 25px;    
-//     border-left: 2px solid $white;
-
-//     &:hover,
-//     &:focus {
-//       background: $black;
-//     }
-//   }
-// }
-
-// .c-search-btn {
-//   float: left;
-//   height: 65px;
-//   line-height: 4.75;
-//   padding-left: 23px;
-//   padding-right: 23px;
-
-//   span {
-//     margin-right: 0;
-//   }
-// }
-
-// // ----------------
-// .hamburger {
-//   background: none;
-
-//   // position: absolute;
-//   top: 0;
-//   right: 0;
-//   line-height: 45px;
-//   padding: 5px 15px 0px 15px;
-//   color: $white;
-//   border: 0;
-//   font-size: 1.4em;
-//   font-weight: bold;
-//   cursor: pointer;
-//   outline: none;
-//   z-index: 10000000000000;
-// }
-
-// .cross {
-//   background: none;
-
-//   // position: absolute;
-//   top: 0px;
-//   right: 0;
-//   padding: 7px 15px 0px 15px;
-//   color: $white;
-//   border: 0;
-//   font-size: 3em;
-//   line-height: 65px;
-//   font-weight: bold;
-//   cursor: pointer;
-//   outline: none;
-//   z-index: 10000000000000;
-// }
-
-// // ----------------
-// // Following classes need to be merged with codes from line 52
-// .menu {
-//   li {
-//     @include grid-column(12, $no-gutter);
-
-//     cursor: pointer;
-//     padding: 18px 50px 18px 25px;
-
-//     &.menu-item.menu-item-has-children {
-//       position: relative;
-//       display: inline-block;
-
-//       &:after {
-//         content: "";
-//         position: absolute;
-//         top: 46%;
-//         right: 16%;
-//         transition: all .4s ease-in-out;
-
-//         // transform: translateY(-50%);
-//         background-image: url("./assets/img/icons/carat-closed-universal-nav.svg");
-//         background-repeat: no-repeat;
-//         background-size: contain;
-//         width: 13px;
-//         height: 13px;
-//       }
-
-//       &:hover {
-//         &:after {
-//           top: 40%;
-//           transform: rotate(180deg);
-//         }
-//       }
-//     }
-
-//     &:hover {
-//       background: $black;
-
-//       a {
-//         color: $white;
-//       }
-//     }
-//   }
-
-//   &:hover {
-//     .sub-menu {
-//       display: block;
-//     }
-//   }
-
-//   .sub-menu {
-//     display: none;
-//     position: absolute;
-//     top: 65px;
-//     left: 0;
-//     background-color: $black;
-//     min-width: 160px;
-//     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-//     width: 200%;
-//     z-index: 10;
-//     padding-bottom: 15px;
-
-//     a {
-//       color: $white;
-//     }
-
-//     li {
-//       padding: 5px 25px;
-//       font-size: 16px;
-
-//       &:hover {
-//         a {
-//           color: $red;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// // Registration Menu
-// .side-menu-widget-area {
-//   @include grid-media($lg) {
-//     @include grid-column(4, $no-gutter);
-
-//     float: right;
-//   }
-
-//   .menu {
-//     li {
-//       @include grid-column(12, $no-gutter);
-
-//       text-align: center;
-//       display: inline-block;
-//       background: $black;
-//       cursor: pointer;
-//       border-bottom: 2px solid $white;
-//       padding: 0 16px;
-
-//       @include grid-media($lg) {
-//         @include grid-column(6, $no-gutter);
-
-//         border-left: 2px solid $white;
-//         border-bottom: 0;
-//       }
-
-//       a {
-//         color: $white;
-//       }
-//     }
-//   }
-// }
