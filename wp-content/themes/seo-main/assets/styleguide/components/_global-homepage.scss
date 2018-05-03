@@ -203,12 +203,14 @@
         float: left;
         position: relative;
         margin-bottom: 6px;
+        cursor: pointer;
 
         a {
           display: block;
           width: 100%;
-          position: relative;
-          z-index: 100;
+
+          // position: relative;
+          z-index: 101;
         }
 
         @include grid-media($sm) {
@@ -269,6 +271,9 @@
           left: 0;
           background-image: linear-gradient(to bottom, #ffffff00, #000000);
           opacity: 0.6;
+
+          // z-index: 100;
+       
         }
 
         .c-gh-program__image {
