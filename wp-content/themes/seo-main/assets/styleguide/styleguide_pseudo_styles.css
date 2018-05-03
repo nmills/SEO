@@ -299,7 +299,7 @@
 
 .c-searchform--results .c-searchform__button input.pseudo-class-hover,
 .c-searchform--results .c-searchform__button input.pseudo-class-focus {
-  background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg");
+  background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg");
 }
 
 footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-footer-right-container li.pseudo-class-last-of-type {

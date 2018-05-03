@@ -1,6 +1,7 @@
 /* Search Field */
 
 .c-searchform {
+  background: $red;
   opacity: 0;
   position: fixed;
   top: -160px;
@@ -25,13 +26,12 @@
 .c-searchform__container {
   @include grid-container;
 
-  background: $red;
   padding: 15px;
   max-width: 1440px;
   margin: 0 auto;
 
   @include grid-media($md) {
-    padding: 10px 30px;
+    padding: 9.5px 30px;
   }
 }
 

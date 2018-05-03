@@ -56,7 +56,13 @@ Styleguide 3.0
 Image full width
 
 markup:
-<div class="container hero_image" style="http://localhost/seo/wp-content/uploads/2018/02/IMG_7986.jpg"></div>
+<div class="container hero-section">
+  <a href="#">
+    <div class="c-hero_image" style="background-image: url('/wp-content/uploads/2018/02/IMG_7986.jpg')">
+      <p>Hero Text</p>
+    </div>
+  </a>
+</div>
 
 sg-wrapper:
 <section>
