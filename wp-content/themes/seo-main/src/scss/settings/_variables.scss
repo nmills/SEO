@@ -49,6 +49,10 @@ $md: (media: 768px);
 
 $max-md: (gutter: 2rem, media: "only screen and (max-width: 767px)");
 
+// Clients size for Header and Footer
+$hd: (media: 840px);
+$ft: (media: 960px);
+
 // Tablets and small desktops
 $lg: (media: 1024px);
 

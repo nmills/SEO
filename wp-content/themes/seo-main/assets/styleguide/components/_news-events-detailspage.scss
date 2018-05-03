@@ -7,6 +7,9 @@
 
   .region_left_rail {
     max-width: 300px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 
     section {
       margin-bottom: 40px;
@@ -14,6 +17,12 @@
       @include grid-media($sm) {
         margin-bottom: 100px;
       }
+    }
+
+    @include grid-media($md) {
+      position: unset;
+      left: unset;
+      transform: none;
     }
   }
 
@@ -301,7 +310,7 @@
 .c-share {
   display: none;
 
-  @include grid-media($sm) {
+  @include grid-media($md) {
     display: inline-block;
   }
 
