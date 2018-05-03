@@ -3021,7 +3021,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .gallery-page section {
-    margin-bottom: auto; } }
+    margin-bottom: -40px; } }
 
 .gallery-page section .container {
   padding: 0 35px; }
