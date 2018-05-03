@@ -1539,7 +1539,13 @@ Styleguide 3.0
 Image full width
 
 markup:
-<div class="container hero_image" style="http://localhost/seo/wp-content/uploads/2018/02/IMG_7986.jpg"></div>
+<div class="container hero-section">
+  <a href="#">
+    <div class="c-hero_image" style="background-image: url('/wp-content/uploads/2018/02/IMG_7986.jpg')">
+      <p>Hero Text</p>
+    </div>
+  </a>
+</div>
 
 sg-wrapper:
 <section>
@@ -6100,6 +6106,7 @@ header {
 
 /* Search Field */
 .c-searchform {
+  background: #eb0029;
   opacity: 0;
   position: fixed;
   top: -160px;
@@ -6117,7 +6124,6 @@ header {
     opacity: 1; }
 
 .c-searchform__container {
-  background: #eb0029;
   padding: 15px;
   max-width: 1440px;
   margin: 0 auto; }
@@ -6127,7 +6133,7 @@ header {
     display: block; }
   @media only screen and (min-width: 768px) {
     .c-searchform__container {
-      padding: 10px 30px; } }
+      padding: 9.5px 30px; } }
 
 .c-searchform__search-icon,
 .c-searchform__textfield,
@@ -6243,17 +6249,20 @@ header {
     max-width: 780px; }
     @media only screen and (min-width: 1024px) {
       .c-search-results__wrapper .content {
-        margin-left: 220px; } }
+        margin-left: 100px; } }
     @media only screen and (min-width: 1440px) {
       .c-search-results__wrapper .content {
-        margin-left: 160px; } }
+        margin-left: 340px; } }
 
 .c-main-content {
   position: relative;
   float: right;
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
   overflow: hidden; }
+  @media only screen and (min-width: 1440px) {
+    .c-main-content {
+      padding-right: 200px; } }
 
 .c-search-results__result {
   width: calc(100%);
@@ -6277,7 +6286,8 @@ header {
   color: #050505;
   font-weight: 200;
   font-size: 24px;
-  line-height: 1.15; }
+  line-height: 1.15;
+  margin-top: 15px; }
 
 .c-search-results__category {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -6285,7 +6295,8 @@ header {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.3;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 10px; }
 
 .c-search-filter {
   width: calc(100%);
@@ -6313,6 +6324,8 @@ header {
     -moz-appearance: none; }
     .c-search-filter__filter select::-ms-expand {
       display: none; }
+  .c-search-filter__filter.c-news-filter {
+    padding: 0; }
 
 .c-search-filter__btn {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -6320,7 +6333,8 @@ header {
   font-weight: 700;
   font-size: 19px;
   line-height: 1.35;
-  float: right; }
+  float: right;
+  margin-top: 7px; }
   .c-search-filter__btn .icon {
     margin-left: 10px; }
     .c-search-filter__btn .icon:before {
@@ -6363,19 +6377,19 @@ header {
     .c-searchform--results .c-searchform__right .seporator {
       height: 25px; }
   .c-searchform--results .c-searchform__button {
-    margin: 0 15px 0 0;
+    margin: -3px 15px 0 0;
     height: 22px; }
     .c-searchform--results .c-searchform__button input {
       width: 20px;
       height: 15px;
-      background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg") no-repeat;
-      background-size: contain !important;
+      background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right--large.svg") no-repeat;
+      background-size: 100% 100% !important;
       border: none;
       outline: none; }
       .c-searchform--results .c-searchform__button input::placeholder {
         display: none; }
       .c-searchform--results .c-searchform__button input:hover, .c-searchform--results .c-searchform__button input:focus {
-        background: url("/seo/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg"); }
+        background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg"); }
   .c-searchform--results .c-searchform__close-btn {
     height: 22px;
     margin-top: 0;
@@ -6384,6 +6398,10 @@ header {
       width: 14px;
       height: 14px;
       vertical-align: 0; }
+
+.malinky-load-more__button {
+  margin-bottom: 50px;
+  display: inline-block; }
 
 /* Footer */
 footer.site-footer {
