@@ -7,7 +7,7 @@ header {
   width: 100%;
   background: $white;
 
-  @include grid-media($hf) {
+  @include grid-media($hd) {
     height: auto;
   }
 
@@ -21,7 +21,7 @@ header {
     color: $black;
     font-size: 12px;
 
-    @include grid-media($hf) {
+    @include grid-media($hd) {
       font-size: 15px;
     }
   }
@@ -51,7 +51,7 @@ header {
   padding: 15px 0 0 15px;
   width: 60%;
 
-  @include grid-media($hf) {
+  @include grid-media($hd) {
     width: auto;
   }
 }
@@ -61,7 +61,7 @@ header {
   position: relative;
   display: none;
 
-  @include grid-media($hf) {
+  @include grid-media($hd) {
     display: block;
   }
 }
@@ -190,7 +190,7 @@ header {
     margin-top: 15px;
     margin-right: 0;
 
-    @include grid-media($hf) {
+    @include grid-media($hd) {
       margin-top: 7px;
     }
   }
@@ -203,7 +203,7 @@ header {
   max-height: 85vh;
   background: $red;
 
-  @include grid-media($hf) {
+  @include grid-media($hd) {
     display: block !important;
   }
 
@@ -220,7 +220,7 @@ header {
   float: left;
   width: 100%;
 
-  @include grid-media($hf) {
+  @include grid-media($hd) {
     width: auto;
   }
 
@@ -230,7 +230,7 @@ header {
       float: left;
       width: 100%;
 
-      @include grid-media($hf) {
+      @include grid-media($hd) {
         width: auto;
       }
 
@@ -262,7 +262,7 @@ header {
             transform: rotate(0);
             transition: all 0.5s $cubic-transition-2;
 
-            @include grid-media($hf) {
+            @include grid-media($hd) {
               display: none;
             }
           }
@@ -286,12 +286,12 @@ header {
               transform: rotate(90deg);
               transition: all 0.5s $cubic-transition-2;
 
-              @include grid-media($hf) {
+              @include grid-media($hd) {
                 display: none;
               }
             }
 
-            @include grid-media($hf) {
+            @include grid-media($hd) {
               background: $white;
               color: $red;
               border-left: 2px solid $white;
@@ -308,7 +308,7 @@ header {
           }
         }
 
-        @include grid-media($hf) {
+        @include grid-media($hd) {
           > a {
             background: none;
           }
@@ -329,7 +329,7 @@ header {
         border-left: 2px solid $red;
         border-right: 2px solid $red;
 
-        @include grid-media($hf) {
+        @include grid-media($hd) {
           padding: 4px 15.5px;
 
           @include type-5-bold($color: $white);
@@ -345,7 +345,7 @@ header {
       }
 
       > ul {
-        @include grid-media($hf) {
+        @include grid-media($hd) {
           // display: none;
           position: absolute;
           width: 100%;
@@ -357,7 +357,7 @@ header {
 
 
         > .child-menu {
-          @include grid-media($hf) {
+          @include grid-media($hd) {
             position: relative;
             opacity: 0;
             transition: all 0.5s $cubic-transition-2;
@@ -368,13 +368,13 @@ header {
             float: left;
             width: 100%;
 
-            @include grid-media($hf) {
+            @include grid-media($hd) {
               width: auto;
             }
 
 
             &:first-of-type {
-              @include grid-media($hf) {
+              @include grid-media($hd) {
                 > a {
                   padding-left: 0;
 
@@ -402,7 +402,7 @@ header {
             }
           }
 
-          @include grid-media($hf) {
+          @include grid-media($hd) {
             // display: none;
             // position: absolute;
             // width: 100%;
@@ -479,7 +479,7 @@ header {
   width: 100%;
   padding: 10px 15px 20px;
 
-  @include grid-media($hf) {
+  @include grid-media($hd) {
     float: right;
     max-width: 330px;
     padding: 0;
@@ -498,7 +498,7 @@ header {
       &:first-child {
         margin-right: 3px;
 
-        @include grid-media($hf) {
+        @include grid-media($hd) {
           margin-right: 0;
         }
       }
@@ -513,7 +513,7 @@ header {
 
         background: $black;
 
-        @include grid-media($hf) {
+        @include grid-media($hd) {
           border-left: 2px solid $white;
           padding: 4px 15.5px;
         }
@@ -531,7 +531,7 @@ header {
   float: right;
   padding-right: 15px;
 
-  @include grid-media($hf) {
+  @include grid-media($hd) {
     display: none;
   }
 }
@@ -566,7 +566,7 @@ header {
   display: block;
   width: 100%;
 
-  @include grid-media($hf) {
+  @include grid-media($hd) {
     display: none !important;
   }
 

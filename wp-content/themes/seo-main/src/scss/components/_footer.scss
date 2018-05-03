@@ -13,7 +13,7 @@ footer.site-footer {
     width: 100%;
     display: table;
 
-    @include grid-media($hf) {
+    @include grid-media($ft) {
       padding: 35px 50px;
     }
 
@@ -29,7 +29,7 @@ footer.site-footer {
       // .c-footer__logo {
       //   @include grid-column(8, $no-gutter);
 
-      //   @include grid-media($hf) {
+      //   @include grid-media($ft) {
       //     @include grid-column(6, $no-gutter);
       //   }     
       // }
@@ -38,7 +38,7 @@ footer.site-footer {
       img.image {
         margin-bottom: 20px;
 
-        @include grid-media($hf) {
+        @include grid-media($ft) {
           margin-bottom: 0;
         }
       }
@@ -50,7 +50,7 @@ footer.site-footer {
         border-left: 1px solid grey;
         padding-left: 20px;
 
-        @include grid-media($hf) {
+        @include grid-media($ft) {
           margin-top: -75px;
 
           @include grid-column(2.2, $no-gutter);
@@ -70,7 +70,7 @@ footer.site-footer {
 
           @include grid-column(12, $no-gutter);
 
-          // @include grid-media($hf) {
+          // @include grid-media($ft) {
           //   text-align: left;
           // }
 
@@ -89,7 +89,7 @@ footer.site-footer {
       }
 
       .menu-footer-left-container {
-        @include grid-media($hf) {
+        @include grid-media($ft) {
           right: 150px;
 
           li {
@@ -107,7 +107,7 @@ footer.site-footer {
         margin-top: 20px;
         line-height: 0;
 
-        @include grid-media($hf) {
+        @include grid-media($ft) {
           // @include grid-column(1.8, $no-gutter);
           width: 160px;
           text-align: left;
@@ -120,7 +120,7 @@ footer.site-footer {
           // width: 140px;
           // margin: auto;
 
-          // @include grid-media($hf) {
+          // @include grid-media($ft) {
           //   width: auto;
           // }
 
@@ -132,7 +132,7 @@ footer.site-footer {
             width: auto;
             padding: 0;
 
-            @include grid-media($hf) {
+            @include grid-media($ft) {
               text-align: left;
             }
 
@@ -152,7 +152,7 @@ footer.site-footer {
         text-align: left;
         margin-top: 20px;
 
-        @include grid-media($hf) {
+        @include grid-media($ft) {
           @include grid-column(5, $no-gutter);
 
           // text-align: left;
