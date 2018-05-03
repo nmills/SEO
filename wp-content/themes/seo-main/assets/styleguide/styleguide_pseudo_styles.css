@@ -161,7 +161,7 @@
   filter: grayscale(0%);
 }
 
-.c-gallery__container.image-medium .c-gallery__gallery-item.pseudo-class-hover .c-gallery__image {
+.c-gallery__container.image-medium .c-gallery__gallery-item.bw-hover.pseudo-class-hover .c-gallery__image {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
