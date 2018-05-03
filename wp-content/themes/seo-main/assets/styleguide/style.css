@@ -3019,6 +3019,10 @@ body {
   .gallery-page section {
     border-bottom: 1px solid #e5e7e7; } }
 
+@media only screen and (min-width: 768px) {
+  .gallery-page section {
+    margin-bottom: auto; } }
+
 .gallery-page section .container {
   padding: 0 35px; }
 
