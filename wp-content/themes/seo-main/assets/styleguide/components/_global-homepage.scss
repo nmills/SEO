@@ -72,50 +72,49 @@
       }
     }
 
-    .c-gh-hero__text{
+    .c-gh-hero__text {
       @include grid-media($xl) {
+        max-width: 1440px;
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        position: relative;
+      }
 
-      max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
-    display: block;
-    position: relative;
-  }
+
       h1 {
-      @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 46px, $line-height: 1);
+        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 46px, $line-height: 1);
 
-      @include grid-column(10, $no-gutter);
+        @include grid-column(10, $no-gutter);
 
-      position: absolute;
-      bottom: 25px;
-      left: 25px;
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
 
-      @include grid-media($sm) {
-        @include grid-column(7, $no-gutter);
-      }
-
-
-      @include grid-media($md) {
-        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 70px, $line-height: 1);
-
-        @include grid-column(6, $no-gutter);
-
-        margin: 0;
-        bottom: 80px;
-        left: 60px;
-      }
+        @include grid-media($sm) {
+          @include grid-column(7, $no-gutter);
+        }
 
 
-      @include grid-media($xl) {
-        @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 88px, $line-height: 1);
+        @include grid-media($md) {
+          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 70px, $line-height: 1);
 
-        // left: 291px;
-        // width: 580px;
+          @include grid-column(6, $no-gutter);
+
+          margin: 0;
+          bottom: 80px;
+          left: 60px;
+        }
+
+
+        @include grid-media($xl) {
+          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 88px, $line-height: 1);
+
+          // left: 291px;
+          // width: 580px;
+        }
       }
     }
-    }
-
-    
 
     .c-gh-hero__image.c-mobile-hero__image {
       display: block;
