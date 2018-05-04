@@ -156,6 +156,7 @@
     @include grid-media($xl) {
       padding: 80px 7%;
       max-width: unset;
+      padding-bottom: 115px;
     }
   }
 
