@@ -5854,12 +5854,12 @@ header {
   background: #eb0029; }
   @media only screen and (min-width: 840px) {
     .c-nav--bottom {
-      display: block !important; } }
+      display: block !important;
+      position: relative; } }
   .c-nav--bottom .c-nav--bottom__container {
     max-width: 1440px;
     margin: 0 auto;
-    float: none;
-    position: relative; }
+    float: none; }
 
 .c-nav__nav--left {
   float: left;
