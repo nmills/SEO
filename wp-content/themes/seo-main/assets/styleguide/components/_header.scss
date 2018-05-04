@@ -205,6 +205,7 @@ header {
 
   @include grid-media($hd) {
     display: block !important;
+    position: relative;
   }
 
 
@@ -212,7 +213,9 @@ header {
     max-width: 1440px;
     margin: 0 auto;
     float: none;
-    position: relative;
+
+    // position: relative;
+ 
   }
 }
 
