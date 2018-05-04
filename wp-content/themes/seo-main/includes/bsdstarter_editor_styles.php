@@ -43,3 +43,32 @@ function bsdstarter_disable_emojis_tinymce( $plugins ) {
   }
 }
 add_filter( 'tiny_mce_plugins', 'bsdstarter_disable_emojis_tinymce' );
+
+/* New operation */
+function force_post_title_init() 
+{
+  wp_enqueue_script('jquery');
+}
+function force_post_title() 
+{
+  echo "<script type='text/javascript'>\n";
+  echo "
+  jQuery('#publish').click(function(){
+        var testervar = jQuery('[id^=\"titlediv\"]')
+        .find('#title');
+        if (testervar.val().length < 1)
+        {
+            jQuery('[id^=\"titlediv\"]').css('background', '#F96');
+            setTimeout(\"jQuery('#ajax-loading').css('visibility', 'hidden');\", 100);
+            alert('TITLE is required');
+            setTimeout(\"jQuery('#publish').removeClass('button-primary-disabled');\", 100);
+            return false;
+        }
+    });
+  ";
+   echo "</script>\n";
+}
+add_action('admin_init', 'force_post_title_init');
+add_action('edit_form_advanced', 'force_post_title');
+// Add this row below to get the same functionality for page creations.
+add_action('edit_page_form', 'force_post_title');
