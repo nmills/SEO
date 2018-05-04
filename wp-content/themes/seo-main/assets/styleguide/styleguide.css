@@ -4070,7 +4070,8 @@ body {
     @media only screen and (min-width: 1440px) {
       .c-gh-intro .container {
         padding: 80px 7%;
-        max-width: unset; } }
+        max-width: unset;
+        padding-bottom: 115px; } }
   .c-gh-intro .c-gh-intro__container {
     max-width: 1024px;
     width: 100%;
