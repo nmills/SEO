@@ -8,7 +8,7 @@
             "name": "image",
             "type": "image_crop",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -32,7 +32,7 @@
             "name": "caption",
             "type": "text",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -63,5 +63,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523162902
+    "modified": 1525405628
 }
