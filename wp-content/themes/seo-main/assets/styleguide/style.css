@@ -3955,6 +3955,9 @@ body {
   margin-bottom: 0; }
   .c-gh-hero__container .container {
     padding: 0; }
+    @media only screen and (min-width: 1440px) {
+      .c-gh-hero__container .container {
+        max-width: unset; } }
   .c-gh-hero__container .c-gh-hero__content {
     position: relative; }
     .c-gh-hero__container .c-gh-hero__content:before {
@@ -4034,7 +4037,9 @@ body {
           color: #ffffff;
           font-weight: 100;
           font-size: 88px;
-          line-height: 1; } }
+          line-height: 1;
+          left: 291px;
+          width: 580px; } }
     .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image.c-mobile-hero__image {
       display: block; }
       @media only screen and (min-width: 768px) {
@@ -4057,6 +4062,10 @@ body {
       .c-gh-intro .container {
         padding: 80px 15%;
         padding-bottom: 100px; } }
+    @media only screen and (min-width: 1440px) {
+      .c-gh-intro .container {
+        padding: 80px 7%;
+        max-width: unset; } }
   .c-gh-intro .c-gh-intro__container {
     max-width: 1024px;
     width: 100%;
@@ -4092,6 +4101,9 @@ body {
 
 .c-gh-program .container {
   padding: 0; }
+  @media only screen and (min-width: 1440px) {
+    .c-gh-program .container {
+      max-width: unset; } }
   .c-gh-program .container .c-gh-program__container {
     width: 100%;
     float: left; }
