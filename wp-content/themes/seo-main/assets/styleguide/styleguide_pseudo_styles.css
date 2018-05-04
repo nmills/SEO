@@ -101,7 +101,7 @@
 .c-rte__accordion a.pseudo-class-hover,
 .c-rte__accordion a.pseudo-class-focus {
   color: #7cb4f6;
-  border-bottom: 4px solid #050505;
+  border-bottom: 3px solid #050505;
 }
 
 .c-accordion__filter li.pseudo-class-hover {
@@ -148,7 +148,7 @@
 }
 
 .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-title h3.pseudo-class-hover {
-  border-bottom: 4px solid #7cb4f6;
+  border-bottom: 3px solid #7cb4f6;
 }
 
 .c-gallery__container.image-only .bw-hover .c-gallery__gallery-item.pseudo-class-hover img {
@@ -188,7 +188,7 @@
 }
 
 .c-news-events .c-news-events__content .c-news-events__details h1.pseudo-class-hover {
-  border-bottom: 4px solid #7cb4f6;
+  border-bottom: 3px solid #7cb4f6;
 }
 
 .c-news-events .c-news-events__content.list.pseudo-class-last-of-type {

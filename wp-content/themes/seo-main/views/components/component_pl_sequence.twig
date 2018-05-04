@@ -13,7 +13,13 @@
           <div class="c-sequence_item-content">
             <h2>{{item.heading}}</h2>
             <p>{{item.body}}</p>
-            <a href="{{item.destination.url}}" class="c-rte__link">{{item.destination.title}}</a>
+            <a href="{{item.destination.url}}" class="c-rte__link">
+              {% if item.destination.title %}
+                {{item.destination.title}}
+              {% else %}
+                {{item.destination.url}}
+              {% endif %}              
+            </a>
           </div>
         </div>
         {% endfor %}
