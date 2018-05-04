@@ -32,7 +32,7 @@
             "name": "image",
             "type": "image_crop",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": [
                 [
                     {
@@ -64,7 +64,7 @@
             "name": "video",
             "type": "url",
             "instructions": "include http or https in the URL",
-            "required": 0,
+            "required": 1,
             "conditional_logic": [
                 [
                     {
@@ -194,5 +194,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523956743
+    "modified": 1525405118
 }

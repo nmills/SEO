@@ -8,7 +8,7 @@
             "name": "header_text",
             "type": "text",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -27,7 +27,7 @@
             "name": "image",
             "type": "image_crop",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -51,7 +51,7 @@
             "name": "link",
             "type": "url",
             "instructions": "include http or https in the URL",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -67,7 +67,7 @@
             "name": "cta_btn_name",
             "type": "text",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -98,5 +98,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523956384
+    "modified": 1525405870
 }

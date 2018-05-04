@@ -31,13 +31,13 @@ Styleguide 1.1
 
   transition: all 0.4s $cubic-transition;
   font-weight: $font-normal;
-  border-bottom: 4px solid $light-blue;
+  border-bottom: 3px solid $light-blue;
   text-decoration: none;
 
   &:hover,
   &:focus {
     color: $light-blue;
-    border-bottom: 4px solid $black;
+    border-bottom: 3px solid $black;
   }
 }
 
