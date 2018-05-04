@@ -67,6 +67,7 @@
   @include grid-column(12, $no-gutter);
 
   margin-bottom: 40px;
+  max-width: 700px;
 }
 
 .c-search-filter__filter {
@@ -116,6 +117,7 @@
 // Search Form
 .c-searchform--results {
   position: absolute;
+  max-width: 700px;
 
   .c-searchform__container {
     padding: 10px 15px;
