@@ -33,7 +33,7 @@
             "name": "image",
             "type": "image_crop",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": [
                 [
                     {
@@ -145,5 +145,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523162809
+    "modified": 1525405690
 }
