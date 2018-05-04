@@ -1,5 +1,10 @@
 /* Search Results Page */
 
+.search-results {
+.malinky-load-more {
+  text-align: left;
+}}
+
 .c-search-results__wrapper {
   margin: 100px 0;
 
@@ -117,7 +122,7 @@
 // Search Form
 .c-searchform--results {
   position: absolute;
-  max-width:700px;
+  max-width: 700px;
 
   .c-searchform__container {
     padding: 10px 15px;
