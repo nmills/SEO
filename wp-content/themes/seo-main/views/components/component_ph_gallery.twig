@@ -26,7 +26,13 @@
       <p>{{component.closing_line}}</p>
     </div>
     <div class="c-ph-gallery__last-link">
-      <a href="{{component.closing_link.url}}" class="c-rte__link">{{component.closing_link.title}}</a>
+      <a href="{{component.closing_link.url}}" class="c-rte__link">
+        {% if component.closing_link.title %}
+          {{component.closing_link.title}}
+        {% else %}
+          {{component.closing_link.url}}
+        {% endif %}
+      </a>
     </div>
     </div>
   </div>

@@ -12,7 +12,14 @@
         <p>{{component.text_blurb}}</p>
         <ul class="c-gh-alumni__links">
           {% if component.destination %}
-          <a href="{{component.destination.url}}" class="c-rte__link">{{component.destination.title}}</a> {% endif %}
+            <a href="{{component.destination.url}}" class="c-rte__link">
+              {% if component.destination.title %}
+                {{component.destination.title}}
+              {% else %}
+                {{component.destination.url}}
+              {% endif %}
+            </a> 
+          {% endif %}
         </ul>
       </div>
     </div>
