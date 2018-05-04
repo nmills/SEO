@@ -4001,7 +4001,14 @@ body {
       .c-gh-hero__container .c-gh-hero__content .c-gh-hero__video video {
         width: 100%;
         object-fit: fill; }
-    .c-gh-hero__container .c-gh-hero__content h1 {
+    @media only screen and (min-width: 1440px) {
+      .c-gh-hero__container .c-gh-hero__content .c-gh-hero__text {
+        max-width: 1440px;
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        position: relative; } }
+    .c-gh-hero__container .c-gh-hero__content .c-gh-hero__text h1 {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #ffffff;
       font-weight: 100;
@@ -4014,12 +4021,12 @@ body {
       bottom: 25px;
       left: 25px; }
       @media only screen and (min-width: 480px) {
-        .c-gh-hero__container .c-gh-hero__content h1 {
+        .c-gh-hero__container .c-gh-hero__content .c-gh-hero__text h1 {
           width: calc(58.33333%);
           float: left;
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        .c-gh-hero__container .c-gh-hero__content h1 {
+        .c-gh-hero__container .c-gh-hero__content .c-gh-hero__text h1 {
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
           color: #ffffff;
           font-weight: 100;
@@ -4032,14 +4039,12 @@ body {
           bottom: 80px;
           left: 60px; } }
       @media only screen and (min-width: 1440px) {
-        .c-gh-hero__container .c-gh-hero__content h1 {
+        .c-gh-hero__container .c-gh-hero__content .c-gh-hero__text h1 {
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
           color: #ffffff;
           font-weight: 100;
           font-size: 88px;
-          line-height: 1;
-          left: 291px;
-          width: 580px; } }
+          line-height: 1; } }
     .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image.c-mobile-hero__image {
       display: block; }
       @media only screen and (min-width: 768px) {

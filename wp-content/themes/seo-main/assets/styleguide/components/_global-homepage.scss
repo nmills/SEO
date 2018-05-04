@@ -72,7 +72,16 @@
       }
     }
 
-    h1 {
+    .c-gh-hero__text{
+      @include grid-media($xl) {
+
+      max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+      h1 {
       @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 46px, $line-height: 1);
 
       @include grid-column(10, $no-gutter);
@@ -100,10 +109,13 @@
       @include grid-media($xl) {
         @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 88px, $line-height: 1);
 
-        left: 291px;
-        width: 580px;
+        // left: 291px;
+        // width: 580px;
       }
     }
+    }
+
+    
 
     .c-gh-hero__image.c-mobile-hero__image {
       display: block;
@@ -206,9 +218,10 @@
   .container {
     padding: 0;
 
-        @include grid-media($xl) {
-          max-width: unset;
-        }
+    @include grid-media($xl) {
+      max-width: unset;
+    }
+
 
     .c-gh-program__container {
       width: 100%;
