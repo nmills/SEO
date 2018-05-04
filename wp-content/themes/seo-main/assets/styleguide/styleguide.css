@@ -6320,7 +6320,8 @@ header {
   width: calc(100%);
   float: left;
   margin-left: 0;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  max-width: 700px; }
 
 .c-search-filter__filter {
   float: left; }
@@ -6360,7 +6361,8 @@ header {
       top: 3px; }
 
 .c-searchform--results {
-  position: absolute; }
+  position: absolute;
+  max-width: 700px; }
   .c-searchform--results .c-searchform__container {
     padding: 10px 15px; }
   .c-searchform--results .c-searchform__textfield {
