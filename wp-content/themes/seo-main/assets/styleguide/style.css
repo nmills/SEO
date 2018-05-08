@@ -4157,8 +4157,10 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: linear-gradient(to bottom, #ffffff00, #000000);
-        opacity: 0.6; }
+        background-image: linear-gradient(to left, #ffffff00, rgba(5, 5, 5, 0.3));
+        transition: all 0.5s cubic-bezier(0, 0, 0.2, 1); }
+      .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover:before {
+        background-image: linear-gradient(to bottom, #ffffff00, rgba(5, 5, 5, 0.65)); }
       .c-gh-program .container .c-gh-program__container .c-gh-program__item .c-gh-program__image {
         width: 100%;
         height: 470px;
