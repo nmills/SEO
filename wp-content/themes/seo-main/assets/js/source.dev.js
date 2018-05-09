@@ -2498,6 +2498,11 @@ scrollTop:$('.container.region_main_content').offset().top+-100},
 console.log('test2');
 }
 }
+
+// Clearing the search field on click
+$(".c-searchform__textfield input").on("click",function(){
+$(this).val("");
+});
 };
 
 },{}],4:[function(require,module,exports){
