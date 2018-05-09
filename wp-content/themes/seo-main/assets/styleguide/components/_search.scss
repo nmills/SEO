@@ -1,5 +1,17 @@
 /* Search Field */
 
+.search {
+  .page-title {
+    h1 {
+      font-size: 40px;
+
+      @include grid-media($md) {
+        font-size: 61px;
+      }
+    }
+  }
+}
+
 .c-searchform {
   background: $red;
   opacity: 0;

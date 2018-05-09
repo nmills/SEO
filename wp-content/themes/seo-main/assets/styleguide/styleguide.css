@@ -6125,6 +6125,12 @@ header {
       text-align: center; }
 
 /* Search Field */
+.search .page-title h1 {
+  font-size: 40px; }
+  @media only screen and (min-width: 768px) {
+    .search .page-title h1 {
+      font-size: 61px; } }
+
 .c-searchform {
   background: #eb0029;
   opacity: 0;
@@ -6357,13 +6363,18 @@ header {
   font-weight: 700;
   font-size: 19px;
   line-height: 1.35;
-  float: right;
-  margin-top: 7px; }
+  float: left;
+  margin-top: 7px;
+  padding-left: 25px; }
   .c-search-filter__btn .icon {
     margin-left: 10px; }
     .c-search-filter__btn .icon:before {
       position: relative;
       top: 3px; }
+  @media only screen and (min-width: 768px) {
+    .c-search-filter__btn {
+      float: right;
+      padding-left: 0; } }
 
 .c-searchform--results {
   position: absolute;
