@@ -278,12 +278,11 @@ function bsdstarter_get_sidebar_slug( $post ) {
 
 /* returns the site ID's for the search*/
 function get_search_sites(){
-  $current_site = get_current_site();
-  $site_id_to_search = $current_site->id;
+  $site_id_to_search = get_current_blog_id();
   if($site_id_to_search == 1){
-    $site_id_to_search = '1,2,3,4,5';
+    return '1,2,3,4,5';
   }
-  return $site_id_to_search;
+  return '';
 }
 
 /* Returns the sites and their URL's for search filters */
