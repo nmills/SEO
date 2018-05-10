@@ -131,6 +131,14 @@
   position: absolute;
   max-width: 700px;
 
+  &.active {
+    top: 43px;
+
+    @include grid-media($lg) {
+      top: 0;
+    }
+  }
+
   .c-searchform__container {
     padding: 10px 15px;
   }
@@ -221,4 +229,12 @@
 .malinky-load-more__button {
   margin-bottom: 50px;
   display: inline-block;
+}
+
+.search-no-results {
+  .posts-selector {
+    p {
+      margin: 100px 0;
+    }
+  }
 }
