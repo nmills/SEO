@@ -6146,8 +6146,11 @@ header {
     .c-searchform {
       top: -105px; } }
   .c-searchform.active {
-    top: 0;
+    top: 43px;
     opacity: 1; }
+    @media only screen and (min-width: 1024px) {
+      .c-searchform.active {
+        top: 0; } }
 
 .c-searchform__container {
   padding: 15px;
