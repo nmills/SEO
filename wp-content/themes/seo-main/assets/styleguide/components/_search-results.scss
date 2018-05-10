@@ -1,9 +1,10 @@
 /* Search Results Page */
 
 .search-results {
-.malinky-load-more {
-  text-align: left;
-}}
+  .malinky-load-more {
+    text-align: left;
+  }
+}
 
 .c-search-results__wrapper {
   margin: 100px 0;
@@ -106,8 +107,9 @@
 .c-search-filter__btn {
   @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 19px, $line-height: 1.35);
 
-  float: right;
+  float: left;
   margin-top: 7px;
+  padding-left: 25px;
 
   .icon {
     margin-left: 10px;
@@ -117,12 +119,25 @@
       top: 3px;
     }
   }
+
+  @include grid-media($md) {
+    float: right;
+    padding-left: 0;
+  }
 }
 
 // Search Form
 .c-searchform--results {
   position: absolute;
   max-width: 700px;
+
+  &.active {
+    top: 43px;
+
+    @include grid-media($lg) {
+      top: 0;
+    }
+  }
 
   .c-searchform__container {
     padding: 10px 15px;
@@ -214,4 +229,12 @@
 .malinky-load-more__button {
   margin-bottom: 50px;
   display: inline-block;
+}
+
+.search-no-results {
+  .posts-selector {
+    p {
+      margin: 100px 0;
+    }
+  }
 }

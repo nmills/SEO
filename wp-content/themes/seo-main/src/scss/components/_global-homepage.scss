@@ -299,11 +299,18 @@
           right: 0;
           bottom: 0;
           left: 0;
-          background-image: linear-gradient(to bottom, #ffffff00, #000000);
-          opacity: 0.6;
+          background-image: linear-gradient(to left, #ffffff00, $prog-list-gradient);
+          transition: all 0.5s $cubic-transition-2;
 
+          // opacity: 0.6;
           // z-index: 100;
        
+        }
+
+        &:hover {
+          &:before {
+            background-image: linear-gradient(to bottom, #ffffff00, $prog-list-gradient-hover);
+          }
         }
 
         .c-gh-program__image {
