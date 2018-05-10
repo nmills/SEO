@@ -2707,8 +2707,8 @@ Gallery
         height: 240px; } }
     @media only screen and (min-width: 1440px) {
       .program-landing-page .old .c-ratiometer-meter_out {
-        width: 340px;
-        height: 340px; } }
+        width: 245px;
+        height: 245px; } }
   .program-landing-page .old .c-rationmeter-meter {
     width: 130px;
     height: 130px;
@@ -2728,8 +2728,8 @@ Gallery
         height: 220px; } }
     @media only screen and (min-width: 1440px) {
       .program-landing-page .old .c-rationmeter-meter {
-        width: 320px;
-        height: 320px; } }
+        width: 225px;
+        height: 225px; } }
   .program-landing-page .old .c-rationmeter-text {
     width: calc(50%);
     float: left;
@@ -3775,8 +3775,8 @@ body {
           height: 240px; } }
       @media only screen and (min-width: 1440px) {
         .c-ph-stats__container .old .c-ratiometer-meter_out {
-          width: 340px;
-          height: 340px; } }
+          width: 245px;
+          height: 245px; } }
     .c-ph-stats__container .old .c-rationmeter-meter {
       width: 130px;
       height: 130px;
@@ -3796,8 +3796,8 @@ body {
           height: 220px; } }
       @media only screen and (min-width: 1440px) {
         .c-ph-stats__container .old .c-rationmeter-meter {
-          width: 320px;
-          height: 320px; } }
+          width: 225px;
+          height: 225px; } }
     .c-ph-stats__container .old .c-rationmeter-text {
       width: calc(50%);
       float: left;
