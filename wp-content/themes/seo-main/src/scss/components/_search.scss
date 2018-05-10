@@ -30,12 +30,8 @@
 
 
   &.active {
-    top: 43px;
+    top: 0;
     opacity: 1;
-
-    @include grid-media($lg) {
-      top: 0;
-    }
   }
 }
 
