@@ -37,4 +37,9 @@ export default function() {
         console.log('test2');  
     }
   }
+
+  // Clearing the search field on click
+  $(".c-searchform__textfield input").on("click", function() {
+      $(this).val("");
+  })
 }

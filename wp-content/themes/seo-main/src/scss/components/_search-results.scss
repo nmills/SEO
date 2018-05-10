@@ -107,8 +107,9 @@
 .c-search-filter__btn {
   @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 19px, $line-height: 1.35);
 
-  float: right;
+  float: left;
   margin-top: 7px;
+  padding-left: 25px;
 
   .icon {
     margin-left: 10px;
@@ -117,6 +118,11 @@
       position: relative;
       top: 3px;
     }
+  }
+
+  @include grid-media($md) {
+    float: right;
+    padding-left: 0;
   }
 }
 
