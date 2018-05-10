@@ -42,4 +42,12 @@ export default function() {
   $(".c-searchform__textfield input").on("click", function() {
       $(this).val("");
   })
+
+  $( ".icon.icon-search--small" ).click(function() {
+   $('.header__search').focus();
+  });
+
+  $( ".icon.icon-search-red--small" ).click(function() {
+   $('.result__search').focus();
+  });
 }
