@@ -1114,6 +1114,58 @@ Styleguide 1.5
   line-height: 1.2; }
 
 /*
+Table
+
+markup:
+<div class="c-rte">
+  <table style="height: 180px;" width="497">
+    <tbody>
+      <tr>
+        <td style="width: 158px;">Col1</td>
+        <td style="width: 158px;">Col2</td>
+        <td style="width: 159px;">Col3</td>
+      </tr>
+      <tr>
+        <td style="width: 158px;">Row1</td>
+        <td style="width: 158px;">a</td>
+        <td style="width: 159px;">b</td>
+      </tr>
+      <tr>
+        <td style="width: 158px;">Row2</td>
+        <td style="width: 158px;">c</td>
+        <td style="width: 159px;">d</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 1.6
+*/
+.c-rte {
+  overflow-y: auto; }
+  .c-rte table {
+    border-top: 10px solid #050505;
+    width: 100%; }
+    .c-rte table tr:first-of-type td {
+      font-size: 22px;
+      color: #050505; }
+    .c-rte table tr,
+    .c-rte table td {
+      border: 1px solid #e5e7e7;
+      padding: 15px;
+      font-weight: 100;
+      font-size: 14px; }
+
+/*
 Accodion
 
 Styleguide 5.0
