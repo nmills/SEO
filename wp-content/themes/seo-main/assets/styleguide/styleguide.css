@@ -1102,6 +1102,39 @@ Styleguide 1.5
   border-left: 10px solid #050505;
   padding-left: 10px; }
 
+.c-rte .wp-caption {
+  margin-bottom: 40px; }
+  .c-rte .wp-caption.alignleft {
+    float: left;
+    margin-right: 40px; }
+  .c-rte .wp-caption.alignright {
+    float: right;
+    margin-left: 40px; }
+  .c-rte .wp-caption img {
+    border: none;
+    padding: 0;
+    margin-bottom: 10px; }
+  .c-rte .wp-caption .wp-caption-text {
+    position: relative;
+    float: left;
+    clear: both;
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-bottom: 15px; }
+    .c-rte .wp-caption .wp-caption-text:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 120px;
+      height: 2px;
+      background: #e5e7e7; }
+
 .c-rte p {
   margin-top: 0;
   margin-bottom: 40px; }
