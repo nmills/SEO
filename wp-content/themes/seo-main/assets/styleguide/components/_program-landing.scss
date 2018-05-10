@@ -432,9 +432,11 @@
     @include grid-column(12, $no-gutter);
 
     .c-ratiometer_container {
-      padding: 5%;
+      padding: 45px 0;
 
-      @include grid-media($lg) {}
+      @include grid-media($lg) {
+        padding: 65px 0;
+      }
     }
 
     .c-ratiometer {
@@ -461,7 +463,7 @@
 
 
       @include grid-media($xl) {
-        width: calc(50%);
+        width: calc(30%);
         float: left;
         margin: 0 auto;
         float: none;

@@ -2654,7 +2654,10 @@ Gallery
   float: left;
   margin-left: 0; }
   .program-landing-page .old .c-ratiometer_container {
-    padding: 5%; }
+    padding: 45px 0; }
+    @media only screen and (min-width: 1024px) {
+      .program-landing-page .old .c-ratiometer_container {
+        padding: 65px 0; } }
   .program-landing-page .old .c-ratiometer {
     width: calc(100%);
     float: left;
@@ -2675,7 +2678,7 @@ Gallery
         float: none; } }
     @media only screen and (min-width: 1440px) {
       .program-landing-page .old .c-ratiometer {
-        width: calc(50%);
+        width: calc(30%);
         float: left;
         margin: 0 auto;
         float: none; } }
@@ -3702,12 +3705,14 @@ body {
   .c-ph-stats__container .c-ph-stats__content {
     width: calc(100%);
     margin: 0 auto;
-    display: inline-block; }
+    display: inline-block;
+    padding: 45px 0; }
     @media only screen and (min-width: 1024px) {
       .c-ph-stats__container .c-ph-stats__content {
         position: relative;
         width: calc(80%);
-        display: flex; } }
+        display: flex;
+        padding: 65px 0; } }
     .c-ph-stats__container .c-ph-stats__content.single .old, .c-ph-stats__container .c-ph-stats__content.single .c-ph-stats-border__container {
       width: calc(100%);
       float: left;

@@ -315,11 +315,13 @@
     width: calc(100%);
     margin: 0 auto;
     display: inline-block;
+    padding: 45px 0;
 
     @include grid-media($lg) {
       position: relative;
       width: calc(80%);
       display: flex;
+      padding: 65px 0;
     }
 
 
