@@ -56,18 +56,30 @@
               {% else %}
                 {% set mainlinkactive = false %} 
               {% endif %}
+
+              {# This is to make sure that particular page's parent exsist in the menu then to make that also active #}
+              {% if main_menu_item.get_link|replace({'https': '', 'http': '' , '://':'' , '/':''}) == parent_url|replace({'https': '', 'http': '' , '://':'' , '/':''}) %} 
+                {% set mainparentactive = true %}
+              {% else %}
+                {% set mainparentactive = false %} 
+              {% endif %}
               
               {% set childlinkactive = false %}
+              {% set childparentactive = false %}
               {% for child in main_menu_item.get_children %}
                 {% if child.current %} 
                   {% set childlinkactive = true %}
+                {% endif %}
+              
+                {% if child.get_link|replace({'https': '', 'http': '' , '://':'' , '/':''}) == parent_url|replace({'https': '', 'http': '' , '://':'' , '/':''}) %} 
+                  {% set childparentactive = true %}
                 {% endif %}
               {% endfor %}
 
             <li class=" {% if main_menu_item.children %} has-submenu {% endif %}"> 
 
-              <a href="{{main_menu_item.get_link}}" class="{% if mainlinkactive or childlinkactive %} active-parent {% endif %}">{{main_menu_item.title}}</a> 
-              {% if main_menu_item.children and (mainlinkactive or childlinkactive) %}
+              <a href="{{main_menu_item.get_link}}" class="{% if (mainlinkactive or childlinkactive or mainparentactive or childparentactive) %} active-parent {% endif %}">{{main_menu_item.title}}</a> 
+              {% if main_menu_item.children and (mainlinkactive or childlinkactive or mainparentactive or childparentactive) %}
                 <ul class="main-nav-dropdown">
                   <div class="child-menu">
                     {% for child in main_menu_item.get_children %}
@@ -79,6 +91,7 @@
                 </ul>
               {% endif %}
             </li>
+
           {% endfor %}
         </ul>
       </div>

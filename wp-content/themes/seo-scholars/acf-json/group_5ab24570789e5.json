@@ -7,7 +7,7 @@
             "label": "Image 1",
             "name": "image_1",
             "type": "image_crop",
-            "instructions": "",
+            "instructions": "We recommend using an image that is at least 150px wide and 150px tall.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -15,11 +15,11 @@
                 "class": "",
                 "id": ""
             },
-            "crop_type": "hard",
-            "target_size": "thumbnail",
+            "crop_type": "min",
+            "target_size": "custom",
             "width": "",
             "height": "",
-            "preview_size": "medium",
+            "preview_size": "thumbnail",
             "force_crop": "no",
             "save_in_media_library": "yes",
             "retina_mode": "no",
@@ -31,7 +31,7 @@
             "label": "Image 2",
             "name": "image_2",
             "type": "image_crop",
-            "instructions": "",
+            "instructions": "We recommend using an image that is at least 150px wide and 150px tall.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -39,8 +39,8 @@
                 "class": "",
                 "id": ""
             },
-            "crop_type": "hard",
-            "target_size": "thumbnail",
+            "crop_type": "min",
+            "target_size": "custom",
             "width": "",
             "height": "",
             "preview_size": "medium",
@@ -121,5 +121,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523956374
+    "modified": 1526016857
 }
