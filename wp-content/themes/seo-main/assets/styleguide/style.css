@@ -3712,7 +3712,8 @@ body {
         position: relative;
         width: calc(80%);
         display: flex;
-        padding: 65px 0; } }
+        padding: 65px 0;
+        max-width: 1060px; } }
     .c-ph-stats__container .c-ph-stats__content.single .old, .c-ph-stats__container .c-ph-stats__content.single .c-ph-stats-border__container {
       width: calc(100%);
       float: left;
@@ -3742,16 +3743,20 @@ body {
           float: none; } }
       @media only screen and (min-width: 768px) {
         .c-ph-stats__container .old .c-ratiometer {
-          width: calc(75%);
+          width: 430px;
           float: left;
           margin: 0 auto;
           float: none; } }
+      @media only screen and (min-width: 1024px) {
+        .c-ph-stats__container .old .c-ratiometer {
+          margin-left: 0; } }
       @media only screen and (min-width: 1440px) {
         .c-ph-stats__container .old .c-ratiometer {
           width: calc(50%);
           float: left;
           margin: 0 auto;
-          float: none; } }
+          float: none;
+          margin-left: 0; } }
       .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
         width: 250px;
         display: flex;
@@ -3854,8 +3859,9 @@ body {
             font-size: 30px;
             line-height: 1; } }
   .c-ph-stats__container .c-ph-stats-border__container {
-    height: 350px;
+    height: 200px;
     position: relative;
+    margin-bottom: 40px;
     width: calc(100%);
     float: left;
     margin-left: 0; }
@@ -3872,7 +3878,8 @@ body {
         right: 0;
         top: 50%;
         -webkit-transform: translateY(25%);
-        transform: translateY(-50%); } }
+        transform: translateY(-50%);
+        margin-bottom: 0; } }
     .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details {
       width: 160px;
       margin: auto;
