@@ -104,6 +104,11 @@
   border-bottom: 3px solid #050505;
 }
 
+.c-rte table tr.pseudo-class-first-of-type td {
+  font-size: 22px;
+  color: #050505;
+}
+
 .c-accordion__filter li.pseudo-class-hover {
   color: #820d1b;
 }

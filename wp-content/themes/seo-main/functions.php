@@ -80,6 +80,12 @@ class BSDStarterSite extends TimberSite {
 
     /*Global settings*/
     $context['options'] = get_fields('options');
+
+    /* Menu 2nd nav options */
+    $current_post_ID = get_the_ID();
+    $current_post_parent_id = wp_get_post_parent_id($current_post_ID);
+    $context['parent_url'] = get_permalink($current_post_parent_id);
+    
     return $context;
     
   }

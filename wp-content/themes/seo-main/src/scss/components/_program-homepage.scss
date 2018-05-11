@@ -315,11 +315,14 @@
     width: calc(100%);
     margin: 0 auto;
     display: inline-block;
+    padding: 45px 0;
 
     @include grid-media($lg) {
       position: relative;
       width: calc(80%);
       display: flex;
+      padding: 65px 0;
+      max-width: 1060px;
     }
 
 
@@ -360,18 +363,23 @@
 
 
       @include grid-media($md) {
-        width: calc(75%);
+        // width: calc(75%);
+        width: 430px;
         float: left;
         margin: 0 auto;
         float: none;
       }
 
+      @include grid-media($lg) {
+        margin-left: 0;
+      }
 
       @include grid-media($xl) {
         width: calc(50%);
         float: left;
         margin: 0 auto;
         float: none;
+        margin-left: 0;
       }
 
 
@@ -415,8 +423,8 @@
 
 
       @include grid-media($xl) {
-        width: 340px;
-        height: 340px;
+        width: 245px;
+        height: 245px;
       }
     }
 
@@ -443,8 +451,8 @@
 
 
       @include grid-media($xl) {
-        width: 320px;
-        height: 320px;
+        width: 225px;
+        height: 225px;
       }
     }
 
@@ -511,8 +519,9 @@
 
   .c-ph-stats-border__container {
     // background: $light-gray;
-    height: 350px;
+    height: 200px;
     position: relative;
+    margin-bottom: 40px;
 
     @include grid-column(12, $no-gutter);
 
@@ -530,6 +539,8 @@
       top: 50%;
       -webkit-transform: translateY(25%);
       transform: translateY(-50%);
+      margin-bottom: 0;
+
     }
 
 
