@@ -24,9 +24,11 @@
         </div>
         {% endfor %}
       </div>
-      <div class="c-sequence__cta_button">
-        <a href="{{component.cta_button_link}}" class="c-uie__calltoaction-secondary">{{component.cta_button_text}}</a>
-      </div>
+      {% if component.cta_button_link %}
+        <div class="c-sequence__cta_button">
+          <a href="{{component.cta_button_link}}" class="c-uie__calltoaction-secondary">{{component.cta_button_text}}</a>
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>
