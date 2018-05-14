@@ -1811,6 +1811,105 @@ button.c-uie__calltoaction-secondary {
   margin-top: 40px;
   cursor: pointer; }
 
+.c-signup__form {
+  /*The new form styles*/ }
+  .c-signup__form .ctct-form-defaults {
+    background: none;
+    position: relative; }
+    .c-signup__form .ctct-form-defaults .ctct-form-header,
+    .c-signup__form .ctct-form-defaults .ctct-form-text {
+      display: none; }
+    .c-signup__form .ctct-form-defaults label#email_address_label_0,
+    .c-signup__form .ctct-form-defaults label#postal_code_label_0 {
+      /*color: $white;*/
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 100;
+      font-size: 22px;
+      line-height: 1; }
+    .c-signup__form .ctct-form-defaults input#email_address_0,
+    .c-signup__form .ctct-form-defaults input#postal_code_0 {
+      float: left;
+      background: none;
+      border: none;
+      border-bottom: 3px solid #050505;
+      padding: 10px 0;
+      box-shadow: none;
+      border-radius: 0;
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 100;
+      font-size: 22px;
+      line-height: 1; }
+      .c-signup__form .ctct-form-defaults input#email_address_0::placeholder,
+      .c-signup__form .ctct-form-defaults input#postal_code_0::placeholder {
+        color: #050505; }
+    .c-signup__form .ctct-form-defaults #email_address_field_0,
+    .c-signup__form .ctct-form-defaults #postal_code_field_0,
+    .c-signup__form .ctct-form-defaults #error_message_0 {
+      width: calc(100% - 30px);
+      display: inline-block; }
+      @media only screen and (min-width: 768px) {
+        .c-signup__form .ctct-form-defaults #email_address_field_0,
+        .c-signup__form .ctct-form-defaults #postal_code_field_0,
+        .c-signup__form .ctct-form-defaults #error_message_0 {
+          width: calc(100%);
+          float: left;
+          margin-left: 0;
+          margin-right: 40px;
+          margin-top: 0; } }
+    .c-signup__form .ctct-form-defaults #postal_code_field_0 {
+      margin-top: 0; }
+    .c-signup__form .ctct-form-defaults button.ctct-form-button {
+      padding: 15px 20px;
+      position: relative;
+      color: #050505 !important;
+      font-weight: bold;
+      text-decoration: none;
+      background: none !important;
+      border: none !important; }
+      .c-signup__form .ctct-form-defaults button.ctct-form-button:before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-top: 4px solid #050505;
+        border-left: 4px solid #050505;
+        width: 50%;
+        height: 50%;
+        transition: all 0.4s cubic-bezier(0, 0, 0.2, 1); }
+      .c-signup__form .ctct-form-defaults button.ctct-form-button:after {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        border-bottom: 4px solid #eb0029;
+        border-right: 4px solid #eb0029;
+        transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+        width: 50%;
+        height: 50%; }
+      .c-signup__form .ctct-form-defaults button.ctct-form-button:hover:before, .c-signup__form .ctct-form-defaults button.ctct-form-button:hover:after {
+        transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+        width: calc(100% - 4px);
+        height: calc(100% - 4px); }
+      @media only screen and (min-width: 768px) {
+        .c-signup__form .ctct-form-defaults button.ctct-form-button {
+          width: calc(100%);
+          float: left;
+          margin-left: 0;
+          text-align: center;
+          margin-top: 34px; } }
+    .c-signup__form .ctct-form-defaults .ctct-form-required:before,
+    .c-signup__form .ctct-form-defaults .ctct-form-errorMessage {
+      color: #eb0029 !important; }
+    .c-signup__form .ctct-form-defaults .ctct-form-footer a {
+      color: #050505 !important; }
+    .c-signup__form .ctct-form-defaults #network_error_message_0 .ctct-form-errorMessage,
+    .c-signup__form .ctct-form-defaults #error_message_0 .ctct-form-errorMessage {
+      text-align: center; }
+
 /* Cta */
 .c-cta__wrapper {
   width: calc(100%);
