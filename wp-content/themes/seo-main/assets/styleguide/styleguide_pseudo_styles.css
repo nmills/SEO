@@ -125,6 +125,13 @@
   border: 3px solid red;
 }
 
+.c-signup__form .ctct-form-defaults button.ctct-form-button.pseudo-class-hover:before,
+.c-signup__form .ctct-form-defaults button.ctct-form-button.pseudo-class-hover:after {
+  transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
 .body-slide p.pseudo-class-first-child {
   margin-top: 0;
 }
@@ -178,6 +185,13 @@
 
 .c-ph-gallery__container .c-ph-gallery__last-link a.pseudo-class-hover {
   color: #7cb4f6;
+}
+
+.c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button.pseudo-class-hover:before,
+.c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button.pseudo-class-hover:after {
+  transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
 }
 
 .c-gh-program .container .c-gh-program__container .c-gh-program__item.pseudo-class-hover:before {
