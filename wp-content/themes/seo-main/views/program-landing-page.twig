@@ -5,8 +5,6 @@
     <div class="page-content">
           {# Amalan new codes #}
           <div class="region_hero">
-            
-
             {% set component = post.get_field('event_info') %}
             {% include ['components/component_pl_event_info.twig'] %}
 
@@ -25,4 +23,11 @@
       </aside>
     {% endblock %}
   </main>
+{% endblock %}
+
+{% block signupjs %}
+  <!-- Begin Constant Contact Active Forms -->
+  <script> var _ctct_m = "b4068ca137eb42a8ae9ae4ff88a61c7b"; </script>
+  <script id="signupScript" src="https://static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+  <!-- End Constant Contact Active Forms -->
 {% endblock %}
