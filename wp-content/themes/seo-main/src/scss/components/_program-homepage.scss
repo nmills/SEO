@@ -709,6 +709,131 @@
           color: $white;
         }
       }
+
+      /*The new form styles*/
+      .ctct-form-defaults {
+        background: none;
+        position: relative;
+
+        .ctct-form-header,
+        .ctct-form-text {
+          display: none;
+        }
+
+        label#email_address_label_0,
+        label#postal_code_label_0 {
+          /*color: $white;*/
+          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 22px, $line-height: 1);
+        }
+
+        input#email_address_0,
+        input#postal_code_0 {
+          float: left;
+          background: none;
+          border: none;
+          border-bottom: 3px solid $white;
+          padding: 10px 0;
+          box-shadow: none;
+          border-radius: 0;
+
+          @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 22px, $line-height: 1);
+      
+          &::placeholder {
+            color: $white;
+          }
+        }
+
+        #email_address_field_0,
+        #postal_code_field_0,
+        #error_message_0 {
+          width: calc(100% - 30px);
+          display: inline-block;
+
+          @include grid-media($md) {
+            @include grid-column(4, $no-gutter);
+
+            margin-right: 40px;
+            margin-top: 0;
+          }
+        }
+
+        #postal_code_field_0 {
+            margin-top: 0;
+        }
+
+        button.ctct-form-button {
+          padding: 15px 20px;
+          position: relative;
+          color: $white;
+          font-weight: bold;
+          text-decoration: none;
+          background: none;
+          border: none;
+
+          &:before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            border-top: 4px solid $black;
+            border-left: 4px solid $black;
+            width: 50%;
+            height: 50%;
+            transition: all 0.4s $cubic-transition-2;
+          } 
+
+          &:after {
+            content: " ";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: block;
+            border-bottom: 4px solid $white;
+            border-right: 4px solid $white;
+            transition: all 0.4s $cubic-transition-2;
+            width: 50%;
+            height: 50%;
+          }
+
+          &:hover {
+            &:before, &:after {
+              transition: all 0.4s $cubic-transition-2;
+              width: calc(100% - 4px);
+              height: calc(100% - 4px);
+            }
+          }
+
+          @include grid-media($md) {
+            @include grid-column(2, $no-gutter);
+
+            text-align: center;
+            margin-top: 34px;
+          }
+        }
+
+        .ctct-form-required:before,
+        .ctct-form-errorMessage,
+        .ctct-form-footer a {
+          color: $white !important;
+        }
+
+        #network_error_message_0 {
+          position: absolute;
+          width: 100%;
+          left: 50%;
+          bottom: 15px;
+          transform: translate(-50%,-50%);
+          
+          @include grid-media($md) {
+            bottom: 20px;
+          }
+
+          .ctct-form-errorMessage {
+            text-align: center;
+          }
+        }
+      }
     }
 
     .c-ph-signup__form-button {
