@@ -125,6 +125,12 @@
   border: 3px solid red;
 }
 
+.c-signup__form .ctct-form-defaults input#email_address_0.pseudo-class-focus,
+.c-signup__form .ctct-form-defaults input#postal_code_0.pseudo-class-focus {
+  outline: none;
+  border-bottom-color: #7cb4f6;
+}
+
 .c-signup__form .ctct-form-defaults button.ctct-form-button.pseudo-class-hover:before,
 .c-signup__form .ctct-form-defaults button.ctct-form-button.pseudo-class-hover:after {
   transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
@@ -185,6 +191,12 @@
 
 .c-ph-gallery__container .c-ph-gallery__last-link a.pseudo-class-hover {
   color: #7cb4f6;
+}
+
+.c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults input#email_address_0.pseudo-class-focus,
+.c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults input#postal_code_0.pseudo-class-focus {
+  outline: none;
+  border-bottom-color: #7cb4f6;
 }
 
 .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button.pseudo-class-hover:before,

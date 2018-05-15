@@ -716,8 +716,18 @@
         position: relative;
 
         .ctct-form-header,
-        .ctct-form-text {
+        .ctct-form-text,
+        .ctct-form-required:before {
           display: none;
+        }
+
+        #success_message_0 {
+          .ctct-form-header,
+          .ctct-form-text {
+            display: block;
+            color: $white;
+            text-align: center;
+          }
         }
 
         label#email_address_label_0,
@@ -740,6 +750,11 @@
       
           &::placeholder {
             color: $white;
+          }
+
+          &:focus {
+            outline: none;
+            border-bottom-color: $light-blue;
           }
         }
 
@@ -812,7 +827,6 @@
           }
         }
 
-        .ctct-form-required:before,
         .ctct-form-errorMessage,
         .ctct-form-footer a {
           color: $white !important;
