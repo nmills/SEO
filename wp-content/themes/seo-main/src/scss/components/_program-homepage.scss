@@ -733,7 +733,7 @@
         label#email_address_label_0,
         label#postal_code_label_0 {
           /*color: $white;*/
-          @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 22px, $line-height: 1);
+          @include type-custom($color: $white, $font-weight: $font-bold, $font-size: 14px, $line-height: 1.3);
         }
 
         input#email_address_0,
