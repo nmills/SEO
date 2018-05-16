@@ -63,8 +63,8 @@
                     "key": "field_5ab0d1f3d67f2",
                     "label": "image",
                     "name": "image",
-                    "type": "image",
-                    "instructions": "",
+                    "type": "image_crop",
+                    "instructions": "We recommend using an image that is at least 150px wide and 150px tall.",
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -72,16 +72,16 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
+                    "crop_type": "min",
+                    "target_size": "custom",
+                    "width": "",
+                    "height": "",
+                    "preview_size": "medium",
+                    "force_crop": "no",
+                    "save_in_media_library": "yes",
+                    "retina_mode": "no",
+                    "save_format": "id",
+                    "library": "all"
                 },
                 {
                     "key": "field_5ab8b2afe3ad4",
@@ -156,5 +156,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523956697
+    "modified": 1526018581
 }

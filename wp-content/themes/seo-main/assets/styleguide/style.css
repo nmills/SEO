@@ -1096,11 +1096,49 @@ Styleguide 1.5
     font-size: 14px;
     line-height: 1; }
 
-.c-rte img, .c-rte__accordion img {
+.c-rte img, .c-rte .alignnone, .c-rte__accordion img, .c-rte__accordion .alignnone {
   width: 100%;
   height: 100%;
   border-left: 10px solid #050505;
   padding-left: 10px; }
+
+.c-rte .alignnone, .c-rte__accordion .alignnone {
+  max-width: 100% !important; }
+  .c-rte .alignnone .wp-caption-text, .c-rte__accordion .alignnone .wp-caption-text {
+    width: 100%; }
+
+.c-rte .wp-caption {
+  margin-bottom: 40px; }
+  .c-rte .wp-caption.alignleft {
+    float: left;
+    margin-right: 40px; }
+  .c-rte .wp-caption.alignright {
+    float: right;
+    margin-left: 40px; }
+  .c-rte .wp-caption img {
+    border: none;
+    padding: 0;
+    margin-bottom: 10px; }
+  .c-rte .wp-caption .wp-caption-text {
+    position: relative;
+    float: left;
+    clear: both;
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-bottom: 15px; }
+    .c-rte .wp-caption .wp-caption-text:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 120px;
+      height: 2px;
+      background: #e5e7e7; }
 
 .c-rte p {
   margin-top: 0;
@@ -1112,6 +1150,58 @@ Styleguide 1.5
   font-weight: 700;
   font-size: 19px;
   line-height: 1.2; }
+
+/*
+Table
+
+markup:
+<div class="c-rte">
+  <table style="height: 180px;" width="497">
+    <tbody>
+      <tr>
+        <td style="width: 158px;">Col1</td>
+        <td style="width: 158px;">Col2</td>
+        <td style="width: 159px;">Col3</td>
+      </tr>
+      <tr>
+        <td style="width: 158px;">Row1</td>
+        <td style="width: 158px;">a</td>
+        <td style="width: 159px;">b</td>
+      </tr>
+      <tr>
+        <td style="width: 158px;">Row2</td>
+        <td style="width: 158px;">c</td>
+        <td style="width: 159px;">d</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 1.6
+*/
+.c-rte {
+  overflow-y: auto; }
+  .c-rte table {
+    border-top: 10px solid #050505;
+    width: 100%; }
+    .c-rte table tr:first-of-type td {
+      font-size: 22px;
+      color: #050505; }
+    .c-rte table tr,
+    .c-rte table td {
+      border: 1px solid #e5e7e7;
+      padding: 15px;
+      font-weight: 100;
+      font-size: 18px; }
 
 /*
 Accodion
@@ -1720,6 +1810,119 @@ button.c-uie__calltoaction-secondary {
   font-size: inherit;
   margin-top: 40px;
   cursor: pointer; }
+
+.c-signup__form {
+  /*The new form styles*/ }
+  .c-signup__form .ctct-form-defaults {
+    background: none;
+    position: relative; }
+    .c-signup__form .ctct-form-defaults .ctct-form-header,
+    .c-signup__form .ctct-form-defaults .ctct-form-text,
+    .c-signup__form .ctct-form-defaults .ctct-form-required:before {
+      display: none; }
+    .c-signup__form .ctct-form-defaults #success_message_0 .ctct-form-header,
+    .c-signup__form .ctct-form-defaults #success_message_0 .ctct-form-text {
+      display: block;
+      color: #050505;
+      text-align: center; }
+    .c-signup__form .ctct-form-defaults label#email_address_label_0,
+    .c-signup__form .ctct-form-defaults label#postal_code_label_0 {
+      /*color: $white;*/
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.3; }
+    .c-signup__form .ctct-form-defaults input#email_address_0,
+    .c-signup__form .ctct-form-defaults input#postal_code_0 {
+      float: left;
+      background: none;
+      border: none;
+      border-bottom: 3px solid #050505;
+      padding: 10px 0;
+      box-shadow: none;
+      border-radius: 0;
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 100;
+      font-size: 22px;
+      line-height: 1; }
+      .c-signup__form .ctct-form-defaults input#email_address_0::placeholder,
+      .c-signup__form .ctct-form-defaults input#postal_code_0::placeholder {
+        color: #050505; }
+      .c-signup__form .ctct-form-defaults input#email_address_0:focus,
+      .c-signup__form .ctct-form-defaults input#postal_code_0:focus {
+        outline: none;
+        border-bottom-color: #7cb4f6; }
+    .c-signup__form .ctct-form-defaults #email_address_field_0,
+    .c-signup__form .ctct-form-defaults #postal_code_field_0,
+    .c-signup__form .ctct-form-defaults #error_message_0 {
+      width: calc(100% - 30px);
+      display: inline-block; }
+      @media only screen and (min-width: 768px) {
+        .c-signup__form .ctct-form-defaults #email_address_field_0,
+        .c-signup__form .ctct-form-defaults #postal_code_field_0,
+        .c-signup__form .ctct-form-defaults #error_message_0 {
+          width: calc(100%);
+          float: left;
+          margin-left: 0;
+          margin-right: 40px;
+          margin-top: 0; } }
+    .c-signup__form .ctct-form-defaults #postal_code_field_0 {
+      margin-top: 0; }
+    .c-signup__form .ctct-form-defaults button.ctct-form-button {
+      padding: 15px 20px;
+      position: relative;
+      color: #050505 !important;
+      font-weight: bold;
+      text-decoration: none;
+      background: none !important;
+      border: none !important; }
+      .c-signup__form .ctct-form-defaults button.ctct-form-button:before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-top: 4px solid #050505;
+        border-left: 4px solid #050505;
+        width: 50%;
+        height: 50%;
+        transition: all 0.4s cubic-bezier(0, 0, 0.2, 1); }
+      .c-signup__form .ctct-form-defaults button.ctct-form-button:after {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        border-bottom: 4px solid #eb0029;
+        border-right: 4px solid #eb0029;
+        transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+        width: 50%;
+        height: 50%; }
+      .c-signup__form .ctct-form-defaults button.ctct-form-button:hover:before, .c-signup__form .ctct-form-defaults button.ctct-form-button:hover:after {
+        transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+        width: calc(100% - 4px);
+        height: calc(100% - 4px); }
+      @media only screen and (min-width: 768px) {
+        .c-signup__form .ctct-form-defaults button.ctct-form-button {
+          width: calc(100%);
+          float: left;
+          margin-left: 0;
+          text-align: center;
+          margin-top: 34px; } }
+    .c-signup__form .ctct-form-defaults .ctct-form-errorMessage {
+      color: #eb0029 !important; }
+    .c-signup__form .ctct-form-defaults .ctct-form-footer {
+      display: inline-block;
+      width: 100%;
+      margin-top: 20px;
+      padding: 0 !important; }
+      .c-signup__form .ctct-form-defaults .ctct-form-footer a {
+        color: #050505 !important; }
+    .c-signup__form .ctct-form-defaults #network_error_message_0 .ctct-form-errorMessage,
+    .c-signup__form .ctct-form-defaults #error_message_0 .ctct-form-errorMessage {
+      text-align: center; }
 
 /* Cta */
 .c-cta__wrapper {
@@ -2564,7 +2767,10 @@ Gallery
   float: left;
   margin-left: 0; }
   .program-landing-page .old .c-ratiometer_container {
-    padding: 5%; }
+    padding: 45px 0; }
+    @media only screen and (min-width: 1024px) {
+      .program-landing-page .old .c-ratiometer_container {
+        padding: 65px 0; } }
   .program-landing-page .old .c-ratiometer {
     width: calc(100%);
     float: left;
@@ -2585,7 +2791,7 @@ Gallery
         float: none; } }
     @media only screen and (min-width: 1440px) {
       .program-landing-page .old .c-ratiometer {
-        width: calc(50%);
+        width: calc(30%);
         float: left;
         margin: 0 auto;
         float: none; } }
@@ -2617,8 +2823,8 @@ Gallery
         height: 240px; } }
     @media only screen and (min-width: 1440px) {
       .program-landing-page .old .c-ratiometer-meter_out {
-        width: 340px;
-        height: 340px; } }
+        width: 245px;
+        height: 245px; } }
   .program-landing-page .old .c-rationmeter-meter {
     width: 130px;
     height: 130px;
@@ -2638,8 +2844,8 @@ Gallery
         height: 220px; } }
     @media only screen and (min-width: 1440px) {
       .program-landing-page .old .c-rationmeter-meter {
-        width: 320px;
-        height: 320px; } }
+        width: 225px;
+        height: 225px; } }
   .program-landing-page .old .c-rationmeter-text {
     width: calc(50%);
     float: left;
@@ -3612,12 +3818,15 @@ body {
   .c-ph-stats__container .c-ph-stats__content {
     width: calc(100%);
     margin: 0 auto;
-    display: inline-block; }
+    display: inline-block;
+    padding: 45px 0; }
     @media only screen and (min-width: 1024px) {
       .c-ph-stats__container .c-ph-stats__content {
         position: relative;
         width: calc(80%);
-        display: flex; } }
+        display: flex;
+        padding: 65px 0;
+        max-width: 1060px; } }
     .c-ph-stats__container .c-ph-stats__content.single .old, .c-ph-stats__container .c-ph-stats__content.single .c-ph-stats-border__container {
       width: calc(100%);
       float: left;
@@ -3647,16 +3856,20 @@ body {
           float: none; } }
       @media only screen and (min-width: 768px) {
         .c-ph-stats__container .old .c-ratiometer {
-          width: calc(75%);
+          width: 430px;
           float: left;
           margin: 0 auto;
           float: none; } }
+      @media only screen and (min-width: 1024px) {
+        .c-ph-stats__container .old .c-ratiometer {
+          margin-left: 0; } }
       @media only screen and (min-width: 1440px) {
         .c-ph-stats__container .old .c-ratiometer {
           width: calc(50%);
           float: left;
           margin: 0 auto;
-          float: none; } }
+          float: none;
+          margin-left: 0; } }
       .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
         width: 250px;
         display: flex;
@@ -3685,8 +3898,8 @@ body {
           height: 240px; } }
       @media only screen and (min-width: 1440px) {
         .c-ph-stats__container .old .c-ratiometer-meter_out {
-          width: 340px;
-          height: 340px; } }
+          width: 245px;
+          height: 245px; } }
     .c-ph-stats__container .old .c-rationmeter-meter {
       width: 130px;
       height: 130px;
@@ -3706,8 +3919,8 @@ body {
           height: 220px; } }
       @media only screen and (min-width: 1440px) {
         .c-ph-stats__container .old .c-rationmeter-meter {
-          width: 320px;
-          height: 320px; } }
+          width: 225px;
+          height: 225px; } }
     .c-ph-stats__container .old .c-rationmeter-text {
       width: calc(50%);
       float: left;
@@ -3759,8 +3972,9 @@ body {
             font-size: 30px;
             line-height: 1; } }
   .c-ph-stats__container .c-ph-stats-border__container {
-    height: 350px;
+    height: 200px;
     position: relative;
+    margin-bottom: 40px;
     width: calc(100%);
     float: left;
     margin-left: 0; }
@@ -3777,7 +3991,8 @@ body {
         right: 0;
         top: 50%;
         -webkit-transform: translateY(25%);
-        transform: translateY(-50%); } }
+        transform: translateY(-50%);
+        margin-bottom: 0; } }
     .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details {
       width: 160px;
       margin: auto;
@@ -3905,7 +4120,8 @@ body {
     .c-ph-signup .c-ph-signup__container .c-ph-signup__form {
       width: calc(100%);
       float: left;
-      margin-left: 0; }
+      margin-left: 0;
+      /*The new form styles*/ }
       .c-ph-signup .c-ph-signup__container .c-ph-signup__form #signup_form {
         width: calc(100%);
         float: left;
@@ -3935,6 +4151,121 @@ body {
             margin-right: 40px; } }
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .c-ph-signup__input::placeholder {
           color: #ffffff; }
+      .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults {
+        background: none;
+        position: relative; }
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults .ctct-form-header,
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults .ctct-form-text,
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults .ctct-form-required:before {
+          display: none; }
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #success_message_0 .ctct-form-header,
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #success_message_0 .ctct-form-text {
+          display: block;
+          color: #ffffff;
+          text-align: center; }
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults label#email_address_label_0,
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults label#postal_code_label_0 {
+          /*color: $white;*/
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 1.3; }
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults input#email_address_0,
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults input#postal_code_0 {
+          float: left;
+          background: none;
+          border: none;
+          border-bottom: 3px solid #ffffff;
+          padding: 10px 0;
+          box-shadow: none;
+          border-radius: 0;
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 100;
+          font-size: 22px;
+          line-height: 1; }
+          .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults input#email_address_0::placeholder,
+          .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults input#postal_code_0::placeholder {
+            color: #ffffff; }
+          .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults input#email_address_0:focus,
+          .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults input#postal_code_0:focus {
+            outline: none;
+            border-bottom-color: #7cb4f6; }
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #email_address_field_0,
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #postal_code_field_0,
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #error_message_0 {
+          width: calc(100% - 30px);
+          display: inline-block; }
+          @media only screen and (min-width: 768px) {
+            .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #email_address_field_0,
+            .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #postal_code_field_0,
+            .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #error_message_0 {
+              width: calc(33.33333%);
+              float: left;
+              margin-left: 0;
+              margin-right: 40px;
+              margin-top: 0; } }
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #postal_code_field_0 {
+          margin-top: 0; }
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button {
+          padding: 15px 20px;
+          position: relative;
+          color: #ffffff;
+          font-weight: bold;
+          text-decoration: none;
+          background: none;
+          border: none; }
+          .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button:before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            border-top: 4px solid #050505;
+            border-left: 4px solid #050505;
+            width: 50%;
+            height: 50%;
+            transition: all 0.4s cubic-bezier(0, 0, 0.2, 1); }
+          .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button:after {
+            content: " ";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: block;
+            border-bottom: 4px solid #ffffff;
+            border-right: 4px solid #ffffff;
+            transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+            width: 50%;
+            height: 50%; }
+          .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button:hover:before, .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button:hover:after {
+            transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+            width: calc(100% - 4px);
+            height: calc(100% - 4px); }
+          @media only screen and (min-width: 768px) {
+            .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button {
+              width: calc(16.66667%);
+              float: left;
+              margin-left: 0;
+              text-align: center;
+              margin-top: 34px; } }
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults .ctct-form-errorMessage,
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults .ctct-form-footer a {
+          color: #ffffff !important; }
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #network_error_message_0,
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #error_message_0 {
+          position: absolute;
+          width: 100%;
+          left: 50%;
+          bottom: 15px;
+          transform: translate(-50%, -50%); }
+          @media only screen and (min-width: 768px) {
+            .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #network_error_message_0,
+            .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #error_message_0 {
+              bottom: 20px; } }
+          .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #network_error_message_0 .ctct-form-errorMessage,
+          .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #error_message_0 .ctct-form-errorMessage {
+            text-align: center; }
     @media only screen and (min-width: 768px) {
       .c-ph-signup .c-ph-signup__container .c-ph-signup__form-button {
         width: calc(25%);

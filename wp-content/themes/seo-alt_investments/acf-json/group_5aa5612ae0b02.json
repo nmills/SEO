@@ -32,7 +32,7 @@
             "name": "video",
             "type": "url",
             "instructions": "include http or https in the URL",
-            "required": 0,
+            "required": 1,
             "conditional_logic": [
                 [
                     {
@@ -55,7 +55,7 @@
             "label": "Image",
             "name": "image",
             "type": "image_crop",
-            "instructions": "",
+            "instructions": "We recommend using an image that is at least 150px wide and 150px tall.",
             "required": 1,
             "conditional_logic": [
                 [
@@ -71,8 +71,8 @@
                 "class": "",
                 "id": ""
             },
-            "crop_type": "hard",
-            "target_size": "thumbnail",
+            "crop_type": "min",
+            "target_size": "custom",
             "width": "",
             "height": "",
             "preview_size": "medium",
@@ -88,7 +88,7 @@
             "name": "destination_link",
             "type": "url",
             "instructions": "include http or https in the URL",
-            "required": 1,
+            "required": 0,
             "conditional_logic": [
                 [
                     {
@@ -143,5 +143,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523956770
+    "modified": 1526032477
 }

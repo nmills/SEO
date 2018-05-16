@@ -83,3 +83,145 @@ button.c-uie__calltoaction-secondary {
   margin-top: 40px;
   cursor: pointer;
 }
+
+.c-signup__form {
+  /*The new form styles*/
+  .ctct-form-defaults {
+    background: none;
+    position: relative;
+
+    .ctct-form-header,
+    .ctct-form-text,
+    .ctct-form-required:before {
+      display: none;
+    }
+
+    #success_message_0 {
+      .ctct-form-header,
+      .ctct-form-text {
+        display: block;
+        color: $black;
+        text-align: center;
+      }
+    }
+
+    label#email_address_label_0,
+    label#postal_code_label_0 {
+      /*color: $white;*/
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1.3);
+    }
+
+    input#email_address_0,
+    input#postal_code_0 {
+      float: left;
+      background: none;
+      border: none;
+      border-bottom: 3px solid $black;
+      padding: 10px 0;
+      box-shadow: none;
+      border-radius: 0;
+
+      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 22px, $line-height: 1);
+
+      &::placeholder {
+        color: $black;
+      }
+
+      &:focus {
+        outline: none;
+        border-bottom-color: $light-blue;
+      }
+    }
+
+    #email_address_field_0,
+    #postal_code_field_0,
+    #error_message_0 {
+      width: calc(100% - 30px);
+      display: inline-block;
+
+      @include grid-media($md) {
+        @include grid-column(12, $no-gutter);
+
+        margin-right: 40px;
+        margin-top: 0;
+      }
+    }
+
+    #postal_code_field_0 {
+        margin-top: 0;
+    }
+
+    button.ctct-form-button {
+      padding: 15px 20px;
+      position: relative;
+      color: $black !important;
+      font-weight: bold;
+      text-decoration: none;
+      background: none !important;
+      border: none !important;
+
+      &:before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-top: 4px solid $black;
+        border-left: 4px solid $black;
+        width: 50%;
+        height: 50%;
+        transition: all 0.4s $cubic-transition-2;
+      } 
+
+      &:after {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        border-bottom: 4px solid $red;
+        border-right: 4px solid $red;
+        transition: all 0.4s $cubic-transition-2;
+        width: 50%;
+        height: 50%;
+      }
+
+      &:hover {
+        &:before, &:after {
+          transition: all 0.4s $cubic-transition-2;
+          width: calc(100% - 4px);
+          height: calc(100% - 4px);
+        }
+      }
+
+      @include grid-media($md) {
+        @include grid-column(12, $no-gutter);
+
+        text-align: center;
+        margin-top: 34px;
+      }
+    }
+
+    .ctct-form-errorMessage {
+      color: $red !important;
+    }
+
+    .ctct-form-footer {
+      display: inline-block;
+      width: 100%;
+      margin-top: 20px;
+      padding: 0 !important;
+      a {
+        color: $black !important;
+      }
+    }
+
+    #network_error_message_0,
+    #error_message_0 {
+
+      .ctct-form-errorMessage {
+        text-align: center;
+      }
+    }
+  }
+}

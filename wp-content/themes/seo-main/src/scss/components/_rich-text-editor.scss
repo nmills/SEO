@@ -292,11 +292,63 @@ Styleguide 1.5
 
 // Image
 .c-rte, .c-rte__accordion {
-  img {
+  img, .alignnone {
     width: 100%;
     height: 100%;
     border-left: 10px solid #050505;
     padding-left: 10px;
+  }
+
+  .alignnone {
+    max-width: 100% !important;
+
+    .wp-caption-text {
+      width: 100%;
+    }
+  }
+}
+
+.c-rte {
+  .wp-caption {
+    margin-bottom: 40px;
+
+    &.alignleft {
+      float: left;
+      margin-right: 40px;
+    }
+
+    &.alignright {
+      float: right;
+      margin-left: 40px;
+    }
+
+    img {
+      border: none;
+      padding: 0;
+      margin-bottom: 10px;
+    }
+
+    .wp-caption-text {
+      position: relative;
+      float: left;
+      clear: both;
+
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1.3);
+
+      text-align: left;
+      margin-bottom: 10px;
+      padding-bottom: 15px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 120px;
+        height: 2px;
+        background: $light-gray;
+      }
+    }
   }
 }
 
@@ -310,3 +362,67 @@ Styleguide 1.5
     @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 19px, $line-height: 1.2);
   }
 }
+
+/*
+Table
+
+markup:
+<div class="c-rte">
+  <table style="height: 180px;" width="497">
+    <tbody>
+      <tr>
+        <td style="width: 158px;">Col1</td>
+        <td style="width: 158px;">Col2</td>
+        <td style="width: 159px;">Col3</td>
+      </tr>
+      <tr>
+        <td style="width: 158px;">Row1</td>
+        <td style="width: 158px;">a</td>
+        <td style="width: 159px;">b</td>
+      </tr>
+      <tr>
+        <td style="width: 158px;">Row2</td>
+        <td style="width: 158px;">c</td>
+        <td style="width: 159px;">d</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+sg-wrapper:
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <sg-wrapper-content/>
+    </div>
+  </div>
+</section>
+
+Styleguide 1.6
+*/
+
+.c-rte {
+  overflow-y: auto;
+
+  table {
+    border-top: 10px solid #050505;
+    width: 100%;
+
+    tr {
+      &:first-of-type {
+        td {
+          font-size: 22px;
+          color: $black;
+        }
+      }
+    }
+
+    tr, 
+    td {
+      border: 1px solid #e5e7e7;
+      padding: 15px;
+      font-weight: 100;
+      font-size: 18px;
+    }
+  }
+} 
