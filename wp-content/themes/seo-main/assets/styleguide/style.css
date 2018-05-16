@@ -1396,16 +1396,18 @@ Styleguide 4.1
       display: none;
       margin-bottom: 5px; }
 
-.container.faq {
-  padding: 0; }
-  @media only screen and (min-width: 480px) {
-    .container.faq {
-      width: calc(66.66667%);
-      float: left;
-      margin-left: 0;
-      padding: inherit;
-      float: right;
-      padding-left: 25px; } }
+.wrapper-faq {
+  max-width: 1130px; }
+  .wrapper-faq .container.faq {
+    padding: 0; }
+    @media only screen and (min-width: 480px) {
+      .wrapper-faq .container.faq {
+        width: calc(100%);
+        float: left;
+        margin-left: 0;
+        padding: 0;
+        float: right;
+        max-width: 700px; } }
 
 /*
 Video Component
