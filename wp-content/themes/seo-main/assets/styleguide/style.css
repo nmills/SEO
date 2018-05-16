@@ -4118,7 +4118,8 @@ body {
     padding: 65px 15px;
     max-width: 825px;
     margin: 0 auto;
-    display: table; }
+    display: table;
+    width: 100%; }
     .c-ph-signup .c-ph-signup__container .c-ph-signup__title {
       color: #ffffff;
       text-align: left;
