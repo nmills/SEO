@@ -1823,8 +1823,12 @@ button.c-uie__calltoaction-secondary {
     .c-signup__form .ctct-form-defaults #success_message_0 .ctct-form-header,
     .c-signup__form .ctct-form-defaults #success_message_0 .ctct-form-text {
       display: block;
+      text-align: left;
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #050505;
-      text-align: center; }
+      font-weight: 100;
+      font-size: 24px;
+      line-height: 1.3; }
     .c-signup__form .ctct-form-defaults label#email_address_label_0,
     .c-signup__form .ctct-form-defaults label#postal_code_label_0 {
       /*color: $white;*/
@@ -4161,8 +4165,12 @@ body {
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #success_message_0 .ctct-form-header,
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #success_message_0 .ctct-form-text {
           display: block;
+          text-align: center;
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
           color: #ffffff;
-          text-align: center; }
+          font-weight: 100;
+          font-size: 24px;
+          line-height: 1.3; }
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults label#email_address_label_0,
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults label#postal_code_label_0 {
           /*color: $white;*/
@@ -4181,7 +4189,7 @@ body {
           box-shadow: none;
           border-radius: 0;
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-          color: #050505;
+          color: #ffffff;
           font-weight: 100;
           font-size: 22px;
           line-height: 1; }
@@ -4191,7 +4199,7 @@ body {
           .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults input#email_address_0:focus,
           .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults input#postal_code_0:focus {
             outline: none;
-            border-bottom-color: #7cb4f6; }
+            border-bottom-color: #050505; }
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #email_address_field_0,
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #postal_code_field_0,
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #error_message_0 {
