@@ -27,7 +27,7 @@
             "name": "video",
             "type": "url",
             "instructions": "include http or https in the URL",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -74,5 +74,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523956914
+    "modified": 1526038835
 }
