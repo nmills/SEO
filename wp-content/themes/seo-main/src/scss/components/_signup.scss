@@ -100,8 +100,8 @@ button.c-uie__calltoaction-secondary {
       .ctct-form-header,
       .ctct-form-text {
         display: block;
-        color: $black;
-        text-align: center;
+        text-align: left;
+        @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1.3);
       }
     }
 
