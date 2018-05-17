@@ -5,7 +5,7 @@
         {
             "key": "field_5afd5d7aa01a3",
             "label": "Image",
-            "name": "callout-image",
+            "name": "callout_image",
             "type": "image_crop",
             "instructions": "We recommend using an image that is 500px wide and 500px tall.",
             "required": 0,
@@ -29,7 +29,7 @@
         {
             "key": "field_5afd5ddd7fc8b",
             "label": "Body",
-            "name": "callout-body",
+            "name": "callout_body",
             "type": "textarea",
             "instructions": "",
             "required": 1,
@@ -48,7 +48,7 @@
         {
             "key": "field_5afd5e0e03f8e",
             "label": "Citation",
-            "name": "callout-citation",
+            "name": "callout_citation",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -82,5 +82,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1526554917
+    "modified": 1526556320
 }
