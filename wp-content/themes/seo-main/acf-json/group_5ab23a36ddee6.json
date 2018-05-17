@@ -171,6 +171,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5afd5e4507bcc": {
+                    "key": "5afd5e4507bcc",
+                    "name": "component_gh_callout",
+                    "label": "Callout",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5afd5e5707bcd",
+                            "label": "GH Callout",
+                            "name": "component_gh_callout",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5afd5d74ad11d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -197,5 +228,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1524054491
+    "modified": 1526554917
 }
