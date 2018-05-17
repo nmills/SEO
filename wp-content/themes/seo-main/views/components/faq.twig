@@ -1,25 +1,26 @@
 <div class="container wrapper-faq">
   <div class="container faq">
     <div class="c-accordion__wrapper">
-      <ul class="c-accordion__filter">
-        {% for category_set in component.category_repeater %}
-        <li class="cat-js cat-{{loop.index}}">{{category_set.category_tag}}</li>
-        {% endfor %}
-        <li class="cat-js cat-all active-selection">All</li>
-      </ul>
-
-
-      <div class="c-accordion__filter-mobile">
-        <h3>filter by: </h3>
-        <span id='select'>All</span>
-        <ul class="c-accordion__filter" id="sel-option">
+      {% if component.category_repeater|length > 1 %}
+        <ul class="c-accordion__filter">
           {% for category_set in component.category_repeater %}
           <li class="cat-js cat-{{loop.index}}">{{category_set.category_tag}}</li>
           {% endfor %}
           <li class="cat-js cat-all active-selection">All</li>
         </ul>
-      </div>
 
+
+        <div class="c-accordion__filter-mobile">
+          <h3>filter by: </h3>
+          <span id='select'>All</span>
+          <ul class="c-accordion__filter" id="sel-option">
+            {% for category_set in component.category_repeater %}
+            <li class="cat-js cat-{{loop.index}}">{{category_set.category_tag}}</li>
+            {% endfor %}
+            <li class="cat-js cat-all active-selection">All</li>
+          </ul>
+        </div>
+      {% endif %}
       
       <ul class="c-accordion">
         {% for category_set in component.category_repeater %} {% for question_set in category_set.question_repeater %}
@@ -33,7 +34,8 @@
             </div>
           </div>
         </li>
-        {% endfor %} {% endfor %}
+        {% endfor %}
+        {% endfor %}
       </ul>
     </div>
   </div>
