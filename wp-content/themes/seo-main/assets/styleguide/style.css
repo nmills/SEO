@@ -4526,7 +4526,8 @@ body {
         .c-gh-program .container .c-gh-program__container .c-gh-program__item {
           width: calc(25% - 6px);
           margin-right: 8px;
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          overflow-y: hidden; }
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover h1 {
             transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1); }
           .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover p {
@@ -4549,9 +4550,9 @@ body {
         bottom: 0;
         left: 0;
         background-image: linear-gradient(to left, #ffffff00, rgba(5, 5, 5, 0.3));
-        transition: all 0.5s cubic-bezier(0, 0, 0.2, 1); }
+        transition: all 0.3s cubic-bezier(0, 0, 0.2, 1); }
       .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover:before {
-        background-image: linear-gradient(to bottom, #ffffff00, rgba(5, 5, 5, 0.65)); }
+        background-image: linear-gradient(to bottom, #ffffff00, rgba(5, 5, 5, 0.85)); }
       .c-gh-program .container .c-gh-program__container .c-gh-program__item .c-gh-program__image {
         width: 100%;
         height: 470px;
@@ -4565,9 +4566,8 @@ body {
       .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
         position: absolute;
         color: #ffffff;
-        -webkit-transition: all 1s;
-        /* Safari */
-        transition: all 1s; }
+        -webkit-transition: all .6s;
+        transition: all .6s; }
       .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
         top: calc(100% - 180px);
         left: 30px;

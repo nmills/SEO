@@ -207,7 +207,7 @@
 }
 
 .c-gh-program .container .c-gh-program__container .c-gh-program__item.pseudo-class-hover:before {
-  background-image: linear-gradient(to bottom, #ffffff00, rgba(5, 5, 5, 0.65));
+  background-image: linear-gradient(to bottom, #ffffff00, rgba(5, 5, 5, 0.85));
 }
 
 .c-news-header .container .c-news-header__breadcrumb a.current.pseudo-class-hover {
