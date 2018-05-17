@@ -243,16 +243,20 @@ Styleguide 4.1
   }
 }
 
-.container {
-  &.faq {
-    padding: 0;
+.wrapper-faq {
+  max-width: 1130px;
 
-    @include grid-media($sm) {
-      @include grid-column(8, $no-gutter);
+  .container {
+    &.faq {
+      padding: 0;
 
-      padding: inherit;
-      float: right;
-      padding-left: 25px;
+      @include grid-media($sm) {
+        @include grid-column(12, $no-gutter);
+
+        padding: 0;
+        float: right;
+        max-width: 700px;
+      }
     }
   }
-}
+} 

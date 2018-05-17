@@ -3,18 +3,13 @@
     <div class="c-ratiometer_container">
       <div class="c-ratiometer">
         <div class="c-rationmeter-positioner">
-          <div class="c-ratiometer-meter_out" 
-          style="background: #7CB4F6;
-          background: -moz-linear-gradient(-45deg, #7CB4F6 0%, #7CB4F6 0%, white 0%, white 100%);
-          background: -webkit-gradient(left top, right bottom, color-stop(0%, #7CB4F6), color-stop(0%, #7CB4F6), color-stop(0%, white), color-stop(100%, white));
-          background: -webkit-linear-gradient(-45deg, #7CB4F6 0%, #7CB4F6 {{component.percentage}}%, white 0%, white 100%);
-          background: -o-linear-gradient(-45deg, #7CB4F6 0%, #7CB4F6 0%, white 0%, white 100%);
-          background: -ms-linear-gradient(-45deg, #7CB4F6 0%, #7CB4F6 0%, white 0%, white 100%);">
+          <div class="c-ratiometer-meter_out js-progress-bar">
+            <div class="c-ratiometer-meter_out circle-back" style="background: #FFFFFF;"></div>
             <div class="c-rationmeter-meter" style="background-image: url({{Image(component.image).src }})">
             </div>
           </div>
-          <div class="c-rationmeter-text">
-            <h1>{{component.percentage }}%</h1>
+          <div class="c-rationmeter-text" percentage="{{component.percentage}}">
+            <h1>{{component.percentage}}%</h1>
             <p>{{component.text}}</p>
           </div>
         </div>
@@ -22,3 +17,27 @@
     </div>
   </div>
 </section>
+<script>
+jQuery(document).ready(function() {
+  var triggerAtY = $('.c-ratiometer_container').offset().top - $(window).outerHeight();
+  $(window).scroll(function(event) {
+
+    // #target not yet in view
+    if (triggerAtY > $(window).scrollTop()) {
+      return;
+    }
+
+    var progress_circle = jQuery(".js-progress-bar").gmpc({
+      line_width: 10,
+      color: "#7CB4F6",
+      starting_position: 35, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+      percent: 0, // percent starts from
+      percentage: true
+    })
+    .gmpc("animate", '{{component.percentage}}', 2000);
+    
+    // remove this event handler
+    $(this).off(event);
+  })
+});
+</script>
