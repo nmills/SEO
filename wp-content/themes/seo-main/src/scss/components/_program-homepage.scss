@@ -9,14 +9,6 @@
     .c-ph-hero__content {
       position: relative;
 
-      // @include grid-media($md) {
-      //   height: 271px;
-      // }
-
-      // @include grid-media($lg) {
-      //   height: 369px;
-      // }
-
       .c-ph-hero__image {
         @include grid-column(12, $no-gutter);
 
@@ -28,7 +20,7 @@
         padding: 0;
 
         @include grid-media($md) {
-          height: 650px;
+          height: 550px;
         }
       }
 
@@ -42,7 +34,6 @@
         @include grid-media($md) {
           height: 650px;
         }
-
 
         video {
           width: 100%;
@@ -411,27 +402,21 @@
       padding: 10px;
 
       @include grid-media($sm) {
-        width: 190px;
-        height: 190px;
+        width: 177px;
+        height: 178px;
       }
 
 
       @include grid-media($md) {
-        width: 240px;
-        height: 240px;
-      }
-
-
-      @include grid-media($xl) {
-        width: 245px;
-        height: 245px;
+        width: 238px;
+        height: 239px;
       }
     }
 
     .c-rationmeter-meter {
       width: 130px;
       height: 130px;
-      background: red;
+      background: $white;
       border-radius: 100%;
       background-position: center;
       background-size: cover;
@@ -439,16 +424,14 @@
       border: 8px solid #e5e7e7;
 
       @include grid-media($sm) {
-        width: 170px;
-        height: 170px;
+        width: 166px;
+        height: 166px;
       }
-
 
       @include grid-media($md) {
-        width: 220px;
-        height: 220px;
+        width: 222px;
+        height: 222px;
       }
-
 
       @include grid-media($xl) {
         width: 225px;
@@ -462,12 +445,10 @@
       margin-left: -30px;
       margin-top: 30px;
 
-      @include grid-media($sm) {}
-
-
       @include grid-media($md) {
         width: calc(35%);
         float: left;
+        margin-left: -85px;
       }
 
 
@@ -521,14 +502,14 @@
     // background: $light-gray;
     height: 200px;
     position: relative;
-    margin-bottom: 40px;
+    margin: 40px 0;
 
     @include grid-column(12, $no-gutter);
 
     @include grid-media($md) {
       height: 450px;
+      margin: 0;
     }
-
 
     @include grid-media($lg) {
       @include grid-column(6, $no-gutter);
@@ -540,7 +521,6 @@
       -webkit-transform: translateY(25%);
       transform: translateY(-50%);
       margin-bottom: 0;
-
     }
 
 
@@ -559,28 +539,27 @@
         transform: translate(-50%, -65%);
       }
 
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   background: none;
+      //   width: 45%;
+      //   height: calc(100% - 50px);
+      //   top: 70px;
+      //   right: -42px;
+      //   border-right: 7px solid $light-blue;
+      //   border-bottom: 7px solid $light-blue;
+      //   border-bottom-right-radius: 50px;
 
-      &:after {
-        content: "";
-        position: absolute;
-        background: none;
-        width: 45%;
-        height: calc(100% - 50px);
-        top: 70px;
-        right: -42px;
-        border-right: 7px solid $light-blue;
-        border-bottom: 7px solid $light-blue;
-        border-bottom-right-radius: 50px;
-
-        @include grid-media($md) {
-          width: 41%;
-          height: calc(100% - 85px);
-          top: 116px;
-          right: -32px;
-          border-right: 10px solid $light-blue;
-          border-bottom: 10px solid $light-blue;
-        }
-      }
+      //   @include grid-media($md) {
+      //     width: 41%;
+      //     height: calc(100% - 85px);
+      //     top: 116px;
+      //     right: -32px;
+      //     border-right: 10px solid $light-blue;
+      //     border-bottom: 10px solid $light-blue;
+      //   }
+      // }
 
       h1 {
         margin: 0;
@@ -638,7 +617,7 @@
 
       .c-ph-stats-border__top-value {
         top: 20px;
-        right: -60px;
+        right: -70px;
 
         @include grid-media($md) {
           top: 40px;
@@ -646,7 +625,27 @@
       }
 
       .c-ph-stats-border__bottom-value {
-        left: 40%;
+        left: 30%;
+      }
+    }
+
+    .c-ph-stats-svg {
+      svg.curve {
+        bottom: 0;
+        top: 65px;
+        fill: $white;
+        height: calc(100% - 40px);
+        right: -52px;
+        max-width: 120px;
+        position: absolute;
+        width: 100%;
+
+        @include grid-media($md) {
+          height: calc(100% - 80px);
+          max-width: 185px;
+          right: -40px;
+          top: 120px;
+        }
       }
     }
   }

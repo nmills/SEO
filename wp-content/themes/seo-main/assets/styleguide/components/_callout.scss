@@ -1,0 +1,37 @@
+// Callout
+.c-gh-callout {
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+}
+
+.c-gh-callout__img {
+  @include grid-column(12, $no-gutter);
+
+  @include grid-media($md) {
+    @include grid-column(4, $no-gutter);
+  }
+}
+
+.c-gh-callout__content {
+  @include grid-column(12, $no-gutter);
+  
+  @include grid-media($md) {
+    @include grid-column(8);
+    float: right;
+    padding-left: 35px;
+  }
+}
+
+.c-gh-callout__text {
+  &,
+  p {
+    @include type-3;
+    font-weight: $font-thinnest;
+  }
+}
+
+.c-gh-callout__citation {
+  @include type-4;
+}
