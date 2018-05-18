@@ -2604,6 +2604,11 @@ Gallery
         margin-top: 100px;
         margin-bottom: 30px; } }
 
+.program-landing-page section.wysiwyg {
+  margin-bottom: 145px; }
+  .program-landing-page section.wysiwyg .c-rte p:last-child {
+    margin-bottom: 0; }
+
 .hero-section {
   padding: 0; }
   .hero-section .c-hero_image,

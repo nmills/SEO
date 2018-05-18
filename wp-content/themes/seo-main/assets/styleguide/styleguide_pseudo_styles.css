@@ -156,6 +156,10 @@
   background: url("/wp-content/themes/seo-main/assets/img/icons/Forward-Button-Inactive.svg") right center no-repeat;
 }
 
+.program-landing-page section.wysiwyg .c-rte p.pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
 .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item.pseudo-class-last-child {
   margin-bottom: 0;
 }

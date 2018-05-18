@@ -25,6 +25,16 @@
       }
     }
   }
+
+  section.wysiwyg {
+    margin-bottom: 145px;
+
+    .c-rte {
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .hero-section {
