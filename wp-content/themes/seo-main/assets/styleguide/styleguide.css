@@ -1118,9 +1118,19 @@ Styleguide 1.5
 
 .c-rte .wp-caption {
   margin-bottom: 40px; }
+  .c-rte .wp-caption::after {
+    clear: both;
+    content: "";
+    display: block; }
   .c-rte .wp-caption.alignleft {
     float: left;
     margin-right: 40px; }
+  .c-rte .wp-caption.aligncenter .wp-caption-text {
+    text-align: center;
+    float: none; }
+    .c-rte .wp-caption.aligncenter .wp-caption-text:after {
+      left: 50%;
+      transform: translateX(-50%); }
   .c-rte .wp-caption.alignright {
     float: right;
     margin-left: 40px; }
