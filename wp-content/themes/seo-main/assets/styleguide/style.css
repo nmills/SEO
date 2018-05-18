@@ -3646,7 +3646,7 @@ body {
         padding: 0; }
         @media only screen and (min-width: 768px) {
           .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-ph-hero__image {
-            height: 650px; } }
+            height: 550px; } }
       .c-ph-hero .c-ph-hero__container .c-ph-hero__content .c-ph-hero__video {
         width: calc(100%);
         float: left;
