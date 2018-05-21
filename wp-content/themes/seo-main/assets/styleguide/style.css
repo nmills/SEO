@@ -3352,7 +3352,8 @@ body {
 
 .container.region_hero .c-gallery__container, .container.region_hero .c-gallery__section-header {
   max-width: 1024px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%; }
 
 .c-gallery__container.image-only .c-gallery__gallery-item {
   width: calc(45.83333%);
