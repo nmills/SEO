@@ -83,8 +83,13 @@
                 <ul class="main-nav-dropdown">
                   <div class="child-menu">
                     {% for child in main_menu_item.get_children %}
+
+                    {% set childparentactive = false %}
+                    {% if child.get_link|replace({'https': '', 'http': '' , '://':'' , '/':''}) == parent_url|replace({'https': '', 'http': '' , '://':'' , '/':''}) %} 
+                      {% set childparentactive = true %}
+                    {% endif %}
                       <li>
-                        <a {% if child.current %}class="active-child"{% endif %}href="{{child.get_link}}">{{child.title}}</a>
+                        <a {% if child.current or childparentactive %}class="active-child"{% endif %}href="{{child.get_link}}">{{child.title}}</a>
                       </li>
                     {% endfor %}
                   </div>
