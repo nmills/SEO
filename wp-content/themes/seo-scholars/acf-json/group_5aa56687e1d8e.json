@@ -346,6 +346,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5b0260a2c9194": {
+                    "key": "5b0260a2c9194",
+                    "name": "component_pl_callout",
+                    "label": "Callout",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b0260a2c9195",
+                            "label": "PL Callout",
+                            "name": "component:_pl_callout",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5afd5d74ad11d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -372,5 +403,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1524722134
+    "modified": 1526882532
 }
