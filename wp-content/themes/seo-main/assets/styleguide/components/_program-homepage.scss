@@ -380,14 +380,12 @@
         margin: 0 auto;
 
         @include grid-media($sm) {
-          width: 330px;
+          width: 360px;
         }
-
 
         @include grid-media($md) {
           width: 500px;
         }
-
 
         @include grid-media($xl) {
           width: 730px;
@@ -396,79 +394,62 @@
     }
 
     .c-ratiometer-meter_out {
-      width: 150px;
-      height: 150px;
+      width: 155px;
+      height: 155px;
       border-radius: 100%;
-      padding: 10px;
+      padding: 13px;
 
       @include grid-media($sm) {
-        width: 177px;
-        height: 178px;
+        width: 202px;
+        height: 201px;
       }
 
-
       @include grid-media($md) {
-        width: 238px;
-        height: 239px;
+        width: 258px;
+        height: 258px;
       }
     }
 
     .c-rationmeter-meter {
-      width: 130px;
-      height: 130px;
+      width: 142px;
+      height: 142px;
       background: $white;
       border-radius: 100%;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 8px solid #e5e7e7;
+      border: 8px solid $light-gray;
 
       @include grid-media($sm) {
-        width: 166px;
-        height: 166px;
+        width: 186px;
+        height: 186px;
       }
 
       @include grid-media($md) {
-        width: 222px;
-        height: 222px;
-      }
-
-      @include grid-media($xl) {
-        width: 225px;
-        height: 225px;
+        width: 238px;
+        height: 238px;
+        border: 13px solid $light-gray;
       }
     }
 
     .c-rationmeter-text {
-      width: calc(50%);
+      width: 50%;
       float: left;
       margin-left: -30px;
-      margin-top: 30px;
+      margin-top: 60px;
+
+      @include grid-media($sm) {
+        margin-top: 50px;
+        left: -35px;
+      }
 
       @include grid-media($md) {
-        width: calc(35%);
+        width: 100%;
+        max-width: 225px;
         float: left;
-        margin-left: -85px;
+        margin-left: -55px;
       }
 
-
-      @include grid-media($xl) {
-        width: calc(25%);
-        float: left;
-      }
-
-
-      // h1 {
-      //   font-size: 25px;
-
-      //   @include grid-media($md) {
-      //     font-size: 38px;
-      //   }
-
-      //   @include grid-media($lg) {
-      //     font-size: 48px;
-      //   }
-      // }
       h1 {
         @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 45px, $line-height: 1);
 
@@ -499,28 +480,24 @@
   }
 
   .c-ph-stats-border__container {
-    // background: $light-gray;
     height: 200px;
     position: relative;
     margin: 40px 0;
 
     @include grid-column(12, $no-gutter);
 
+    @include grid-media($sm) {
+      margin-top: -30px;
+    }
+
     @include grid-media($md) {
-      height: 450px;
+      min-height: 410px;
       margin: 0;
     }
 
     @include grid-media($lg) {
       @include grid-column(6, $no-gutter);
-
       float: right;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      -webkit-transform: translateY(25%);
-      transform: translateY(-50%);
-      margin-bottom: 0;
     }
 
 
@@ -536,30 +513,8 @@
 
       @include grid-media($md) {
         width: 320px;
-        transform: translate(-50%, -65%);
+        transform: translate(-47%, -50%);
       }
-
-      // &:after {
-      //   content: "";
-      //   position: absolute;
-      //   background: none;
-      //   width: 45%;
-      //   height: calc(100% - 50px);
-      //   top: 70px;
-      //   right: -42px;
-      //   border-right: 7px solid $light-blue;
-      //   border-bottom: 7px solid $light-blue;
-      //   border-bottom-right-radius: 50px;
-
-      //   @include grid-media($md) {
-      //     width: 41%;
-      //     height: calc(100% - 85px);
-      //     top: 116px;
-      //     right: -32px;
-      //     border-right: 10px solid $light-blue;
-      //     border-bottom: 10px solid $light-blue;
-      //   }
-      // }
 
       h1 {
         margin: 0;
@@ -568,6 +523,7 @@
 
         @include grid-media($md) {
           @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 110px, $line-height: 1);
+          margin-top: 28px;
         }
       }
 
@@ -578,6 +534,7 @@
 
         @include grid-media($md) {
           @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+          margin-bottom: 35px;
         }
       }
 
@@ -595,7 +552,6 @@
           width: 70px;
           height: 70px;
         }
-
 
         h3 {
           margin: 0;
@@ -620,7 +576,7 @@
         right: -70px;
 
         @include grid-media($md) {
-          top: 40px;
+          top: 50px;
         }
       }
 
@@ -641,10 +597,10 @@
         width: 100%;
 
         @include grid-media($md) {
-          height: calc(100% - 80px);
+          height: calc(100% - 90px);
           max-width: 185px;
           right: -40px;
-          top: 120px;
+          top: 130px;
         }
       }
     }

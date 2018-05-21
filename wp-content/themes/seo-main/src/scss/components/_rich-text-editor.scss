@@ -320,11 +320,23 @@ Styleguide 1.5
   }
 
   .wp-caption {
+    @include grid-container;
     margin-bottom: 40px;
 
     &.alignleft {
       float: left;
       margin-right: 40px;
+    }
+
+    &.aligncenter {
+      .wp-caption-text {
+        text-align: center;
+        float: none;
+        &:after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
     }
 
     &.alignright {

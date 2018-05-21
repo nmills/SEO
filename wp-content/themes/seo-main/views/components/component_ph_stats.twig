@@ -1,4 +1,4 @@
-<section>
+<section class="c-ph-stats__section">
     <div class="c-ph-stats__container">
       <div class="c-ph-stats__content {% if component.repeater|length == 1 %}single{% endif %}">
         {% set percentage = '' %}
@@ -59,33 +59,6 @@ jQuery(document).ready(function() {
     return elementBottom > viewportTop && elementTop < viewportBottom;
   };
 
-  // jQuery(window).on('resize scroll', function() {
-  //   if (jQuery('.c-ph-stats__container').isInViewport()) {
-  //     console.log('inViewport');
-
-  //     // Jquery Circle Progress
-  //     var progress_circle = jQuery(".js-progress-bar").gmpc({
-  //         line_width: 10,
-  //         color: "#7CB4F6",
-  //         starting_position: 35, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
-  //         percent: 0, // percent starts from
-  //         percentage: true
-  //       })
-  //     .gmpc("animate", '{{percentage}}', 2000);
-
-  //     // SVG animation
-  //     var svg = jQuery(".curve").drawsvg({
-  //       duration: 2000,
-  //       easing: "linear",
-  //       reverse: "true"
-  //     });
-
-  //     svg.drawsvg("animate");
-  //   } else {
-  //     console.log('NotinViewport');
-  //   }
-  // });
-
   var triggerAtY = $('.c-ph-stats__container').offset().top - $(window).outerHeight();
   $(window).scroll(function(event) {
 
@@ -98,9 +71,11 @@ jQuery(document).ready(function() {
     var progress_circle = jQuery(".js-progress-bar").gmpc({
         line_width: 10,
         color: "#7CB4F6",
-        starting_position: 35, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+        starting_position: 36, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
         percent: 0, // percent starts from
-        percentage: true
+        percentage: true,
+        height: "320px",
+        width: "320px"
       })
     .gmpc("animate", '{{percentage}}', 2000);
 
