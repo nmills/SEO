@@ -87,7 +87,7 @@
             "label": "Heading",
             "name": "heading",
             "type": "text",
-            "instructions": "The character limit is 80",
+            "instructions": "",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -99,14 +99,14 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": 80
+            "maxlength": ""
         },
         {
             "key": "field_5aa5fd763bc7e",
             "label": "Body",
             "name": "body",
             "type": "text",
-            "instructions": "The character limit is 140",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -118,7 +118,7 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": 140
+            "maxlength": ""
         },
         {
             "key": "field_5aa5fd873bc7f",
@@ -194,5 +194,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1526018711
+    "modified": 1526885771
 }
