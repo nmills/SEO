@@ -33,4 +33,12 @@ export default function() {
       searchFormResults.removeClass('active');
     });
   }
+
+  // Focus
+  $('a.c-nav__search-btn.js-search-btn').click(function() {
+      $(".c-searchform.c-searchform--header.active input.header__search").focus()
+  }); 
+  $('a.c-search-filter__btn.js-search-filter__btn').click(function() {
+      $(".c-searchform.c-searchform--results.active input.result__search").focus()
+  }); 
 }
