@@ -85,6 +85,10 @@ class BSDStarterSite extends TimberSite {
     $current_post_ID = get_the_ID();
     $current_post_parent_id = wp_get_post_parent_id($current_post_ID);
     $context['parent_url'] = get_permalink($current_post_parent_id);
+
+    // Adding GA Tags
+    $current_site_id = get_current_site();
+    $context['GA_tag'] = GA_tag($current_site_id->id);
     
     return $context;
     
@@ -312,3 +316,31 @@ function RemoveAddMediaButtons(){
   remove_action( 'media_buttons', 'media_buttons' );
 }
 add_action('admin_head', 'RemoveAddMediaButtons');
+
+// Creating GA tag id
+function GA_tag($site_id){
+  $id = '';
+  switch ($site_id) {
+    case 2:
+        // Career
+        $id = 'UA-69099121-1';
+        break;
+    case 3:
+        // Scholar
+        $id = 'UA-35322117-1';
+        break;
+    case 4:
+        // Law
+        $id = 'UA-112752258-1';
+        break;
+    case 5:
+        // Alternative Investments
+        $id = 'UA-112787051-1';
+        break;
+    default:
+        // Main site
+        $id = 'UA-11339724-1';
+  }
+
+  return $id;
+}
