@@ -12,7 +12,6 @@ import galleryWidget from 'modules/galleryWidget.js';
 import player_button from 'modules/video_player_button.js';
 import navigation from 'modules/navigation.js';
 
-
 (function($) {
   $( document ).ready(function() {
     ready();
@@ -57,7 +56,8 @@ import navigation from 'modules/navigation.js';
     player_button();
     searchBar();
     hamburger();
-    navigation();
+    navigation(); 
+
   }
 
   function resize() {

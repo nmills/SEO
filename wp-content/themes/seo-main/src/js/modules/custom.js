@@ -10,7 +10,6 @@ export default function() {
   if ((width >= 1024)) {
     $(".c-gh-program__item").each(function() {
       var single_height = $(this).find(".heading_desktop").height();
-      console.log(single_height.height);
       if (single_height > 40) {
         $(this).find(".heading_desktop").css('bottom', '-40px');
       }
@@ -29,12 +28,26 @@ export default function() {
       $('html, body').animate({
           scrollTop: $('.container.region_main_content').offset().top + (-170)
         }, 'slow');  
-      console.log('test');
     } else {
       $('html, body').animate({
           scrollTop: $('.container.region_main_content').offset().top + (-100)
-        }, 'slow'); 
-        console.log('test2');  
+        }, 'slow');   
     }
   }
+
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+      items:1,
+      loop:true,
+      margin:0,
+      autoplay:false,
+      autoplayTimeout:5000,
+      autoplayHoverPause:false
+  });
+  $('.play').on('click',function(){
+      owl.trigger('play.owl.autoplay',[1000])
+  })
+  $('.stop').on('click',function(){
+      owl.trigger('stop.owl.autoplay')
+  })
 }

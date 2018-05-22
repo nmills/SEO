@@ -55,11 +55,13 @@ Description: Seo Main Site Theme
 // ======================
 @import "vendor/slick";
 @import "vendor/magnific-popup";
+@import "vendor/owlcarousel/owl.carousel"; 
+@import "vendor/owlcarousel/owl.theme.default";
 
 // Overrides
 // Utilities and helper classes with ability to override anything which goes before
 @import "overrides/utility";
-@import "overrides/overrides";
+@import "overrides/overrides"; 
 
 //Layouts
 @import "components/header";

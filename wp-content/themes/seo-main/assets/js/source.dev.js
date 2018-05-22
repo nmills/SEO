@@ -2333,7 +2333,6 @@ var _galleryWidget=require('modules/galleryWidget.js');var _galleryWidget2=_inte
 var _video_player_button=require('modules/video_player_button.js');var _video_player_button2=_interopRequireDefault(_video_player_button);
 var _navigation=require('modules/navigation.js');var _navigation2=_interopRequireDefault(_navigation);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
 
-
 (function($){
 $(document).ready(function(){
 ready();
@@ -2379,6 +2378,7 @@ function ready(){
 (0,_searchBar2.default)();
 (0,_hamburger2.default)();
 (0,_navigation2.default)();
+
 }
 
 function resize(){
@@ -2471,7 +2471,6 @@ var width=$(window).width();
 if(width>=1024){
 $(".c-gh-program__item").each(function(){
 var single_height=$(this).find(".heading_desktop").height();
-console.log(single_height.height);
 if(single_height>40){
 $(this).find(".heading_desktop").css('bottom','-40px');
 }
@@ -2490,14 +2489,28 @@ if(width>=840){
 $('html, body').animate({
 scrollTop:$('.container.region_main_content').offset().top+-170},
 'slow');
-console.log('test');
 }else{
 $('html, body').animate({
 scrollTop:$('.container.region_main_content').offset().top+-100},
 'slow');
-console.log('test2');
 }
 }
+
+var owl=$('.owl-carousel');
+owl.owlCarousel({
+items:1,
+loop:false,
+margin:0,
+autoplay:true,
+autoplayTimeout:1000,
+autoplayHoverPause:true});
+
+$('.play').on('click',function(){
+owl.trigger('play.owl.autoplay',[1000]);
+});
+$('.stop').on('click',function(){
+owl.trigger('stop.owl.autoplay');
+});
 };
 
 },{}],4:[function(require,module,exports){
