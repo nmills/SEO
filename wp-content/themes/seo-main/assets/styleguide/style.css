@@ -1222,6 +1222,19 @@ Styleguide 1.6
       font-weight: 100;
       font-size: 18px; }
 
+.region_bottom .wrapper-wysiwyg {
+  max-width: 1130px; }
+  .region_bottom .wrapper-wysiwyg .inner-container {
+    padding: 0; }
+    @media only screen and (min-width: 480px) {
+      .region_bottom .wrapper-wysiwyg .inner-container {
+        width: calc(100%);
+        float: left;
+        margin-left: 0;
+        padding: 0;
+        float: right;
+        max-width: 700px; } }
+
 /*
 Accodion
 
@@ -2500,6 +2513,19 @@ Gallery
 
 .eslide {
   font-weight: 100; }
+
+.region_bottom .wrapper-gallery {
+  max-width: 1130px; }
+  .region_bottom .wrapper-gallery .inner-container {
+    padding: 0; }
+    @media only screen and (min-width: 480px) {
+      .region_bottom .wrapper-gallery .inner-container {
+        width: calc(100%);
+        float: left;
+        margin-left: 0;
+        padding: 0;
+        float: right;
+        max-width: 700px; } }
 
 .container.region_hero {
   width: calc(100%);

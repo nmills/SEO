@@ -589,3 +589,21 @@ Gallery
 .eslide {
   font-weight: $font-thinnest;
 }
+
+.region_bottom {
+  .wrapper-gallery {
+    max-width: 1130px;
+
+    .inner-container {
+      padding: 0;
+
+      @include grid-media($sm) {
+        @include grid-column(12, $no-gutter);
+
+        padding: 0;
+        float: right;
+        max-width: 700px;
+      }
+    }
+  }  
+}
