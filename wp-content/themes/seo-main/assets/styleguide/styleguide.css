@@ -1466,7 +1466,7 @@ Styleguide 5.1
 */
 .video-comp {
   background: #050505;
-  margin: 0; }
+  margin-bottom: 45px; }
   .video-comp .video-component {
     padding: 40px 30px; }
     @media only screen and (min-width: 1024px) {
@@ -5630,9 +5630,11 @@ body {
 
 .c-gh-callout .container {
   max-width: 1080px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center; }
+  margin: 0 auto; }
+  @media only screen and (min-width: 768px) {
+    .c-gh-callout .container {
+      display: flex;
+      justify-content: center; } }
 
 .c-gh-callout__img {
   width: calc(100%);
@@ -5640,9 +5642,8 @@ body {
   margin-left: 0; }
   @media only screen and (min-width: 768px) {
     .c-gh-callout__img {
-      width: calc(33.33333%);
-      float: left;
-      margin-left: 0; } }
+      width: 33.33%;
+      margin-right: 6.67%; } }
 
 .c-gh-callout__content {
   width: calc(100%);
@@ -5650,11 +5651,8 @@ body {
   margin-left: 0; }
   @media only screen and (min-width: 768px) {
     .c-gh-callout__content {
-      width: calc(66.66667% - 25px);
-      float: left;
-      margin-left: 15px;
-      float: right;
-      padding-left: 35px; } }
+      width: 60%;
+      float: right; } }
 
 .c-gh-callout__text,
 .c-gh-callout__text p {
