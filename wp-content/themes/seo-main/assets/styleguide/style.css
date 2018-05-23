@@ -5634,7 +5634,9 @@ body {
 
 .c-gh-callout .container {
   max-width: 1080px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
 
 .c-gh-callout__img {
   width: calc(100%);
