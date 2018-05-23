@@ -31,6 +31,6 @@ function create_Legal_document_posttype() {
      );
 }
 // Hooking up our function to theme setup
-add_action( 'init', 'create_Legal_document_posttype' );
+// add_action( 'init', 'create_Legal_document_posttype' );
 
 ?>

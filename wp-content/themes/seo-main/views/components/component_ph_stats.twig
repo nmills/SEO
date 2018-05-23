@@ -7,13 +7,12 @@
           <div class="c-ratiometer_container">
             <div class="c-ratiometer">
               <div class="c-rationmeter-positioner">
-                <div class="c-ratiometer-meter_out js-progress-bar">
-                  <div class="c-ratiometer-meter_out circle-back" style="background: #FFFFFF;"></div>
+                <div class="c-ratiometer-meter_out js-progress-bar" data-percent="{{repeater.percent}}">
                   <div class="c-rationmeter-meter" style="background-image: url({{Image(repeater.image).src }})">
                   </div>
                 </div>
                 <div class="c-rationmeter-text">
-                	<h1>{{repeater.percent}}%</h1>
+                	<h1 class="percent">{{repeater.percent}}%</h1>
                   {% if repeater.percent %}
                     {% set percentage = repeater.percent %}
                   {% endif %}
@@ -49,16 +48,6 @@
 </section>
 <script>
 jQuery(document).ready(function() {
-  jQuery.fn.isInViewport = function() {
-    var elementTop = jQuery(this).offset().top;
-    var elementBottom = elementTop + jQuery(this).outerHeight();
-
-    var viewportTop = jQuery(window).scrollTop();
-    var viewportBottom = viewportTop + jQuery(window).height();
-
-    return elementBottom > viewportTop && elementTop < viewportBottom;
-  };
-
   var triggerAtY = $('.c-ph-stats__container').offset().top - $(window).outerHeight();
   $(window).scroll(function(event) {
 
@@ -68,16 +57,16 @@ jQuery(document).ready(function() {
     }
 
     //Jquery Circle Progress
-    var progress_circle = jQuery(".js-progress-bar").gmpc({
-        line_width: 10,
-        color: "#7CB4F6",
-        starting_position: 36, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
-        percent: 0, // percent starts from
-        percentage: true,
-        height: "320px",
-        width: "320px"
-      })
-    .gmpc("animate", '{{percentage}}', 2000);
+    // var progress_circle = jQuery(".js-progress-bar").gmpc({
+    //     line_width: 10,
+    //     color: "#7CB4F6",
+    //     starting_position: 36, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+    //     percent: 0, // percent starts from
+    //     percentage: true,
+    //     height: "320px",
+    //     width: "320px"
+    //   })
+    // .gmpc("animate", '{{percentage}}', 2000);
 
     // SVG animation
     var svg = jQuery(".curve").drawsvg({

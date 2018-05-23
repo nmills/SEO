@@ -6,24 +6,25 @@
             "key": "field_5ab21d9665d4e",
             "label": "Image",
             "name": "image",
-            "type": "image",
+            "type": "gallery",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
-            "preview_size": "thumbnail",
+            "min": "",
+            "max": "",
+            "insert": "append",
             "library": "all",
-            "min_width": 0,
-            "min_height": 0,
-            "min_size": 0,
-            "max_width": 0,
-            "max_height": 0,
-            "max_size": 0,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
             "mime_types": ""
         },
         {
@@ -82,5 +83,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1526555617
+    "modified": 1526963890
 }

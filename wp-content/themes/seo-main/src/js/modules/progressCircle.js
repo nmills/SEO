@@ -3,13 +3,29 @@
 */
 
 export default function() {
-  var progress_circle = $(".my-progress-bar").gmpc({
-    line_width: 10,
-    color: "#ccc",
-    starting_position: 50, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
-    percent: 0, // percent starts from
-    percentage: true,
-    // text: "More power behind every pixel"
+  var triggerAtY = $('.c-ratiometer_container').offset().top - $(window).outerHeight();
+  $(window).scroll(function(event) {
+
+    // #target not yet in view
+    if (triggerAtY > $(window).scrollTop()) {
+      return;
+    }
+
+    $('.c-ratiometer .js-progress-bar').easyPieChart({
+      size: 255,
+      lineWidth: 10,
+      trackColor: '#FFFFFF',
+      barColor: '#7CB4F6',
+      scaleColor: false,
+      animate: 2000,
+      rotate: 130,
+      lineCap: 'square',
+      onStep: function(from, to, percent) {
+        $(this.el).siblings('.c-rationmeter-text').find('.percent').text(Math.round(percent) + '%');
+      }
+    });
+    
+    //remove this event handler
+    $(this).off(event);
   })
-  .gmpc("animate", 80, 3000);
 }
