@@ -16,14 +16,14 @@
       {% endif %}
       <div class="c-program-description">
         <p>{{component.body}}</p>
+        <ul class="c-program-links">
+          {% for link in component.links %}
+          <li>
+            <a href="{{link.destination_url}}" class="c-rte__link">{{link.text}}</a>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
-      <ul class="c-program-links">
-        {% for link in component.links %}
-        <li>
-          <a href="{{link.destination_url}}" class="c-rte__link">{{link.text}}</a>
-        </li>
-        {% endfor %}
-      </ul>
     </div>
   </div>
 </section>

@@ -3150,15 +3150,13 @@ body {
     margin: 0 auto; } }
 
 .c-program_cta__container .c-program-title,
-.c-program_cta__container .c-program-description,
-.c-program_cta__container .c-program-links {
+.c-program_cta__container .c-program-description {
   width: calc(100%);
   float: left;
   margin-left: 0; }
   @media only screen and (min-width: 768px) {
     .c-program_cta__container .c-program-title,
-    .c-program_cta__container .c-program-description,
-    .c-program_cta__container .c-program-links {
+    .c-program_cta__container .c-program-description {
       width: calc(41.66667%);
       float: left;
       margin-left: 0;
