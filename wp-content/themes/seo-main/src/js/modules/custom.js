@@ -2,7 +2,6 @@
  * Custom Scripts
  */
 
-
 export default function() {
 
   var width = $(window).width();
@@ -10,7 +9,6 @@ export default function() {
   if ((width >= 1024)) {
     $(".c-gh-program__item").each(function() {
       var single_height = $(this).find(".heading_desktop").height();
-      console.log(single_height.height);
       if (single_height > 40) {
         $(this).find(".heading_desktop").css('bottom', '-40px');
       }
@@ -29,12 +27,25 @@ export default function() {
       $('html, body').animate({
           scrollTop: $('.container.region_main_content').offset().top + (-170)
         }, 'slow');  
-      console.log('test');
     } else {
       $('html, body').animate({
           scrollTop: $('.container.region_main_content').offset().top + (-100)
-        }, 'slow'); 
-        console.log('test2');  
+        }, 'slow');   
     }
+  }
+
+  // Owl Carousel Init
+  var owl = $('.owl-carousel');
+  if (owl.length) {
+    owl.owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 0,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: false,
+      animateOut: 'fadeOut'
+    });
   }
 }

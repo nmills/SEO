@@ -88,7 +88,7 @@ class BSDStarterSite extends TimberSite {
 
     // Adding GA Tags
     $current_site_id = get_current_site();
-    $context['GA_tag'] = GA_tag($current_site_id->id);
+    $context['GA_tag'] = GA_tag(get_current_blog_id());
     
     return $context;
     
@@ -100,8 +100,10 @@ class BSDStarterSite extends TimberSite {
     if (!is_admin()) {
       wp_deregister_script('jquery');
       wp_enqueue_script( 'jquery', get_stylesheet_directory_uri() . '/src/js/vendor/jquery.js', array(), '2.1.14', false );
-      wp_enqueue_script( 'circular', get_template_directory_uri() . '/src/js/vendor/jquery.circular.js', array(), '1.0.0', false );
+      wp_enqueue_script( 'easypiechart', get_template_directory_uri() . '/src/js/vendor/jquery.easypiechart.min.js', array(), '2.1.7', false );
       wp_enqueue_script( 'svg', get_template_directory_uri() . '/src/js/vendor/jquery.drawsvg.min.js', array(), '1.1.0', false );
+      wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/src/js/vendor/owl.carousel.js', array(), '2.3.4', false );
+
       if ( get_template_directory_uri() != get_stylesheet_directory_uri()) {
         wp_enqueue_script( 'parent-site-js', get_template_directory_uri() . '/assets/js/source.dev.js', array( 'jquery' ), '0.0.3', true );
 
@@ -257,7 +259,7 @@ function create_posttype() {
      );
 }
 // Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
+// add_action( 'init', 'create_posttype' );
 
 // Adding excerpts
 add_post_type_support( 'page', 'excerpt' );

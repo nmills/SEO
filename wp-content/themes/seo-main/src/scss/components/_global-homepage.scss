@@ -72,8 +72,8 @@
         width: 100%;
         display: block;
         position: relative;
+        z-index: 1;
       }
-
 
       h1 {
         @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 46px, $line-height: 1);
@@ -81,6 +81,7 @@
         @include grid-column(10, $no-gutter);
 
         position: absolute;
+        z-index: 1;
         bottom: 25px;
         left: 25px;
 
