@@ -257,7 +257,7 @@ function create_posttype() {
      );
 }
 // Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
+// add_action( 'init', 'create_posttype' );
 
 // Adding excerpts
 add_post_type_support( 'page', 'excerpt' );
