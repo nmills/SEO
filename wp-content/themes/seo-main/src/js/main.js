@@ -14,7 +14,6 @@ import navigation from 'modules/navigation.js';
 import progressCircle from 'modules/progressCircle.js';
 import svgAnim from 'modules/svgAnim.js';
 
-
 (function($) {
   $( document ).ready(function() {
     ready();
@@ -59,9 +58,9 @@ import svgAnim from 'modules/svgAnim.js';
     player_button();
     searchBar();
     hamburger();
-    navigation();
     progressCircle();
     svgAnim();
+    navigation(); 
   }
 
   function resize() {
