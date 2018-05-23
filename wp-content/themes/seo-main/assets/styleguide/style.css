@@ -4439,7 +4439,8 @@ body {
         margin: 0 auto;
         width: 100%;
         display: block;
-        position: relative; } }
+        position: relative;
+        z-index: 1; } }
     .c-gh-hero__container .c-gh-hero__content .c-gh-hero__text h1 {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #ffffff;
@@ -4450,6 +4451,7 @@ body {
       float: left;
       margin-left: 0;
       position: absolute;
+      z-index: 1;
       bottom: 25px;
       left: 25px; }
       @media only screen and (min-width: 480px) {
