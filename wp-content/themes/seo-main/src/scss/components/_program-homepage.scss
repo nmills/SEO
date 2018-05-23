@@ -319,14 +319,13 @@
 
 
     &.single {
-      .old, .c-ph-stats-border__container {
+      .c-ph-stats-border__container {
         @include grid-column(12, $no-gutter);
       }
     }
   }
 
   .old {
-    @include grid-column(12, $no-gutter);
     margin-bottom: 50px;
 
     @include grid-media($md) {
@@ -342,11 +341,8 @@
       @include grid-column(6, $no-gutter);
     }
 
-
     .c-ratiometer_container {
       padding: 5% 0;
-
-      @include grid-media($lg) {}
     }
 
     .c-ratiometer {
@@ -362,7 +358,6 @@
         margin: 0 auto;
         float: none;
       }
-
 
       @include grid-media($md) {
         // width: calc(75%);
@@ -383,7 +378,6 @@
         float: none;
         margin-left: 0;
       }
-
 
       .c-rationmeter-positioner {
         width: 250px;
