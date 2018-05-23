@@ -822,8 +822,7 @@ body {
   }
 
   .c-program-title,
-  .c-program-description,
-  .c-program-links {
+  .c-program-description {
     @include grid-column(12, $no-gutter);
 
     @include grid-media($md) {

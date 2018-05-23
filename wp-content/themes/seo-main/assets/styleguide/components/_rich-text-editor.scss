@@ -447,4 +447,23 @@ Styleguide 1.6
       font-size: 18px;
     }
   }
-} 
+}
+
+
+.region_bottom {
+  .wrapper-wysiwyg {
+    max-width: 1130px;
+
+    .inner-container {
+      padding: 0;
+
+      @include grid-media($sm) {
+        @include grid-column(12, $no-gutter);
+
+        padding: 0;
+        float: right;
+        max-width: 700px;
+      }
+    }
+  }  
+}

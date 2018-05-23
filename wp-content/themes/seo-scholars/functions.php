@@ -31,6 +31,6 @@ function create_scholar_posttype() {
      );
 }
 // Hooking up our function to theme setup
-add_action( 'init', 'create_scholar_posttype' );
+// add_action( 'init', 'create_scholar_posttype' );
 
 ?>

@@ -88,7 +88,7 @@ class BSDStarterSite extends TimberSite {
 
     // Adding GA Tags
     $current_site_id = get_current_site();
-    $context['GA_tag'] = GA_tag($current_site_id->id);
+    $context['GA_tag'] = GA_tag(get_current_blog_id());
     
     return $context;
     
@@ -257,7 +257,7 @@ function create_posttype() {
      );
 }
 // Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
+// add_action( 'init', 'create_posttype' );
 
 // Adding excerpts
 add_post_type_support( 'page', 'excerpt' );
