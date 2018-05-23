@@ -2507,7 +2507,7 @@ loop:true,
 margin:0,
 dots:false,
 autoplay:true,
-autoplayTimeout:5000,
+autoplayTimeout:3000,
 autoplayHoverPause:false,
 animateOut:'fadeOut'});
 
