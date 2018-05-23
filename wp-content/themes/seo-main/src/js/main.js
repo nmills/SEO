@@ -11,6 +11,8 @@ import bxslider from 'modules/jquery.bxslider.min.js';
 import galleryWidget from 'modules/galleryWidget.js';
 import player_button from 'modules/video_player_button.js';
 import navigation from 'modules/navigation.js';
+import progressCircle from 'modules/progressCircle.js';
+import svgAnim from 'modules/svgAnim.js';
 
 
 (function($) {
@@ -58,6 +60,8 @@ import navigation from 'modules/navigation.js';
     searchBar();
     hamburger();
     navigation();
+    progressCircle();
+    svgAnim();
   }
 
   function resize() {

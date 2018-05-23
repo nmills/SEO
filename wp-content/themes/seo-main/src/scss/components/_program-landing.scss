@@ -458,7 +458,6 @@
       float: none;
 
       @include grid-media($sm) {
-        width: calc(80%);
         float: left;
         margin: 0 auto;
         float: none;
@@ -466,7 +465,6 @@
 
 
       @include grid-media($md) {
-        width: calc(75%);
         float: left;
         margin: 0 auto;
         float: none;
@@ -474,7 +472,6 @@
 
 
       @include grid-media($xl) {
-        width: calc(30%);
         float: left;
         margin: 0 auto;
         float: none;
@@ -510,17 +507,17 @@
       canvas {
         position: absolute;
         width: 100%;
-        top: -12px;
-        left: -12px;
+        top: 6px;
+        left: 6px;
 
         @include grid-media($sm) {
-          top: -20px;
-          left: -20px;
+          top: 5px;
+          left: 5px;
         }
 
         @include grid-media($md) {
-          top: -28px;
-          left: -28px;
+          top: 3px;
+          left: 3px;
         }
       }
 
@@ -604,13 +601,13 @@
       position: relative;
 
       @include grid-media($sm) {
-        left: -30px;
+        left: -15px;
       }
 
       @include grid-media($md) {
         width: calc(35%);
         float: left;
-        margin-left: -85px;
+        margin-left: -20px;
       }
 
       @include grid-media($xl) {
@@ -621,7 +618,6 @@
       h1 {
         margin: 0;
         text-align: center;
-        visibility: hidden;
 
         @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 45px, $line-height: 1);
 

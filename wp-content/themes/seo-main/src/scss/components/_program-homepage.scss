@@ -314,6 +314,7 @@
       display: flex;
       padding: 65px 0;
       max-width: 1060px;
+      justify-content: center;
     }
 
 
@@ -326,6 +327,16 @@
 
   .old {
     @include grid-column(12, $no-gutter);
+    margin-bottom: 50px;
+
+    @include grid-media($md) {
+      margin-bottom: 0;
+      // max-width: 440px;
+
+      &:nth-child(2n) {
+        padding-left: 85px;
+      }
+    }
 
     @include grid-media($lg) {
       @include grid-column(6, $no-gutter);
@@ -333,7 +344,7 @@
 
 
     .c-ratiometer_container {
-      padding: 5%;
+      padding: 5% 0;
 
       @include grid-media($lg) {}
     }
@@ -384,11 +395,7 @@
         }
 
         @include grid-media($md) {
-          width: 500px;
-        }
-
-        @include grid-media($xl) {
-          width: 730px;
+          width: 440px;
         }
       }
     }
@@ -437,22 +444,28 @@
       float: left;
       margin-left: -30px;
       margin-top: 60px;
+      padding-top: 45px;
 
       @include grid-media($sm) {
         margin-top: 50px;
-        left: -35px;
+        left: -15px;
+        padding-top: 70px;
       }
 
       @include grid-media($md) {
         width: 100%;
         max-width: 225px;
         float: left;
-        margin-left: -55px;
+        margin-left: -20px;
+        padding-top: 110px;
       }
 
       h1 {
         @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 45px, $line-height: 1);
-
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
         margin: 0;
         text-align: center;
 
@@ -480,18 +493,14 @@
   }
 
   .c-ph-stats-border__container {
-    height: 200px;
+    // height: 200px;
     position: relative;
     margin: 40px 0;
 
     @include grid-column(12, $no-gutter);
 
-    @include grid-media($sm) {
-      margin-top: -30px;
-    }
-
     @include grid-media($md) {
-      min-height: 410px;
+      min-height: 480px;
       margin: 0;
     }
 
@@ -506,14 +515,15 @@
       margin: auto;
       text-align: center;
       height: auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-70%, -65%);
+      position: relative;
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-70%, -65%);
 
       @include grid-media($md) {
         width: 320px;
-        transform: translate(-47%, -50%);
+        // transform: translate(-47%, -50%);
       }
 
       h1 {
@@ -523,7 +533,7 @@
 
         @include grid-media($md) {
           @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 110px, $line-height: 1);
-          margin-top: 28px;
+          margin-top: 76px;
         }
       }
 
@@ -597,7 +607,7 @@
         width: 100%;
 
         @include grid-media($md) {
-          height: calc(100% - 90px);
+          height: calc(100% - 60px);
           max-width: 185px;
           right: -40px;
           top: 130px;

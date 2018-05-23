@@ -2331,7 +2331,9 @@ var _hamburger=require('modules/hamburger.js');var _hamburger2=_interopRequireDe
 var _jqueryBxsliderMin=require('modules/jquery.bxslider.min.js');var _jqueryBxsliderMin2=_interopRequireDefault(_jqueryBxsliderMin);
 var _galleryWidget=require('modules/galleryWidget.js');var _galleryWidget2=_interopRequireDefault(_galleryWidget);
 var _video_player_button=require('modules/video_player_button.js');var _video_player_button2=_interopRequireDefault(_video_player_button);
-var _navigation=require('modules/navigation.js');var _navigation2=_interopRequireDefault(_navigation);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+var _navigation=require('modules/navigation.js');var _navigation2=_interopRequireDefault(_navigation);
+var _progressCircle=require('modules/progressCircle.js');var _progressCircle2=_interopRequireDefault(_progressCircle);
+var _svgAnim=require('modules/svgAnim.js');var _svgAnim2=_interopRequireDefault(_svgAnim);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
 
 
 (function($){
@@ -2379,6 +2381,8 @@ function ready(){
 (0,_searchBar2.default)();
 (0,_hamburger2.default)();
 (0,_navigation2.default)();
+(0,_progressCircle2.default)();
+(0,_svgAnim2.default)();
 }
 
 function resize(){
@@ -2388,7 +2392,7 @@ function resize(){
 
 }).call(this,typeof global!=="undefined"?global:typeof self!=="undefined"?self:typeof window!=="undefined"?window:{});
 
-},{"modules/accordion.js":2,"modules/custom.js":3,"modules/galleryWidget.js":4,"modules/hamburger.js":5,"modules/jquery.bxslider.min.js":6,"modules/navigation.js":7,"modules/searchBar.js":8,"modules/video.js":9,"modules/video_player_button.js":10}],2:[function(require,module,exports){
+},{"modules/accordion.js":2,"modules/custom.js":3,"modules/galleryWidget.js":4,"modules/hamburger.js":5,"modules/jquery.bxslider.min.js":6,"modules/navigation.js":7,"modules/progressCircle.js":8,"modules/searchBar.js":9,"modules/svgAnim.js":10,"modules/video.js":11,"modules/video_player_button.js":12}],2:[function(require,module,exports){
 'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 
@@ -2752,6 +2756,39 @@ $(".child-menu").css({
 
 
 function(){
+var triggerAtY=$('.c-ratiometer_container').offset().top-$(window).outerHeight();
+$(window).scroll(function(event){
+
+// #target not yet in view
+if(triggerAtY>$(window).scrollTop()){
+return;
+}
+
+$('.c-ratiometer .js-progress-bar').easyPieChart({
+size:255,
+lineWidth:10,
+trackColor:'#FFFFFF',
+barColor:'#7CB4F6',
+scaleColor:false,
+animate:2000,
+rotate:130,
+lineCap:'square',
+onStep:function onStep(from,to,percent){
+$(this.el).siblings('.c-rationmeter-text').find('.percent').text(Math.round(percent)+'%');
+}});
+
+
+//remove this event handler
+$(this).off(event);
+});
+};
+
+},{}],9:[function(require,module,exports){
+'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
+
+
+
+function(){
 var searchForm=$('.c-searchform--header');
 var searchFormResults=$('.c-searchform--results');
 var searchBtn=$('.js-search-btn');
@@ -2792,7 +2829,34 @@ $(".c-searchform.c-searchform--results.active input.result__search").focus();
 });
 };
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=
+
+
+
+function(){
+var triggerAtY=$('.c-ph-stats__container').offset().top-$(window).outerHeight();
+$(window).scroll(function(event){
+
+// #target not yet in view
+if(triggerAtY>$(window).scrollTop()){
+return;
+}
+
+// SVG animation
+var svg=jQuery(".curve").drawsvg({
+duration:2000,
+easing:"linear",
+reverse:"true"});
+
+svg.drawsvg("animate");
+
+// remove this event handler
+$(this).off(event);
+});
+};
+
+},{}],11:[function(require,module,exports){
 "use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 
@@ -2813,7 +2877,7 @@ $(this).siblings(".c-hero_playbutton").fadeIn();
 });
 };
 
-},{}],10:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 

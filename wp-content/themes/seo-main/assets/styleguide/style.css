@@ -2810,19 +2810,16 @@ Gallery
     float: none; }
     @media only screen and (min-width: 480px) {
       .program-landing-page .old .c-ratiometer {
-        width: calc(80%);
         float: left;
         margin: 0 auto;
         float: none; } }
     @media only screen and (min-width: 768px) {
       .program-landing-page .old .c-ratiometer {
-        width: calc(75%);
         float: left;
         margin: 0 auto;
         float: none; } }
     @media only screen and (min-width: 1440px) {
       .program-landing-page .old .c-ratiometer {
-        width: calc(30%);
         float: left;
         margin: 0 auto;
         float: none; } }
@@ -2848,16 +2845,16 @@ Gallery
     .program-landing-page .old .c-ratiometer-meter_out canvas {
       position: absolute;
       width: 100%;
-      top: -12px;
-      left: -12px; }
+      top: 6px;
+      left: 6px; }
       @media only screen and (min-width: 480px) {
         .program-landing-page .old .c-ratiometer-meter_out canvas {
-          top: -20px;
-          left: -20px; } }
+          top: 5px;
+          left: 5px; } }
       @media only screen and (min-width: 768px) {
         .program-landing-page .old .c-ratiometer-meter_out canvas {
-          top: -28px;
-          left: -28px; } }
+          top: 3px;
+          left: 3px; } }
     @media only screen and (min-width: 480px) {
       .program-landing-page .old .c-ratiometer-meter_out {
         width: 202px;
@@ -2931,12 +2928,12 @@ Gallery
     position: relative; }
     @media only screen and (min-width: 480px) {
       .program-landing-page .old .c-rationmeter-text {
-        left: -30px; } }
+        left: -15px; } }
     @media only screen and (min-width: 768px) {
       .program-landing-page .old .c-rationmeter-text {
         width: calc(35%);
         float: left;
-        margin-left: -85px; } }
+        margin-left: -20px; } }
     @media only screen and (min-width: 1440px) {
       .program-landing-page .old .c-rationmeter-text {
         width: calc(25%);
@@ -2944,7 +2941,6 @@ Gallery
     .program-landing-page .old .c-rationmeter-text h1 {
       margin: 0;
       text-align: center;
-      visibility: hidden;
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #050505;
       font-weight: 700;
@@ -3910,7 +3906,8 @@ body {
         width: calc(80%);
         display: flex;
         padding: 65px 0;
-        max-width: 1060px; } }
+        max-width: 1060px;
+        justify-content: center; } }
     .c-ph-stats__container .c-ph-stats__content.single .old, .c-ph-stats__container .c-ph-stats__content.single .c-ph-stats-border__container {
       width: calc(100%);
       float: left;
@@ -3918,14 +3915,20 @@ body {
   .c-ph-stats__container .old {
     width: calc(100%);
     float: left;
-    margin-left: 0; }
+    margin-left: 0;
+    margin-bottom: 50px; }
+    @media only screen and (min-width: 768px) {
+      .c-ph-stats__container .old {
+        margin-bottom: 0; }
+        .c-ph-stats__container .old:nth-child(2n) {
+          padding-left: 85px; } }
     @media only screen and (min-width: 1024px) {
       .c-ph-stats__container .old {
         width: calc(50%);
         float: left;
         margin-left: 0; } }
     .c-ph-stats__container .old .c-ratiometer_container {
-      padding: 5%; }
+      padding: 5% 0; }
     .c-ph-stats__container .old .c-ratiometer {
       width: calc(100%);
       float: left;
@@ -3963,10 +3966,7 @@ body {
             width: 360px; } }
         @media only screen and (min-width: 768px) {
           .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
-            width: 500px; } }
-        @media only screen and (min-width: 1440px) {
-          .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
-            width: 730px; } }
+            width: 440px; } }
     .c-ph-stats__container .old .c-ratiometer-meter_out {
       width: 155px;
       height: 155px;
@@ -4002,23 +4002,30 @@ body {
       width: 50%;
       float: left;
       margin-left: -30px;
-      margin-top: 60px; }
+      margin-top: 60px;
+      padding-top: 45px; }
       @media only screen and (min-width: 480px) {
         .c-ph-stats__container .old .c-rationmeter-text {
           margin-top: 50px;
-          left: -35px; } }
+          left: -15px;
+          padding-top: 70px; } }
       @media only screen and (min-width: 768px) {
         .c-ph-stats__container .old .c-rationmeter-text {
           width: 100%;
           max-width: 225px;
           float: left;
-          margin-left: -55px; } }
+          margin-left: -20px;
+          padding-top: 110px; } }
       .c-ph-stats__container .old .c-rationmeter-text h1 {
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
         color: #050505;
         font-weight: 700;
         font-size: 45px;
         line-height: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
         margin: 0;
         text-align: center; }
         @media only screen and (min-width: 480px) {
@@ -4051,18 +4058,14 @@ body {
             font-size: 30px;
             line-height: 1; } }
   .c-ph-stats__container .c-ph-stats-border__container {
-    height: 200px;
     position: relative;
     margin: 40px 0;
     width: calc(100%);
     float: left;
     margin-left: 0; }
-    @media only screen and (min-width: 480px) {
-      .c-ph-stats__container .c-ph-stats-border__container {
-        margin-top: -30px; } }
     @media only screen and (min-width: 768px) {
       .c-ph-stats__container .c-ph-stats-border__container {
-        min-height: 410px;
+        min-height: 480px;
         margin: 0; } }
     @media only screen and (min-width: 1024px) {
       .c-ph-stats__container .c-ph-stats-border__container {
@@ -4075,14 +4078,10 @@ body {
       margin: auto;
       text-align: center;
       height: auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-70%, -65%); }
+      position: relative; }
       @media only screen and (min-width: 768px) {
         .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details {
-          width: 320px;
-          transform: translate(-47%, -50%); } }
+          width: 320px; } }
       .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details h1 {
         margin: 0;
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -4097,7 +4096,7 @@ body {
             font-weight: 700;
             font-size: 110px;
             line-height: 1;
-            margin-top: 28px; } }
+            margin-top: 76px; } }
       .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details p {
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
         color: #050505;
@@ -4169,7 +4168,7 @@ body {
       width: 100%; }
       @media only screen and (min-width: 768px) {
         .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-svg svg.curve {
-          height: calc(100% - 90px);
+          height: calc(100% - 60px);
           max-width: 185px;
           right: -40px;
           top: 130px; } }
