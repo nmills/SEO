@@ -2859,9 +2859,6 @@ Gallery
       @media only screen and (min-width: 768px) {
         .program-landing-page .old .c-ratiometer .c-rationmeter-positioner {
           width: 500px; } }
-      @media only screen and (min-width: 1440px) {
-        .program-landing-page .old .c-ratiometer .c-rationmeter-positioner {
-          width: 730px; } }
   .program-landing-page .old .c-ratiometer-meter_out {
     width: 155px;
     height: 155px;

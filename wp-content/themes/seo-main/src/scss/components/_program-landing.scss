@@ -490,10 +490,6 @@
         @include grid-media($md) {
           width: 500px;
         }
-
-        @include grid-media($xl) {
-          width: 730px;
-        }
       }
     }
 
