@@ -2500,6 +2500,7 @@ scrollTop:$('.container.region_main_content').offset().top+-100},
 
 // Owl Carousel Init
 var owl=$('.owl-carousel');
+if(owl.length){
 owl.owlCarousel({
 items:1,
 loop:true,
@@ -2510,6 +2511,7 @@ autoplayTimeout:5000,
 autoplayHoverPause:false,
 animateOut:'fadeOut'});
 
+}
 };
 
 },{}],4:[function(require,module,exports){
@@ -2764,6 +2766,7 @@ $(".child-menu").css({
 
 
 function(){
+if($('.c-ratiometer_container').length){
 var triggerAtY=$('.c-ratiometer_container').offset().top-$(window).outerHeight();
 $(window).scroll(function(event){
 
@@ -2789,6 +2792,7 @@ $(this.el).siblings('.c-rationmeter-text').find('.percent').text(Math.round(perc
 //remove this event handler
 $(this).off(event);
 });
+}
 };
 
 },{}],9:[function(require,module,exports){
@@ -2838,11 +2842,12 @@ $(".c-searchform.c-searchform--results.active input.result__search").focus();
 };
 
 },{}],10:[function(require,module,exports){
-"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=
+'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 
 
 function(){
+if($('.c-ph-stats__container').length){
 var triggerAtY=$('.c-ph-stats__container').offset().top-$(window).outerHeight();
 $(window).scroll(function(event){
 
@@ -2862,6 +2867,7 @@ svg.drawsvg("animate");
 // remove this event handler
 $(this).off(event);
 });
+}
 };
 
 },{}],11:[function(require,module,exports){

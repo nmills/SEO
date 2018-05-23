@@ -36,14 +36,16 @@ export default function() {
 
   // Owl Carousel Init
   var owl = $('.owl-carousel');
-  owl.owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 0,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: false,
-    animateOut: 'fadeOut'
-  });
+  if (owl.length) {
+    owl.owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 0,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
+      animateOut: 'fadeOut'
+    });
+  }
 }
