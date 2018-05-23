@@ -9,11 +9,11 @@
         </div>
       {% else %}
         
-        <div class="owl-carousel">
-        {% for image in component.image %}
-          <div class="c-gh-hero__image item" style="background-image: url({{image.url}})">
-          </div>
-        {% endfor %}
+        <div class="owl-carousel owl-theme">
+          {% for image in component.image %}
+            <div class="c-gh-hero__image item" style="background-image: url({{image.url}})">
+            </div>
+          {% endfor %}
         </div>
       {% endif %}
 

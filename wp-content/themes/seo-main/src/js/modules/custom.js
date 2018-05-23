@@ -2,7 +2,6 @@
  * Custom Scripts
  */
 
-
 export default function() {
 
   var width = $(window).width();
@@ -35,19 +34,16 @@ export default function() {
     }
   }
 
+  // Owl Carousel Init
   var owl = $('.owl-carousel');
   owl.owlCarousel({
-      items:1,
-      loop:true,
-      margin:0,
-      autoplay:false,
-      autoplayTimeout:5000,
-      autoplayHoverPause:false
+    items: 1,
+    loop: true,
+    margin: 0,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    animateOut: 'fadeOut'
   });
-  $('.play').on('click',function(){
-      owl.trigger('play.owl.autoplay',[1000])
-  })
-  $('.stop').on('click',function(){
-      owl.trigger('stop.owl.autoplay')
-  })
 }

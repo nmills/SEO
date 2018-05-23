@@ -2463,7 +2463,6 @@ e.preventDefault();
 
 
 
-
 function(){
 
 var width=$(window).width();
@@ -2496,21 +2495,18 @@ scrollTop:$('.container.region_main_content').offset().top+-100},
 }
 }
 
+// Owl Carousel Init
 var owl=$('.owl-carousel');
 owl.owlCarousel({
 items:1,
-loop:false,
+loop:true,
 margin:0,
+dots:false,
 autoplay:true,
-autoplayTimeout:1000,
-autoplayHoverPause:true});
+autoplayTimeout:5000,
+autoplayHoverPause:false,
+animateOut:'fadeOut'});
 
-$('.play').on('click',function(){
-owl.trigger('play.owl.autoplay',[1000]);
-});
-$('.stop').on('click',function(){
-owl.trigger('stop.owl.autoplay');
-});
 };
 
 },{}],4:[function(require,module,exports){
