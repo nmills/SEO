@@ -298,9 +298,9 @@
 }
 
 .c-ph-stats__container {
-  @include grid-column(12, $no-gutter);
-
+  display: block;
   background: $light-gray;
+  text-align: center;
 
   .c-ph-stats__content {
     width: calc(100%);
@@ -310,34 +310,39 @@
 
     @include grid-media($lg) {
       position: relative;
-      width: calc(80%);
-      display: flex;
       padding: 65px 0;
       max-width: 1060px;
-      justify-content: center;
+
+      > div:last-child {
+        float: right;
+      }
     }
 
     &.single {
+      display: flex;
+      justify-content: center;
+
       .c-ph-stats-border__container {
         @include grid-column(12, $no-gutter);
+
+        h1 {
+          margin-top: 0;
+        }
       }
     }
   }
 
   .old {
-    margin-bottom: 50px;
-
     @include grid-media($md) {
       margin-bottom: 0;
-      // max-width: 440px;
 
       &:nth-child(2n) {
-        padding-left: 85px;
+        float: right;
       }
     }
 
     @include grid-media($lg) {
-      @include grid-column(6, $no-gutter);
+      width: auto;
     }
 
     .c-ratiometer_container {
@@ -436,7 +441,7 @@
       width: 50%;
       float: left;
       margin-left: -30px;
-      margin-top: 60px;
+      margin-top: 40px;
       padding-top: 45px;
 
       @include grid-media($sm) {
@@ -474,49 +479,51 @@
 
       p {
         @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 20px, $line-height: 1);
-
+        padding: 0 10px;
         margin: 0;
         text-align: center;
 
+        @include grid-media($sm) {
+          padding: 0 25px;
+        }
+
         @include grid-media($md) {
           @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+          padding: 0 15px;
         }
       }
     }
   }
 
   .c-ph-stats-border__container {
-    // height: 200px;
-    position: relative;
-    margin: 40px 0;
-
     @include grid-column(12, $no-gutter);
+    position: relative;
+    padding-bottom: 50px;
 
     @include grid-media($md) {
-      min-height: 480px;
-      margin: 0;
+      margin-bottom: 40px;
+      padding-bottom: 70px;
     }
 
     @include grid-media($lg) {
       @include grid-column(6, $no-gutter);
-      float: right;
+      margin-bottom: 0;
+      max-width: 400px;
     }
-
 
     .c-ph-stats-border__details {
       width: 160px;
-      margin: auto;
       text-align: center;
       height: auto;
+      margin: 0 auto;
       position: relative;
-      // position: absolute;
-      // top: 50%;
-      // left: 50%;
-      // transform: translate(-70%, -65%);
 
       @include grid-media($md) {
-        width: 320px;
-        // transform: translate(-47%, -50%);
+        width: 320px;        
+      }
+
+      @include grid-media($lg) {
+        margin: 0;
       }
 
       h1 {
@@ -525,7 +532,10 @@
         @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 70px, $line-height: 1);
 
         @include grid-media($md) {
-          @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 110px, $line-height: 1);
+          @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 110px, $line-height: 1);          
+        }
+
+        @include grid-media($lg) {
           margin-top: 76px;
         }
       }
@@ -593,7 +603,7 @@
         bottom: 0;
         top: 65px;
         fill: $white;
-        height: calc(100% - 40px);
+        height: calc(100% - 25px);
         right: -52px;
         max-width: 120px;
         position: absolute;
