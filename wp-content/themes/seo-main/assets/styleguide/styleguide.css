@@ -1466,7 +1466,7 @@ Styleguide 5.1
 */
 .video-comp {
   background: #050505;
-  margin: 0; }
+  margin-bottom: 45px; }
   .video-comp .video-component {
     padding: 40px 30px; }
     @media only screen and (min-width: 1024px) {
