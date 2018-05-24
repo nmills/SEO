@@ -55,7 +55,7 @@
             "label": "Image",
             "name": "image",
             "type": "image_crop",
-            "instructions": "We recommend using an image that is at least 150px wide and 150px tall.",
+            "instructions": "",
             "required": 1,
             "conditional_logic": [
                 [
@@ -143,5 +143,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1526032477
+    "modified": 1527117716
 }
