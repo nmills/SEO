@@ -2594,7 +2594,6 @@ function gradient(){
 var gcount=count+4;
 $('.transparency').remove();
 $('[data-rel='+gcount+']').append("<div class='transparency'></div>");
-// console.log(gcount)
 }
 
 thumbCont.find('.thumbslide:gt('+count+')').show();
@@ -2610,14 +2609,14 @@ $("#restart").hide();
 firstSlide.html(pager);
 // adding the inactive class to the arrows
 if(pager==slider.getSlideCount()){
-$('.arrows .right').addClass('inactive');
-$('.arrows .left').removeClass('inactive');
+slider.find('.arrows .right').addClass('inactive');
+slider.find('.arrows .left').removeClass('inactive');
 }else if(pager=='1'){
-$('.arrows .left').addClass('inactive');
-$('.arrows .right').removeClass('inactive');
+slider.find('.arrows .left').addClass('inactive');
+slider.find('.arrows .right').removeClass('inactive');
 }else{
-$('.arrows .left').removeClass('inactive');
-$('.arrows .right').removeClass('inactive');
+slider.find('.arrows .left').removeClass('inactive');
+slider.find('.arrows .right').removeClass('inactive');
 }
 },
 
