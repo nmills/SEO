@@ -52,7 +52,9 @@ export default function() {
 	var count;
 	var showReset = true;
 
-	var slider = $('#slider-container').bxSlider({
+  $('.slider-container').each(function(){
+
+	var slider = $(this).bxSlider({
     minSlides: 1,
     maxSlides: 1,
     infiniteLoop: false,
@@ -61,12 +63,12 @@ export default function() {
     slideMargin: 0,
     pager: false,
     adaptiveHeight: true,
-    speed: 0,
+    speed: 0, 
 
     onSlideBefore: function() {
       var count = slider.getCurrentSlide()
-      var slides = $(".slideshow-cont")[count]
-      var firstSlide = $('.cslide');
+      var slides = $(this).find(".slideshow-cont")[count]
+      var firstSlide = $(this).find('.cslide');
       var pager = count + 1;
 
       gradient();
@@ -75,7 +77,6 @@ export default function() {
         var gcount = count + 4;
         $('.transparency').remove();
         $('[data-rel=' + gcount + ']').append("<div class='transparency'></div>")
-          // console.log(gcount)
       }
 
       thumbCont.find('.thumbslide:gt(' + count + ')').show();
@@ -86,19 +87,19 @@ export default function() {
         $("#restart").show();
       }else{
         $("#restart").hide();
-      }
+      } 
 
-      firstSlide.html(pager);
+      firstSlide.html(pager); 
       // adding the inactive class to the arrows
         if ( pager == slider.getSlideCount()) {
-          $('.arrows .right').addClass('inactive');
-          $('.arrows .left').removeClass('inactive');
+         slider.find('.arrows .right').addClass('inactive');
+         slider.find('.arrows .left').removeClass('inactive');
         } else if ( pager == '1') {
-          $('.arrows .left').addClass('inactive');
-          $('.arrows .right').removeClass('inactive');
+         slider.find('.arrows .left').addClass('inactive');
+         slider.find('.arrows .right').removeClass('inactive');
         } else {
-          $('.arrows .left').removeClass('inactive');
-          $('.arrows .right').removeClass('inactive');
+         slider.find('.arrows .left').removeClass('inactive');
+         slider.find('.arrows .right').removeClass('inactive');
         }
       },
 
@@ -114,7 +115,7 @@ export default function() {
 	});
 
 	//Get the number of the last slide
-	$('.eslide').html(slideQty);
+	$(this).find('.eslide').html(slideQty);
 
 	slideCont.each(function(i, slide) {
     thumbCont.append('<li class="row col1 thumbslide"id=thumb-'+ i +' data-rel="'+ i +'"><div class=year>' + $(this).data("year") + '</div><div class=year-title>' + $(this).data("title") + '</div></li>');
@@ -135,12 +136,13 @@ export default function() {
     e.stopPropagation();
 	});
 
-	$('.left').click(function() {
+	$(this).find('.left').click(function() {
     var slidecurrent = slider.getCurrentSlide() - 1;
     slider.goToPrevSlide();
 	});
 
-	$('.right').click(function() {
+	$(this).find('.right').click(function() {
     slider.goToNextSlide();
 	});
+  });
 }

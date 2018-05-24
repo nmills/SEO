@@ -7,7 +7,7 @@
             "label": "Image 1",
             "name": "image_1",
             "type": "image_crop",
-            "instructions": "We recommend using an image that is at least 150px wide and 150px tall.",
+            "instructions": "",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -31,7 +31,7 @@
             "label": "Image 2",
             "name": "image_2",
             "type": "image_crop",
-            "instructions": "We recommend using an image that is at least 150px wide and 150px tall.",
+            "instructions": "",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -121,5 +121,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1526016857
+    "modified": 1527117598
 }
