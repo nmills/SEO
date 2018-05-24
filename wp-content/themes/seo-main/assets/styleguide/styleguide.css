@@ -3929,14 +3929,11 @@ body {
         padding: 65px 0;
         max-width: 1060px;
         justify-content: center; } }
-    .c-ph-stats__container .c-ph-stats__content.single .old, .c-ph-stats__container .c-ph-stats__content.single .c-ph-stats-border__container {
+    .c-ph-stats__container .c-ph-stats__content.single .c-ph-stats-border__container {
       width: calc(100%);
       float: left;
       margin-left: 0; }
   .c-ph-stats__container .old {
-    width: calc(100%);
-    float: left;
-    margin-left: 0;
     margin-bottom: 50px; }
     @media only screen and (min-width: 768px) {
       .c-ph-stats__container .old {
