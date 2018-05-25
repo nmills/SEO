@@ -4438,6 +4438,8 @@ body {
       @media only screen and (min-width: 768px) {
         .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image {
           height: 650px; } }
+      .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image.c-carousel__image {
+        display: block !important; }
     .c-gh-hero__container .c-gh-hero__content .c-gh-hero__video {
       width: calc(100%);
       float: left;
