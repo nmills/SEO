@@ -12,7 +12,7 @@
 
   .c-gh-hero__content {
     position: relative;
-    
+
     &:before {
       content: "";
       position: absolute;
@@ -46,6 +46,11 @@
       @include grid-media($md) {
         height: 650px;
       }
+
+
+      &.c-carousel__image {
+        display: block !important;
+      }
     }
 
     .c-gh-hero__video {
@@ -58,6 +63,7 @@
       @include grid-media($md) {
         height: 650px;
       }
+
 
       video {
         width: 100%;
@@ -74,6 +80,7 @@
         position: relative;
         z-index: 1;
       }
+
 
       h1 {
         @include type-custom($color: $white, $font-weight: $font-thinnest, $font-size: 46px, $line-height: 1);
@@ -244,6 +251,7 @@
           }
         }
 
+
         @include grid-media($lg) {
           width: calc(25% - 6px);
           margin-right: 8px;
@@ -288,7 +296,7 @@
           bottom: 0;
           left: 0;
           background-image: linear-gradient(to left, #ffffff00, $prog-list-gradient);
-          transition: all 0.3s $cubic-transition-2;       
+          transition: all 0.3s $cubic-transition-2;
         }
 
         &:hover {
