@@ -488,7 +488,7 @@
         }
 
         @include grid-media($md) {
-          width: 500px;
+          width: 440px;
         }
       }
     }
@@ -590,10 +590,11 @@
     }
 
     .c-rationmeter-text {
-      width: calc(50%);
+      width: 50%;
       float: left;
-      margin-left: -30px;      
+      margin-left: -20px;      
       margin-top: 60px;
+      padding-top: 110px;
       position: relative;
 
       @include grid-media($sm) {
@@ -601,19 +602,23 @@
       }
 
       @include grid-media($md) {
-        width: calc(35%);
+        width: 100%;
         float: left;
         margin-left: -20px;
       }
 
       @include grid-media($xl) {
-        width: calc(25%);
         float: left;
       }
 
       h1 {
         margin: 0;
-        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        text-align: center;        
 
         @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 45px, $line-height: 1);
 
@@ -629,12 +634,18 @@
 
       p {
         margin: 0;
+        padding: 0 10px;
         text-align: center;
+
+        @include grid-media($sm) {
+          padding: 0 25px;
+        }
         
         @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 20px, $line-height: 1);
 
         @include grid-media($md) {
           @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+          padding: 0 15px;
         }
       }
     }
