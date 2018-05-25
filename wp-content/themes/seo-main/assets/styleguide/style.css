@@ -2948,16 +2948,18 @@ Gallery
     float: left;
     margin-left: -20px;
     margin-top: 60px;
-    padding-top: 110px;
+    padding-top: 45px;
     position: relative; }
     @media only screen and (min-width: 480px) {
       .program-landing-page .old .c-rationmeter-text {
-        left: -15px; } }
+        left: -15px;
+        padding-top: 70px; } }
     @media only screen and (min-width: 768px) {
       .program-landing-page .old .c-rationmeter-text {
         width: 100%;
         float: left;
-        margin-left: -20px; } }
+        margin-left: -20px;
+        padding-top: 110px; } }
     @media only screen and (min-width: 1440px) {
       .program-landing-page .old .c-rationmeter-text {
         float: left; } }
