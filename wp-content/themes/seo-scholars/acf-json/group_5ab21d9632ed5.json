@@ -113,44 +113,6 @@
             "new_lines": ""
         },
         {
-            "key": "field_5b07dd47e504f",
-            "label": "Image Carousel",
-            "name": "image_carousel",
-            "type": "gallery",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5b07dce4e504e",
-                        "operator": "==",
-                        "value": "image_video"
-                    },
-                    {
-                        "field": "field_5b07dce4e504e",
-                        "operator": "==",
-                        "value": "carousel"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "min": "",
-            "max": "",
-            "insert": "append",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
             "key": "field_5b07dd81c0b50",
             "label": "Carousel",
             "name": "carousel",
@@ -240,5 +202,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527245697
+    "modified": 1527246820
 }
