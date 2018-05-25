@@ -364,8 +364,6 @@
       }
 
       @include grid-media($md) {
-        // width: calc(75%);
-        width: 430px;
         float: left;
         margin: 0 auto;
         float: none;

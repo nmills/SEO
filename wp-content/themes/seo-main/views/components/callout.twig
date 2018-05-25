@@ -1,8 +1,10 @@
 <section class="c-gh-callout">
   <div class="container">
-    <div class="c-gh-callout__img">
-      <img src="{{ component.callout_image.url }}" />
-    </div>
+    {% if component.callout_image.url %}
+      <div class="c-gh-callout__img">
+        <img src="{{ component.callout_image.url }}" />
+      </div>
+    {% endif %}
 
     <div class="c-gh-callout__content">
       <div class="c-gh-callout__text">
