@@ -12,8 +12,9 @@
           </div>
         {% else %}
           
-              <div class="c-gh-hero__image item" style="background-image: url({{Image(component.image).src}})">
-              </div>
+        <div class="c-gh-hero__image item" style="background-image: url({{Image(component.image).src}})"></div>
+
+        <div class="c-gh-hero__image c-mobile-hero__image" style="background-image: url({{Image(component.image).src }})"></div>
 
         {% endif %}
 
@@ -27,16 +28,13 @@
         <div class="owl-carousel owl-theme">
         {% for item in component.carousel %}
             <div class="item">
-              <div class="c-gh-hero__image item" style="background-image: url({{item.carousel_image.url}})">
+              <div class="c-gh-hero__image c-carousel__image" style="background-image: url({{item.carousel_image.url}})">
               </div>
               <div class="c-gh-hero__text"><h1>{{item.carousel_text}}</h1></div>
             </div>
         {% endfor %}
         </div>
 
-      <div class="c-gh-hero__image c-mobile-hero__image" style="background-image: url({{Image(component.image).src }})">
-      </div>
-            
       {% endif %}
     </div>
   </div>
