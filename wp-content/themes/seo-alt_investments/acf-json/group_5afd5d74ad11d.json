@@ -7,7 +7,7 @@
             "label": "Image",
             "name": "callout_image",
             "type": "image_crop",
-            "instructions": "We recommend using an image that is 500px wide and 500px tall.",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -82,5 +82,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1526556320
+    "modified": 1527241555
 }

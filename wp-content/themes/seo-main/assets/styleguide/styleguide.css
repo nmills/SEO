@@ -2858,7 +2858,7 @@ Gallery
           width: 360px; } }
       @media only screen and (min-width: 768px) {
         .program-landing-page .old .c-ratiometer .c-rationmeter-positioner {
-          width: 500px; } }
+          width: 440px; } }
   .program-landing-page .old .c-ratiometer-meter_out {
     width: 155px;
     height: 155px;
@@ -2944,24 +2944,31 @@ Gallery
         font-size: 110px;
         line-height: 1; } }
   .program-landing-page .old .c-rationmeter-text {
-    width: calc(50%);
+    width: 50%;
     float: left;
-    margin-left: -30px;
+    margin-left: -20px;
     margin-top: 60px;
+    padding-top: 45px;
     position: relative; }
     @media only screen and (min-width: 480px) {
       .program-landing-page .old .c-rationmeter-text {
-        left: -15px; } }
+        left: -15px;
+        padding-top: 70px; } }
     @media only screen and (min-width: 768px) {
       .program-landing-page .old .c-rationmeter-text {
-        width: calc(35%);
+        width: 100%;
         float: left;
-        margin-left: -20px; } }
+        margin-left: -20px;
+        padding-top: 110px; } }
     @media only screen and (min-width: 1440px) {
       .program-landing-page .old .c-rationmeter-text {
-        width: calc(25%);
         float: left; } }
     .program-landing-page .old .c-rationmeter-text h1 {
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
       margin: 0;
       text-align: center;
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -2985,19 +2992,24 @@ Gallery
           line-height: 1; } }
     .program-landing-page .old .c-rationmeter-text p {
       margin: 0;
+      padding: 0 10px;
       text-align: center;
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
       color: #050505;
       font-weight: 100;
       font-size: 20px;
       line-height: 1; }
+      @media only screen and (min-width: 480px) {
+        .program-landing-page .old .c-rationmeter-text p {
+          padding: 0 25px; } }
       @media only screen and (min-width: 768px) {
         .program-landing-page .old .c-rationmeter-text p {
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
           color: #050505;
           font-weight: 100;
           font-size: 30px;
-          line-height: 1; } }
+          line-height: 1;
+          padding: 0 15px; } }
 
 body {
   counter-reset: section; }
@@ -3912,10 +3924,9 @@ body {
         color: #7cb4f6; }
 
 .c-ph-stats__container {
-  width: calc(100%);
-  float: left;
-  margin-left: 0;
-  background: #e5e7e7; }
+  display: block;
+  background: #e5e7e7;
+  text-align: center; }
   .c-ph-stats__container .c-ph-stats__content {
     width: calc(100%);
     margin: 0 auto;
@@ -3924,182 +3935,190 @@ body {
     @media only screen and (min-width: 1024px) {
       .c-ph-stats__container .c-ph-stats__content {
         position: relative;
-        width: calc(80%);
-        display: flex;
         padding: 65px 0;
-        max-width: 1060px;
-        justify-content: center; } }
-    .c-ph-stats__container .c-ph-stats__content.single .c-ph-stats-border__container {
-      width: calc(100%);
-      float: left;
-      margin-left: 0; }
-  .c-ph-stats__container .old {
-    margin-bottom: 50px; }
-    @media only screen and (min-width: 768px) {
-      .c-ph-stats__container .old {
-        margin-bottom: 0; }
-        .c-ph-stats__container .old:nth-child(2n) {
-          padding-left: 85px; } }
-    @media only screen and (min-width: 1024px) {
-      .c-ph-stats__container .old {
-        width: calc(50%);
+        max-width: 1060px; }
+        .c-ph-stats__container .c-ph-stats__content > div:last-child {
+          float: right; } }
+    .c-ph-stats__container .c-ph-stats__content.single {
+      display: flex;
+      justify-content: center; }
+      .c-ph-stats__container .c-ph-stats__content.single .c-ph-stats-border__container {
+        width: calc(100%);
         float: left;
-        margin-left: 0; } }
-    .c-ph-stats__container .old .c-ratiometer_container {
-      padding: 5% 0; }
-    .c-ph-stats__container .old .c-ratiometer {
-      width: calc(100%);
-      float: left;
-      position: relative;
-      margin: 0 auto;
-      float: none; }
-      @media only screen and (min-width: 480px) {
-        .c-ph-stats__container .old .c-ratiometer {
-          width: calc(80%);
-          float: left;
-          margin: 0 auto;
-          float: none; } }
-      @media only screen and (min-width: 768px) {
-        .c-ph-stats__container .old .c-ratiometer {
-          width: 430px;
-          float: left;
-          margin: 0 auto;
-          float: none; } }
-      @media only screen and (min-width: 1024px) {
-        .c-ph-stats__container .old .c-ratiometer {
-          margin-left: 0; } }
-      @media only screen and (min-width: 1440px) {
-        .c-ph-stats__container .old .c-ratiometer {
-          width: calc(50%);
-          float: left;
-          margin: 0 auto;
-          float: none;
-          margin-left: 0; } }
-      .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
-        width: 250px;
-        display: flex;
-        margin: 0 auto; }
-        @media only screen and (min-width: 480px) {
-          .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
-            width: 360px; } }
-        @media only screen and (min-width: 768px) {
-          .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
-            width: 440px; } }
-    .c-ph-stats__container .old .c-ratiometer-meter_out {
-      width: 155px;
-      height: 155px;
-      border-radius: 100%;
-      padding: 13px; }
-      @media only screen and (min-width: 480px) {
-        .c-ph-stats__container .old .c-ratiometer-meter_out {
-          width: 202px;
-          height: 201px; } }
-      @media only screen and (min-width: 768px) {
-        .c-ph-stats__container .old .c-ratiometer-meter_out {
-          width: 258px;
-          height: 258px; } }
-    .c-ph-stats__container .old .c-rationmeter-meter {
-      width: 142px;
-      height: 142px;
-      background: #ffffff;
-      border-radius: 100%;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      border: 8px solid #e5e7e7; }
-      @media only screen and (min-width: 480px) {
-        .c-ph-stats__container .old .c-rationmeter-meter {
-          width: 186px;
-          height: 186px; } }
-      @media only screen and (min-width: 768px) {
-        .c-ph-stats__container .old .c-rationmeter-meter {
-          width: 238px;
-          height: 238px;
-          border: 13px solid #e5e7e7; } }
-    .c-ph-stats__container .old .c-rationmeter-text {
-      width: 50%;
-      float: left;
-      margin-left: -30px;
-      margin-top: 60px;
-      padding-top: 45px; }
-      @media only screen and (min-width: 480px) {
-        .c-ph-stats__container .old .c-rationmeter-text {
-          margin-top: 50px;
-          left: -15px;
-          padding-top: 70px; } }
-      @media only screen and (min-width: 768px) {
-        .c-ph-stats__container .old .c-rationmeter-text {
-          width: 100%;
-          max-width: 225px;
-          float: left;
-          margin-left: -20px;
-          padding-top: 110px; } }
-      .c-ph-stats__container .old .c-rationmeter-text h1 {
-        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-        color: #050505;
-        font-weight: 700;
-        font-size: 45px;
-        line-height: 1;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: 0;
-        text-align: center; }
-        @media only screen and (min-width: 480px) {
-          .c-ph-stats__container .old .c-rationmeter-text h1 {
-            font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-            color: #050505;
-            font-weight: 700;
-            font-size: 70px;
-            line-height: 1; } }
-        @media only screen and (min-width: 768px) {
-          .c-ph-stats__container .old .c-rationmeter-text h1 {
-            font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-            color: #050505;
-            font-weight: 700;
-            font-size: 110px;
-            line-height: 1; } }
-      .c-ph-stats__container .old .c-rationmeter-text p {
-        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-        color: #050505;
-        font-weight: 100;
-        font-size: 20px;
-        line-height: 1;
-        margin: 0;
-        text-align: center; }
-        @media only screen and (min-width: 768px) {
-          .c-ph-stats__container .old .c-rationmeter-text p {
-            font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-            color: #050505;
-            font-weight: 100;
-            font-size: 30px;
-            line-height: 1; } }
-  .c-ph-stats__container .c-ph-stats-border__container {
-    position: relative;
-    margin: 40px 0;
+        margin-left: 0; }
+        .c-ph-stats__container .c-ph-stats__content.single .c-ph-stats-border__container h1 {
+          margin-top: 0; }
+  @media only screen and (min-width: 768px) {
+    .c-ph-stats__container .old {
+      margin-bottom: 0; }
+      .c-ph-stats__container .old:nth-child(2n) {
+        float: right; } }
+  @media only screen and (min-width: 1024px) {
+    .c-ph-stats__container .old {
+      width: auto; } }
+  .c-ph-stats__container .old .c-ratiometer_container {
+    padding: 5% 0; }
+  .c-ph-stats__container .old .c-ratiometer {
     width: calc(100%);
     float: left;
-    margin-left: 0; }
+    position: relative;
+    margin: 0 auto;
+    float: none; }
+    @media only screen and (min-width: 480px) {
+      .c-ph-stats__container .old .c-ratiometer {
+        width: calc(80%);
+        float: left;
+        margin: 0 auto;
+        float: none; } }
+    @media only screen and (min-width: 768px) {
+      .c-ph-stats__container .old .c-ratiometer {
+        float: left;
+        margin: 0 auto;
+        float: none; } }
+    @media only screen and (min-width: 1024px) {
+      .c-ph-stats__container .old .c-ratiometer {
+        margin-left: 0; } }
+    @media only screen and (min-width: 1440px) {
+      .c-ph-stats__container .old .c-ratiometer {
+        width: calc(50%);
+        float: left;
+        margin: 0 auto;
+        float: none;
+        margin-left: 0; } }
+    .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
+      width: 250px;
+      display: flex;
+      margin: 0 auto; }
+      @media only screen and (min-width: 480px) {
+        .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
+          width: 360px; } }
+      @media only screen and (min-width: 768px) {
+        .c-ph-stats__container .old .c-ratiometer .c-rationmeter-positioner {
+          width: 440px; } }
+  .c-ph-stats__container .old .c-ratiometer-meter_out {
+    width: 155px;
+    height: 155px;
+    border-radius: 100%;
+    padding: 13px; }
+    @media only screen and (min-width: 480px) {
+      .c-ph-stats__container .old .c-ratiometer-meter_out {
+        width: 202px;
+        height: 201px; } }
+    @media only screen and (min-width: 768px) {
+      .c-ph-stats__container .old .c-ratiometer-meter_out {
+        width: 258px;
+        height: 258px; } }
+  .c-ph-stats__container .old .c-rationmeter-meter {
+    width: 142px;
+    height: 142px;
+    background: #ffffff;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 8px solid #e5e7e7; }
+    @media only screen and (min-width: 480px) {
+      .c-ph-stats__container .old .c-rationmeter-meter {
+        width: 186px;
+        height: 186px; } }
+    @media only screen and (min-width: 768px) {
+      .c-ph-stats__container .old .c-rationmeter-meter {
+        width: 238px;
+        height: 238px;
+        border: 13px solid #e5e7e7; } }
+  .c-ph-stats__container .old .c-rationmeter-text {
+    width: 50%;
+    float: left;
+    margin-left: -30px;
+    margin-top: 40px;
+    padding-top: 45px; }
+    @media only screen and (min-width: 480px) {
+      .c-ph-stats__container .old .c-rationmeter-text {
+        margin-top: 50px;
+        left: -15px;
+        padding-top: 70px; } }
+    @media only screen and (min-width: 768px) {
+      .c-ph-stats__container .old .c-rationmeter-text {
+        width: 100%;
+        max-width: 225px;
+        float: left;
+        margin-left: -20px;
+        padding-top: 110px; } }
+    .c-ph-stats__container .old .c-rationmeter-text h1 {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      text-align: center; }
+      @media only screen and (min-width: 480px) {
+        .c-ph-stats__container .old .c-rationmeter-text h1 {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 700;
+          font-size: 70px;
+          line-height: 1; } }
+      @media only screen and (min-width: 768px) {
+        .c-ph-stats__container .old .c-rationmeter-text h1 {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 700;
+          font-size: 110px;
+          line-height: 1; } }
+    .c-ph-stats__container .old .c-rationmeter-text p {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 100;
+      font-size: 20px;
+      line-height: 1;
+      padding: 0 10px;
+      margin: 0;
+      text-align: center; }
+      @media only screen and (min-width: 480px) {
+        .c-ph-stats__container .old .c-rationmeter-text p {
+          padding: 0 25px; } }
+      @media only screen and (min-width: 768px) {
+        .c-ph-stats__container .old .c-rationmeter-text p {
+          font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+          color: #050505;
+          font-weight: 100;
+          font-size: 30px;
+          line-height: 1;
+          padding: 0 15px; } }
+  .c-ph-stats__container .c-ph-stats-border__container {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    position: relative;
+    padding-bottom: 50px; }
     @media only screen and (min-width: 768px) {
       .c-ph-stats__container .c-ph-stats-border__container {
-        min-height: 480px;
-        margin: 0; } }
+        margin-bottom: 40px;
+        padding-bottom: 70px; } }
     @media only screen and (min-width: 1024px) {
       .c-ph-stats__container .c-ph-stats-border__container {
         width: calc(50%);
         float: left;
         margin-left: 0;
-        float: right; } }
+        margin-bottom: 0;
+        max-width: 400px; } }
     .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details {
       width: 160px;
-      margin: auto;
       text-align: center;
       height: auto;
+      margin: 0 auto;
       position: relative; }
       @media only screen and (min-width: 768px) {
         .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details {
           width: 320px; } }
+      @media only screen and (min-width: 1024px) {
+        .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details {
+          margin: 0; } }
       .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details h1 {
         margin: 0;
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -4113,7 +4132,9 @@ body {
             color: #050505;
             font-weight: 700;
             font-size: 110px;
-            line-height: 1;
+            line-height: 1; } }
+        @media only screen and (min-width: 1024px) {
+          .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details h1 {
             margin-top: 76px; } }
       .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details p {
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -4179,7 +4200,7 @@ body {
       bottom: 0;
       top: 65px;
       fill: #ffffff;
-      height: calc(100% - 40px);
+      height: calc(100% - 25px);
       right: -52px;
       max-width: 120px;
       position: absolute;
