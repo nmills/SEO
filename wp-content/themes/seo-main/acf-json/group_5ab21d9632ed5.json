@@ -135,7 +135,7 @@
             },
             "collapsed": "",
             "min": 0,
-            "max": 0,
+            "max": 5,
             "layout": "table",
             "button_label": "",
             "sub_fields": [
@@ -145,7 +145,7 @@
                     "name": "carousel_image",
                     "type": "image",
                     "instructions": "",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -168,8 +168,8 @@
                     "label": "Carousel Text",
                     "name": "carousel_text",
                     "type": "text",
-                    "instructions": "",
-                    "required": 0,
+                    "instructions": "The character limit is 60",
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -180,7 +180,7 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": 60
                 }
             ]
         }
@@ -202,5 +202,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527246820
+    "modified": 1527669969
 }
