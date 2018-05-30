@@ -1,26 +1,41 @@
 <section class="c-gh-hero__container">
   <div class="container">
     <div class="c-gh-hero__content">
-      {% if component.video %}
-        <div class="c-gh-hero__video c-desktop__video">
-          <video loop muted autoplay class="video-player">
-            <source src="{{component.video.url}}" type="video/mp4">
-          </video>
+
+      {% if component.media_selection == 'image_video' %}
+
+        {% if component.video %}
+          <div class="c-gh-hero__video c-desktop__video">
+            <video loop muted autoplay class="video-player">
+              <source src="{{component.video.url}}" type="video/mp4">
+            </video>
+          </div>
+        {% else %}
+          
+        <div class="c-gh-hero__image item" style="background-image: url({{Image(component.image).src}})"></div>
+
+        <div class="c-gh-hero__image c-mobile-hero__image" style="background-image: url({{Image(component.image).src }})"></div>
+
+        {% endif %}
+
+        <div class="c-gh-hero__image c-mobile-hero__image" style="background-image: url({{Image(component.image).src }})">
         </div>
+
+        <div class="c-gh-hero__text"><h1>{{component.hero_text}}</h1></div>
+      
       {% else %}
-        
+
         <div class="owl-carousel owl-theme">
-          {% for image in component.image %}
-            <div class="c-gh-hero__image item" style="background-image: url({{image.url}})">
+        {% for item in component.carousel %}
+            <div class="item">
+              <div class="c-gh-hero__image c-carousel__image" style="background-image: url({{item.carousel_image.url}})">
+              </div>
+              <div class="c-gh-hero__text"><h1>{{item.carousel_text}}</h1></div>
             </div>
-          {% endfor %}
+        {% endfor %}
         </div>
+
       {% endif %}
-
-      <div class="c-gh-hero__image c-mobile-hero__image" style="background-image: url({{Image(component.image).src }})">
-      </div>
-
-      <div class="c-gh-hero__text"><h1>{{component.hero_text}}</h1></div>
     </div>
   </div>
 </section>
