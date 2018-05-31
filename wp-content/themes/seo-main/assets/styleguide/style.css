@@ -6604,9 +6604,9 @@ header {
     @media only screen and (min-width: 840px) {
       .c-nav__nav--left ul > li {
         width: auto; } }
-    .c-nav__nav--left ul > li.has-submenu > a {
+    .c-nav__nav--left ul > li > a {
       position: relative; }
-      .c-nav__nav--left ul > li.has-submenu > a:before {
+      .c-nav__nav--left ul > li > a:before {
         content: '';
         position: absolute;
         top: 16px;
@@ -6618,13 +6618,13 @@ header {
         transform: rotate(0);
         transition: all 0.5s cubic-bezier(0, 0, 0.2, 1); }
         @media only screen and (min-width: 840px) {
-          .c-nav__nav--left ul > li.has-submenu > a:before {
+          .c-nav__nav--left ul > li > a:before {
             display: none; } }
-      .c-nav__nav--left ul > li.has-submenu > a.active-parent {
+      .c-nav__nav--left ul > li > a.active-parent {
         position: relative; }
-        .c-nav__nav--left ul > li.has-submenu > a.active-parent:before {
+        .c-nav__nav--left ul > li > a.active-parent:before {
           content: none; }
-        .c-nav__nav--left ul > li.has-submenu > a.active-parent:after {
+        .c-nav__nav--left ul > li > a.active-parent:after {
           content: '';
           position: absolute;
           top: 16px;
@@ -6636,18 +6636,18 @@ header {
           transform: rotate(90deg);
           transition: all 0.5s cubic-bezier(0, 0, 0.2, 1); }
           @media only screen and (min-width: 840px) {
-            .c-nav__nav--left ul > li.has-submenu > a.active-parent:after {
+            .c-nav__nav--left ul > li > a.active-parent:after {
               display: none; } }
         @media only screen and (min-width: 840px) {
-          .c-nav__nav--left ul > li.has-submenu > a.active-parent {
+          .c-nav__nav--left ul > li > a.active-parent {
             background: #ffffff;
             color: #eb0029;
             border-left: 2px solid #ffffff;
             border-right: 2px solid #ffffff; } }
-    .c-nav__nav--left ul > li.has-submenu.active > a:before {
+    .c-nav__nav--left ul > li.active > a:before {
       transform: rotate(90deg); }
     @media only screen and (min-width: 840px) {
-      .c-nav__nav--left ul > li.has-submenu > a {
+      .c-nav__nav--left ul > li > a {
         background: none; } }
     .c-nav__nav--left ul > li > a {
       position: relative;
