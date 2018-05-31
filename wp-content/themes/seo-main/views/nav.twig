@@ -56,7 +56,7 @@
               {% endif %}
             {% endfor %}
             {# If menu has the Submenu then add the class has-submenu #}
-            <li class=" {% if main_menu_item.children %} has-submenu {% endif %}">
+            <li class="{% if main_menu_item.children %}has-submenu{% endif %}">
               {# Add class active parent class when
                 1. Current page is equal to the header menu link
                 2. Current page is one of the submenu page
@@ -67,15 +67,15 @@
                 childlinkactive or
                 main_menu_item.get_link in current_page_url %}active-parent{% endif %}">{{main_menu_item.title}}
               </a>
-              
               {# Show the sub menu Only for the following Conditions
-                1. Current page is equal to the header menu link
-                2. Current page is one of the submenu page
+                a. Parent Menu must have a Child menu and 
+                1. Current page is equal to the header menu link or
+                2. Current page is one of the submenu page or
                 3. Current page is one of the ancestors of the submenu page
                #}
-              {% if main_menu_item.current or
+              {% if main_menu_item.children and (main_menu_item.current or
                 childlinkactive or
-                main_menu_item.get_link in current_page_url
+                main_menu_item.get_link in current_page_url)
               %}
                 <ul class="main-nav-dropdown">
                   <div class="child-menu">
