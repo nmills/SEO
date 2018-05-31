@@ -49,6 +49,12 @@
       <div class="c-nav__nav--left">
         <ul>
           {% for main_menu_item in main_menu_left.items %}
+            {% set childlinkactive = false %}
+            {% for child in main_menu_item.get_children %}
+              {% if child.get_link in current_page_url %}
+                {% set childlinkactive = true %}
+              {% endif %}
+            {% endfor %}
             {# If menu has the Submenu then add the class has-submenu #}
             <li class=" {% if main_menu_item.children %} has-submenu {% endif %}">
               {# Add class active parent class when
@@ -58,7 +64,7 @@
                #}
               <a href="{{main_menu_item.get_link}}"
                 class="{% if main_menu_item.current or
-                main_menu_item.current_item_ancestor or
+                childlinkactive or
                 main_menu_item.get_link in current_page_url %}active-parent{% endif %}">{{main_menu_item.title}}
               </a>
               
@@ -68,7 +74,7 @@
                 3. Current page is one of the ancestors of the submenu page
                #}
               {% if main_menu_item.current or
-                main_menu_item.current_item_ancestor or
+                childlinkactive or
                 main_menu_item.get_link in current_page_url
               %}
                 <ul class="main-nav-dropdown">
