@@ -238,22 +238,46 @@ header {
       }
 
 
-      &.has-submenu {
-        // position: relative;
+      // &.has-submenu {
+      // position: relative;
 
-        // &:after {
-        //   content: "";
-        //   position: absolute;
-        //   border-bottom: 2px solid black;
-        //   right: 0;
-        //   bottom: 0;
-        //   width: 15px;
-        // }
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   border-bottom: 2px solid black;
+      //   right: 0;
+      //   bottom: 0;
+      //   width: 15px;
+      // }
 
-        > a {
+      > a {
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 16px;
+          right: 0;
+          width: 14px;
+          height: 14px;
+          background: url("/wp-content/themes/seo-main/assets/img/icons/carat-nav-arrow-right--white.svg") center center no-repeat;
+          background-size: contain;
+          transform: rotate(0);
+          transition: all 0.5s $cubic-transition-2;
+
+          @include grid-media($hd) {
+            display: none;
+          }
+        }
+
+        &.active-parent {
           position: relative;
 
           &:before {
+            content: none;
+          }
+
+          &:after {
             content: '';
             position: absolute;
             top: 16px;
@@ -262,7 +286,7 @@ header {
             height: 14px;
             background: url("/wp-content/themes/seo-main/assets/img/icons/carat-nav-arrow-right--white.svg") center center no-repeat;
             background-size: contain;
-            transform: rotate(0);
+            transform: rotate(90deg);
             transition: all 0.5s $cubic-transition-2;
 
             @include grid-media($hd) {
@@ -270,57 +294,35 @@ header {
             }
           }
 
-          &.active-parent {
-            position: relative;
-
-            &:before {
-              content: none;
-            }
-
-            &:after {
-              content: '';
-              position: absolute;
-              top: 16px;
-              right: 0;
-              width: 14px;
-              height: 14px;
-              background: url("/wp-content/themes/seo-main/assets/img/icons/carat-nav-arrow-right--white.svg") center center no-repeat;
-              background-size: contain;
-              transform: rotate(90deg);
-              transition: all 0.5s $cubic-transition-2;
-
-              @include grid-media($hd) {
-                display: none;
-              }
-            }
-
-            @include grid-media($hd) {
-              background: $white;
-              color: $red;
-              border-left: 2px solid $white;
-              border-right: 2px solid $white;
-            }
+          @include grid-media($hd) {
+            background: $white;
+            color: $red;
+            border-left: 2px solid $white;
+            border-right: 2px solid $white;
           }
-        }
-
-        &.active {
-          > a {
-            &:before {
-              transform: rotate(90deg);
-            }
-          }
-        }
-
-        @include grid-media($hd) {
-          > a {
-            background: none;
-          }
-
-          // .main-nav-dropdown {
-          //   display: none !important;
-          // }
         }
       }
+
+      &.active {
+        > a {
+          &:before {
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      @include grid-media($hd) {
+        > a {
+          background: none;
+        }
+
+        // .main-nav-dropdown {
+        //   display: none !important;
+        // }
+      }
+
+
+      // }
 
       > a {
         position: relative;
