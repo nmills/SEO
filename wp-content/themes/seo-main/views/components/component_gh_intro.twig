@@ -3,13 +3,15 @@
     <div class="c-gh-intro__container">
       <div class="c-gh-intro__content">
         <p>{{component.intro_text}}</p>
-        <a href="{{component.button.url}}" class="c-uie__calltoaction">
-        	{% if component.button.title %}
-	        	{{component.button.title}}
-        	{% else %}
-					  {{component.button.url}}
-        	{% endif %}
-        </a>
+        {% if component.button %}
+          <a href="{{component.button.url}}" class="c-uie__calltoaction">
+          	{% if component.button.title %}
+  	        	{{component.button.title}}
+          	{% else %}
+  					  {{component.button.url}}
+          	{% endif %}
+          </a>
+        {% endif %}
       </div>
     </div>
   </div>
