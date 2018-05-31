@@ -45,63 +45,53 @@
   </div>
   <div class="c-nav--bottom">
     <div class="c-nav--bottom__container">
-
-      {# Operation RED #}
+      {# Amalan New Set of Implementation for the menu Strcuture #}
       <div class="c-nav__nav--left">
         <ul>
-          {% for main_menu_item in main_menu_left.items %} 
-
-              {% if main_menu_item.current %} 
-                {% set mainlinkactive = true %}
-              {% else %}
-                {% set mainlinkactive = false %} 
-              {% endif %}
-
-              {# This is to make sure that particular page's parent exsist in the menu then to make that also active #}
-              {% if main_menu_item.get_link|replace({'https': '', 'http': '' , '://':'' , '/':''}) == parent_url|replace({'https': '', 'http': '' , '://':'' , '/':''}) %} 
-                {% set mainparentactive = true %}
-              {% else %}
-                {% set mainparentactive = false %} 
-              {% endif %}
+          {% for main_menu_item in main_menu_left.items %}
+            {# If menu has the Submenu then add the class has-submenu #}
+            <li class=" {% if main_menu_item.children %} has-submenu {% endif %}">
+              {# Add class active parent class when
+                1. Current page is equal to the header menu link
+                2. Current page is one of the submenu page
+                3. Current page is one of the ancestors of the submenu page
+               #}
+              <a href="{{main_menu_item.get_link}}"
+                class="{% if main_menu_item.current or
+                main_menu_item.current_item_ancestor or
+                main_menu_item.get_link in current_page_url %}active-parent{% endif %}">{{main_menu_item.title}}
+              </a>
               
-              {% set childlinkactive = false %}
-              {% set childparentactive = false %}
-              {% for child in main_menu_item.get_children %}
-                {% if child.current %} 
-                  {% set childlinkactive = true %}
-                {% endif %}
-              
-                {% if child.get_link|replace({'https': '', 'http': '' , '://':'' , '/':''}) == parent_url|replace({'https': '', 'http': '' , '://':'' , '/':''}) %} 
-                  {% set childparentactive = true %}
-                {% endif %}
-              {% endfor %}
-
-            <li class=" {% if main_menu_item.children %} has-submenu {% endif %}"> 
-
-              <a href="{{main_menu_item.get_link}}" class="{% if (mainlinkactive or childlinkactive or mainparentactive or childparentactive) %} active-parent {% endif %}">{{main_menu_item.title}}</a> 
-              {% if main_menu_item.children and (mainlinkactive or childlinkactive or mainparentactive or childparentactive) %}
+              {# Show the sub menu Only for the following Conditions
+                1. Current page is equal to the header menu link
+                2. Current page is one of the submenu page
+                3. Current page is one of the ancestors of the submenu page
+               #}
+              {% if main_menu_item.current or
+                main_menu_item.current_item_ancestor or
+                main_menu_item.get_link in current_page_url
+              %}
                 <ul class="main-nav-dropdown">
                   <div class="child-menu">
                     {% for child in main_menu_item.get_children %}
-
-                    {% set childparentactive = false %}
-                    {% if child.get_link|replace({'https': '', 'http': '' , '://':'' , '/':''}) == parent_url|replace({'https': '', 'http': '' , '://':'' , '/':''}) %} 
-                      {% set childparentactive = true %}
-                    {% endif %}
                       <li>
-                        <a {% if child.current or childparentactive %}class="active-child"{% endif %}href="{{child.get_link}}">{{child.title}}</a>
+                        {# Add Active child class only if the following conditions are met
+                          1. Current page is the submenu page
+                          2. Current page is one of the ancestors of the submenu page #}
+                        <a href="{{child.get_link}}"
+                        class="{% if child.current or
+                        child.get_link in current_page_url %}active-child{% endif %}">{{child.title}}
+                        </a>
                       </li>
                     {% endfor %}
                   </div>
                 </ul>
               {% endif %}
             </li>
-
           {% endfor %}
         </ul>
       </div>
-      {# End of Operation #}
-
+      {# End of the update for the menu #}
       <div class="c-nav__nav--right">
         <ul>
           {% for main_menu_right_item in main_menu_right.get_items %} 
