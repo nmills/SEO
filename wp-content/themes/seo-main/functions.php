@@ -86,6 +86,8 @@ class BSDStarterSite extends TimberSite {
     $current_post_parent_id = wp_get_post_parent_id($current_post_ID);
     $context['parent_url'] = get_permalink($current_post_parent_id);
 
+    $context['current_page_url'] = get_permalink();
+
     // Adding GA Tags
     $current_site_id = get_current_site();
     $context['GA_tag'] = GA_tag(get_current_blog_id());
