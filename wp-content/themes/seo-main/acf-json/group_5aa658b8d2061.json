@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5aa658b917cc3",
-            "label": "repeater",
+            "label": "Repeater",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -42,7 +42,7 @@
             "sub_fields": [
                 {
                     "key": "field_5aa658b95111a",
-                    "label": "photo",
+                    "label": "Image",
                     "name": "photo",
                     "type": "image_crop",
                     "instructions": "",
@@ -66,7 +66,7 @@
                 },
                 {
                     "key": "field_5aa658b95131d",
-                    "label": "heading",
+                    "label": "Header",
                     "name": "heading",
                     "type": "text",
                     "instructions": "",
@@ -85,7 +85,7 @@
                 },
                 {
                     "key": "field_5aa658b951502",
-                    "label": "subheading",
+                    "label": "Subheading",
                     "name": "subheading",
                     "type": "text",
                     "instructions": "",
@@ -104,7 +104,7 @@
                 },
                 {
                     "key": "field_5aa658b95171c",
-                    "label": "destination link",
+                    "label": "Destination URL",
                     "name": "destination_link",
                     "type": "url",
                     "instructions": "include http or https in the URL",
@@ -138,5 +138,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527117394
+    "modified": 1527844711
 }

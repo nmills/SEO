@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5aa658d8db85d",
-            "label": "repeater",
+            "label": "Repeater",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -42,7 +42,7 @@
             "sub_fields": [
                 {
                     "key": "field_5aa658d923430",
-                    "label": "photo",
+                    "label": "Image",
                     "name": "photo",
                     "type": "image_crop",
                     "instructions": "",
@@ -66,7 +66,7 @@
                 },
                 {
                     "key": "field_5ab8b14e26200",
-                    "label": "url",
+                    "label": "Destination URL",
                     "name": "url",
                     "type": "url",
                     "instructions": "include http or https in the URL",
@@ -100,5 +100,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527117386
+    "modified": 1527844733
 }

@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ae167ca1caca",
-            "label": "repeater",
+            "label": "Repeater",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -23,7 +23,7 @@
             "sub_fields": [
                 {
                     "key": "field_5ae167ca69f4d",
-                    "label": "photo",
+                    "label": "Image",
                     "name": "photo",
                     "type": "image_crop",
                     "instructions": "",
@@ -47,7 +47,7 @@
                 },
                 {
                     "key": "field_5ae167ca6a31d",
-                    "label": "text",
+                    "label": "Text",
                     "name": "text",
                     "type": "text",
                     "instructions": "",
@@ -66,7 +66,7 @@
                 },
                 {
                     "key": "field_5ae167ca6aac4",
-                    "label": "destination link",
+                    "label": "Destination URL",
                     "name": "destination_link",
                     "type": "url",
                     "instructions": "",
@@ -100,5 +100,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527117747
+    "modified": 1527844996
 }
