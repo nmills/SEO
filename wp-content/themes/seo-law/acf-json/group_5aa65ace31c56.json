@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5aa65ad3c4eab",
-            "label": "flexi content",
+            "label": "Multi-content component",
             "name": "flexi_content",
             "type": "flexible_content",
             "instructions": "",
@@ -227,5 +227,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1526540211
+    "modified": 1527826841
 }

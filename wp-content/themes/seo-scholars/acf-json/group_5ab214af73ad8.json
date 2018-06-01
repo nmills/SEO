@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ab214c0fff0d",
-            "label": "repeater",
+            "label": "Repeater",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -232,5 +232,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527117656
+    "modified": 1527828049
 }

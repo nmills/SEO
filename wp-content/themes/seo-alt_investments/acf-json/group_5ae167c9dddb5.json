@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ae167ca1caca",
-            "label": "repeater",
+            "label": "Repeater,Image, Destination URL,Text",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -100,5 +100,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527117747
+    "modified": 1527828519
 }

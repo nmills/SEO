@@ -85,7 +85,7 @@
                 },
                 {
                     "key": "field_5acb044b05ca6",
-                    "label": "Url",
+                    "label": "Destination URL",
                     "name": "url",
                     "type": "url",
                     "instructions": "include http or https in the URL",
@@ -119,5 +119,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527117563
+    "modified": 1527827444
 }
