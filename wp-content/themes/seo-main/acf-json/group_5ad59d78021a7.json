@@ -42,7 +42,7 @@
         },
         {
             "key": "field_5ad59d782cc1e",
-            "label": "repeater",
+            "label": "Repeater, Image, Destination URL",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -134,5 +134,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527117726
+    "modified": 1527828489
 }

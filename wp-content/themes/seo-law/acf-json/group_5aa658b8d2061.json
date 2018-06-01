@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5aa658b917cc3",
-            "label": "repeater",
+            "label": "Repeater,Image, Destination URL,Header,Subheading",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -138,5 +138,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527117394
+    "modified": 1527827024
 }
