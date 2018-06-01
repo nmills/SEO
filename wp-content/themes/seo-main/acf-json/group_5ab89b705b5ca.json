@@ -20,25 +20,6 @@
             "prepend": "",
             "append": "",
             "maxlength": 140
-        },
-        {
-            "key": "field_5ac2149bd0fb4",
-            "label": "Button Label",
-            "name": "signup_button_label",
-            "type": "text",
-            "instructions": "The character limit is 20",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": 20
         }
     ],
     "location": [
@@ -58,5 +39,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1523165937
+    "modified": 1527826529
 }
