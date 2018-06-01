@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5aa65742db48d",
-            "label": "Repeater,Header,Subheading,Destination URL",
+            "label": "Repeater",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -42,7 +42,7 @@
             "sub_fields": [
                 {
                     "key": "field_5aa6574adb48e",
-                    "label": "heading",
+                    "label": "Header",
                     "name": "heading",
                     "type": "text",
                     "instructions": "",
@@ -61,7 +61,7 @@
                 },
                 {
                     "key": "field_5aa6575cdb48f",
-                    "label": "subheading",
+                    "label": "Subheading",
                     "name": "subheading",
                     "type": "text",
                     "instructions": "",
@@ -80,7 +80,7 @@
                 },
                 {
                     "key": "field_5aa65776db490",
-                    "label": "destination link",
+                    "label": "Destination URL",
                     "name": "destination_link",
                     "type": "url",
                     "instructions": "include http or https in the URL",
@@ -114,5 +114,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527826918
+    "modified": 1527844623
 }

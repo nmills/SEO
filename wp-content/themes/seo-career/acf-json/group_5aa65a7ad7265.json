@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5aa65a7b13bba",
-            "label": "Repeater,Image,Heading,Subheading,Body",
+            "label": "Repeater",
             "name": "repeater",
             "type": "repeater",
             "instructions": "",
@@ -42,7 +42,7 @@
             "sub_fields": [
                 {
                     "key": "field_5aa65a7b4050e",
-                    "label": "photo",
+                    "label": "Image",
                     "name": "photo",
                     "type": "image_crop",
                     "instructions": "",
@@ -66,7 +66,7 @@
                 },
                 {
                     "key": "field_5aa65a7b40712",
-                    "label": "heading",
+                    "label": "Heading",
                     "name": "heading",
                     "type": "text",
                     "instructions": "",
@@ -85,7 +85,7 @@
                 },
                 {
                     "key": "field_5aa65a7b40904",
-                    "label": "subheading",
+                    "label": "Subheading",
                     "name": "subheading",
                     "type": "text",
                     "instructions": "",
@@ -104,7 +104,7 @@
                 },
                 {
                     "key": "field_5aa65a9efacba",
-                    "label": "body",
+                    "label": "Body",
                     "name": "body",
                     "type": "wysiwyg",
                     "instructions": "",
@@ -141,5 +141,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527827106
+    "modified": 1527844773
 }
