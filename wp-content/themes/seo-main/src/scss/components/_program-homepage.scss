@@ -203,6 +203,7 @@
       height: 80px;
       margin-right: 8%;
       margin-bottom: 20px;
+      overflow: hidden;
 
       @include grid-media($max-sm) {
         &.even {
