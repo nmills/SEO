@@ -3857,7 +3857,8 @@ body {
       border: 2px solid #e5e7e7;
       height: 80px;
       margin-right: 8%;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      overflow: hidden; }
       @media only screen and (max-width: 479px) {
         .c-ph-gallery__container .c-ph-gallery__content .c-ph-gallery__gallery-item.even {
           margin-right: 0; } }
