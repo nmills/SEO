@@ -377,6 +377,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5b276ee9af055": {
+                    "key": "5b276ee9af055",
+                    "name": "component_pl_gallery_carousel",
+                    "label": "Gallery with carousel option",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b276ee9af056",
+                            "label": "PL Gallery with carousel option",
+                            "name": "component:_pl_gallery_carousel",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5b276e4e1d0f2"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -403,5 +434,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1527828095
+    "modified": 1529311408
 }
