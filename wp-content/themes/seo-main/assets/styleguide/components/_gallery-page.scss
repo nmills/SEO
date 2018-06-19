@@ -73,7 +73,7 @@
 .container.region_hero {
   .c-gallery__container, .c-gallery__section-header {
     max-width: 1024px;
-    margin: 0 auto; 
+    margin: 0 auto;
     width: 100%;
   }
 }
@@ -142,15 +142,17 @@
       }
     }
 
+    .c-gallery__gallery-item {
+      &:hover {
+        img {
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+      }
+    }
+
     .bw-hover {
       .c-gallery__gallery-item {
-        &:hover {
-          img {
-            -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
-          }
-        }
-
         &:hover {
           @include grid-media($md) {
             &:after {
@@ -374,13 +376,15 @@
         }
       }
 
+      &:hover {
+        .c-gallery__image {
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+      }
+
       &.bw-hover {
         &:hover {
-          .c-gallery__image {
-            -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
-          }
-
           @include grid-media($md) {
             &:after {
               content: "";

@@ -3289,6 +3289,16 @@ body {
     width: calc(100%);
     float: left;
     margin-left: 0; }
+    @media only screen and (min-width: 768px) {
+      .program-landing-page .c-gallery__container .c-gallery_item-container .bw-hover .c-gallery__image:hover:after {
+        content: "";
+        position: absolute;
+        top: -16px;
+        right: -16px;
+        width: 59px;
+        height: 48px;
+        border-top: 8px solid black;
+        border-right: 8px solid black; } }
   .program-landing-page .c-gallery__container a.c-rte__link {
     display: inline-block; }
 
@@ -3432,7 +3442,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); }
 
-.c-gallery__container.image-only .bw-hover .c-gallery__gallery-item:hover img {
+.c-gallery__container.image-only .c-gallery__gallery-item:hover img {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%); }
 
@@ -3573,7 +3583,7 @@ body {
     @media only screen and (min-width: 768px) {
       .c-gallery__container.image-medium .c-gallery__gallery-item .c-gallery__image {
         height: 219px; } }
-  .c-gallery__container.image-medium .c-gallery__gallery-item.bw-hover:hover .c-gallery__image {
+  .c-gallery__container.image-medium .c-gallery__gallery-item:hover .c-gallery__image {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%); }
   @media only screen and (min-width: 768px) {
@@ -3857,8 +3867,7 @@ body {
       border: 2px solid #e5e7e7;
       height: 80px;
       margin-right: 8%;
-      margin-bottom: 20px;
-      overflow: hidden; }
+      margin-bottom: 20px; }
       @media only screen and (max-width: 479px) {
         .c-ph-gallery__container .c-ph-gallery__content .c-ph-gallery__gallery-item.even {
           margin-right: 0; } }
@@ -3888,6 +3897,19 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
+      .c-ph-gallery__container .c-ph-gallery__content .c-ph-gallery__gallery-item:hover img {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%); }
+    @media only screen and (min-width: 768px) {
+      .c-ph-gallery__container .c-ph-gallery__content .bw-hover .c-ph-gallery__gallery-item:hover:after {
+        content: "";
+        position: absolute;
+        top: -16px;
+        right: -16px;
+        width: 59px;
+        height: 48px;
+        border-top: 8px solid black;
+        border-right: 8px solid black; } }
     .c-ph-gallery__container .c-ph-gallery__content .owl-carousel .c-ph-gallery__gallery-item {
       width: calc(91.66667%);
       float: left;
