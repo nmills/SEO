@@ -2542,6 +2542,35 @@ items:4}}});
 
 }
 });
+
+var owl=$('.page-template-template-program_landing .owl-carousel');
+$.each(owl,function(){
+var slides=$(this).find('.item').length;
+if(slides>4){
+$(this).owlCarousel({
+items:4,
+loop:true,
+margin:0,
+dots:false,
+autoplay:true,
+autoplayTimeout:3000,
+autoplayHoverPause:false,
+animateOut:'fadeOut',
+responsiveClass:true,
+responsive:{
+0:{
+items:2},
+
+480:{
+items:3},
+
+768:{
+items:4}}});
+
+
+
+}
+});
 };
 
 },{}],4:[function(require,module,exports){

@@ -1,0 +1,63 @@
+<section>
+  <div class="container">
+    <div class="c-ph-gallery__container">
+    <div class="c-ph-gallery__header">
+      <h1>{{component.heading}}</h1>
+    </div>
+    <div class="c-ph-gallery__description">
+      <p>{{component.intro_text}}</p>
+    </div>
+    <div class="c-ph-gallery__content">
+      {% if component.repeater|length <= 4 %}
+
+        <div class="c-ph-gallery__gallery-items">
+          {% for repeater in component.repeater %}
+            {% if repeater.url %}
+              <a href="{{repeater.url}}" class="bw-hover">
+            {% endif %}
+              <div class="c-ph-gallery__gallery-item {% if loop.index % 2 == 0 %}even{% endif %} {% if loop.last %}last{% endif %}">
+                <img src="{{Image(repeater.image).src }}" />
+              </div>
+            {% if repeater.url %}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+      {% else %}
+
+        <div class="c-ph-gallery__gallery-items">
+          <div class="owl-carousel owl-theme">
+            {% for repeater in component.repeater %}
+              {% if repeater.url %}
+                <a href="{{repeater.url}}" class="bw-hover">
+              {% endif %}
+            <div class="item">
+              <div class="c-ph-gallery__gallery-item {% if loop.index % 2 == 0 %}even{% endif %} {% if loop.last %}last{% endif %}">
+              <img src="{{Image(repeater.image).src }}" />
+            </div>
+            </div>
+            {% if repeater.url %}
+            </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+      {% endif %}
+      
+    </div>
+    <div class="c-ph-gallery__last-text">
+      <p>{{component.closing_line}}</p>
+    </div>
+    <div class="c-ph-gallery__last-link">
+      <a href="{{component.closing_link.url}}" class="c-rte__link">
+        {% if component.closing_link.title %}
+          {{component.closing_link.title}}
+        {% else %}
+          {{component.closing_link.url}}
+        {% endif %}
+      </a>
+    </div>
+    </div>
+  </div>
+</section>
