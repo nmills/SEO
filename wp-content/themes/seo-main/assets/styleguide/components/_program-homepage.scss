@@ -238,7 +238,8 @@
         transition: filter .5s ease-in-out;
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
-        max-width: 100%;
+        max-width: 200px;
+        max-height: 120px;
         position: absolute;
         top: 50%;
         left: 50%;
