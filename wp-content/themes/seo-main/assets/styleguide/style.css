@@ -3928,7 +3928,8 @@ body {
         .c-ph-gallery__container .c-ph-gallery__content .owl-carousel .c-ph-gallery__gallery-item {
           height: 140px;
           margin-right: 5.5%;
-          margin-bottom: 40px; }
+          margin-bottom: 40px;
+          margin-top: 20px; }
           .c-ph-gallery__container .c-ph-gallery__content .owl-carousel .c-ph-gallery__gallery-item.last {
             margin-right: 0; } }
     .c-ph-gallery__container .c-ph-gallery__content .bw-hover .c-ph-gallery__gallery-item:hover img {
