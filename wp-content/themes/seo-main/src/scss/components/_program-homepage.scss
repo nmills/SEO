@@ -824,11 +824,13 @@
         #email_address_field_0,
         #postal_code_field_0,
         #error_message_0 {
-          width: calc(100% - 30px);
+          @include grid-column(12, $no-gutter);
+
+          // width: calc(100% - 30px);
           display: inline-block;
 
           @include grid-media($md) {
-            @include grid-column(4, $no-gutter);
+            @include grid-column(5.5, $no-gutter);
 
             margin-right: 40px;
             margin-top: 0;
@@ -837,6 +839,25 @@
 
         #postal_code_field_0 {
           margin-top: 0;
+
+          @include grid-media($md) {
+            margin: 0;
+            float: right;
+          }
+        }
+
+        #gdpr_text {
+          width: 100%;
+          float: left;
+
+          p {
+            text-align: center;
+            color: $white;
+
+            a {
+              color: $white;
+            }
+          }
         }
 
         button.ctct-form-button {
@@ -848,6 +869,8 @@
           background: none;
           border: none;
           font-family: "Grotesk";
+          margin: auto;
+          float: none;
 
           &:before {
             content: " ";
@@ -888,6 +911,8 @@
 
             text-align: center;
             margin-top: 34px;
+            margin: auto;
+            float: none;
           }
         }
 
