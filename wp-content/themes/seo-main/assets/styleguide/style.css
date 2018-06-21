@@ -4382,7 +4382,6 @@ body {
           width: 100%;
           float: left; }
           .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #gdpr_text p {
-            text-align: center;
             color: #ffffff; }
             .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #gdpr_text p a {
               color: #ffffff; }
@@ -4429,9 +4428,7 @@ body {
               float: left;
               margin-left: 0;
               text-align: center;
-              margin-top: 34px;
-              margin: auto;
-              float: none; } }
+              margin-top: 34px; } }
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults .ctct-form-errorMessage,
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults .ctct-form-footer a {
           color: #ffffff !important; }
