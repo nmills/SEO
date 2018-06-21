@@ -824,7 +824,8 @@
         #email_address_field_0,
         #postal_code_field_0,
         #error_message_0 {
-            @include grid-column(12, $no-gutter);
+          @include grid-column(12, $no-gutter);
+
           // width: calc(100% - 30px);
           display: inline-block;
 
@@ -838,11 +839,11 @@
 
         #postal_code_field_0 {
           margin-top: 0;
-          @include grid-media($md) {
 
-          margin: 0;
-          float: right;
-        }
+          @include grid-media($md) {
+            margin: 0;
+            float: right;
+          }
         }
 
         #gdpr_text {
@@ -850,7 +851,6 @@
           float: left;
 
           p {
-            text-align: center;
             color: $white;
 
             a {
@@ -910,8 +910,6 @@
 
             text-align: center;
             margin-top: 34px;
-            margin: auto;
-            float: none;
           }
         }
 
