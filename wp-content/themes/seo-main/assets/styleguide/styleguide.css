@@ -4359,19 +4359,33 @@ body {
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #email_address_field_0,
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #postal_code_field_0,
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #error_message_0 {
-          width: calc(100% - 30px);
+          width: calc(100%);
+          float: left;
+          margin-left: 0;
           display: inline-block; }
           @media only screen and (min-width: 768px) {
             .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #email_address_field_0,
             .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #postal_code_field_0,
             .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #error_message_0 {
-              width: calc(33.33333%);
+              width: calc(45.83333%);
               float: left;
               margin-left: 0;
               margin-right: 40px;
               margin-top: 0; } }
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #postal_code_field_0 {
           margin-top: 0; }
+          @media only screen and (min-width: 768px) {
+            .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #postal_code_field_0 {
+              margin: 0;
+              float: right; } }
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #gdpr_text {
+          width: 100%;
+          float: left; }
+          .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #gdpr_text p {
+            text-align: center;
+            color: #ffffff; }
+            .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #gdpr_text p a {
+              color: #ffffff; }
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button {
           padding: 15px 20px;
           position: relative;
@@ -4380,7 +4394,9 @@ body {
           text-decoration: none;
           background: none;
           border: none;
-          font-family: "Grotesk"; }
+          font-family: "Grotesk";
+          margin: auto;
+          float: none; }
           .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button:before {
             content: " ";
             position: absolute;
@@ -4413,7 +4429,9 @@ body {
               float: left;
               margin-left: 0;
               text-align: center;
-              margin-top: 34px; } }
+              margin-top: 34px;
+              margin: auto;
+              float: none; } }
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults .ctct-form-errorMessage,
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults .ctct-form-footer a {
           color: #ffffff !important; }
