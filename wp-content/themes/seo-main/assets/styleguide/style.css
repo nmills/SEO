@@ -3289,6 +3289,16 @@ body {
     width: calc(100%);
     float: left;
     margin-left: 0; }
+    @media only screen and (min-width: 768px) {
+      .program-landing-page .c-gallery__container .c-gallery_item-container .bw-hover .c-gallery__image:hover:after {
+        content: "";
+        position: absolute;
+        top: -16px;
+        right: -16px;
+        width: 59px;
+        height: 48px;
+        border-top: 8px solid black;
+        border-right: 8px solid black; } }
   .program-landing-page .c-gallery__container a.c-rte__link {
     display: inline-block; }
 
@@ -3432,7 +3442,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); }
 
-.c-gallery__container.image-only .bw-hover .c-gallery__gallery-item:hover img {
+.c-gallery__container.image-only .c-gallery__gallery-item:hover img {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%); }
 
@@ -3573,7 +3583,7 @@ body {
     @media only screen and (min-width: 768px) {
       .c-gallery__container.image-medium .c-gallery__gallery-item .c-gallery__image {
         height: 219px; } }
-  .c-gallery__container.image-medium .c-gallery__gallery-item.bw-hover:hover .c-gallery__image {
+  .c-gallery__container.image-medium .c-gallery__gallery-item:hover .c-gallery__image {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%); }
   @media only screen and (min-width: 768px) {
@@ -3882,11 +3892,47 @@ body {
         transition: filter .5s ease-in-out;
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
-        max-width: 100%;
+        max-width: 200px;
+        max-height: 120px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
+      .c-ph-gallery__container .c-ph-gallery__content .c-ph-gallery__gallery-item:hover img {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%); }
+    @media only screen and (min-width: 768px) {
+      .c-ph-gallery__container .c-ph-gallery__content .bw-hover .c-ph-gallery__gallery-item:hover:after {
+        content: "";
+        position: absolute;
+        top: -16px;
+        right: -16px;
+        width: 59px;
+        height: 48px;
+        border-top: 8px solid black;
+        border-right: 8px solid black; } }
+    .c-ph-gallery__container .c-ph-gallery__content .owl-carousel .c-ph-gallery__gallery-item {
+      width: calc(91.66667%);
+      float: left;
+      margin-left: 0;
+      display: inline-block;
+      position: relative;
+      border: 2px solid #e5e7e7;
+      height: 80px;
+      margin-right: 8%;
+      margin-bottom: 20px; }
+      @media only screen and (min-width: 480px) {
+        .c-ph-gallery__container .c-ph-gallery__content .owl-carousel .c-ph-gallery__gallery-item {
+          height: 100px;
+          margin-right: 3%; } }
+      @media only screen and (min-width: 768px) {
+        .c-ph-gallery__container .c-ph-gallery__content .owl-carousel .c-ph-gallery__gallery-item {
+          height: 140px;
+          margin-right: 5.5%;
+          margin-bottom: 40px;
+          margin-top: 20px; }
+          .c-ph-gallery__container .c-ph-gallery__content .owl-carousel .c-ph-gallery__gallery-item.last {
+            margin-right: 0; } }
     .c-ph-gallery__container .c-ph-gallery__content .bw-hover .c-ph-gallery__gallery-item:hover img {
       -webkit-filter: grayscale(0%);
       filter: grayscale(0%); }
@@ -4313,19 +4359,33 @@ body {
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #email_address_field_0,
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #postal_code_field_0,
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #error_message_0 {
-          width: calc(100% - 30px);
+          width: calc(100%);
+          float: left;
+          margin-left: 0;
           display: inline-block; }
           @media only screen and (min-width: 768px) {
             .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #email_address_field_0,
             .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #postal_code_field_0,
             .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #error_message_0 {
-              width: calc(33.33333%);
+              width: calc(45.83333%);
               float: left;
               margin-left: 0;
               margin-right: 40px;
               margin-top: 0; } }
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #postal_code_field_0 {
           margin-top: 0; }
+          @media only screen and (min-width: 768px) {
+            .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #postal_code_field_0 {
+              margin: 0;
+              float: right; } }
+        .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #gdpr_text {
+          width: 100%;
+          float: left; }
+          .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #gdpr_text p {
+            text-align: center;
+            color: #ffffff; }
+            .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults #gdpr_text p a {
+              color: #ffffff; }
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button {
           padding: 15px 20px;
           position: relative;
@@ -4334,7 +4394,9 @@ body {
           text-decoration: none;
           background: none;
           border: none;
-          font-family: "Grotesk"; }
+          font-family: "Grotesk";
+          margin: auto;
+          float: none; }
           .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults button.ctct-form-button:before {
             content: " ";
             position: absolute;
@@ -4367,7 +4429,9 @@ body {
               float: left;
               margin-left: 0;
               text-align: center;
-              margin-top: 34px; } }
+              margin-top: 34px;
+              margin: auto;
+              float: none; } }
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults .ctct-form-errorMessage,
         .c-ph-signup .c-ph-signup__container .c-ph-signup__form .ctct-form-defaults .ctct-form-footer a {
           color: #ffffff !important; }

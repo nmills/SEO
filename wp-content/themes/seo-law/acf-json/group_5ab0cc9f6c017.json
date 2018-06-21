@@ -71,7 +71,7 @@
                 "5ab0ee1345a39": {
                     "key": "5ab0ee1345a39",
                     "name": "component_ph_gallery",
-                    "label": "Gallery",
+                    "label": "Gallery with carousel option",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -248,5 +248,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1527827955
+    "modified": 1529309541
 }
