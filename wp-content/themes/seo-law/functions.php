@@ -1,36 +1,8 @@
 <?php 
-
-/**
-* Our custom post type function
-*/
-function create_Legal_document_posttype() {
- 
-    register_post_type( 'legal_documents',
-        array(
-            'labels' => array(
-                'name' => __( 'Legal Documents' ),
-                'singular_name' => __( 'Legal Document' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'legal_documents'),
-        )
-    );
-
-     register_taxonomy(
-       'nationality',
-       array('legal_documents',),
-       array(
-         'label' => __( 'Nationality' ),
-         'rewrite' => array(
-           'slug' => 'nationality',
-           'with_front' => false
-         ),
-         'hierarchical' => true
-       )
-     );
-}
-// Hooking up our function to theme setup
-// add_action( 'init', 'create_Legal_document_posttype' );
-
+/* Removing global homepage template on child themes */
+add_filter( 'theme_page_templates', 'seo_remove_page_template' );
+  function seo_remove_page_template( $pages_templates ) {
+    unset( $pages_templates['template-global_homepage.php'] );
+    return $pages_templates;
+  }
 ?>
