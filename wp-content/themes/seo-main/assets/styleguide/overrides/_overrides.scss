@@ -13,6 +13,11 @@ body {
   @include grid-media($hd) {
     padding-top: 52px;
   }
+
+  &.has_submenu {
+    padding-top: 110px;
+
+  }
 }
 
 .hide {

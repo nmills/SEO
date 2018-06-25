@@ -3,8 +3,24 @@
     {% block head %}{% endblock %}
   </head>
 {% endblock %}
+{# 
+<pre>{{site_menu|print_r}}</pre>
+{% if site_menu.get_items.children %}
+<h1>HELLO HELLO</h1>
 
-<body class="{{body_class}}" data-template="base.twig">
+{% else %}
+  <h1>hooooooooooo</h1>
+{% endif %}
+ #}
+{% set has_submenu = '' %}
+
+{% for item in menu.items %}
+        {% if item.children %}
+          {% set has_submenu = 'has_submenu' %}
+        {% endif %}
+{% endfor %}
+
+<body class="{{body_class}} {{has_submenu}}" data-template="base.twig">
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
       <header class="site-header">
