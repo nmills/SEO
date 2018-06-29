@@ -2679,6 +2679,15 @@ Gallery
         .hero-section .c-hero_video p {
           font-size: 43px;
           width: 60%; } }
+    .hero-section .c-hero_image:before,
+    .hero-section .c-hero_video:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent, rgba(5, 5, 5, 0.95)); }
   .hero-section .c-hero_video {
     background: #050505; }
     .hero-section .c-hero_video iframe {
@@ -3612,7 +3621,7 @@ body {
   .c-gallery__container.image-medium .c-gallery__gallery-item .item__sub-heading p {
     margin: 0;
     font-size: 18px;
-    line-height: 1; }
+    line-height: 1.2; }
   .c-gallery__container.image-medium .c-gallery__gallery-item .item__link {
     margin-top: 15px;
     line-height: 1; }
