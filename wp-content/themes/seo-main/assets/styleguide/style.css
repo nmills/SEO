@@ -3462,7 +3462,8 @@ body {
   padding-left: 20px;
   display: inline-block;
   border-left: 8px solid black;
-  position: relative; }
+  position: relative;
+  min-height: 60px; }
   @media only screen and (min-width: 480px) {
     .c-gallery__container.text-only .c-gallery__gallery-item {
       width: calc(50%);
@@ -3550,7 +3551,8 @@ body {
   margin-left: 0;
   display: inline-block;
   position: relative;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  min-height: 370px; }
   @media only screen and (min-width: 480px) {
     .c-gallery__container.image-medium .c-gallery__gallery-item {
       width: 279px;

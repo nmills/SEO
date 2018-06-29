@@ -188,6 +188,7 @@
       display: inline-block;
       border-left: 8px solid black;
       position: relative;
+      min-height: 60px;
 
       @include grid-media($sm) {
         @include grid-column(6, $no-gutter);
@@ -328,6 +329,7 @@
       display: inline-block;
       position: relative;
       margin-bottom: 50px;
+      min-height: 370px;
 
       @include grid-media($sm) {
         // @include grid-column(5.6, $no-gutter);
