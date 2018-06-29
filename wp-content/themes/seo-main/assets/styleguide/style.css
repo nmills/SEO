@@ -3612,7 +3612,7 @@ body {
   .c-gallery__container.image-medium .c-gallery__gallery-item .item__sub-heading p {
     margin: 0;
     font-size: 18px;
-    line-height: 0.8; }
+    line-height: 1; }
   .c-gallery__container.image-medium .c-gallery__gallery-item .item__link {
     margin-top: 15px;
     line-height: 1; }
