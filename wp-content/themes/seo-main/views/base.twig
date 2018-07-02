@@ -3,35 +3,6 @@
     {% block head %}{% endblock %}
   </head>
 {% endblock %}
-{# 
-<pre>{{site_menu|print_r}}</pre>
-{% if site_menu.get_items.children %}
-<h1>HELLO HELLO</h1>
-
-{% else %}
-  <h1>hooooooooooo</h1>
-{% endif %}
- #}
-{% set has_submenu = '' %}
-
-{# {% for item in menu.items %}
-        {% if item.children %}
-          {% set has_submenu = 'has_submenu' %}
-        {% endif %}
-{% endfor %} #}
-
-{# {% for main_menu_item in main_menu_left.items %}
-  {% set childlinkactive = false %}
-  {% for child in main_menu_item.get_children %}
-    {% if child.get_link in current_page_url %}
-      {% set childlinkactive = true %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-{% if main_menu_item.children and (main_menu_item.current or childlinkactive or main_menu_item.get_link in current_page_url) %}
-  {% set has_submenu = 'has_submenu' %}
-{% endif %} #}
 
 <body class="{{body_class}}" data-template="base.twig">
   <div class="off-canvas-wrapper">
