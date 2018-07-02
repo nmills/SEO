@@ -1164,11 +1164,8 @@ Styleguide 1.5
   margin-bottom: 40px; }
 
 .c-rte strong {
-  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #050505;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 1.2; }
+  font-weight: 700; }
 
 /*
 Table
