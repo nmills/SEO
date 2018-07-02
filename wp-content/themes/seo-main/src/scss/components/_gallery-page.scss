@@ -190,7 +190,7 @@
       position: relative;
       min-height: 145px;
 
-      @include grid-media($sm) {
+      @include grid-media($sm) { 
         @include grid-column(6, $no-gutter);
       }
 
@@ -198,7 +198,7 @@
       @include grid-media($md) {
         @include grid-column(4, $no-gutter);
 
-        margin-bottom: 35px;
+        margin-bottom: 35px; 
       }
 
 
