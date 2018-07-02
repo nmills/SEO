@@ -14,13 +14,26 @@
  #}
 {% set has_submenu = '' %}
 
-{% for item in menu.items %}
+{# {% for item in menu.items %}
         {% if item.children %}
           {% set has_submenu = 'has_submenu' %}
         {% endif %}
+{% endfor %} #}
+
+{# {% for main_menu_item in main_menu_left.items %}
+  {% set childlinkactive = false %}
+  {% for child in main_menu_item.get_children %}
+    {% if child.get_link in current_page_url %}
+      {% set childlinkactive = true %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 
-<body class="{{body_class}} {{has_submenu}}" data-template="base.twig">
+{% if main_menu_item.children and (main_menu_item.current or childlinkactive or main_menu_item.get_link in current_page_url) %}
+  {% set has_submenu = 'has_submenu' %}
+{% endif %} #}
+
+<body class="{{body_class}}" data-template="base.twig">
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
       <header class="site-header">

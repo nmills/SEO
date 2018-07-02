@@ -43,18 +43,18 @@
   .c-hero_video {
     @include grid-column(12, $no-gutter);
 
-    height: 212px;
+    height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 
     @include grid-media($md) {
-      height: 411px;
+      height: 400px;
     }
 
     @include grid-media($lg) {
-      height: 811px;
+      height: 600px;
     }
 
 

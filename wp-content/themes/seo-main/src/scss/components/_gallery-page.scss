@@ -79,6 +79,26 @@
 }
 
 .c-gallery__container {
+
+  .c-gallery__gallery-item {
+    .item__description {
+      a {
+        @include default($color: $black);
+
+        transition: all 0.4s $cubic-transition;
+        font-weight: $font-normal;
+        border-bottom: 3px solid $light-blue;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          color: $light-blue;
+          border-bottom: 3px solid $black;
+        }
+      }
+    }
+  }
+
   &.image-only {
     .c-gallery__gallery-item {
       @include grid-column(5.5, $no-gutter);
