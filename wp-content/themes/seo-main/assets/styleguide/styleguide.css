@@ -2874,14 +2874,20 @@ Gallery
     .program-landing-page .old .c-ratiometer-meter_out canvas {
       position: absolute;
       width: 100%;
-      top: 6px;
-      left: 6px; }
+      max-width: 150px;
+      max-height: 150px;
+      top: 9px;
+      left: 9px; }
       @media only screen and (min-width: 480px) {
         .program-landing-page .old .c-ratiometer-meter_out canvas {
-          top: 5px;
-          left: 5px; } }
+          max-width: 196px;
+          max-height: 196px;
+          top: 8px;
+          left: 8px; } }
       @media only screen and (min-width: 768px) {
         .program-landing-page .old .c-ratiometer-meter_out canvas {
+          max-width: 255px;
+          max-height: 255px;
           top: 3px;
           left: 3px; } }
     @media only screen and (min-width: 480px) {

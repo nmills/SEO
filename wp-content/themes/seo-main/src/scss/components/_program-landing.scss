@@ -513,15 +513,21 @@
       canvas {
         position: absolute;
         width: 100%;
-        top: 6px;
-        left: 6px;
+        max-width: 150px;
+        max-height: 150px;
+        top: 9px;
+        left: 9px;
 
         @include grid-media($sm) {
-          top: 5px;
-          left: 5px;
+          max-width: 196px;
+          max-height: 196px;
+          top: 8px;
+          left: 8px;
         }
 
         @include grid-media($md) {
+          max-width: 255px;
+          max-height: 255px;
           top: 3px;
           left: 3px;
         }
