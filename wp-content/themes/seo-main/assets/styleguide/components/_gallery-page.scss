@@ -188,7 +188,7 @@
       display: inline-block;
       border-left: 8px solid black;
       position: relative;
-      min-height: 60px;
+      min-height: 145px;
 
       @include grid-media($sm) {
         @include grid-column(6, $no-gutter);
@@ -207,7 +207,7 @@
 
         h3 {
           margin: 0;
-          line-height: 0.8;
+          line-height: 0.9;
           font-size: 19px;
           font-weight: $font-bold;
         }
@@ -217,7 +217,7 @@
         p {
           margin: 0;
           font-size: 18px;
-          line-height: 0.8;
+          line-height: 1.2;
         }
       }
 
@@ -293,7 +293,7 @@
 
         h3 {
           margin: 0;
-          line-height: 0.8;
+          line-height: 0.9;
           font-size: 19px;
           font-weight: $font-bold;
         }
@@ -303,7 +303,7 @@
         p {
           margin: 0;
           font-size: 18px;
-          line-height: 0.8;
+          line-height: 1.2;
         }
       }
 
@@ -418,7 +418,7 @@
 
         h3 {
           margin: 0;
-          line-height: 0.8;
+          line-height: 0.9;
           font-size: 19px;
           font-weight: $font-bold;
         }
@@ -505,7 +505,7 @@
 
         h3 {
           margin: 0;
-          line-height: 0.8;
+          line-height: 0.9;
           font-size: 26px;
           font-weight: $font-bold;
 
@@ -518,7 +518,7 @@
       .item__sub-heading {
         p {
           font-size: 20px;
-          line-height: 0.8;
+          line-height: 1.2;
         }
 
         &:after {
