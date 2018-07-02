@@ -210,7 +210,7 @@
       position: relative;
       min-height: 145px;
 
-      @include grid-media($sm) {
+      @include grid-media($sm) { 
         @include grid-column(6, $no-gutter);
       }
 
