@@ -355,10 +355,14 @@
         margin-right: 3.2%;
         margin-bottom: 40px;
 
-        &:nth-child(4n) {
-          margin-right: 0;
-        }
+        
       }
+
+      // @include grid-media($lg) {
+      //   &:nth-child(4n) {
+      //     margin-right: 0;
+      //   }
+      // }
 
 
       .c-gallery__image {
