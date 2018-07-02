@@ -50,6 +50,17 @@
 
       &.c-carousel__image {
         display: block !important;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to bottom,transparent,rgba(5,5,5,.95));
+        }
       }
     }
 

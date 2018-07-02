@@ -2679,6 +2679,15 @@ Gallery
         .hero-section .c-hero_video p {
           font-size: 43px;
           width: 60%; } }
+    .hero-section .c-hero_image:before,
+    .hero-section .c-hero_video:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent, rgba(5, 5, 5, 0.95)); }
   .hero-section .c-hero_video {
     background: #050505; }
     .hero-section .c-hero_video iframe {
@@ -3462,7 +3471,8 @@ body {
   padding-left: 20px;
   display: inline-block;
   border-left: 8px solid black;
-  position: relative; }
+  position: relative;
+  min-height: 60px; }
   @media only screen and (min-width: 480px) {
     .c-gallery__container.text-only .c-gallery__gallery-item {
       width: calc(50%);
@@ -3550,7 +3560,8 @@ body {
   margin-left: 0;
   display: inline-block;
   position: relative;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  min-height: 370px; }
   @media only screen and (min-width: 480px) {
     .c-gallery__container.image-medium .c-gallery__gallery-item {
       width: 279px;
@@ -3610,7 +3621,7 @@ body {
   .c-gallery__container.image-medium .c-gallery__gallery-item .item__sub-heading p {
     margin: 0;
     font-size: 18px;
-    line-height: 0.8; }
+    line-height: 1.2; }
   .c-gallery__container.image-medium .c-gallery__gallery-item .item__link {
     margin-top: 15px;
     line-height: 1; }
@@ -4496,7 +4507,16 @@ body {
         .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image {
           height: 650px; } }
       .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image.c-carousel__image {
-        display: block !important; }
+        display: block !important;
+        position: relative; }
+        .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image.c-carousel__image:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to bottom, transparent, rgba(5, 5, 5, 0.95)); }
     .c-gh-hero__container .c-gh-hero__content .c-gh-hero__video {
       width: calc(100%);
       float: left;
