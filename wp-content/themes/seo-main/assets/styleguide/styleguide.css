@@ -3457,7 +3457,7 @@ body {
       height: 140px;
       margin-right: 5.5%;
       margin-bottom: 40px; }
-      .c-gallery__container.image-only .c-gallery__gallery-item:nth-child(4n) {
+      .c-gallery__container.image-only .c-gallery__gallery-item > a:nth-child(4n+4) .c-gallery__gallery-item {
         margin-right: 0; } }
   .c-gallery__container.image-only .c-gallery__gallery-item img {
     max-width: 100%;

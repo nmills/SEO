@@ -144,7 +144,7 @@
         margin-right: 5.5%;
         margin-bottom: 40px;
 
-        &:nth-child(4n) {
+        > a:nth-child(4n+4) .c-gallery__gallery-item {
           margin-right: 0;
         }
       }
