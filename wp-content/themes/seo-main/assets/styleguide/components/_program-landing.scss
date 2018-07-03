@@ -43,18 +43,18 @@
   .c-hero_video {
     @include grid-column(12, $no-gutter);
 
-    height: 212px;
+    height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 
     @include grid-media($md) {
-      height: 411px;
+      height: 400px;
     }
 
     @include grid-media($lg) {
-      height: 811px;
+      height: 600px;
     }
 
 
@@ -513,15 +513,21 @@
       canvas {
         position: absolute;
         width: 100%;
-        top: 6px;
-        left: 6px;
+        max-width: 150px;
+        max-height: 150px;
+        top: 9px;
+        left: 9px;
 
         @include grid-media($sm) {
-          top: 5px;
-          left: 5px;
+          max-width: 196px;
+          max-height: 196px;
+          top: 8px;
+          left: 8px;
         }
 
         @include grid-media($md) {
+          max-width: 255px;
+          max-height: 255px;
           top: 3px;
           left: 3px;
         }

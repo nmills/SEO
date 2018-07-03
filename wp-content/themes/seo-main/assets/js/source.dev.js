@@ -2571,6 +2571,10 @@ items:4}}});
 
 }
 });
+
+if($("ul.main-nav-dropdown").length){
+$("body").addClass("has_submenu");
+}
 };
 
 },{}],4:[function(require,module,exports){

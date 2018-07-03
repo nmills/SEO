@@ -107,4 +107,8 @@ export default function() {
       });
     }
   }); 
+
+  if ($("ul.main-nav-dropdown").length) {
+    $( "body" ).addClass("has_submenu");
+  }
 }
