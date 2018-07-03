@@ -380,7 +380,7 @@ section {
     display: block; }
   @media only screen and (min-width: 768px) {
     section {
-      margin-bottom: 145px; } }
+      margin-bottom: 100px; } }
 
 .slider__animation {
   transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
