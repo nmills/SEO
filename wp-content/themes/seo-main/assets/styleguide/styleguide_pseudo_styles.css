@@ -246,7 +246,9 @@
 }
 
 .c-news-filter.pseudo-class-hover h3,
-.c-news-filter.pseudo-class-hover #selected {
+.c-news-filter.pseudo-class-hover #selected,
+.c-news-filter.pseudo-class-focus h3,
+.c-news-filter.pseudo-class-focus #selected {
   background: #050505;
   color: #ffffff;
 }
