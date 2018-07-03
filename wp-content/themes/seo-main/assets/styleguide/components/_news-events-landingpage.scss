@@ -268,8 +268,7 @@
     margin-right: 0;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     h3, #selected {
       background: $black;
       color: $white;
@@ -318,7 +317,8 @@
       height: 13px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       &:after {
         top: 25%;
         transform: rotate(180deg);

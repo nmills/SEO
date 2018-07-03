@@ -246,19 +246,19 @@
 }
 
 .c-news-filter.pseudo-class-hover h3,
-.c-news-filter.pseudo-class-hover #selected,
-.c-news-filter.pseudo-class-focus h3,
-.c-news-filter.pseudo-class-focus #selected {
+.c-news-filter.pseudo-class-hover #selected {
   background: #050505;
   color: #ffffff;
 }
 
-.c-news-filter #selected.pseudo-class-hover:after {
+.c-news-filter #selected.pseudo-class-hover:after,
+.c-news-filter #selected.pseudo-class-focus:after {
   top: 25%;
   transform: rotate(180deg);
 }
 
-.c-news-filter #selected.pseudo-class-hover + #selection-options {
+.c-news-filter #selected.pseudo-class-hover + #selection-options,
+.c-news-filter #selected.pseudo-class-focus + #selection-options {
   display: block;
 }
 
