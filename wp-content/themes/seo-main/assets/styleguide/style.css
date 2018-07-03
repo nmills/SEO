@@ -5670,7 +5670,7 @@ body {
     border-top: 0;
     margin-bottom: 40px;
     margin-right: 0; }
-  .c-news-filter:hover h3, .c-news-filter:hover #selected {
+  .c-news-filter:hover h3, .c-news-filter:hover #selected, .c-news-filter:focus h3, .c-news-filter:focus #selected {
     background: #050505;
     color: #ffffff; }
   @media only screen and (min-width: 768px) {
