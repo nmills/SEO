@@ -7,8 +7,8 @@
 
     @include grid-media($md) {
       max-width: 660px;
-      margin: 0 auto;
-      margin-top: 150px;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 65px;
     }
 

@@ -5461,8 +5461,8 @@ body {
   @media only screen and (min-width: 768px) {
     .c-news-events .page-title {
       max-width: 660px;
-      margin: 0 auto;
-      margin-top: 150px;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 65px; } }
   .c-news-events .page-title h1 {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
