@@ -268,7 +268,8 @@
     margin-right: 0;
   }
 
-  &:hover {
+  &:hover,
+  &.active {
     h3, #selected {
       background: $black;
       color: $white;

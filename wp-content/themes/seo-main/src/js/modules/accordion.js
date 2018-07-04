@@ -22,9 +22,6 @@ export default function() {
         .removeClass('active')
         .find('.answer').slideUp('medium');
     }
-
-
-
   });
 
   $('li.cat-js').on('click', function() {
