@@ -1220,7 +1220,7 @@ Styleguide 1.6
       font-size: 18px; }
 
 .wysiwyg .c-rte {
-  overflow: unset; }
+  overflow-y: unset; }
 
 .region_bottom .wrapper-wysiwyg {
   max-width: 1130px; }
@@ -2011,6 +2011,12 @@ button.c-uie__calltoaction-secondary {
     @media only screen and (min-width: 768px) {
       .c-cta__wrapper .c-rte__link {
         margin: 40px 35px 45px 35px; } }
+
+.cta__button {
+  margin: 50px 0;
+  text-align: center; }
+  .cta__button .c-uie__calltoaction-secondary {
+    padding: 15px 20px; }
 
 /*
 Gallery

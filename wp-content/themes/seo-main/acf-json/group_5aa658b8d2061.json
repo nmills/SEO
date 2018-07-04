@@ -103,6 +103,25 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_5b3cbe2364f33",
+                    "label": "Link Text",
+                    "name": "link_text",
+                    "type": "text",
+                    "instructions": "When \"Destination URL\" is entered but the \"Link Text\" field is left blank, \"Link Text\" will default to \"Read Full Bio.\" Insert text here to override that label.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_5aa658b95171c",
                     "label": "Destination URL",
                     "name": "destination_link",
@@ -138,5 +157,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527844711
+    "modified": 1530707737
 }
