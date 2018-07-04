@@ -71,7 +71,8 @@
 }
 
 .container.region_hero {
-  .c-gallery__container, .c-gallery__section-header {
+  .c-gallery__container,
+  .c-gallery__section-header {
     max-width: 1024px;
     margin: 0 auto;
     width: 100%;
@@ -79,7 +80,6 @@
 }
 
 .c-gallery__container {
-
   .c-gallery__gallery-item {
     .item__description {
       a {
@@ -193,18 +193,10 @@
               position: absolute;
               top: -12px;
               right: -12px;
-
-              // width: 35px;
-              // height: 35px;
               border-top: 8px solid black;
               border-right: 8px solid black;
-
-              // @include grid-media($md) {
               width: 59px;
-              height: 48px;
-
-              // }
-           
+              height: 48px;           
             }
           }
         }
@@ -353,55 +345,30 @@
   }
 
   &.image-medium {
+    display: flex;
+    flex-wrap: wrap;
+
     .c-gallery__gallery-item {
       @include grid-column(12, $no-gutter);
 
-      // width: 279px;
-
-      // height: 279px;
       display: inline-block;
       position: relative;
       margin-bottom: 50px;
-      min-height: 370px;
 
       @include grid-media($sm) {
-        // @include grid-column(5.6, $no-gutter);
         width: 279px;
-        height: 400px;
-
-        // height: 100px;
         margin-right: 5%;
         margin-bottom: 35px;
-
-        @include grid-media($max-md) {
-          &:nth-child(even) {
-            margin-right: 0;
-          }
-        }
       }
-
 
       @include grid-media($md) {
-        // @include grid-column(2.5, $no-gutter);
         width: 222px;
-        height: 320px;
         margin-right: 3.2%;
         margin-bottom: 40px;
-
-        
       }
-
-      // @include grid-media($lg) {
-      //   &:nth-child(4n) {
-      //     margin-right: 0;
-      //   }
-      // }
-
 
       .c-gallery__image {
         width: 100%;
-
-        // max-width: 279px;
         height: 279px;
         transition: filter .5s ease-in-out;
         -webkit-filter: grayscale(100%);
