@@ -2012,6 +2012,12 @@ button.c-uie__calltoaction-secondary {
       .c-cta__wrapper .c-rte__link {
         margin: 40px 35px 45px 35px; } }
 
+.cta__button {
+  margin: 50px 0;
+  text-align: center; }
+  .cta__button .c-uie__calltoaction-secondary {
+    padding: 15px 20px; }
+
 /*
 Gallery
 

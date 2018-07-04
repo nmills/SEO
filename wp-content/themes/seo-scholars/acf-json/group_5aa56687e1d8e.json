@@ -408,6 +408,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5b3cb99222ffd": {
+                    "key": "5b3cb99222ffd",
+                    "name": "button",
+                    "label": "Button",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b3cb99222ffe",
+                            "label": "button",
+                            "name": "button",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5b3c941bb6d66"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -434,5 +465,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1529311408
+    "modified": 1530706369
 }
