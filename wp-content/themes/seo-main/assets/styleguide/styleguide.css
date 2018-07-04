@@ -1966,7 +1966,7 @@ button.c-uie__calltoaction-secondary {
   padding-bottom: 20px;
   padding: 0; }
   .c-cta__wrapper.border {
-    border: 1px solid #e5e7e7; }
+    border: 2px solid #e5e7e7; }
   .c-cta__wrapper h3 {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
@@ -3422,6 +3422,21 @@ body {
     color: #7cb4f6;
     border-bottom: 3px solid #050505; }
 
+.c-gallery__container.image-only .c-gallery__col:nth-child(2n+2) .c-gallery__gallery-item {
+  margin-right: 0; }
+
+@media only screen and (min-width: 480px) {
+  .c-gallery__container.image-only .c-gallery__col:nth-child(2n+2) .c-gallery__gallery-item {
+    margin-right: 5%; }
+  .c-gallery__container.image-only .c-gallery__col:nth-child(3n+3) .c-gallery__gallery-item {
+    margin-right: 0; } }
+
+@media only screen and (min-width: 768px) {
+  .c-gallery__container.image-only .c-gallery__col:nth-child(3n+3) .c-gallery__gallery-item {
+    margin-right: 5.5%; }
+  .c-gallery__container.image-only .c-gallery__col:nth-child(4n+4) .c-gallery__gallery-item {
+    margin-right: 0; } }
+
 .c-gallery__container.image-only .c-gallery__gallery-item {
   width: calc(45.83333%);
   float: left;
@@ -3446,9 +3461,6 @@ body {
       height: 100px;
       margin-right: 5%;
       margin-bottom: 35px; } }
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .c-gallery__container.image-only .c-gallery__gallery-item:nth-child(3n) {
-      margin-right: 0; } }
   @media only screen and (min-width: 768px) {
     .c-gallery__container.image-only .c-gallery__gallery-item {
       width: calc(20.83333%);
@@ -3456,9 +3468,7 @@ body {
       margin-left: 0;
       height: 140px;
       margin-right: 5.5%;
-      margin-bottom: 40px; }
-      .c-gallery__container.image-only .c-gallery__gallery-item > a:nth-child(4n+4) .c-gallery__gallery-item {
-        margin-right: 0; } }
+      margin-bottom: 40px; } }
   .c-gallery__container.image-only .c-gallery__gallery-item img {
     max-width: 100%;
     transition: filter .5s ease-in-out;
@@ -5598,7 +5608,7 @@ body {
   width: calc(100%);
   float: left;
   margin-left: 0;
-  border: 1px solid #e5e7e7;
+  border: 2px solid #e5e7e7;
   padding: 15px 20px; }
   @media only screen and (min-width: 480px) {
     .c-news-events .c-news-events__promotion {
@@ -5670,7 +5680,7 @@ body {
     border-top: 0;
     margin-bottom: 40px;
     margin-right: 0; }
-  .c-news-filter:hover h3, .c-news-filter:hover #selected {
+  .c-news-filter:hover h3, .c-news-filter:hover #selected, .c-news-filter.active h3, .c-news-filter.active #selected {
     background: #050505;
     color: #ffffff; }
   @media only screen and (min-width: 768px) {

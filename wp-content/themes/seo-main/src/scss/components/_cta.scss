@@ -2,7 +2,7 @@
 
 .c-cta__wrapper {
   &.border {
-    border: 1px solid $light-gray;
+    border: 2px solid $light-gray;
   }
 
   @include grid-column(12, $no-gutter);

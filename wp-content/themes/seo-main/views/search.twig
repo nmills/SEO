@@ -19,7 +19,7 @@
 			{% if posts|length > 0 %}
 				<div class="c-search-filter">
 					<div class="c-search-filter__filter c-news-filter">
-						<h3>Program: </h3><span id="selected">
+						<h3>Program: </h3><span class="selector" id="selected">
 							{% if current_site_id == 1 %}All{% else %}{{current_site_name}}{% endif %}</span>
 						<ul class="c-news-filter__items" id="selection-options">
 							{% for site in search_filters %}
