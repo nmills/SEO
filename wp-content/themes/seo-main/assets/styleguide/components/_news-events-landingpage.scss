@@ -1,6 +1,10 @@
 // News and Events Landing Page
 
 .c-news-events {
+  .region_body {
+    margin-top: 100px;
+  }
+
   .page-title {
     margin-top: 90px;
     margin-bottom: 45px;
@@ -31,7 +35,6 @@
       @include grid-media($md) {
         @include grid-column(8, $no-gutter);
       }
-
 
       img {
         width: 100%;
