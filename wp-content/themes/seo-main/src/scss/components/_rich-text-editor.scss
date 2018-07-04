@@ -450,6 +450,11 @@ Styleguide 1.6
   }
 }
 
+.wysiwyg {
+  .c-rte {
+    overflow: unset;
+  }
+}
 
 .region_bottom {
   .wrapper-wysiwyg {
