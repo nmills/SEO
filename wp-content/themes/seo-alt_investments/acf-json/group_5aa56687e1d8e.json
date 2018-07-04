@@ -102,12 +102,12 @@
                 "5aa567250adf0": {
                     "key": "5aa567250adf0",
                     "name": "component_pl_data_visualization",
-                    "label": "Data Visualization",
+                    "label": "Stats",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5aa567310adf1",
-                            "label": "PL Data Visualization",
+                            "label": "Stats",
                             "name": "component:_pl:_data_visualization",
                             "type": "clone",
                             "instructions": "",
@@ -119,7 +119,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_5aa56447dbe02"
+                                "group_5ab214af73ad8"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -465,5 +465,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1530706369
+    "modified": 1530718771
 }
