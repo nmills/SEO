@@ -36,7 +36,7 @@
                     },
                     "choices": {
                         "percentage": "Percentage",
-                        "years": "Years"
+                        "numbers": "Number"
                     },
                     "allow_null": 0,
                     "other_choice": 0,
@@ -110,7 +110,7 @@
                     "key": "field_5ab21617fff14",
                     "label": "Number",
                     "name": "number",
-                    "type": "number",
+                    "type": "text",
                     "instructions": "",
                     "required": 1,
                     "conditional_logic": [
@@ -118,7 +118,7 @@
                             {
                                 "field": "field_5ab214d3fff0e",
                                 "operator": "==",
-                                "value": "years"
+                                "value": "numbers"
                             }
                         ]
                     ],
@@ -131,9 +131,7 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "min": "",
-                    "max": "",
-                    "step": ""
+                    "maxlength": ""
                 },
                 {
                     "key": "field_5ab215abfff11",
@@ -160,13 +158,13 @@
                     "name": "year_1",
                     "type": "number",
                     "instructions": "",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": [
                         [
                             {
                                 "field": "field_5ab214d3fff0e",
                                 "operator": "==",
-                                "value": "years"
+                                "value": "numbers"
                             }
                         ]
                     ],
@@ -189,13 +187,13 @@
                     "name": "year_2",
                     "type": "number",
                     "instructions": "",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": [
                         [
                             {
                                 "field": "field_5ab214d3fff0e",
                                 "operator": "==",
-                                "value": "years"
+                                "value": "numbers"
                             }
                         ]
                     ],
@@ -232,5 +230,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527828049
+    "modified": 1530715892
 }

@@ -22,24 +22,31 @@
             </div>
           </div>
         </div>
-        {% elseif repeater.stat_type == 'years' %}
+        {% elseif repeater.stat_type == 'numbers' %}
         <div class="c-ph-stats-border__container">
           <div class="c-ph-stats-border__details">
             <h1>{{repeater.number}}</h1>
             <p>{{repeater.text}}</p>
-            <div class="c-ph-stats-border__top-value">
-              <h3>{{repeater.year_1}}</h3>
-            </div>            
-            <div class="c-ph-stats-border__bottom-value">
-              <h3>{{repeater.year_2}}</h3>
-            </div>
-            <div class="c-ph-stats-svg">
-              <svg class="curve" width="192px" height="225px" viewBox="0 0 192 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <path d="M187,0 L187,133.72549 C187,181.373586 148.239467,220 100.425926,220 L0,220" id="Rectangle-17" stroke="#7CB4F6" stroke-width="10"></path>
-                </g>
-              </svg>
-            </div>
+
+            {% if repeater.year_2 is not empty and repeater.year_1 is not empty %}
+
+              <div class="c-ph-stats-border__top-value">
+                <h3>{{repeater.year_2}}</h3>
+              </div>            
+              <div class="c-ph-stats-border__bottom-value">
+                <h3>{{repeater.year_1}}</h3>
+              </div>
+              <div class="c-ph-stats-svg">
+                <svg class="curve" width="192px" height="225px" viewBox="0 0 192 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M187,0 L187,133.72549 C187,181.373586 148.239467,220 100.425926,220 L0,220" id="Rectangle-17" stroke="#7CB4F6" stroke-width="10"></path>
+                  </g>
+                </svg>
+              </div>
+
+            {% endif %}
+
+
           </div>
         </div>
         {% endif %} {% endfor %}
