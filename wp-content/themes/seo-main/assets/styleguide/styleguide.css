@@ -1219,6 +1219,9 @@ Styleguide 1.6
       font-weight: 100;
       font-size: 18px; }
 
+.wysiwyg .c-rte {
+  overflow: unset; }
+
 .region_bottom .wrapper-wysiwyg {
   max-width: 1130px; }
   .region_bottom .wrapper-wysiwyg .inner-container {
