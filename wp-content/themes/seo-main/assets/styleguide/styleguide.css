@@ -1220,7 +1220,7 @@ Styleguide 1.6
       font-size: 18px; }
 
 .wysiwyg .c-rte {
-  overflow: unset; }
+  overflow-y: unset; }
 
 .region_bottom .wrapper-wysiwyg {
   max-width: 1130px; }
