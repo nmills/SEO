@@ -1966,7 +1966,7 @@ button.c-uie__calltoaction-secondary {
   padding-bottom: 20px;
   padding: 0; }
   .c-cta__wrapper.border {
-    border: 1px solid #e5e7e7; }
+    border: 2px solid #e5e7e7; }
   .c-cta__wrapper h3 {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
@@ -5608,7 +5608,7 @@ body {
   width: calc(100%);
   float: left;
   margin-left: 0;
-  border: 1px solid #e5e7e7;
+  border: 2px solid #e5e7e7;
   padding: 15px 20px; }
   @media only screen and (min-width: 480px) {
     .c-news-events .c-news-events__promotion {
