@@ -5,15 +5,17 @@
     </div>
     <div class="c-gallery__container image-only">
       {% for repeater in component.repeater %}
-        {% if repeater.url %}
-          <a href="{{repeater.url}}" class="bw-hover">
-        {% endif %}
-            <div class="c-gallery__gallery-item {% if loop.index % 2 == 0 %}even{% endif %} {% if loop.last %}last{% endif %}">
-              <img src="{{Image(repeater.photo).src }}" />    
-            </div>
-        {% if repeater.url %}
-          </a>
-        {% endif %}
+        <div class="c-gallery__col">
+          {% if repeater.url %}
+            <a href="{{repeater.url}}" class="bw-hover">
+          {% endif %}
+              <div class="c-gallery__gallery-item {% if loop.index % 2 == 0 %}even{% endif %} {% if loop.last %}last{% endif %}">
+                <img src="{{Image(repeater.photo).src }}" />    
+              </div>
+          {% if repeater.url %}
+            </a>
+          {% endif %}
+        </div>
       {% endfor %}
     </div>
   </div>

@@ -23,7 +23,7 @@ function generate_links_of_sites(){
 
 
   $filter_site = "<h3>Program: </h3>";
-  $filter_site .= "<span id='selected'>".$selected_site_name."</span>";
+  $filter_site .= "<span class='selector' id='selected'>".$selected_site_name."</span>";
   $filter_site .= "<ul class='c-news-filter__items' id='selection-options'>";
 
   foreach ($all_sites as $site) {
@@ -79,7 +79,7 @@ function generate_links_of_taxonomies_news(){
   }
 
   $filter_type = "<h3>Type: </h3>";
-  $filter_type .= "<span id='selected'>".$selected_type_name."</span>";
+  $filter_type .= "<span class='selector' id='selected'>".$selected_type_name."</span>";
   $filter_type .= "<ul class='c-news-filter__items' id='selection-options'>";
 
 

@@ -13,6 +13,7 @@ import player_button from 'modules/video_player_button.js';
 import navigation from 'modules/navigation.js';
 import progressCircle from 'modules/progressCircle.js';
 import svgAnim from 'modules/svgAnim.js';
+import customDropdown from 'modules/customDropdown.js';
 
 (function($) {
   $( document ).ready(function() {
@@ -61,6 +62,7 @@ import svgAnim from 'modules/svgAnim.js';
     progressCircle();
     svgAnim();
     navigation(); 
+    customDropdown();
   }
 
   function resize() {
