@@ -1220,7 +1220,7 @@ Styleguide 1.6
       font-size: 18px; }
 
 .wysiwyg .c-rte {
-  overflow: unset; }
+  overflow-y: unset; }
 
 .region_bottom .wrapper-wysiwyg {
   max-width: 1130px; }
@@ -2011,6 +2011,12 @@ button.c-uie__calltoaction-secondary {
     @media only screen and (min-width: 768px) {
       .c-cta__wrapper .c-rte__link {
         margin: 40px 35px 45px 35px; } }
+
+.cta__button {
+  margin: 50px 0;
+  text-align: center; }
+  .cta__button .c-uie__calltoaction-secondary {
+    padding: 15px 20px; }
 
 /*
 Gallery
@@ -3498,44 +3504,47 @@ body {
     width: 59px;
     height: 48px; } }
 
-.c-gallery__container.text-only .c-gallery__gallery-item {
-  width: calc(100%);
-  float: left;
-  margin-left: 0;
-  margin-bottom: 40px;
-  padding-left: 20px;
-  display: inline-block;
-  border-left: 8px solid black;
-  position: relative;
-  min-height: 145px; }
-  @media only screen and (min-width: 480px) {
-    .c-gallery__container.text-only .c-gallery__gallery-item {
-      width: calc(50%);
-      float: left;
-      margin-left: 0; } }
-  @media only screen and (min-width: 768px) {
-    .c-gallery__container.text-only .c-gallery__gallery-item {
-      width: calc(33.33333%);
-      float: left;
-      margin-left: 0;
-      margin-bottom: 35px; } }
-  .c-gallery__container.text-only .c-gallery__gallery-item .item__heading {
-    margin-bottom: 15px; }
-    .c-gallery__container.text-only .c-gallery__gallery-item .item__heading h3 {
+.c-gallery__container.text-only {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .c-gallery__container.text-only .c-gallery__gallery-item {
+    width: calc(100%);
+    float: left;
+    margin-left: 0;
+    margin-bottom: 40px;
+    position: relative; }
+    @media only screen and (min-width: 480px) {
+      .c-gallery__container.text-only .c-gallery__gallery-item {
+        width: calc(50%);
+        float: left;
+        margin-left: 0; } }
+    @media only screen and (min-width: 768px) {
+      .c-gallery__container.text-only .c-gallery__gallery-item {
+        width: calc(33.33333%);
+        float: left;
+        margin-left: 0;
+        margin-bottom: 35px; } }
+    .c-gallery__container.text-only .c-gallery__gallery-item .c-gallery__content {
+      border-left: 8px solid black;
+      padding-left: 20px; }
+    .c-gallery__container.text-only .c-gallery__gallery-item .item__heading {
+      margin-bottom: 15px; }
+      .c-gallery__container.text-only .c-gallery__gallery-item .item__heading h3 {
+        margin: 0;
+        line-height: 0.9;
+        font-size: 19px;
+        font-weight: 700; }
+    .c-gallery__container.text-only .c-gallery__gallery-item .item__sub-heading p {
       margin: 0;
-      line-height: 0.9;
-      font-size: 19px;
-      font-weight: 700; }
-  .c-gallery__container.text-only .c-gallery__gallery-item .item__sub-heading p {
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.2; }
-  .c-gallery__container.text-only .c-gallery__gallery-item .item__link {
-    margin-top: 15px;
-    line-height: 1; }
-    .c-gallery__container.text-only .c-gallery__gallery-item .item__link a {
-      font-size: 14px;
-      font-weight: 300; }
+      font-size: 18px;
+      line-height: 1.2; }
+    .c-gallery__container.text-only .c-gallery__gallery-item .item__link {
+      margin-top: 15px;
+      line-height: 1; }
+      .c-gallery__container.text-only .c-gallery__gallery-item .item__link a {
+        font-size: 14px;
+        font-weight: 300; }
 
 .c-gallery__container.image-small .c-gallery__gallery-item {
   width: calc(100%);
@@ -3591,14 +3600,16 @@ body {
 
 .c-gallery__container.image-medium {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 40px; }
   .c-gallery__container.image-medium .c-gallery__gallery-item {
     width: calc(100%);
     float: left;
     margin-left: 0;
     display: inline-block;
     position: relative;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    min-height: 400px; }
     @media only screen and (min-width: 480px) {
       .c-gallery__container.image-medium .c-gallery__gallery-item {
         width: 279px;

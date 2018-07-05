@@ -9,11 +9,10 @@
         <a href="{{tout.url}}"><div class="c-tout_image" style="background-image: url('{{Image(tout.image).src }}')"></div></a>
         <div class="c-tout_text">
           <a href="{{tout.url}}"><p>{{tout.text}}</p></a>
-          <a href="{{tout.url}}" class="c-rte__link">Learn more</a>
+          <a href="{{tout.url}}" class="c-rte__link">{{ (tout.link_text) ? tout.link_text : 'Learn more' }}</a>
         </div>
       </div>
 		{% endfor %}
-
     </div>
   </div>
 </section>

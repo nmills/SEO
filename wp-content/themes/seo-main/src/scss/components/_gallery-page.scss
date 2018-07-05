@@ -6,11 +6,9 @@
       border-bottom: 1px solid $light-gray;
     }
 
-
     @include grid-media($md) {
       margin-bottom: -40px;
     }
-
 
     .container {
       padding: 0 35px;
@@ -21,17 +19,10 @@
     max-width: 1024px;
     margin: 0 auto;
 
-    // text-align: center;
-    // width: 80%;
-    // margin: auto;
-
     h1 {
-      //   font-weight: $font-thinnest;
       margin: 0;
       font-size: 42px;
       padding: 0 35px;
-
-      //   max-width: 800px;
       margin-top: 30px;
       margin-bottom: 30px;
 
@@ -42,8 +33,6 @@
       @include grid-media($hd) {
         padding: 0;
         font-size: 61px;
-
-        //     max-width: 800px;
         margin-top: 100px;
         margin-bottom: 45px;
       }
@@ -205,20 +194,19 @@
   }
 
   &.text-only {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
     .c-gallery__gallery-item {
       @include grid-column(12, $no-gutter);
 
       margin-bottom: 40px;
-      padding-left: 20px;
-      display: inline-block;
-      border-left: 8px solid black;
       position: relative;
-      min-height: 145px;
 
       @include grid-media($sm) { 
         @include grid-column(6, $no-gutter);
       }
-
 
       @include grid-media($md) {
         @include grid-column(4, $no-gutter);
@@ -226,6 +214,10 @@
         margin-bottom: 35px; 
       }
 
+      .c-gallery__content {
+        border-left: 8px solid black;
+        padding-left: 20px; 
+      }
 
       .item__heading {
         margin-bottom: 15px;
@@ -262,23 +254,18 @@
     .c-gallery__gallery-item {
       @include grid-column(12, $no-gutter);
 
-      // width: 279px;
       display: inline-block;
       position: relative;
       margin-bottom: 35px;
 
-      @include grid-media($sm) {
-        // @include grid-column(6, $no-gutter);
+      @include grid-media($sm) {        
         width: 279px;
       }
 
-
       @include grid-media($md) {
-        // @include grid-column(4, $no-gutter);
         width: 335px;
         margin-bottom: 45px;
       }
-
 
       img {
         width: 45%;
@@ -307,10 +294,6 @@
         float: left;
         margin-left: 15px;
         width: 35%;
-
-        @include grid-media($md) {
-          // float: left;
-        }
       }
 
       .item__heading {
@@ -347,6 +330,7 @@
   &.image-medium {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 40px;
 
     .c-gallery__gallery-item {
       @include grid-column(12, $no-gutter);
@@ -354,6 +338,7 @@
       display: inline-block;
       position: relative;
       margin-bottom: 50px;
+      min-height: 400px;
 
       @include grid-media($sm) {
         width: 279px;
