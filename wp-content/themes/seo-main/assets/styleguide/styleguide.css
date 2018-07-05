@@ -3605,7 +3605,8 @@ body {
     margin-left: 0;
     display: inline-block;
     position: relative;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    min-height: 400px; }
     @media only screen and (min-width: 480px) {
       .c-gallery__container.image-medium .c-gallery__gallery-item {
         width: 279px;

@@ -344,6 +344,7 @@
       display: inline-block;
       position: relative;
       margin-bottom: 50px;
+      min-height: 400px;
 
       @include grid-media($sm) {
         width: 279px;
