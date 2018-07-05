@@ -3591,7 +3591,8 @@ body {
 
 .c-gallery__container.image-medium {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 40px; }
   .c-gallery__container.image-medium .c-gallery__gallery-item {
     width: calc(100%);
     float: left;
