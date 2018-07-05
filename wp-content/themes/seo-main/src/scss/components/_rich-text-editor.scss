@@ -425,11 +425,13 @@ Styleguide 1.6
 */
 
 .c-rte {
-  overflow-y: auto;
-
   table {
-    border-top: 10px solid #050505;
+    border-top: 10px solid $dark-gray;
+    max-width: 700px;
     width: 100%;
+    display: block;
+    height: auto !important;
+    overflow-x: auto;
 
     tr {
       &:first-of-type {
@@ -447,12 +449,6 @@ Styleguide 1.6
       font-weight: 100;
       font-size: 18px;
     }
-  }
-}
-
-.wysiwyg {
-  .c-rte {
-    overflow-y: unset;
   }
 }
 
