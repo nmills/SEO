@@ -23,7 +23,7 @@
           </div>
           {% if item.destination_link %}
             <div class="item__link">
-              <a href="{{item.destination_link}}" class="c-rte__link">Read full bio</a>
+              <a href="{{item.destination_link}}" class="c-rte__link">{{ (item.link_text) ? item.link_text : 'Read full bio' }}</a>
             </div>
           {% endif %}       
         </div>
