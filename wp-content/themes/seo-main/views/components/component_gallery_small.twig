@@ -12,8 +12,9 @@
             </a>
           {% else %}
              <img src="{{Image(item.photo).src }}" />
-          {% endif %}  
-        <div class="item__heading">
+          {% endif %}
+        <div class="c-gallery__content">
+          <div class="item__heading">
             <h3>{{item.heading}}</h3>
           </div>
           <div class="item__sub-heading">
@@ -23,7 +24,8 @@
             <div class="item__link">
               <a href="{{item.destination_link}}" class="c-rte__link">{{ (item.link_text) ? item.link_text : 'Read full bio' }}</a>
             </div>
-          {% endif %}       
+          {% endif %}
+        </div>
         </div>
       {% endfor %}
     </div>
