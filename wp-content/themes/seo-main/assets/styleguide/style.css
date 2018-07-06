@@ -6581,8 +6581,9 @@ body {
   @media only screen and (min-width: 840px) {
     body {
       padding-top: 52px; } }
-  body.has_submenu {
-    padding-top: 110px; }
+  @media only screen and (min-width: 840px) {
+    body.has_submenu {
+      padding-top: 110px; } }
 
 .hide {
   display: none !important; }
