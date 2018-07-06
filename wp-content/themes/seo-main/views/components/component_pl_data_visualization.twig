@@ -1,90 +1,18 @@
-<section class="c-ph-stats__section">
-    <div class="c-ph-stats__container">
-      <div class="c-ph-stats__content {% if component.repeater|length == 1 %}single{% endif %}">
-        {% set percentage = '' %}
-        {% for repeater in component.repeater %} {% if repeater.stat_type == 'percentage' %}
-        <div class="old">
-          <div class="c-ratiometer_container">
-            <div class="c-ratiometer">
-              <div class="c-rationmeter-positioner">
-                <div class="c-ratiometer-meter_out js-progress-bar" data-percent="{{repeater.percent}}">
-                  <div class="c-rationmeter-meter" style="background-image: url({{Image(repeater.image).src }})">
-                  </div>
-                </div>
-                <div class="c-rationmeter-text">
-                  <h1 class="percent">{{repeater.percent}}%</h1>
-                  {% if repeater.percent %}
-                    {% set percentage = repeater.percent %}
-                  {% endif %}
-                  <p>{{repeater.text}}</p>
-                </div>
-              </div>
+<section>
+  <div class="old">
+    <div class="c-ratiometer_container">
+      <div class="c-ratiometer">
+        <div class="c-rationmeter-positioner">
+          <div class="c-ratiometer-meter_out js-progress-bar" data-percent="{{component.percentage}}">
+            <div class="c-rationmeter-meter" style="background-image: url({{Image(component.image).src }})">
             </div>
           </div>
-        </div>
-        {% elseif repeater.stat_type == 'numbers' %}
-        <div class="c-ph-stats-border__container">
-          <div class="c-ph-stats-border__details">
-            <h1>{{repeater.number}}</h1>
-            <p>{{repeater.text}}</p>
-
-            {% if repeater.year_2 is not empty and repeater.year_1 is not empty %}
-
-              <div class="c-ph-stats-border__top-value">
-                <h3>{{repeater.year_2}}</h3>
-              </div>            
-              <div class="c-ph-stats-border__bottom-value">
-                <h3>{{repeater.year_1}}</h3>
-              </div>
-              <div class="c-ph-stats-svg">
-                <svg class="curve" width="192px" height="225px" viewBox="0 0 192 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <path d="M187,0 L187,133.72549 C187,181.373586 148.239467,220 100.425926,220 L0,220" id="Rectangle-17" stroke="#7CB4F6" stroke-width="10"></path>
-                  </g>
-                </svg>
-              </div>
-
-            {% endif %}
-
-
+          <div class="c-rationmeter-text">
+            <h1 class="percent">{{component.percentage}}</h1>
+            <p>{{component.text}}</p>
           </div>
         </div>
-        {% endif %} {% endfor %}
       </div>
     </div>
+  </div>
 </section>
-<script>
-jQuery(document).ready(function() {
-  var triggerAtY = $('.c-ph-stats__container').offset().top - $(window).outerHeight();
-  $(window).scroll(function(event) {
-
-    // #target not yet in view
-    if (triggerAtY > $(window).scrollTop()) {
-      return;
-    }
-
-    //Jquery Circle Progress
-    // var progress_circle = jQuery(".js-progress-bar").gmpc({
-    //     line_width: 10,
-    //     color: "#7CB4F6",
-    //     starting_position: 36, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
-    //     percent: 0, // percent starts from
-    //     percentage: true,
-    //     height: "320px",
-    //     width: "320px"
-    //   })
-    // .gmpc("animate", '{{percentage}}', 2000);
-
-    // SVG animation
-    var svg = jQuery(".curve").drawsvg({
-      duration: 2000,
-      easing: "linear",
-      reverse: "true"
-    });
-    svg.drawsvg("animate");
-    
-    // remove this event handler
-    $(this).off(event);
-  })
-});
-</script>
