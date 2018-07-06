@@ -119,7 +119,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_5ab214af73ad8"
+                                "group_5aa56447dbe02"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -465,5 +465,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1530718771
+    "modified": 1530874945
 }
