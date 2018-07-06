@@ -10,18 +10,18 @@
               <source src="{{component.video.url}}" type="video/mp4">
             </video>
           </div>
+          <div class="c-gh-hero__image c-mobile-hero__image" style="background-image: url({{Image(component.image).src }})"></div>
+
+          <div class="c-gh-hero__text"><h1>{{component.hero_text}}</h1></div>
         {% else %}
           
-        <div class="c-gh-hero__image item" style="background-image: url({{Image(component.image).src}})"></div>
+          <div class="c-gh-hero__image item" style="background-image: url({{Image(component.image).src}})"></div>
 
-        <div class="c-gh-hero__image c-mobile-hero__image" style="background-image: url({{Image(component.image).src }})"></div>
+          <div class="c-gh-hero__image c-mobile-hero__image" style="background-image: url({{Image(component.image).src }})"></div>
+
+          <div class="c-gh-hero__text"><h1>{{component.hero_text}}</h1></div>
 
         {% endif %}
-
-        <div class="c-gh-hero__image c-mobile-hero__image" style="background-image: url({{Image(component.image).src }})">
-        </div>
-
-        <div class="c-gh-hero__text"><h1>{{component.hero_text}}</h1></div>
       
       {% else %}
 
