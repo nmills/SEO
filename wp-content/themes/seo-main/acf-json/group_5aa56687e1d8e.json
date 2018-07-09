@@ -130,6 +130,37 @@
                     "min": "",
                     "max": ""
                 },
+                "5b42d77de5974": {
+                    "key": "5b42d77de5974",
+                    "name": "component_pl_stats_new",
+                    "label": "Stats New",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b42d77de5975",
+                            "label": "Stats",
+                            "name": "component:_pl:_stats_new",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ab214af73ad8"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "5aa602a17e6b7": {
                     "key": "5aa602a17e6b7",
                     "name": "component_pl_cta",
@@ -465,5 +496,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1530874945
+    "modified": 1531107244
 }
