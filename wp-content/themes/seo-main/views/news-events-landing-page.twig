@@ -3,13 +3,13 @@
 {% block content %}
 	<main id="content">
 	    <div class="page-content c-news-events">
-			{% set featured_post_ID = '' %}
-			{% if featured_posts %}
 				<section>
 				  <div class="container">
 				    <div class="page-title">
 				      <h1>{{post.title}}</h1>
 				    </div>
+			{% set featured_post_ID = '' %}
+			{% if featured_posts %}
 				    {% for featured_post in featured_posts %}
 				    <div class="c-news-events__content featured">
 				      <a href="{{featured_post.link}}">
