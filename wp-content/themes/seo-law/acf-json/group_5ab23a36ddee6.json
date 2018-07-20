@@ -113,7 +113,7 @@
                 "5ab2408657f79": {
                     "key": "5ab2408657f79",
                     "name": "component_gh_donate",
-                    "label": "Donate",
+                    "label": "Text CTA - Full Width",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -228,5 +228,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1526554917
+    "modified": 1532080497
 }

@@ -222,6 +222,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5b51ab49af8f2": {
+                    "key": "5b51ab49af8f2",
+                    "name": "component_ph_textcta",
+                    "label": "Text CTA - Full Width",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b51ab49af8f3",
+                            "label": "Text CTA - Full Width",
+                            "name": "component_ph_textcta",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ab222f0da179"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -234,7 +265,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "template-program_homepage.php"
+                "value": "default"
             }
         ]
     ],
@@ -248,5 +279,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1529309541
+    "modified": 1532079180
 }

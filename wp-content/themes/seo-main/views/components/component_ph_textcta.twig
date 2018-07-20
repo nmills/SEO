@@ -1,0 +1,18 @@
+<section class="c-gh-donate">
+	<div class="container">
+		<div class="c-gh-donate__container">
+			<div class="c-gh-donate__text">
+				<h2>{{component.text}}</h2>
+			</div>
+			<div class="c-gh-donate__donate-button">
+				<a href="{{component.button.url}}" class="c-uie__calltoaction">
+					{% if component.button.title %}
+						{{component.button.title}}
+        	{% else %}
+        		{{component.button.url}}
+        	{% endif %}
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
