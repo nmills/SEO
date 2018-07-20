@@ -4720,8 +4720,11 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: linear-gradient(to left, #ffffff00, rgba(5, 5, 5, 0.3));
+        background-image: linear-gradient(to bottom, #ffffff00, rgba(5, 5, 5, 0.85));
         transition: all 0.3s cubic-bezier(0, 0, 0.2, 1); }
+        @media only screen and (min-width: 1024px) {
+          .c-gh-program .container .c-gh-program__container .c-gh-program__item:before {
+            background-image: linear-gradient(to left, #ffffff00, rgba(5, 5, 5, 0.3)); } }
       .c-gh-program .container .c-gh-program__container .c-gh-program__item:hover:before {
         background-image: linear-gradient(to bottom, #ffffff00, rgba(5, 5, 5, 0.85)); }
       .c-gh-program .container .c-gh-program__container .c-gh-program__item .c-gh-program__image {
