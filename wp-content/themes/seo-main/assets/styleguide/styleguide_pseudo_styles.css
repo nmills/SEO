@@ -179,31 +179,6 @@
   border-bottom: 3px solid #050505;
 }
 
-.c-gallery__container.image-only .c-gallery__gallery-item.pseudo-class-hover img {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
-.c-gallery__container.image-small .c-gallery__gallery-item.pseudo-class-hover img {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
-.c-gallery__container.image-medium .c-gallery__gallery-item.pseudo-class-hover .c-gallery__image {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
-.c-ph-gallery__container .c-ph-gallery__content .c-ph-gallery__gallery-item.pseudo-class-hover img {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
-.c-ph-gallery__container .c-ph-gallery__content .bw-hover .c-ph-gallery__gallery-item.pseudo-class-hover img {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
 .c-ph-gallery__container .c-ph-gallery__last-link a.pseudo-class-hover {
   color: #7cb4f6;
 }
