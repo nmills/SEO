@@ -439,6 +439,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5b51b1f17defd": {
+                    "key": "5b51b1f17defd",
+                    "name": "component_pl_textcta",
+                    "label": "Text CTA - Full Width",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b51b1f17defe",
+                            "label": "Text CTA - Full Width",
+                            "name": "component_ph_textcta",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ab222f0da179"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -465,5 +496,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1531999122
+    "modified": 1532080755
 }
