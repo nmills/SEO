@@ -133,7 +133,7 @@ Styleguide 8.0
 .gd__content-link {
   color: $black;
 
-  @include type-5-bold;
+  @include type-5;
 
   display: flex;
   align-items: center;
