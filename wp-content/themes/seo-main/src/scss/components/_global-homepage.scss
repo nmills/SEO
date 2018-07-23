@@ -306,8 +306,12 @@
           right: 0;
           bottom: 0;
           left: 0;
-          background-image: linear-gradient(to left, #ffffff00, $prog-list-gradient);
+          background-image: linear-gradient(to bottom, #ffffff00, $prog-list-gradient-hover);
           transition: all 0.3s $cubic-transition-2;
+
+          @include grid-media($lg) {
+            background-image: linear-gradient(to left, #ffffff00, $prog-list-gradient);
+          }
         }
 
         &:hover {
