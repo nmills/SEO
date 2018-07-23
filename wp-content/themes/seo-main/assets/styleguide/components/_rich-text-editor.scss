@@ -28,9 +28,11 @@ Styleguide 1.1
 .c-rte__link,
 .c-rte__accordion a {
   @include default($color: $black);
-
+  
   transition: all 0.4s $cubic-transition;
-  font-weight: $font-normal;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
   border-bottom: 3px solid $light-blue;
   text-decoration: none;
 
@@ -184,14 +186,14 @@ Styleguide 1.4
 
 .c-rte, .c-rte__accordion {
   ul {
-    margin: 50px 0px;
+    margin: 20px 0px;
     list-style-type: none !important;
 
     li {
       position: relative;
-      padding-left: 40px;
+      padding-left: 30px;
 
-      @include type-custom($color: $black, $font-weight: $font-medium, $font-size: 20px, $line-height: 1.2);
+      @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 20px, $line-height: 1.2);
 
       &:before {
         content: "";
@@ -201,13 +203,23 @@ Styleguide 1.4
         background: $maroon;
         position: absolute;
         left: 0;
-        top: 5px;
+        top: 8px;
       }
 
       &:after {
         content: "";
         display: block;
         margin-bottom: 25px;
+      }
+
+      ul {
+        li {
+          &:before {
+            width: 9px;
+            height: 9px;
+            border-radius: 10px;
+          }
+        }
       }
     }
   }
@@ -240,19 +252,21 @@ Styleguide 1.5
 */
 
 .c-rte, .c-rte__accordion {
+
   ol {
-    margin: 50px 0px;
+    margin: 20px 0px;
     list-style-type: none !important;
+    counter-reset: counter-name;
 
     li {
       position: relative;
-      padding-left: 40px;
-      counter-increment: table-ol;
+      padding-left: 30px;
 
-      @include type-custom($color: $black, $font-weight: $font-medium, $font-size: 20px, $line-height: 1.2);
+      @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 20px, $line-height: 1.2);
 
       &:before {
-        content: counter(table-ol);
+        counter-increment: counter-name;
+        content: counter(counter-name);
         position: absolute;
         left: 0;
         color: $maroon;
@@ -263,6 +277,18 @@ Styleguide 1.5
         content: "";
         display: block;
         margin-bottom: 25px;
+      }
+
+      ol {
+        counter-reset: listStyle;
+
+        li {
+          counter-increment: listStyle;
+
+          &:before {
+            content: counter(listStyle, lower-alpha);
+          }
+        }
       }
     }
   }
