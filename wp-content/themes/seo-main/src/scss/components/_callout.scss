@@ -35,9 +35,14 @@
     @include type-3;
     font-weight: $font-thinnest;
     line-height: 1.2;
+    color: $red;
+
+    @include grid-media($md) {
+      margin-top: -10px;
+      font-size: 30px;
+    }
   }
 }
 
 .c-gh-callout__citation {
-  @include type-4;
-}
+} 
