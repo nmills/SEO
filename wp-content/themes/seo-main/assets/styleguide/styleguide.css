@@ -2595,6 +2595,9 @@ Gallery
         margin-left: 0;
         float: right;
         max-width: 700px; } }
+    .container.region_body .region_main_content.no-leftrail {
+      margin: auto;
+      float: none; }
   .container.region_body.title-border .region_main_content:before {
     content: "";
     display: block;
