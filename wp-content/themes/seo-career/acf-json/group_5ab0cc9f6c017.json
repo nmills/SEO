@@ -265,7 +265,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "default"
+                "value": "template-program_homepage.php"
             }
         ]
     ],
@@ -279,5 +279,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1532079180
+    "modified": 1532417636
 }

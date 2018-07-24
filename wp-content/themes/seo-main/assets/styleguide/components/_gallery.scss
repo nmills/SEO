@@ -280,7 +280,7 @@ Gallery
   display: block;
   padding-top: 25px;
 
-  @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
+  @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 15px, $line-height: 1);
 
   // border-bottom: 1px solid $white;
 

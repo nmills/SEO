@@ -35,7 +35,7 @@ Styleguide 3.0
   float: left;
   clear: both;
 
-  @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1.3);
+  @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 15px, $line-height: 1);
 
   text-align: left;
   margin-bottom: 10px;

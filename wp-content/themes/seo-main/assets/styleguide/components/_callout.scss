@@ -34,6 +34,7 @@
   p {
     @include type-3;
     font-weight: $font-thinnest;
+    line-height: 1.2;
   }
 }
 
