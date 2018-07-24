@@ -923,7 +923,7 @@ Styleguide 1.2
     color: #050505;
     font-weight: 100;
     font-size: 24px;
-    line-height: 1.25; }
+    line-height: 1.2; }
 
 /*
 Quote Offset
@@ -1101,7 +1101,7 @@ Styleguide 1.5
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1; }
 
 .c-rte, .c-rte__accordion {
@@ -1655,8 +1655,8 @@ Styleguide 3.0
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #050505;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.3;
+  font-size: 15px;
+  line-height: 1;
   text-align: left;
   margin-bottom: 10px;
   padding-bottom: 15px; }
@@ -2023,7 +2023,7 @@ button.c-uie__calltoaction-secondary {
         margin: 40px 35px 45px 35px; } }
 
 .cta__button {
-  margin: 50px 0;
+  margin: 50px auto;
   text-align: center; }
   .cta__button .c-uie__calltoaction-secondary {
     padding: 15px 20px; }
@@ -2279,7 +2279,7 @@ Gallery
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #050505;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1;
   width: calc(43.33333%);
   float: left;
@@ -2691,7 +2691,6 @@ Gallery
       color: white;
       font-size: 24px;
       width: 80%;
-      line-height: 1;
       font-weight: 100; }
       @media only screen and (min-width: 1024px) {
         .hero-section .c-hero_image p,
@@ -2775,8 +2774,7 @@ Gallery
       .tout-section .c-tout_container .c-tout_item .c-tout_text p {
         margin: 0;
         margin-bottom: 10px;
-        font-size: 20px;
-        line-height: 1; }
+        font-size: 20px; }
         @media only screen and (min-width: 1024px) {
           .tout-section .c-tout_container .c-tout_item .c-tout_text p {
             font-size: 30px;
@@ -3198,12 +3196,12 @@ body {
       margin-left: 0;
       float: right; } }
 
-.c-program_cta__container .c-program-title h1 {
+.c-program_cta__container .c-program-title h2 {
   margin: 0;
   margin-bottom: 30px;
   font-size: 32px; }
   @media only screen and (min-width: 768px) {
-    .c-program_cta__container .c-program-title h1 {
+    .c-program_cta__container .c-program-title h2 {
       font-size: 42px;
       margin: 0; } }
 
@@ -3384,7 +3382,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .gallery-page section {
-    margin-bottom: -40px; } }
+    margin-bottom: 40px; } }
 
 .gallery-page section .container {
   padding: 0 35px; }
@@ -3424,6 +3422,9 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   width: 100%; }
+
+.container.region_hero .c-gallery__container {
+  margin-top: 40px; }
 
 .c-gallery__container .c-gallery__gallery-item .item__description a {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -3832,7 +3833,7 @@ body {
       color: #050505;
       font-weight: 100;
       font-size: 20px;
-      line-height: 1.5;
+      line-height: 1.2;
       margin-bottom: 50px; }
       @media only screen and (min-width: 768px) {
         .c-ph-intro__container .c-ph-intro__content p {
@@ -3840,7 +3841,7 @@ body {
           color: #050505;
           font-weight: 100;
           font-size: 30px;
-          line-height: 1.5;
+          line-height: 1.2;
           margin-bottom: 55px; } }
     .c-ph-intro__container .c-ph-intro__content .c-uie__calltoaction {
       border-left-width: 5px;
@@ -3907,7 +3908,7 @@ body {
     color: #050505;
     font-weight: 100;
     font-size: 24px;
-    line-height: 1.3;
+    line-height: 1.2;
     margin-bottom: 20px; }
     @media only screen and (min-width: 768px) {
       .c-ph-gallery__container .c-ph-gallery__description p {
@@ -3991,14 +3992,12 @@ body {
     .c-ph-gallery__container .c-ph-gallery__last-text p {
       font-weight: 100;
       font-size: 14px;
-      line-height: 1;
       margin-bottom: 7px;
       color: #050505; }
       @media only screen and (min-width: 768px) {
         .c-ph-gallery__container .c-ph-gallery__last-text p {
           font-weight: 100;
           font-size: 18px;
-          line-height: 1;
           margin-bottom: 15px; } }
   .c-ph-gallery__container .c-ph-gallery__last-link {
     width: calc(100%);
@@ -4235,7 +4234,7 @@ body {
         color: #050505;
         font-weight: 100;
         font-size: 20px;
-        line-height: 1;
+        line-height: 1.2;
         margin-top: 0; }
         @media only screen and (min-width: 768px) {
           .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details p {
@@ -4243,7 +4242,7 @@ body {
             color: #050505;
             font-weight: 100;
             font-size: 30px;
-            line-height: 1;
+            line-height: 1.2;
             margin-bottom: 35px; } }
       .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details .c-ph-stats-border__top-value,
       .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details .c-ph-stats-border__bottom-value {
@@ -4760,7 +4759,7 @@ body {
         color: #ffffff;
         font-weight: 100;
         font-size: 24px;
-        line-height: 1; }
+        line-height: 1.2; }
         @media only screen and (min-width: 480px) {
           .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
             max-width: 80%; } }
@@ -4771,7 +4770,6 @@ body {
             opacity: 0; } }
       .c-gh-program .container .c-gh-program__container .c-gh-program__item h1 {
         width: 50%;
-        margin: 0;
         bottom: 170px;
         left: 30px;
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -5820,7 +5818,8 @@ body {
   font-size: 26px;
   line-height: 1;
   letter-spacing: -0.2px;
-  font-weight: 100; }
+  font-weight: 100;
+  line-height: 1.2; }
   @media only screen and (min-width: 768px) {
     .c-gh-callout__text,
     .c-gh-callout__text p {
@@ -7438,5 +7437,4 @@ footer.site-footer {
             margin-top: 73px; } }
         footer.site-footer .c-footer__widget-container .c-footer__widgets .textwidget p {
           font-size: 15px;
-          margin: 0;
-          line-height: 1; }
+          margin: 0; }

@@ -93,7 +93,7 @@ Styleguide 1.2
 
     &,
     p {
-      @include type-custom($color: $dark-gray, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1.25);
+      @include type-custom($color: $dark-gray, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1.2);
     }
   }
 }
@@ -311,7 +311,7 @@ Styleguide 1.5
 
       // font-weight: $font-normal;
       // line-height: 1;
-      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 15px, $line-height: 1);
     }
   }
 }

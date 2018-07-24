@@ -66,7 +66,6 @@
       color: white;
       font-size: 24px;
       width: 80%;
-      line-height: 1;
       font-weight: $font-thinnest;
 
       @include grid-media($lg) {
@@ -177,7 +176,6 @@
           margin: 0;
           margin-bottom: 10px;
           font-size: 20px;
-          line-height: 1;
 
           @include grid-media($lg) {
             font-size: 30px;
@@ -859,7 +857,7 @@ body {
   }
 
   .c-program-title {
-    h1 {
+    h2 {
       margin: 0;
       margin-bottom: 30px; 
       font-size: 32px;
