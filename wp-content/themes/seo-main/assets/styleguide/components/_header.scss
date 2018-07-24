@@ -337,7 +337,7 @@ header {
         @include grid-media($hd) {
           padding: 4px 15.5px;
 
-          @include type-5-bold($color: $white);
+          @include type-5($color: $white);
 
           &:hover,
           &:focus {
@@ -514,7 +514,7 @@ header {
         width: 100%;
         padding: 8px 15.5px;
 
-        @include type-5-bold($color: $white);
+        @include type-5($color: $white);
 
         background: $black;
 
