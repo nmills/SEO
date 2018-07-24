@@ -79,9 +79,6 @@ $sans-stack: 'Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: $font-bold;
   font-size: 15px;
   line-height: 1;
-  @include grid-media($md) {
-    font-size: 19px;
-  }
 }
 
 // @mixin type-5-bold($color: $black) {
