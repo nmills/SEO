@@ -3,6 +3,10 @@
   .container {
     max-width: 1080px;
     margin: 0 auto;
+    
+    @include grid-media($max-md) {
+      padding: 0;
+    }
 
     @include grid-media($md) {
       display: flex;

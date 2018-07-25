@@ -69,8 +69,6 @@ Styleguide 1.2
     display: inline-block;
     margin: 0;
 
-    @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 61px, $line-height: 1);
-
     span {
       font-weight: $font-thin;
     }
@@ -85,7 +83,7 @@ Styleguide 1.2
       @include grid-media($lg) {
         width: 110px;
       }
-    }
+    } 
   }
 
   .page-title__text-spacing {
