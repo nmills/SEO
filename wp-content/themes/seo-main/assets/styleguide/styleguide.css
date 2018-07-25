@@ -2618,6 +2618,9 @@ Gallery
 
 .region_bottom {
   margin-bottom: 50px; }
+  .region_bottom.no-leftrail .inner-container {
+    margin: auto;
+    float: none; }
 
 @media only screen and (max-width: 767px) {
   .c-news-events .container.region_body {

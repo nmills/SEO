@@ -123,6 +123,13 @@
 
 .region_bottom {
   margin-bottom: 50px;
+  
+  &.no-leftrail {
+    .inner-container {
+      margin: auto;
+      float: none; 
+    }
+  }
 }
 
 .c-news-events {

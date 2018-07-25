@@ -40,7 +40,8 @@
             {% endif %}
           </div>
 
-          <div class="region_bottom">
+          <div class="region_bottom {% if post.get_field('region:_content_region_left')
+            is empty %} no-leftrail{% endif %}">
             {% for component in post.get_field('region:_content_region_bottom') %}
               {% include ['components/'~component.acf_fc_layout~'.twig' , 'components/components.twig'] ignore missing with {"component": component} %}
             {% endfor %}
