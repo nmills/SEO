@@ -283,9 +283,8 @@ Styleguide 1.5
         counter-reset: listStyle;
 
         li {
-          counter-increment: listStyle;
-
           &:before {
+            counter-increment: listStyle;
             content: counter(listStyle, lower-alpha);
           }
         }

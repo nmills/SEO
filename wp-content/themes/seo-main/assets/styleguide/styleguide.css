@@ -1080,10 +1080,9 @@ Styleguide 1.5
       margin-bottom: 25px; }
     .c-rte ol li ol, .c-rte__accordion ol li ol {
       counter-reset: listStyle; }
-      .c-rte ol li ol li, .c-rte__accordion ol li ol li {
-        counter-increment: listStyle; }
-        .c-rte ol li ol li:before, .c-rte__accordion ol li ol li:before {
-          content: counter(listStyle, lower-alpha); }
+      .c-rte ol li ol li:before, .c-rte__accordion ol li ol li:before {
+        counter-increment: listStyle;
+        content: counter(listStyle, lower-alpha); }
 
 .c-rte .video {
   border-left: 10px solid #050505;
