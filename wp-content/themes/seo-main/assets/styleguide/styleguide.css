@@ -891,12 +891,7 @@ Styleguide 1.2
 .page-title h1 {
   font-weight: bold;
   display: inline-block;
-  margin: 0;
-  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #050505;
-  font-weight: 700;
-  font-size: 61px;
-  line-height: 1; }
+  margin: 0; }
   .page-title h1 span {
     font-weight: 200; }
   .page-title h1:before {
@@ -1301,7 +1296,7 @@ Styleguide 4.1
   list-style: none;
   padding: 0;
   margin: 0;
-  marrgin-left: -15px; }
+  margin-left: -15px; }
   .c-accordion .answer {
     overflow: hidden;
     display: none;
@@ -2619,15 +2614,30 @@ Gallery
 
 .region_bottom {
   margin-bottom: 50px; }
-  .region_bottom .inner-container {
-    padding: 0 5px !important; }
+  @media only screen and (min-width: 768px) {
+    .region_bottom .inner-container {
+      padding: 0 5px !important; } }
   .region_bottom.no-leftrail .inner-container {
     margin: auto;
     float: none; }
+  @media only screen and (max-width: 767px) {
+    .region_bottom .container.wrapper-wysiwyg, .region_bottom .container.wrapper-faq, .region_bottom .container.wrapper-gallery {
+      padding: 0 10%; } }
 
 @media only screen and (max-width: 767px) {
   .c-news-events .container.region_body {
     padding: 0; } }
+
+@media only screen and (max-width: 767px) {
+  .container.wrapper-wysiwyg, .container.wrapper-faq, .container.wrapper-gallery {
+    padding: 0; } }
+
+.region_main_content .container.wrapper-wysiwyg .container.inner-container {
+  padding: 0; }
+
+@media only screen and (min-width: 768px) {
+  .region_main_content.no-leftrail .container.wrapper-wysiwyg {
+    padding: 0 5px; } }
 
 /* Program Landing */
 .program-landing-page .page-title {
@@ -5777,6 +5787,9 @@ body {
 .c-gh-callout .container {
   max-width: 1080px;
   margin: 0 auto; }
+  @media only screen and (max-width: 767px) {
+    .c-gh-callout .container {
+      padding: 0; } }
   @media only screen and (min-width: 768px) {
     .c-gh-callout .container {
       display: flex;
