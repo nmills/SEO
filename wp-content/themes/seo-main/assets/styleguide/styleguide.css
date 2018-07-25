@@ -273,9 +273,6 @@ h5 {
   font-weight: 700;
   font-size: 15px;
   line-height: 1; }
-  @media only screen and (min-width: 768px) {
-    h5 {
-      font-size: 19px; } }
 
 body {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -297,9 +294,6 @@ p {
     font-weight: 700;
     font-size: 15px;
     line-height: 1; }
-    @media only screen and (min-width: 768px) {
-      p.small-text {
-        font-size: 19px; } }
 
 strong {
   font-weight: 700; }
@@ -897,12 +891,7 @@ Styleguide 1.2
 .page-title h1 {
   font-weight: bold;
   display: inline-block;
-  margin: 0;
-  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #050505;
-  font-weight: 700;
-  font-size: 61px;
-  line-height: 1; }
+  margin: 0; }
   .page-title h1 span {
     font-weight: 200; }
   .page-title h1:before {
@@ -923,7 +912,7 @@ Styleguide 1.2
     color: #050505;
     font-weight: 100;
     font-size: 24px;
-    line-height: 1.25; }
+    line-height: 1.2; }
 
 /*
 Quote Offset
@@ -1086,10 +1075,9 @@ Styleguide 1.5
       margin-bottom: 25px; }
     .c-rte ol li ol, .c-rte__accordion ol li ol {
       counter-reset: listStyle; }
-      .c-rte ol li ol li, .c-rte__accordion ol li ol li {
-        counter-increment: listStyle; }
-        .c-rte ol li ol li:before, .c-rte__accordion ol li ol li:before {
-          content: counter(listStyle, lower-alpha); }
+      .c-rte ol li ol li:before, .c-rte__accordion ol li ol li:before {
+        counter-increment: listStyle;
+        content: counter(listStyle, lower-alpha); }
 
 .c-rte .video {
   border-left: 10px solid #050505;
@@ -1101,7 +1089,7 @@ Styleguide 1.5
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1; }
 
 .c-rte, .c-rte__accordion {
@@ -1303,14 +1291,12 @@ Styleguide 4.1
     color: #891a27;
     text-transform: uppercase;
     margin: 0; }
-    @media only screen and (min-width: 768px) {
-      .c-accordion__wrapper h3 {
-        font-size: 19px; } }
 
 .c-accordion {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  margin-left: -15px; }
   .c-accordion .answer {
     overflow: hidden;
     display: none;
@@ -1655,8 +1641,8 @@ Styleguide 3.0
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #050505;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.3;
+  font-size: 15px;
+  line-height: 1;
   text-align: left;
   margin-bottom: 10px;
   padding-bottom: 15px; }
@@ -2023,7 +2009,7 @@ button.c-uie__calltoaction-secondary {
         margin: 40px 35px 45px 35px; } }
 
 .cta__button {
-  margin: 50px 0;
+  margin: 50px auto;
   text-align: center; }
   .cta__button .c-uie__calltoaction-secondary {
     padding: 15px 20px; }
@@ -2168,9 +2154,6 @@ Styleguide 8.0
   line-height: 1;
   display: flex;
   align-items: center; }
-  @media only screen and (min-width: 768px) {
-    .gd__content-link {
-      font-size: 19px; } }
 
 /* -----------------
 Gallery
@@ -2264,9 +2247,6 @@ Gallery
     font-weight: 700;
     font-size: 15px;
     line-height: 1; }
-    @media only screen and (min-width: 768px) {
-      .body-slide p {
-        font-size: 19px; } }
     .body-slide p:first-child {
       margin-top: 0; }
     .body-slide p:last-child {
@@ -2279,7 +2259,7 @@ Gallery
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #050505;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1;
   width: calc(43.33333%);
   float: left;
@@ -2403,9 +2383,6 @@ Gallery
   font-weight: 700;
   font-size: 15px;
   line-height: 1; }
-  @media only screen and (min-width: 768px) {
-    .pagination {
-      font-size: 19px; } }
 
 .active {
   display: block !important; }
@@ -2595,6 +2572,9 @@ Gallery
         margin-left: 0;
         float: right;
         max-width: 700px; } }
+    .container.region_body .region_main_content.no-leftrail {
+      margin: auto;
+      float: none; }
   .container.region_body.title-border .region_main_content:before {
     content: "";
     display: block;
@@ -2634,10 +2614,30 @@ Gallery
 
 .region_bottom {
   margin-bottom: 50px; }
+  @media only screen and (min-width: 768px) {
+    .region_bottom .inner-container {
+      padding: 0 5px !important; } }
+  .region_bottom.no-leftrail .inner-container {
+    margin: auto;
+    float: none; }
+  @media only screen and (max-width: 767px) {
+    .region_bottom .container.wrapper-wysiwyg, .region_bottom .container.wrapper-faq, .region_bottom .container.wrapper-gallery {
+      padding: 0 10%; } }
 
 @media only screen and (max-width: 767px) {
   .c-news-events .container.region_body {
     padding: 0; } }
+
+@media only screen and (max-width: 767px) {
+  .container.wrapper-wysiwyg, .container.wrapper-faq, .container.wrapper-gallery {
+    padding: 0; } }
+
+.region_main_content .container.wrapper-wysiwyg .container.inner-container {
+  padding: 0; }
+
+@media only screen and (min-width: 768px) {
+  .region_main_content.no-leftrail .container.wrapper-wysiwyg {
+    padding: 0 5px; } }
 
 /* Program Landing */
 .program-landing-page .page-title {
@@ -2691,7 +2691,6 @@ Gallery
       color: white;
       font-size: 24px;
       width: 80%;
-      line-height: 1;
       font-weight: 100; }
       @media only screen and (min-width: 1024px) {
         .hero-section .c-hero_image p,
@@ -2775,8 +2774,7 @@ Gallery
       .tout-section .c-tout_container .c-tout_item .c-tout_text p {
         margin: 0;
         margin-bottom: 10px;
-        font-size: 20px;
-        line-height: 1; }
+        font-size: 20px; }
         @media only screen and (min-width: 1024px) {
           .tout-section .c-tout_container .c-tout_item .c-tout_text p {
             font-size: 30px;
@@ -3198,12 +3196,12 @@ body {
       margin-left: 0;
       float: right; } }
 
-.c-program_cta__container .c-program-title h1 {
+.c-program_cta__container .c-program-title h2 {
   margin: 0;
   margin-bottom: 30px;
   font-size: 32px; }
   @media only screen and (min-width: 768px) {
-    .c-program_cta__container .c-program-title h1 {
+    .c-program_cta__container .c-program-title h2 {
       font-size: 42px;
       margin: 0; } }
 
@@ -3384,7 +3382,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .gallery-page section {
-    margin-bottom: -40px; } }
+    margin-bottom: 40px; } }
 
 .gallery-page section .container {
   padding: 0 35px; }
@@ -3424,6 +3422,9 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   width: 100%; }
+
+.container.region_hero .c-gallery__container {
+  margin-top: 40px; }
 
 .c-gallery__container .c-gallery__gallery-item .item__description a {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -3832,7 +3833,7 @@ body {
       color: #050505;
       font-weight: 100;
       font-size: 20px;
-      line-height: 1.5;
+      line-height: 1.2;
       margin-bottom: 50px; }
       @media only screen and (min-width: 768px) {
         .c-ph-intro__container .c-ph-intro__content p {
@@ -3840,7 +3841,7 @@ body {
           color: #050505;
           font-weight: 100;
           font-size: 30px;
-          line-height: 1.5;
+          line-height: 1.2;
           margin-bottom: 55px; } }
     .c-ph-intro__container .c-ph-intro__content .c-uie__calltoaction {
       border-left-width: 5px;
@@ -3907,7 +3908,7 @@ body {
     color: #050505;
     font-weight: 100;
     font-size: 24px;
-    line-height: 1.3;
+    line-height: 1.2;
     margin-bottom: 20px; }
     @media only screen and (min-width: 768px) {
       .c-ph-gallery__container .c-ph-gallery__description p {
@@ -3991,14 +3992,12 @@ body {
     .c-ph-gallery__container .c-ph-gallery__last-text p {
       font-weight: 100;
       font-size: 14px;
-      line-height: 1;
       margin-bottom: 7px;
       color: #050505; }
       @media only screen and (min-width: 768px) {
         .c-ph-gallery__container .c-ph-gallery__last-text p {
           font-weight: 100;
           font-size: 18px;
-          line-height: 1;
           margin-bottom: 15px; } }
   .c-ph-gallery__container .c-ph-gallery__last-link {
     width: calc(100%);
@@ -4235,7 +4234,7 @@ body {
         color: #050505;
         font-weight: 100;
         font-size: 20px;
-        line-height: 1;
+        line-height: 1.2;
         margin-top: 0; }
         @media only screen and (min-width: 768px) {
           .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details p {
@@ -4243,7 +4242,7 @@ body {
             color: #050505;
             font-weight: 100;
             font-size: 30px;
-            line-height: 1;
+            line-height: 1.2;
             margin-bottom: 35px; } }
       .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details .c-ph-stats-border__top-value,
       .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details .c-ph-stats-border__bottom-value {
@@ -4760,7 +4759,7 @@ body {
         color: #ffffff;
         font-weight: 100;
         font-size: 24px;
-        line-height: 1; }
+        line-height: 1.2; }
         @media only screen and (min-width: 480px) {
           .c-gh-program .container .c-gh-program__container .c-gh-program__item p {
             max-width: 80%; } }
@@ -4771,7 +4770,6 @@ body {
             opacity: 0; } }
       .c-gh-program .container .c-gh-program__container .c-gh-program__item h1 {
         width: 50%;
-        margin: 0;
         bottom: 170px;
         left: 30px;
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -5789,6 +5787,9 @@ body {
 .c-gh-callout .container {
   max-width: 1080px;
   margin: 0 auto; }
+  @media only screen and (max-width: 767px) {
+    .c-gh-callout .container {
+      padding: 0; } }
   @media only screen and (min-width: 768px) {
     .c-gh-callout .container {
       display: flex;
@@ -5820,22 +5821,21 @@ body {
   font-size: 26px;
   line-height: 1;
   letter-spacing: -0.2px;
-  font-weight: 100; }
+  font-weight: 100;
+  line-height: 1.2;
+  color: #eb0029; }
   @media only screen and (min-width: 768px) {
     .c-gh-callout__text,
     .c-gh-callout__text p {
       font-size: 32px; } }
+  @media only screen and (min-width: 768px) {
+    .c-gh-callout__text,
+    .c-gh-callout__text p {
+      margin-top: -10px;
+      font-size: 30px; } }
 
 .c-gh-callout__citation {
-  font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #050505;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 1;
-  letter-spacing: -0.2px; }
-  @media only screen and (min-width: 768px) {
-    .c-gh-callout__citation {
-      font-size: 26px; } }
+  line-height: 1.2; }
 
 /* Slider */
 .slick-slider {
@@ -6680,9 +6680,6 @@ header {
       font-size: 15px;
       line-height: 1;
       width: 100%; }
-      @media only screen and (min-width: 768px) {
-        .c-nav__multisite-nav ul > li > ul > li > a {
-          font-size: 19px; } }
     .c-nav__multisite-nav ul > li > ul > li.active-program a {
       position: relative; }
       .c-nav__multisite-nav ul > li > ul > li.active-program a:before {
@@ -6810,11 +6807,7 @@ header {
           color: #ffffff;
           font-weight: 700;
           font-size: 15px;
-          line-height: 1; } }
-  @media only screen and (min-width: 840px) and (min-width: 768px) {
-    .c-nav__nav--left ul > li > a {
-      font-size: 19px; } }
-      @media only screen and (min-width: 840px) {
+          line-height: 1; }
           .c-nav__nav--left ul > li > a:hover, .c-nav__nav--left ul > li > a:focus {
             background: #050505;
             color: #ffffff;
@@ -6855,9 +6848,6 @@ header {
         font-weight: 700;
         font-size: 15px;
         line-height: 1; }
-        @media only screen and (min-width: 768px) {
-          .c-nav__nav--left ul > li > ul > .child-menu > li > a {
-            font-size: 19px; } }
     @media only screen and (min-width: 840px) {
       .c-nav__nav--left ul > li > ul > .child-menu > li > a {
         padding: 5px 25px;
@@ -6867,11 +6857,7 @@ header {
         font-size: 15px;
         line-height: 1;
         font-weight: 700;
-        position: relative; } }
-  @media only screen and (min-width: 840px) and (min-width: 768px) {
-    .c-nav__nav--left ul > li > ul > .child-menu > li > a {
-      font-size: 19px; } }
-    @media only screen and (min-width: 840px) {
+        position: relative; }
         .c-nav__nav--left ul > li > ul > .child-menu > li > a.active-child:after {
           content: "";
           position: absolute;
@@ -6935,9 +6921,6 @@ header {
         font-size: 15px;
         line-height: 1;
         background: #050505; }
-        @media only screen and (min-width: 768px) {
-          .c-nav__nav--right ul > li > a {
-            font-size: 19px; } }
         @media only screen and (min-width: 840px) {
           .c-nav__nav--right ul > li > a {
             border-left: 2px solid #ffffff;
@@ -7438,5 +7421,4 @@ footer.site-footer {
             margin-top: 73px; } }
         footer.site-footer .c-footer__widget-container .c-footer__widgets .textwidget p {
           font-size: 15px;
-          margin: 0;
-          line-height: 1; }
+          margin: 0; }

@@ -69,8 +69,6 @@ Styleguide 1.2
     display: inline-block;
     margin: 0;
 
-    @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 61px, $line-height: 1);
-
     span {
       font-weight: $font-thin;
     }
@@ -85,7 +83,7 @@ Styleguide 1.2
       @include grid-media($lg) {
         width: 110px;
       }
-    }
+    } 
   }
 
   .page-title__text-spacing {
@@ -93,7 +91,7 @@ Styleguide 1.2
 
     &,
     p {
-      @include type-custom($color: $dark-gray, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1.25);
+      @include type-custom($color: $dark-gray, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1.2);
     }
   }
 }
@@ -283,9 +281,8 @@ Styleguide 1.5
         counter-reset: listStyle;
 
         li {
-          counter-increment: listStyle;
-
           &:before {
+            counter-increment: listStyle;
             content: counter(listStyle, lower-alpha);
           }
         }
@@ -311,7 +308,7 @@ Styleguide 1.5
 
       // font-weight: $font-normal;
       // line-height: 1;
-      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 14px, $line-height: 1);
+      @include type-custom($color: $black, $font-weight: $font-bold, $font-size: 15px, $line-height: 1);
     }
   }
 }
