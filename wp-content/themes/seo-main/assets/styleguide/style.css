@@ -1300,7 +1300,8 @@ Styleguide 4.1
 .c-accordion {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  marrgin-left: -15px; }
   .c-accordion .answer {
     overflow: hidden;
     display: none;
@@ -2618,6 +2619,8 @@ Gallery
 
 .region_bottom {
   margin-bottom: 50px; }
+  .region_bottom .inner-container {
+    padding: 0 5px !important; }
   .region_bottom.no-leftrail .inner-container {
     margin: auto;
     float: none; }

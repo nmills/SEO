@@ -123,6 +123,10 @@
 
 .region_bottom {
   margin-bottom: 50px;
+
+  .inner-container {
+    padding: 0 5px !important;
+  }
   
   &.no-leftrail {
     .inner-container {
