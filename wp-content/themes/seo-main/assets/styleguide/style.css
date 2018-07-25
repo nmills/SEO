@@ -5834,6 +5834,9 @@ body {
       margin-top: -10px;
       font-size: 30px; } }
 
+.c-gh-callout__citation {
+  line-height: 1.2; }
+
 /* Slider */
 .slick-slider {
   position: relative;
