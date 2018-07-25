@@ -4632,7 +4632,7 @@ body {
   .c-gh-intro .container {
     background: #eb0029;
     position: relative;
-    padding: 55px 15%;
+    padding: 55px 0;
     padding-bottom: 75px; }
     @media only screen and (min-width: 768px) {
       .c-gh-intro .container {
@@ -4650,19 +4650,19 @@ body {
     margin: 0 auto; }
     .c-gh-intro .c-gh-intro__container .c-gh-intro__content p {
       font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-      color: #050505;
+      color: #5B000B;
       font-weight: 100;
       font-size: 28px;
-      line-height: 1.2;
+      line-height: 1.15;
       margin-bottom: 50px; }
       @media only screen and (min-width: 768px) {
         .c-gh-intro .c-gh-intro__container .c-gh-intro__content p {
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-          color: #050505;
+          color: #5B000B;
           font-weight: 100;
           font-size: 55px;
-          line-height: 1.2;
-          margin-bottom: 55px; } }
+          line-height: 1.15;
+          margin-bottom: 75px; } }
       .c-gh-intro .c-gh-intro__container .c-gh-intro__content p strong {
         font-weight: inherit;
         color: #ffffff; }

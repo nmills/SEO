@@ -152,7 +152,7 @@
   .container {
     background: $red;
     position: relative;
-    padding: 55px 15%;
+    padding: 55px 0;
     padding-bottom: 75px;
 
     // height: 530px;
@@ -191,14 +191,14 @@
 
 
       p {
-        @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 28px, $line-height: 1.2);
+        @include type-custom($color: $burgundy, $font-weight: $font-thinnest, $font-size: 28px, $line-height: 1.15);
 
         margin-bottom: 50px;
 
         @include grid-media($md) {
-          @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 55px, $line-height: 1.2);
+          @include type-custom($color: $burgundy, $font-weight: $font-thinnest, $font-size: 55px, $line-height: 1.15);
 
-          margin-bottom: 55px;
+          margin-bottom: 75px;
         }
 
 
