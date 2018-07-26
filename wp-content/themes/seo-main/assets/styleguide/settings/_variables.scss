@@ -10,10 +10,11 @@ $font-bold: 700;
 
 $white: #ffffff;
 $black: #050505;
+$black-shadow: rgba(0, 0, 0, 0.38);
+$burgundy: #5B000B;
 $light-blue: #7cb4f6;
 $red: #eb0029;
 $light-gray: #e5e7e7;
-
 // $dark-gray: #4d4d4d;
 $dark-gray: #050505;
 $maroon: #820d1b;
@@ -30,8 +31,10 @@ $light-teal: #afe8db;
 $teal: #4fcdb0;
 $green: #8db92e;
 $dark-green: #709424;
-$gradient-white: rgba(255, 255, 255, 0);
-$gradient-black: rgba(0, 0, 0, 0.3);
+// $gradient-white: rgba(255, 255, 255, 0);
+// $gradient-black: rgba(0, 0, 0, 0.3);
+$gradient-white: rgba(0, 0, 0, 0);
+$gradient-black: rgba(0, 0, 0, 0.65);
 $prog-list-gradient-hover: rgba(5, 5, 5, 0.85);
 $prog-list-gradient: rgba(5, 5, 5, 0.3);
 

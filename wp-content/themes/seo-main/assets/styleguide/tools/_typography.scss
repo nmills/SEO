@@ -73,12 +73,15 @@ $sans-stack: 'Grotesk', Helvetica Neue, Helvetica, Arial, sans-serif;
   }
 }
 
-@mixin type-5($color: $black) {
+@mixin type-5($color: $black) { 
   font-family: $sans-stack;
   color: #{$color};
   font-weight: $font-bold;
   font-size: 15px;
   line-height: 1;
+  @include grid-media($md) {
+    font-size: 19px;
+  }
 }
 
 // @mixin type-5-bold($color: $black) {

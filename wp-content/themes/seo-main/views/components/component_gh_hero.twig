@@ -1,6 +1,6 @@
 <section class="c-gh-hero__container">
   <div class="container">
-    <div class="c-gh-hero__content">
+    <div class="c-gh-hero__content{% if component.hero_text is not empty %} got_title{% endif %}">
 
       {% if component.media_selection == 'image_video' %}
 
