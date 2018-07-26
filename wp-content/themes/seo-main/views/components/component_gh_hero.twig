@@ -1,7 +1,6 @@
 <section class="c-gh-hero__container">
   <div class="container">
     <div class="c-gh-hero__content{% if component.hero_text is not empty %} got_title{% endif %}">
-
       {% if component.media_selection == 'image_video' %}
 
         {% if component.video %}
@@ -28,7 +27,7 @@
         <div class="owl-carousel owl-theme">
         {% for item in component.carousel %}
             <div class="item">
-              <div class="c-gh-hero__image c-carousel__image" style="background-image: url({{item.carousel_image.url}})">
+              <div class="c-gh-hero__image c-carousel__image {% if item.carousel_text is not empty %} got_title{% endif %}" style="background-image: url({{item.carousel_image.url}})">
               </div>
               <div class="c-gh-hero__text"><h1>{{item.carousel_text}}</h1></div>
             </div>
