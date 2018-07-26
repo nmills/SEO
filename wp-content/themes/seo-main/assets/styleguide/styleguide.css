@@ -1113,7 +1113,8 @@ Styleguide 1.5
     padding-left: 10px;
   }*/ }
   .c-rte .alignnone, .c-rte__accordion .alignnone {
-    max-width: 100% !important; }
+    max-width: 100% !important;
+    height: auto; }
     .c-rte .alignnone .wp-caption-text, .c-rte__accordion .alignnone .wp-caption-text {
       width: 100%; }
 
