@@ -273,6 +273,9 @@ h5 {
   font-weight: 700;
   font-size: 15px;
   line-height: 1; }
+  @media only screen and (min-width: 768px) {
+    h5 {
+      font-size: 19px; } }
 
 body {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -294,6 +297,9 @@ p {
     font-weight: 700;
     font-size: 15px;
     line-height: 1; }
+    @media only screen and (min-width: 768px) {
+      p.small-text {
+        font-size: 19px; } }
 
 strong {
   font-weight: 700; }
@@ -1141,8 +1147,8 @@ Styleguide 1.5
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.3;
+    font-size: 15px;
+    line-height: 1;
     text-align: left;
     margin-bottom: 10px;
     padding-bottom: 15px; }
@@ -1291,6 +1297,9 @@ Styleguide 4.1
     color: #891a27;
     text-transform: uppercase;
     margin: 0; }
+    @media only screen and (min-width: 768px) {
+      .c-accordion__wrapper h3 {
+        font-size: 19px; } }
 
 .c-accordion {
   list-style: none;
@@ -2154,6 +2163,9 @@ Styleguide 8.0
   line-height: 1;
   display: flex;
   align-items: center; }
+  @media only screen and (min-width: 768px) {
+    .gd__content-link {
+      font-size: 19px; } }
 
 /* -----------------
 Gallery
@@ -2247,6 +2259,9 @@ Gallery
     font-weight: 700;
     font-size: 15px;
     line-height: 1; }
+    @media only screen and (min-width: 768px) {
+      .body-slide p {
+        font-size: 19px; } }
     .body-slide p:first-child {
       margin-top: 0; }
     .body-slide p:last-child {
@@ -2383,6 +2398,9 @@ Gallery
   font-weight: 700;
   font-size: 15px;
   line-height: 1; }
+  @media only screen and (min-width: 768px) {
+    .pagination {
+      font-size: 19px; } }
 
 .active {
   display: block !important; }
@@ -5835,6 +5853,7 @@ body {
       font-size: 30px; } }
 
 .c-gh-callout__citation {
+  font-size: 15px;
   line-height: 1.2; }
 
 /* Slider */
@@ -6680,6 +6699,9 @@ header {
       font-size: 15px;
       line-height: 1;
       width: 100%; }
+      @media only screen and (min-width: 768px) {
+        .c-nav__multisite-nav ul > li > ul > li > a {
+          font-size: 19px; } }
     .c-nav__multisite-nav ul > li > ul > li.active-program a {
       position: relative; }
       .c-nav__multisite-nav ul > li > ul > li.active-program a:before {
@@ -6807,7 +6829,11 @@ header {
           color: #ffffff;
           font-weight: 700;
           font-size: 15px;
-          line-height: 1; }
+          line-height: 1; } }
+  @media only screen and (min-width: 840px) and (min-width: 768px) {
+    .c-nav__nav--left ul > li > a {
+      font-size: 19px; } }
+      @media only screen and (min-width: 840px) {
           .c-nav__nav--left ul > li > a:hover, .c-nav__nav--left ul > li > a:focus {
             background: #050505;
             color: #ffffff;
@@ -6848,6 +6874,9 @@ header {
         font-weight: 700;
         font-size: 15px;
         line-height: 1; }
+        @media only screen and (min-width: 768px) {
+          .c-nav__nav--left ul > li > ul > .child-menu > li > a {
+            font-size: 19px; } }
     @media only screen and (min-width: 840px) {
       .c-nav__nav--left ul > li > ul > .child-menu > li > a {
         padding: 5px 25px;
@@ -6857,7 +6886,11 @@ header {
         font-size: 15px;
         line-height: 1;
         font-weight: 700;
-        position: relative; }
+        position: relative; } }
+  @media only screen and (min-width: 840px) and (min-width: 768px) {
+    .c-nav__nav--left ul > li > ul > .child-menu > li > a {
+      font-size: 19px; } }
+    @media only screen and (min-width: 840px) {
         .c-nav__nav--left ul > li > ul > .child-menu > li > a.active-child:after {
           content: "";
           position: absolute;
@@ -6921,6 +6954,9 @@ header {
         font-size: 15px;
         line-height: 1;
         background: #050505; }
+        @media only screen and (min-width: 768px) {
+          .c-nav__nav--right ul > li > a {
+            font-size: 19px; } }
         @media only screen and (min-width: 840px) {
           .c-nav__nav--right ul > li > a {
             border-left: 2px solid #ffffff;
