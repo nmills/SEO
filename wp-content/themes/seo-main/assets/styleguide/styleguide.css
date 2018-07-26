@@ -2538,7 +2538,7 @@ Gallery
   float: none;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 50px; }
+  margin-bottom: 65px; }
 
 .container.region_title {
   max-width: 1280px; }
@@ -2593,7 +2593,8 @@ Gallery
     margin-bottom: 60px; }
     @media only screen and (min-width: 1024px) {
       .container.region_body.title-border .region_main_content:before {
-        width: 110px; } }
+        width: 110px;
+        margin-left: 5px; } }
   .container.region_body.title-border .region_left_rail {
     margin-top: 120px; }
 
@@ -4190,7 +4191,7 @@ body {
           font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
           color: #050505;
           font-weight: 100;
-          font-size: 30px;
+          font-size: 24px;
           line-height: 1;
           padding: 0 15px; } }
   .c-ph-stats__container .c-ph-stats-border__container {
@@ -4251,7 +4252,7 @@ body {
             font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
             color: #050505;
             font-weight: 100;
-            font-size: 30px;
+            font-size: 24px;
             line-height: 1.2;
             margin-bottom: 35px; } }
       .c-ph-stats__container .c-ph-stats-border__container .c-ph-stats-border__details .c-ph-stats-border__top-value,
