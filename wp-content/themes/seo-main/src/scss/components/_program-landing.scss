@@ -67,21 +67,26 @@
       font-size: 24px;
       width: 80%;
       font-weight: $font-thinnest;
+      text-shadow: 2px 2px 2px $black-shadow;  
 
       @include grid-media($lg) {
         font-size: 43px;
         width: 60%;
       }
     }
+    
+    &.got_title {
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background: linear-gradient(to bottom,transparent,rgba(5,5,5,.95));
+        background: linear-gradient(25deg, $gradient-black, $gradient-white 40%);
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to bottom,transparent,rgba(5,5,5,.95));
+      }
     }
   }
 
