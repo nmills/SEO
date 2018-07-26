@@ -29,6 +29,10 @@ Styleguide 4.0
   text-align: left;
   font-weight: $font-thinnest;
   margin-top: 0;
+
+  @include grid-media($md) {
+    font-size: 38px;
+  }
 }
 
 .c-signup,
