@@ -7,7 +7,7 @@
     float: none;
     margin: 0 auto;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
   }
 
   &.region_title {
@@ -76,6 +76,7 @@
 
           @include grid-media($lg) {
             width: 110px;
+            margin-left: 5px;
           }
         }
       }

@@ -568,7 +568,7 @@
 
 
         @include grid-media($md) {
-          @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+          @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1);
 
           padding: 0 15px;
         }
@@ -634,7 +634,7 @@
         margin-top: 0;
 
         @include grid-media($md) {
-          @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1.2);
+          @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 24px, $line-height: 1.2);
 
           margin-bottom: 35px;
         }
