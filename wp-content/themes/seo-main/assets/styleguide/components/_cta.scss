@@ -12,21 +12,22 @@
   padding: 0;
 
   h3 {
-    @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
+    // @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
 
     margin: 0;
     padding: 40px 35px 40px 35px;
+    font-weight: $font-thinnest;
 
     @include grid-media($sm) {
-      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
+      // @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 30px, $line-height: 1);
 
       padding: 20px;
     }
 
 
     @include grid-media($md) {
-      @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
-
+      // @include type-custom($color: $black, $font-weight: $font-thinnest, $font-size: 43px, $line-height: 1);
+      font-size: 38px;
       padding: 40px 35px 40px 35px;
     }
   }
@@ -47,6 +48,7 @@
   .c-rte__link {
     margin: 40px 35px 45px 35px;
     display: inline-block;
+    font-size: 18px;
 
     @include grid-media($sm) {
       margin: 20px;
