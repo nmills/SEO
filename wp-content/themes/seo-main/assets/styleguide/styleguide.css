@@ -4536,19 +4536,18 @@ body {
         max-width: unset; } }
   .c-gh-hero__container .c-gh-hero__content {
     position: relative; }
-    .c-gh-hero__container .c-gh-hero__content:before {
+    .c-gh-hero__container .c-gh-hero__content.got_title:before {
       content: "";
       position: absolute;
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3));
+      background-image: linear-gradient(25deg, rgba(0, 0, 0, 0.65), transparent 40%);
       opacity: 0.6;
       width: 50%;
       height: 100%; }
       @media only screen and (min-width: 768px) {
-        .c-gh-hero__container .c-gh-hero__content:before {
-          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3));
+        .c-gh-hero__container .c-gh-hero__content.got_title:before {
           width: 100%;
           height: 50%; } }
     .c-gh-hero__container .c-gh-hero__content .c-gh-hero__image {
@@ -4608,7 +4607,8 @@ body {
       position: absolute;
       z-index: 1;
       bottom: 25px;
-      left: 25px; }
+      left: 25px;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.38); }
       @media only screen and (min-width: 480px) {
         .c-gh-hero__container .c-gh-hero__content .c-gh-hero__text h1 {
           width: calc(58.33333%);
