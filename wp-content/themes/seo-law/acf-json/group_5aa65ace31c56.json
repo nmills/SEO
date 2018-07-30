@@ -3,6 +3,27 @@
     "title": "Gallery",
     "fields": [
         {
+            "key": "field_5b5eeb1fe9444",
+            "label": "Description",
+            "name": "description",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5ad5ddfd34daf"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
             "key": "field_5aa65ad3c4eab",
             "label": "Multi-content component",
             "name": "flexi_content",
@@ -227,5 +248,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1527826841
+    "modified": 1532947256
 }
