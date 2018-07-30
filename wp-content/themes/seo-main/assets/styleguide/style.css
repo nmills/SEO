@@ -2672,21 +2672,17 @@ Gallery
 
 /* Program Landing */
 .program-landing-page .page-title {
-  text-align: center;
-  width: 80%;
-  margin: auto; }
-  .program-landing-page .page-title h1 {
-    font-weight: 100;
-    font-size: 40px;
-    max-width: 800px;
-    margin-top: 55px;
-    margin-bottom: 55px; }
-    .program-landing-page .page-title h1:before {
-      content: none; }
-    @media only screen and (min-width: 1024px) {
-      .program-landing-page .page-title h1 {
-        font-size: 75px;
-        max-width: 800px; } }
+  max-width: 1130px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 65px;
+  padding: 0 10%; }
+  @media only screen and (min-width: 480px) {
+    .program-landing-page .page-title {
+      padding: 0 15px; } }
+  @media only screen and (min-width: 1440px) {
+    .program-landing-page .page-title {
+      padding: 0 5px; } }
 
 .program-landing-page section.wysiwyg {
   margin-bottom: 75px; }
