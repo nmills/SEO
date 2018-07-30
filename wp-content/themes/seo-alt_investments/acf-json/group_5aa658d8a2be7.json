@@ -22,6 +22,27 @@
             "maxlength": ""
         },
         {
+            "key": "field_5b5ebd158de62",
+            "label": "Description",
+            "name": "description",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5ad5ddfd34daf"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
             "key": "field_5aa658d8db85d",
             "label": "Repeater",
             "name": "repeater",
@@ -100,5 +121,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527844733
+    "modified": 1532935460
 }

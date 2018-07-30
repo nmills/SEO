@@ -3416,22 +3416,17 @@ body {
   padding: 0 35px; }
 
 .gallery-page .page-title {
-  max-width: 1024px;
-  margin: 0 auto; }
-  .gallery-page .page-title h1 {
-    margin: 0;
-    font-size: 42px;
-    padding: 0 35px;
-    margin-top: 30px;
-    margin-bottom: 30px; }
-    .gallery-page .page-title h1:before {
-      content: none; }
-    @media only screen and (min-width: 840px) {
-      .gallery-page .page-title h1 {
-        padding: 0;
-        font-size: 61px;
-        margin-top: 100px;
-        margin-bottom: 45px; } }
+  max-width: 1130px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 65px; }
+
+.gallery-page .c-gallery__section-header .page-title {
+  max-width: 1130px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 65px;
+  padding: 0; }
 
 .gallery-page .container.gallery-large-image-container {
   padding: 0; }
