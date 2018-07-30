@@ -2565,6 +2565,16 @@ Gallery
 .container.region_body {
   max-width: 1130px;
   margin-bottom: 50px; }
+  .container.region_body .region_title.no-leftrail {
+    max-width: 780px;
+    margin: auto; }
+    @media only screen and (min-width: 768px) {
+      .container.region_body .region_title.no-leftrail {
+        width: calc(66.66667%);
+        float: left;
+        margin-left: 0;
+        float: none;
+        margin: auto; } }
   .container.region_body .region_left_rail {
     width: calc(100%);
     float: left;
@@ -2592,6 +2602,9 @@ Gallery
     .container.region_body .region_main_content.no-leftrail {
       margin: auto;
       float: none; }
+      @media only screen and (min-width: 768px) {
+        .container.region_body .region_main_content.no-leftrail {
+          max-width: 780px; } }
   .container.region_body.title-border .region_main_content:before {
     content: "";
     display: block;
