@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5adec35512dbf",
-            "label": "Page Header",
+            "label": "Program Headline",
             "name": "event_header",
             "type": "text",
             "instructions": "",
@@ -20,6 +20,27 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5b5eb68e54151",
+            "label": "Description",
+            "name": "description",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5ad5ddfd34daf"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         },
         {
             "key": "field_5ad59b713f9ef",
@@ -141,5 +162,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1526032698
+    "modified": 1532933822
 }

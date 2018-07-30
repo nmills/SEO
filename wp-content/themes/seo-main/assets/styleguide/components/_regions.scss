@@ -33,6 +33,19 @@
     max-width: 1130px;
     margin-bottom: 50px;
 
+    .region_title {
+      &.no-leftrail {
+        max-width: 780px;
+        margin: auto;
+
+        @include grid-media($md) {
+          @include grid-column(8, $no-gutter);
+          float: none;
+          margin: auto;
+        }
+      }  
+    }
+
     .region_left_rail {
       @include grid-column(12, $no-gutter);
 
@@ -61,6 +74,10 @@
       &.no-leftrail {
         margin: auto;
         float: none; 
+
+        @include grid-media($md) {
+          max-width: 780px;
+        }
       }
     }
 

@@ -2,28 +2,49 @@
 
 .program-landing-page {
   .page-title {
-    text-align: center;
-    width: 80%;
+    max-width: 1130px;
     margin: auto;
+    margin-bottom: 50px;
+    margin-top: 65px;
+    padding: 0 10%;
 
-    h1 {
-      font-weight: $font-thinnest;
-      font-size: 40px;
-      max-width: 800px;
-      margin-top: 55px;
-      margin-bottom: 55px;
-
-      &:before {
-        content: none;
-      }
-
-      @include grid-media($lg) {
-        font-size: 75px;
-        max-width: 800px;
-        // margin-top: 100px;
-        // margin-bottom: 30px;
-      }
+    @include grid-media($sm) {
+      padding: 0 15px;
     }
+    
+    // @include grid-media($md) {
+    //   @include grid-column(8, $no-gutter);
+    //   float: none;
+    //   margin: auto;
+    //   margin-bottom: 50px;
+    //   margin-top: 65px;
+    // }
+
+    @include grid-media($xl) {
+      padding: 0 5px;
+    }
+  //   text-align: center;
+  //   width: 80%;
+  //   margin: auto;
+
+  //   h1 {
+  //     font-weight: $font-thinnest;
+  //     font-size: 40px;
+  //     max-width: 800px;
+  //     margin-top: 55px;
+  //     margin-bottom: 55px;
+
+  //     &:before {
+  //       content: none;
+  //     }
+
+  //     @include grid-media($lg) {
+  //       font-size: 75px;
+  //       max-width: 800px;
+  //       // margin-top: 100px;
+  //       // margin-bottom: 30px;
+  //     }
+  //   }
   }
 
   section.wysiwyg {
