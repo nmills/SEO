@@ -30,7 +30,11 @@ img {
   margin: 0 auto;
   padding: 0 10%;
 
-  @include grid-media($xl) {
+  @include grid-media($md) {
+    padding: 0 5%;
+  }
+
+    @include grid-media($lg-custom) {
     padding: 0;
   }
 }

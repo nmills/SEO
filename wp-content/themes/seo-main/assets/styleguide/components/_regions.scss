@@ -167,12 +167,6 @@
 .region_bottom {
   margin-bottom: 50px;
   
-  @include grid-media($md) {
-    .inner-container {
-      padding: 0 5px !important;
-    }
-  }
-  
   &.no-leftrail {
     .inner-container {
       margin: auto;
@@ -182,7 +176,7 @@
   }
 
   .container {
-    &.wrapper-wysiwyg,
+    &.wrapper-wysiwyg, 
     &.wrapper-faq,
     &.wrapper-gallery {
       @include grid-media($max-md) {
