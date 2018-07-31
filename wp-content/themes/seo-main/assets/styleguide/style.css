@@ -2585,7 +2585,8 @@ Gallery
           margin-left: 160px; } }
     .container.region_body .region_title.no-leftrail {
       max-width: 780px;
-      margin: auto; }
+      margin: auto;
+      display: table; }
       @media only screen and (min-width: 768px) {
         .container.region_body .region_title.no-leftrail {
           width: calc(100%);
@@ -2593,7 +2594,6 @@ Gallery
           margin-left: 0;
           float: none;
           margin: auto;
-          display: table;
           padding: 0 5px; } }
       .container.region_body .region_title.no-leftrail .content {
         margin-left: 0; }

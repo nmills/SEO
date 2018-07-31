@@ -53,12 +53,12 @@
       &.no-leftrail {
         max-width: 780px;
         margin: auto;
+        display: table; 
 
         @include grid-media($md) {
           @include grid-column(12, $no-gutter);
           float: none;
           margin: auto;
-          display: table;
           padding: 0 5px;
         }
 
