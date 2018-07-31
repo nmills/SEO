@@ -2693,7 +2693,7 @@ Gallery
 
 /* Program Landing */
 .program-landing-page .page-title {
-  max-width: 1130px;
+  max-width: 780px;
   margin: auto;
   margin-bottom: 50px;
   margin-top: 65px;
@@ -2704,6 +2704,22 @@ Gallery
   @media only screen and (min-width: 1440px) {
     .program-landing-page .page-title {
       padding: 0 5px; } }
+  .program-landing-page .page-title .program_headline {
+    text-align: center;
+    width: 80%;
+    margin: auto; }
+    .program-landing-page .page-title .program_headline h2 {
+      font-weight: 100;
+      font-size: 40px;
+      max-width: 800px;
+      margin-top: 55px;
+      margin-bottom: 55px; }
+      .program-landing-page .page-title .program_headline h2:before {
+        content: none; }
+      @media only screen and (min-width: 1024px) {
+        .program-landing-page .page-title .program_headline h2 {
+          font-size: 75px;
+          max-width: 800px; } }
 
 .program-landing-page section.wysiwyg {
   margin-bottom: 75px; }
@@ -3437,17 +3453,28 @@ body {
   padding: 0 35px; }
 
 .gallery-page .page-title {
-  max-width: 1130px;
+  max-width: 780px;
   margin: auto;
   margin-bottom: 50px;
   margin-top: 65px; }
 
 .gallery-page .c-gallery__section-header .page-title {
-  max-width: 1130px;
-  margin: auto;
-  margin-bottom: 50px;
-  margin-top: 65px;
-  padding: 0; }
+  max-width: 1024px;
+  margin: 0 auto; }
+  .gallery-page .c-gallery__section-header .page-title h1 {
+    margin: 0;
+    font-size: 42px;
+    padding: 0 35px;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .gallery-page .c-gallery__section-header .page-title h1:before {
+      content: none; }
+    @media only screen and (min-width: 840px) {
+      .gallery-page .c-gallery__section-header .page-title h1 {
+        padding: 0;
+        font-size: 61px;
+        margin-top: 100px;
+        margin-bottom: 45px; } }
 
 .gallery-page .container.gallery-large-image-container {
   padding: 0; }
@@ -5095,7 +5122,7 @@ body {
   margin-bottom: 0; }
 
 .c-news-header .container {
-  max-width: 1120px;
+  max-width: 780px;
   margin: 0 auto; }
   .c-news-header .container .c-news-header__breadcrumb {
     margin-top: 100px; }
@@ -5520,7 +5547,7 @@ body {
   margin-bottom: 45px; }
   @media only screen and (min-width: 768px) {
     .c-news-events .page-title {
-      max-width: 1120px;
+      max-width: 780px;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 65px; } }
