@@ -29,6 +29,10 @@ img {
   max-width: $container-width;
   margin: 0 auto;
   padding: 0 10%;
+
+  @include grid-media($xl) {
+    padding: 0;
+  }
 }
 
 section.entry-content.container {

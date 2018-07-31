@@ -349,6 +349,9 @@ img {
     clear: both;
     content: "";
     display: block; }
+  @media only screen and (min-width: 1440px) {
+    .container {
+      padding: 0; } }
 
 section.entry-content.container {
   padding: 0; }
@@ -3342,6 +3345,9 @@ body {
   max-width: 700px;
   margin: auto;
   padding: 0 10%; }
+  @media only screen and (min-width: 1024px) {
+    .program-landing-page .wysiwyg {
+      padding: 0 5px; } }
   .program-landing-page .wysiwyg h2 {
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;

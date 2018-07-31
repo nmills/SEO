@@ -1013,6 +1013,10 @@ body {
     margin: auto;
     padding: 0 10%;
 
+    @include grid-media($lg) {
+      padding: 0 5px;
+    }
+
     h2 {
       @include type-1;
       font-size: 32px;
