@@ -349,7 +349,10 @@ img {
     clear: both;
     content: "";
     display: block; }
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 768px) {
+    .container {
+      padding: 0 5%; } }
+  @media only screen and (min-width: 1200px) {
     .container {
       padding: 0; } }
 
@@ -2669,9 +2672,6 @@ Gallery
 
 .region_bottom {
   margin-bottom: 50px; }
-  @media only screen and (min-width: 768px) {
-    .region_bottom .inner-container {
-      padding: 0 5px !important; } }
   .region_bottom.no-leftrail .inner-container {
     margin: auto;
     float: none;
