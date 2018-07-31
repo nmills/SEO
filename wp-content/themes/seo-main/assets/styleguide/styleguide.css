@@ -3229,7 +3229,8 @@ body {
       .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item p {
         font-size: 18px; }
       .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item a {
-        font-size: 14px; }
+        font-size: 14px;
+        word-break: break-word; }
         @media only screen and (min-width: 1024px) {
           .c-sequence__sequeutal-container .c-sequence__sequeutal-items .c-sequence_item a {
             font-size: 18px; } }

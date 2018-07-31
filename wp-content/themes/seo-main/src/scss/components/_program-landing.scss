@@ -834,6 +834,7 @@ body {
 
       a {
         font-size: 14px;
+        word-break: break-word;
 
         @include grid-media($lg) {
           font-size: 18px;
