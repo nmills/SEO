@@ -40,14 +40,16 @@
         @include grid-column(12, $no-gutter);
 
         max-width: 780px;
+        float: none;
+        margin: auto;
 
-        @include grid-media($lg) {
-          margin-left: 220px;
-        }
+        // @include grid-media($lg) {
+        //   margin-left: 220px;
+        // }
 
-        @include grid-media($xl) {
-          margin-left: 160px;
-        }
+        // @include grid-media($xl) {
+        //   margin-left: 160px;
+        // }
       }
 
       &.no-leftrail {

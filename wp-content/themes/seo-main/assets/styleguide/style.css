@@ -2576,13 +2576,9 @@ Gallery
       width: calc(100%);
       float: left;
       margin-left: 0;
-      max-width: 780px; }
-      @media only screen and (min-width: 1024px) {
-        .container.region_body .region_title .content {
-          margin-left: 220px; } }
-      @media only screen and (min-width: 1440px) {
-        .container.region_body .region_title .content {
-          margin-left: 160px; } }
+      max-width: 780px;
+      float: none;
+      margin: auto; }
     .container.region_body .region_title.no-leftrail {
       max-width: 780px;
       margin: auto;
@@ -5549,7 +5545,7 @@ body {
   margin-top: 100px; }
 
 .c-news-events .page-title {
-  margin-top: 90px;
+  margin-top: 67px;
   margin-bottom: 45px; }
   @media only screen and (min-width: 768px) {
     .c-news-events .page-title {
