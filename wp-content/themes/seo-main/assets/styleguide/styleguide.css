@@ -3270,16 +3270,16 @@ body {
       width: calc(41.66667%);
       float: left;
       margin-left: 0;
-      float: right; } }
+      float: right;
+      margin-top: -8px; } }
 
 .c-program_cta__container .c-program-title h2 {
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 30px;
   font-size: 32px; }
   @media only screen and (min-width: 768px) {
     .c-program_cta__container .c-program-title h2 {
-      font-size: 42px;
-      margin: 0; } }
+      font-size: 42px; } }
 
 .c-program_cta__container .c-program-description p {
   font-size: 23px; }
@@ -3303,7 +3303,8 @@ body {
     margin-left: 0;
     height: 100%; }
 
-.c-program_cta__container .c-program-image, .c-program_cta__container .c-program-video {
+.c-program_cta__container .c-program-image,
+.c-program_cta__container .c-program-video {
   width: calc(100%);
   float: left;
   margin-left: 0;
@@ -3313,14 +3314,17 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 30px;
   position: relative; }
   @media only screen and (min-width: 768px) {
-    .c-program_cta__container .c-program-image, .c-program_cta__container .c-program-video {
+    .c-program_cta__container .c-program-image,
+    .c-program_cta__container .c-program-video {
       width: calc(50%);
       float: left;
       margin-left: 0;
       max-width: 541px;
-      height: 323px; } }
+      height: 323px;
+      margin-bottom: 0; } }
 
 .program-landing-page .c-ph__event-details {
   text-align: center; }
