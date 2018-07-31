@@ -349,12 +349,9 @@ img {
     clear: both;
     content: "";
     display: block; }
-  @media only screen and (min-width: 480px) {
-    .container {
-      padding: 0 15px; } }
   @media only screen and (min-width: 1440px) {
     .container {
-      padding: 0 5px; } }
+      padding: 0; } }
 
 section.entry-content.container {
   padding: 0; }
@@ -3348,9 +3345,6 @@ body {
   max-width: 700px;
   margin: auto;
   padding: 0 10%; }
-  @media only screen and (min-width: 480px) {
-    .program-landing-page .wysiwyg {
-      padding: 0 15px; } }
   @media only screen and (min-width: 1024px) {
     .program-landing-page .wysiwyg {
       padding: 0 5px; } }
