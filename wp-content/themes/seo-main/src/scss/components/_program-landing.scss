@@ -702,7 +702,7 @@ body {
 }
 
 .c-sequence__sequeutal-container {
-    max-width: 1200px;
+    max-width: 1027px;
     margin: 0 auto;
   .c-sequence__title-description-container {
     @include grid-column(12, $no-gutter);
@@ -716,15 +716,15 @@ body {
         margin-bottom: 100px;
       }
 
-      h1, p {
-        margin: 0;
-
-        padding-left: 20px;
+      h1,
+      p {
+        margin: 0;        
       }
 
       h1 {
         margin-bottom: 30px;
         font-size: 32px;
+        padding-left: 20px;
 
         @include grid-media($lg) {
           font-size: 42px;
@@ -736,6 +736,7 @@ body {
 
         @include grid-media($lg) {
           font-size: 24px;
+          padding-left: 20px;
         }
       }
     }
@@ -817,7 +818,8 @@ body {
 
       h2 {
         font-weight: $font-normal;
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: .5em;
         line-height: 1;
         font-size: 28px;
 
@@ -844,8 +846,8 @@ body {
     @include grid-column(12, $no-gutter);
     margin: 0 auto;
     display: inline-block;
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 65px;
+    margin-bottom: 20px;
     text-align: left;
 
     @include grid-media($md) {
@@ -1009,15 +1011,7 @@ body {
   .wysiwyg {
     max-width: 700px;
     margin: auto;
-        padding: 0 10%;
-
-        @include grid-media($sm) {
-           padding: 0 15px;
-      }
-
-      @include grid-media($lg) {
-        padding: 0 5px;
-      }
+    padding: 0 10%;
 
     h2 {
       @include type-1;
