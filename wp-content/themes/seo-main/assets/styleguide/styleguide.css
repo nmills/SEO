@@ -310,6 +310,11 @@ em {
 a {
   text-decoration: none; }
 
+hr {
+  height: 2px;
+  border: none;
+  background-color: #e5e7e7; }
+
 html {
   margin-top: 32px !important;
   position: relative;
