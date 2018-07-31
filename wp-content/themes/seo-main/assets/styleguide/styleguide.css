@@ -1125,21 +1125,26 @@ Styleguide 1.5
 
 .c-rte .alignleft {
   float: left;
-  margin-right: 40px; }
+  margin-right: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px; }
 
 .c-rte .alignright {
   float: right;
-  margin-left: 40px; }
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px; }
 
 .c-rte .wp-caption {
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
   .c-rte .wp-caption::after {
     clear: both;
     content: "";
     display: block; }
   .c-rte .wp-caption.alignleft {
     float: left;
-    margin-right: 40px; }
+    margin-right: 40px;
+    margin-top: 0; }
   .c-rte .wp-caption.aligncenter .wp-caption-text {
     text-align: center;
     float: none; }
@@ -1148,7 +1153,8 @@ Styleguide 1.5
       transform: translateX(-50%); }
   .c-rte .wp-caption.alignright {
     float: right;
-    margin-left: 40px; }
+    margin-left: 40px;
+    margin-top: 0; }
   .c-rte .wp-caption img {
     border: none;
     padding: 0;
