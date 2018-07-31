@@ -702,7 +702,7 @@ body {
 }
 
 .c-sequence__sequeutal-container {
-    max-width: 1200px;
+    max-width: 1027px;
     margin: 0 auto;
   .c-sequence__title-description-container {
     @include grid-column(12, $no-gutter);
@@ -716,15 +716,15 @@ body {
         margin-bottom: 100px;
       }
 
-      h1, p {
-        margin: 0;
-
-        padding-left: 20px;
+      h1,
+      p {
+        margin: 0;        
       }
 
       h1 {
         margin-bottom: 30px;
         font-size: 32px;
+        padding-left: 20px;
 
         @include grid-media($lg) {
           font-size: 42px;
@@ -736,6 +736,7 @@ body {
 
         @include grid-media($lg) {
           font-size: 24px;
+          padding-left: 20px;
         }
       }
     }
@@ -817,7 +818,8 @@ body {
 
       h2 {
         font-weight: $font-normal;
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: .5em;
         line-height: 1;
         font-size: 28px;
 
@@ -832,6 +834,7 @@ body {
 
       a {
         font-size: 14px;
+        word-break: break-word;
 
         @include grid-media($lg) {
           font-size: 18px;
@@ -844,8 +847,8 @@ body {
     @include grid-column(12, $no-gutter);
     margin: 0 auto;
     display: inline-block;
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 65px;
+    margin-bottom: 20px;
     text-align: left;
 
     @include grid-media($md) {
@@ -866,8 +869,7 @@ body {
   }
 }
 
-.c-program_cta__container {
-  
+.c-program_cta__container {  
   @include grid-media($md) {
     max-width: 1080px;
     margin: 0 auto;
@@ -881,19 +883,18 @@ body {
       @include grid-column(5, $no-gutter);
 
       float: right;
-      // margin-left: 2%;
+      margin-top: -8px;
     }
   }
 
   .c-program-title {
     h2 {
-      margin: 0;
+      margin-top: 0;
       margin-bottom: 30px; 
       font-size: 32px;
 
       @include grid-media($md) {
         font-size: 42px;
-        margin: 0;
       }
     }
   }
@@ -930,7 +931,8 @@ body {
     }
   }
 
-  .c-program-image, .c-program-video {
+  .c-program-image,
+  .c-program-video {
     @include grid-column(12, $no-gutter);
     
     max-width: 279px;
@@ -939,6 +941,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 30px;
     position: relative;
 
     @include grid-media($md) {
@@ -946,6 +949,7 @@ body {
 
       max-width: 541px;
       height: 323px;
+      margin-bottom: 0;
     }
 
 
@@ -1008,15 +1012,11 @@ body {
   .wysiwyg {
     max-width: 700px;
     margin: auto;
-        padding: 0 10%;
+    padding: 0 10%;
 
-        @include grid-media($sm) {
-           padding: 0 15px;
-      }
-
-      @include grid-media($lg) {
-        padding: 0 5px;
-      }
+    @include grid-media($lg) {
+      padding: 0 5px;
+    }
 
     h2 {
       @include type-1;

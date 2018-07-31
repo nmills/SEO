@@ -1,18 +1,21 @@
 <section>
   <div class="container">
     <div class="c-program_cta__container">
-      <div class="c-program-title">
-        <h2>{{component.heading}}</h2>
-      </div>
+      {% if component.heading %}
+        <div class="c-program-title">
+          <h2>{{component.heading}}</h2>
+        </div>
+      {% endif %}
+      
       {% if component.cta_type == 'image' %}
-      <div class="c-program-image" style="background-image: url('{{Image(component.image).src }}')"></div>
+        <div class="c-program-image" style="background-image: url('{{Image(component.image).src }}')"></div>
       {% elseif component.cta_type == 'video' %}
-      <div class="c-program-video">
-        <div class="video">
-          <div class="fullwidth__video" video-url="{{component.video}}"></div>
-          <div id="play-button" class="c-hero_playbutton"></div>
-        </div>        
-      </div>
+        <div class="c-program-video">
+          <div class="video">
+            <div class="fullwidth__video" video-url="{{component.video}}"></div>
+            <div id="play-button" class="c-hero_playbutton"></div>
+          </div>        
+        </div>
       {% endif %}
       <div class="c-program-description">
         <p>{{component.body}}</p>

@@ -40,25 +40,27 @@
         @include grid-column(12, $no-gutter);
 
         max-width: 780px;
+        float: none;
+        margin: auto;
 
-        @include grid-media($lg) {
-          margin-left: 220px;
-        }
+        // @include grid-media($lg) {
+        //   margin-left: 220px;
+        // }
 
-        @include grid-media($xl) {
-          margin-left: 160px;
-        }
+        // @include grid-media($xl) {
+        //   margin-left: 160px;
+        // }
       }
 
       &.no-leftrail {
         max-width: 780px;
         margin: auto;
+        display: table; 
 
         @include grid-media($md) {
           @include grid-column(12, $no-gutter);
           float: none;
           margin: auto;
-          display: table;
           padding: 0 5px;
         }
 
@@ -114,9 +116,16 @@
           margin-top: 60px;
           margin-bottom: 60px;
 
+          @include grid-media($md) {
+            margin-left: 5%;
+          }
+
+          @include grid-media($lg-custom) {
+            margin-left: 0; 
+          }
+
           @include grid-media($lg) {
-            width: 110px;
-            margin-left: 5px;
+            width: 110px;            
           }
         }
       }
@@ -165,12 +174,6 @@
 .region_bottom {
   margin-bottom: 50px;
   
-  @include grid-media($md) {
-    .inner-container {
-      padding: 0 5px !important;
-    }
-  }
-  
   &.no-leftrail {
     .inner-container {
       margin: auto;
@@ -180,7 +183,7 @@
   }
 
   .container {
-    &.wrapper-wysiwyg,
+    &.wrapper-wysiwyg, 
     &.wrapper-faq,
     &.wrapper-gallery {
       @include grid-media($max-md) {

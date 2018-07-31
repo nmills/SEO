@@ -3,25 +3,6 @@
     "title": "PL Event Info",
     "fields": [
         {
-            "key": "field_5adec35512dbf",
-            "label": "Program Headline",
-            "name": "event_header",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_5b5eb68e54151",
             "label": "Description",
             "name": "description",
@@ -41,6 +22,25 @@
             "layout": "block",
             "prefix_label": 0,
             "prefix_name": 0
+        },
+        {
+            "key": "field_5adec35512dbf",
+            "label": "Program Headline",
+            "name": "event_header",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_5ad59b713f9ef",
@@ -162,5 +162,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1532933822
+    "modified": 1533030800
 }

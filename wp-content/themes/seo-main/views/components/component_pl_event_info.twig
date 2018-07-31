@@ -1,16 +1,18 @@
-{% if component['event_header'] %}
-	<div class="page-title">
-		<div class="program_title">
-			<h1>{{post.title}}</h1>
-		</div>
-		<div class="program_description page-title__text-spacing">
-			<p>{{component['intro']}}</p>
-		</div>
-		<div class="program_headline">
-			<h2>{{component['event_header']}}</h2>
-		</div>
+<div class="page-title">
+	<div class="program_title">
+		<h1>{{post.title}}</h1>
 	</div>
-{% endif %}
+	{% if component['event_header'] %}
+	<div class="program_description page-title__text-spacing">
+		<p>{{component['intro']}}</p>
+	</div>
+	{% endif %}
+	{% if component['event_header'] %}
+	<div class="program_headline">
+		<h2>{{component['event_header']}}</h2>
+	</div>
+	{% endif %}
+</div>
 
 {% if component['include_event_info'] == 'yes' %}
 	<section>

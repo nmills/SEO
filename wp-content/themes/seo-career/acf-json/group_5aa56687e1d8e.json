@@ -470,6 +470,68 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5b601faec951d": {
+                    "key": "5b601faec951d",
+                    "name": "component_pl_alumni",
+                    "label": "Alumni",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b601faec951e",
+                            "label": "Alumni",
+                            "name": "component_ph_alumni",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ab24570789e5"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5b6026328e42b": {
+                    "key": "5b6026328e42b",
+                    "name": "component_pl_text",
+                    "label": "Large Text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b6026328e42c",
+                            "label": "Large Text",
+                            "name": "component_ph_text",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ab0d276856cd"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -496,5 +558,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1532080755
+    "modified": 1533027947
 }
