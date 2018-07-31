@@ -34,14 +34,36 @@
     margin-bottom: 50px;
 
     .region_title {
+      max-width: 1280px;
+
+      .content {
+        @include grid-column(12, $no-gutter);
+
+        max-width: 780px;
+
+        @include grid-media($lg) {
+          margin-left: 220px;
+        }
+
+        @include grid-media($xl) {
+          margin-left: 160px;
+        }
+      }
+
       &.no-leftrail {
         max-width: 780px;
         margin: auto;
 
         @include grid-media($md) {
-          @include grid-column(8, $no-gutter);
+          @include grid-column(12, $no-gutter);
           float: none;
           margin: auto;
+          display: table;
+          padding: 0 5px;
+        }
+
+        .content {
+          margin-left: 0;
         }
       }  
     }
@@ -72,6 +94,7 @@
       }
 
       &.no-leftrail {
+        @include grid-column(12, $no-gutter);
         margin: auto;
         float: none; 
 
@@ -152,6 +175,7 @@
     .inner-container {
       margin: auto;
       float: none; 
+      max-width: 780px;
     }
   }
 
