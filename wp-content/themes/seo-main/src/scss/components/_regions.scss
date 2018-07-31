@@ -116,9 +116,12 @@
           margin-top: 60px;
           margin-bottom: 60px;
 
+          @include grid-media($md) {
+            margin-left: 10%;
+          }
+
           @include grid-media($lg) {
-            width: 110px;
-            margin-left: 5px;
+            width: 110px;            
           }
         }
       }

@@ -2639,10 +2639,12 @@ Gallery
     width: 75px;
     margin-top: 60px;
     margin-bottom: 60px; }
+    @media only screen and (min-width: 768px) {
+      .container.region_body.title-border .region_main_content:before {
+        margin-left: 10%; } }
     @media only screen and (min-width: 1024px) {
       .container.region_body.title-border .region_main_content:before {
-        width: 110px;
-        margin-left: 5px; } }
+        width: 110px; } }
   .container.region_body.title-border .region_left_rail {
     margin-top: 120px; }
 
