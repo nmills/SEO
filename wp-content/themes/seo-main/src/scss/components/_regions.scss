@@ -117,7 +117,11 @@
           margin-bottom: 60px;
 
           @include grid-media($md) {
-            margin-left: 10%;
+            margin-left: 5%;
+          }
+
+          @include grid-media($lg-custom) {
+            margin-left: 0; 
           }
 
           @include grid-media($lg) {
