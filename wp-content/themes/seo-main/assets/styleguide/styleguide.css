@@ -5132,7 +5132,7 @@ body {
   max-width: 780px;
   margin: 0 auto; }
   .c-news-header .container .c-news-header__breadcrumb {
-    margin-top: 100px; }
+    margin-top: 50px; }
     .c-news-header .container .c-news-header__breadcrumb p {
       text-transform: uppercase;
       margin: 0;
@@ -6644,7 +6644,7 @@ body {
   padding-top: 14px; }
   @media only screen and (min-width: 840px) {
     body {
-      padding-top: 52px; } }
+      padding-top: 47px; } }
   @media only screen and (min-width: 840px) {
     body.has_submenu {
       padding-top: 110px; } }
@@ -6750,28 +6750,30 @@ header {
     background: #050505;
     padding-bottom: 15px;
     border-top: 2px solid #ffffff;
-    margin-top: -2px; }
-    .c-nav__multisite-nav ul > li > ul > li > a {
-      padding: 5px 25px;
-      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 15px;
-      line-height: 1;
-      width: 100%; }
-      @media only screen and (min-width: 768px) {
-        .c-nav__multisite-nav ul > li > ul > li > a {
-          font-size: 19px; } }
-    .c-nav__multisite-nav ul > li > ul > li.active-program a {
-      position: relative; }
-      .c-nav__multisite-nav ul > li > ul > li.active-program a:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        border-left: 4px solid #eb0029; }
+    margin-top: -3px; }
+    .c-nav__multisite-nav ul > li > ul > li {
+      margin-top: -1px; }
+      .c-nav__multisite-nav ul > li > ul > li > a {
+        padding: 5px 25px;
+        font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1;
+        width: 100%; }
+        @media only screen and (min-width: 768px) {
+          .c-nav__multisite-nav ul > li > ul > li > a {
+            font-size: 19px; } }
+      .c-nav__multisite-nav ul > li > ul > li.active-program a {
+        position: relative; }
+        .c-nav__multisite-nav ul > li > ul > li.active-program a:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          border-left: 4px solid #eb0029; }
   .c-nav__multisite-nav ul > li > a:hover + .nav-dropdown,
   .c-nav__multisite-nav .nav-dropdown:hover {
     display: block; }
@@ -6904,7 +6906,7 @@ header {
         position: absolute;
         width: 100%;
         left: 0;
-        top: 30px;
+        top: 27px;
         background: #ffffff;
         padding: 15px; } }
     @media only screen and (min-width: 840px) {
