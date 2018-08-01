@@ -11,7 +11,7 @@ body {
   padding-top: 14px;
 
   @include grid-media($hd) {
-    padding-top: 52px;
+    padding-top: 47px;
   }
   
   &.has_submenu {

@@ -127,9 +127,10 @@ header {
         background: $black;
         padding-bottom: 15px;
         border-top: 2px solid $white;
-        margin-top: -2px;
+        margin-top: -3px;
 
         > li {
+          margin-top: -1px;
           > a {
             padding: 5px 25px;
 
@@ -355,7 +356,7 @@ header {
           position: absolute;
           width: 100%;
           left: 0;
-          top: 30px;
+          top: 27px;
           background: $white;
           padding: 15px;
         }
