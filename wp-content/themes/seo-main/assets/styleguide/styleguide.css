@@ -899,31 +899,32 @@ sg-wrapper:
 
 Styleguide 1.2
 */
-.page-title h1 {
-  font-weight: bold;
-  display: inline-block;
-  margin: 0; }
-  .page-title h1 span {
-    font-weight: 200; }
-  .page-title h1:before {
-    content: " ";
-    display: block;
-    border-bottom: 10px solid #eb0029;
-    width: 75px;
-    margin-bottom: 15px; }
-    @media only screen and (min-width: 1024px) {
-      .page-title h1:before {
-        width: 110px; } }
-
-.page-title .page-title__text-spacing {
-  margin-top: 30px; }
-  .page-title .page-title__text-spacing,
-  .page-title .page-title__text-spacing p {
-    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #050505;
-    font-weight: 100;
-    font-size: 24px;
-    line-height: 1.2; }
+.page-title {
+  padding: 0 5px; }
+  .page-title h1 {
+    font-weight: bold;
+    display: inline-block;
+    margin: 0; }
+    .page-title h1 span {
+      font-weight: 200; }
+    .page-title h1:before {
+      content: " ";
+      display: block;
+      border-bottom: 10px solid #eb0029;
+      width: 75px;
+      margin-bottom: 15px; }
+      @media only screen and (min-width: 1024px) {
+        .page-title h1:before {
+          width: 110px; } }
+  .page-title .page-title__text-spacing {
+    margin-top: 30px; }
+    .page-title .page-title__text-spacing,
+    .page-title .page-title__text-spacing p {
+      font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #050505;
+      font-weight: 100;
+      font-size: 24px;
+      line-height: 1.2; }
 
 /*
 Quote Offset
@@ -2595,8 +2596,7 @@ Gallery
           float: left;
           margin-left: 0;
           float: none;
-          margin: auto;
-          padding: 0 5px; } }
+          margin: auto; } }
       .container.region_body .region_title.no-leftrail .content {
         margin-left: 0; }
   .container.region_body .region_left_rail {
@@ -2705,14 +2705,7 @@ Gallery
   max-width: 780px;
   margin: auto;
   margin-bottom: 50px;
-  margin-top: 65px;
-  padding: 0 10%; }
-  @media only screen and (min-width: 480px) {
-    .program-landing-page .page-title {
-      padding: 0 15px; } }
-  @media only screen and (min-width: 1440px) {
-    .program-landing-page .page-title {
-      padding: 0 5px; } }
+  margin-top: 65px; }
   .program-landing-page .page-title .program_headline {
     text-align: center;
     width: 80%;

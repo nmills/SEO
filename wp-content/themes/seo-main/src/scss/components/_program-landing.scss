@@ -6,11 +6,11 @@
     margin: auto;
     margin-bottom: 50px;
     margin-top: 65px;
-    padding: 0 10%;
+    // padding: 0 10%;
 
-    @include grid-media($sm) {
-      padding: 0 15px;
-    }
+    // @include grid-media($sm) {
+    //   padding: 0 15px;
+    // }
     
     // @include grid-media($md) {
     //   @include grid-column(8, $no-gutter);
@@ -20,9 +20,9 @@
     //   margin-top: 65px;
     // }
 
-    @include grid-media($xl) {
-      padding: 0 5px;
-    }
+    // @include grid-media($xl) {
+    //   padding: 0 5px;
+    // }
 
     .program_headline {
         text-align: center;
