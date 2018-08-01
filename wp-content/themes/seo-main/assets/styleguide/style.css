@@ -379,13 +379,19 @@ section.entry-content.container {
       display: block; } }
 
 section {
-  margin-top: 40px; }
+  margin-bottom: 40px; }
   section::after {
     clear: both;
     content: "";
     display: block; }
   @media only screen and (min-width: 768px) {
     section {
+      margin-bottom: 100px; } }
+
+.page-template-template-program_landing section {
+  margin-top: 40px; }
+  @media only screen and (min-width: 768px) {
+    .page-template-template-program_landing section {
       margin-top: 45px; } }
 
 .slider__animation {
