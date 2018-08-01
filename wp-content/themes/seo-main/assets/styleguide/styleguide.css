@@ -389,11 +389,8 @@ section {
       margin-bottom: 100px; } }
 
 .page-template-template-program_landing section {
-  margin-top: 40px;
-  margin-bottom: 0; }
-  @media only screen and (min-width: 768px) {
-    .page-template-template-program_landing section {
-      margin-top: 45px; } }
+  margin-top: 45px;
+  margin-bottom: 45px; }
 
 .slider__animation {
   transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
