@@ -63,9 +63,19 @@ section.entry-content.container {
 section {
   @include grid-container;
 
-  margin-top: 40px;
+  margin-bottom: 40px;
 
   @include grid-media($md) {
-    margin-top: 45px;
+    margin-bottom: 100px;
+  }
+}
+
+.page-template-template-program_landing {
+  section {
+    margin-top: 40px;
+
+    @include grid-media($md) {
+      margin-top: 45px;
+    }
   }
 }
