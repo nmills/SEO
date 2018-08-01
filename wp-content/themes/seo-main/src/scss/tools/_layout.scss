@@ -63,9 +63,9 @@ section.entry-content.container {
 section {
   @include grid-container;
 
-  margin-bottom: 40px;
+  margin-top: 40px;
 
   @include grid-media($md) {
-    margin-bottom: 100px;
+    margin-top: 45px;
   }
 }
