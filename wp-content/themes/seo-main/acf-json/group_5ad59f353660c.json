@@ -46,7 +46,7 @@
                     "name": "photo",
                     "type": "image_crop",
                     "instructions": "",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -172,5 +172,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1530710340
+    "modified": 1533119243
 }

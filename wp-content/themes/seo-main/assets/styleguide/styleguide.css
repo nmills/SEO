@@ -379,14 +379,14 @@ section.entry-content.container {
       display: block; } }
 
 section {
-  margin-bottom: 40px; }
+  margin-top: 40px; }
   section::after {
     clear: both;
     content: "";
     display: block; }
   @media only screen and (min-width: 768px) {
     section {
-      margin-bottom: 100px; } }
+      margin-top: 45px; } }
 
 .slider__animation {
   transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
@@ -5048,7 +5048,8 @@ body {
     border-bottom-left-radius: 3em; }
 
 .c-gh-donate {
-  background: #050505; }
+  background: #050505;
+  margin-bottom: 2px; }
   .c-gh-donate .container {
     padding: 50px; }
     @media only screen and (min-width: 768px) {
