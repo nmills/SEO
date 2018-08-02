@@ -195,7 +195,7 @@ Styleguide 1.4
       position: relative;
       padding-left: 30px;
 
-      @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 20px, $line-height: 1.2);
+      @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 18px, $line-height: 1.2);
 
       &:before {
         content: "";
@@ -267,7 +267,7 @@ Styleguide 1.5
       position: relative;
       padding-left: 30px;
 
-      @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 20px, $line-height: 1.2);
+      @include type-custom($color: $black, $font-weight: $font-normal, $font-size: 18px, $line-height: 1.2);
 
       &:before {
         counter-increment: counter-name;
