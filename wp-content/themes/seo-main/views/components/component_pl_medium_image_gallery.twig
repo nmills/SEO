@@ -8,14 +8,15 @@
         <div class="c-gallery_item-container">
           {% for item in component.repeater %}
             <div class="c-gallery__gallery-item">
-              {% if item.destination_link %}
-                <a href="{{item.destination_link}}" class="bw-hover">
-                  <div class="c-gallery__image" style="background-image: url({{Image(item.photo).src }})"></div>
-                </a>  
-              {% else %}
-                 <div class="c-gallery__image" style="background-image: url({{Image(item.photo).src }})"></div>
-              {% endif %}      
-              {# <img src="" /> #}
+              {% if Image(item.photo).src %}
+                {% if item.destination_link %}
+                  <a href="{{item.destination_link}}" class="bw-hover">
+                    <div class="c-gallery__image" style="background-image: url({{Image(item.photo).src }})"></div>
+                  </a>  
+                {% else %}
+                   <div class="c-gallery__image" style="background-image: url({{Image(item.photo).src }})"></div>
+                {% endif %} 
+              {% endif %}  
               <div class="item__heading">
                 <h3>{{item.heading}}</h3>
               </div>

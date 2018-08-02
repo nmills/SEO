@@ -5867,16 +5867,19 @@ body {
   float: left;
   margin-left: 0; }
 
-.c-gh-callout .container {
-  max-width: 1080px;
-  margin: 0 auto; }
-  @media only screen and (max-width: 767px) {
-    .c-gh-callout .container {
-      padding: 0; } }
-  @media only screen and (min-width: 768px) {
-    .c-gh-callout .container {
-      display: flex;
-      justify-content: center; } }
+.c-gh-callout {
+  margin-bottom: 45px;
+  margin-top: 45px; }
+  .c-gh-callout .container {
+    max-width: 1080px;
+    margin: 0 auto; }
+    @media only screen and (max-width: 767px) {
+      .c-gh-callout .container {
+        padding: 0; } }
+    @media only screen and (min-width: 768px) {
+      .c-gh-callout .container {
+        display: flex;
+        justify-content: center; } }
 
 .c-gh-callout__img {
   width: calc(100%);
