@@ -59,8 +59,8 @@ video.video-player {
   transform: translate(-50%, -50%);
 
   @include grid-media($lg) {
-    width: 7em;
-    height: 7em;
+    width: 3.5em;
+    height: 3.5em;
   }
 
 
