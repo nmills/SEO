@@ -1025,7 +1025,7 @@ Styleguide 1.4
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2; }
     .c-rte ul li:before, .c-rte__accordion ul li:before {
       content: "";
@@ -1084,7 +1084,7 @@ Styleguide 1.5
     font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #050505;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2; }
     .c-rte ol li:before, .c-rte__accordion ol li:before {
       counter-increment: counter-name;
