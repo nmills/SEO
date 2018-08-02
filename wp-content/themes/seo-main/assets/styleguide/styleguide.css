@@ -3572,7 +3572,7 @@ body {
       margin-right: 5.5%;
       margin-bottom: 40px; } }
   .c-gallery__container.image-only .c-gallery__gallery-item img {
-    max-width: 100%;
+    max-width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
