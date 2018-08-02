@@ -37,7 +37,12 @@
 }
 
 .c-gh-callout__text {
-  &,
+  margin-top: 15px;
+
+  @include grid-media($md) {
+    margin-top: 0;
+  }
+
   p {
     @include type-3;
     font-weight: $font-thinnest;
@@ -55,3 +60,16 @@
   font-size: 15px;
   line-height: 1.2;
 } 
+
+
+.program-landing-page{
+  .c-gh-callout {
+    .container {
+      @include grid-media($max-md) {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 10%;
+      }
+    }
+  }
+}
