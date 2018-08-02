@@ -130,13 +130,28 @@ header {
         margin-top: -3px;
 
         > li {
-          margin-top: -1px;
+          background: $black;
+          position: relative;
+          width: 100%;
+          z-index: 1;
+
           > a {
-            padding: 5px 25px;
+            position: relative;
+            padding: 5px 0;
 
             @include type-5($color: $white);
 
-            width: 100%;
+            margin-left: 25px;
+            &:hover {
+              &:before {
+                border-bottom: 3px solid $red;
+                bottom: 0;
+                content: "";
+                left: 0;
+                position: absolute;
+                width: 100%;
+              }
+            }
           }
 
           &.active-program {

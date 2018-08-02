@@ -6769,18 +6769,29 @@ header {
     border-top: 2px solid #ffffff;
     margin-top: -3px; }
     .c-nav__multisite-nav ul > li > ul > li {
-      margin-top: -1px; }
+      background: #050505;
+      position: relative;
+      width: 100%;
+      z-index: 1; }
       .c-nav__multisite-nav ul > li > ul > li > a {
-        padding: 5px 25px;
+        position: relative;
+        padding: 5px 0;
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
         color: #ffffff;
         font-weight: 700;
         font-size: 15px;
         line-height: 1;
-        width: 100%; }
+        margin-left: 25px; }
         @media only screen and (min-width: 768px) {
           .c-nav__multisite-nav ul > li > ul > li > a {
             font-size: 19px; } }
+        .c-nav__multisite-nav ul > li > ul > li > a:hover:before {
+          border-bottom: 3px solid #eb0029;
+          bottom: 0;
+          content: "";
+          left: 0;
+          position: absolute;
+          width: 100%; }
       .c-nav__multisite-nav ul > li > ul > li.active-program a {
         position: relative; }
         .c-nav__multisite-nav ul > li > ul > li.active-program a:before {
