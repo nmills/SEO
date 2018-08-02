@@ -1,5 +1,5 @@
-<div class="page-title">
-	{% if component['show_page_title'] == 'yes' %}
+{% if component['show_page_title'] == 'yes' %}
+	<div class="page-title">
 		{% if component['title'] %}
 			<div class="program_title">
 				<h1>{{component['title']}}</h1>
@@ -10,14 +10,16 @@
 				<p>{{component['description']}}</p>
 			</div>
 		{% endif %}
-	{% else %}
+	</div>
+{% elseif component['show_page_title'] == 'yes' and component['event_header'] %}
+	<div class="page-title">
 		{% if component['event_header'] %}
 			<div class="program_headline">
 				<h2>{{component['event_header']}}</h2>
 			</div>
 		{% endif %}
-	{% endif %}
-</div>
+	</div>
+{% endif %}
 
 {% if component['include_event_info'] == 'yes' and component['show_page_title'] == 'no'%}
 	<section>
