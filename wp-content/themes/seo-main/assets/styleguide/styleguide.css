@@ -3915,7 +3915,7 @@ body {
   max-width: 1024px;
   margin: 0 auto; }
   .c-ph-intro__container .c-ph-intro__content {
-    padding: 0 50px; }
+    padding: 20px 0; }
     @media only screen and (min-width: 768px) {
       .c-ph-intro__container .c-ph-intro__content {
         padding: 0 100px; } }
