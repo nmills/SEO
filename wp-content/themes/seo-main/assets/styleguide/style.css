@@ -6987,7 +6987,7 @@ header {
           width: calc(100% - 50px);
           border-bottom: 3px solid #050505;
           left: 50%;
-          bottom: -15px;
+          bottom: -10px;
           transform: translateX(-50%); }
         .c-nav__nav--left ul > li > ul > .child-menu > li > a, .c-nav__nav--left ul > li > ul > .child-menu > li > a:hover, .c-nav__nav--left ul > li > ul > .child-menu > li > a:focus {
           background: none;
