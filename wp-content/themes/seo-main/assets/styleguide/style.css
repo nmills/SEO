@@ -3581,7 +3581,7 @@ body {
       margin-right: 5.5%;
       margin-bottom: 40px; } }
   .c-gallery__container.image-only .c-gallery__gallery-item img {
-    max-width: 50%;
+    max-width: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -4041,7 +4041,7 @@ body {
           .c-ph-gallery__container .c-ph-gallery__content .c-ph-gallery__gallery-item.last {
             margin-right: 0; } }
       .c-ph-gallery__container .c-ph-gallery__content .c-ph-gallery__gallery-item img {
-        max-height: 50%;
+        max-height: 60%;
         position: absolute;
         top: 50%;
         left: 50%;
