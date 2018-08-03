@@ -7014,7 +7014,7 @@ header {
           width: calc(100% - 50px);
           border-bottom: 3px solid #050505;
           left: 50%;
-          bottom: -13px;
+          bottom: -10px;
           transform: translateX(-50%); }
         .c-nav__nav--left ul > li > ul > .child-menu > li > a, .c-nav__nav--left ul > li > ul > .child-menu > li > a:hover, .c-nav__nav--left ul > li > ul > .child-menu > li > a:focus {
           background: none;
@@ -7027,7 +7027,7 @@ header {
           width: calc(100% - 50px);
           border-bottom: 3px solid #050505;
           left: 50%;
-          bottom: -13px;
+          bottom: -10px;
           transform: translateX(-50%); } }
   .c-nav__nav--left ul > li > a:hover + .main-nav-dropdown,
   .c-nav__nav--left .main-nav-dropdown:hover {
