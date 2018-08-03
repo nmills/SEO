@@ -2660,8 +2660,6 @@ Gallery
         width: 110px; } }
   .container.region_body.title-border .region_main_content.no-leftrail:before {
     margin-left: 5px; }
-  .container.region_body.title-border .region_left_rail {
-    margin-top: 120px; }
 
 .container.region_bottom {
   width: calc(100%);
