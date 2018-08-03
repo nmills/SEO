@@ -74,6 +74,12 @@ footer.site-footer {
           //   text-align: left;
           // }
 
+          &.current_page_item {
+            a {
+              color: $light-blue;
+            }
+          }
+
           a {
             font-size: 15px;
 
@@ -148,11 +154,13 @@ footer.site-footer {
                 display: none;
               }
 
-              // svg {
-              //   path {
-              //     fill: $light-blue;
-              //   }
-              // }
+              &:hover {
+                svg {
+                  path {
+                    fill: $light-blue;
+                  }
+                }
+              }
             }
           }
         }
