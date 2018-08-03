@@ -135,6 +135,8 @@ footer.site-footer {
             text-align: center;
             width: auto;
             padding: 0;
+            padding-right: 10px;
+
 
             @include grid-media($ft) {
               text-align: left;
@@ -145,6 +147,12 @@ footer.site-footer {
               span.menu-image-title {
                 display: none;
               }
+
+              // svg {
+              //   path {
+              //     fill: $light-blue;
+              //   }
+              // }
             }
           }
         }

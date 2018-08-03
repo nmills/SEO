@@ -7538,7 +7538,8 @@ footer.site-footer {
             display: inline-block;
             text-align: center;
             width: auto;
-            padding: 0; }
+            padding: 0;
+            padding-right: 10px; }
             @media only screen and (min-width: 960px) {
               footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-social-container #menu-social li {
                 text-align: left; } }
