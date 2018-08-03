@@ -4041,7 +4041,8 @@ body {
           .c-ph-gallery__container .c-ph-gallery__content .c-ph-gallery__gallery-item.last {
             margin-right: 0; } }
       .c-ph-gallery__container .c-ph-gallery__content .c-ph-gallery__gallery-item img {
-        max-height: 60%;
+        max-height: 100%;
+        max-width: 60%;
         position: absolute;
         top: 50%;
         left: 50%;
