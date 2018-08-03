@@ -141,7 +141,9 @@
       }
 
       .region_left_rail {
-        margin-top: 120px;
+        @include grid-media($md) {
+          margin-top: 120px;
+        }
       }
     }
   }
@@ -235,6 +237,34 @@
 
       @include grid-media($md) {
         padding: 0 5px;
+      }
+    }
+  }
+}
+
+.page-template-template-gallery {
+  .container.region_hero {
+    .page-title {
+      @include grid-media($max-md) {
+        padding: 0 10%;
+
+        .gallery_headline, .gallery_description {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+.page-template-template-program_landing {
+  .region_hero {
+    .page-title {
+      @include grid-media($max-md) {
+        padding: 0 10%;
+
+        .program_title, .program_description {
+          padding: 0 5px;
+        }
       }
     }
   }
