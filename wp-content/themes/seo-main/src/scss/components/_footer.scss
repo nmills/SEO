@@ -76,6 +76,10 @@ footer.site-footer {
 
           a {
             font-size: 15px;
+
+            &:hover {
+              color: $light-blue;
+            }
           }
         }
       }
@@ -109,7 +113,7 @@ footer.site-footer {
 
         @include grid-media($ft) {
           // @include grid-column(1.8, $no-gutter);
-          width: 160px;
+          width: 200px;
           text-align: left;
           margin-top: 63px;
           line-height: inherit;
@@ -131,6 +135,8 @@ footer.site-footer {
             text-align: center;
             width: auto;
             padding: 0;
+            padding-right: 10px;
+
 
             @include grid-media($ft) {
               text-align: left;
@@ -141,6 +147,12 @@ footer.site-footer {
               span.menu-image-title {
                 display: none;
               }
+
+              // svg {
+              //   path {
+              //     fill: $light-blue;
+              //   }
+              // }
             }
           }
         }
