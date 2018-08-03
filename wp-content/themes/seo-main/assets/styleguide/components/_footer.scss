@@ -76,6 +76,10 @@ footer.site-footer {
 
           a {
             font-size: 15px;
+
+            &:hover {
+              color: $light-blue;
+            }
           }
         }
       }

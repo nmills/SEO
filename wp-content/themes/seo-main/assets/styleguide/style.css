@@ -7511,6 +7511,9 @@ footer.site-footer {
           footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-footer-left-container li a,
           footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-footer-right-container li a {
             font-size: 15px; }
+            footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-footer-left-container li a:hover,
+            footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-footer-right-container li a:hover {
+              color: #7cb4f6; }
       footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-footer-right-container li:last-of-type {
         margin-bottom: 5px; }
       @media only screen and (min-width: 960px) {
