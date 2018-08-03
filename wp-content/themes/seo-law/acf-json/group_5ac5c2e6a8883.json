@@ -31,7 +31,7 @@
             "label": "Text",
             "name": "text",
             "type": "textarea",
-            "instructions": "For emphasized text use \"< strong>\" & \"<\/ strong>\" before and after your text",
+            "instructions": "For emphasized text use \"< strong>\" & \"< \/strong>\" before and after your text",
             "required": 1,
             "conditional_logic": [
                 [
@@ -122,5 +122,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527828585
+    "modified": 1533300249
 }
