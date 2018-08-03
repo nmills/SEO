@@ -277,6 +277,15 @@
   transform: rotate(180deg);
 }
 
+.c-nav__multisite-nav ul > li > ul > li > a.pseudo-class-hover:before {
+  border-bottom: 3px solid #eb0029;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
 .c-nav__multisite-nav ul > li > a.pseudo-class-hover + .nav-dropdown,
 .c-nav__multisite-nav .nav-dropdown.pseudo-class-hover {
   display: block;
