@@ -402,14 +402,14 @@ header {
                   &.active-child {
                     &:after {
                       width: calc(100% - 25px);
-                      left: 36%;
+                      left: 43%;
                     }
                   }
 
                   &:hover {
                     &:after {
                       width: calc(100% - 25px);
-                      left: 36%;
+                      left: 43%;
                     }
                   }
                 }
@@ -448,7 +448,7 @@ header {
                     width: calc(100% - 50px);
                     border-bottom: 3px solid $black;
                     left: 50%;
-                    bottom: -10px;
+                    bottom: -13px;
                     transform: translateX(-50%);
                   }
                 }
