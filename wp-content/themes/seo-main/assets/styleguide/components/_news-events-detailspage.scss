@@ -40,8 +40,12 @@
     max-width: 780px;
     margin: 0 auto;
 
+    @include grid-media($md) {
+      padding: 0 5px;
+    }
+
     .c-news-header__breadcrumb {
-      margin-top: 50px;
+      margin-top: 55px;
 
       p {
         text-transform: uppercase;
