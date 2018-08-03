@@ -62,11 +62,7 @@
                 2. Current page is one of the submenu page
                 3. Current page is one of the ancestors of the submenu page
                #}
-              <a href="{{main_menu_item.get_link}}"
-                class="{% if main_menu_item.current or
-                childlinkactive or
-                main_menu_item.get_link in current_page_url %}active-parent{% endif %}">{{main_menu_item.title}}
-              </a>
+              <a href="{{main_menu_item.get_link}}" class="{% if main_menu_item.current or childlinkactive or main_menu_item.get_link in current_page_url %}active-parent{% endif %}">{{main_menu_item.title}}</a>
               {# Show the sub menu Only for the following Conditions
                 a. Parent Menu must have a Child menu and 
                 1. Current page is equal to the header menu link or
@@ -84,10 +80,7 @@
                         {# Add Active child class only if the following conditions are met
                           1. Current page is the submenu page
                           2. Current page is one of the ancestors of the submenu page #}
-                        <a href="{{child.get_link}}"
-                        class="{% if child.current or
-                        child.get_link in current_page_url %}active-child{% endif %}">{{child.title}}
-                        </a>
+                        <a href="{{child.get_link}}" class="{% if child.current or child.get_link in current_page_url %}active-child{% endif %}">{{child.title}}</a>
                       </li>
                     {% endfor %}
                   </div>

@@ -89,7 +89,7 @@
   margin: 0 auto;
 
   .c-ph-intro__content {
-    padding: 0 50px;
+    padding: 20px 0;
 
     @include grid-media($md) {
       padding: 0 100px;
