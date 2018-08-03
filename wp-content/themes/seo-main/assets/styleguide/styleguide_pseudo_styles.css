@@ -343,3 +343,7 @@ footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-footer-r
 footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-footer-right-container li.pseudo-class-last-of-type {
   margin-bottom: 5px;
 }
+
+footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-social-container #menu-social li a.pseudo-class-hover svg path {
+  fill: #7cb4f6;
+}
