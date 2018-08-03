@@ -7528,7 +7528,7 @@ footer.site-footer {
         line-height: 0; }
         @media only screen and (min-width: 960px) {
           footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-social-container {
-            width: 160px;
+            width: 200px;
             text-align: left;
             margin-top: 63px;
             line-height: inherit; } }
