@@ -253,7 +253,6 @@ header {
         width: auto;
       }
 
-
       // &.has-submenu {
       // position: relative;
 
@@ -394,30 +393,30 @@ header {
             }
 
 
-            &:first-of-type {
-              @include grid-media($hd) {
-                > a {
-                  padding-left: 0;
+            // &:first-of-type {
+            //   @include grid-media($hd) {
+            //     > a {
+            //       padding-left: 0;
 
-                  &.active-child {
-                    &:after {
-                      width: calc(100% - 25px);
-                      left: 43%;
-                    }
-                  }
+            //       &.active-child {
+            //         &:after {
+            //           width: calc(100% - 25px);
+            //           left: 43%;
+            //         }
+            //       }
 
-                  &:hover {
-                    &:after {
-                      width: calc(100% - 25px);
-                      left: 43%;
-                    }
-                  }
-                }
-              }
-            }
+            //       &:hover {
+            //         &:after {
+            //           width: calc(100% - 25px);
+            //           left: 43%;
+            //         }
+            //       }
+            //     }
+            //   }
+            // }
 
             > a {
-              padding: 5px 15px;
+              margin: 5px 15px;
 
               @include type-5($color: $white);
             }
@@ -434,7 +433,7 @@ header {
 
             > li {
               > a {
-                padding: 5px 25px;
+                margin: 5px 25px;
 
                 @include type-5($color: $black);
 
@@ -445,11 +444,13 @@ header {
                   &:after {
                     content: "";
                     position: absolute;
-                    width: calc(100% - 50px);
+                    // width: calc(100% - 50px);
+                    width: 100%;
                     border-bottom: 3px solid $black;
-                    left: 50%;
-                    bottom: -10px;
-                    transform: translateX(-50%);
+                    // left: 50%;
+                    left: 0;
+                    bottom: -15px;
+                    // transform: translateX(-50%);
                   }
                 }
 
@@ -466,11 +467,13 @@ header {
                   &:after {
                     content: "";
                     position: absolute;
-                    width: calc(100% - 50px);
+                    // width: calc(100% - 50px);
+                    width: 100%;
                     border-bottom: 3px solid $black;
-                    left: 50%;
-                    bottom: -10px;
-                    transform: translateX(-50%);
+                    // left: 50%;
+                    left: 0;
+                    bottom: -15px;
+                    // transform: translateX(-50%);
                   }
                 }
               }
