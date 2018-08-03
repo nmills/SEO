@@ -335,6 +335,11 @@
   background: url("/wp-content/themes/seo-main/assets/img/icons/icon-arrow-right-black--large.svg");
 }
 
+footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-footer-left-container li a.pseudo-class-hover,
+footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-footer-right-container li a.pseudo-class-hover {
+  color: #7cb4f6;
+}
+
 footer.site-footer .c-footer__widget-container .c-footer__widgets .menu-footer-right-container li.pseudo-class-last-of-type {
   margin-bottom: 5px;
 }
