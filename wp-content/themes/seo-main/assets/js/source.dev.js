@@ -2871,14 +2871,12 @@ function(){
 var width=$(window).width();
 
 setTimeout(function(){
-if(width>=1024){
-if($('.main-nav-dropdown').length){
+if($('.main-nav-dropdown').length&&width>=840){
 var active_parent=$('a.active-parent').position().left;
 $(".child-menu").css({
 'left':active_parent+'px',
 'opacity':'1'});
 
-}
 }
 },10);
 };

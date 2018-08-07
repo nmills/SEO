@@ -393,27 +393,13 @@ header {
             }
 
 
-            // &:first-of-type {
-            //   @include grid-media($hd) {
-            //     > a {
-            //       padding-left: 0;
-
-            //       &.active-child {
-            //         &:after {
-            //           width: calc(100% - 25px);
-            //           left: 43%;
-            //         }
-            //       }
-
-            //       &:hover {
-            //         &:after {
-            //           width: calc(100% - 25px);
-            //           left: 43%;
-            //         }
-            //       }
-            //     }
-            //   }
-            // }
+            &:first-of-type {
+              @include grid-media($hd) {
+                > a {
+                  margin-left: 0;
+                }
+              }
+            }
 
             > a {
               margin: 5px 15px;

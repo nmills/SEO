@@ -6990,6 +6990,9 @@ header {
       @media only screen and (min-width: 840px) {
         .c-nav__nav--left ul > li > ul > .child-menu > li {
           width: auto; } }
+      @media only screen and (min-width: 840px) {
+        .c-nav__nav--left ul > li > ul > .child-menu > li:first-of-type > a {
+          margin-left: 0; } }
       .c-nav__nav--left ul > li > ul > .child-menu > li > a {
         margin: 5px 15px;
         font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
