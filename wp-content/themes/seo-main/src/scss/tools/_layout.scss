@@ -75,12 +75,12 @@ section {
     margin-top: 45px;
     margin-bottom: 45px;
 
-    &.c-pl-hero-section {
-      margin-top: 0;
-    }
-
-    &.c-gh-donate {
+    &.c-gh-donate,
+    &.c-ph-stats__section,
+    &.c-pl-hero-section,
+    &.c-ph-signup {
       margin-bottom: 2px;
+      margin-top: 2px;
     }
   }
 }

@@ -391,10 +391,9 @@ section {
 .page-template-template-program_landing section {
   margin-top: 45px;
   margin-bottom: 45px; }
-  .page-template-template-program_landing section.c-pl-hero-section {
-    margin-top: 0; }
-  .page-template-template-program_landing section.c-gh-donate {
-    margin-bottom: 2px; }
+  .page-template-template-program_landing section.c-gh-donate, .page-template-template-program_landing section.c-ph-stats__section, .page-template-template-program_landing section.c-pl-hero-section, .page-template-template-program_landing section.c-ph-signup {
+    margin-bottom: 2px;
+    margin-top: 2px; }
 
 .slider__animation {
   transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
