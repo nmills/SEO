@@ -2734,6 +2734,12 @@ Gallery
   margin: auto;
   margin-bottom: 50px;
   margin-top: 65px; }
+  @media only screen and (min-width: 768px) {
+    .program-landing-page .page-title {
+      padding: 0 5%; } }
+  @media only screen and (min-width: 1200px) {
+    .program-landing-page .page-title {
+      padding: 0; } }
   .program-landing-page .page-title .program_headline {
     text-align: center;
     width: 80%;
@@ -3492,6 +3498,12 @@ body {
   margin: auto;
   margin-bottom: 50px;
   margin-top: 65px; }
+  @media only screen and (min-width: 768px) {
+    .gallery-page .page-title {
+      padding: 0 5%; } }
+  @media only screen and (min-width: 1200px) {
+    .gallery-page .page-title {
+      padding: 0; } }
 
 .gallery-page .c-gallery__section-header .page-title {
   max-width: 1024px;
@@ -5163,7 +5175,10 @@ body {
   margin: 0 auto; }
   @media only screen and (min-width: 768px) {
     .c-news-header .container {
-      padding: 0 5px; } }
+      padding: 0 5%; } }
+  @media only screen and (min-width: 1200px) {
+    .c-news-header .container {
+      padding: 0; } }
   .c-news-header .container .c-news-header__breadcrumb {
     margin-top: 55px; }
     .c-news-header .container .c-news-header__breadcrumb p {

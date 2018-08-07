@@ -40,8 +40,12 @@
     max-width: 780px;
     margin: 0 auto;
 
-    @include grid-media($md) {
-      padding: 0 5px;
+    @include grid-media($md) { 
+      padding: 0 5%;
+    }
+
+      @include grid-media($lg-custom) {
+      padding: 0; 
     }
 
     .c-news-header__breadcrumb {

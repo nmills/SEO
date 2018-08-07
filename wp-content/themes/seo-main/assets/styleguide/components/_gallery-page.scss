@@ -20,6 +20,14 @@
     margin: auto;
     margin-bottom: 50px;
     margin-top: 65px;
+
+    @include grid-media($md) { 
+      padding: 0 5%;
+    }
+
+      @include grid-media($lg-custom) {
+      padding: 0; 
+    }
   }
   
   .c-gallery__section-header {
