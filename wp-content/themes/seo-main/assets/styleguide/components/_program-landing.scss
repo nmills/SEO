@@ -115,37 +115,37 @@
     }
 
     .video {
-      height: 212px;
+      height: 300px;
 
       @include grid-media($md) {
-        height: 411px;
+        height: 400px;
       }
 
       @include grid-media($lg) {
-        height: 811px;
+        height: 600px;
       }
       .plyr.plyr--youtube.plyr--video {
-        height: 212px;
+        height: 300px;
       
         @include grid-media($md) {
-          height: 411px;
+          height: 400px;
         }
 
         @include grid-media($lg) {
-          height: 811px;
+          height: 600px;
         }
 
         .plyr__video-wrapper.plyr__video-embed {
           padding: 0;
           position: static;
-          height: 212px;
+          height: 300px;
       
           @include grid-media($md) {
-            height: 411px;
+            height: 400px;
           }
 
           @include grid-media($lg) {
-            height: 811px;
+            height: 600px;
           }
         }
       }

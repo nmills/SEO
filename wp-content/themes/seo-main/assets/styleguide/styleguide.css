@@ -2814,31 +2814,31 @@ Gallery
       margin-left: 0;
       height: 100%; }
     .hero-section .c-hero_video .video {
-      height: 212px; }
+      height: 300px; }
       @media only screen and (min-width: 768px) {
         .hero-section .c-hero_video .video {
-          height: 411px; } }
+          height: 400px; } }
       @media only screen and (min-width: 1024px) {
         .hero-section .c-hero_video .video {
-          height: 811px; } }
+          height: 600px; } }
       .hero-section .c-hero_video .video .plyr.plyr--youtube.plyr--video {
-        height: 212px; }
+        height: 300px; }
         @media only screen and (min-width: 768px) {
           .hero-section .c-hero_video .video .plyr.plyr--youtube.plyr--video {
-            height: 411px; } }
+            height: 400px; } }
         @media only screen and (min-width: 1024px) {
           .hero-section .c-hero_video .video .plyr.plyr--youtube.plyr--video {
-            height: 811px; } }
+            height: 600px; } }
         .hero-section .c-hero_video .video .plyr.plyr--youtube.plyr--video .plyr__video-wrapper.plyr__video-embed {
           padding: 0;
           position: static;
-          height: 212px; }
+          height: 300px; }
           @media only screen and (min-width: 768px) {
             .hero-section .c-hero_video .video .plyr.plyr--youtube.plyr--video .plyr__video-wrapper.plyr__video-embed {
-              height: 411px; } }
+              height: 400px; } }
           @media only screen and (min-width: 1024px) {
             .hero-section .c-hero_video .video .plyr.plyr--youtube.plyr--video .plyr__video-wrapper.plyr__video-embed {
-              height: 811px; } }
+              height: 600px; } }
 
 @media only screen and (max-width: 767px) {
   .tout-section {
