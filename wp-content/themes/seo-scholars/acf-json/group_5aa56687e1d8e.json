@@ -40,7 +40,7 @@
                 "5aa5669881b59": {
                     "key": "5aa5669881b59",
                     "name": "component_pl_hero",
-                    "label": "Hero",
+                    "label": "Hero - Full Width",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -102,7 +102,7 @@
                 "5b42d77de5974": {
                     "key": "5b42d77de5974",
                     "name": "component_pl_stats_new",
-                    "label": "Stats",
+                    "label": "Stats - Full Width",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -195,7 +195,7 @@
                 "5ab8a49ab0f0e": {
                     "key": "5ab8a49ab0f0e",
                     "name": "component_pl_signup",
-                    "label": "Signup",
+                    "label": "Signup - Full Width",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -558,5 +558,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1533027947
+    "modified": 1533622055
 }
