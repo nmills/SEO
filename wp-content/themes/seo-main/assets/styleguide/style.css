@@ -5653,7 +5653,7 @@ body {
         width: calc(100%);
         float: left;
         margin-left: 0;
-        max-width: 1265px;
+        max-width: 1140px;
         padding-left: 0;
         margin: 0 auto;
         float: none; } }
@@ -5783,6 +5783,9 @@ body {
     .c-news-events .c-news-events__promotion h2 strong {
       font-weight: inherit;
       color: #eb0029; }
+  .c-news-events .c-news-events__promotion a {
+    font-size: 15px;
+    font-weight: 300; }
 
 .c-news-events .posts-selector .c-news-events__details h1 {
   font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;

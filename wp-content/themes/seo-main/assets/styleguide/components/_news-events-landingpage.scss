@@ -60,7 +60,7 @@
         @include grid-media($md) {
           @include grid-column(12, $no-gutter);
 
-          max-width: 1265px;
+          max-width: 1140px;
           padding-left: 0;
           margin: 0 auto;
           float: none;
@@ -225,6 +225,11 @@
         font-weight: inherit;
         color: $red;
       }
+    }
+
+    a {
+      font-size: 15px;
+      font-weight: $font-normal;
     }
   }
 
