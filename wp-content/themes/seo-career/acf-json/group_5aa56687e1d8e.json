@@ -319,7 +319,7 @@
                 "5ae1698402e2a": {
                     "key": "5ae1698402e2a",
                     "name": "component_pl_image_links",
-                    "label": "Image Links",
+                    "label": "Image Row with text link option",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -558,5 +558,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1533622055
+    "modified": 1534915875
 }
