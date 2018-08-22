@@ -71,7 +71,7 @@
                 "5ab0ee1345a39": {
                     "key": "5ab0ee1345a39",
                     "name": "component_ph_gallery",
-                    "label": "Gallery with carousel option",
+                    "label": "Logo gallery with carousel option",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -222,6 +222,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5b51ab49af8f2": {
+                    "key": "5b51ab49af8f2",
+                    "name": "component_ph_textcta",
+                    "label": "Text CTA - Full Width",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b51ab49af8f3",
+                            "label": "Text CTA - Full Width",
+                            "name": "component_ph_textcta",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ab222f0da179"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -234,7 +265,12 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "template-program_homepage.php"
+                "value": "default"
+            },
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-content-detail.php"
             }
         ]
     ],
@@ -248,5 +284,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1533271437
+    "modified": 1534918421
 }

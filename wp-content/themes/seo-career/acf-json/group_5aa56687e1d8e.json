@@ -381,7 +381,7 @@
                 "5b276ee9af055": {
                     "key": "5b276ee9af055",
                     "name": "component_pl_gallery_carousel",
-                    "label": "Gallery with carousel option",
+                    "label": "Logo gallery with carousel option",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -558,5 +558,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1534915875
+    "modified": 1534918377
 }
