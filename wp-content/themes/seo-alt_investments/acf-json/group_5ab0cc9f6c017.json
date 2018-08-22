@@ -253,6 +253,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5b7d39f0a84ec": {
+                    "key": "5b7d39f0a84ec",
+                    "name": "component_pl_image_links",
+                    "label": "Image Row with text link option",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b7d39faa84ed",
+                            "label": "PL Image Links",
+                            "name": "component:_pl_image_links",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ae167c9dddb5"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Component",
@@ -279,5 +310,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1534919153
+    "modified": 1534933548
 }
