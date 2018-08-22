@@ -51,7 +51,7 @@
                     "name": "text",
                     "type": "text",
                     "instructions": "",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -70,7 +70,7 @@
                     "name": "destination_link",
                     "type": "url",
                     "instructions": "",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -100,5 +100,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1527844996
+    "modified": 1534915614
 }
