@@ -3479,6 +3479,8 @@ body {
       font-size: 19px; }
       .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-title h3:hover {
         border-bottom: 3px solid #7cb4f6; }
+    .c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-title.no-link h3:hover {
+      border-bottom: none; }
 
 /* Program Landing */
 @media only screen and (max-width: 767px) {

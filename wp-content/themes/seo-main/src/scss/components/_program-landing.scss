@@ -1140,6 +1140,14 @@ body {
           border-bottom: 3px solid $light-blue;
         }
       }
+
+      &.no-link {
+        h3 {
+          &:hover {
+            border-bottom: none;
+          }
+        }
+      }
     }
   }
 }

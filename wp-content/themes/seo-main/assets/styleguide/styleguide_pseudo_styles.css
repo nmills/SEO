@@ -173,6 +173,10 @@
   border-bottom: 3px solid #7cb4f6;
 }
 
+.c-pl__image-link-container .c-pl__image-link-item .c-pl__image-link-title.no-link h3.pseudo-class-hover {
+  border-bottom: none;
+}
+
 .c-gallery__container .c-gallery__gallery-item .item__description a.pseudo-class-hover,
 .c-gallery__container .c-gallery__gallery-item .item__description a.pseudo-class-focus {
   color: #7cb4f6;
