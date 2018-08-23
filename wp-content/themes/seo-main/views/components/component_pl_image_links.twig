@@ -8,7 +8,7 @@
 					{% endif %}
 						<div class="c-pl__image-link-image" style="background-image: url({{Image(item.photo).src}});"></div>
 					{% if item.text %}
-						<div class="c-pl__image-link-title">
+						<div class="c-pl__image-link-title{{ (item.destination_link) ? '' : ' no-link' }}">
 							<h3>{{item.text}}</h3>
 						</div>
 					{% endif %}

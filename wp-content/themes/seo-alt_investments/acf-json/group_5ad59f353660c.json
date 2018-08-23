@@ -136,6 +136,25 @@
                     },
                     "default_value": "",
                     "placeholder": ""
+                },
+                {
+                    "key": "field_5b7e4dd49217e",
+                    "label": "Mailto link",
+                    "name": "mailto_link",
+                    "type": "text",
+                    "instructions": "If the Mailto link is added, it will replace the Destination URL",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -172,5 +191,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1533119243
+    "modified": 1535004151
 }

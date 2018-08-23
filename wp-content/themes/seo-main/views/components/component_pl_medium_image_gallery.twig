@@ -23,11 +23,15 @@
               <div class="item__sub-heading">
                 <p>{{item.subheading}}</p>
               </div>
-              {% if item.destination_link %}
+              {% if item.mailto_link %}
+                <div class="item__link">
+                  <a href="mailto:{{item.mailto_link}}" class="c-rte__link">{{ (item.link_text) ? item.link_text : 'Read full bio' }}</a>
+                </div>
+              {% else %}
                 <div class="item__link">
                   <a href="{{item.destination_link}}" class="c-rte__link">{{ (item.link_text) ? item.link_text : 'Read full bio' }}</a>
                 </div>
-              {% endif %}       
+              {% endif %}     
             </div>
           {% endfor %}
         </div>
