@@ -89,7 +89,7 @@
                     "name": "url",
                     "type": "url",
                     "instructions": "include http or https in the URL",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -119,5 +119,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1533299784
+    "modified": 1535006932
 }

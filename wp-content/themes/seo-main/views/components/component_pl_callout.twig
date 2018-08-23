@@ -8,7 +8,11 @@
 
     <div class="c-gh-callout__content">
       <div class="c-gh-callout__text">
-        <p>{{ component.callout_body }}</p>
+        {% if component.text_color == 'black' %}
+          <p style="color: #050505;">{{ component.callout_body }}</p>
+        {% else %}
+          <p>{{ component.callout_body }}</p>
+        {% endif %}
       </div>
 
       <h5 class="c-gh-callout__citation">{{ component.callout_citation }}</h5>
