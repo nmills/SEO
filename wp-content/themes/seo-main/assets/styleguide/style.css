@@ -2023,7 +2023,8 @@ button.c-uie__calltoaction-secondary {
     height: 196px;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin: 0 auto; }
     .c-cta__wrapper .c-cta--image include grid-media($sm) {
       width: 294px; }
   .c-cta__wrapper .c-rte__link {
