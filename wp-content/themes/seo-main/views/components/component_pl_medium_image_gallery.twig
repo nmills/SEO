@@ -27,7 +27,7 @@
                 <div class="item__link">
                   <a href="mailto:{{item.mailto_link}}" class="c-rte__link">{{ (item.link_text) ? item.link_text : 'Read full bio' }}</a>
                 </div>
-              {% else %}
+              {% elseif item.destination_link %}
                 <div class="item__link">
                   <a href="{{item.destination_link}}" class="c-rte__link">{{ (item.link_text) ? item.link_text : 'Read full bio' }}</a>
                 </div>
