@@ -3341,7 +3341,7 @@ body {
   height: 157px;
   float: left;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 30px;
   position: relative; }
