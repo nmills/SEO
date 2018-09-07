@@ -1,6 +1,12 @@
 <section>
 	<div class="container">
 		<div class="c-pl__image-link-container">
+		    <div class="c-pl__image-link__header">
+		    	<h2>{{component.heading}}</h2>
+		    </div>
+		    <div class="c-pl__image-link__description">
+			    <p>{{component.intro_text}}</p>
+		    </div>
 			{% for item in component.repeater %}
 				<div class="c-pl__image-link-item">
 					{% if item.destination_link %}
