@@ -3438,6 +3438,16 @@ body {
 .c-pl__image-link-container {
   max-width: 1027px;
   margin: 0 auto; }
+  .c-pl__image-link-container .c-pl__image-link__description p {
+    font-family: "Grotesk", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #050505;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 20px; }
+    @media only screen and (min-width: 768px) {
+      .c-pl__image-link-container .c-pl__image-link__description p {
+        margin-bottom: 40px; } }
   .c-pl__image-link-container .c-pl__image-link-item {
     width: calc(100%);
     float: left;
