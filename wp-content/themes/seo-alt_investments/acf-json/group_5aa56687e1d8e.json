@@ -257,7 +257,7 @@
                 "5ad5a1b32f6b5": {
                     "key": "5ad5a1b32f6b5",
                     "name": "component_pl_image_only_gallery",
-                    "label": "Image Only Gallery",
+                    "label": "Logo Image Gallery",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -558,5 +558,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1534918377
+    "modified": 1536301547
 }
