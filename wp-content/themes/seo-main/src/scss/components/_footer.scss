@@ -6,6 +6,11 @@ footer.site-footer {
   background: $black;
   font-weight: $font-normal;
 
+  @include grid-media($md) {
+    position: absolute;
+    bottom: 0;
+  }
+
   .c-footer__widget-container {
     padding: 20px;
     max-width: 1440px;

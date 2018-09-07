@@ -316,14 +316,12 @@ hr {
   background-color: #e5e7e7; }
 
 html {
-  margin-top: 32px !important;
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-html,
-body {
-  height: 100%; }
+html {
+  min-height: 100%; }
 
 body {
   margin: 0;
@@ -387,6 +385,11 @@ section {
   @media only screen and (min-width: 768px) {
     section {
       margin-bottom: 100px; } }
+
+@media only screen and (min-width: 768px) {
+  .off-canvas-wrapper {
+    min-height: calc(100% - 235px);
+    padding-bottom: 235px; } }
 
 .page-template-template-program_landing section {
   margin-top: 45px;
@@ -7497,6 +7500,10 @@ footer.site-footer {
   margin-left: 0;
   background: #050505;
   font-weight: 300; }
+  @media only screen and (min-width: 768px) {
+    footer.site-footer {
+      position: absolute;
+      bottom: 0; } }
   footer.site-footer .c-footer__widget-container {
     padding: 20px;
     max-width: 1440px;

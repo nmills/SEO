@@ -1,19 +1,19 @@
 // LAYOUT
 
 html {
-  margin-top: 32px !important;
+  // margin-top: 32px !important;
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-html,
-body {
-  height: 100%;
+html {
+  min-height: 100%;
 }
 
 body {
   margin: 0;
+  // position: relative;
 
   @include type-4($color: $dark-gray-one);
 }
@@ -67,6 +67,13 @@ section {
 
   @include grid-media($md) {
     margin-bottom: 100px;
+  }
+}
+
+.off-canvas-wrapper {
+  @include grid-media($md) {
+    min-height: calc(100% - 235px);
+    padding-bottom: 235px;
   }
 }
 
