@@ -1,6 +1,6 @@
 {
     "key": "group_5aa658d8a2be7",
-    "title": "Image only Gallery",
+    "title": "Logo Image Gallery",
     "fields": [
         {
             "key": "field_5aa658d8db62a",
@@ -100,5 +100,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1532947083
+    "modified": 1536299763
 }

@@ -133,7 +133,7 @@
                 "5aa65bd9c4eb1": {
                     "key": "5aa65bd9c4eb1",
                     "name": "component_gallery_image_only",
-                    "label": "Image only Gallery",
+                    "label": "Logo Image Gallery",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -248,5 +248,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1532947256
+    "modified": 1536300167
 }
