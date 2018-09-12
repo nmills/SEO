@@ -386,10 +386,13 @@ section {
     section {
       margin-bottom: 100px; } }
 
-@media only screen and (min-width: 768px) {
-  .off-canvas-wrapper {
-    min-height: calc(100% - 235px);
-    padding-bottom: 235px; } }
+.off-canvas-wrapper {
+  min-height: calc(100% - 451px);
+  padding-bottom: 451px; }
+  @media only screen and (min-width: 960px) {
+    .off-canvas-wrapper {
+      min-height: calc(100% - 235px);
+      padding-bottom: 235px; } }
 
 .page-template-template-program_landing section {
   margin-top: 45px;

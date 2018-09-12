@@ -71,7 +71,10 @@ section {
 }
 
 .off-canvas-wrapper {
-  @include grid-media($md) {
+  min-height: calc(100% - 451px);
+  padding-bottom: 451px;
+  
+  @include grid-media($ft) {
     min-height: calc(100% - 235px);
     padding-bottom: 235px;
   }
